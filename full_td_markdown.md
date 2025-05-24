@@ -16926,602 +16926,6 @@ Extra Information for the FIFO DAT can be accessed via an [Info CHOP](Info_CHOP.
 Retrieved from "<https://docs.derivative.ca/index.php?title=FIFO_DAT&oldid=24322>"
 [Category](Special_Categories.html "Special:Categories"):
 
-File:AnimationCOMP.png - Derivative
-
-# File:AnimationCOMP.png
-
-* [File](#file)
-* [File history](#filehistory)
-* [File usage](#filelinks)
-* [Metadata](#metadata)
-
-[![File:AnimationCOMP.png](https://docs.derivative.ca/images/a/a2/AnimationCOMP.png?20171011183830)](images/a/a2/AnimationCOMP.png)No higher resolution available.
-
-[AnimationCOMP.png](images/a/a2/AnimationCOMP.png "AnimationCOMP.png") ‎(260 × 212 pixels, file size: 13 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - Keyframe Animation
-
-In the [Animation component](Animation_COMP.html "Animation COMP") each keyframe specifies a channel's value at a specific time (or frame). A keyframe holds a value, slopes and accelerations, and an interpolation type. A channel's keyframes are used to interpolate and determine the values of all the samples of the channel.
-
-## File history
-
-Click on a date/time to view the file as it appeared at that time.
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [13:38, 11 October 2017](images/a/a2/AnimationCOMP.png) | [Thumbnail for version as of 13:38, 11 October 2017](images/a/a2/AnimationCOMP.png) | 260 × 212 (13 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - Keyframe Animation |
-
-You cannot overwrite this file.
-
-## File usage
-
-The following 2 pages use this file:
-
-* [Animation Editor](Animation_Editor.html "Animation Editor")
-* [Keyframe Animation](Keyframe_Animation.html "Keyframe Animation")
-
-## Metadata
-
-This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
-
-If the file has been modified from its original state, some details may not fully reflect the modified file.
-
-| Horizontal resolution | 37.79 dpc |
-| --- | --- |
-| Vertical resolution | 37.79 dpc |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:AnimationCOMP.png&oldid=8321>"
-
-File:AnimationCOMPEdit.png - Derivative
-
-# File:AnimationCOMPEdit.png
-
-[![File:AnimationCOMPEdit.png](https://docs.derivative.ca/images/a/af/AnimationCOMPEdit.png?20171004201635)](images/a/af/AnimationCOMPEdit.png)No higher resolution available.
-
-[AnimationCOMPEdit.png](images/a/af/AnimationCOMPEdit.png "AnimationCOMPEdit.png") ‎(333 × 222 pixels, file size: 8 KB, MIME type: image/png)
-
-Animation COMP
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [15:16, 4 October 2017](images/a/af/AnimationCOMPEdit.png) | [Thumbnail for version as of 15:16, 4 October 2017](images/a/af/AnimationCOMPEdit.png) | 333 × 222 (8 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | Animation COMP |
-
-The following 3 pages use this file:
-
-* [Animation COMP](Animation_COMP.html "Animation COMP")
-* [Animation Editor](Animation_Editor.html "Animation Editor")
-* [Keyframe Animation](Keyframe_Animation.html "Keyframe Animation")
-
-| Horizontal resolution | 37.8 dpc |
-| --- | --- |
-| Vertical resolution | 37.8 dpc |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:AnimationCOMPEdit.png&oldid=7883>"
-
-File:CHOPUnits.jpg - Derivative
-
-# File:CHOPUnits.jpg
-
-[![File:CHOPUnits.jpg](https://docs.derivative.ca/images/3/3d/CHOPUnits.jpg?20171005162939)](images/3/3d/CHOPUnits.jpg)No higher resolution available.
-
-[CHOPUnits.jpg](images/3/3d/CHOPUnits.jpg "CHOPUnits.jpg") ‎(91 × 52 pixels, file size: 16 KB, MIME type: image/jpeg)
-
-TD Pages - CHOPs
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [11:29, 5 October 2017](images/3/3d/CHOPUnits.jpg) | [Thumbnail for version as of 11:29, 5 October 2017](images/3/3d/CHOPUnits.jpg) | 91 × 52 (16 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - CHOPs |
-
-* [CHOP](CHOP.html "CHOP")
-* [Experimental:CHOP](Experimental_CHOP.html "Experimental:CHOP")
-
-| Orientation | Normal |
-| --- | --- |
-| Horizontal resolution | 96 dpi |
-| Vertical resolution | 96 dpi |
-| Software used | Adobe Photoshop CS3 Windows |
-| File change date and time | 15:01, 26 February 2009 |
-| Colour space | sRGB |
-| Image width | 91 px |
-| Image height | 52 px |
-| Date and time of digitizing | 10:01, 26 February 2009 |
-| Date metadata was last modified | 10:01, 26 February 2009 |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:CHOPUnits.jpg&oldid=7928>"
-
-# File In CHOP
-
-The File In CHOP reads in channel and audio files for use by CHOPs. The file can be read in from disk or from the web. Use `http://` when specifying a URL.
-
-### Valid Formats
-
-For a complete listing of all valid formats for CHOPs, see the [File Types](File_Types.html "File Types") section. The types of files that can be read into CHOPs include:
-
-* `.chan` - Raw ASCII channel files; a row of numbers per frame. The channels are named automatically.
-* `.clip .bclip` - TouchDesigner native CHOP clip files.
-* `.aiff` - Audio files.
-* `.wav` - Audio files.
-
-### Outputting Channel Files
-
-The same files can be output from the [RMB](Mouse_Click.html "Mouse Click") menu on the CHOP by selecting **Save Data Channels**.
-
-### Other Input Devices
-
-For MIDI files (`.mid` or `.midi`), see the [MIDI In CHOP](MIDI_In_CHOP.html "MIDI In CHOP").
-
-[![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[fileinCHOP\_Class](https://docs.derivative.ca/FileinCHOP_Class "FileinCHOP Class")
-
-* [1 Summary](#Summary)
-  + [1.1 Valid Formats](#Valid_Formats)
-  + [1.2 Outputting Channel Files](#Outputting_Channel_Files)
-  + [1.3 Other Input Devices](#Other_Input_Devices)
-* [2 Parameters - File In Page](#Parameters_-_File_In_Page)
-* [3 Parameters - Common Page](#Parameters_-_Common_Page)
-* [4 Info CHOP Channels](#Info_CHOP_Channels)
-  + [4.1 Common CHOP Info Channels](#Common_CHOP_Info_Channels)
-  + [4.2 Common Operator Info Channels](#Common_Operator_Info_Channels)
-
-## Parameters - File In Page
-
-Channel File `file` - The name of the file to load. Use http:// when specifying a URL.
-Name Options `nameoption` - ⊞ - Use this menu to control the names of the loaded channels.
-
-* Use Names In File `infile` - Use the channel names stored in the file.
-
-* Use New Names `new` - Use the name specified in the Name parameter.
-
-* Use Filename `filename` - Use the filename as the name for the loaded channels.
-
-Name `name` - Used to name the channels when the Name Options parameter is set to Use New Names.
-Rate Options `rateoption` - ⊞ - Use this menu to adjust the sample rate of the loaded channels.
-
-* No Change `nochange` - The sample rate is taken from the file.
-
-* Override `override` - The sample rate is set to the number in the Sample Rate parameter, but the channels in the file are not resampled.
-
-* Resample `resample` - Resamples at the specified Sample Rate. Takes the channels and the sample rate found in the file, and resamples it to the desired sample rate. This prevents very large arrays from being used in memory unnecessarily.
-
-Sample Rate `rate` - Samples per second, as utilized by the Rate Options parameter.
-Extend Left `left` - ⊞ - The left extend conditions (before/after range).
-
-Extend Right `right` - ⊞ - The right extend conditions (before/after range).
-
-Default Value `defval` - The value used for the Default Value extend condition.
-Rename from `renamefrom` - The channel pattern to rename. See [Pattern Matching](Pattern_Matching.html "Pattern Matching").
-Rename to `renameto` - The replacement pattern for the names. The default parameters do not rename the channels. See [Pattern Replacement](Pattern_Replacement.html "Pattern Replacement").
-Value Override Pattern `overridpattern` - Scopes channels to apply the Override Value to.
-Override Value `overridevalue` - The value given to channels scope by the Value Override Pattern parameter above.
-Refresh `refresh` - Reload the file when this parameter is set to On.
-Refresh Pulse `refreshpulse` - Instantly reload the file from disk.
-
-Extra Information for the File In CHOP can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File_In_CHOP&oldid=28448>"
-[Category](Special_Categories.html "Special:Categories"):
-
-File In DAT - TouchDesigner Documentation
-
-# File In DAT
-
-The File In DAT reads in `.txt` text files and `.dat` table files. It will attempt to read any other file as raw text. The file can be located on disk or on the web. Use `http://` when specifying a URL.
-
-See also [Table DAT](Table_DAT.html "Table DAT"), [Text DAT](Text_DAT.html "Text DAT").
-
-[![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[fileinDAT\_Class](https://docs.derivative.ca/FileinDAT_Class "FileinDAT Class")
-
-* [1 Summary](#Summary)
-* [2 Parameters - File In Page](#Parameters_-_File_In_Page)
-* [3 Parameters - Common Page](#Parameters_-_Common_Page)
-* [4 Info CHOP Channels](#Info_CHOP_Channels)
-  + [4.1 Common DAT Info Channels](#Common_DAT_Info_Channels)
-  + [4.2 Common Operator Info Channels](#Common_Operator_Info_Channels)
-
-File `file` - The filesystem path and name of the file to load. Accepts `.txt` files for regular text and `.dat` files for text in table format.
-Convert Text to Table `converttable` - Converts the contents of the DAT from regular text to table-formatted text (tab-delimited text, each <tab> is a new column in the table).
-Refresh `refresh` - Reload the file when this parameter is set to On.
-Refresh Pulse `refreshpulse` - Instantly reload the file from disk.
-
-Extra Information for the File In DAT can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File_In_DAT&oldid=24294>"
-[Category](Special_Categories.html "Special:Categories"):
-
-File In SOP - TouchDesigner Documentation
-
-# File In SOP
-
-The File In SOP allows you to read a geometry file that may have been previously created in the Model Editor, output geometry from a SOP, or generated from other software such as [Houdini](http://www.sidefx.com/). The geometry file can be read in from disk or from the web. Use http:// when specifying a URL.
-
-[![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[fileinSOP\_Class](https://docs.derivative.ca/FileinSOP_Class "FileinSOP Class")
-
-* [1 Summary](#Summary)
-* [2 Parameters - Page](#Parameters_-_Page)
-* [3 Info CHOP Channels](#Info_CHOP_Channels)
-  + [3.1 Common SOP Info Channels](#Common_SOP_Info_Channels)
-  + [3.2 Common Operator Info Channels](#Common_Operator_Info_Channels)
-
-Geometry File `file` - Contains the full pathname of the geometry file to be read in.
-
-Some of the geometry formats that can be read:
-
-* TouchDesigner : .tog
-* Houdini : .classic, .bhclassic
-* Common : .obj
-
-Flip Primitive Faces `flipfacing` - Flips the primitive faces of the geometry.
-Compute Normals if None Exist `normals` - Creates normals if the geometry does not have them.
-Refresh `refresh` - Reload the file when this parameter is set to On.
-Refresh Pulse `refreshpulse` - Instantly reload the file from disk.
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File_In_SOP&oldid=24189>"
-[Category](Special_Categories.html "Special:Categories"):
-
-File:OP CHOP.png - Derivative
-
-# File:OP CHOP.png
-
-[![File:OP CHOP.png](https://docs.derivative.ca/images/e/e9/OP_CHOP.png?20220212062105)](images/e/e9/OP_CHOP.png)No higher resolution available.
-
-[OP\_CHOP.png](images/e/e9/OP_CHOP.png "OP CHOP.png") ‎(550 × 191 pixels, file size: 25 KB, MIME type: image/png)
-
-TD Pages - CHOP
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [01:21, 12 February 2022](images/e/e9/OP_CHOP.png) | [Thumbnail for version as of 01:21, 12 February 2022](images/e/e9/OP_CHOP.png) | 550 × 191 (25 KB) | [Greg](https://docs.derivative.ca/User:Greg "User:Greg") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Greg&action=edit&redlink=1 "User talk:Greg (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Greg "Special:Contributions/Greg")) | Reverted to version as of 01:16, 12 February 2022 (EST) |
-|  | [01:16, 12 February 2022](https://docs.derivative.ca/images/archive/e/e9/20220212061812%21OP_CHOP.png) | [Thumbnail for version as of 01:16, 12 February 2022](https://docs.derivative.ca/images/archive/e/e9/20220212061812%21OP_CHOP.png) | 550 × 191 (25 KB) | [Greg](https://docs.derivative.ca/User:Greg "User:Greg") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Greg&action=edit&redlink=1 "User talk:Greg (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Greg "Special:Contributions/Greg")) |  |
-|  | [11:28, 5 October 2017](https://docs.derivative.ca/images/archive/e/e9/20220212061615%21OP_CHOP.png) | [Thumbnail for version as of 11:28, 5 October 2017](https://docs.derivative.ca/images/archive/e/e9/20220212061615%21OP_CHOP.png) | 588 × 194 (17 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - CHOP |
-
-| Horizontal resolution | 66.14 dpc |
-| --- | --- |
-| Vertical resolution | 66.14 dpc |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OP_CHOP.png&oldid=25253>"
-
-File:OP DAT.png - Derivative
-
-# File:OP DAT.png
-
-[![File:OP DAT.png](https://docs.derivative.ca/images/thumb/c/c5/OP_DAT.png/800px-OP_DAT.png?20171011182103)](https://docs.derivative.ca/images/c/c5/OP_DAT.png)Size of this preview: [800 × 175 pixels](https://docs.derivative.ca/images/thumb/c/c5/OP_DAT.png/800px-OP_DAT.png). Other resolutions: [320 × 70 pixels](https://docs.derivative.ca/images/thumb/c/c5/OP_DAT.png/320px-OP_DAT.png) | [1,494 × 327 pixels](https://docs.derivative.ca/images/c/c5/OP_DAT.png).
-
-[Original file](https://docs.derivative.ca/images/c/c5/OP_DAT.png "OP DAT.png") ‎(1,494 × 327 pixels, file size: 89 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - DAT
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [13:21, 11 October 2017](https://docs.derivative.ca/images/c/c5/OP_DAT.png) | [Thumbnail for version as of 13:21, 11 October 2017](https://docs.derivative.ca/images/c/c5/OP_DAT.png) | 1,494 × 327 (89 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - DAT |
-
-* [DAT](DAT.html "DAT")
-* [Experimental:DAT](Experimental_DAT.html "Experimental:DAT")
-
-| Horizontal resolution | 47.24 dpc |
-| --- | --- |
-| Vertical resolution | 47.24 dpc |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OP_DAT.png&oldid=8294>"
-
-File:OP MAT.png - Derivative
-
-# File:OP MAT.png
-
-[![File:OP MAT.png](https://docs.derivative.ca/images/b/bc/OP_MAT.png?20171011184419)](images/b/bc/OP_MAT.png)No higher resolution available.
-
-[OP\_MAT.png](images/b/bc/OP_MAT.png "OP MAT.png") ‎(590 × 195 pixels, file size: 33 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - MAT
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [13:44, 11 October 2017](images/b/bc/OP_MAT.png) | [Thumbnail for version as of 13:44, 11 October 2017](images/b/bc/OP_MAT.png) | 590 × 195 (33 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - MAT |
-
-* [MAT](MAT.html "MAT")
-* [Experimental:MAT](Experimental_MAT.html "Experimental:MAT")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OP_MAT.png&oldid=8332>"
-
-File:OP SOP.png - Derivative
-
-# File:OP SOP.png
-
-[![File:OP SOP.png](https://docs.derivative.ca/images/e/e6/OP_SOP.png?20180227173745)](images/e/e6/OP_SOP.png)No higher resolution available.
-
-[OP\_SOP.png](images/e/e6/OP_SOP.png "OP SOP.png") ‎(588 × 193 pixels, file size: 27 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [12:37, 27 February 2018](images/e/e6/OP_SOP.png) | [Thumbnail for version as of 12:37, 27 February 2018](images/e/e6/OP_SOP.png) | 588 × 193 (27 KB) | [Markus Heckmann](https://docs.derivative.ca/User:Markus_Heckmann "User:Markus Heckmann") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Markus_Heckmann&action=edit&redlink=1 "User talk:Markus Heckmann (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Markus_Heckmann "Special:Contributions/Markus Heckmann")) |  |
-
-* [SOP](SOP.html "SOP")
-* [Experimental:SOP](Experimental_SOP.html "Experimental:SOP")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OP_SOP.png&oldid=9262>"
-
-File:OP TOP.png - Derivative
-
-# File:OP TOP.png
-
-[![File:OP TOP.png](https://docs.derivative.ca/images/a/a9/OP_TOP.png?20171011193840)](images/a/a9/OP_TOP.png)No higher resolution available.
-
-[OP\_TOP.png](images/a/a9/OP_TOP.png "OP TOP.png") ‎(585 × 191 pixels, file size: 51 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - TOP
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [14:38, 11 October 2017](images/a/a9/OP_TOP.png) | [Thumbnail for version as of 14:38, 11 October 2017](images/a/a9/OP_TOP.png) | 585 × 191 (51 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP |
-
-* [TOP](TOP.html "TOP")
-* [Experimental:TOP](Experimental_TOP.html "Experimental:TOP")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OP_TOP.png&oldid=8414>"
-
-File:Opcreate CHOP.jpg - Derivative
-
-# File:Opcreate CHOP.jpg
-
-[![File:Opcreate CHOP.jpg](https://docs.derivative.ca/images/thumb/f/f2/Opcreate_CHOP.jpg/686px-Opcreate_CHOP.jpg.png?20200728142648)](images/f/f2/Opcreate_CHOP.jpg)Size of this preview: [686 × 600 pixels](https://docs.derivative.ca/images/thumb/f/f2/Opcreate_CHOP.jpg/686px-Opcreate_CHOP.jpg.png). Other resolutions: [275 × 240 pixels](https://docs.derivative.ca/images/thumb/f/f2/Opcreate_CHOP.jpg/275px-Opcreate_CHOP.jpg.png) | [549 × 480 pixels](https://docs.derivative.ca/images/thumb/f/f2/Opcreate_CHOP.jpg/549px-Opcreate_CHOP.jpg.png) | [690 × 603 pixels](images/f/f2/Opcreate_CHOP.jpg).
-
-[Original file](images/f/f2/Opcreate_CHOP.jpg "Opcreate CHOP.jpg") ‎(690 × 603 pixels, file size: 40 KB, MIME type: image/png)
-
-TD Pages - OP Create Dialog
-
-Any floating window that is not a [Pane](Pane.html "Pane") or [Viewer](Viewer.html "Viewer").
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [09:26, 28 July 2020](images/f/f2/Opcreate_CHOP.jpg) | [Thumbnail for version as of 09:26, 28 July 2020](images/f/f2/Opcreate_CHOP.jpg) | 690 × 603 (40 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [15:36, 5 October 2017](https://docs.derivative.ca/images/archive/f/f2/20200728142648%21Opcreate_CHOP.jpg) | [Thumbnail for version as of 15:36, 5 October 2017](https://docs.derivative.ca/images/archive/f/f2/20200728142648%21Opcreate_CHOP.jpg) | 618 × 454 (131 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - OP Create Dialog |
-
-* [OP Create Dialog](OP_Create_Dialog.html "OP Create Dialog")
-* [OP Create Menu](OP_Create_Menu.html "OP Create Menu")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:Opcreate_CHOP.jpg&oldid=19832>"
-
-File:Opcreate COMP.jpg - Derivative
-
-# File:Opcreate COMP.jpg
-
-[![File:Opcreate COMP.jpg](https://docs.derivative.ca/images/9/9c/Opcreate_COMP.jpg?20200728142610)](images/9/9c/Opcreate_COMP.jpg)No higher resolution available.
-
-[Opcreate\_COMP.jpg](images/9/9c/Opcreate_COMP.jpg "Opcreate COMP.jpg") ‎(690 × 391 pixels, file size: 14 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - Component
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [09:26, 28 July 2020](images/9/9c/Opcreate_COMP.jpg) | [Thumbnail for version as of 09:26, 28 July 2020](images/9/9c/Opcreate_COMP.jpg) | 690 × 391 (14 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [13:13, 11 October 2017](https://docs.derivative.ca/images/archive/9/9c/20200728142610%21Opcreate_COMP.jpg) | [Thumbnail for version as of 13:13, 11 October 2017](https://docs.derivative.ca/images/archive/9/9c/20200728142610%21Opcreate_COMP.jpg) | 618 × 449 (5 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - Component |
-
-* [Component](Component.html "Component")
-* [Experimental:Component](Experimental_Component.html "Experimental:Component")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:Opcreate_COMP.jpg&oldid=19831>"
-
-File:Opcreate TOP.jpg - Derivative
-
-# File:Opcreate TOP.jpg
-
-[![File:Opcreate TOP.jpg](https://docs.derivative.ca/images/5/55/Opcreate_TOP.jpg?20200729102432)](https://docs.derivative.ca/images/5/55/Opcreate_TOP.jpg)No higher resolution available.
-
-[Opcreate\_TOP.jpg](https://docs.derivative.ca/images/5/55/Opcreate_TOP.jpg "Opcreate TOP.jpg") ‎(689 × 546 pixels, file size: 35 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [05:24, 29 July 2020](https://docs.derivative.ca/images/5/55/Opcreate_TOP.jpg) | [Thumbnail for version as of 05:24, 29 July 2020](https://docs.derivative.ca/images/5/55/Opcreate_TOP.jpg) | 689 × 546 (35 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [14:58, 11 October 2017](https://docs.derivative.ca/images/archive/5/55/20200729102432%21Opcreate_TOP.jpg) | [Thumbnail for version as of 14:58, 11 October 2017](https://docs.derivative.ca/images/archive/5/55/20200729102432%21Opcreate_TOP.jpg) | 618 × 449 (9 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP |
-
-The following page uses this file:
-
-* [Experimental:TOP](Experimental_TOP.html "Experimental:TOP")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:Opcreate_TOP.jpg&oldid=19995>"
-
-File:OptionsBGTOP.png - Derivative
-
-# File:OptionsBGTOP.png
-
-[![File:OptionsBGTOP.png](https://docs.derivative.ca/images/3/31/OptionsBGTOP.png?20171005184623)](images/3/31/OptionsBGTOP.png)No higher resolution available.
-
-[OptionsBGTOP.png](images/3/31/OptionsBGTOP.png "OptionsBGTOP.png") ‎(305 × 26 pixels, file size: 3 KB, MIME type: image/png)
-
-TD Pages - Geometry Viewer
-
-A 3D viewport for viewing and manipulating 3D scenes or objects interactively. A geometry viewer can be found in [Panes](Pane.html "Pane") (alt+3 in any pane) or the [Node Viewers](Node_Viewer.html "Node Viewer") of all Geometry Object components.
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [13:46, 5 October 2017](images/3/31/OptionsBGTOP.png) | [Thumbnail for version as of 13:46, 5 October 2017](images/3/31/OptionsBGTOP.png) | 305 × 26 (3 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Geometry Viewer |
-
-* [Geometry Viewer](Geometry_Viewer.html "Geometry Viewer")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:OptionsBGTOP.png&oldid=7996>"
-
-File Out CHOP - TouchDesigner Documentation
-
-# File Out CHOP
-
-The File Out CHOP writes CHOP channel data out to .chan files. The data can be written out every frame or at intervals (set by the Interval parameter) into a log file.
-
-* `.chan` format - Raw ASCII channel files; a row of numbers per frame. The channels are named automatically.
-
-[![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[fileoutCHOP\_Class](https://docs.derivative.ca/FileoutCHOP_Class "FileoutCHOP Class")
-
-Active `active` - When this parameter is set to 1, the file will be written to at the interval specified above.
-File `file` - Sets the path and filename of the file that is saved out.
-Interval `interval` - Sets the number of frames between each write of data into the file.
-Write `write` - Click this button to write out a single frame.
-
-Extra Information for the File Out CHOP can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File_Out_CHOP&oldid=24037>"
-[Category](Special_Categories.html "Special:Categories"):
-
-File Out DAT - TouchDesigner Documentation
-
-# File Out DAT
-
-The File Out DAT allows you to write out DAT contents to a `.dat` file or a `.txt` file. A `.dat` file is one of the [File Types](File_Types.html "File Types") of TouchDesigner that is used to hold the arrays of the [Table DAT](Table_DAT.html "Table DAT").
-
-When the File Out DAT has 0 inputs, it can be triggered to send text by using the `send` command.
-
-If 'Append' is off, a new file is written every time, if 'Append' is on, the file is appended to, and the file handle remains open.
-
-[![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[fileoutDAT\_Class](https://docs.derivative.ca/FileoutDAT_Class "FileoutDAT Class")
-
-* [1 Summary](#Summary)
-* [2 Parameters - File Out Page](#Parameters_-_File_Out_Page)
-* [3 Parameters - Common Page](#Parameters_-_Common_Page)
-* [4 Operator Inputs](#Operator_Inputs)
-* [5 Info CHOP Channels](#Info_CHOP_Channels)
-  + [5.1 Common DAT Info Channels](#Common_DAT_Info_Channels)
-  + [5.2 Common Operator Info Channels](#Common_Operator_Info_Channels)
-
-## Parameters - File Out Page
-
-File `file` - The filesystem path and name of the file to be written.
-N `n` - Using `me.par.n` (or $N in [Tscript](Tscript.html "Tscript")) in the filename (in the File parameter) in conjuction with the N parameter here gives a method of incrementing file names. The N parameter must manually be incremented each time. Exporting a [Count CHOP](Count_CHOP.html "Count CHOP") which increments each time you want to save out a new file is an easy way to do this.
-Write File `write` - Press this button to write the file once.
-Append (txt Only) `append` - Appends the text into the file instead of overwriting the file contents completely.
-
-Extra Information for the File Out DAT can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File_Out_DAT&oldid=24295>"
-[Category](Special_Categories.html "Special:Categories"):
-
-File:TextDATPython.png - Derivative
-
-# File:TextDATPython.png
-
-[![File:TextDATPython.png](https://docs.derivative.ca/images/e/e8/TextDATPython.png?20211015210344)](images/e/e8/TextDATPython.png)No higher resolution available.
-
-[TextDATPython.png](images/e/e8/TextDATPython.png "TextDATPython.png") ‎(429 × 531 pixels, file size: 18 KB, MIME type: image/png)
-
-TD Pages - Touch Glossary - Operator Language
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [16:03, 15 October 2021](images/e/e8/TextDATPython.png) | [Thumbnail for version as of 16:03, 15 October 2021](images/e/e8/TextDATPython.png) | 429 × 531 (18 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [13:58, 11 October 2017](https://docs.derivative.ca/images/archive/e/e8/20211015210344%21TextDATPython.png) | [Thumbnail for version as of 13:58, 11 October 2017](https://docs.derivative.ca/images/archive/e/e8/20211015210344%21TextDATPython.png) | 444 × 437 (18 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - Operator Language |
-
-* [Operator Language](Operator_Language.html "Operator Language")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TextDATPython.png&oldid=23696>"
-
-File:TextDATtscript.png - Derivative
-
-# File:TextDATtscript.png
-
-[![File:TextDATtscript.png](https://docs.derivative.ca/images/3/3c/TextDATtscript.png?20211015210333)](images/3/3c/TextDATtscript.png)No higher resolution available.
-
-[TextDATtscript.png](images/3/3c/TextDATtscript.png "TextDATtscript.png") ‎(430 × 531 pixels, file size: 17 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [16:03, 15 October 2021](images/3/3c/TextDATtscript.png) | [Thumbnail for version as of 16:03, 15 October 2021](images/3/3c/TextDATtscript.png) | 430 × 531 (17 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [13:58, 11 October 2017](https://docs.derivative.ca/images/archive/3/3c/20211015210333%21TextDATtscript.png) | [Thumbnail for version as of 13:58, 11 October 2017](https://docs.derivative.ca/images/archive/3/3c/20211015210333%21TextDATtscript.png) | 445 × 438 (17 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - Operator Language |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TextDATtscript.png&oldid=23695>"
-
-File:TOPDisplayMulti.jpg - Derivative
-
-# File:TOPDisplayMulti.jpg
-
-* [File](#file)
-* [File history](#filehistory)
-* [File usage](#filelinks)
-
-[![File:TOPDisplayMulti.jpg](https://docs.derivative.ca/images/6/69/TOPDisplayMulti.jpg?20171011193912)](images/6/69/TOPDisplayMulti.jpg)No higher resolution available.
-
-[TOPDisplayMulti.jpg](images/6/69/TOPDisplayMulti.jpg "TOPDisplayMulti.jpg") ‎(799 × 497 pixels, file size: 134 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [14:39, 11 October 2017](images/6/69/TOPDisplayMulti.jpg) | [Thumbnail for version as of 14:39, 11 October 2017](images/6/69/TOPDisplayMulti.jpg) | 799 × 497 (134 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TOPDisplayMulti.jpg&oldid=8416>"
-
-File:TOPDisplaySingle.jpg - Derivative
-
-# File:TOPDisplaySingle.jpg
-
-[![File:TOPDisplaySingle.jpg](https://docs.derivative.ca/images/d/da/TOPDisplaySingle.jpg?20171011193901)](images/d/da/TOPDisplaySingle.jpg)No higher resolution available.
-
-[TOPDisplaySingle.jpg](images/d/da/TOPDisplaySingle.jpg "TOPDisplaySingle.jpg") ‎(799 × 497 pixels, file size: 216 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [14:39, 11 October 2017](images/d/da/TOPDisplaySingle.jpg) | [Thumbnail for version as of 14:39, 11 October 2017](images/d/da/TOPDisplaySingle.jpg) | 799 × 497 (216 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TOPDisplaySingle.jpg&oldid=8415>"
-
-File:TOPexample.jpg - Derivative
-
-# File:TOPexample.jpg
-
-[![File:TOPexample.jpg](https://docs.derivative.ca/images/c/c3/TOPexample.jpg?20171011195836)](https://docs.derivative.ca/images/c/c3/TOPexample.jpg)No higher resolution available.
-
-[TOPexample.jpg](https://docs.derivative.ca/images/c/c3/TOPexample.jpg "TOPexample.jpg") ‎(780 × 221 pixels, file size: 97 KB, MIME type: image/jpeg)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [14:58, 11 October 2017](https://docs.derivative.ca/images/c/c3/TOPexample.jpg) | [Thumbnail for version as of 14:58, 11 October 2017](https://docs.derivative.ca/images/c/c3/TOPexample.jpg) | 780 × 221 (97 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP |
-
-| Orientation | Normal |
-| --- | --- |
-| Horizontal resolution | 96 dpi |
-| Vertical resolution | 96 dpi |
-| Software used | Adobe Photoshop CS3 Windows |
-| File change date and time | 18:42, 30 July 2009 |
-| Colour space | sRGB |
-| Image width | 780 px |
-| Image height | 221 px |
-| Date and time of digitizing | 14:42, 30 July 2009 |
-| Date metadata was last modified | 14:42, 30 July 2009 |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TOPexample.jpg&oldid=8421>"
-
-File:TOPviewer.jpg - Derivative
-
-# File:TOPviewer.jpg
-
-[![File:TOPviewer.jpg](https://docs.derivative.ca/images/thumb/b/bb/TOPviewer.jpg/799px-TOPviewer.jpg?20200819082323)](images/b/bb/TOPviewer.jpg)Size of this preview: [799 × 251 pixels](https://docs.derivative.ca/images/thumb/b/bb/TOPviewer.jpg/799px-TOPviewer.jpg). Other resolutions: [320 × 101 pixels](https://docs.derivative.ca/images/thumb/b/bb/TOPviewer.jpg/320px-TOPviewer.jpg) | [967 × 304 pixels](images/b/bb/TOPviewer.jpg).
-
-[Original file](images/b/bb/TOPviewer.jpg "TOPviewer.jpg") ‎(967 × 304 pixels, file size: 177 KB, MIME type: image/jpeg)
-
-TD Pages - Touch Glossary - TOP Viewer
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [03:23, 19 August 2020](images/b/bb/TOPviewer.jpg) | [Thumbnail for version as of 03:23, 19 August 2020](images/b/bb/TOPviewer.jpg) | 967 × 304 (177 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-|  | [14:45, 11 October 2017](https://docs.derivative.ca/images/archive/b/bb/20200819082323%21TOPviewer.jpg) | [Thumbnail for version as of 14:45, 11 October 2017](https://docs.derivative.ca/images/archive/b/bb/20200819082323%21TOPviewer.jpg) | 967 × 304 (194 KB) | [Sherryk](https://docs.derivative.ca/index.php?title=User:Sherryk&action=edit&redlink=1 "User:Sherryk (page does not exist)") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Sherryk&action=edit&redlink=1 "User talk:Sherryk (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Sherryk "Special:Contributions/Sherryk")) | TD Pages - Touch Glossary - TOP Viewer |
-
-* [TOP](TOP.html "TOP")
-* [TOP Viewer](TOP_Viewer.html "TOP Viewer")
-* [Experimental:TOP](Experimental_TOP.html "Experimental:TOP")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TOPviewer.jpg&oldid=20198>"
-
-File:TOPviewermenu.png - Derivative
-
-# File:TOPviewermenu.png
-
-[![File:TOPviewermenu.png](https://docs.derivative.ca/images/c/c1/TOPviewermenu.png?20200819075407)](images/c/c1/TOPviewermenu.png)No higher resolution available.
-
-[TOPviewermenu.png](images/c/c1/TOPviewermenu.png "TOPviewermenu.png") ‎(186 × 234 pixels, file size: 6 KB, MIME type: image/png)
-
-|  | Date/Time | Thumbnail | Dimensions | User | Comment |
-| --- | --- | --- | --- | --- | --- |
-| current | [02:54, 19 August 2020](images/c/c1/TOPviewermenu.png) | [Thumbnail for version as of 02:54, 19 August 2020](images/c/c1/TOPviewermenu.png) | 186 × 234 (6 KB) | [Ben](https://docs.derivative.ca/User:Ben "User:Ben") ([talk](https://docs.derivative.ca/index.php?title=User_talk:Ben&action=edit&redlink=1 "User talk:Ben (page does not exist)") | [contribs](https://docs.derivative.ca/Special:Contributions/Ben "Special:Contributions/Ben")) |  |
-
-| Horizontal resolution | 37.79 dpc |
-| --- | --- |
-| Vertical resolution | 37.79 dpc |
-| Date and time of digitizing | * 16:53, 19 August 2020 |
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=File:TOPviewermenu.png&oldid=20195>"
-
 Fillet SOP - TouchDesigner Documentation
 
 # Fillet SOP
@@ -18046,6 +17450,8 @@ Texture Coordinates `texture` - ⊞ - This adds uv coordinates to the geometry 
 * Orthographic `ortho` - Orthographic uv coordinates added.
 
 TouchDesigner Build: Latest\nwikieditorwikieditor2021.100002018.28070before 2018.28070
+
+Any floating window that is not a [Pane](Pane.html "Pane") or [Viewer](Viewer.html "Viewer").
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=Font_SOP&oldid=33200>"
 [Category](Special_Categories.html "Special:Categories"):
@@ -20637,6 +20043,12 @@ The Inverse Curve SOP takes data from an [Inverse Curve CHOP](Inverse_Curve_CHOP
 
 [![PythonIcon.png](images/c/c2/PythonIcon.png)](File_PythonIcon.html)[inversecurveSOP\_Class](https://docs.derivative.ca/InversecurveSOP_Class "InversecurveSOP Class")
 
+* [1 Summary](#Summary)
+* [2 Parameters - Page](#Parameters_-_Page)
+* [3 Info CHOP Channels](#Info_CHOP_Channels)
+  + [3.1 Common SOP Info Channels](#Common_SOP_Info_Channels)
+  + [3.2 Common Operator Info Channels](#Common_Operator_Info_Channels)
+
 CHOP `chop` - The path to the Inverse Curve CHOP supplying the data.
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=Inverse_Curve_SOP&oldid=24262>"
@@ -21174,6 +20586,8 @@ Extra Information for the Keyframe CHOP can be accessed via an [Info CHOP](Info_
 * end\_second -
 
 * end\_fraction -
+
+In the [Animation component](Animation_COMP.html "Animation COMP") each keyframe specifies a channel's value at a specific time (or frame). A keyframe holds a value, slopes and accelerations, and an interpolation type. A channel's keyframes are used to interpolate and determine the values of all the samples of the channel.
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=Keyframe_CHOP&oldid=24459>"
 [Category](Special_Categories.html "Special:Categories"):
@@ -27395,6 +26809,8 @@ Panels `panels` - Events are only triggered when the specified panel has focus.
 
 Sample Rate `rate` - The sample rate of the channels, in samples per second.
 Extend Left `left` - ⊞ - The left extend conditions (before/after range).
+
+Extend Right `right` - ⊞ - The right extend conditions (before/after range).
 
 Extra Information for the Mouse In CHOP can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
 
@@ -34796,6 +34212,8 @@ Echo Messages to Console `echo` - ⊞ - Print all incoming commands (not channe
 
 Callbacks DAT `callbacks` - Path to a DAT containing callbacks for each event received. See [pipeinCHOP\_Class](https://docs.derivative.ca/PipeinCHOP_Class "PipeinCHOP Class") for usage.
 
+Extra Information for the Pipe In CHOP can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
+
 ### Specific Pipe In CHOP Info Channels
 
 * num\_connected -
@@ -34854,6 +34272,8 @@ Cook Every Frame `cookalways` - Turn this on to make sure this CHOP gets process
 Send Monitor Pulses `pulse` - Sends pulses (a single null character) once a frame, to monitor the connection. This keeps the connection active, and keeps the Pipe In CHOP aware of the connection status so it can properly report its state.
 Echo Messages to Console `echo` - Print all outgoing data to the Console which can be opened from the Dialogs menu. See this option in the [Pipe In CHOP](Pipe_In_CHOP.html "Pipe In CHOP") for more details.
 Callbacks DAT `callbacks` - Path to a DAT containing callback methods for each event sent. See [pipeoutCHOP\_Class](https://docs.derivative.ca/PipeoutCHOP_Class "PipeoutCHOP Class") for usage.
+
+Extra Information for the Pipe Out CHOP can be accessed via an [Info CHOP](Info_CHOP.html "Info CHOP").
 
 ### Specific Pipe Out CHOP Info Channels
 
@@ -35975,14 +35395,6 @@ Extra Information for the Polystitch SOP can be accessed via an [Info CHOP](Info
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=Polystitch_SOP&oldid=24220>"
 [Category](Special_Categories.html "Special:Categories"):
-
-POP to DAT - Derivative
-
-# POP to DAT
-
-1. REDIRECT [Experimental:POP to DAT](https://docs.derivative.ca/Experimental:POP_to_DAT "Experimental:POP to DAT")
-
-Retrieved from "<https://docs.derivative.ca/index.php?title=POP_to_DAT&oldid=33066>"
 
 PosiStageNet CHOP - TouchDesigner Documentation
 
@@ -46501,6 +45913,8 @@ Post Scale X `postscalex` - ⊞ - Sets the scale of the geometry after the Tran
 * Unity Proportional `unityprop` - Scale the geometry to 1.0 (ie. -0.5 to 0.5) in this axis while keeping the input geometry's original proportions.
 
 * Reference Proportional `referenceprop` - Scale the geometry to fit the Reference Input in this axis while keeping the input geometry's original proportions.
+
+A 3D viewport for viewing and manipulating 3D scenes or objects interactively. A geometry viewer can be found in [Panes](Pane.html "Pane") (alt+3 in any pane) or the [Node Viewers](Node_Viewer.html "Node Viewer") of all Geometry Object components.
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=Transform_SOP&oldid=29944>"
 [Category](Special_Categories.html "Special:Categories"):
