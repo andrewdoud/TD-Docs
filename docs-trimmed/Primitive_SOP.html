@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Primitive_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:13 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8385f1f940fdd7299a9b64c5","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Primitive_SOP","wgTitle":"Primitive SOP","wgCurRevisionId":32301,"wgRevisionId":32301,"wgArticleId":390,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Primitive_SOP","wgRelevantArticleId":390,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Add SOP","Alembic SOP",
+"Align SOP","Arm SOP","Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP","Polyreduce SOP","Polyspline SOP",
+"Polystitch SOP","Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Primitive SOP is like the [[Point SOP]] but manipulates a [[primitive]]'s position, size, orientation, color, alpha, in addition to primitive-specific attributes, such as reversing primitive normals." name="description"/>
+<meta content="TouchDesigner, Primitive, SOP" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Primitive_SOP" property="og:url"/>
+<meta content="The Primitive SOP is like the [[Point SOP]] but manipulates a [[primitive]]'s position, size, orientation, color, alpha, in addition to primitive-specific attributes, such as reversing primitive normals." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Primitive, SOP" property="article:tag"/>
+<meta content="2024-10-15T13:47:32Z" property="article:modified_time"/>
+<meta content="2024-10-15T13:47:32Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"TouchDesigner Documentation","headline":"TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Primitive SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Primitive_SOP","url":"https:\/\/docs.derivative.ca\/Primitive_SOP","description":"The Primitive SOP is like the [[Point SOP]] but manipulates a [[primitive]]'s position, size, orientation, color, alpha, in addition to primitive-specific attributes, such as reversing primitive normals.","keywords":"TouchDesigner, Primitive, SOP","dateModified":"2024-10-15T13:47:32Z","datePublished":"2024-10-15T13:47:32Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Primitive_SOP rootpage-Primitive_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Primitive SOP</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is like the <a href="Point_SOP.html" title="Point SOP">Point SOP</a> but manipulates a <a href="Primitive.html" title="Primitive">primitive</a>'s position, size, orientation, color, alpha, in addition to primitive-specific attributes, such as reversing primitive normals. The <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> also lets you create custom primitive attributes. 		
+</p><p>You can also apply parametric affine transformations to a profile by using this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. You can also use it to open, close, reverse, and cycle the profile curves.			
+</p><p><b>Note:</b> When applying transformations to a profile, you can only rotate about the Z axis because the projected curve is a planar curve that lives in the domain of the surface. Therefore it wouldn't make any sense to allow rotations in X or Y for profiles.
+</p>
+<h3><span class="mw-headline" id="Transformation_of_Primitives_vs_Profiles"><div class="customBar">Transformation of Primitives vs Profiles</div></span></h3>
+<p>A Bezier surface is a single primitive, as is a NURBS surface, while a polygon mesh can consist of hundreds of individual primitives. Care must be taken to ensure the desired result. Profiles can be translated, rotated, and scaled along with 3D primitives. The Z component of translation and scaling is ignored. The X and Y components would be interpreted as U and V values because they apply to the space in which profiles are defined.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Example_-_Mapping_a_Texture_Inside_a_Sphere"><div class="customBar">Example - Mapping a Texture Inside a Sphere</div></span></h3>
+<p>There are many uses for the <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. Normally, if you apply a texture onto a sphere, it is mapped onto the outside surface because the U surface normals point outwards by default. If you wanted to map the texture onto the inside of the sphere instead, you could simply run the sphere geometry through a <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, and select Reverse U (i.e. the surface normals) in the Face/Hull page &gt; <span class="mw-lingo-term" data-lingo-term-id="b22b929ba52471a02d18bb3a4e4472e6">Vertex</span> menu.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/PrimitiveSOP_Class" title="PrimitiveSOP Class">primitiveSOP_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a>
+<ul><li class="toclevel-2"><a href="#Transformation_of_Primitives_vs_Profiles"><span class="tocnumber">1.1</span> <span class="toctext">Transformation of Primitives vs Profiles</span></a></li>
+<li class="toclevel-2"><a href="#Example_-_Mapping_a_Texture_Inside_a_Sphere"><span class="tocnumber">1.2</span> <span class="toctext">Example - Mapping a Texture Inside a Sphere</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_Primitive_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Primitive Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Transform_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Transform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Attributes_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Attributes Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Face/Hull_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Face/Hull Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Meta_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Meta Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Particles_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Particles Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">8</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">9</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">9.1</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">9.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Primitive_Page"><div class="sectionBarSOP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> Page</div></span></h2>
+<div id="group" style=""><span class="parNameSOP">Source Group</span>  <code>group</code> - If there are input groups, specifying a group name in this field will cause this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to act only upon the group specified. You can specify profile curves within the group by providing a profile pattern (e.g. *.3 specifies the fourth profile in all spline surfaces).		
+<p><b>Tip:</b> By specifying both a primitive and a profile here (example: 0 0.* ), you can affect a transformation of both the parent surface and a profile curve.
+<i></i>
+</p>
+</div>
+<div id="templategrp" style=""><span class="parNameSOP">Template Group</span>  <code>templategrp</code> - A subset of template points to transform to.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Transform_Page"><div class="sectionBarSOP">Parameters - Transform Page</div></span></h2>
+<div id="doxform" style=""><span class="parNameSOP">Do Transformation</span>  <code>doxform</code> - When checked, allows transformations to occur.
+<p><i></i>
+</p>
+</div>
+<div id="dorot" style=""><span class="parNameSOP">Rotate to Template</span>  <code>dorot</code> - <span class="mw-customtoggle-dorot">⊞</span> - A template can be specified using the second input of the <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. When set to On, this template can be used to transform each primitive to the location and orientation of the template point. This is similar to what the <a href="Copy_SOP.html" title="Copy SOP">Copy SOP</a> does except that the actual primitives are transformed, not copies made.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-dorot">
+<ul><li><span class="parNameSOP">Off</span> <code>off</code> - Don't rotate.</li></ul><ul><li><span class="parNameSOP">On</span> <code>on</code> - The primitive gets rotated as if its normal was (0,0,1), and is meant to point the same direction as the template normal.</li></ul><ul><li><span class="parNameSOP">Match Normals</span> <code>match</code> - Rotates the primitive so that its real normal lines up with the normal of the template point.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="xord" style=""><span class="parNameSOP">Transform Order</span>  <code>xord</code> - <span class="mw-customtoggle-xord">⊞</span> - Sets the overall transform order for the transformations. The transform order determines the order in which transformations take place. Depending on the order, you can achieve different results using the exact same values. Choose the appropriate order from the menu.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-xord">
+<ul><li><span class="parNameSOP">Scale Rotate Translate</span> <code>srt</code> -</li></ul><ul><li><span class="parNameSOP">Scale Translate Rotate</span> <code>str</code> -</li></ul><ul><li><span class="parNameSOP">Rotate Scale Translate</span> <code>rst</code> -</li></ul><ul><li><span class="parNameSOP">Rotate Translate Scale</span> <code>rts</code> -</li></ul><ul><li><span class="parNameSOP">Translate Scale Rotate</span> <code>tsr</code> -</li></ul><ul><li><span class="parNameSOP">Translate Rotate Scale</span> <code>trs</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rord" style=""><span class="parNameSOP">Rotate Order</span>  <code>rord</code> - <span class="mw-customtoggle-rord">⊞</span> - Sets the order of the rotations within the overall transform order.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rord">
+<ul><li><span class="parNameSOP">Rx Ry Rz</span> <code>xyz</code> -</li></ul><ul><li><span class="parNameSOP">Rx Rz Ry</span> <code>xzy</code> -</li></ul><ul><li><span class="parNameSOP">Ry Rx Rz</span> <code>yxz</code> -</li></ul><ul><li><span class="parNameSOP">Ry Rz Rx</span> <code>yzx</code> -</li></ul><ul><li><span class="parNameSOP">Rz Rx Ry</span> <code>zxy</code> -</li></ul><ul><li><span class="parNameSOP">Rz Ry Rx</span> <code>zyx</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="t" style=""><span class="parNameSOP">Translate</span>  <code>t</code> - <span class="mw-customtoggle-t">⊞</span> - These three fields move the input geometry in the three axes. Profiles use tx and ty only.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-t">
+<ul><li><span class="parNameSOP">X</span> <code>tx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>ty</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>tz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="r" style=""><span class="parNameSOP">Rotate</span>  <code>r</code> - <span class="mw-customtoggle-r">⊞</span> - These three fields rotate the Source geometry in the three axes. Profiles use rz only.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-r">
+<ul><li><span class="parNameSOP">X</span> <code>rx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>ry</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>rz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="s" style=""><span class="parNameSOP">Scale</span>  <code>s</code> - <span class="mw-customtoggle-s">⊞</span> - These three fields scale the Source geometry in the three axes. Profiles use sx and sy only.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-s">
+<ul><li><span class="parNameSOP">X</span> <code>sx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>sy</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>sz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="p" style=""><span class="parNameSOP">Pivot</span>  <code>p</code> - <span class="mw-customtoggle-p">⊞</span> - The pivot point for the transformations. Profiles use px and py only.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-p">
+<ul><li><span class="parNameSOP">X</span> <code>px</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>py</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>pz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lookat" style=""><span class="parNameSOP">Lookat <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span>  <code>lookat</code> - Selects the object the primitive should point towards. This performs the lookat in object space; if you need to a lookat in world space, use the lookat in the object's Transform page instead.	
+<p><b>Tip:</b> In order to get multiple sprites to always be perpendicular to the camera, feed them into a <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> and specify the camera as your <b>Lookat <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></b>. Then the sprites should always be perpendicular to the camera.
+<i></i>
+</p>
+</div>
+<div id="upvector" style=""><span class="parNameSOP">Up-Vector</span>  <code>upvector</code> - <span class="mw-customtoggle-upvector">⊞</span> - Defines the orientation of the primitive along the X, Y, or Z axes.	
+<p>The Up Vector determines how a primitive orients itself with respect to the target object (specified in Lookat <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span>). The default value is of 1 in the Y direction. This will produce nice behaviour if you want the object to rotate somewhat in the Z axis as the Lookat Object gets very close and/or passes the target. Scaling the Up Vector will cause the Lookat primitives to remain more upright as they get very close and/or pass the target. The stronger the Up Vector, the more the primitives will want to stay vertical and resist the rotation.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-upvector">
+<ul><li><span class="parNameSOP">X</span> <code>upvectorx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>upvectory</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>upvectorz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Attributes_Page"><div class="sectionBarSOP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="287234a1ff35a314b5b6bc4e5828e745">Attributes</span> Page</div></span></h2>
+<div id="doclr" style=""><span class="parNameSOP">Color</span>  <code>doclr</code> - <span class="mw-customtoggle-doclr">⊞</span> - If Keep is selected, the color attribute is left unchanged. If Add is selected, this parameter changes the color of input primitives according to diffuse color field. If No is selected, the color attribute is removed.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-doclr">
+<ul><li><span class="parNameSOP">Keep Color</span> <code>off</code> -</li></ul><ul><li><span class="parNameSOP">Add Color</span> <code>on</code> -</li></ul><ul><li><span class="parNameSOP">No Color</span> <code>remove</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="diff" style=""><span class="parNameSOP">Color</span>  <code>diff</code> - <span class="mw-customtoggle-diff">⊞</span> - The color to add.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-diff">
+<ul><li><span class="parNameSOP">Red</span> <code>diffr</code> -</li></ul><ul><li><span class="parNameSOP">Green</span> <code>diffg</code> -</li></ul><ul><li><span class="parNameSOP">Blue</span> <code>diffb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alpha" style=""><span class="parNameSOP">Alpha</span>  <code>alpha</code> - The alpha value to add.
+<p><i></i>
+</p>
+</div>
+<div id="docrease" style=""><span class="parNameSOP">Crease</span>  <code>docrease</code> - <span class="mw-customtoggle-docrease">⊞</span> - If Keep is selected, the crease attribute is left unchanged. If Add is selected, this parameter generates a crease attribute for the primitive. If No is selected, the crease attribute is removed.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-docrease">
+<ul><li><span class="parNameSOP">Keep Crease</span> <code>off</code> -</li></ul><ul><li><span class="parNameSOP">Add Crease</span> <code>on</code> -</li></ul><ul><li><span class="parNameSOP">No Crease</span> <code>remove</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="crease" style=""><span class="parNameSOP">Crease</span>  <code>crease</code> - Attribute is used to set edge crease weights for subdivision surfaces (see <a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide SOP</a>). The Crease Weight attribute for a primitive sets all edges of the polygon to the value specified. On shared edges, the maximum of the two crease weights is used to define the sharpness of the subdivided surface. Crease weights should be larger than 0, with larger values defining sharper edges.
+<p><i></i>
+</p>
+</div>
+<div class="sequenceBlock" id="attr" style=""><span class="parNameSOP">Custom Attrib</span>  <code>attr</code> - Sequence of custom attributes to be added to the geometry created.
+<div class="sequenceItem">
+<div id="attr0name" style=""><span class="parNameSOP">Name</span>  <code>attr0name</code> - Creates a custom attribute with this name.
+<p><i></i>
+</p>
+</div>
+<div id="attr0size" style=""><span class="parNameSOP">Size</span>  <code>attr0size</code> - <span class="mw-customtoggle-attr0size">⊞</span> - The size of the attribute to create. It'll use however many values from the Value parameter as the size is.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-attr0size">
+<ul><li><span class="parNameSOP">float</span> <code>float</code> -</li></ul><ul><li><span class="parNameSOP">vec2</span> <code>vec2</code> -</li></ul><ul><li><span class="parNameSOP">vec3</span> <code>vec3</code> -</li></ul><ul><li><span class="parNameSOP">vec4</span> <code>vec4</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="attr0value" style=""><span class="parNameSOP">Value</span>  <code>attr0value</code> - <span class="mw-customtoggle-attr0value">⊞</span> - The value(s) to assign to the attribute.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-attr0value">
+<ul><li><span class="parNameSOP">Value 1</span> <code>attr0value1</code> -</li></ul><ul><li><span class="parNameSOP">Value 1</span> <code>attr0value2</code> -</li></ul><ul><li><span class="parNameSOP">Value 1</span> <code>attr0value3</code> -</li></ul><ul><li><span class="parNameSOP">Value 1</span> <code>attr0value4</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br/></p>
+<h2><span id="Parameters_-_Face.2FHull_Page"></span><span class="mw-headline" id="Parameters_-_Face/Hull_Page"><div class="sectionBarSOP">Parameters - Face/Hull Page</div></span></h2>
+<div id="pshapeu" style=""><span class="parNameSOP">Preserve Shape U</span>  <code>pshapeu</code> - These options only become available once a type of clamping or closure has been selected.	
+<p><b>Closure</b> - Change the closure and clamping of a face or hull.
+<i></i>
+</p>
+</div>
+<div id="pshapev" style=""><span class="parNameSOP">Preserve Shape V</span>  <code>pshapev</code> - These options only become available once a type of clamping or closure has been selected.	
+<p><b>Closure</b> - Change the closure and clamping of a face or hull. The options are:
+<i></i>
+</p>
+</div>
+<div id="closeu" style=""><span class="parNameSOP">Close U</span>  <code>closeu</code> - <span class="mw-customtoggle-closeu">⊞</span> - Close the primitive in U / V. Select from: Open, Closed Straight, Close Rounded, and Unroll. When you unroll a closed curve you duplicate the wrapped points (you make them unique) and turn the curve into an open curve. The shape of the curve does not change. Same goes for hulls, only there we unique entire rows and cols. This addresses a problem with texturing wrapped surfaces whereby the texture repeats itself in the wrapped portion of the surface.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-closeu">
+<ul><li><span class="parNameSOP">No change</span> <code>sameclosure</code> -</li></ul><ul><li><span class="parNameSOP">Open</span> <code>open</code> -</li></ul><ul><li><span class="parNameSOP">Close Straight</span> <code>closesharp</code> -</li></ul><ul><li><span class="parNameSOP">Close Rounded</span> <code>closeround</code> -</li></ul><ul><li><span class="parNameSOP">Unroll</span> <code>unroll</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="closev" style=""><span class="parNameSOP">Close V</span>  <code>closev</code> - <span class="mw-customtoggle-closev">⊞</span> - Close the primitive in U / V. Select from: Open, Closed Straight, Close Rounded, and Unroll. When you unroll a closed curve you duplicate the wrapped points (you make them unique) and turn the curve into an open curve. The shape of the curve does not change. Same goes for hulls, only there we unique entire rows and cols. This addresses a problem with texturing wrapped surfaces whereby the texture repeats itself in the wrapped portion of the surface.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-closev">
+<ul><li><span class="parNameSOP">No change</span> <code>sameclosure</code> -</li></ul><ul><li><span class="parNameSOP">Open</span> <code>open</code> -</li></ul><ul><li><span class="parNameSOP">Close Straight</span> <code>closesharp</code> -</li></ul><ul><li><span class="parNameSOP">Close Rounded</span> <code>closeround</code> -</li></ul><ul><li><span class="parNameSOP">Unroll</span> <code>unroll</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="clampu" style=""><span class="parNameSOP">Clamp U</span>  <code>clampu</code> - <span class="mw-customtoggle-clampu">⊞</span> - Clamp the primitive in U / V. Select from: Clamp, Unclamp.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-clampu">
+<ul><li><span class="parNameSOP">No change</span> <code>sameclamp</code> -</li></ul><ul><li><span class="parNameSOP">Clamp</span> <code>clamp</code> -</li></ul><ul><li><span class="parNameSOP">Unclamp</span> <code>unclamp</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="clampv" style=""><span class="parNameSOP">Clamp V</span>  <code>clampv</code> - <span class="mw-customtoggle-clampv">⊞</span> - Clamp the primitive in U / V. Select from: Clamp, Unclamp.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-clampv">
+<ul><li><span class="parNameSOP">No change</span> <code>sameclamp</code> -</li></ul><ul><li><span class="parNameSOP">Clamp</span> <code>clamp</code> -</li></ul><ul><li><span class="parNameSOP">Unclamp</span> <code>unclamp</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vtxsort" style=""><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="b22b929ba52471a02d18bb3a4e4472e6">Vertex</span></span>  <code>vtxsort</code> - <span class="mw-customtoggle-vtxsort">⊞</span> - Reorder the vertices in a number of ways.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vtxsort">
+<ul><li><span class="parNameSOP">No change</span> <code>samevertex</code> - Does not affect the ordering of the vertices.</li></ul><ul><li><span class="parNameSOP">Reverse</span> <code>reverse</code> - Reverses both U and V for hulls, and just U for faces.<br/><b>For example:</b></li></ul><ul><li><span class="parNameSOP">Reverse U</span> <code>reverseu</code> - Reverses column order of hulls.</li></ul><ul><li><span class="parNameSOP">Reverse V</span> <code>reversev</code> - Reverses row order of hulls.</li></ul><ul><li><span class="parNameSOP">Swap U and V</span> <code>swapuv</code> - Interchanges rows/columns while preserving topology.</li></ul><ul><li><span class="parNameSOP">Shift</span> <code>shift</code> - Cycles the vertices by "U Offset" and "V Offset".</li></ul><ul><li><span class="parNameSOP">Flip Face</span> <code>flipfacing</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vtxuoff" style=""><span class="parNameSOP">U Offset</span>  <code>vtxuoff</code> - Cycles face or hull columns / rows when the Shift operation is selected.
+<p><i></i>
+</p>
+</div>
+<div id="vtxvoff" style=""><span class="parNameSOP">V Offset</span>  <code>vtxvoff</code> - Cycles face or hull columns / rows when the Shift operation is selected.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Meta_Page"><div class="sectionBarSOP">Parameters - Meta Page</div></span></h2>
+<div id="metaweight" style=""><span class="parNameSOP">Meta-Surface Weight</span>  <code>metaweight</code> - When selected, allows meta-surface weighting.
+<p><i></i>
+</p>
+</div>
+<div id="doweight" style=""><span class="parNameSOP">Weight</span>  <code>doweight</code> - Enter weight of meta-surface here when Meta-surface Weight is selected.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Particles_Page"><div class="sectionBarSOP">Parameters - Particles Page</div></span></h2>
+<div id="doprender" style=""><span class="parNameSOP">Particle Render Type</span>  <code>doprender</code> - When On the Particle Type menu below allows section of particle render type.
+<p><i></i>
+</p>
+</div>
+<div id="prtype" style=""><span class="parNameSOP">Particle Type</span>  <code>prtype</code> - <span class="mw-customtoggle-prtype">⊞</span> - Selects how the particles are rendered.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-prtype">
+<ul><li><span class="parNameSOP">Render as Lines</span> <code>lines</code> - Each particle will be rendered as a 2-point line, with the length determined based on the particles velocity. If the particle has no velocity it will just be a single pixel in size.</li></ul><ul><li><span class="parNameSOP">Render as <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Sprites</span> <code>pointprites</code> - For use with the <a href="Point_Sprite_MAT.html" title="Point Sprite MAT">Point Sprite MAT</a>. Each particle is a square of pixels that always face the camera. The size of the square is determined by parameters in the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Sprite and the <code>pscale</code> vertex/point attribute. The point sprites will have texture coordinates generated for them automatically also ((0,0) in the bottom left and (1,1) in the top right).</li></ul><ul><li><span class="parNameSOP">Render as <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Sprites</span> <code>pointsprites</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarSOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameSOP">Input 0: </span> -</li>
+<li><span class="parNameSOP">Input 1: </span> -</li></ul><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Primitive_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Primitive_SOP?oldid=32028">wikieditor</option><option value="https://docs.derivative.ca/Primitive_SOP?oldid=32301">wikieditor</option><option value="https://docs.derivative.ca/Primitive_SOP?oldid=24267">2021.10000</option><option value="https://docs.derivative.ca/Primitive_SOP?oldid=19581">2020.20000</option><option value="https://docs.derivative.ca/Primitive_SOP?oldid=14725">2018.28070</option><option value="https://docs.derivative.ca/Primitive_SOP?oldid=14521">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a href="Carve_SOP.html" title="Carve SOP">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Circle_SOP.html" title="Circle SOP">Circle  </a></span>• <span class="catList navigation-not-searchable"><a href="Clay_SOP.html" title="Clay SOP">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_SOP.html" title="Import Select SOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a href="LSystem_SOP.html" title="LSystem SOP">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="07ee3427562e4f1a5c9f2bfb17fd9eee"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A surface type in <a href="SOP.html" title="SOP">SOPs</a> that includes polygon, curve (NURBS and Bezier), patch (NURBS and Bezier) and other basic shapes like sphere, tube and metaball. <a href="Point.html" title="Point">Points</a> and Primitives are part of the <a href="Geometry_Detail.html" title="Geometry Detail">Geometry Detail</a>, which is a part of a <a href="SOP.html" title="SOP">SOP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b22b929ba52471a02d18bb3a4e4472e6"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A sequence of vertices form a <a href="Polygon.html" title="Polygon">Polygon</a> in a <a href="SOP.html" title="SOP">SOP</a>. Each vertex is an integer index into the <a href="Point_List.html" title="Point List">Point List</a>, and each <a href="Point.html" title="Point">Point</a> holds an XYZ position and attributes like Normals and Texture Coordinates.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="497031794414a552435f90151ac3b54b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The sub-<a href="Operator_Family.html" title="Operator Family">Family</a> of <a href="Component.html" title="Component">Component</a> types that are used to define and render 3D scenes. A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> is an Object that contains the 3D shapes to render. A <a href="Camera_COMP.html" title="Camera COMP">Camera COMP</a> and <a href="Light_COMP.html" title="Light COMP">Light COMP</a> are other Object types. Separately, "Objects" also refers to Python objects.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="287234a1ff35a314b5b6bc4e5828e745"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Information associated with <a href="SOP.html" title="SOP">SOP</a> geometry. <a href="Point.html" title="Point">Points</a> and <a href="Primitive.html" title="Primitive">primitives</a> (polygons, NURBS, etc.) can have any number of attributes - position (P) is standard, and built-in optional attributes are <a href="Normals.html" title="Normals">normals</a> (N), texture coordinates (uv), color (Cd), etc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250307023837
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.788 seconds
+Real time usage: 1.786 seconds
+Preprocessor visited node count: 6129/1000000
+Post‐expand include size: 115714/2097152 bytes
+Template argument size: 58112/2097152 bytes
+Highest expansion depth: 13/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 686/5000000 bytes
+Lua time usage: 1.230/10 seconds
+Lua virtual size: 9277440/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1691.843      1 -total
+ 96.13% 1626.325      1 Template:SOPNavBox
+ 94.80% 1603.898    114 Template:CatList
+  2.31%   39.142      6 Template:ParameterPage
+  2.16%   36.500     34 Template:Parameter
+  0.74%   12.547     73 Template:ParameterItem
+  0.61%   10.382      1 Template:Summary
+  0.54%    9.194      1 Template:InfoCHOPChannels
+  0.25%    4.239      1 SOP_Info_Channels_Common_Page
+  0.20%    3.438      1 Template:InputsPage
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:390-0!canonical and timestamp 20250307023836 and revision id 32301.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Primitive_SOP&amp;oldid=32301">https://docs.derivative.ca/index.php?title=Primitive_SOP&amp;oldid=32301</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.788","walltime":"1.786","ppvisitednodes":{"value":6129,"limit":1000000},"postexpandincludesize":{"value":115714,"limit":2097152},"templateargumentsize":{"value":58112,"limit":2097152},"expansiondepth":{"value":13,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":686,"limit":5000000},"timingprofile":["100.00% 1691.843      1 -total"," 96.13% 1626.325      1 Template:SOPNavBox"," 94.80% 1603.898    114 Template:CatList","  2.31%   39.142      6 Template:ParameterPage","  2.16%   36.500     34 Template:Parameter","  0.74%   12.547     73 Template:ParameterItem","  0.61%   10.382      1 Template:Summary","  0.54%    9.194      1 Template:InfoCHOPChannels","  0.25%    4.239      1 SOP_Info_Channels_Common_Page","  0.20%    3.438      1 Template:InputsPage"]},"scribunto":{"limitreport-timeusage":{"value":"1.230","limit":"10"},"limitreport-virtmemusage":{"value":9277440,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250307023837","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1997});});</script>
+
+
+
+
+</body><!-- Cached 20250307023837 --><!-- Mirrored from docs.derivative.ca/Primitive_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:13 GMT --></html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Circle_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:12 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>Circle SOP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7bbca82c65a2bcc24ca2f795","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Circle_SOP","wgTitle":"Circle SOP","wgCurRevisionId":31224,"wgRevisionId":31224,"wgArticleId":307,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Circle_SOP","wgRelevantArticleId":307,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Add SOP","Alembic SOP",
+"Align SOP","Arm SOP","Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP","Polyreduce SOP","Polyspline SOP",
+"Polystitch SOP","Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Circle SOP creates open or closed arcs, circles and ellipses." name="description"/>
+<meta content="TouchDesigner, Circle, SOP" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="Circle SOP - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Circle_SOP" property="og:url"/>
+<meta content="The Circle SOP creates open or closed arcs, circles and ellipses." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Circle, SOP" property="article:tag"/>
+<meta content="2024-05-28T17:16:12Z" property="article:modified_time"/>
+<meta content="2024-05-28T17:16:12Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Circle SOP - TouchDesigner Documentation","headline":"Circle SOP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Circle SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Circle_SOP","url":"https:\/\/docs.derivative.ca\/Circle_SOP","description":"The Circle SOP creates open or closed arcs, circles and ellipses.","keywords":"TouchDesigner, Circle, SOP","dateModified":"2024-05-28T17:16:12Z","datePublished":"2024-05-28T17:16:12Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Circle_SOP rootpage-Circle_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Circle SOP</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Circle <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> creates open or closed arcs, circles and ellipses.	
+</p><p>If two NURBS circles that are non-rational (i.e. their X and Y radii are unequal) are skinned, more isoparms may be generated than expected. This is because non-rational NURBS circles parameterise their knots based on chord length, and the Skin <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> must consolidate the total number of knots between the two circles before skinning.		
+</p><p>To remedy this, you may want to use a Refine <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, and unrefine the resulting skin, or better yet - before unrefining, start with the same circle and use a <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> or Transform <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to deform the second copy before skinning.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/CircleSOP_Class" title="CircleSOP Class">circleSOP_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters -  Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">3</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">4</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">4.1</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">4.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Page"><div class="sectionBarSOP">Parameters -  Page</div></span></h2>
+<div id="type" style=""><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> Type</span>  <code>type</code> - <span class="mw-customtoggle-type">⊞</span> - For information on the different types, see the <a href="Primitive.html" title="Primitive">Primitive</a> and <a href="Spline.html" title="Spline">Spline</a> articles. Depending on the primitive type chosen, some <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> options may not apply. Using the '<span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span>' primitive type is not recommended when using instancing.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-type">
+<ul><li><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span></span> <code>prim</code> -</li></ul><ul><li><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span></span> <code>poly</code> -</li></ul><ul><li><span class="parNameSOP">NURBS Curve</span> <code>nurbs</code> -</li></ul><ul><li><span class="parNameSOP">Bezier Curve</span> <code>bezier</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="orient" style=""><span class="parNameSOP">Orientation</span>  <code>orient</code> - <span class="mw-customtoggle-orient">⊞</span> - The plane on which the circle lies.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-orient">
+<ul><li><span class="parNameSOP">XY Plane</span> <code>xy</code> -</li></ul><ul><li><span class="parNameSOP">YZ Plane</span> <code>yz</code> -</li></ul><ul><li><span class="parNameSOP">ZX Plane</span> <code>zx</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="modifybounds" style=""><span class="parNameSOP">Modify Bounds</span>  <code>modifybounds</code> - Available only when an input is connected to the Curcle <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to set bounds for the sphere. When Modify Bounds = On the transform parameters below will further modify the radius and position of the bounds.
+<p><i></i>
+</p>
+</div>		
+<div id="rad" style=""><span class="parNameSOP">Radius</span>  <code>rad</code> - <span class="mw-customtoggle-rad">⊞</span> - The Radius of the Circle in the X and Y directions.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rad">
+<ul><li><span class="parNameSOP">X</span> <code>radx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>rady</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="t" style=""><span class="parNameSOP">Center</span>  <code>t</code> - <span class="mw-customtoggle-t">⊞</span> - The Center of the Circle in X, Y and Z.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-t">
+<ul><li><span class="parNameSOP">X</span> <code>tx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>ty</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>tz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>	
+<div id="reverseanchors" style=""><span class="parNameSOP">Reverse Anchors</span>  <code>reverseanchors</code> - Invert the direction of anchors.
+<p><i></i>
+</p>
+</div>		    
+<div id="anchoru" style=""><span class="parNameSOP">Anchor U</span>  <code>anchoru</code> - Set the point in X about which the geometry is positioned, scaled and rotated.
+<p><i></i>
+</p>
+</div>
+<div id="anchorv" style=""><span class="parNameSOP">Anchor V</span>  <code>anchorv</code> - Set the point in Y about which the geometry is positioned, scaled and rotated.
+<p><i></i>
+</p>
+</div>
+<div id="order" style=""><span class="parNameSOP">Order</span>  <code>order</code> - If a spline curve is selected, it is built at this order.
+<p><i></i>
+</p>
+</div>		
+<div id="divs" style=""><span class="parNameSOP">Divisions</span>  <code>divs</code> - The number of edges (points +1) used to describe the circle. This option applies to polygons and imperfect splines. The more <span class="tipTextSOP">Divisions</span> a circle has, the smoother it looks. Using three divisions makes a triangle, four divisions a diamond, five divisions a pentagon, and so on. Also, for open arc types, the number of points will equal <span class="tipTextSOP">Divisions</span> + 1, and for closed arc types, <span class="tipTextSOP">Divisions</span> + 2.
+<p><i></i>
+</p>
+</div>		
+<div id="arc" style=""><span class="parNameSOP">Arc Type</span>  <code>arc</code> - <span class="mw-customtoggle-arc">⊞</span> - Determines how the circle should be drawn. Applies to polygons and imperfect splines only.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-arc">
+<ul><li><span class="parNameSOP">Closed</span> <code>closed</code> - An enclosed curve.</li></ul><ul><li><span class="parNameSOP">Open Arc</span> <code>openarc</code> - An open curve segment.</li></ul><ul><li><span class="parNameSOP">Closed Arc</span> <code>closedarc</code> - An <span class="tipTextSOP">Open Arc</span> with connecting edges to the centre resembling a slice of pie.</li></ul><ul><li><span class="parNameSOP">Sliced Arc</span> <code>slicedarc</code> - Same as <span class="tipTextSOP">Closed Arc</span>, but connects every single point to the center of the circle.Same as <span class="tipTextSOP">Closed Arc</span>, but connects every single point to the center of the circle.</li></ul><p>Arc options are available for polygonal circles and some spline types. The difference between the choices: <span class="tipTextSOP">Open</span>, <span class="tipTextSOP">Closed</span>, and <span class="tipTextSOP">Slice</span> are illustrated below for the polygonal case:		
+</p>
+<div><center><a class="image" href="https://docs.derivative.ca/File:TouchGeometry220.gif"><img alt="TouchGeometry220.gif" decoding="async" height="72" src="https://docs.derivative.ca/images/9/93/TouchGeometry220.gif" width="600"/></a></center></div>
+</div>
+<p><i></i>
+</p>
+</div>		
+<div id="angle" style=""><span class="parNameSOP">Arc Angles</span>  <code>angle</code> - <span class="mw-customtoggle-angle">⊞</span> - The beginning and ending angles of the arc. An arc will start at the beginning angle, and proceed towards the ending angle. If beginning=0 and end=360 it will be a full circle. As a reference:	
+<div><center><a class="image" href="https://docs.derivative.ca/File:TouchGeometry222.gif"><img alt="TouchGeometry222.gif" decoding="async" height="71" src="https://docs.derivative.ca/images/d/db/TouchGeometry222.gif" width="600"/></a></center></div>		
+<p><b>Note:</b> The total angle can exceed 360, making multiple wraps of the circle.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-angle">
+<ul><li><code>beginangle</code> -</li></ul><ul><li><code>endangle</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="imperfect" style=""><span class="parNameSOP">Imperfect</span>  <code>imperfect</code> - This option applies only to Bezier and NURBS circles. If selected, the circles are approximated non-rational curves, otherwise they are perfect rational closed curves.
+<p><i></i>
+</p>
+</div>		
+<div id="texture" style=""><span class="parNameSOP">Texture Coordinates</span>  <code>texture</code> - <span class="mw-customtoggle-texture">⊞</span> - Option to include texture cooordinates or not.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-texture">
+<ul><li><span class="parNameSOP">Off</span> <code>off</code> - No texture coordinates are created.</li></ul><ul><li><span class="parNameSOP">Face</span> <code>face</code> - Default texture coordinates are created. To modify texture coordinates, see <a href="Texture_SOP.html" title="Texture SOP">Texture SOP</a>.</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="normals" style=""><span class="parNameSOP">Compute Normals</span>  <code>normals</code> - When On, normals are created for the surface.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarSOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameSOP">Input 0: </span> -</li></ul><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Circle <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Circle_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Circle_SOP?oldid=31224">wikieditor</option><option value="https://docs.derivative.ca/Circle_SOP?oldid=29697">2022.24140</option><option value="https://docs.derivative.ca/Circle_SOP?oldid=14687">2021.10000</option><option value="https://docs.derivative.ca/Circle_SOP?oldid=24178">2018.28070</option><option value="https://docs.derivative.ca/Circle_SOP?oldid=14622">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a href="Carve_SOP.html" title="Carve SOP">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Circle  </a></span>• <span class="catList navigation-not-searchable"><a href="Clay_SOP.html" title="Clay SOP">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_SOP.html" title="Import Select SOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a href="LSystem_SOP.html" title="LSystem SOP">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Primitive_SOP.html" title="Primitive SOP">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="07ee3427562e4f1a5c9f2bfb17fd9eee"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A surface type in <a href="SOP.html" title="SOP">SOPs</a> that includes polygon, curve (NURBS and Bezier), patch (NURBS and Bezier) and other basic shapes like sphere, tube and metaball. <a href="Point.html" title="Point">Points</a> and Primitives are part of the <a href="Geometry_Detail.html" title="Geometry Detail">Geometry Detail</a>, which is a part of a <a href="SOP.html" title="SOP">SOP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="4c0a11247d92f73fb84baa51e37a3263"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A polygon is a type of <a href="Primitive.html" title="Primitive">Primitive</a> that is formed from a set of <a href="Vertex.html" title="Vertex">Vertices</a> in 3D that are implicitly connected together to form a multi-edge shape.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304172450
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.616 seconds
+Real time usage: 1.694 seconds
+Preprocessor visited node count: 4076/1000000
+Post‐expand include size: 63021/2097152 bytes
+Template argument size: 22457/2097152 bytes
+Highest expansion depth: 10/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 579/5000000 bytes
+Lua time usage: 1.170/10 seconds
+Lua virtual size: 9142272/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1634.781      1 -total
+ 97.70% 1597.145      1 Template:SOPNavBox
+ 96.28% 1573.932    114 Template:CatList
+  1.01%   16.541      1 Template:ParameterPage
+  0.85%   13.962     15 Template:Parameter
+  0.58%    9.481      1 Template:InfoCHOPChannels
+  0.41%    6.657      1 Template:Summary
+  0.30%    4.942      1 SOP_Info_Channels_Common_Page
+  0.26%    4.215     20 Template:ParameterItem
+  0.19%    3.044      1 OP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:307-0!canonical and timestamp 20250304172449 and revision id 31224.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Circle_SOP&amp;oldid=31224">https://docs.derivative.ca/index.php?title=Circle_SOP&amp;oldid=31224</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.616","walltime":"1.694","ppvisitednodes":{"value":4076,"limit":1000000},"postexpandincludesize":{"value":63021,"limit":2097152},"templateargumentsize":{"value":22457,"limit":2097152},"expansiondepth":{"value":10,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":579,"limit":5000000},"timingprofile":["100.00% 1634.781      1 -total"," 97.70% 1597.145      1 Template:SOPNavBox"," 96.28% 1573.932    114 Template:CatList","  1.01%   16.541      1 Template:ParameterPage","  0.85%   13.962     15 Template:Parameter","  0.58%    9.481      1 Template:InfoCHOPChannels","  0.41%    6.657      1 Template:Summary","  0.30%    4.942      1 SOP_Info_Channels_Common_Page","  0.26%    4.215     20 Template:ParameterItem","  0.19%    3.044      1 OP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"1.170","limit":"10"},"limitreport-virtmemusage":{"value":9142272,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304172450","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1886});});</script>
+
+
+
+
+</body><!-- Cached 20250304172450 --><!-- Mirrored from docs.derivative.ca/Circle_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:12 GMT --></html>

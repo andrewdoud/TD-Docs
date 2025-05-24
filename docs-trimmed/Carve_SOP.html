@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Carve_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:12 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"329679a1756ff60eeb46061f","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Carve_SOP","wgTitle":"Carve SOP","wgCurRevisionId":24176,"wgRevisionId":24176,"wgArticleId":305,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Carve_SOP","wgRelevantArticleId":305,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":
+["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Add SOP","Alembic SOP","Align SOP","Arm SOP",
+"Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP","Polyreduce SOP","Polyspline SOP","Polystitch SOP",
+"Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Carve SOP works with any face or surface type, be that polygon, Bzier, or NURBS." name="description"/>
+<meta content="TouchDesigner, Carve, SOP" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Carve_SOP" property="og:url"/>
+<meta content="The Carve SOP works with any face or surface type, be that polygon, Bzier, or NURBS." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Carve, SOP" property="article:tag"/>
+<meta content="2021-11-16T21:13:44Z" property="article:modified_time"/>
+<meta content="2021-11-16T21:13:44Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"TouchDesigner Documentation","headline":"TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Carve SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Carve_SOP","url":"https:\/\/docs.derivative.ca\/Carve_SOP","description":"The Carve SOP works with any face or surface type, be that polygon, Bzier, or NURBS.","keywords":"TouchDesigner, Carve, SOP","dateModified":"2021-11-16T21:13:44Z","datePublished":"2021-11-16T21:13:44Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Carve_SOP rootpage-Carve_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Carve SOP</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Carve <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> works with any face or surface type, be that polygon, Bzier, or NURBS. It can be used to slice a primitive, cut it into multiple sections, or extract points or cross-sections from it.		
+</p><p>Like the Project <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, it also creates profile curves, but they are extracted as iso-parametric (2D) profiles directly from a surface, whereas the Project <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> extracts a 3D curve projected onto a surface.			
+</p><p>Note: When using a Carve <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> on a trimmed surface, you can't fillet or join the trim curves.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/CarveSOP_Class" title="CarveSOP Class">carveSOP_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Carve_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Carve Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Method_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Method Page</span></a></li>
+<li class="toclevel-1"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a>
+<ul><li class="toclevel-2"><a href="#Opening_a_Closed_Primitive"><span class="tocnumber">4.1</span> <span class="toctext">Opening a Closed Primitive</span></a></li>
+<li class="toclevel-2"><a href="#Dicing_a_Face_or_Surface"><span class="tocnumber">4.2</span> <span class="toctext">Dicing a Face or Surface</span></a></li>
+<li class="toclevel-2"><a href="#Cutting_a_Hole_in_a_Surface"><span class="tocnumber">4.3</span> <span class="toctext">Cutting a Hole in a Surface</span></a></li>
+<li class="toclevel-2"><a href="#Animating_a_Point_Over_a_Face_or_Surface"><span class="tocnumber">4.4</span> <span class="toctext">Animating a Point Over a Face or Surface</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">5</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">6</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">6.1</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">6.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Carve_Page"><div class="sectionBarSOP">Parameters - Carve Page</div></span></h2>
+<div id="group" style=""><span class="parNameSOP">Group</span>  <code>group</code> - If there are input groups, specifying a group name in this field will cause this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to act only upon the Group specified. Accepts patterns, as described in the Scripting Guide under <span class="mw-lingo-term" data-lingo-term-id="3a7f8b62ad3b33224b536b97a7a305b2">Pattern Matching</span>.
+<p><i></i>
+</p>
+</div>
+<div id="firstu" style=""><span class="parNameSOP">First U</span>  <code>firstu</code> - Enables the parameter to set the first position in U.
+<p><i></i>
+</p>
+</div>
+<div id="domainu1" style=""><span class="parNameSOP">First U</span>  <code>domainu1</code> - This specifies a starting location to begin the cut/extract. Select this and a parametric U location between 0 and 1.
+<p><i></i>
+</p>
+</div>
+<div id="secondu" style=""><span class="parNameSOP">Second U</span>  <code>secondu</code> - Enables the parameter to set the second position in U.
+<p><i></i>
+</p>
+</div>
+<div id="domainu2" style=""><span class="parNameSOP">Second U</span>  <code>domainu2</code> - This specifies an ending location to complete the cut / extract. Select this and a parametric U location between 0 and 1.
+<p><i></i>
+</p>
+</div>
+<div id="firstv" style=""><span class="parNameSOP">First V</span>  <code>firstv</code> - Enables the parameter to set the first position in V.
+<p><i></i>
+</p>
+</div>
+<div id="domainv1" style=""><span class="parNameSOP">First V</span>  <code>domainv1</code> - This specifies a starting location to begin the cut/extract. Select this and a parametric V location between 0 and 1. Applies only to surfaces.
+<p><i></i>
+</p>
+</div>
+<div id="secondv" style=""><span class="parNameSOP">Second V</span>  <code>secondv</code> - Enables the parameter to set the second position in V.
+<p><i></i>
+</p>
+</div>
+<div id="domainv2" style=""><span class="parNameSOP">Second V</span>  <code>domainv2</code> - This specifies an ending location to complete the cut / extract. Select this and a parametric V location between 0 and 1. Applies only to surfaces.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Method_Page"><div class="sectionBarSOP">Parameters - Method Page</div></span></h2>
+<div id="method" style=""><span class="parNameSOP">Carve Method</span>  <code>method</code> - <span class="mw-customtoggle-method">⊞</span> - Select between Cut and Extract methods.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-method">
+<ul><li><span class="parNameSOP">Cut</span> <code>cut</code> - Cut will slice (or 'cut-out') the original geometry within the area specified on the Carve Page.</li></ul><ul><li><span class="parNameSOP">Extract</span> <code>extract</code> - Extract will create 3D curves, points, or 2D profiles within the area specified on the Carve page. The Extract Type parameter is used to determine what is extracted.</li></ul></div>
+<p><i></i>
+</p>
+</div>	 
+<div id="keepin" style=""><span class="parNameSOP">Keep Inside</span>  <code>keepin</code> - Keep the primitives specified between the first and second locations.
+<p><i></i>
+</p>
+</div>		
+<div id="keepout" style=""><span class="parNameSOP">Keep Outside</span>  <code>keepout</code> - Keep the primitives lying outside the first and second locations.
+<p><i></i>
+</p>
+</div>
+<div id="extractop" style=""><span class="parNameSOP">Extract Type</span>  <code>extractop</code> - <span class="mw-customtoggle-extractop">⊞</span> - If enabled, it will extract a cross-section along each location specified above.	
+<p>Note: if a face is used, only points can be extracted and the V parameters have no effect.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-extractop">
+<ul><li><span class="parNameSOP">Extract 3D Isoparametric Curve(s)</span> <code>xisoparm</code> - The extraction operation creates a 3-D, free-floating curve that matches the surface perfectly at the given U or V location.</li></ul><ul><li><span class="parNameSOP">Extract <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span>(s)</span> <code>xpoint</code> - Available for Mesh and surfaces only. If selected, it will create a point at every U, V location specified, rather than removing a U cross section and a V cross section.</li></ul><ul><li><span class="parNameSOP">Extract 2D Isoparametric Profile(s)</span> <code>xprofile</code> - Creates a 2D curve at the specified U/V location that matches the surface perfectly.</li></ul></div>
+<p><i></i>
+</p>
+</div>	
+<div id="keeporiginal" style=""><span class="parNameSOP">Keep Original</span>  <code>keeporiginal</code> - If selected, it will not remove the original primitive.
+<p><i></i>
+</p>
+</div>	 
+<div id="location" style=""><span class="parNameSOP">Location</span>  <code>location</code> - <span class="mw-customtoggle-location">⊞</span> - Determines how the Cut/Extract is defined at the boundaries. Additionally, extra subdivisions can be added in two ways using the parameters below.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-location">
+<ul><li><span class="parNameSOP">Divisions</span> <code>div</code> - The Cut/Extract occurs precisely at the locations defined on the Carve page. Additional divisions can be specified using the U/V Divisions parameters below and they are evenly distributed across the Cut/Extracted geoemtry.</li></ul><ul><li><span class="parNameSOP">Breakpoints</span> <code>break</code> - Performs cutting or extractions at breakpoints for curves and surfaces, at vertices for polygons, and along isoparms for meshes.</li></ul><p>By default this option will only cut the outer breakpoints within the specified interval. By selecting Breakpoints, the U and V Divisions parameters are replaced with Cut At All Internal U/V Breakpoints, which cut the primitives at all breakpoints falling within the specified interval when enabled.
+</p>
+</div>
+<p><i></i>
+</p>
+</div>	
+<div id="divsu" style=""><span class="parNameSOP">U Divisions</span>  <code>divsu</code> - This specifies the number of cuts / extracts to be performed between first U and the second U.
+<p><i></i>
+</p>
+</div>		
+<div id="divsv" style=""><span class="parNameSOP">V Divisions</span>  <code>divsv</code> - Specifies the number of cuts/extracts to be performed between first V and second V.
+<p><i></i>
+</p>
+</div>		
+<div id="allubreakpoints" style=""><span class="parNameSOP">Cut at All Internal U Breakpoints</span>  <code>allubreakpoints</code> - When using Location = Breakpoints, the resulting primitive is divided at all U breakpoints into separate primitives.
+<p><i></i>
+</p>
+</div>		
+<div id="allvbreakpoints" style=""><span class="parNameSOP">Cut at All Internal V Breakpoints</span>  <code>allvbreakpoints</code> - When using Location = Breakpoints, the resulting primitive is divided at all V breakpoints into separate primitives.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Example"><div class="sectionBarSOP">Example</div></span></h2>
+<h3><span class="mw-headline" id="Opening_a_Closed_Primitive"><div class="customBar">Opening a Closed <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span></div></span></h3>
+<p>Given a closed surface, it can be converted to an identical open surface at any location by using the Carve <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, and cutting at a single location (e.g. First U enabled, Second U disabled). The same is true for faces.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Dicing_a_Face_or_Surface"><div class="customBar">Dicing a Face or Surface</div></span></h3>
+<p>Select the Cut operation, First U = <code>0</code>, Second U = <code>1</code>, First V = <code>0</code>, Second V = <code>1</code>, with (at least) three Divisions for U and V. This will dice the surface into (at least) 3 components. This can later be used with the <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to "explode" the surface.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Cutting_a_Hole_in_a_Surface"><div class="customBar">Cutting a Hole in a Surface</div></span></h3>
+<p>Select the Cut operation, First U = <code>0.33</code>, Second U = <code>0.66</code>, First V = <code>0.33</code>, Second V = <code>0.66</code>, <code>2</code> Divisions for U and V. Keep Inside is off, Keep Outside is on. This will cut a rectangular region from the centre of the surface.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Animating_a_Point_Over_a_Face_or_Surface"><div class="customBar">Animating a <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Over a Face or Surface</div></span></h3>
+<p>Select the Extract option, First U = <code>x</code>, Last U disabled, First V = <code>y</code>, Last V disabled, Extract <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> is on, Keep Primitives is optional. This will create a point over any position on the surface (0&lt;=x&lt;=1, 0&lt;=y&lt;=1).
+</p><p><br/></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarSOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameSOP">Input 0: </span> -</li></ul><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Carve <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Carve_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Carve_SOP?oldid=24176">2022.24140</option><option value="https://docs.derivative.ca/Carve_SOP?oldid=14456">2021.10000</option><option value="https://docs.derivative.ca/Carve_SOP?oldid=23143">2018.28070</option><option value="https://docs.derivative.ca/Carve_SOP?oldid=13740">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Circle_SOP.html" title="Circle SOP">Circle  </a></span>• <span class="catList navigation-not-searchable"><a href="Clay_SOP.html" title="Clay SOP">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_SOP.html" title="Import Select SOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a href="LSystem_SOP.html" title="LSystem SOP">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Primitive_SOP.html" title="Primitive SOP">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3a7f8b62ad3b33224b536b97a7a305b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Matching names using wildcard characters and bracketing. Useful in "<a href="Select_CHOP.html" title="Select CHOP">Select</a>" type parameters to select multiple operators, paths, channels, etc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="07ee3427562e4f1a5c9f2bfb17fd9eee"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A surface type in <a href="SOP.html" title="SOP">SOPs</a> that includes polygon, curve (NURBS and Bezier), patch (NURBS and Bezier) and other basic shapes like sphere, tube and metaball. <a href="Point.html" title="Point">Points</a> and Primitives are part of the <a href="Geometry_Detail.html" title="Geometry Detail">Geometry Detail</a>, which is a part of a <a href="SOP.html" title="SOP">SOP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250305083848
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.840 seconds
+Real time usage: 2.088 seconds
+Preprocessor visited node count: 4062/1000000
+Post‐expand include size: 64507/2097152 bytes
+Template argument size: 25584/2097152 bytes
+Highest expansion depth: 10/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 488/5000000 bytes
+Lua time usage: 1.450/10 seconds
+Lua virtual size: 9256960/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2026.026      1 -total
+ 96.49% 1954.941      1 Template:SOPNavBox
+ 94.87% 1922.007    114 Template:CatList
+  1.24%   25.208      2 Template:ParameterPage
+  1.01%   20.525      1 Template:InfoCHOPChannels
+  0.94%   18.969     19 Template:Parameter
+  0.51%   10.323      1 OP_Info_Channels_Common_Page
+  0.47%    9.452      1 Template:Summary
+  0.37%    7.583      1 Template:OPSection
+  0.28%    5.737      1 SOP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:305-0!canonical and timestamp 20250305083846 and revision id 24176.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Carve_SOP&amp;oldid=24176">https://docs.derivative.ca/index.php?title=Carve_SOP&amp;oldid=24176</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.840","walltime":"2.088","ppvisitednodes":{"value":4062,"limit":1000000},"postexpandincludesize":{"value":64507,"limit":2097152},"templateargumentsize":{"value":25584,"limit":2097152},"expansiondepth":{"value":10,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":488,"limit":5000000},"timingprofile":["100.00% 2026.026      1 -total"," 96.49% 1954.941      1 Template:SOPNavBox"," 94.87% 1922.007    114 Template:CatList","  1.24%   25.208      2 Template:ParameterPage","  1.01%   20.525      1 Template:InfoCHOPChannels","  0.94%   18.969     19 Template:Parameter","  0.51%   10.323      1 OP_Info_Channels_Common_Page","  0.47%    9.452      1 Template:Summary","  0.37%    7.583      1 Template:OPSection","  0.28%    5.737      1 SOP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"1.450","limit":"10"},"limitreport-virtmemusage":{"value":9256960,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250305083848","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":2330});});</script>
+
+
+
+
+</body><!-- Cached 20250305083848 --><!-- Mirrored from docs.derivative.ca/Carve_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:12 GMT --></html>

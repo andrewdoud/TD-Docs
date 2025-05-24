@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Line_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:45 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>Line MAT - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"56cd80926569dd071277bbcf","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Line_MAT","wgTitle":"Line MAT","wgCurRevisionId":31728,"wgRevisionId":31728,"wgArticleId":2291,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["MATs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Line_MAT","wgRelevantArticleId":2291,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":[
+"January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Constant MAT","Depth MAT","GLSL MAT","In MAT",
+"Line MAT","MAT","Experimental:MAT","MAT Common Page","Null MAT","Out MAT","PBR MAT","Phong MAT","Point Sprite MAT","Experimental:Point Sprite MAT","Select MAT","Switch MAT","Texture Sampling Parameters","Wireframe MAT"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Line MAT renders 3D line segments, dots and vectors. The line width and color can be varied based on distance to the camera, using two models: a 1/z dropoff (z = distance from camera), or a near-far distance rolloff model, where you set the width and color at the near and far distances, and you vary three rolloff controls." name="description"/>
+<meta content="TouchDesigner, Line, MAT" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=MAT.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="Line MAT - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Line_MAT" property="og:url"/>
+<meta content="The Line MAT renders 3D line segments, dots and vectors. The line width and color can be varied based on distance to the camera, using two models: a 1/z dropoff (z = distance from camera), or a near-far distance rolloff model, where you set the width and color at the near and far distances, and you vary three rolloff controls." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Line, MAT" property="article:tag"/>
+<meta content="2024-08-27T20:57:15Z" property="article:modified_time"/>
+<meta content="2024-08-27T20:57:15Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Line MAT - TouchDesigner Documentation","headline":"Line MAT - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Line MAT<\/span>","identifier":"https:\/\/docs.derivative.ca\/Line_MAT","url":"https:\/\/docs.derivative.ca\/Line_MAT","description":"The Line MAT renders 3D line segments, dots and vectors. The line width and color can be varied based on distance to the camera, using two models: a 1\/z dropoff (z = distance from camera), or a near-far distance rolloff model, where you set the width and color at the near and far distances, and you vary three rolloff controls.","keywords":"TouchDesigner, Line, MAT","dateModified":"2024-08-27T20:57:15Z","datePublished":"2024-08-27T20:57:15Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Line_MAT rootpage-Line_MAT skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Line MAT</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarMAT">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Line <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> renders 3D line segments, dots and vectors. The line width and color can be varied based on distance to the camera, using two models: a 1/z dropoff (z = distance from camera), or a near-far distance rolloff model, where you set the width and color at the near and far distances, and you vary three rolloff controls.
+</p><p>For lines it renders different types of end caps and hinge/joints (round, box, arrow).
+The light model is flat-shaded (no affect from scene lighting). It draws edges (like polygon edges), points and vectors from points. There are different parameters to control the desired shape, as explained in the Parameter sections.
+It renders several primitive types: polygons, meshes, NURBS, quads, etc. It also manages closed polygons / open polygons.
+</p><p>You can render a dot at each point. You can render a vector at each point which uses any attribute, like Normal (N). The points or vectors can have their own colors and alpha.
+</p><p>Line Width is a resolution-independent quantity. A line width of 1 will draw a line that is 1/1000 the width of the image. This is true when used with orthographic cameras and perspective cameras. 
+</p><p>To make the width of a line and its points vary per-point of a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, the width can be set by adding a point attribute <code>width</code> on the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> being rendered. A value of 2 scales the width at that point by 2 times its normal width. New point attributes can be created with the <a href="Point_SOP.html" title="Point SOP">Point SOP</a> Custom page. To affect per-point width and not affect the line width, use the point attribute <code>pscale</code>.
+</p><p>When you are animating Ortho Width or Field of View, you may want line widths to adjust more realistically. When the parameter "Width Affected by FOV/Ortho Width" is on, the behavior is different: For Ortho cameras, the drawn line width increases when Ortho Width drops below 1, (as if you are zooming into it), and decreases when Ortho Width increases above 1. For Perspective cameras, the drawn line width increases when Field of View drops below 90 degrees, and decreases when Field of View increases above 90 degrees. Note that when the parameter "Width Affected by FOV/Ortho Width" is on, lines are still resolution-independent.
+</p><p>Intro article here from Interactive Immersive HQ: <a class="external text" href="https://interactiveimmersive.io/blog/3d/new-superpowers-touchdesigners-line-mat/" rel="nofollow">new-superpowers-touchdesigners-line-mat/</a>
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/LineMAT_Class" title="LineMAT Class">lineMAT_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Setup_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Setup Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Line_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Line Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Point_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Point Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Vector_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Vector Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Caps_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Caps Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Attributes_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Attributes Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Deform_Page"><span class="tocnumber">8</span> <span class="toctext">Parameters - Deform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">9</span> <span class="toctext">Parameters - Common Page</span></a>
+<ul><li class="toclevel-2"><a href="#Blending"><span class="tocnumber">9.1</span> <span class="toctext">Blending</span></a></li>
+<li class="toclevel-2"><a href="#Depth_Test"><span class="tocnumber">9.2</span> <span class="toctext">Depth Test</span></a></li>
+<li class="toclevel-2"><a href="#Alpha_Test"><span class="tocnumber">9.3</span> <span class="toctext">Alpha Test</span></a></li>
+<li class="toclevel-2"><a href="#Wire_Frame"><span class="tocnumber">9.4</span> <span class="toctext">Wire Frame</span></a></li>
+<li class="toclevel-2"><a href="#Cull_Face"><span class="tocnumber">9.5</span> <span class="toctext">Cull Face</span></a></li>
+<li class="toclevel-2"><a href="#Polygon_Depth_Offset"><span class="tocnumber">9.6</span> <span class="toctext">Polygon Depth Offset</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">10</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_MAT_Info_Channels"><span class="tocnumber">10.1</span> <span class="toctext">Common MAT Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">10.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Setup_Page"><div class="sectionBarMAT">Parameters - Setup Page</div></span></h2>
+<p>This is a general setup page for globally control the shared features of Lines, Points, and Vectors. Every change in this page will affect all the three mentioned types.
+</p>
+<div id="depthinterpolationmodel" style=""><span class="parNameMAT">Depth Interpolation Model</span>  <code>depthinterpolationmodel</code> - <span class="mw-customtoggle-depthinterpolationmodel">⊞</span> - Depth Interpolation Model depthmodel – a menu to select how the width of line items changes by their distance from the camera.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-depthinterpolationmodel">
+<ul><li><span class="parNameMAT">S Curve</span> <code>scurve</code> - a bounded range for the width between the near and far planes (Distance Near and Far) that uses S Curve for a more dramatic and yet smooth (referring to the continuity of the curve) changes. The curve shape can be controlled by Bias, Steepness, and Linearize parameters.</li></ul><ul><li><span class="parNameMAT">Inverse Distance</span> <code>inversedistance</code> - uses the inverse distance weighting which provides a more visually accurate changes on the final width.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="inversedistanceexponent" style=""><span class="parNameMAT">Inverse Distance Exponent</span>  <code>inversedistanceexponent</code> - When the Depth Interpolation Model is Inverse Distance, this determines how fast the widths/sizes decrease with distance. If it is set to 1 (default), the width goes down at the rate of 1/r. If it set to 2, it goes down by 1/(r*r), meaning that for lines/dots at a distance r that have a width of w, that line/dot at a distance twice as far away (2r) are 1/4 the width/size as they are at distance r.
+<p><i></i>
+</p>
+</div>
+<div id="distancenear" style=""><span class="parNameMAT">Distance Near</span>  <code>distancenear</code> - Specifies a near plane with a certain distance from the camera.
+<p><i></i>
+</p>
+</div>
+<div id="distancefar" style=""><span class="parNameMAT">Distance Far</span>  <code>distancefar</code> - Specifies a far plane with a certain distance from the camera.
+<p><i></i>
+</p>
+</div>
+<div id="widthnear" style=""><span class="parNameMAT">Width Near</span>  <code>widthnear</code> - Specifies a fixed width value when the distance from camera is less than or equal to Distance Near. See the Summary of this operator for an explantion of the treatment of line width.
+<p><i></i>
+</p>
+</div>
+<div id="widthfar" style=""><span class="parNameMAT">Width Far</span>  <code>widthfar</code> - Specifies a fixed width value when the distance from the camera is equal or bigger than the Distance Far. Note when the Near-Far Range option is selected as the Depth Model, any point in between Distance Near and Distance Far will be calculated based on sine curve.
+<p><i></i>
+</p>
+</div>
+<div id="widthaffectedbyfov" style=""><span class="parNameMAT">Width Affected by FOV/OrthoWidth</span>  <code>widthaffectedbyfov</code> - With this off (default), looking at a rendered image of a certain resolution, a line of with w will always be the same # of pixels wide as you change the field-of-view or ortho width. With this parameter on, a line of width w will be half the number of pixels wide if you double the field-of-view or double the ortho width. Relevant if you are animating camera zoom, for instance.
+<p><i></i>
+</p>
+</div>
+<div id="widthbias" style=""><span class="parNameMAT">Width Bias</span>  <code>widthbias</code> - Moves the S Curve’s bias backward or forward for width interpolation (only S Curve depth model).
+<p><i></i>
+</p>
+</div>
+<div id="widthsteepness" style=""><span class="parNameMAT">Width Steepness</span>  <code>widthsteepness</code> - Controls the steepness of the S Curve for width interpolation (only S Curve depth model). The higher the value of the steepness, you will notice more dramatic changes (higher slope) in the curve width. Also, with lower values of steepness, the curve transforms into a more linear form.
+<p><i></i>
+</p>
+</div>
+<div id="widthlinearize" style=""><span class="parNameMAT">Width Linearize</span>  <code>widthlinearize</code> - Control the amount of curvature in the curve for width interpolation (only S Curve depth model).
+<p><i></i>
+</p>
+</div>
+<div id="colorbias" style=""><span class="parNameMAT">Color Bias</span>  <code>colorbias</code> - Moves the S Curve’s bias backward or forward for color interpolation.
+<p><i></i>
+</p>
+</div>
+<div id="colorsteepness" style=""><span class="parNameMAT">Color Steepness</span>  <code>colorsteepness</code> - Controls the steepness of the S Curve for color interpolation.
+<p><i></i>
+</p>
+</div>
+<div id="colorlinearize" style=""><span class="parNameMAT">Color Linearize</span>  <code>colorlinearize</code> - Control the amount of curvature in the curve for color interpolation.
+<p><i></i>
+</p>
+</div>
+<div id="liftdirection" style=""><span class="parNameMAT">Lift Direction</span>  <code>liftdirection</code> - <span class="mw-customtoggle-liftdirection">⊞</span> - If a line is being drawn on a polygon or its edge (the polygon being in another Geometry <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> + shader), and you need to lift it off the surface to be fully visible, this specifies whether to displace the line points toward the camera or along the line's normal (which can be the direction of the polygon's normal).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-liftdirection">
+<ul><li><span class="parNameMAT">Along Camera Z Axis</span> <code>alongcamerazaxis</code> - displace the points along Camera Z axis.</li></ul><ul><li><span class="parNameMAT">Along Normal</span> <code>alongnormal</code> - displace the points along point's Normal vector.</li></ul><ul><li><span class="parNameMAT">Toward Camera</span> <code>towardcamera</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="liftscale" style=""><span class="parNameMAT">Lift Scale</span>  <code>liftscale</code> - For lines that are drawn on top of filled polygons or along their edges, they may be cut off because they are rendered in the same place. To make it look good, you want to lift the line toward the camera or along its normal away from the surface. This parameter scales how far you lift the line off the surface to make it look good without separating them too far.
+<p><i></i>
+</p>
+</div>
+<div id="numptsincircle" style=""><span class="parNameMAT">Num Points in Circle</span>  <code>numptsincircle</code> - When drawing Points in Circle (<span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span>) mode, or drawing end-caps, or elbows between edges, this determines how many points you would draw in a full-circle arc to simulate a circular shape. The lower the number, the faster it renders.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Line_Page"><div class="sectionBarMAT">Parameters - Line Page</div></span></h2>
+<div id="drawlines" style=""><span class="parNameMAT">Draw Lines</span>  <code>drawlines</code> - A toggle to draw the Line polygons.
+<p><i></i>
+</p>
+</div>
+<div id="linejointtype" style=""><span class="parNameMAT">Line Joint Type</span>  <code>linejointtype</code> - <span class="mw-customtoggle-linejointtype">⊞</span> - A menu to select the joint type where two lines segments meet.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-linejointtype">
+<ul><li><span class="parNameMAT">Round</span> <code>round</code> - a round joint.</li></ul><ul><li><span class="parNameMAT">Miter</span> <code>miter</code> - a sharp miter joint.</li></ul><ul><li><span class="parNameMAT">Bevel</span> <code>bevel</code> - a square shaped joint.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="miterthreshold" style=""><span class="parNameMAT">Miter Threshold (deg)</span>  <code>miterthreshold</code> - Specifies a threshold value in degrees for the Miter joint which alters the joint shape to Bevel joint if the angle between each two lines segments is bigger than this value.
+<p><i></i>
+</p>
+</div>
+<div id="linestartcaptype" style=""><span class="parNameMAT">Line Start Cap Type</span>  <code>linestartcaptype</code> - <span class="mw-customtoggle-linestartcaptype">⊞</span> - A menu to Specify the end cap type at the Line start. You can control the size of each end cap type in the Cap page.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-linestartcaptype">
+<ul><li><span class="parNameMAT">Round</span> <code>round</code> -</li></ul><ul><li><span class="parNameMAT">Square</span> <code>square</code> - Square shaped end cap.</li></ul><ul><li><span class="parNameMAT">Triangle</span> <code>triangle</code> - Triangle shaped end cap.</li></ul><ul><li><span class="parNameMAT">Arrow</span> <code>arrow</code> - Arrow Shaped end cap.</li></ul><ul><li><span class="parNameMAT">None</span> <code>none</code> - No end cap (flat shaped).</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lineendcaptype" style=""><span class="parNameMAT">Line End Cap Type</span>  <code>lineendcaptype</code> - <span class="mw-customtoggle-lineendcaptype">⊞</span> - A menu to Specify the end cap type at the Line end.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-lineendcaptype">
+<ul><li><span class="parNameMAT">Round</span> <code>round</code> - Refer to Line Start Cap Type</li></ul><ul><li><span class="parNameMAT">Square</span> <code>square</code> - Refer to Line Start Cap Type</li></ul><ul><li><span class="parNameMAT">Triangle</span> <code>triangle</code> - Refer to Line Start Cap Type</li></ul><ul><li><span class="parNameMAT">Arrow</span> <code>arrow</code> - Refer to Line Start Cap Type</li></ul><ul><li><span class="parNameMAT">None</span> <code>none</code> - Refer to Line Start Cap Type</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lineendtaperstrength" style=""><span class="parNameMAT">Line End Taper Strength</span>  <code>lineendtaperstrength</code> -
+<p><i></i>
+</p>
+</div>
+<div id="linenearcolor" style=""><span class="parNameMAT">Line Near Color</span>  <code>linenearcolor</code> - <span class="mw-customtoggle-linenearcolor">⊞</span> - Specifies the color value for the Line at the Distance Near plane and any location closer to camera.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-linenearcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>linenearcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>linenearcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>linenearcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="linenearalpha" style=""><span class="parNameMAT">Line Near Alpha</span>  <code>linenearalpha</code> - Specifies the alpha value for the Line at the Distance Near plane and any location closer to camera.
+<p><i></i>
+</p>
+</div>
+<div id="specifylinefarcolor" style=""><span class="parNameMAT">Specify Line Far Color</span>  <code>specifylinefarcolor</code> - A toggle to use the far color and interpolate the values between near and far color.
+<p><i></i>
+</p>
+</div>
+<div id="linefarcolor" style=""><span class="parNameMAT">Line Far Color</span>  <code>linefarcolor</code> - <span class="mw-customtoggle-linefarcolor">⊞</span> - Specifies the color value for the Line at the Distance Far plane and beyond (farther from camera).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-linefarcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>linefarcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>linefarcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>linefarcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="linefaralpha" style=""><span class="parNameMAT">Line Far Alpha</span>  <code>linefaralpha</code> - Specifies the alpha value for the Line at the Distance Far plane and beyond (farther from camera).
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Point_Page"><div class="sectionBarMAT">Parameters - <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Page</div></span></h2>
+<div id="drawpoints" style=""><span class="parNameMAT">Draw Points</span>  <code>drawpoints</code> - A toggle to draw the Points.
+<p><i></i>
+</p>
+</div>
+<div id="pointtype" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Type</span>  <code>pointtype</code> - <span class="mw-customtoggle-pointtype">⊞</span> - A menu to select the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> type.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointtype">
+<ul><li><span class="parNameMAT">Circle</span> <code>circle</code> - draws circle on each point of the geometry.</li></ul><ul><li><span class="parNameMAT">Sphere</span> <code>sphere</code> - draws sphere on each point of the geometry.</li></ul><ul><li><span class="parNameMAT">Circle (Sprite)</span> <code>circlesprite</code> -</li></ul><ul><li><span class="parNameMAT">Square</span> <code>square</code> -</li></ul><ul><li><span class="parNameMAT">Cone</span> <code>cone</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pointsizemultiplier" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Size Multiplier</span>  <code>pointsizemultiplier</code> - Specifies a scale coefficient to the size of the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span>. By default, the point radius size equals to the width at the point’s location from the camera.
+<p><i></i>
+</p>
+</div>
+<div id="pointnearcolor" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Near Color</span>  <code>pointnearcolor</code> - <span class="mw-customtoggle-pointnearcolor">⊞</span> - Specifies the color value for the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> at the Distance Near plane and any location closer to camera.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointnearcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>pointnearcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>pointnearcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>pointnearcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pointnearalpha" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Near Alpha</span>  <code>pointnearalpha</code> - Specifies the alpha value for the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> at the Distance Near plane and any location closer to camera.
+<p><i></i>
+</p>
+</div>
+<div id="specifypointfarcolor" style=""><span class="parNameMAT">Specify <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Far Color</span>  <code>specifypointfarcolor</code> - A toggle to use the far color and interpolate the values between near and far color.
+<p><i></i>
+</p>
+</div>
+<div id="pointfarcolor" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Far Color</span>  <code>pointfarcolor</code> - <span class="mw-customtoggle-pointfarcolor">⊞</span> - Specifies the color value for the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> at the Distance Far plane and beyond (farther from camera).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointfarcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>pointfarcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>pointfarcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>pointfarcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pointfaralpha" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Far Alpha</span>  <code>pointfaralpha</code> - Specifies the alpha value for the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> at the Distance Far plane and beyond (farther from camera).
+<p><i></i>
+</p>
+</div>
+<div id="pointliftdirection" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Lift Direction</span>  <code>pointliftdirection</code> - <span class="mw-customtoggle-pointliftdirection">⊞</span> - A menu to select the the dirction to lift points.  See parameter Lift Direction.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointliftdirection">
+<ul><li><span class="parNameMAT">Toward Camera</span> <code>towardcamera</code> -</li></ul><ul><li><span class="parNameMAT">Along Normal</span> <code>alongnormal</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pointliftscale" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Lift Scale</span>  <code>pointliftscale</code> - see parameter Lift Scale.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Vector_Page"><div class="sectionBarMAT">Parameters - Vector Page</div></span></h2>
+<div id="drawvectors" style=""><span class="parNameMAT">Draw Vectors</span>  <code>drawvectors</code> - A toggle to draw the Vectors at each point.
+<p><i></i>
+</p>
+</div>
+<div id="scale" style=""><span class="parNameMAT">Scale</span>  <code>scale</code> - A scale value which applies on the length of the Vector.
+<p><i></i>
+</p>
+</div>
+<div id="vectorstartcaptype" style=""><span class="parNameMAT">Vector Start Cap Type</span>  <code>vectorstartcaptype</code> - <span class="mw-customtoggle-vectorstartcaptype">⊞</span> - A menu to Specify the end cap type at the Vector start. You can control the size of each end cap type in the Cap page.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectorstartcaptype">
+<ul><li><span class="parNameMAT">Round</span> <code>round</code> -</li></ul><ul><li><span class="parNameMAT">Square</span> <code>square</code> -</li></ul><ul><li><span class="parNameMAT">Triangle</span> <code>triangle</code> -</li></ul><ul><li><span class="parNameMAT">Arrow</span> <code>arrow</code> -</li></ul><ul><li><span class="parNameMAT">None</span> <code>none</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectorendcaptype" style=""><span class="parNameMAT">Vector End Cap Type</span>  <code>vectorendcaptype</code> - <span class="mw-customtoggle-vectorendcaptype">⊞</span> - A menu to Specify the end cap type at the Vector end. You can control the size of each end cap type in the Cap page.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectorendcaptype">
+<ul><li><span class="parNameMAT">Round</span> <code>round</code> -</li></ul><ul><li><span class="parNameMAT">Square</span> <code>square</code> -</li></ul><ul><li><span class="parNameMAT">Triangle</span> <code>triangle</code> -</li></ul><ul><li><span class="parNameMAT">Arrow</span> <code>arrow</code> -</li></ul><ul><li><span class="parNameMAT">None</span> <code>none</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectortaperstrength" style=""><span class="parNameMAT">Vector Taper Strength</span>  <code>vectortaperstrength</code> - : A coefficient to scale the width of end part of the Vector.
+<p><i></i>
+</p>
+</div>
+<div id="vectornearcolor" style=""><span class="parNameMAT">Vector Near Color</span>  <code>vectornearcolor</code> - <span class="mw-customtoggle-vectornearcolor">⊞</span> - Specifies the color value for the Vector at the Distance Near plane and any location closer to camera.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectornearcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>vectornearcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>vectornearcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>vectornearcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectornearalpha" style=""><span class="parNameMAT">Vector Near Alpha</span>  <code>vectornearalpha</code> - Specifies the alpha value for the Vector at the Distance Near plane and any location closer to camera.
+<p><i></i>
+</p>
+</div>
+<div id="specifyvectorfarcolor" style=""><span class="parNameMAT">Specify Vector Far Color</span>  <code>specifyvectorfarcolor</code> - A toggle to use the far color and interpolate the values between near and far color.
+<p><i></i>
+</p>
+</div>
+<div id="vectorfarcolor" style=""><span class="parNameMAT">Vector Far Color</span>  <code>vectorfarcolor</code> - <span class="mw-customtoggle-vectorfarcolor">⊞</span> - Specifies the color value for the Vector at the Distance Far plane and beyond (farther from camera).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectorfarcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>vectorcolorfarr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>vectorcolorfarg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>vectorcolorfarb</code> -</li></ul><ul><li><span class="parNameMAT">Vector Far Color</span> <code>vectorfarcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Vector Far Color</span> <code>vectorfarcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Vector Far Color</span> <code>vectorfarcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectorfaralpha" style=""><span class="parNameMAT">Vector Far Alpha</span>  <code>vectorfaralpha</code> - Specifies the alpha value for the Vector at the Distance Far plane and beyond (farther from camera).
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Caps_Page"><div class="sectionBarMAT">Parameters - Caps Page</div></span></h2>
+<div id="roundwidth" style=""><span class="parNameMAT">Round Width</span>  <code>roundwidth</code> - Specifies a scale to the width of Round end caps.
+<p><i></i>
+</p>
+</div>
+<div id="roundheight" style=""><span class="parNameMAT">Round Height</span>  <code>roundheight</code> - Specifies a scale to the height of Round end caps.
+<p><i></i>
+</p>
+</div>
+<div id="squarewidth" style=""><span class="parNameMAT">Square Width</span>  <code>squarewidth</code> - Specifies a scale to the width of Square end caps.
+<p><i></i>
+</p>
+</div>
+<div id="squareheight" style=""><span class="parNameMAT">Square Height</span>  <code>squareheight</code> - Specifies a scale to the height of Square end caps.
+<p><i></i>
+</p>
+</div>
+<div id="trianglewidth" style=""><span class="parNameMAT">Triangle Width</span>  <code>trianglewidth</code> - Specifies a scale to the width of Triangle end caps.
+<p><i></i>
+</p>
+</div>
+<div id="triangleheight" style=""><span class="parNameMAT">Triangle Height</span>  <code>triangleheight</code> - Specifies a scale to the height of Triangle end caps.
+<p><i></i>
+</p>
+</div>
+<div id="arrowwidth" style=""><span class="parNameMAT">Arrow Width</span>  <code>arrowwidth</code> - Specifies a scale to the width of Arrow end caps.
+<p><i></i>
+</p>
+</div>
+<div id="arrowheight" style=""><span class="parNameMAT">Arrow Height</span>  <code>arrowheight</code> - Specifies a scale to the height (from the base of arrow to the head) of Arrow end caps.
+<p><i></i>
+</p>
+</div>
+<div id="arrowtaillength" style=""><span class="parNameMAT">Arrow Tail Length</span>  <code>arrowtaillength</code> - Specifies a scale to the tail length of Arrow end caps (the longer the tail the sharper it will look like).
+<p><i></i>
+</p>
+</div>
+<div id="endcapwidthmultiplier" style=""><span class="parNameMAT">End Cap Width Multiplier</span>  <code>endcapwidthmultiplier</code> - Normally end caps are the same width as the line. This parameter lets you make the cap wider/narrower than the line.
+<p><i></i>
+</p>
+</div>
+<div id="endcapheightmultiplier" style=""><span class="parNameMAT">End Cap Height Multiplier</span>  <code>endcapheightmultiplier</code> - Normally the end caps extend farther than the end of the line by half of the width (making the end cap a half-circle, and similarly for square, triangular and arrow endcape). This parameter lets you push the end cap out farther or closer.
+<p><i></i>
+</p>
+</div>
+<div id="startcappullback" style=""><span class="parNameMAT">Start Caps Pullback</span>  <code>startcappullback</code> - By default (0), the start cap goes beyond the start point of the line so that the center of a circular startcap is right at the start point. Setting this to 1 makes the tip of the end cap positioned exactly at the start point.
+<p><i></i>
+</p>
+</div>
+<div id="endcappullback" style=""><span class="parNameMAT">End Caps Pullback</span>  <code>endcappullback</code> - By default (0), the end cap goes beyond the end point of the line so that the center of a circular endcap is right at the end point. Setting this to 1 makes the tip of the end cap positioned exactly at the end point.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Attributes_Page"><div class="sectionBarMAT">Parameters - <span class="mw-lingo-term" data-lingo-term-id="287234a1ff35a314b5b6bc4e5828e745">Attributes</span> Page</div></span></h2>
+<div id="lineposatt" style=""><span class="parNameMAT">Line Position Attribute</span>  <code>lineposatt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="linewidthatt" style=""><span class="parNameMAT">Line Width Attribute</span>  <code>linewidthatt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="linecoloratt" style=""><span class="parNameMAT">Line Color Attribute</span>  <code>linecoloratt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="pointposatt" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Position Attribute</span>  <code>pointposatt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="pointsizeatt" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Size Attribute</span>  <code>pointsizeatt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="pointcoloratt" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color Attribute</span>  <code>pointcoloratt</code> -
+<p><i></i>
+</p>
+</div>
+<div id="vectoratttype" style=""><span class="parNameMAT">Vector Attribute Type</span>  <code>vectoratttype</code> - <span class="mw-customtoggle-vectoratttype">⊞</span> - When drawing a vector at each point, this determines where to get the XYZ of the vector. By default it gets it from an attribute of the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, the point normal by default. But when instancing is used, you can get it from an instance attribute from an <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>. The vector can be represented in world space or in the reference frame of the Geometry <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectoratttype">
+<ul><li><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Attribute</span> <code>sopattrib</code> -</li></ul><ul><li><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Custom Attribute (<span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Space)</span> <code>instanceattribsop</code> -</li></ul><ul><li><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Custom Attribute (World Space)</span> <code>instanceattribworld</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectoratt" style=""><span class="parNameMAT">Vector Attribute</span>  <code>vectoratt</code> - <span class="mw-customtoggle-vectoratt">⊞</span> - Specify the geometry <a href="Attribute.html" title="Attribute">Attribute</a> to use to render the Vector. Some standard attribute are: N, P, Cd, uv, however it is possible to specify a custom attribute. Note that this value is case sensitive, ensure that the it matches with the name of the attribute for that point/vector.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vectoratt">
+<ul><li><span class="parNameMAT">N     (<span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Normal X, Y, Z)</span> <code>N</code> -</li></ul><ul><li><span class="parNameMAT">P     (<span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Position X, Y, Z)</span> <code>P</code> -</li></ul><ul><li><span class="parNameMAT">Cd    (<span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color red, green, blue, alpha)</span> <code>Cd</code> -</li></ul><ul><li><span class="parNameMAT">uv    (<span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Texture Coordinates U,V,W)</span> <code>uv</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="vectorcusattribidx" style=""><span class="parNameMAT">Vector <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Custom Attribute Index</span>  <code>vectorcusattribidx</code> - When instancing is used, you can get the XYZ vector from an instance attribute. This is the index of the X value in the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Deform_Page"><div class="sectionBarMAT">Parameters - Deform Page</div></span></h2>
+<p>Refer to the <a href="Deforming_Geometry_(Skinning).html" title="Deforming Geometry (Skinning)"> Deform Article</a> for more information on doing deforms in TouchDesigner.
+</p>
+<div id="dodeform" style=""><span class="parNameMAT">Deform</span>  <code>dodeform</code> - Enables deforms on this material.
+<p><i></i>
+</p>
+</div>
+<div id="deformdata" style=""><span class="parNameMAT">Get Bone Data:</span>  <code>deformdata</code> - <span class="mw-customtoggle-deformdata">⊞</span> - Specifies where the deform bone data will be obtained.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-deformdata">
+<ul><li><span class="parNameMAT">From a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span></span> <code>sop</code> -</li></ul><ul><li><span class="parNameMAT">From another <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>mat</code> -</li></ul><ul><li><span class="parNameMAT">From a DeformIn <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>deformin</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="targetsop" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> with Capture Data</span>  <code>targetsop</code> - Specifies the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> that contains the deform capture attributes.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptpath" style=""><span class="parNameMAT">pCaptPath Attrib</span>  <code>pcaptpath</code> - Specifies the name of the pCaptPath attribute to use. When your geometry has been put through a <a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group SOP</a>, the attributes will be split into names like pCaptPath0, pCaptPath1. You can only render 1 bone group at a time, so this should match the group you are rendering with this material.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptdata" style=""><span class="parNameMAT">pCaptData Attrib</span>  <code>pcaptdata</code> - Much like pCaptPath Attrib.
+<p><i></i>
+</p>
+</div>
+<div id="skelrootpath" style=""><span class="parNameMAT">Skeleton <span class="mw-lingo-term" data-lingo-term-id="fa03eb688ad8aa1db593d33dabd89bad">Root</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>skelrootpath</code> - Specifies the path to the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> where the root of the skeleton is located.
+<p><i></i>
+</p>
+</div>
+<div id="mat" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span>  <code>mat</code> - When obtaining deform data from a <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> or a Deform In <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>, this is where that <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> is specified.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarMAT">Parameters - Common Page</div></span></h2>
+<h3><span class="mw-headline" id="Blending"><div class="customBar">Blending</div></span></h3>
+<p><a href="Blending.html" title="Blending">Blending</a> is summing the color value of the pixel being drawn and the pixel currently present in the Color-Buffer. Blending is typically used to simulate <a href="Transparency.html" title="Transparency">Transparency</a>.
+		The blending equation is:
+		<code>Final Pixel Value = (Source Blend * Source Color) + (Dest Blend * Destination Color)</code>
+</p><p><br/></p>
+<div id="blending" style=""><span class="parNameMAT">Blending (Transparency)</span>  <code>blending</code> - This toggle enables and disables blending. However see the wiki article <a href="Transparency.html" title="Transparency">Transparency</a>.
+<p><i></i>
+</p>
+</div>
+<div id="blendop" style=""><span class="parNameMAT">Blend Operation</span>  <code>blendop</code> - <span class="mw-customtoggle-blendop">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendop">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblend" style=""><span class="parNameMAT">Source Color *</span>  <code>srcblend</code> - <span class="mw-customtoggle-srcblend">⊞</span> - This value is multiplied by the color value of the pixel that is being written to the Color-Buffer (also know as the Source Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblend">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblend" style=""><span class="parNameMAT">Destination Color *</span>  <code>destblend</code> - <span class="mw-customtoggle-destblend">⊞</span> - This value is multiplied by the color value of the pixel currently in the Color-Buffer (also known as the Destination Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblend">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="separatealphafunc" style=""><span class="parNameMAT">Separate Alpha Function</span>  <code>separatealphafunc</code> - This toggle enables and disables separate blending options for the alpha values.
+<p><i></i>
+</p>
+</div>
+<div id="blendopa" style=""><span class="parNameMAT">Alpha Blend Operation</span>  <code>blendopa</code> - <span class="mw-customtoggle-blendopa">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendopa">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblenda" style=""><span class="parNameMAT">Source Alpha *</span>  <code>srcblenda</code> - <span class="mw-customtoggle-srcblenda">⊞</span> - This value is multiplied by the alpha value of the pixel that is being written to the Color-Buffer (also know as the Source Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblenda">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblenda" style=""><span class="parNameMAT">Destination Alpha *</span>  <code>destblenda</code> - <span class="mw-customtoggle-destblenda">⊞</span> - This value is multiplied by the alpha value of the pixel currently in the Color-Buffer (also known as the Destination Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblenda">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstant" style=""><span class="parNameMAT">Blend Constant Color</span>  <code>blendconstant</code> - <span class="mw-customtoggle-blendconstant">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendconstant">
+<ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantr</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantg</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstanta" style=""><span class="parNameMAT">Blend Constant Alpha</span>  <code>blendconstanta</code> -
+<p><i></i>
+</p>
+</div>
+<div id="legacyalphabehavior" style=""><span class="parNameMAT">Legacy Alpha Behavior</span>  <code>legacyalphabehavior</code> -
+<p><i></i>
+</p>
+</div>
+<div id="postmultalpha" style=""><span class="parNameMAT">Post-Mult Color by Alpha</span>  <code>postmultalpha</code> - Multiplies the color by alpha after all other operations have taken place.
+<p><i></i>
+</p>
+</div>
+<div id="pointcolorpremult" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color Pre-Multiply</span>  <code>pointcolorpremult</code> - <span class="mw-customtoggle-pointcolorpremult">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointcolorpremult">
+<ul><li><span class="parNameMAT">Already Pre-Multiplied By Alpha</span> <code>alreadypremult</code> -</li></ul><ul><li><span class="parNameMAT">Pre-Multiply By Alpha in <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span> <code>premultinshader</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="depthtest" style=""><span class="parNameMAT">Depth Test</span>  <code>depthtest</code> - Enables and disables the Depth-Test. If the depth-test is disabled, depths values aren't written to the Depth-Buffer.
+<p><i></i>
+</p>
+</div>
+<div id="depthfunc" style=""><span class="parNameMAT">Depth Test Function</span>  <code>depthfunc</code> - <span class="mw-customtoggle-depthfunc">⊞</span> - The depth value of the pixel being drawn is compared to the depth value currently in the depth-buffer using this function. If the test passes then the pixel is drawn to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer. If the test fails the pixel is discarded and no changes are made to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-depthfunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Equal</span> <code>equal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul><ul><li><span class="parNameMAT">Not Equal</span> <code>notequal</code> -</li></ul><ul><li><span class="parNameMAT">Always</span> <code>always</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Depth_Test"><div class="customBar">Depth Test</div></span></h3>
+<p>Depth-Testing is comparing the depth value of the pixel being drawn with the pixel currently in the <a class="new" href="https://docs.derivative.ca/index.php?title=Frame-Buffer&amp;action=edit&amp;redlink=1" title="Frame-Buffer (page does not exist)">Frame-Buffer</a>. A pixel that is determined to be in-front of the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will be drawn over it. Pixels that are determined to be behind the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will not be drawn. Depth-Testing allows geometry in a 3D scene to occlude geometry behind it, and be occluded by geometry in-front of it regardless of the order the geometry was drawn.
+</p><p>For a more detailed description of Depth-Testing, refer to the <a href="https://docs.derivative.ca/Depth-Test" title="Depth-Test">Depth-Test</a> article.
+</p><p><br/></p>
+<div id="depthwriting" style=""><span class="parNameMAT">Write Depth Values</span>  <code>depthwriting</code> - If Write Depth Values is on, pixels that pass the depth-test will write their depth value to the Depth-Buffer. If this isn't on then no changes will be made to the Depth-Buffer, regardless of if the pixels drawn pass or fail the depth-test.
+<p><i></i>
+</p>
+</div>
+<div id="alphatest" style=""><span class="parNameMAT">Discard Pixels Based on Alpha</span>  <code>alphatest</code> - This enables or disables the pixel alpha test.
+<p><i></i>
+</p>
+</div>
+<div id="alphafunc" style=""><span class="parNameMAT">Keep Pixels with Alpha</span>  <code>alphafunc</code> - <span class="mw-customtoggle-alphafunc">⊞</span> - This menu works in conjunction with the Alpha Threshold parameter below in determining which pixels to keep based on their alpha value.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphafunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphathreshold" style=""><span class="parNameMAT">Alpha Threshold</span>  <code>alphathreshold</code> - This value is what the pixel's alpha is compared to to determine if the pixel should be drawn. Pixels with alpha greater than the Alpha Threshold will be drawn. Pixels with alpha less than or equal to the Alpha Threshold will not be drawn.
+<p><i></i>
+</p>
+</div>
+<div id="wireframe" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span>  <code>wireframe</code> - <span class="mw-customtoggle-wireframe">⊞</span> - Enables and disables wire-frame rendering with the option of OpenGL Tesselated or Topology based wireframes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wireframe">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">OpenGL Tesselated <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>tesselated</code> -</li></ul><ul><li><span class="parNameMAT">Topology <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>topology</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Alpha_Test"><div class="customBar">Alpha Test</div></span></h3>
+<p>Alpha-testing allows you to choose to draw or not draw a pixel based on its alpha value.
+</p><p><br/></p>
+<div id="wirewidth" style=""><span class="parNameMAT">Line Width</span>  <code>wirewidth</code> - This value is the width that the wires will be. This value is in pixels.
+<p><i></i>
+</p>
+</div>
+<div id="cullface" style=""><span class="parNameMAT">Cull Face</span>  <code>cullface</code> - <span class="mw-customtoggle-cullface">⊞</span> - Selects which faces to render.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-cullface">
+<ul><li><span class="parNameMAT">Use Render Setting</span> <code>userender</code> - Use the render settings found in the Render or Render Pass <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>.</li></ul><ul><li><span class="parNameMAT">Neither</span> <code>neither</code> - Do not cull any faces, render everything.</li></ul><ul><li><span class="parNameMAT">Back Faces</span> <code>backfaces</code> - Cull back faces, render front faces.</li></ul><ul><li><span class="parNameMAT">Front Faces</span> <code>frontfaces</code> - Cull front faces, render back faces.</li></ul><ul><li><span class="parNameMAT">Both Faces</span> <code>bothfaces</code> - Cull both faces, render nothing.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffset" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</span>  <code>polygonoffset</code> - Turns on the polygon offset feature.
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetfactor" style=""><span class="parNameMAT">Offset Factor</span>  <code>polygonoffsetfactor</code> -
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetunits" style=""><span class="parNameMAT">Offset Units</span>  <code>polygonoffsetunits</code> -
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Wire_Frame"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></div></span></h3>
+<p>The wire-frame feature will render the geometry as wire-frame, using the actual primitive type used in the render. What this means is surfaces like Metaballs, NURBs and Beziers will become a wire-frame of the triangles/triangle-strips used to render them (since these types of primitives can't be natively rendered in OpenGL).
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Cull_Face"><div class="customBar">Cull Face</div></span></h3>
+<p>The cull face parameter will cull faces from the render output. This can be used as an optimization or sometimes to remove artifacts. See <a href="https://docs.derivative.ca/Back-Face_Culling" title="Back-Face Culling">Back-Face Culling</a> for more infomation.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Polygon_Depth_Offset"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</div></span></h3>
+<p>This feature pushes the polygons back into space a tiny fraction. This is useful when you are rendering two polygons directly on-top of each other and are experiencing <a href="Z-Fighting.html" title="Z-Fighting">Z-Fighting</a>. Refer to <a href="Polygon_Depth_Offset.html" title="Polygon Depth Offset">Polygon Depth Offset</a> for more information. This is also an important feature when doing <a href="Shadows.html" title="Shadows">shadows</a>.
+</p><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarMAT">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Line <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_MAT_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> Info Channels</div></span></h3>
+<h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Line_MAT.html">Latest</option>\n<option value="https://docs.derivative.ca/Line_MAT?oldid=31727">wikieditor</option><option value="https://docs.derivative.ca/Line_MAT?oldid=31728">wikieditor</option><option value="https://docs.derivative.ca/Line_MAT?oldid=24289">2021.10000</option><option value="https://docs.derivative.ca/Line_MAT?oldid=17846">2019.14650</option><option value="https://docs.derivative.ca/Line_MAT?oldid=12943">2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">MATs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Constant_MAT.html" title="Constant MAT">Constant  </a></span>• <span class="catList navigation-not-searchable"><a href="Depth_MAT.html" title="Depth MAT">Depth  </a></span>• <span class="catList navigation-not-searchable"><a href="GLSL_MAT.html" title="GLSL MAT">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/In_MAT" title="In MAT">In  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="MAT.html" title="MAT">MAT </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_MAT.html" title="Experimental:MAT">Experimental:MAT </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/MAT_Common_Page" title="MAT Common Page">MAT Common Page </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Null_MAT" title="Null MAT">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Out_MAT" title="Out MAT">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="PBR_MAT.html" title="PBR MAT">PBR  </a></span>• <span class="catList navigation-not-searchable"><a href="Phong_MAT.html" title="Phong MAT">Phong  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_Sprite_MAT.html" title="Point Sprite MAT">Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Point_Sprite_MAT" title="Experimental:Point Sprite MAT">Experimental:Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Select_MAT" title="Select MAT">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Switch_MAT" title="Switch MAT">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_Sampling_Parameters.html" title="Texture Sampling Parameters">Texture Sampling Parameters </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Wireframe_MAT" title="Wireframe MAT">Wireframe  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="4c0a11247d92f73fb84baa51e37a3263"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A polygon is a type of <a href="Primitive.html" title="Primitive">Primitive</a> that is formed from a set of <a href="Vertex.html" title="Vertex">Vertices</a> in 3D that are implicitly connected together to form a multi-edge shape.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="287234a1ff35a314b5b6bc4e5828e745"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Information associated with <a href="SOP.html" title="SOP">SOP</a> geometry. <a href="Point.html" title="Point">Points</a> and <a href="Primitive.html" title="Primitive">primitives</a> (polygons, NURBS, etc.) can have any number of attributes - position (P) is standard, and built-in optional attributes are <a href="Normals.html" title="Normals">normals</a> (N), texture coordinates (uv), color (Cd), etc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d9a17c1c9e8ef6866e4dbeef41c741b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>(1) A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> can instance and render its SOP geometry many times: once for each sample in a CHOP, row of a DAT table, pixel in a TOP, or point of a SOP, (2) An instance is an OP that doesn't actually have its own data, but rather just refers to an OP (or has an input) whose data it uses. This includes Null OPs, Switch OPs and in some cases Select OPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fa03eb688ad8aa1db593d33dabd89bad"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The <a href="Network_Path.html" title="Network Path">Network Path</a> or Path for root is simply <code>/</code>. A typical path is <code>/project1/moviein1</code>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a88a92f4a0e793589f2341851a15c660"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The OpenGL (pre-2022) or Vulkan (2022-) code that runs on the GPU and creates rendered images from polygons and textures. A shader is programmed in <a href="Text_DAT.html" title="Text DAT">Text DATs</a> and referenced by a <a href="GLSL_MAT.html" title="GLSL MAT">GLSL Material</a> or a <a href="GLSL_TOP.html" title="GLSL TOP">GLSL TOP</a>. Shaders are composed of up to three parts: Vertex Shader, Pixel Shader and Compute Shader.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3bb3e8c8a24891ba0f7608bcc96f8b0a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The term "Frame" is a measurement of time used (1) in the <a href="Timeline.html" title="Timeline">Timeline</a>, (2) as a time-unit in CHOPs, and (3) as a time unit in movie files that are read into <a href="TOP.html" title="TOP">TOPs</a> and written out from TOPs. The frame rate is the frames per second (<a class="new" href="https://docs.derivative.ca/index.php?title=FPS&amp;action=edit&amp;redlink=1" title="FPS (page does not exist)">FPS</a>).
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8d0be41ab58751f3fe6fb5aa87b0e794"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The connection of an output of one node to the input of another node in a network. In contrast, see <a href="Link.html" title="Link">Link</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304175744
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.308 seconds
+Real time usage: 0.480 seconds
+Preprocessor visited node count: 8248/1000000
+Post‐expand include size: 195322/2097152 bytes
+Template argument size: 111881/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 560/5000000 bytes
+Lua time usage: 0.200/10 seconds
+Lua virtual size: 9310208/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  377.120      1 -total
+ 70.81%  267.022      1 Template:NavBox
+ 69.17%  260.860     18 Template:CatList
+ 22.79%   85.953      8 Template:ParameterPage
+ 18.72%   70.605    101 Template:Parameter
+  9.83%   37.058      1 MAT_Generator_Common_Page
+  6.26%   23.625    156 Template:ParameterItem
+  2.09%    7.892      1 Template:InfoCHOPChannels
+  1.83%    6.887      1 MAT_Deform_Page
+  1.51%    5.707      1 Template:Summary
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:2291-0!canonical and timestamp 20250304175743 and revision id 31728.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Line_MAT&amp;oldid=31728">https://docs.derivative.ca/index.php?title=Line_MAT&amp;oldid=31728</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_MATs.html" title="Category:MATs">MATs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.308","walltime":"0.480","ppvisitednodes":{"value":8248,"limit":1000000},"postexpandincludesize":{"value":195322,"limit":2097152},"templateargumentsize":{"value":111881,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":560,"limit":5000000},"timingprofile":["100.00%  377.120      1 -total"," 70.81%  267.022      1 Template:NavBox"," 69.17%  260.860     18 Template:CatList"," 22.79%   85.953      8 Template:ParameterPage"," 18.72%   70.605    101 Template:Parameter","  9.83%   37.058      1 MAT_Generator_Common_Page","  6.26%   23.625    156 Template:ParameterItem","  2.09%    7.892      1 Template:InfoCHOPChannels","  1.83%    6.887      1 MAT_Deform_Page","  1.51%    5.707      1 Template:Summary"]},"scribunto":{"limitreport-timeusage":{"value":"0.200","limit":"10"},"limitreport-virtmemusage":{"value":9310208,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304175744","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":695});});</script>
+
+
+
+
+</body><!-- Cached 20250304175744 --><!-- Mirrored from docs.derivative.ca/Line_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:45 GMT --></html>

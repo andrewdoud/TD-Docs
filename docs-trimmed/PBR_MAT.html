@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/PBR_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:38 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>PBR MAT - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a5ac19b4cebb48b8422309b5","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PBR_MAT","wgTitle":"PBR MAT","wgCurRevisionId":33778,"wgRevisionId":33778,"wgArticleId":27,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["MATs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"PBR_MAT","wgRelevantArticleId":27,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":[
+"January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Constant MAT","Depth MAT","GLSL MAT",
+"Experimental:GLSL MAT","In MAT","Line MAT","MAT","Experimental:MAT","MAT Common Page","Null MAT","Out MAT","PBR MAT","Phong MAT","Point Sprite MAT","Experimental:Point Sprite MAT","Select MAT","Switch MAT","Texture Sampling Parameters","Wireframe MAT"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The PBR MAT creates a material using a Physically Based Rendering (PBR) lighting model." name="description"/>
+<meta content="TouchDesigner, PBR, MAT" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=MAT.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="PBR MAT - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/PBR_MAT" property="og:url"/>
+<meta content="The PBR MAT creates a material using a Physically Based Rendering (PBR) lighting model." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, PBR, MAT" property="article:tag"/>
+<meta content="2025-05-20T21:38:49Z" property="article:modified_time"/>
+<meta content="2025-05-20T21:38:49Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"PBR MAT - TouchDesigner Documentation","headline":"PBR MAT - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">PBR MAT<\/span>","identifier":"https:\/\/docs.derivative.ca\/PBR_MAT","url":"https:\/\/docs.derivative.ca\/PBR_MAT","description":"The PBR MAT creates a material using a Physically Based Rendering (PBR) lighting model.","keywords":"TouchDesigner, PBR, MAT","dateModified":"2025-05-20T21:38:49Z","datePublished":"2025-05-20T21:38:49Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-PBR_MAT rootpage-PBR_MAT skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">PBR MAT</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarMAT">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The PBR <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> creates a material using a Physically Based <span class="mw-lingo-term" data-lingo-term-id="a6e8f9aed2ac6481dc25a18a33342d03">Rendering</span> (PBR) lighting model. It has support for textures, reflections, bumps, cone lights, rim lights, alpha maps and more. 			
+</p><p>It also supports most <a class="external text" href="https://substance3d.adobe.com/community-assets" rel="nofollow">Adobe Substance 3D Designer</a> PBR materials loaded in the <a href="Substance_TOP.html" title="Substance TOP">Substance TOP</a>. 				
+</p><p>You can output its <a href="Category_GLSL.html" title="Category:GLSL">GLSL shader</a> into two <a href="DAT.html" title="DAT">DATs</a> for further adaptation in a <a href="GLSL_MAT.html" title="GLSL MAT">GLSL MAT</a> by using the Output <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span> parameter.				
+</p><p>This OP creates physically based materials from texture maps you assign to it and works with any content pipeline whether you use Maya, Houdini, Unreal, Photoshop etc.
+</p><p>You can get more PBR materials from PBR texture libraries such as <a class="external text" href="http://quixel.se/" rel="nofollow">Quixel</a> and <a class="external text" href="http://www.poliigon.com/" rel="nofollow">Poliigon</a> and <a class="external text" href="https://gametextures.com/freebies" rel="nofollow">Game Textures</a>.
+See also: <a href="Substance_TOP.html" title="Substance TOP">Substance TOP</a>.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/PbrMAT_Class" title="PbrMAT Class">pbrMAT_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_RGB_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - RGB Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Maps_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Maps Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Alpha_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Alpha Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Rim_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Rim Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Advanced_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Advanced Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Deform_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Deform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">8</span> <span class="toctext">Parameters - Common Page</span></a>
+<ul><li class="toclevel-2"><a href="#Blending"><span class="tocnumber">8.1</span> <span class="toctext">Blending</span></a></li>
+<li class="toclevel-2"><a href="#Depth_Test"><span class="tocnumber">8.2</span> <span class="toctext">Depth Test</span></a></li>
+<li class="toclevel-2"><a href="#Alpha_Test"><span class="tocnumber">8.3</span> <span class="toctext">Alpha Test</span></a></li>
+<li class="toclevel-2"><a href="#Wire_Frame"><span class="tocnumber">8.4</span> <span class="toctext">Wire Frame</span></a></li>
+<li class="toclevel-2"><a href="#Cull_Face"><span class="tocnumber">8.5</span> <span class="toctext">Cull Face</span></a></li>
+<li class="toclevel-2"><a href="#Polygon_Depth_Offset"><span class="tocnumber">8.6</span> <span class="toctext">Polygon Depth Offset</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">9</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_MAT_Info_Channels"><span class="tocnumber">9.1</span> <span class="toctext">Common MAT Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">9.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_RGB_Page"><div class="sectionBarMAT">Parameters - RGB Page</div></span></h2>
+<div id="basecolor" style=""><span class="parNameMAT">Base Color</span>  <code>basecolor</code> - <span class="mw-customtoggle-basecolor">⊞</span> - Base color of the texture, used to calculate diffuse and specular contributions.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolor">
+<ul><li><span class="parNameMAT">Red</span> <code>basecolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>basecolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>basecolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevel" style=""><span class="parNameMAT">Specular Level</span>  <code>specularlevel</code> - The amount of contribution the Specular Level Map adds to the material.
+<p><i></i>
+</p>
+</div>
+<div id="metallic" style=""><span class="parNameMAT">Metallic</span>  <code>metallic</code> - The amount of contribution the Metallic Map adds to the material.
+<p><i></i>
+</p>
+</div>
+<div id="roughness" style=""><span class="parNameMAT">Roughness</span>  <code>roughness</code> - The amount of contribution the Roughness Map adds to the material. Used to calculate specular D, R, and F (blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf page 3).
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusion" style=""><span class="parNameMAT">Ambient Occlusion</span>  <code>ambientocclusion</code> - The amount of contribution the Ambient Occlusion Map adds to the material. Ambient Occlusion affects the contribution from the Environement Light <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="envlightquality" style=""><span class="parNameMAT">Env Light Quality</span>  <code>envlightquality</code> - The sampling quality of the Environment Light with the material.
+<p><i></i>
+</p>
+</div>
+<div id="emit" style=""><span class="parNameMAT">Emit</span>  <code>emit</code> - <span class="mw-customtoggle-emit">⊞</span> - This is the color that the material will emit even if there is no light.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emit">
+<ul><li><span class="parNameMAT">Red</span> <code>emitr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>emitg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>emitb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="constant" style=""><span class="parNameMAT">Constant</span>  <code>constant</code> - <span class="mw-customtoggle-constant">⊞</span> - Adds to the final color. Where there are point colors, finalcolor += <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color * Constant Color. This behaves like there is ambient illumination of 1 1 1. It is not affected by textures or transparency.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-constant">
+<ul><li><span class="parNameMAT">Red</span> <code>constantr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>constantg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>constantb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="frontfacelit" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Front Faces</span>  <code>frontfacelit</code> - <span class="mw-customtoggle-frontfacelit">⊞</span> - Controls how the polygon's normal is used to light the front face of the polygon. For more information refer to the <a class="new" href="https://docs.derivative.ca/index.php?title=Two-Sided_Lighting&amp;action=edit&amp;redlink=1" title="Two-Sided Lighting (page does not exist)">Two-Sided Lighting</a> article.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-frontfacelit">
+<ul><li><span class="parNameMAT">Use Per-Light(s) <span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span></span> <code>uselight</code> -</li></ul><ul><li><span class="parNameMAT">Front Lit</span> <code>frontlit</code> -</li></ul><ul><li><span class="parNameMAT">Back Lit</span> <code>backlit</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="backfacelit" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Back Faces</span>  <code>backfacelit</code> - <span class="mw-customtoggle-backfacelit">⊞</span> - Back Face's <code>backfacelit</code> - Controls how the polygon's normal is used to light the back face of the polygon. For more information refer to the <a class="new" href="https://docs.derivative.ca/index.php?title=Two-Sided_Lighting&amp;action=edit&amp;redlink=1" title="Two-Sided Lighting (page does not exist)">Two-Sided Lighting</a> article.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-backfacelit">
+<ul><li><span class="parNameMAT">Use Per-Light(s) <span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span></span> <code>uselight</code> -</li></ul><ul><li><span class="parNameMAT">Front Lit</span> <code>frontlit</code> -</li></ul><ul><li><span class="parNameMAT">Back Lit</span> <code>backlit</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="outputshader" style=""><span class="parNameMAT">Output <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span>...</span>  <code>outputshader</code> - This button will bring up a dialog that will create a <a href="GLSL_MAT.html" title="GLSL MAT">GLSL MAT</a> and <a href="Text_DAT.html" title="Text DAT">Text DATs</a> with shader code that this PBR <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> is currently using. Since shaders are dependent on the number and type of lights, it will list some possible different shader choices, based on what lighting configurations have been used in the current system. <b>If no shaders are listed in the dialog</b>, it means no shader has been rendered in the current session of TouchDesigner. Turn on the viewer for the Phong <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>, or setup a render in a Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. That will create/compile some shaders and will cause the list to be populated. For example if you want to see a shader that does shadow mapping, setup a render that does shadow mapping and you will see that come up in the list.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Maps_Page"><div class="sectionBarMAT">Parameters - Maps Page</div></span></h2>
+<div id="substance" style=""><span class="parNameMAT">Substance <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span>  <code>substance</code> - <span class="mw-lingo-term" data-lingo-term-id="63d5049791d9d79d86e9a108b0a999ca">Reference</span> a <a href="Substance_TOP.html" title="Substance TOP">Substance TOP</a> containing an .sbsar file. Referencing the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> will automatically unpack all enabled textures without having to manually fill in any of the below texture maps. Manually filling in any of the texture map parameters will override the texture automatically pulled from the .sbsar package.
+<p><i></i>
+</p>
+</div>
+<div id="basecolormap" style=""><span class="parNameMAT">Base Color Map</span>  <code>basecolormap</code> - <span class="mw-customtoggle-basecolormap">⊞</span> - Clicking on the arrows to the right of the map field will open the <a href="Texture_Sampling_Parameters.html" title="Texture Sampling Parameters">Texture Sampling Parameters</a> for Color Map.  The other Map parameters below will have their own Texture Sampling Parameters as well.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormap">
+<div id="basecolormapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>basecolormapextendu</code> - <span class="mw-customtoggle-basecolormapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>basecolormapextendv</code> - <span class="mw-customtoggle-basecolormapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>basecolormapextendw</code> - <span class="mw-customtoggle-basecolormapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>basecolormapfilter</code> - <span class="mw-customtoggle-basecolormapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>basecolormapanisotropy</code> - <span class="mw-customtoggle-basecolormapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="texturesamplingmode" style=""><span class="parNameMAT">Texture Sampling Mode</span>  <code>texturesamplingmode</code> - <span class="mw-customtoggle-texturesamplingmode">⊞</span> - Mode to pick how the texture is to be sampled.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-texturesamplingmode">
+<ul><li><span class="parNameMAT">Regular</span> <code>regular</code> - Regular Texture Coordinates used for the sampling</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> - Screen Space Coordinates used for the sampling</li></ul><ul><li><span class="parNameMAT">Triplanar Mapping</span> <code>triplanar</code> - Triplanar mapping done via the triplanar texture coordinates. Works for POPs only. Triplanar Coordinates can be generated via the Texture Map POP.</li></ul></div>
+<p><i></i>
+</p>
+</div>	
+<div id="basecolormapcoord" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Texture Coord</span>  <code>basecolormapcoord</code> - <span class="mw-customtoggle-basecolormapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapcoordattrib" style=""><span class="parNameMAT">POP Texture Coord Attribute</span>  <code>basecolormapcoordattrib</code> -
+<p><i></i>
+</p>
+</div>
+<div id="basecolormapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>basecolormapcoordinterp</code> - <span class="mw-customtoggle-basecolormapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-basecolormapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmap" style=""><span class="parNameMAT">Specular Level Map</span>  <code>specularlevelmap</code> - <span class="mw-customtoggle-specularlevelmap">⊞</span> - Specifies a specular level map.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmap">
+<div id="specularlevelmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>specularlevelmapextendu</code> - <span class="mw-customtoggle-specularlevelmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>specularlevelmapextendv</code> - <span class="mw-customtoggle-specularlevelmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>specularlevelmapextendw</code> - <span class="mw-customtoggle-specularlevelmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>specularlevelmapfilter</code> - <span class="mw-customtoggle-specularlevelmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>specularlevelmapanisotropy</code> - <span class="mw-customtoggle-specularlevelmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>specularlevelmapcoord</code> - <span class="mw-customtoggle-specularlevelmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>specularlevelmapcoordinterp</code> - <span class="mw-customtoggle-specularlevelmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="specularlevelmapchannelsource" style=""><span class="parNameMAT">Channel Source</span>  <code>specularlevelmapchannelsource</code> - <span class="mw-customtoggle-specularlevelmapchannelsource">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-specularlevelmapchannelsource">
+<ul><li><span class="parNameMAT">Luminance</span> <code>luminance</code> -</li></ul><ul><li><span class="parNameMAT">Red</span> <code>red</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>green</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>blue</code> -</li></ul><ul><li><span class="parNameMAT">Alpha</span> <code>alpha</code> -</li></ul><ul><li><span class="parNameMAT">RGB Average</span> <code>rgbaverage</code> -</li></ul><ul><li><span class="parNameMAT">RGBA Average</span> <code>average</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="metallicmap" style=""><span class="parNameMAT">Metallic Map</span>  <code>metallicmap</code> - <span class="mw-customtoggle-metallicmap">⊞</span> - Specifies a metallic texture map. This is equivalent to the Metallic map in Substance Designer.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metallicmap">
+<div id="metalnessmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>metalnessmapextendu</code> - <span class="mw-customtoggle-metalnessmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metalnessmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metalnessmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>metalnessmapextendv</code> - <span class="mw-customtoggle-metalnessmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metalnessmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metalnessmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>metalnessmapextendw</code> - <span class="mw-customtoggle-metalnessmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metalnessmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metalnessmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>metalnessmapfilter</code> - <span class="mw-customtoggle-metalnessmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metalnessmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metalnessmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>metalnessmapanisotropy</code> - <span class="mw-customtoggle-metalnessmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metalnessmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metallicmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>metallicmapcoord</code> - <span class="mw-customtoggle-metallicmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metallicmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metallicmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>metallicmapcoordinterp</code> - <span class="mw-customtoggle-metallicmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metallicmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="metallicmapchannelsource" style=""><span class="parNameMAT">Channel Source</span>  <code>metallicmapchannelsource</code> - <span class="mw-customtoggle-metallicmapchannelsource">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-metallicmapchannelsource">
+<ul><li><span class="parNameMAT">Luminance</span> <code>luminance</code> -</li></ul><ul><li><span class="parNameMAT">Red</span> <code>red</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>green</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>blue</code> -</li></ul><ul><li><span class="parNameMAT">Alpha</span> <code>alpha</code> -</li></ul><ul><li><span class="parNameMAT">RGB Average</span> <code>rgbaverage</code> -</li></ul><ul><li><span class="parNameMAT">RGBA Average</span> <code>average</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmap" style=""><span class="parNameMAT">Roughness Map</span>  <code>roughnessmap</code> - <span class="mw-customtoggle-roughnessmap">⊞</span> - Specifies a roughness texture map. This is equivalent to the Roughness map in Substance Designer.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmap">
+<div id="roughnessmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>roughnessmapextendu</code> - <span class="mw-customtoggle-roughnessmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>roughnessmapextendv</code> - <span class="mw-customtoggle-roughnessmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>roughnessmapextendw</code> - <span class="mw-customtoggle-roughnessmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>roughnessmapfilter</code> - <span class="mw-customtoggle-roughnessmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>roughnessmapanisotropy</code> - <span class="mw-customtoggle-roughnessmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>roughnessmapcoord</code> - <span class="mw-customtoggle-roughnessmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>roughnessmapcoordinterp</code> - <span class="mw-customtoggle-roughnessmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="roughnessmapchannelsource" style=""><span class="parNameMAT">Channel Source</span>  <code>roughnessmapchannelsource</code> - <span class="mw-customtoggle-roughnessmapchannelsource">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-roughnessmapchannelsource">
+<ul><li><span class="parNameMAT">Luminance</span> <code>luminance</code> -</li></ul><ul><li><span class="parNameMAT">Red</span> <code>red</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>green</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>blue</code> -</li></ul><ul><li><span class="parNameMAT">Alpha</span> <code>alpha</code> -</li></ul><ul><li><span class="parNameMAT">RGB Average</span> <code>rgbaverage</code> -</li></ul><ul><li><span class="parNameMAT">RGBA Average</span> <code>average</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmap" style=""><span class="parNameMAT">Ambient Occlusion Map</span>  <code>ambientocclusionmap</code> - <span class="mw-customtoggle-ambientocclusionmap">⊞</span> - Specifies a ambient occlusion texture map. This is equivalent to the Ambient Occlusion map in Substance Designer. Ambient Occlusion affects the contribution from the Environement Light <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmap">
+<div id="ambientocclusionmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>ambientocclusionmapextendu</code> - <span class="mw-customtoggle-ambientocclusionmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>ambientocclusionmapextendv</code> - <span class="mw-customtoggle-ambientocclusionmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>ambientocclusionmapextendw</code> - <span class="mw-customtoggle-ambientocclusionmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>ambientocclusionmapfilter</code> - <span class="mw-customtoggle-ambientocclusionmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>ambientocclusionmapanisotropy</code> - <span class="mw-customtoggle-ambientocclusionmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>ambientocclusionmapcoord</code> - <span class="mw-customtoggle-ambientocclusionmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>ambientocclusionmapcoordinterp</code> - <span class="mw-customtoggle-ambientocclusionmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ambientocclusionmapchannelsource" style=""><span class="parNameMAT">Channel Source</span>  <code>ambientocclusionmapchannelsource</code> - <span class="mw-customtoggle-ambientocclusionmapchannelsource">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ambientocclusionmapchannelsource">
+<ul><li><span class="parNameMAT">Luminance</span> <code>luminance</code> -</li></ul><ul><li><span class="parNameMAT">Red</span> <code>red</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>green</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>blue</code> -</li></ul><ul><li><span class="parNameMAT">Alpha</span> <code>alpha</code> -</li></ul><ul><li><span class="parNameMAT">RGB Average</span> <code>rgbaverage</code> -</li></ul><ul><li><span class="parNameMAT">RGBA Average</span> <code>average</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmap" style=""><span class="parNameMAT">Normal Map (Bump)</span>  <code>normalmap</code> - <span class="mw-customtoggle-normalmap">⊞</span> - Uses a <a href="Normal_Map_TOP.html" title="Normal Map TOP">Normal Map</a> from TOPs to create a 'bump map' effect. Bump-mapping simulates bumps or wrinkles in a surface to give it a 3D depth effect. Your geometry must have tangent attributes created for this feature to work (T[4]). Create these using the <a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create SOP</a>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmap">
+<div id="normalmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>normalmapextendu</code> - <span class="mw-customtoggle-normalmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>normalmapextendv</code> - <span class="mw-customtoggle-normalmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>normalmapextendw</code> - <span class="mw-customtoggle-normalmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>normalmapfilter</code> - <span class="mw-customtoggle-normalmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>normalmapanisotropy</code> - <span class="mw-customtoggle-normalmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>normalmapcoord</code> - <span class="mw-customtoggle-normalmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="normalmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>normalmapcoordinterp</code> - <span class="mw-customtoggle-normalmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-normalmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="bumpscale" style=""><span class="parNameMAT">Bump Scale</span>  <code>bumpscale</code> - A multiplier for the 'bump effect' created by the Normal Map parameter.
+<p><i></i>
+</p>
+</div>
+<div id="heightmapenable" style=""><span class="parNameMAT">Enable Height Map</span>  <code>heightmapenable</code> - Enables height mapping.
+<p><i></i>
+</p>
+</div>
+<div id="heightmap" style=""><span class="parNameMAT">Height Map</span>  <code>heightmap</code> - <span class="mw-customtoggle-heightmap">⊞</span> - Specifies a height texture map. This is equivalent to the Height map in Substance Designer. The height map is used in conjunction with the normal map to perform parallax mapping.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmap">
+<div id="heightmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>heightmapextendu</code> - <span class="mw-customtoggle-heightmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>heightmapextendv</code> - <span class="mw-customtoggle-heightmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>heightmapextendw</code> - <span class="mw-customtoggle-heightmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>heightmapfilter</code> - <span class="mw-customtoggle-heightmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>heightmapanisotropy</code> - <span class="mw-customtoggle-heightmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>heightmapcoord</code> - <span class="mw-customtoggle-heightmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>heightmapcoordinterp</code> - <span class="mw-customtoggle-heightmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="heightmapchannelsource" style=""><span class="parNameMAT">Channel Source</span>  <code>heightmapchannelsource</code> - <span class="mw-customtoggle-heightmapchannelsource">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-heightmapchannelsource">
+<ul><li><span class="parNameMAT">Luminance</span> <code>luminance</code> -</li></ul><ul><li><span class="parNameMAT">Red</span> <code>red</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>green</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>blue</code> -</li></ul><ul><li><span class="parNameMAT">Alpha</span> <code>alpha</code> -</li></ul><ul><li><span class="parNameMAT">RGB Average</span> <code>rgbaverage</code> -</li></ul><ul><li><span class="parNameMAT">RGBA Average</span> <code>average</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="parallaxscale" style=""><span class="parNameMAT">Parallax Scale</span>  <code>parallaxscale</code> - Scale value applied to the height map. Can be used to increase or exaggerate the effect.
+<p><i></i>
+</p>
+</div>
+<div id="parallaxocclusion" style=""><span class="parNameMAT">Parallax Occlusion</span>  <code>parallaxocclusion</code> - Enables parallax occlusion, an enhancement of the parallax mapping technique used with the height map. Parallax occlusion improves the quality of the texture offsetting in parallax mapping so that the higher parts of the height map appear to occlude the lower parts, giving a better illusion of height.
+<p><i></i>
+</p>
+</div>
+<div id="displaceverts" style=""><span class="parNameMAT">Displace <span class="mw-lingo-term" data-lingo-term-id="e4bb6129669488aedeeb0ae27bb91770">Vertices</span></span>  <code>displaceverts</code> - When Enable Height Map above is On, setting Displace <span class="mw-lingo-term" data-lingo-term-id="e4bb6129669488aedeeb0ae27bb91770">Vertices</span> to On will enable true displacement mapping where the vertices of the geometry are displaced based on the Height Map texture and the parameters below.
+<p><i></i>
+</p>
+</div>
+<div id="displacescale" style=""><span class="parNameMAT">Displace Scale</span>  <code>displacescale</code> - A multiplier for the displacement amount.
+<p><i></i>
+</p>
+</div>
+<div id="displacemid" style=""><span class="parNameMAT">Displace Midpoint</span>  <code>displacemid</code> - Sets the middle point of displacement map as the start position for the displacement effect.
+<p><i></i>
+</p>
+</div>
+<div id="emitmap" style=""><span class="parNameMAT">Emit Map</span>  <code>emitmap</code> - <span class="mw-customtoggle-emitmap">⊞</span> - Specifies a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> texture that is multiplied with the Emit color parameter of the material. The object must have texture coordinates. The alpha of this map is ignored.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmap">
+<div id="emitmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>emitmapextendu</code> - <span class="mw-customtoggle-emitmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>emitmapextendv</code> - <span class="mw-customtoggle-emitmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>emitmapextendw</code> - <span class="mw-customtoggle-emitmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>emitmapfilter</code> - <span class="mw-customtoggle-emitmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>emitmapanisotropy</code> - <span class="mw-customtoggle-emitmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>emitmapcoord</code> - <span class="mw-customtoggle-emitmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>emitmapcoordinterp</code> - <span class="mw-customtoggle-emitmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Alpha_Page"><div class="sectionBarMAT">Parameters - Alpha Page</div></span></h2>
+<p><b> Note: Simply applying alpha to an object does not make it transparent. For more information refer to the <a href="Transparency.html" title="Transparency">Transparency</a> article.</b>
+</p>
+<div id="alphamap" style=""><span class="parNameMAT">Alpha Map</span>  <code>alphamap</code> - <span class="mw-customtoggle-alphamap">⊞</span> - This map multiplies the alpha of the object. It uses the red channel of the map, other channels are ignored.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamap">
+<div id="alphamapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>alphamapextendu</code> - <span class="mw-customtoggle-alphamapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>alphamapextendv</code> - <span class="mw-customtoggle-alphamapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>alphamapextendw</code> - <span class="mw-customtoggle-alphamapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>alphamapfilter</code> - <span class="mw-customtoggle-alphamapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>alphamapanisotropy</code> - <span class="mw-customtoggle-alphamapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>alphamapcoord</code> - <span class="mw-customtoggle-alphamapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>alphamapcoordinterp</code> - <span class="mw-customtoggle-alphamapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphamapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="alphamode" style=""><span class="parNameMAT">Uniform Alpha</span>  <code>alphamode</code> - Turning this off will make the alpha change depending on orientation of each polygon's normal compared to the camera. Normals that are pointing at the camera will results in the polygon having an alpha of Alpha Front. Normals that are perpendicular to the camera (facing sideways/up/down) will have Alpha Side for their alpha.
+<p><i></i>
+</p>
+</div>
+<div id="alphafront" style=""><span class="parNameMAT">Alpha Front</span>  <code>alphafront</code> - The opacity of the material. This parameter is multiplied by point alpha of the object (as will as any other alpha source).
+<p><i></i>
+</p>
+</div>
+<div id="alphaside" style=""><span class="parNameMAT">Alpha Side</span>  <code>alphaside</code> - This is used for non-uniform alpha. It is the alpha value polygons that are facing away from the camera will get.
+<p><i></i>
+</p>
+</div>
+<div id="rolloff" style=""><span class="parNameMAT">Alpha Rolloff</span>  <code>rolloff</code> - Controls how the alpha changes from Alpha Front to Alpha Side.
+<p><i></i>
+</p>
+</div>
+<div id="postmultalpha" style=""><span class="parNameMAT">Post-Mult Color by Alpha</span>  <code>postmultalpha</code> - At the end of all of the calculations, the color (RGB) is multiplied by the calculated alpha. You can stop this from happening by turning off this checkbox.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Rim_Page"><div class="sectionBarMAT">Parameters - Rim Page</div></span></h2>
+<p>Other rim lights have the same parameters, internal parameter names just have a different number instead of 1.
+</p>
+<div class="sequenceBlock" id="rimlight" style=""><span class="parNameMAT">Rim Light</span>  <code>rimlight</code> - Sequence of rim light info
+<div class="sequenceItem">
+<div id="rimlight0enable" style=""><span class="parNameMAT">Enable</span>  <code>rimlight0enable</code> - Enables this rim light.
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0map" style=""><span class="parNameMAT">Color Map</span>  <code>rimlight0map</code> - <span class="mw-customtoggle-rimlight0map">⊞</span> - This map will multiple the calculated rim light color.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0map">
+<div id="rimlight0mapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>rimlight0mapextendu</code> - <span class="mw-customtoggle-rimlight0mapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>rimlight0mapextendv</code> - <span class="mw-customtoggle-rimlight0mapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>rimlight0mapextendw</code> - <span class="mw-customtoggle-rimlight0mapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>rimlight0mapfilter</code> - <span class="mw-customtoggle-rimlight0mapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>rimlight0mapanisotropy</code> - <span class="mw-customtoggle-rimlight0mapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>rimlight0mapcoord</code> - <span class="mw-customtoggle-rimlight0mapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0mapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>rimlight0mapcoordinterp</code> - <span class="mw-customtoggle-rimlight0mapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0mapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0color" style=""><span class="parNameMAT">Color</span>  <code>rimlight0color</code> - <span class="mw-customtoggle-rimlight0color">⊞</span> - The color of the rim light.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rimlight0color">
+<ul><li><span class="parNameMAT">Red</span> <code>rimlight0colorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>rimlight0colorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>rimlight0colorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0center" style=""><span class="parNameMAT">Center</span>  <code>rimlight0center</code> - The center of the rim lights location, situated somewhere on a 360 degree circle.
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0width" style=""><span class="parNameMAT">Width</span>  <code>rimlight0width</code> - How far from the center the rim light extends.
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0strength" style=""><span class="parNameMAT">Strength</span>  <code>rimlight0strength</code> - Controls the brightness of the rim light.
+<p><i></i>
+</p>
+</div>
+<div id="rimlight0strengthramp" style=""><span class="parNameMAT">Strength Ramp</span>  <code>rimlight0strengthramp</code> - You can specify a horizontal ramp (it will sample the texture at v = 0.5), which controls the the rim lights strength.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Advanced_Page"><div class="sectionBarMAT">Parameters - Advanced Page</div></span></h2>
+<div id="shadowstrength" style=""><span class="parNameMAT">Shadow Strength</span>  <code>shadowstrength</code> - This parameter will control how much being in a shadow will change the color of the lighting. At 1 the object will take on the <span class="tipTextMAT">Shadow Color</span> parameter, at 0 it will behave as if it's not in a shadow, even if it is.
+<p><i></i>
+</p>
+</div>
+<div id="shadowcolor" style=""><span class="parNameMAT">Shadow Color</span>  <code>shadowcolor</code> - <span class="mw-customtoggle-shadowcolor">⊞</span> - The color that will be used in shadowed areas.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-shadowcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>shadowcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>shadowcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>shadowcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemit" style=""><span class="parNameMAT">Darkness Emit</span>  <code>darknessemit</code> - The Phong <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> calculates the current brightness of color of the objects, after taking into account lights, rim lights, emission etc. It then uses this brightness (between 0-1) and fades in the <span class="tipTextMAT">Darkness Emit Color</span>. The darker the area, the more of the darkness emit color that will be applied.
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitcolor" style=""><span class="parNameMAT">Darkness Emit Color</span>  <code>darknessemitcolor</code> - <span class="mw-customtoggle-darknessemitcolor">⊞</span> - The color that is used for areas that are in darkness.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitcolor">
+<ul><li><span class="parNameMAT">Red</span> <code>darknessemitcolorr</code> -</li></ul><ul><li><span class="parNameMAT">Green</span> <code>darknessemitcolorg</code> -</li></ul><ul><li><span class="parNameMAT">Blue</span> <code>darknessemitcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmap" style=""><span class="parNameMAT">Darkness Emit Map</span>  <code>darknessemitmap</code> - <span class="mw-customtoggle-darknessemitmap">⊞</span> - This map multiplies the <span class="tipTextMAT">Darkness Emit Color</span>. This maps alpha is not used.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmap">
+<div id="darknessemitmapextendu" style=""><span class="parNameMAT">Extend U</span>  <code>darknessemitmapextendu</code> - <span class="mw-customtoggle-darknessemitmapextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapextendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapextendv" style=""><span class="parNameMAT">Extend V</span>  <code>darknessemitmapextendv</code> - <span class="mw-customtoggle-darknessemitmapextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapextendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapextendw" style=""><span class="parNameMAT">Extend W</span>  <code>darknessemitmapextendw</code> - <span class="mw-customtoggle-darknessemitmapextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapextendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapfilter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>darknessemitmapfilter</code> - <span class="mw-customtoggle-darknessemitmapfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapfilter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapanisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>darknessemitmapanisotropy</code> - <span class="mw-customtoggle-darknessemitmapanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapanisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapcoord" style=""><span class="parNameMAT">Texture Coord</span>  <code>darknessemitmapcoord</code> - <span class="mw-customtoggle-darknessemitmapcoord">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapcoord">
+<ul><li><span class="parNameMAT">Texture Layer 0 (uv[0-2])</span> <code>uv0</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 1 (uv[3-5])</span> <code>uv1</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 2 (uv[6-8])</span> <code>uv2</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 3 (uv[9-11])</span> <code>uv3</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 4 (uv[12-14])</span> <code>uv4</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 5 (uv[15-17])</span> <code>uv5</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 6 (uv[18-20])</span> <code>uv6</code> -</li></ul><ul><li><span class="parNameMAT">Texture Layer 7 (uv[21-23])</span> <code>uv7</code> -</li></ul><ul><li><span class="parNameMAT">Screen Space Coordinates</span> <code>screenspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="darknessemitmapcoordinterp" style=""><span class="parNameMAT">Coord Interpolation</span>  <code>darknessemitmapcoordinterp</code> - <span class="mw-customtoggle-darknessemitmapcoordinterp">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-darknessemitmapcoordinterp">
+<ul><li><span class="parNameMAT">Perspective Correct</span> <code>perspectivecorrect</code> -</li></ul><ul><li><span class="parNameMAT">Linear (noperspective)</span> <code>linear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<div id="writecameradepthtoalpha" style=""><span class="parNameMAT">Write Camera Space Depth to Alpha</span>  <code>writecameradepthtoalpha</code> - This cause the camera space depth of the pixel to be written to the alpha channel of the output <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. This value can be useful for post-processing effects, but ofcourse you will not have the result of all the alpha calculations if you turn this on (although they'll get used to multiply the output color, assuming <span class="tipTextMAT">Post-Mult Color by Alpha</span> is enabled.
+<p><i></i>
+</p>
+</div>
+<div id="applypointcolor" style=""><span class="parNameMAT">Apply <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color</span>  <code>applypointcolor</code> - Normally the color attribute (Cd[4]) coming from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is used in the lighting calculation, you can turn off using the color attribute by un-checking this parameter.
+<p><i></i>
+</p>
+</div>
+<div id="instancetexture" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Texture</span>  <code>instancetexture</code> - <span class="mw-customtoggle-instancetexture">⊞</span> - When provider per-instance textures in the <a href="Geometry_COMP.html" title="Geometry COMP">Geometry COMP</a>, this parameter selects which map the instance texture will be applied as.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexture">
+<ul><li><span class="parNameMAT">Base Color Map</span> <code>basecolormap</code> -</li></ul><ul><li><span class="parNameMAT">Normal Map</span> <code>normalmap</code> -</li></ul><ul><li><span class="parNameMAT">Emit Map</span> <code>emitmap</code> -</li></ul><ul><li><span class="parNameMAT">Alpha Map</span> <code>alphamap</code> -</li></ul><ul><li><span class="parNameMAT">Darkness Emit Map</span> <code>darknessemitmap</code> -</li></ul><ul><li><span class="parNameMAT">Color Map</span> <code>rimlight0map</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div class="sequenceBlock" id="color" style=""><span class="parNameMAT">Color Buffer</span>  <code>color</code> - Sequence of color buffers
+<div class="sequenceItem">
+<div id="color0output" style=""><span class="parNameMAT">RGB</span>  <code>color0output</code> - <span class="mw-customtoggle-color0output">⊞</span> - Allows sending things like normals or emit color to different Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> color buffers in a single pass.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-color0output">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">World Space Position</span> <code>worldspaceposition</code> -</li></ul><ul><li><span class="parNameMAT">World Space Normal</span> <code>worldspacenormal</code> -</li></ul><ul><li><span class="parNameMAT">Camera Space Position</span> <code>cameraspaceposition</code> -</li></ul><ul><li><span class="parNameMAT">Camera Space Normal</span> <code>cameraspacenormal</code> -</li></ul><ul><li><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color</span> <code>pointcolor</code> -</li></ul><ul><li><span class="parNameMAT">Texture Coord 0</span> <code>texturecoord0</code> -</li></ul><ul><li><span class="parNameMAT">Normal Map</span> <code>normalmap</code> -</li></ul><ul><li><span class="parNameMAT">Emit Map</span> <code>emitmap</code> -</li></ul><ul><li><span class="parNameMAT">Emit Color</span> <code>emitcolor</code> -</li></ul><ul><li><span class="parNameMAT">Specular Level Map</span> <code>specularlevelmap</code> -</li></ul><ul><li><span class="parNameMAT">Metallic Map</span> <code>metallicmap</code> -</li></ul><ul><li><span class="parNameMAT">Roughness Map</span> <code>roughnessmap</code> -</li></ul><ul><li><span class="parNameMAT">Ambient Occlusion Map</span> <code>ambientocclusionmap</code> -</li></ul><ul><li><span class="parNameMAT">Final Diffuse Color</span> <code>finaldiffcolor</code> -</li></ul><ul><li><span class="parNameMAT">Final Specular Color</span> <code>finalspeccolor</code> -</li></ul><ul><li><span class="parNameMAT">Shadow Strength</span> <code>shadowstrength</code> -</li></ul><ul><li><span class="parNameMAT">Normalized Shadow Strength</span> <code>normalizedshadowstrength</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Deform_Page"><div class="sectionBarMAT">Parameters - Deform Page</div></span></h2>
+<p>Refer to the <a href="Deforming_Geometry_(Skinning).html" title="Deforming Geometry (Skinning)"> Deform Article</a> for more information on doing deforms in TouchDesigner.
+</p>
+<div id="dodeform" style=""><span class="parNameMAT">Deform</span>  <code>dodeform</code> - Enables deforms on this material.
+<p><i></i>
+</p>
+</div>
+<div id="deformdata" style=""><span class="parNameMAT">Get Bone Data:</span>  <code>deformdata</code> - <span class="mw-customtoggle-deformdata">⊞</span> - Specifies where the deform bone data will be obtained.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-deformdata">
+<ul><li><span class="parNameMAT">From a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span></span> <code>sop</code> -</li></ul><ul><li><span class="parNameMAT">From another <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>mat</code> -</li></ul><ul><li><span class="parNameMAT">From a DeformIn <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>deformin</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="targetsop" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> with Capture Data</span>  <code>targetsop</code> - Specifies the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> that contains the deform capture attributes.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptpath" style=""><span class="parNameMAT">pCaptPath Attrib</span>  <code>pcaptpath</code> - Specifies the name of the pCaptPath attribute to use. When your geometry has been put through a <a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group SOP</a>, the attributes will be split into names like pCaptPath0, pCaptPath1. You can only render 1 bone group at a time, so this should match the group you are rendering with this material.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptdata" style=""><span class="parNameMAT">pCaptData Attrib</span>  <code>pcaptdata</code> - Much like pCaptPath Attrib.
+<p><i></i>
+</p>
+</div>
+<div id="skelrootpath" style=""><span class="parNameMAT">Skeleton <span class="mw-lingo-term" data-lingo-term-id="fa03eb688ad8aa1db593d33dabd89bad">Root</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>skelrootpath</code> - Specifies the path to the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> where the root of the skeleton is located.
+<p><i></i>
+</p>
+</div>
+<div id="mat" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span>  <code>mat</code> - When obtaining deform data from a <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> or a Deform In <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>, this is where that <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> is specified.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarMAT">Parameters - Common Page</div></span></h2>
+<h3><span class="mw-headline" id="Blending"><div class="customBar">Blending</div></span></h3>
+<p><a href="Blending.html" title="Blending">Blending</a> is summing the color value of the pixel being drawn and the pixel currently present in the Color-Buffer. Blending is typically used to simulate <a href="Transparency.html" title="Transparency">Transparency</a>.
+		The blending equation is:
+		<code>Final Pixel Value = (Source Blend * Source Color) + (Dest Blend * Destination Color)</code>
+</p><p><br/></p>
+<div id="blending" style=""><span class="parNameMAT">Blending (Transparency)</span>  <code>blending</code> - This toggle enables and disables blending. However see the wiki article <a href="Transparency.html" title="Transparency">Transparency</a>.
+<p><i></i>
+</p>
+</div>
+<div id="blendop" style=""><span class="parNameMAT">Blend Operation</span>  <code>blendop</code> - <span class="mw-customtoggle-blendop">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendop">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblend" style=""><span class="parNameMAT">Source Color *</span>  <code>srcblend</code> - <span class="mw-customtoggle-srcblend">⊞</span> - This value is multiplied by the color value of the pixel that is being written to the Color-Buffer (also know as the Source Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblend">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblend" style=""><span class="parNameMAT">Destination Color *</span>  <code>destblend</code> - <span class="mw-customtoggle-destblend">⊞</span> - This value is multiplied by the color value of the pixel currently in the Color-Buffer (also known as the Destination Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblend">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="separatealphafunc" style=""><span class="parNameMAT">Separate Alpha Function</span>  <code>separatealphafunc</code> - This toggle enables and disables separate blending options for the alpha values.
+<p><i></i>
+</p>
+</div>
+<div id="blendopa" style=""><span class="parNameMAT">Alpha Blend Operation</span>  <code>blendopa</code> - <span class="mw-customtoggle-blendopa">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendopa">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblenda" style=""><span class="parNameMAT">Source Alpha *</span>  <code>srcblenda</code> - <span class="mw-customtoggle-srcblenda">⊞</span> - This value is multiplied by the alpha value of the pixel that is being written to the Color-Buffer (also know as the Source Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblenda">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblenda" style=""><span class="parNameMAT">Destination Alpha *</span>  <code>destblenda</code> - <span class="mw-customtoggle-destblenda">⊞</span> - This value is multiplied by the alpha value of the pixel currently in the Color-Buffer (also known as the Destination Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblenda">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstant" style=""><span class="parNameMAT">Blend Constant Color</span>  <code>blendconstant</code> - <span class="mw-customtoggle-blendconstant">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendconstant">
+<ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantr</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantg</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstanta" style=""><span class="parNameMAT">Blend Constant Alpha</span>  <code>blendconstanta</code> -
+<p><i></i>
+</p>
+</div>
+<div id="legacyalphabehavior" style=""><span class="parNameMAT">Legacy Alpha Behavior</span>  <code>legacyalphabehavior</code> -
+<p><i></i>
+</p>
+</div>
+<div id="postmultalpha" style=""><span class="parNameMAT">Post-Mult Color by Alpha</span>  <code>postmultalpha</code> - Multiplies the color by alpha after all other operations have taken place.
+<p><i></i>
+</p>
+</div>
+<div id="pointcolorpremult" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color Pre-Multiply</span>  <code>pointcolorpremult</code> - <span class="mw-customtoggle-pointcolorpremult">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointcolorpremult">
+<ul><li><span class="parNameMAT">Already Pre-Multiplied By Alpha</span> <code>alreadypremult</code> -</li></ul><ul><li><span class="parNameMAT">Pre-Multiply By Alpha in <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span> <code>premultinshader</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="depthtest" style=""><span class="parNameMAT">Depth Test</span>  <code>depthtest</code> - Enables and disables the Depth-Test. If the depth-test is disabled, depths values aren't written to the Depth-Buffer.
+<p><i></i>
+</p>
+</div>
+<div id="depthfunc" style=""><span class="parNameMAT">Depth Test Function</span>  <code>depthfunc</code> - <span class="mw-customtoggle-depthfunc">⊞</span> - The depth value of the pixel being drawn is compared to the depth value currently in the depth-buffer using this function. If the test passes then the pixel is drawn to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer. If the test fails the pixel is discarded and no changes are made to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-depthfunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Equal</span> <code>equal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul><ul><li><span class="parNameMAT">Not Equal</span> <code>notequal</code> -</li></ul><ul><li><span class="parNameMAT">Always</span> <code>always</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Depth_Test"><div class="customBar">Depth Test</div></span></h3>
+<p>Depth-Testing is comparing the depth value of the pixel being drawn with the pixel currently in the <a class="new" href="https://docs.derivative.ca/index.php?title=Frame-Buffer&amp;action=edit&amp;redlink=1" title="Frame-Buffer (page does not exist)">Frame-Buffer</a>. A pixel that is determined to be in-front of the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will be drawn over it. Pixels that are determined to be behind the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will not be drawn. Depth-Testing allows geometry in a 3D scene to occlude geometry behind it, and be occluded by geometry in-front of it regardless of the order the geometry was drawn.
+</p><p>For a more detailed description of Depth-Testing, refer to the <a href="https://docs.derivative.ca/Depth-Test" title="Depth-Test">Depth-Test</a> article.
+</p><p><br/></p>
+<div id="depthwriting" style=""><span class="parNameMAT">Write Depth Values</span>  <code>depthwriting</code> - If Write Depth Values is on, pixels that pass the depth-test will write their depth value to the Depth-Buffer. If this isn't on then no changes will be made to the Depth-Buffer, regardless of if the pixels drawn pass or fail the depth-test.
+<p><i></i>
+</p>
+</div>
+<div id="alphatest" style=""><span class="parNameMAT">Discard Pixels Based on Alpha</span>  <code>alphatest</code> - This enables or disables the pixel alpha test.
+<p><i></i>
+</p>
+</div>
+<div id="alphafunc" style=""><span class="parNameMAT">Keep Pixels with Alpha</span>  <code>alphafunc</code> - <span class="mw-customtoggle-alphafunc">⊞</span> - This menu works in conjunction with the Alpha Threshold parameter below in determining which pixels to keep based on their alpha value.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphafunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphathreshold" style=""><span class="parNameMAT">Alpha Threshold</span>  <code>alphathreshold</code> - This value is what the pixel's alpha is compared to to determine if the pixel should be drawn. Pixels with alpha greater than the Alpha Threshold will be drawn. Pixels with alpha less than or equal to the Alpha Threshold will not be drawn.
+<p><i></i>
+</p>
+</div>
+<div id="wireframe" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span>  <code>wireframe</code> - <span class="mw-customtoggle-wireframe">⊞</span> - Enables and disables wire-frame rendering with the option of OpenGL Tesselated or Topology based wireframes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wireframe">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">OpenGL Tesselated <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>tesselated</code> -</li></ul><ul><li><span class="parNameMAT">Topology <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>topology</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Alpha_Test"><div class="customBar">Alpha Test</div></span></h3>
+<p>Alpha-testing allows you to choose to draw or not draw a pixel based on its alpha value.
+</p><p><br/></p>
+<div id="wirewidth" style=""><span class="parNameMAT">Line Width</span>  <code>wirewidth</code> - This value is the width that the wires will be. This value is in pixels.
+<p><i></i>
+</p>
+</div>
+<div id="cullface" style=""><span class="parNameMAT">Cull Face</span>  <code>cullface</code> - <span class="mw-customtoggle-cullface">⊞</span> - Selects which faces to render.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-cullface">
+<ul><li><span class="parNameMAT">Use Render Setting</span> <code>userender</code> - Use the render settings found in the Render or Render Pass <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>.</li></ul><ul><li><span class="parNameMAT">Neither</span> <code>neither</code> - Do not cull any faces, render everything.</li></ul><ul><li><span class="parNameMAT">Back Faces</span> <code>backfaces</code> - Cull back faces, render front faces.</li></ul><ul><li><span class="parNameMAT">Front Faces</span> <code>frontfaces</code> - Cull front faces, render back faces.</li></ul><ul><li><span class="parNameMAT">Both Faces</span> <code>bothfaces</code> - Cull both faces, render nothing.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffset" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</span>  <code>polygonoffset</code> - Turns on the polygon offset feature.
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetfactor" style=""><span class="parNameMAT">Offset Factor</span>  <code>polygonoffsetfactor</code> -
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetunits" style=""><span class="parNameMAT">Offset Units</span>  <code>polygonoffsetunits</code> -
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Wire_Frame"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></div></span></h3>
+<p>The wire-frame feature will render the geometry as wire-frame, using the actual primitive type used in the render. What this means is surfaces like Metaballs, NURBs and Beziers will become a wire-frame of the triangles/triangle-strips used to render them (since these types of primitives can't be natively rendered in OpenGL).
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Cull_Face"><div class="customBar">Cull Face</div></span></h3>
+<p>The cull face parameter will cull faces from the render output. This can be used as an optimization or sometimes to remove artifacts. See <a href="https://docs.derivative.ca/Back-Face_Culling" title="Back-Face Culling">Back-Face Culling</a> for more infomation.
+</p><p><br/></p>
+<h3><span class="mw-headline" id="Polygon_Depth_Offset"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</div></span></h3>
+<p>This feature pushes the polygons back into space a tiny fraction. This is useful when you are rendering two polygons directly on-top of each other and are experiencing <a href="Z-Fighting.html" title="Z-Fighting">Z-Fighting</a>. Refer to <a href="Polygon_Depth_Offset.html" title="Polygon Depth Offset">Polygon Depth Offset</a> for more information. This is also an important feature when doing <a href="Shadows.html" title="Shadows">shadows</a>.
+</p><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarMAT">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the PBR <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_MAT_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> Info Channels</div></span></h3>
+<h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="PBR_MAT.html">Latest</option>\n<option value="https://docs.derivative.ca/PBR_MAT?oldid=28349">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=28350">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=28351">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=28352">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=31710">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=31712">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=32304">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=33778">wikieditor</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=17852">mw-rollback</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=26733">2022.24140</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=24283">2021.10000</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=19631">2020.20000</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=17849">2018.28070</option><option value="https://docs.derivative.ca/PBR_MAT?oldid=14553">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">MATs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Constant_MAT.html" title="Constant MAT">Constant  </a></span>• <span class="catList navigation-not-searchable"><a href="Depth_MAT.html" title="Depth MAT">Depth  </a></span>• <span class="catList navigation-not-searchable"><a href="GLSL_MAT.html" title="GLSL MAT">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:GLSL_MAT" title="Experimental:GLSL MAT">Experimental:GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/In_MAT" title="In MAT">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_MAT.html" title="Line MAT">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="MAT.html" title="MAT">MAT </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_MAT.html" title="Experimental:MAT">Experimental:MAT </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/MAT_Common_Page" title="MAT Common Page">MAT Common Page </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Null_MAT" title="Null MAT">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Out_MAT" title="Out MAT">Out  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">PBR  </a></span>• <span class="catList navigation-not-searchable"><a href="Phong_MAT.html" title="Phong MAT">Phong  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_Sprite_MAT.html" title="Point Sprite MAT">Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Point_Sprite_MAT" title="Experimental:Point Sprite MAT">Experimental:Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Select_MAT" title="Select MAT">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Switch_MAT" title="Switch MAT">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_Sampling_Parameters.html" title="Texture Sampling Parameters">Texture Sampling Parameters </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Wireframe_MAT" title="Wireframe MAT">Wireframe  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a6e8f9aed2ac6481dc25a18a33342d03"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Rendering is the creation of a 3D image with the Render TOP. Rendering is also used more generally to include the compositing (with TOPs) to generate an output image.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a88a92f4a0e793589f2341851a15c660"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The OpenGL (pre-2022) or Vulkan (2022-) code that runs on the GPU and creates rendered images from polygons and textures. A shader is programmed in <a href="Text_DAT.html" title="Text DAT">Text DATs</a> and referenced by a <a href="GLSL_MAT.html" title="GLSL MAT">GLSL Material</a> or a <a href="GLSL_TOP.html" title="GLSL TOP">GLSL TOP</a>. Shaders are composed of up to three parts: Vertex Shader, Pixel Shader and Compute Shader.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="4c0a11247d92f73fb84baa51e37a3263"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A polygon is a type of <a href="Primitive.html" title="Primitive">Primitive</a> that is formed from a set of <a href="Vertex.html" title="Vertex">Vertices</a> in 3D that are implicitly connected together to form a multi-edge shape.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="83f499a540b1323009c200d6f8cc9396"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every operator in TouchDesigner has a set of control Parameters that can be integer or floating point numbers, menus, binary toggles, text strings or operator <a href="Network_Path.html" title="Network Path">paths</a>, which determine the output of the operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="63d5049791d9d79d86e9a108b0a999ca"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Link.html" title="Link">Link</a>. The grey dashed lines between nodes is a Reference or Link that indicates one operator is getting data from another operator from any <a href="Operator_Family.html" title="Operator Family">Operator Family</a>.
+</p>
+</div></div><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The grey dashed lines between nodes is a Reference (or <a href="Link.html" title="Link">Link</a>). A Reference is (1) a <a href="Parameter_Reference.html" title="Parameter Reference">Parameter Reference</a>, a parameter in an OP that is a name or path to another operator, (2) a <a class="new" href="https://docs.derivative.ca/index.php?title=Node_Reference&amp;action=edit&amp;redlink=1" title="Node Reference (page does not exist)">Node Reference</a>, an expression in a parameter or DAT script that contains the name or path of another operator, (3) a DAT Cell Reference or (4) a CHOP Channel Reference.
+</p>
+</div></div><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Link or Reference is a dashed line between nodes that represent other data flowing between nodes. Examples are CHOP <a href="Export.html" title="Export">Exports</a>, node <a href="Network_Path.html" title="Network Path">Paths</a> in parameters, and <a href="Expression.html" title="Expression">expressions</a> in parameters referencing CHOP channels, DAT tables and other nodes. In contrast is a <a href="Wire.html" title="Wire">Wire</a> that connects nodes in the same <a href="Operator_Family.html" title="Operator Family">Operator Family</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d7778d0c64b6ba21494c97f77a66885a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operators that need 1 or more inputs are called Filters in TouchDesigner, like a Math CHOP. See <a href="Generator.html" title="Generator">Generator</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="e4bb6129669488aedeeb0ae27bb91770"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A sequence of vertices form a <a href="Polygon.html" title="Polygon">Polygon</a> in a <a href="SOP.html" title="SOP">SOP</a>. Each vertex is an integer index into the <a href="Point_List.html" title="Point List">Point List</a>, and each <a href="Point.html" title="Point">Point</a> holds an XYZ position and attributes like Normals and Texture Coordinates.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d9a17c1c9e8ef6866e4dbeef41c741b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>(1) A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> can instance and render its SOP geometry many times: once for each sample in a CHOP, row of a DAT table, pixel in a TOP, or point of a SOP, (2) An instance is an OP that doesn't actually have its own data, but rather just refers to an OP (or has an input) whose data it uses. This includes Null OPs, Switch OPs and in some cases Select OPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fa03eb688ad8aa1db593d33dabd89bad"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The <a href="Network_Path.html" title="Network Path">Network Path</a> or Path for root is simply <code>/</code>. A typical path is <code>/project1/moviein1</code>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3bb3e8c8a24891ba0f7608bcc96f8b0a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The term "Frame" is a measurement of time used (1) in the <a href="Timeline.html" title="Timeline">Timeline</a>, (2) as a time-unit in CHOPs, and (3) as a time unit in movie files that are read into <a href="TOP.html" title="TOP">TOPs</a> and written out from TOPs. The frame rate is the frames per second (<a class="new" href="https://docs.derivative.ca/index.php?title=FPS&amp;action=edit&amp;redlink=1" title="FPS (page does not exist)">FPS</a>).
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8d0be41ab58751f3fe6fb5aa87b0e794"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The connection of an output of one node to the input of another node in a network. In contrast, see <a href="Link.html" title="Link">Link</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250520214223
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.588 seconds
+Real time usage: 0.830 seconds
+Preprocessor visited node count: 18712/1000000
+Post‐expand include size: 611169/2097152 bytes
+Template argument size: 440892/2097152 bytes
+Highest expansion depth: 17/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1309/5000000 bytes
+Lua time usage: 0.230/10 seconds
+Lua virtual size: 9277440/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  575.074      1 -total
+ 58.86%  338.469    167 Template:Parameter
+ 55.83%  321.079      1 Template:MATNavBox
+ 54.21%  311.757     19 Template:CatList
+ 38.20%  219.702      7 Template:ParameterPage
+ 14.21%   81.728    520 Template:ParameterItem
+  9.55%   54.925      1 MAT_Generator_Common_Page
+  1.74%   10.020      1 Template:InfoCHOPChannels
+  1.24%    7.143      1 Template:History
+  1.23%    7.081      1 MAT_Deform_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:27-0!canonical and timestamp 20250520214222 and revision id 33778.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=PBR_MAT&amp;oldid=33778">https://docs.derivative.ca/index.php?title=PBR_MAT&amp;oldid=33778</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_MATs.html" title="Category:MATs">MATs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.588","walltime":"0.830","ppvisitednodes":{"value":18712,"limit":1000000},"postexpandincludesize":{"value":611169,"limit":2097152},"templateargumentsize":{"value":440892,"limit":2097152},"expansiondepth":{"value":17,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1309,"limit":5000000},"timingprofile":["100.00%  575.074      1 -total"," 58.86%  338.469    167 Template:Parameter"," 55.83%  321.079      1 Template:MATNavBox"," 54.21%  311.757     19 Template:CatList"," 38.20%  219.702      7 Template:ParameterPage"," 14.21%   81.728    520 Template:ParameterItem","  9.55%   54.925      1 MAT_Generator_Common_Page","  1.74%   10.020      1 Template:InfoCHOPChannels","  1.24%    7.143      1 Template:History","  1.23%    7.081      1 MAT_Deform_Page"]},"scribunto":{"limitreport-timeusage":{"value":"0.230","limit":"10"},"limitreport-virtmemusage":{"value":9277440,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250520214223","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1113});});</script>
+
+
+
+
+</body><!-- Cached 20250520214223 --><!-- Mirrored from docs.derivative.ca/PBR_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:38 GMT --></html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/ParGroup_Class by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:51 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>ParGroup Class - Derivative</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"248c24109c3a2e652dedb7e4","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ParGroup_Class","wgTitle":"ParGroup Class","wgCurRevisionId":32164,"wgRevisionId":32164,"wgArticleId":3107,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Python Reference"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"ParGroup_Class","wgRelevantArticleId":3107,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgCargoDefaultQueryLimit":100,
+"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],
+"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load6e85.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cext.pygments%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=Python.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="ParGroup Class" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/ParGroup_Class" property="og:url"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="2024-09-13T10:46:36Z" property="article:modified_time"/>
+<meta content="2024-09-13T10:46:36Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"ParGroup Class - Derivative","headline":"ParGroup Class - Derivative","mainEntityOfPage":"<span class=\"mw-page-title-main\">ParGroup Class<\/span>","identifier":"https:\/\/docs.derivative.ca\/ParGroup_Class","url":"https:\/\/docs.derivative.ca\/ParGroup_Class","dateModified":"2024-09-13T10:46:36Z","datePublished":"2024-09-13T10:46:36Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ParGroup_Class rootpage-ParGroup_Class skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">ParGroup Class</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><p>The <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span> class describes an instance of a single <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span>.
+</p><p>See also <a href="Custom_Parameters.html" title="Custom Parameters">Custom Parameters</a>.
+</p><p><br/></p>
+<h2><span class="mw-headline" id="Members">Members</span></h2>
+<div id="bindExpr" style="display:inline;"></div><p><code class="python">bindExpr</code> → <code class="return">tuple[str, ...]</code> : 
+</p><blockquote><p>Get or set expressions that return a Parameter object. This can be used to bind this parameter's constant values to the referenced parameters.
+</p><p>Example:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">p</span><span class="o">.</span><span class="n">bindExpr</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"op('geo1').par.tx"</span><span class="p">,</span> <span class="s2">"op('geo1').par.ty"</span><span class="p">,</span> <span class="s2">"op('geo1').par.tz"</span><span class="p">)</span>
+</pre></div><p>  
+        Note the outside quotes, as bindExpr is an expression, not an object.</p></blockquote>
+<div id="bindMaster" style="display:inline;"></div><p><code class="python">bindMaster</code> → <code class="return">tuple</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The objects to which this parameter is bound to, possibly None.</p></blockquote>
+<div id="bindRange" style="display:inline;"></div><p><code class="python">bindRange</code> → <code class="return">bool</code> : 
+</p><blockquote><p>Get or set parameter's range binding state. If True, min, max, clampMin, clampMax, normMin, normMax, normVal values will be based on master bind parameter. Can only be set on Custom Parameters.</p></blockquote>
+<div id="bindReferences" style="display:inline;"></div><p><code class="python">bindReferences</code> → <code class="return">tuple</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The (possibly empty) lists of objects which bind to this parameter.</p></blockquote>
+<div id="clampMax" style="display:inline;"></div><p><code class="python">clampMax</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's numerical clamping behaviors. If set to <code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">clampMax</span> <span class="o">=</span> <span class="kc">True</span></code>, the parameter will clamp on the upper end at the value specified in max Can only be set on Custom Parameters.</p></blockquote>
+<div id="clampMin" style="display:inline;"></div><p><code class="python">clampMin</code> → <code class="return">tuple[bool, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's numerical clamping behaviors. If set to <code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">clampMin</span> <span class="o">=</span> <span class="kc">True</span></code>, the parameter will clamp on the lower end at the value specified in min Can only be set on Custom Parameters.</p></blockquote>
+<div id="collapsable" style="display:inline;"></div><p><code class="python">collapsable</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>Returns True if the parameter is collapsable.</p></blockquote>
+<div id="collapser" style="display:inline;"></div><p><code class="python">collapser</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>Returns True if the parameter is a parent of collapsable parameters (ie. a collapser).</p></blockquote>
+<div id="default" style="display:inline;"></div><p><code class="python">default</code> → <code class="return">tuple</code> : 
+</p><blockquote><p>Get or set the parameter's default values. Can only be set on Custom Parameters.</p></blockquote>
+<div id="defaultExpr" style="display:inline;"></div><p><code class="python">defaultExpr</code> → <code class="return">tuple[str, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's default expressions. Can only be set on Custom Parameters. 
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># value defaults to this expression.</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'base1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">Size</span><span class="o">.</span><span class="n">defaultExpr</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'me.time.frame'</span><span class="p">,</span> <span class="s1">'me.time.frame'</span><span class="p">,</span> <span class="s1">'me.time.frame'</span><span class="p">)</span>
+</pre></div></blockquote>
+<div id="defaultBindExpr" style="display:inline;"></div><p><code class="python">defaultBindExpr</code> → <code class="return">tuple[str, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's default bind expressions. Can only be set on Custom Parameters.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># value defaults to this expression.</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'base1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">Size</span><span class="o">.</span><span class="n">defaultBindExpr</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'me.par.tx'</span><span class="p">,</span> <span class="s1">'me.par.ty'</span><span class="p">,</span> <span class="s1">'me.par.tz'</span><span class="p">)</span>
+</pre></div></blockquote>
+<div id="defaultMode" style="display:inline;"></div><p><code class="python">defaultMode</code> → <code class="return">tuple[ParMode, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's evaluation modes.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">defaultMode</span> <span class="o">=</span> <span class="p">(</span><span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">,</span> <span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">,</span> <span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">)</span>
+</pre></div>
+<p>The modes are one of: ParMode.CONSTANT, ParMode.EXPRESSION, or ParMode.EXPORT, or ParMode.BIND.
+</p><p>
+See <a href="Parameter_Dialog.html#Working_with_Parameter_Modes" title="Parameter Dialog">Parameter_Dialog#Working_with_Parameter_Modes</a> for more information.</p></blockquote>
+<div id="enable" style="display:inline;"></div><p><code class="python">enable</code> → <code class="return">bool</code> : 
+</p><blockquote><p>Get or set the parameter's enable state. Can only be set on Custom Parameters.</p></blockquote>
+<div id="enableExpr" style="display:inline;"></div><p><code class="python">enableExpr</code> → <code class="return">str</code> : 
+</p><blockquote><p>Get or set an expression that controls the enable state for this parameter group.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">p</span><span class="o">.</span><span class="n">enableExpr</span> <span class="o">=</span> <span class="s2">"me.par.X.menuIndex == 5"</span>
+</pre></div><p>
+Note the outside quotes, as this is an expression, not an object.</p></blockquote>
+<div id="exportOP" style="display:inline;"></div><p><code class="python">exportOP</code> → <code class="return">tuple[OP | None, ...]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The operators exporting to this parameter.</p></blockquote>
+<div id="exportSource" style="display:inline;"></div><p><code class="python">exportSource</code> → <code class="return">tuple[Cell | Channel | None, ...]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>tuple of objects exporting to this parameter. Examples: Cell, Channel or None.</p></blockquote>
+<div id="expr" style="display:inline;"></div><p><code class="python">expr</code> → <code class="return">tuple[str, ...]</code> : 
+</p><blockquote><p>Get or set the non-evaluated expressions only. To get the parameter's current values, regardless of the <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span> (constant, expression, export or bound), use the eval() method described below.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">expr</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'<span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame'</span><span class="p">,</span> <span class="s1">'<span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame'</span><span class="p">,</span> <span class="s1">'<span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame'</span><span class="p">)</span>  
+<span class="c1"># set to match current frame</span>
+</pre></div>
+<p>When setting this member, the parameter will also be placed in expression mode. See mode member below.
+</p>
+<p><b>NOTE:</b> For convenience, the expression is placed in double-quotes so you can safely put in expressions containing single quotes. 'a' and "a" have the same effect of enclosing strings in python.</p></blockquote>
+<div id="help" style="display:inline;"></div><p><code class="python">help</code> → <code class="return">str</code> : 
+</p><blockquote><p>Get or set a custom parameter's help text. To see any parameter's help, rollover the parameter while holding the Alt key.</p></blockquote>
+<div id="isDefault" style="display:inline;"></div><p><code class="python">isDefault</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True when the parameter value, expression and mode are in their default settings.</p></blockquote>
+<div id="isCustom" style="display:inline;"></div><p><code class="python">isCustom</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for Custom Parameters.</p></blockquote>
+<div id="isFloat" style="display:inline;"></div><p><code class="python">isFloat</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for floating point numeric parameters.</p></blockquote>
+<div id="isInt" style="display:inline;"></div><p><code class="python">isInt</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for integer numeric parameters.</p></blockquote>
+<div id="isMenu" style="display:inline;"></div><p><code class="python">isMenu</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for menu parameters.</p></blockquote>
+<div id="isMomentary" style="display:inline;"></div><p><code class="python">isMomentary</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for momentary parameters.</p></blockquote>
+<div id="isNumber" style="display:inline;"></div><p><code class="python">isNumber</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for numeric parameters.</p></blockquote>
+<div id="isOP" style="display:inline;"></div><p><code class="python">isOP</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for OP parameters.</p></blockquote>
+<div id="isPulse" style="display:inline;"></div><p><code class="python">isPulse</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for pulse parameters.</p></blockquote>
+<div id="isPython" style="display:inline;"></div><p><code class="python">isPython</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for python parameters.</p></blockquote>
+<div id="isSequence" style="display:inline;"></div><p><code class="python">isSequence</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for sequence header parameters.</p></blockquote>    
+<div id="isString" style="display:inline;"></div><p><code class="python">isString</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for string parameters.</p></blockquote>
+<div id="isToggle" style="display:inline;"></div><p><code class="python">isToggle</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True for toggle parameters.</p></blockquote>
+<div id="label" style="display:inline;"></div><p><code class="python">label</code> → <code class="return">str</code> : 
+</p><blockquote><p>Get or set the parameter's label.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'myOperator'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">Custompar</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s1">'Translate'</span>
+</pre></div><p> 
+Can only be set on Custom Parameters.</p></blockquote>
+<div id="max" style="display:inline;"></div><p><code class="python">max</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's numerical maximum values. The parameter's values will be clamped at that maximum if <code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">clampMax</span> <span class="o">=</span> <span class="kc">True</span></code>. Can only be set on Custom Parameters.</p></blockquote>
+<div id="menuIndex" style="display:inline;"></div><p><code class="python">menuIndex</code> → <code class="return">tuple[int, ...]</code> : 
+</p><blockquote><p>Get or set a tuple of menu constant values by their indices.</p></blockquote>
+<div id="menuLabels" style="display:inline;"></div><p><code class="python">menuLabels</code> → <code class="return">tuple[list[str], ...]</code> : 
+</p><blockquote><p>Get or set a tuple of lists of all possible menu choice labels. In the case of non menu parameters, None(s) are returned. Can only be set on Custom Parameters.</p></blockquote>
+<div id="menuNames" style="display:inline;"></div><p><code class="python">menuNames</code> → <code class="return">tuple[list[str], ...]</code> : 
+</p><blockquote><p>Get or set a tuple of lists of all possible menu choice names. In the case of non menu parameters, None(s) are returned. Can only be set on Custom Parameters.</p></blockquote>
+<div id="menuSource" style="display:inline;"></div><p><code class="python">menuSource</code> → <code class="return">tuple[str, ...]</code> : 
+</p><blockquote><p>Get or set a tuple of expressions that returns objects with <code>.menuItems</code> <code>.menuNames</code> members.  This can be used to create a custom menu whose entries dynamically follow that of another menu for example.</p></blockquote>
+<div id="min" style="display:inline;"></div><p><code class="python">min</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's numerical minimum values. The parameter's values will be clamped at that minimum if <code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">clampMin</span> <span class="o">=</span> <span class="kc">True</span></code> for the particular Par. Can only be set on Custom Parameters.</p></blockquote>
+<div id="mode" style="display:inline;"></div><p><code class="python">mode</code> → <code class="return">tuple[ParMode, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's evaluation modes.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="p">(</span><span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">,</span> <span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">,</span> <span class="n">ParMode</span><span class="o">.</span><span class="n">EXPRESSION</span><span class="p">)</span>
+</pre></div>
+<p>The modes are one of:  <code>ParMode.CONSTANT</code>, <code>ParMode.EXPRESSION</code>, or <code>ParMode.EXPORT</code>, or <code>ParMode.BIND</code>.
+</p><p>
+See <a href="Parameter_Dialog.html#Working_with_Parameter_Modes" title="Parameter Dialog">Parameter_Dialog#Working_with_Parameter_Modes</a> for more information.</p></blockquote>
+<div id="name" style="display:inline;"></div><p><code class="python">name</code> → <code class="return">str</code> : 
+</p><blockquote><p>Get or set the parameter's unique name.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'myOperator'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">Custompar</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Translate'</span>
+</pre></div><p> 
+Can only be set on Custom Parameters.</p></blockquote>
+<div id="baseName" style="display:inline;"></div><p><code class="python">baseName</code> → <code class="return">str</code> : 
+</p><blockquote><p>Get or set the parameter's base name. This excludes any sequence prefixes, sequence indices or name suffixes. Can only be set on Custom Parameters.</p></blockquote>
+<div id="normMax" style="display:inline;"></div><p><code class="python">normMax</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's maximum slider values if the parameter is a numerical slider. Can only be set on Custom Parameters.</p></blockquote>
+<div id="normMin" style="display:inline;"></div><p><code class="python">normMin</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's minimum slider values if the parameter is a numerical slider. Can only be set on Custom Parameters.</p></blockquote>
+<div id="normVal" style="display:inline;"></div><p><code class="python">normVal</code> → <code class="return">tuple[float, ...]</code> : 
+</p><blockquote><p>Get or set the parameter's values as a normalized slider position. Can only be set on Custom Parameters.</p></blockquote>
+<div id="order" style="display:inline;"></div><p><code class="python">order</code> → <code class="return">int</code> : 
+</p><blockquote><p>Get or set the parameter's position on the parameter page.  Can only be set on Custom Parameters.</p></blockquote>
+<div id="owner" style="display:inline;"></div><p><code class="python">owner</code> → <code class="return"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></code> <b>(Read Only)</b>: 
+</p><blockquote><p>The OP to which this object belongs.</p></blockquote>
+<div id="page" style="display:inline;"></div><p><code class="python">page</code> → <code class="return">Page</code> : 
+</p><blockquote><p>Get or set the parameter page the custom parameter is part of. Can only be set on Custom Parameters.</p></blockquote>
+<div id="password" style="display:inline;"></div><p><code class="python">password</code> → <code class="return">bool</code> : 
+</p><blockquote><p>Get or set the parameter's password mode. When True all text is rendered as asterisks. Can only be set on Custom string, int or float parameters. Custom Parameters.</p></blockquote>
+<div id="prevMode" style="display:inline;"></div><p><code class="python">prevMode</code> → <code class="return">tuple</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The parameter's previous evaluation modes.</p></blockquote>
+<div id="readOnly" style="display:inline;"></div><p><code class="python">readOnly</code> → <code class="return">bool</code> : 
+</p><blockquote><p>Get or set the parameter's read only status. When True the parameter cannot be modified through the UI, only scripting.</p></blockquote>
+<div id="startSection" style="display:inline;"></div><p><code class="python">startSection</code> → <code class="return">bool</code> : 
+</p><blockquote><p>Get or set the parameter's separator status. When True a visible separator is drawn between this parameter and the ones preceding it. Can only be set on Custom Parameters.</p></blockquote>
+<div id="style" style="display:inline;"></div><p><code class="python">style</code> → <code class="return">str</code> <b>(Read Only)</b>: 
+</p><blockquote><p>Describes the behavior and contents of the custom parameter. Example 'Float', 'Int', '<span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span>', 'XYZ', etc.</p></blockquote>
+<div id="subLabel" style="display:inline;"></div><p><code class="python">subLabel</code> → <code class="return">tuple</code> <b>(Read Only)</b>: 
+</p><blockquote><p>Returns the names of the sub-label.</p></blockquote>
+<div id="val" style="display:inline;"></div><p><code class="python">val</code> → <code class="return">tuple</code> : 
+</p><blockquote><p>Get or set the constant values of the parameter only. To get the parameter's current values, regardless of the Parameter Modes (<code>constant</code>, <code>expression</code>, <code>export</code> or <code>bound</code>), use the eval() method described below.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">val</span>   <span class="c1"># the constant values </span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>   <span class="c1"># the evaluated parameter</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>  <span class="c1">#equivalent to above, more concise form</span>
+</pre></div>
+<p>When setting this member, the parameter will also be placed in constant mode.  See mode member below.
+</p><p>
+To set a menu value by its index, use the menuIndex member as described below.</p></blockquote>
+<div id="valid" style="display:inline;"></div><p><code class="python">valid</code> → <code class="return">bool</code> <b>(Read Only)</b>: 
+</p><blockquote><p>True if the referenced parameter currently exists, False if it has been deleted.</p></blockquote>
+<div id="index" style="display:inline;"></div><p><code class="python">index</code> → <code class="return">int</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The parameter's order in the list.</p></blockquote>
+<div id="sequence" style="display:inline;"></div><p><code class="python">sequence</code> → <code class="return">Sequence | None</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The <a href="Sequence_Class.html" title="Sequence Class">Sequence</a> this parGroup is a part of. None if not in a sequence.</p></blockquote>
+<div id="sequenceBlock" style="display:inline;"></div><p><code class="python">sequenceBlock</code> → <code class="return">SequenceBlock | None</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The <a href="SequenceBlock_Class.html" title="SequenceBlock Class">SequenceBlock</a> this parGroup belongs to. None if not in a sequence.</p></blockquote>    
+<div id="blockIndex" style="display:inline;"></div><p><code class="python">blockIndex</code> → <code class="return">int</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The index of the parGroup within its <a href="SequenceBlock_Class.html" title="SequenceBlock Class">SequenceBlock</a>. None if not in a sequence.</p></blockquote>
+<div id="sequenceIndex" style="display:inline;"></div><p><code class="python">sequenceIndex</code> → <code class="return">int</code> <b>(Read Only)</b>: 
+</p><blockquote><p>The index of the parGroup's <a href="SequenceBlock_Class.html" title="SequenceBlock Class">SequenceBlock</a> in its <a href="Sequence_Class.html" title="Sequence Class">Sequence</a>. None if not in a sequence.</p></blockquote>
+<div id="size" style="display:inline;"></div><p><code class="python">size</code> → <code class="return">int</code> : 
+</p><blockquote><p>Get or set the parameter's vector size.</p></blockquote>     
+<h2><span class="mw-headline" id="Methods">Methods</span></h2>
+<div id="copy" style="display:inline;"></div><p><code class="python">copy(<span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span>)</code>→ <code class="return">None</code>:
+</p><blockquote><p>Copy the specified parameter.
+</p><ul><li><span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span> - The parameter to copy.</li></ul><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span> <span class="n">op</span><span class="p">(</span><span class="s1">'geo2'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span> <span class="p">)</span>
+</pre></div></blockquote>
+<div id="destroy" style="display:inline;"></div><p><code class="python">destroy()</code>→ <code class="return">None</code>:
+</p><blockquote><p>Destroy the parameter referenced by this <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span>. An exception will be raised if the parameter has already been destroyed. Only custom and sequential parameters can be destroyed.  Destroying a sequential parameter will destroy its entire block. Note: When any parameter is destroyed, any existing parameter objects will be invalid and should be re-fetched.</p></blockquote>
+<div id="eval" style="display:inline;"></div><p><code class="python">eval()</code>→ <code class="return">tuple</code>:
+</p><blockquote><p>Evaluate a parameter group. This value may be derived by the parameter group's constant value, expression, or export, dependent on its mode.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+</pre></div></blockquote>
+<div id="evalExport" style="display:inline;"></div><p><code class="python">evalExport()</code>→ <code class="return">tuple</code>:
+</p><blockquote><p>Evaluate the export portions of a parameter, if it contains any. This will ignore any expressions, etc.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">evalExport</span><span class="p">()</span>
+</pre></div></blockquote>
+<div id="evalExpression" style="display:inline;"></div><p><code class="python">evalExpression()</code>→ <code class="return">tuple</code>:
+</p><blockquote><p>Evaluate the expression portions of a parameter, if it contains any. This will ignore any exports, etc.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">evalExpression</span><span class="p">()</span>
+</pre></div><p>
+To evaluate an arbitrary expression string, that is not inside a parameter, see <a href="OP_Class.html#evalExpression" title="OP Class">OP.evalExpression</a>.</p></blockquote>
+<div id="evalNorm" style="display:inline;"></div><p><code class="python">evalNorm()</code>→ <code class="return">tuple[float, ...[</code>:
+</p><blockquote><p>Similar to eval() but the returns the normalized slider values.</p></blockquote>
+<div id="evalOPs" style="display:inline;"></div><p><code class="python">evalOPs()</code>→ <code class="return">tuple[list[op], ...]</code>:
+</p><blockquote><p>Evaluate each parameter as a series of operators. This is useful for a custom  parameter that specifies a list of operator paths for example.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'base1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">Paths</span><span class="o">.</span><span class="n">evalOPs</span><span class="p">()</span>
+</pre></div></blockquote>
+<div id="pars" style="display:inline;"></div><p><code class="python">pars(pattern)</code>→ <code class="return">list</code>:
+</p><blockquote><p>Returns a (possibly empty) list of parameter objects that match the pattern.
+</p><ul><li>pattern - Is a string following the <span class="mw-lingo-term" data-lingo-term-id="3a7f8b62ad3b33224b536b97a7a305b2">Pattern Matching</span> rules, specifying which parameters to return.</li></ul><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># translate parameters</span>
+<span class="n">newlist</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">pars</span><span class="p">(</span><span class="s1">'t?'</span><span class="p">)</span>
+</pre></div></blockquote>
+<div id="reset" style="display:inline;"></div><p><code class="python">reset()</code>→ <code class="return">bool</code>:
+</p><blockquote><p>Resets the parameter group to its default state.
+</p><p>Returns true if anything was changed.
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'geo1'</span><span class="p">)</span><span class="o">.</span><span class="n">parGroup</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+</pre></div></blockquote>
+<div id="isSameParGroup" style="display:inline;"></div><p><code class="python">isSameParGroup(parGroup : <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span>)</code>→ <code class="return">bool</code>:
+</p><blockquote><p>True if the provided parGroup is the same <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span> on the same operator. Because <code>op('container1').parGroup.x == op('container2').parGroup.x</code> compares values and <code>op('container1').parGroup.x is op('container1').parGroup.x</code> is always False (because of TouchDesigner internals), you must use <code>isSameParGroup</code> to compare <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span> objects.
+</p><ul><li>parGroup - The <span class="mw-lingo-term" data-lingo-term-id="90055a7b1446848a11d5c2dbeadcd9d8">ParGroup</span> to compare identity with.</li></ul></blockquote>
+<p>TouchDesigner Build: <select onchange="location=this.value;"><option value="ParGroup_Class.html">Latest</option>\n<option value="https://docs.derivative.ca/ParGroup_Class?oldid=30597">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30602">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30603">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30604">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30609">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30610">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30620">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30621">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30622">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31110">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31444">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31447">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31492">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31538">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31565">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31566">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31569">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=32016">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=32164">wikieditor</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31573">mw-rollback</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31538">mw-reverted</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31565">mw-reverted</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31566">mw-reverted</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=31569">mw-reverted</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=30350">2023.11280</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=28291">2022.24140</option><option value="https://docs.derivative.ca/ParGroup_Class?oldid=24506">before 2022.24140</option></select></p></div><div class="mw-lingo-tooltip" id="90055a7b1446848a11d5c2dbeadcd9d8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A ParGroup is a group of related parameters that you can set and get as a whole instead of its individual parameters.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="64ef1cb3966ecc5ce25ad319301a4703"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every Parameter can be in one of four modes: Constant Mode, <a href="Expression.html" title="Expression">Expression</a> Mode, <a href="Export.html" title="Export">Export</a> Mode or Bind (<a href="Binding.html" title="Binding">Binding</a>) Mode.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="75014a31ff201f57ad440d617b059d87"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Absolute Time starts counting from 0 when the TouchDesigner process starts, and is always increasing. It will pause if the Power 0/1 button at the top of the UI is Off.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3a7f8b62ad3b33224b536b97a7a305b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Matching names using wildcard characters and bracketing. Useful in "<a href="Select_CHOP.html" title="Select CHOP">Select</a>" type parameters to select multiple operators, paths, channels, etc.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250305045704
+Cache expiry: 60
+Reduced expiry: true
+Complications: []
+CPU time usage: 0.156 seconds
+Real time usage: 3.640 seconds
+Preprocessor visited node count: 2156/1000000
+Post‐expand include size: 66797/2097152 bytes
+Template argument size: 33071/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 14487/5000000 bytes
+Lua time usage: 0.030/10 seconds
+Lua virtual size: 8634368/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 3514.076      1 -total
+ 71.51% 2512.840      1 Template:ClassMethodSection
+ 71.40% 2509.158     10 Template:ClassMethod
+ 28.08%  986.651      1 Template:ClassMemberSection
+ 27.86%  978.982     61 Template:ClassMember
+  0.34%   11.779      1 Template:TDClassSummary
+  0.07%    2.396      1 Template:History
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:3107-0!canonical and timestamp 20250305045701 and revision id 32164.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=ParGroup_Class&amp;oldid=32164">https://docs.derivative.ca/index.php?title=ParGroup_Class&amp;oldid=32164</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Python_Reference.html" title="Category:Python Reference">Python Reference</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.156","walltime":"3.640","ppvisitednodes":{"value":2156,"limit":1000000},"postexpandincludesize":{"value":66797,"limit":2097152},"templateargumentsize":{"value":33071,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":14487,"limit":5000000},"timingprofile":["100.00% 3514.076      1 -total"," 71.51% 2512.840      1 Template:ClassMethodSection"," 71.40% 2509.158     10 Template:ClassMethod"," 28.08%  986.651      1 Template:ClassMemberSection"," 27.86%  978.982     61 Template:ClassMember","  0.34%   11.779      1 Template:TDClassSummary","  0.07%    2.396      1 Template:History"]},"scribunto":{"limitreport-timeusage":{"value":"0.030","limit":"10"},"limitreport-virtmemusage":{"value":8634368,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250305045704","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":3796});});</script>
+
+
+
+
+</body><!-- Cached 20250305045704 --><!-- Mirrored from docs.derivative.ca/ParGroup_Class by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:51 GMT --></html>

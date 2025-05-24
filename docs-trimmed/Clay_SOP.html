@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Clay_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:13 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>Clay SOP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c2e1ce8ca0a02602f62bea76","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Clay_SOP","wgTitle":"Clay SOP","wgCurRevisionId":24179,"wgRevisionId":24179,"wgArticleId":308,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Clay_SOP","wgRelevantArticleId":308,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":[
+"January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Add SOP","Alembic SOP","Align SOP","Arm SOP",
+"Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP","Polyreduce SOP","Polyspline SOP","Polystitch SOP",
+"Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Clay SOP deforms faces and surfaces by pulling points that lie directly on them." name="description"/>
+<meta content="TouchDesigner, Clay, SOP" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="Clay SOP - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Clay_SOP" property="og:url"/>
+<meta content="The Clay SOP deforms faces and surfaces by pulling points that lie directly on them." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Clay, SOP" property="article:tag"/>
+<meta content="2021-11-16T21:14:01Z" property="article:modified_time"/>
+<meta content="2021-11-16T21:14:01Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Clay SOP - TouchDesigner Documentation","headline":"Clay SOP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Clay SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Clay_SOP","url":"https:\/\/docs.derivative.ca\/Clay_SOP","description":"The Clay SOP deforms faces and surfaces by pulling points that lie directly on them.","keywords":"TouchDesigner, Clay, SOP","dateModified":"2021-11-16T21:14:01Z","datePublished":"2021-11-16T21:14:01Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Clay_SOP rootpage-Clay_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Clay SOP</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> deforms faces and surfaces by pulling points that lie directly on them. As opposed to the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> or other SOPs that manipulate control points (CVs), the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> operates on the primitive contours themselves, providing a direct, intuitive, and unconstrained way of reshaping geometry. Thus, rather than translating CVs to change the aspect of the primitive, the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> takes the inverse approach of manipulating the primitive's skin to reposition the CVs.		
+</p><p>The point that defines the area to be modified is called a "target point" or "target" for short. It is expressed as a (u,v) pair in the parametric space of the primitive and ranges between 0 and 1 in both U and V. The image of the target point on the primitive is a 3D point which Clay can displace in several ways. Furthermore, if the primitive is a surface, there is are options to pull only the point or a whole isoparametric curve in either U or V.			
+</p><p>Clay does not refine the faces and surfaces unless asked to, so the complexity of the geometry does not increase. The area affected by the change varies with each primitive type and topology. In all cases it is possible to reduce to amount of change by inserting a Refine <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> before the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> and inserting detail around the target point. For other ways to increase the locality of the deformation as well as its sharpness, see U and V Sharpness below.			
+</p><p>If a second input is present, it is possible to snap the target (u,v) point to an (s,t) point on the first primitive of the second input. Without a second input, the primitives can be made to snap to themselves. Moreover, the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is able to snap the target to arbitrary points in space.			
+</p><p>Both this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> and the Align <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be used effectively as snapping tools and building blocks for curve networks. The main difference between the two SOPs is that Clay deforms the inputs partially, while Align translates and/or rotates the whole primitive.			
+</p><p>The Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> accepts a mix of any combination of face and surface types.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/ClaySOP_Class" title="ClaySOP Class">claySOP_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Clay_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Clay Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_U_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - U Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_V_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - V Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">5</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">6</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">6.1</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">6.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Clay_Page"><div class="sectionBarSOP">Parameters - Clay Page</div></span></h2>
+<div id="group" style=""><span class="parNameSOP">Group</span>  <code>group</code> - If there are input groups, specifying a group name in this field will cause this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to act only upon the group specified. Accepts patterns, as described in <span class="mw-lingo-term" data-lingo-term-id="3a7f8b62ad3b33224b536b97a7a305b2">Pattern Matching</span> in the [Scripting Guide].
+<p><i></i>
+</p>
+</div>			
+<div id="method" style=""><span class="parNameSOP">Warp Method</span>  <code>method</code> - <span class="mw-customtoggle-method">⊞</span> - The following describe the four types of transformations the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can apply to the target (U, V) points or isoparametric curves (U or V). All the transformations are exclusive, and all reduce to a signed translation along a direction. The difference between the various transformations is the way the translation and the direction are specified.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-method">
+<ul><li><span class="parNameSOP">Matrix</span> <code>mat</code> - The matrix method relocates the target point based on a transformation matrix. For a description of transforms, see the <a href="Transform_SOP.html" title="Transform SOP">Transform SOP</a>.</li></ul><ul><li><span class="parNameSOP">Vector</span> <code>vec</code> - The vector method provides a distance and a vector to translate along.</li></ul><ul><li><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span></span> <code>point</code> - The point method provides a 3D point in object space that the target point must snap to.</li></ul><ul><li><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span></span> <code>prim</code> - The primitive method allows the target point to be snapped to a point on another primitive. Any primitive type is allowed, including metaballs, all quadrics, and even particle systems. The point on the destination primitive is expressed parametrically as a (U, V) pair.</li></ul><p>If the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> has a second input, then the destination primitive is going to be the first primitive in that input. If there is no second input, the primitives in the first input will snap to themselves (each face or surface to itself).
+</p>
+</div>
+<p><i></i>
+</p>
+</div>	
+<div id="xord" style=""><span class="parNameSOP">Transform Order</span>  <code>xord</code> - <span class="mw-customtoggle-xord">⊞</span> - Sets the overall transform order for the transformations. The transform order determines the order in which transformations take place. Depending on the order, you can achieve different results using the exact same values. Choose the appropriate order from the menu.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-xord">
+<ul><li><span class="parNameSOP">Scale Rotate Translate</span> <code>srt</code> -</li></ul><ul><li><span class="parNameSOP">Scale Translate Rotate</span> <code>str</code> -</li></ul><ul><li><span class="parNameSOP">Rotate Scale Translate</span> <code>rst</code> -</li></ul><ul><li><span class="parNameSOP">Rotate Translate Scale</span> <code>rts</code> -</li></ul><ul><li><span class="parNameSOP">Translate Scale Rotate</span> <code>tsr</code> -</li></ul><ul><li><span class="parNameSOP">Translate Rotate Scale</span> <code>trs</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="rord" style=""><span class="parNameSOP">Rotate Order</span>  <code>rord</code> - <span class="mw-customtoggle-rord">⊞</span> - Sets the order of the rotations within the overall transform order.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rord">
+<ul><li><span class="parNameSOP">Rx Ry Rz</span> <code>xyz</code> -</li></ul><ul><li><span class="parNameSOP">Rx Rz Ry</span> <code>xzy</code> -</li></ul><ul><li><span class="parNameSOP">Ry Rx Rz</span> <code>yxz</code> -</li></ul><ul><li><span class="parNameSOP">Ry Rz Rx</span> <code>yzx</code> -</li></ul><ul><li><span class="parNameSOP">Rz Rx Ry</span> <code>zxy</code> -</li></ul><ul><li><span class="parNameSOP">Rz Ry Rx</span> <code>zyx</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="t" style=""><span class="parNameSOP">Translate</span>  <code>t</code> - <span class="mw-customtoggle-t">⊞</span> - These three fields move the Source geometry in the three axes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-t">
+<ul><li><span class="parNameSOP">X</span> <code>tx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>ty</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>tz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="r" style=""><span class="parNameSOP">Rotate</span>  <code>r</code> - <span class="mw-customtoggle-r">⊞</span> - These three fields rotate the Source geometry in the three axes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-r">
+<ul><li><span class="parNameSOP">X</span> <code>rx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>ry</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>rz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="s" style=""><span class="parNameSOP">Scale</span>  <code>s</code> - <span class="mw-customtoggle-s">⊞</span> - These three fields scale the Source geometry in the three axes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-s">
+<ul><li><span class="parNameSOP">X</span> <code>sx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>sy</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>sz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="p" style=""><span class="parNameSOP">Pivot</span>  <code>p</code> - <span class="mw-customtoggle-p">⊞</span> - The pivot point for the transformations (not the same as the pivot point in the pivot channels). The pivot point parameters allow you to define the point about which geometry scales and rotates. Altering the pivot point produces different results depending on the transformation performed on the object.	
+<p>For example, during a scaling operation, if the pivot point of an object is located at: <code>-1, -1, 0</code> and you wanted to scale the object by <code>0.5</code> (reduce its size by 50%) the object would scale toward the pivot point and appear to slide down and to the left.			
+</p><p><a class="image" href="https://docs.derivative.ca/File:TouchGeometry91.gif"><img alt="TouchGeometry91.gif" decoding="async" height="174" src="https://docs.derivative.ca/images/b/bf/TouchGeometry91.gif" width="600"/></a>			
+</p><p>In the example above, rotations performed on an object with different pivot points produce very different results.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-p">
+<ul><li><span class="parNameSOP">X</span> <code>px</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>py</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>pz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="dist" style=""><span class="parNameSOP">Distance</span>  <code>dist</code> - Specifies the translation distance along the given vector.
+<p><i></i>
+</p>
+</div>		
+<div id="normal" style=""><span class="parNameSOP">Normal</span>  <code>normal</code> - When On, the translation will be performed along the primitive normal at the target (U, V) point. Otherwise an explicit direction is required, see Direction parameter below. If the input contains face primitives, the primitive normal is independent of the target (U) point. <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> normals can be displayed from the Display Options dialog.
+<p><i></i>
+</p>
+</div>		
+<div id="dir" style=""><span class="parNameSOP">Direction</span>  <code>dir</code> - <span class="mw-customtoggle-dir">⊞</span> - The direction of the vector is the Normal parameter above is Off.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-dir">
+<ul><li><span class="parNameSOP">X</span> <code>dirx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>diry</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>dirz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>				
+<div id="coord" style=""><span class="parNameSOP">Coordinates</span>  <code>coord</code> - <span class="mw-customtoggle-coord">⊞</span> - Specifies the absolute 3D location the (U, V) target must translate to.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-coord">
+<ul><li><span class="parNameSOP">X</span> <code>coordx</code> -</li></ul><ul><li><span class="parNameSOP">Y</span> <code>coordy</code> -</li></ul><ul><li><span class="parNameSOP">Z</span> <code>coordz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>					
+<div id="uvsnap" style=""><span class="parNameSOP">U and V</span>  <code>uvsnap</code> - <span class="mw-customtoggle-uvsnap">⊞</span> - The primitive method allows the target point to be snapped to a point on another primitive specified by U and V here. See Warp Method parameter for details.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-uvsnap">
+<ul><li><code>uvsnap1</code> -</li></ul><ul><li><code>uvsnap2</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>	
+<pre>   |opFamily=<span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>
+</pre>
+<p>}}			
+</p><p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_U_Page"><div class="sectionBarSOP">Parameters - U Page</div></span></h2>
+<div id="uwarp" style=""><span class="parNameSOP">Deform along U</span>  <code>uwarp</code> - Determines whether the clay operation affects the U parametric direction. Both faces and surfaces respond to this option. If the primitives are face types and the toggle is off, clay doesn't change the inputs at all. If the inputs are surfaces and U is off, clay will pull the surfaces along the entire V direction (if V is on) or not at all.
+<p><i></i>
+</p>
+</div>	
+<div id="u" style=""><span class="parNameSOP">U</span>  <code>u</code> - This value defines a point in the parametric space of a face, representing the location to be affected by the clay operation. This location is referred to as the "target". For surfaces, U defines a line of constant value in the parametric space of the primitive and requires a second coordinate - V - to specify a unique location (see the V&gt; Page below). Spline faces and surfaces have explicit parametric spaces known as domains; since domains are not restricted to the unit range [0, 1], the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> maps U to the real domain value of the primitive. For polygons and meshes, U is expressed in terms of the number or vertices and columns respectively and in terms of their relative positions.
+<p><i></i>
+</p>
+</div>		
+<div id="uusebias" style=""><span class="parNameSOP">U Bias</span>  <code>uusebias</code> - Indicates whether the clay algorithm should use the bias it thinks works best for the given U parameter, or take the value explicitly stated beside the toggle. Since clay affects the CVs in the neighbourhood of the given parametric location, the bias can influence the amount of pull applied to the CVs on either side of this location. The effect is a slant of the "wave" the parametric point rides on - towards one side or the other.
+<p><i></i>
+</p>
+</div>		
+<div id="ubias" style=""><span class="parNameSOP">U Bias</span>  <code>ubias</code> -
+<p><i></i>
+</p>
+</div>		
+<div id="usharp" style=""><span class="parNameSOP">U Sharpness</span>  <code>usharp</code> - This parameter affects only NURBS curves and surfaces. The pull generated by clay on these primitives can be smooth or sharp depending on the position of the target relative to the underlying domain (the farther away from a knot, the rounded the bulge) and the knot multiplicity near the target (the higher the multiplicity the sharper the pull). If the pull is too round or affects too big an area in U, the U Sharpness parameter can reduce it by inserting one or more knots at the target U value. When the U Sharpness is zero no knots are inserted. When the U Sharpness is 1, all "degree" knots are inserted and the shape becomes very sharp. The U Sharpness varies in discrete steps; the number of steps equals the U degree of the spline.	
+<p><b>Note:</b> The range of the U Sharpness slider varies with the degree of the spline (i.e. the closer it is to 1, the more knots it adds). Since the number of knots added forms a discrete sequence, the slider will automatically jump to the valid positions.
+<i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_V_Page"><div class="sectionBarSOP">Parameters - V Page</div></span></h2>
+<div id="vwarp" style=""><span class="parNameSOP">Deform along V</span>  <code>vwarp</code> - Determines whether the clay operation affects the V parametric direction of the surface. If the inputs are surfaces and V if off, clay will pull the surfaces along the entire U direction (if U is on) or not at all. If both U and V are on, clay will pull the surface at the target (U, V) point specified in the U and V folders below. This option does not affect face types.
+<p><i></i>
+</p>
+</div>
+<div id="v" style=""><span class="parNameSOP">V</span>  <code>v</code> - This value affects only surface types. V defines a line of constant value in the parametric space of the surface and together with U specifies a unique location in that space. Spline surfaces have explicit parametric spaces known as domains; since domains are not restricted to the unit range [0, 1], the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> maps V to the real domain value of the surface. For meshes, V is expressed in terms of the number or rows and their relative positions.
+<p><i></i>
+</p>
+</div>		
+<div id="vusebias" style=""><span class="parNameSOP">V Bias</span>  <code>vusebias</code> - Indicates whether the clay algorithm should use the bias it thinks works best for the given V parameter, or take the value explicitly stated beside the toggle. Since clay affects the CVs in the neighbourhood of the given parametric location, the bias can influence the amount of pull applied to the CVs on either side of this location. The effect is a slant of the "wave" the parametric point rides on -- towards one side or the other.
+<p><i></i>
+</p>
+</div>		
+<div id="vbias" style=""><span class="parNameSOP">V Bias</span>  <code>vbias</code> -
+<p><i></i>
+</p>
+</div>		
+<div id="vsharp" style=""><span class="parNameSOP">V Sharpness</span>  <code>vsharp</code> - This parameter affects only NURBS surfaces. The pull generated by clay on these primitives can be smooth or sharp depending on the position of the target relative to the underlying domain (the farther away from a knot, the rounded the bulge) and the knot multiplicity near the target (the higher the multiplicity the sharper the pull). If the pull is too round or affects too big an area in V, the V Sharpness parameter can reduce it by inserting one or more knots at the target V value. When the V Sharpness is zero no knots are inserted. When the V Sharpness is 1, all "degree" knots are inserted and the surface becomes very sharp. The V Sharpness varies in discrete steps; the number of steps equals the V degree of the spline.	
+<p><b>Note:</b> The range of the V Sharpness slider varies with the degree of the spline (i.e. the closer it is to 1, the more knots it adds). Since the number of knots added forms a discrete sequence, the slider will automatically jump to the valid positions.
+<i></i>
+</p>
+</div>
+<p><br/></p><p><br/></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarSOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameSOP">Input 0: </span> -</li>
+<li><span class="parNameSOP">Input 1: </span> -</li></ul><p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Clay <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Clay_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Clay_SOP?oldid=24179">2022.24140</option><option value="https://docs.derivative.ca/Clay_SOP?oldid=14688">2021.10000</option><option value="https://docs.derivative.ca/Clay_SOP?oldid=23146">2018.28070</option><option value="https://docs.derivative.ca/Clay_SOP?oldid=14459">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a href="Carve_SOP.html" title="Carve SOP">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Circle_SOP.html" title="Circle SOP">Circle  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_SOP.html" title="Import Select SOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a href="LSystem_SOP.html" title="LSystem SOP">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Primitive_SOP.html" title="Primitive SOP">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3a7f8b62ad3b33224b536b97a7a305b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Matching names using wildcard characters and bracketing. Useful in "<a href="Select_CHOP.html" title="Select CHOP">Select</a>" type parameters to select multiple operators, paths, channels, etc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="07ee3427562e4f1a5c9f2bfb17fd9eee"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A surface type in <a href="SOP.html" title="SOP">SOPs</a> that includes polygon, curve (NURBS and Bezier), patch (NURBS and Bezier) and other basic shapes like sphere, tube and metaball. <a href="Point.html" title="Point">Points</a> and Primitives are part of the <a href="Geometry_Detail.html" title="Geometry Detail">Geometry Detail</a>, which is a part of a <a href="SOP.html" title="SOP">SOP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304173146
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.492 seconds
+Real time usage: 2.478 seconds
+Preprocessor visited node count: 4782/1000000
+Post‐expand include size: 81560/2097152 bytes
+Template argument size: 31731/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 483/5000000 bytes
+Lua time usage: 1.140/10 seconds
+Lua virtual size: 9134080/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2408.853      1 -total
+ 95.03% 2289.111      1 Template:SOPNavBox
+ 93.84% 2260.539    114 Template:CatList
+  2.50%   60.321     23 Template:Parameter
+  0.95%   22.777     36 Template:ParameterItem
+  0.93%   22.320      1 Template:InfoCHOPChannels
+  0.71%   17.136      3 Template:ParameterPage
+  0.49%   11.880      1 Template:Summary
+  0.47%   11.389      1 SOP_Info_Channels_Common_Page
+  0.39%    9.364      1 Template:InputsPage
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:308-0!canonical and timestamp 20250304173144 and revision id 24179.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Clay_SOP&amp;oldid=24179">https://docs.derivative.ca/index.php?title=Clay_SOP&amp;oldid=24179</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.492","walltime":"2.478","ppvisitednodes":{"value":4782,"limit":1000000},"postexpandincludesize":{"value":81560,"limit":2097152},"templateargumentsize":{"value":31731,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":483,"limit":5000000},"timingprofile":["100.00% 2408.853      1 -total"," 95.03% 2289.111      1 Template:SOPNavBox"," 93.84% 2260.539    114 Template:CatList","  2.50%   60.321     23 Template:Parameter","  0.95%   22.777     36 Template:ParameterItem","  0.93%   22.320      1 Template:InfoCHOPChannels","  0.71%   17.136      3 Template:ParameterPage","  0.49%   11.880      1 Template:Summary","  0.47%   11.389      1 SOP_Info_Channels_Common_Page","  0.39%    9.364      1 Template:InputsPage"]},"scribunto":{"limitreport-timeusage":{"value":"1.140","limit":"10"},"limitreport-virtmemusage":{"value":9134080,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304173146","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":2723});});</script>
+
+
+
+
+</body><!-- Cached 20250304173146 --><!-- Mirrored from docs.derivative.ca/Clay_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:13 GMT --></html>

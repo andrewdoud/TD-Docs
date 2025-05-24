@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/Engine_COMP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:09 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>Engine COMP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c6440943c2f4ff51457425d1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Engine_COMP","wgTitle":"Engine COMP","wgCurRevisionId":33646,"wgRevisionId":33646,"wgArticleId":2287,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["COMPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Engine_COMP","wgRelevantArticleId":2287,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Actor COMP",
+"Ambient Light COMP","Animation COMP","Annotate COMP","Base COMP","Blend COMP","Bone COMP","Bullet Solver COMP","Button COMP","Camera Blend COMP","Camera COMP","MediaWiki:Common.js","Component","Experimental:Component","Constraint COMP","Container COMP","Engine COMP","Environment Light COMP","FBX COMP","Field COMP","Force COMP","Geo Text COMP","Geometry COMP","GLSL COMP","Handle COMP","Impulse Force COMP","Light COMP","List COMP","Null COMP","Nvidia Flex Solver COMP","Nvidia Flow Emitter COMP","OP Viewer COMP","Palette:depthProjection","Parameter COMP","Replicator COMP","Select COMP","Shared Mem In COMP","Shared Mem Out COMP","Slider COMP","Table COMP","Text COMP","Time COMP","USD COMP","Widget COMP","Window COMP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":
+"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The Engine COMP will run a &lt;code&gt;.tox&lt;/code&gt; file (component) in a separate process. It uses [[TouchEngine]] to manage these processes and pass data between the loaded component and the main project." name="description"/>
+<meta content="TouchDesigner, Engine, COMP" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=COMP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="Engine COMP - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/Engine_COMP" property="og:url"/>
+<meta content="The Engine COMP will run a &lt;code&gt;.tox&lt;/code&gt; file (component) in a separate process. It uses [[TouchEngine]] to manage these processes and pass data between the loaded component and the main project." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, Engine, COMP" property="article:tag"/>
+<meta content="2025-05-14T07:38:58Z" property="article:modified_time"/>
+<meta content="2025-05-14T07:38:58Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Engine COMP - TouchDesigner Documentation","headline":"Engine COMP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Engine COMP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Engine_COMP","url":"https:\/\/docs.derivative.ca\/Engine_COMP","description":"The Engine COMP will run a <code>.tox<\/code> file (component) in a separate process. It uses [[TouchEngine]] to manage these processes and pass data between the loaded component and the main project.","keywords":"TouchDesigner, Engine, COMP","dateModified":"2025-05-14T07:38:58Z","datePublished":"2025-05-14T07:38:58Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Engine_COMP rootpage-Engine_COMP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Engine COMP</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarCOMP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will run a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file</code> (component) in a separate process. It uses <a href="TouchEngine.html" title="TouchEngine">TouchEngine</a> to manage these processes and pass data between the loaded component and the main project.
+</p><p><b>Inputs and Outputs</b>
+</p><p>The chosen component's top-level Inputs and Outputs are exposed as inputs and outputs on the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. Only <a href="TOP.html" title="TOP">TOP</a>, <a href="CHOP.html" title="CHOP">CHOP</a> and <a href="DAT.html" title="DAT">DAT</a> inputs and outputs are supported.
+</p><p><b>Custom Parameters</b>
+</p><p>Any <a href="Custom_Parameters.html" title="Custom Parameters">custom parameters</a> on the top-level component are added to the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s parameters. Custom parameters which refer to other nodes in the network, such as <a href="TOP.html" title="TOP">TOP</a>, <a href="CHOP.html" title="CHOP">CHOP</a> and <a href="DAT.html" title="DAT">DAT</a> parameters, are not supported - you should use inputs to connect those nodes instead.
+</p><p>Note that parameters work in one direction only - you cannot set a parameter from within the loaded <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code>.
+</p><p><b>External File Paths</b>
+</p><p>By default, relative paths on OPs or in scripts <b>inside</b> the loaded component are relative to the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file's location. This can be changed with the 'Asset Paths' parameter. Relative paths as file or folder custom parameters <b>of</b> the component - those that show up on the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> - are always relative to the main project.
+</p><p><b>Monitoring Engine Status</b>
+</p><p>It is useful to monitor the state and performance of the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. By default, an <a href="Info_DAT.html" title="Info DAT">Info DAT</a> is docked to the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and contains file path and process ID. A docked <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a> contains three sets of monitoring channels: The Info Type menu is by default set to TouchEngine Status which gives loading / running / error status of the Engine process. Changing the menu to TouchEngine Perform gives the engine's performance statistics, and changing the menu to Initialize/Start give ready / running state information specifically about your loaded component since it can be paused, timed and re-initialized.
+</p><p><b>Controlling Engine State</b>
+</p><p>The Engine process will be started by the TouchDesigner process and it will run your <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> component automatically. But you can have more control over the time/memory management of multiple components using the Unload, Reload pulse parameters for the currently-loaded <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file. On the Advanced page, the Launch and Quit Engine Process parameters give you terminate/restart control of the entire Engine process.
+</p><p><b><span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Lifetime</b>
+</p><p>Under TouchEngine, components are loaded into an already-running instance. For this reason, an <a href="Execute_DAT.html" title="Execute DAT">Execute DAT</a>'s <code>onStart()</code> and <code>onExit()</code> method will never be executed under TouchEngine. The <code>onCreate()</code> method will be executed when the component is loaded, and is a good place to do any setup you would normally do in <code>onStart()</code>.
+</p><p><b>Time in TouchEngine</b>
+</p><p>When the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> starts the component (after it has loaded, if 'Start when Initialized' is On), the component time in TouchEngine is <code>0</code>. It will then increase either in sync with the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> or according to TouchEngine's internal clock, depending on the setting of the 'Clock' parameter on the Tune parameter page.
+</p><p>An input buffer and output buffer are used to allow for differences in cook rate between the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and TouchEngine. Often you may want to adjust the parameters on the Tune page to suit your particular setup. The Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will cook frames to fill its input buffer, if required, prior to starting to cook the component in TouchEngine - then will cook frames in TouchEngine to fill its output buffer prior to emitting output from the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. The Auto setting will attempt to keep small buffers sufficient to avoid dropped frames, but you may wish to set a fixed buffer size to suit your setup, particularly if working with audio.
+</p><p><b>TouchEngine Versions</b>
+</p><p>TouchEngine is installed as part of TouchDesigner, and the currently running version will be used to load the given <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code>. If you wish to use a different version of TouchEngine you can either set the <a href="Variables.html#System_Environment_Variables" title="Variables">environment variable</a> <code>TOUCHENGINE_APP_PATH</code> to the path to a TouchDesigner installation (an installation directory on Windows, or a TouchDesigner app on macOS) <i>or</i> install TouchDesigner into a folder named <code>TouchEngine</code> alongside the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> (on macOS rename an application from TouchDesigner to TouchEngine) <i>or</i> create a link named <code>TouchEngine</code> alongside the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> which points to an installation directory or TouchDesigner app.
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/EngineCOMP_Class" title="EngineCOMP Class">engineCOMP_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Engine_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Engine Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Tune_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Tune Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_InitStart_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - InitStart Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Advanced_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Advanced Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Extensions_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Extensions Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">8</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Specific_Engine_COMP_Info_Channels"><span class="tocnumber">8.1</span> <span class="toctext">Specific Engine COMP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_COMP_Info_Channels"><span class="tocnumber">8.2</span> <span class="toctext">Common COMP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">8.3</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Engine_Page"><div class="sectionBarCOMP">Parameters - Engine Page</div></span></h2>
+<div id="file" style=""><span class="parNameCOMP">Tox File</span>  <code>file</code> - Specify the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file to load with TouchEngine.
+<p><i></i>
+</p>
+</div>
+<div id="unload" style=""><span class="parNameCOMP">Unload</span>  <code>unload</code> - Unload the currently loaded component.
+<p><i></i>
+</p>
+</div>
+<div id="reload" style=""><span class="parNameCOMP">Reload</span>  <code>reload</code> - Reload the currently loaded component.
+<p><i></i>
+</p>
+</div>
+<div id="reloadoncrash" style=""><span class="parNameCOMP">Reload on Crash</span>  <code>reloadoncrash</code> - If the TouchEngine instance quits for any reason, restart it.
+<p><i></i>
+</p>
+</div>
+<div id="assetpaths" style=""><span class="parNameCOMP">Asset Paths</span>  <code>assetpaths</code> - <span class="mw-customtoggle-assetpaths">⊞</span> - Specify how relative paths inside the component are resolved.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-assetpaths">
+<ul><li><span class="parNameCOMP">Relative to Project File (<code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>)</span> <code>project</code> - Relative paths inside the component are relative to the project file running TouchEngine.</li></ul><ul><li><span class="parNameCOMP">Relative to <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> File (<code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code>)</span> <code>comp</code> - Relative paths inside the component are relative to the component (<code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file).</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="callbacks" style=""><span class="parNameCOMP">Callbacks <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span></span>  <code>callbacks</code> - The Callbacks <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> will execute for events related to the TouchEngine instance.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Tune_Page"><div class="sectionBarCOMP">Parameters - Tune Page</div></span></h2>
+<div id="clock" style=""><span class="parNameCOMP">Clock</span>  <code>clock</code> - <span class="mw-customtoggle-clock">⊞</span> - Specify the temporal connection to the TouchEngine instance.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-clock">
+<ul><li><span class="parNameCOMP">Synchronized</span> <code>synced</code> - Time is strictly synchronized between the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and the TouchEngine instance.</li></ul><ul><li><span class="parNameCOMP">Independent</span> <code>independent</code> - The TouchEngine instance runs according to its own internal clock.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="matchrate" style=""><span class="parNameCOMP">Match Local <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Rate</span>  <code>matchrate</code> - When on, the component will be cooked in TouchEngine at the same rate as the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="fps" style=""><span class="parNameCOMP">Frames per Second</span>  <code>fps</code> - The framerate for cooking the component in TouchEngine.
+<p><i></i>
+</p>
+</div>
+<div id="wait" style=""><span class="parNameCOMP">Wait for Render</span>  <code>wait</code> - When enabled, if a frame takes a long time to cook in TouchEngine the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will wait during cooking rather than dropping the late frame.
+<p>This behaviour is affected by the size of the output buffer: eg if Out Buffer Frames is 4, the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will wait for the 4th most recent frame to complete.
+<i></i>
+</p>
+</div>
+<div id="timeout" style=""><span class="parNameCOMP">Render Timeout</span>  <code>timeout</code> - When waiting for a frame, TouchEngine will give up waiting after this many milliseconds.
+<p><i></i>
+</p>
+</div>
+<div id="inauto" style=""><span class="parNameCOMP">In Buffer Auto</span>  <code>inauto</code> - Automatically manage the number of input frames queued.
+<p><i></i>
+</p>
+</div>
+<div id="inframes" style=""><span class="parNameCOMP">In Buffer Frames</span>  <code>inframes</code> - The number of input frames to queue before passing them to the TouchEngine instance.
+<p>To accommodate potential fluctuations in time-slice in the TouchEngine instance, <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> inputs must send a number of frames ahead of time.
+<i></i>
+</p>
+</div>
+<div id="outauto" style=""><span class="parNameCOMP">Out Buffer Auto</span>  <code>outauto</code> - Automatically manage the number of output frames queued.
+<p><i></i>
+</p>
+</div>
+<div id="outframes" style=""><span class="parNameCOMP">Out Buffer Frames</span>  <code>outframes</code> - The number of output frames to queue after receiving them from the TouchEngine instance.
+<p>To accommodate potential fluctuations in time-slice in the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> outputs must send a number of frames ahead of time.
+<i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_InitStart_Page"><div class="sectionBarCOMP">Parameters - InitStart Page</div></span></h2>
+<div id="preroll" style=""><span class="parNameCOMP">Pre-Roll</span>  <code>preroll</code> - At initialization, run for this long before entering the ready state.
+<p><i></i>
+</p>
+</div>
+<div id="prerollunits" style=""><span class="parNameCOMP">Pre-Roll Units</span>  <code>prerollunits</code> - <span class="mw-customtoggle-prerollunits">⊞</span> - The units in which the Pre-Roll is measured.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-prerollunits">
+<ul><li><span class="parNameCOMP">F</span> <code>frames</code> - The Pre-Roll is measured in frames.</li></ul><ul><li><span class="parNameCOMP">S</span> <code>seconds</code> - The Pre-Roll is measured in seconds.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="readywhen" style=""><span class="parNameCOMP">Ready when</span>  <code>readywhen</code> - <span class="mw-customtoggle-readywhen">⊞</span> - Specify when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will go into the ready state.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-readywhen">
+<ul><li><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Loaded</span> <code>loaded</code> - The Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will go into the ready state when TouchEngine has loaded the component.</li></ul><ul><li><span class="parNameCOMP">Output Buffered</span> <code>buffered</code> - The Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will go into the ready state when TouchEngine has loaded the component and sufficient frames have been cooked to fill the input and output buffers.</li></ul><ul><li><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Running</span> <code>running</code> - The Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will go into the ready state when TouchEngine has loaded the component, sufficient frames have been cooked to fill the input and output buffers and the component is running.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="startoninit" style=""><span class="parNameCOMP">Start when Initialized</span>  <code>startoninit</code> - When enabled, playback will start as soon as the component has initialized and is in the ready state.
+<p><i></i>
+</p>
+</div>
+<div id="initialize" style=""><span class="parNameCOMP">Initialize</span>  <code>initialize</code> - Reload the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file, restarting the TouchEngine instance.
+<p><i></i>
+</p>
+</div>
+<div id="start" style=""><span class="parNameCOMP">Start</span>  <code>start</code> - Starts playback of the component in the TouchEngine instance.
+<p><i></i>
+</p>
+</div>
+<div id="play" style=""><span class="parNameCOMP">Play</span>  <code>play</code> - Turn cooking in the TouchEngine instance on or off.
+<p><i></i>
+</p>
+</div>
+<div id="gotodone" style=""><span class="parNameCOMP">Go to Done</span>  <code>gotodone</code> - Puts the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> in the done state.
+<p><i></i>
+</p>
+</div>
+<div id="ondone" style=""><span class="parNameCOMP">On Done</span>  <code>ondone</code> - <span class="mw-customtoggle-ondone">⊞</span> - Determines the actions taken, if any, when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> enters the done state.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ondone">
+<ul><li><span class="parNameCOMP">Do Nothing</span> <code>donothing</code> - Apart from the state change, nothing happens and TouchEngine continues to run the component.</li></ul><ul><li><span class="parNameCOMP">Pause</span> <code>pause</code> - Playback of the loaded component is paused.</li></ul><ul><li><span class="parNameCOMP">Unload</span> <code>unload</code> - The loaded component is unloaded.</li></ul><ul><li><span class="parNameCOMP">Re-Initialize</span> <code>reinit</code> - The loaded component is unloaded and then initialization takes place.</li></ul><ul><li><span class="parNameCOMP">Re-Start</span> <code>restart</code> - The component remains loaded and playback begins again.</li></ul><ul><li><span class="parNameCOMP">Quit Engine Process</span> <code>quit</code> - TouchEngine is completely shut down.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Advanced_Page"><div class="sectionBarCOMP">Parameters - Advanced Page</div></span></h2>
+<div id="oncompcreate" style=""><span class="parNameCOMP">On Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Create</span>  <code>oncompcreate</code> - <span class="mw-customtoggle-oncompcreate">⊞</span> - Specify what happens when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is created, for example when the project is loaded.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-oncompcreate">
+<ul><li><span class="parNameCOMP">Do Nothing</span> <code>nothing</code> - Nothing happens when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is created.</li></ul><ul><li><span class="parNameCOMP">Launch Engine</span> <code>launch</code> - TouchEngine is started when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is created. Any specified component is not loaded.</li></ul><ul><li><span class="parNameCOMP">Load and Initialize</span> <code>initialize</code> - TouchEngine is started and any specified component is loaded and the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is initialized and put into the ready state.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="launch" style=""><span class="parNameCOMP">Launch Engine Process</span>  <code>launch</code> - Starts the TouchEngine process if it is not running.
+<p><i></i>
+</p>
+</div>
+<div id="quit" style=""><span class="parNameCOMP">Quit Engine Process</span>  <code>quit</code> - Stops the TouchEngine process if it is running.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Extensions_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> Page</div></span></h2>
+<p>The <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> parameter page sets the component's python extensions.  Please see <a href="Extensions.html" title="Extensions">extensions</a> for more information.
+</p>
+<div class="sequenceBlock" id="ext" style=""><span class="parNameCOMP">Extension</span>  <code>ext</code> - Sequence of info for creating extensions on this component
+<div class="sequenceItem">
+<div id="ext0object" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span>  <code>ext0object</code> - A number of class instances that can be attached to the component.
+<p><i></i>
+</p>
+</div>    
+<div id="ext0name" style=""><span class="parNameCOMP">Name</span>  <code>ext0name</code> - Optional name to search by, instead of the instance class name.
+<p><i></i>
+</p>
+</div>
+<div id="ext0promote" style=""><span class="parNameCOMP">Promote</span>  <code>ext0promote</code> - Controls whether or not the extensions are visible directly at the component level, or must be accessed through the <code>.ext</code> member.  Example:  <code>n.Somefunction</code> vs <code>n.ext.Somefunction</code>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="reinitextensions" style=""><span class="parNameCOMP">Re-Init <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span></span>  <code>reinitextensions</code> - Recompile all extension objects. Normally extension objects are compiled only when they are referenced and their definitions have changed.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarCOMP">Parameters - Common Page</div></span></h2>
+<p>The Common parameter page sets the component's <a href="Node_Viewer.html" title="Node Viewer">node viewer</a> and <a href="Clone.html" title="Clone">clone</a> relationships.
+</p>
+<div id="parentshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span></span>  <code>parentshortcut</code> - Specifies a name you can use anywhere inside the component as the path to that component. See <a href="Parent_Shortcut.html" title="Parent Shortcut">Parent Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div id="opshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="127c8e2bf0b36c9d6a86d99b969d563a">Global OP Shortcut</span></span>  <code>opshortcut</code> - Specifies a name you can use anywhere at all as the path to that component. See <a href="Global_OP_Shortcut.html" title="Global OP Shortcut">Global OP Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div class="sequenceBlock" id="iop" style=""><span class="parNameCOMP">Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop</code> - Sequence header for internal operators.
+<div class="sequenceItem">
+<div id="iop0shortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span></span>  <code>iop0shortcut</code> - Specifies a name you can use anywhere inside the component as a path to "Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>" below. See <a href="Internal_Operators.html" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+<div id="iop0op" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop0op</code> - The path to the Internal OP inside this component. See <a href="Internal_Operators.html" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="opviewer" style=""><span class="parNameCOMP">Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span>  <code>opviewer</code> - Select which operator's node viewer to use when the Node View parameter above is set to Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span>.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloning" style=""><span class="parNameCOMP">Enable Cloning</span>  <code>enablecloning</code> - Control if the OP should be actively cloneing. Turning this off causes this node to stop cloning it's '<span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master'.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloningpulse" style=""><span class="parNameCOMP">Enable Cloning <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enablecloningpulse</code> - Instantaneously clone the contents.
+<p><i></i>
+</p>
+</div>
+<div id="clone" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master</span>  <code>clone</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a component used as the Master <a href="Clone.html" title="Clone">Clone</a>.
+<p><i></i>
+</p>
+</div>
+<div id="loadondemand" style=""><span class="parNameCOMP">Load on Demand</span>  <code>loadondemand</code> - Loads the component into memory only when required. Good to use for components that are not always used in the project.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltox" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></span>  <code>enableexternaltox</code> - When on (default), the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file will be loaded when the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> starts and the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will match that of the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>. This can be turned off to avoid loading from the referenced external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> on startup if desired (the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are instead loaded from the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file). Useful if you wish to have a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> reference an external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> but not always load from it unless you specifically push the Re-Init Network parameter button.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltoxpulse" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enableexternaltoxpulse</code> - This button will re-load from the external <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file (if present).
+<p><i></i>
+</p>
+</div>
+<div id="externaltox" style=""><span class="parNameCOMP">External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>externaltox</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file on disk which will source the component's contents upon start of a <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>. This allows for components to contain networks that can be updated independently. If the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file can not be found, whatever the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file was saved with will be loaded.
+<p><i></i>
+</p>
+</div>
+<div id="reloadcustom" style=""><span class="parNameCOMP">Reload Custom Parameters</span>  <code>reloadcustom</code> - When this checkbox is enabled, the values of the component's <a href="Custom_Parameters.html" title="Custom Parameters">Custom Parameters</a> are reloaded when the <a href="-2.html" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="-2.html" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="reloadbuiltin" style=""><span class="parNameCOMP">Reload Built-In Parameters</span>  <code>reloadbuiltin</code> - When this checkbox is enabled, the values of the component's built-in parameters are reloaded when the <a href="-2.html" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="-2.html" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="savebackup" style=""><span class="parNameCOMP">Save Backup of External</span>  <code>savebackup</code> - When this checkbox is enabled, a backup copy of the component specified by the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> parameter is saved in the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file.  This backup copy will be used if the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> can not be found. This may happen if the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> was renamed, deleted, or the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file is running on another computer that is missing component media.
+<p><i></i>
+</p>
+</div>
+<div id="subcompname" style=""><span class="parNameCOMP">Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load</span>  <code>subcompname</code> - When loading from an External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file, this option allows you to reach into the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> and pull out a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and make that the top-level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, ignoring everything else in the file (except for the contents of that <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>). For example if a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file named <code>project1<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> contains <code>project1/geo1</code>, putting <code>geo1</code> as the Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load, will result in <code>geo1</code> being loaded in place of the current <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. If this parameter is blank, it just loads the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file normally using the top level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> in the file.
+<p><i></i>
+</p>
+</div>
+<div id="relpath" style=""><span class="parNameCOMP">Relative File <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> Behavior</span>  <code>relpath</code> - <span class="mw-customtoggle-relpath">⊞</span> - Set whether the child file paths within this <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> itself or the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>, or inherit from parent.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-relpath">
+<ul><li><span class="parNameCOMP">Use <span class="mw-lingo-term" data-lingo-term-id="30269022e9d8f51beaabb52e5d0de2b7">Parent</span>'s Behavior</span> <code>inherit</code> - Inherit setting from parent.</li></ul><ul><li><span class="parNameCOMP">Relative to Project File (<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span>)</span> <code>project</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file.</li></ul><ul><li><span class="parNameCOMP">Relative to External <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> File (<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>)</span> <code>externaltox</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file. When no external <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> file is specified, or when Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> is not toggled on, this doesn't have any impact.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarCOMP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+</p>
+<h3><span class="mw-headline" id="Specific_Engine_COMP_Info_Channels"><div class="customBar">Specific Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">input_buffer_frames</span> - The number of frames in the input buffer. This is affected by parameters on the Tune parameter page.</li></ul><p><br/></p>
+<ul><li><span class="parName">output_buffer_frames</span> - The number of frames in the output buffer. This is affected by parameters on the Tune parameter page.</li></ul><p><br/></p>
+<ul><li><span class="parName">output_cook_abs_frame</span> - The value of cook_abs_frame when the current output was cooked. This is affected by the number of frames in the output buffer.</li></ul><p><br/></p>
+<ul><li><span class="parName">output_did_wait</span> - 1 when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> waited for output to cook. This will only be 1 when Wait for Render is On and is affected by the time taken to complete a frame in TouchEngine and the number of input and output buffers. See the Tune parameter page for more details.</li></ul><p><br/></p>
+<ul><li><span class="parName">initializing</span> - 1 while the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is in the initializing state.</li></ul><p><br/></p>
+<ul><li><span class="parName">initialize_fail</span> - 1 if an error occurred during initialization. This would normally indicate an error loading the component in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">ready</span> - 1 after initialization completes and before starting.</li></ul><p><br/></p>
+<ul><li><span class="parName">running</span> - 1 after starting and until the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> enters the done state or is re-initialized.</li></ul><p><br/></p>
+<ul><li><span class="parName">done</span> - 1 when the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is in the done state.</li></ul><p><br/></p>
+<ul><li><span class="parName">timer_seconds</span> - In the Engine <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, this matches playing_seconds.</li></ul><p><br/></p>
+<ul><li><span class="parName">playing_seconds</span> - Seconds elapsed since starting, accounting for play state.</li></ul><p><br/></p>
+<ul><li><span class="parName">running_seconds</span> - Seconds elapsed since starting.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_launching</span> - 1 when TouchEngine is starting, prior to loading any component.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_running</span> - 1 when TouchEngine has started and is running.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_none</span> - 1 when TouchEngine is not running.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_error</span> - 1 when TouchEngine has encountered an error unrelated to the component.</li></ul><p><br/></p>
+<ul><li><span class="parName">component_loading</span> - 1 when TouchEngine is loading a component.</li></ul><p><br/></p>
+<ul><li><span class="parName">component_loaded</span> - 1 when TouchEngine has successfully loaded a component.</li></ul><p><br/></p>
+<ul><li><span class="parName">component_unloading</span> - 1 when TouchEngine is unloading a component.</li></ul><p><br/></p>
+<ul><li><span class="parName">component_none</span> - 1 when TouchEngine has no loaded component.</li></ul><p><br/></p>
+<ul><li><span class="parName">component_error</span> - 1 when TouchEngine encountered an error loading or running a component.</li></ul><p><br/></p>
+<ul><li><span class="parName">crash_reload_count</span> - The number of times the component has been reloaded due to an error when Reload on Crash is On.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_absolute_frame</span> - The value for absolute time in frames in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_absolute_seconds</span> - The value for absolute time in seconds in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_fps</span> - The number of frames rendered in the last second in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_frame_msec</span> - Amount of time each frame takes to cook in msec in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cook</span> - Is equal to 1 when a frame is cooked and equal to 0 when a frame is skipped in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_dropped_frames</span> - The number of frames dropped between the last frame and the current frame in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_read_ahead_misses</span> - How many times the movie read ahead failed to maintain the number of specified Read Ahead frames in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_gpu_mem_used</span> - Amount of <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> memory used in TouchEngine (in megabytes).</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_total_gpu_mem</span> - Total amount of <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> memory available on the system (in megabytes).</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_active_ops</span> - How many OPs are actively cooking in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_deactivated_ops</span> - Number of calls to cook a component that has its Cooking <span class="mw-lingo-term" data-lingo-term-id="c5836008c1649301e29351a55db8f65c">Flag</span> turned off in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_total_ops</span> - Total number of OPs in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cpu_mem_used</span> - Amount of CPU memory used in TouchEngine (in megabytes).</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cookstate</span> - Monitors which frames actually cooked in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cookrealtime</span> - Monitors the state of the realtime flag, determining if TouchEngine is running in realtime mode or not.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cookrate</span> - The global target cook rate (frames per second) of TouchEngine. This is the frames per second of the root component, root.time.rate, typically 60, though due to frames taking too long to cook, the actual frames per second may be lower.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_timeslice_step</span> - The number of frames that TouchEngine stepped forward for the current cook. It's the length of the <span class="mw-lingo-term" data-lingo-term-id="d209223c55b32b6dd2954cdd78d908cd">Time Slice</span> in frames. It will be equal to 1 when the system is taking 1000/root.time.rate msec or less to complete one frame (16.666 msec for a rate of 60).</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_timeslice_msec</span> - The length of the current <span class="mw-lingo-term" data-lingo-term-id="d209223c55b32b6dd2954cdd78d908cd">Time Slice</span> in milliseconds.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_active_expressions</span> - The number of active python expressions found in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_active_expressions</span> - The number of python expressions that have been optimized in TouchEngine.</li></ul><p><br/></p>
+<ul><li><span class="parName">engine_cached_expressions</span> - The number of python expressions that have been cached in TouchEngine.</li></ul><h3><span class="mw-headline" id="Common_COMP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_children</span> - Number of children in this component.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br/>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Engine_COMP.html">Latest</option>\n<option value="https://docs.derivative.ca/Engine_COMP?oldid=30717">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30909">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30910">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30912">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30913">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30914">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30915">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30916">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30949">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30950">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30951">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30952">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30953">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30958">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30960">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30961">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30967">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30968">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30969">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30970">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30971">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30972">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30973">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=33646">wikieditor</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=16656">mw-replace</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=30289">2023.11280</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=28270">2022.24140</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=24363">2021.10000</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=20654">2020.20000</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=16654">2019.14650</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=15444">2018.28070</option><option value="https://docs.derivative.ca/Engine_COMP?oldid=12939">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">COMPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Actor_COMP.html" title="Actor COMP">Actor  </a></span>• <span class="catList navigation-not-searchable"><a href="Ambient_Light_COMP.html" title="Ambient Light COMP">Ambient Light  </a></span>• <span class="catList navigation-not-searchable"><a href="Animation_COMP.html" title="Animation COMP">Animation  </a></span>• <span class="catList navigation-not-searchable"><a href="Annotate_COMP.html" title="Annotate COMP">Annotate  </a></span>• <span class="catList navigation-not-searchable"><a href="Base_COMP.html" title="Base COMP">Base  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_COMP.html" title="Blend COMP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_COMP.html" title="Bone COMP">Bone  </a></span>• <span class="catList navigation-not-searchable"><a href="Bullet_Solver_COMP.html" title="Bullet Solver COMP">Bullet Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="Button_COMP.html" title="Button COMP">Button  </a></span>• <span class="catList navigation-not-searchable"><a href="Camera_Blend_COMP.html" title="Camera Blend COMP">Camera Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Camera_COMP.html" title="Camera COMP">Camera  </a></span>• <span class="catList navigation-not-searchable"><a href="MediaWiki_Common.html" title="MediaWiki:Common.js">MediaWiki:Common.js </a></span>• <span class="catList navigation-not-searchable"><a href="Component.html" title="Component">Component </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Component.html" title="Experimental:Component">Experimental:Component </a></span>• <span class="catList navigation-not-searchable"><a href="Constraint_COMP.html" title="Constraint COMP">Constraint  </a></span>• <span class="catList navigation-not-searchable"><a href="Container_COMP.html" title="Container COMP">Container  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Engine  </a></span>• <span class="catList navigation-not-searchable"><a href="Environment_Light_COMP.html" title="Environment Light COMP">Environment Light  </a></span>• <span class="catList navigation-not-searchable"><a href="FBX_COMP.html" title="FBX COMP">FBX  </a></span>• <span class="catList navigation-not-searchable"><a href="Field_COMP.html" title="Field COMP">Field  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_COMP.html" title="Force COMP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Geo_Text_COMP.html" title="Geo Text COMP">Geo Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Geometry_COMP.html" title="Geometry COMP">Geometry  </a></span>• <span class="catList navigation-not-searchable"><a href="GLSL_COMP.html" title="GLSL COMP">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="Handle_COMP.html" title="Handle COMP">Handle  </a></span>• <span class="catList navigation-not-searchable"><a href="Impulse_Force_COMP.html" title="Impulse Force COMP">Impulse Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Light_COMP.html" title="Light COMP">Light  </a></span>• <span class="catList navigation-not-searchable"><a href="List_COMP.html" title="List COMP">List  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_COMP.html" title="Null COMP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Nvidia_Flex_Solver_COMP.html" title="Nvidia Flex Solver COMP">Nvidia Flex Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="Nvidia_Flow_Emitter_COMP.html" title="Nvidia Flow Emitter COMP">Nvidia Flow Emitter  </a></span>• <span class="catList navigation-not-searchable"><a href="OP_Viewer_COMP.html" title="OP Viewer COMP">OP Viewer  </a></span>• <span class="catList navigation-not-searchable"><a href="Palette_depthProjection.html" title="Palette:depthProjection">Palette:depthProjection </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_COMP.html" title="Parameter COMP">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Replicator_COMP.html" title="Replicator COMP">Replicator  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_COMP.html" title="Select COMP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_In_COMP.html" title="Shared Mem In COMP">Shared Mem In  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_Out_COMP.html" title="Shared Mem Out COMP">Shared Mem Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Slider_COMP.html" title="Slider COMP">Slider  </a></span>• <span class="catList navigation-not-searchable"><a href="Table_COMP.html" title="Table COMP">Table  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_COMP.html" title="Text COMP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Time_COMP.html" title="Time COMP">Time  </a></span>• <span class="catList navigation-not-searchable"><a href="USD_COMP.html" title="USD COMP">USD  </a></span>• <span class="catList navigation-not-searchable"><a href="Widget_COMP.html" title="Widget COMP">Widget  </a></span>• <span class="catList navigation-not-searchable"><a href="Window_COMP.html" title="Window COMP">Window  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c93d2a89e225ded900ca3779a6856086"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner Component file, the file type used to save a <a href="Component.html" title="Component">Component</a> of your TouchDesigner project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="76746356f2d9fd021f01bc051bb2114f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TOuch Environment file, the file type used by TouchDesigner to save your entire project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5e2f5f3c24ae8c6ab3eca618826b0e23"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any component can be extended with its own Python classes which contain python functions and data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="497031794414a552435f90151ac3b54b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The sub-<a href="Operator_Family.html" title="Operator Family">Family</a> of <a href="Component.html" title="Component">Component</a> types that are used to define and render 3D scenes. A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> is an Object that contains the 3D shapes to render. A <a href="Camera_COMP.html" title="Camera COMP">Camera COMP</a> and <a href="Light_COMP.html" title="Light COMP">Light COMP</a> are other Object types. Separately, "Objects" also refers to Python objects.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="98b55baa723b7158c2ad741a9f2339b8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Parent Shortcut is a parameter on a component that contains a name that you can use anywhere inside the component to refer to that component using the syntax <code>parent.Name</code>, for example <code>parent.Effect.width</code> to obtain panel width.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="127c8e2bf0b36c9d6a86d99b969d563a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A name for a component that is accessible from any node in a project, which can be declared in a component's Global Operator Shortcut parameter.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="756210d98ce28018652ca05e1dcaaf3e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operator shortcuts are Python objects that return operators (or sometimes parameters). These include <a href="Parent_Shortcut.html" title="Parent Shortcut">Parent Shortcuts</a> for accessing a component from within that component, and <a href="Global_OP_Shortcut.html" title="Global OP Shortcut">Global OP Shortcuts</a> that access a unique component from anywhere in TouchDesigner.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fb15c53f22336982a182b84aeb2f42eb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The viewer of a node can be (1) the interior of a node (the <a href="Node_Viewer.html" title="Node Viewer">Node Viewer</a>), (2) a floating window (RMB-&gt;View... on node), or (3) a <a href="Pane.html" title="Pane">Pane</a> that graphically shows the results of an operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ff24590464659ee8cdec688128c35f89"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Cloning makes multiple components match the contents of a master component. A <a href="Component.html" title="Component">Component</a> whose Clone parameter is set will be forced to contain the same nodes, wiring and parameters as its master component. Cloning does not create new components as does the <a href="Replicator_COMP.html" title="Replicator COMP">Replicator COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="30269022e9d8f51beaabb52e5d0de2b7"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>There are 2 kinds of parenting. The "parent component" is the component in which a node resides. The metaphor is extended to include grand parents, grand-grand parents, etc. The root <code>/</code> is the ultimate parent to all nodes. See also <a href="3D_Parenting.html" title="3D Parenting">3D Parenting</a> and panel <a href="Parent.html" title="Parent">Parenting</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c5836008c1649301e29351a55db8f65c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Indicator of certain states of an operator (bypass, display, lock, viewer active).
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d209223c55b32b6dd2954cdd78d908cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Time Slice is the time from the last cook frame to the current cook frame. In CHOPs it is the set of short channels that contain the CHOP channels' samples between the last and the current cook frame.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250514075246
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.500 seconds
+Real time usage: 1.058 seconds
+Preprocessor visited node count: 4320/1000000
+Post‐expand include size: 109048/2097152 bytes
+Template argument size: 64565/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2934/5000000 bytes
+Lua time usage: 0.660/10 seconds
+Lua virtual size: 9310208/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  946.086      1 -total
+ 92.97%  879.536      1 Template:NavBox
+ 91.65%  867.101     45 Template:CatList
+  3.46%   32.769      6 Template:ParameterPage
+  2.96%   28.028     50 Template:Parameter
+  1.94%   18.321      1 Template:InfoCHOPChannels
+  1.20%   11.336      1 COMP_Other_Common_Page
+  0.68%    6.468      1 COMP_Extensions_Page
+  0.67%    6.327      1 Template:Summary
+  0.51%    4.859      1 OP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:2287-0!canonical and timestamp 20250514075245 and revision id 33646.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Engine_COMP&amp;oldid=33646">https://docs.derivative.ca/index.php?title=Engine_COMP&amp;oldid=33646</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:COMPs&amp;action=edit&amp;redlink=1" title="Category:COMPs (page does not exist)">COMPs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.500","walltime":"1.058","ppvisitednodes":{"value":4320,"limit":1000000},"postexpandincludesize":{"value":109048,"limit":2097152},"templateargumentsize":{"value":64565,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2934,"limit":5000000},"timingprofile":["100.00%  946.086      1 -total"," 92.97%  879.536      1 Template:NavBox"," 91.65%  867.101     45 Template:CatList","  3.46%   32.769      6 Template:ParameterPage","  2.96%   28.028     50 Template:Parameter","  1.94%   18.321      1 Template:InfoCHOPChannels","  1.20%   11.336      1 COMP_Other_Common_Page","  0.68%    6.468      1 COMP_Extensions_Page","  0.67%    6.327      1 Template:Summary","  0.51%    4.859      1 OP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"0.660","limit":"10"},"limitreport-virtmemusage":{"value":9310208,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250514075246","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1404});});</script>
+
+
+
+
+</body><!-- Cached 20250514075246 --><!-- Mirrored from docs.derivative.ca/Engine_COMP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:09 GMT --></html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en-CA"><!-- Mirrored from docs.derivative.ca/OP_Find_DAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:30 GMT --><!-- Added by HTTrack --><head><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+
+<meta charset="utf-8"/>
+<title>OP Find DAT - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b4f53c3b6bfd6446058fe29b","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OP_Find_DAT","wgTitle":"OP Find DAT","wgCurRevisionId":27897,"wgRevisionId":27897,"wgArticleId":247,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["DATs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"OP_Find_DAT","wgRelevantArticleId":247,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Art-Net DAT",
+"Audio Devices DAT","CHOP Execute DAT","CHOP to DAT","Clip DAT","Convert DAT","CPlusPlus DAT","DAT","Experimental:DAT","DAT Execute DAT","DAT Export","Error DAT","EtherDream DAT","Evaluate DAT","Examine DAT","Execute DAT","FIFO DAT","File In DAT","File Out DAT","Folder DAT","In DAT","Indices DAT","Info DAT","Insert DAT","JSON DAT","Keyboard In DAT","Lookup DAT","Media File Info DAT","Merge DAT","MIDI Event DAT","MIDI In DAT","Monitors DAT","MPCDI DAT","MQTT Client DAT","Multi Touch In DAT","NDI DAT","Null DAT","OP Execute DAT","OP Find DAT","OSC In DAT","OSC Out DAT","Out DAT","Panel Execute DAT","Parameter DAT","Parameter Execute DAT","ParGroup Execute DAT","Perform DAT","Render Pick DAT","Reorder DAT","Script DAT","Select DAT","Serial DAT","Experimental:Serial Devices DAT","SocketIO DAT","SOP to DAT","Sort DAT","Substitute DAT","Switch DAT","Table DAT","TCP/IP DAT","Text DAT","Touch In DAT","Touch Out DAT","Transpose DAT","TUIO In DAT","UDP In DAT","UDP Out DAT","UDT In DAT",
+"UDT Out DAT","Video Devices DAT","Web Client DAT","Web DAT","Web Server DAT","WebRTC DAT","WebSocket DAT","XML DAT"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector" rel="stylesheet"/>
+<meta content="MediaWiki 1.39.0" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="The OP Find DAT traverses the component hierarchy starting at one component and looking at all nodes within that component, and outputs a table with one row per node that matches criteria the user chooses." name="description"/>
+<meta content="TouchDesigner, OP Find, DAT" name="keywords"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=1000" name="viewport"/>
+<link href="favicon.ico" rel="icon"/>
+<link href="opensearch_desc.php" rel="search" title="Derivative (en-ca)" type="application/opensearchdescription+xml"/>
+<link href="api-result251f.xml?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Derivative Atom feed" type="application/atom+xml"/>
+<!-- Begin Extension:CSS --><link href="https://docs.derivative.ca/index.php?title=DAT.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1" rel="stylesheet"/><!-- End Extension:CSS -->
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta content="OP Find DAT - TouchDesigner Documentation" property="og:title"/>
+<meta content="Derivative" property="og:site_name"/>
+<meta content="https://docs.derivative.ca/OP_Find_DAT" property="og:url"/>
+<meta content="The OP Find DAT traverses the component hierarchy starting at one component and looking at all nodes within that component, and outputs a table with one row per node that matches criteria the user chooses." property="og:description"/>
+<meta content="https://docs.derivative.ca/resources/assets/logo.png" property="og:image"/>
+<meta content="TouchDesigner, OP Find, DAT" property="article:tag"/>
+<meta content="2022-10-19T14:31:52Z" property="article:modified_time"/>
+<meta content="2022-10-19T14:31:52Z" property="article:published_time"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"OP Find DAT - TouchDesigner Documentation","headline":"OP Find DAT - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">OP Find DAT<\/span>","identifier":"https:\/\/docs.derivative.ca\/OP_Find_DAT","url":"https:\/\/docs.derivative.ca\/OP_Find_DAT","description":"The OP Find DAT traverses the component hierarchy starting at one component and looking at all nodes within that component, and outputs a table with one row per node that matches criteria the user chooses.","keywords":"TouchDesigner, OP Find, DAT","dateModified":"2022-10-19T14:31:52Z","datePublished":"2022-10-19T14:31:52Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-OP_Find_DAT rootpage-OP_Find_DAT skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">OP Find DAT</span></h1>
+	<div class="vector-body" id="bodyContent">
+		<div class="noprint" id="siteSub">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en-CA"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarDAT">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> traverses the component hierarchy starting at one component and looking at all nodes within that component, and outputs a table with one row per node that matches criteria the user chooses. For example, the criteria could be all Ramp TOPs, or all nodes whose name starts with “<code>wave</code>”, or all nodes with the <span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> parameter set to “<code>master1</code>”, or all Geometry components with a tag called “<code>emitter</code>”.		
+</p><p>The criteria can limited to include only nodes of certain families, or certain operator types. It can filter on matching its path, certain parameters containing certain values (both constant and expressions), comments, tags, or the content of a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> containing certain strings.			
+</p><p>You can also cause the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> to only look to some depth of the hierarchy from the specified component, such as 2 levels down, or limitless.			
+</p><p>Criteria can be case-sensitive or not, but case-sensitive On or Off applies to all criteria in the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.			
+</p><p>Furthermore you can exclude some nodes using more specialized criteria by returning a True of False in a callback contained in the attached callback <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.			
+</p><p>With the Combine Filters Menu (Any or All, Default is All), you can do an "or" or "and" on the pattern matching criterea.  			
+</p><p>It also takes an optional <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> containing a list of operators (eg, another OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>) which can be used to chain filters.			
+</p>
+<h3><span class="mw-headline" id="Output_Columns">Output Columns</span></h3>
+<p>There is a variety of columns that you can select from including <code>name</code>, <code>id</code>, <code>paths</code>, <code>type</code> and <code>tags</code>.  (<code>id</code> is a member of the operator, which is an integer unique to the node, and doesn't change during the running of the TouchDesigner process.)			
+</p><p>You can also output custom columns by defining the column names in the callback <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>, and filling in the column cells via another function in the callback <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>. For example, you can output a custom column which is the <code>tx</code> parameter value of the node.			
+</p><p>You can control when the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> cooks. Normally it cooks whenever any of the nodes in the specified hierarchy changes. Using the Active <span class="mw-lingo-term" data-lingo-term-id="1bf70a91b0b28b92dc52e03d45abf61a">Cook</span> menu parameter, you can also force-cook it every frame, or turn off cooking entirely.  You can also click the <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span> parameter on Active <span class="mw-lingo-term" data-lingo-term-id="1bf70a91b0b28b92dc52e03d45abf61a">Cook</span> in order to force-cook it once, or do the equivalent using the node.cookpulse.pulse() python call.			
+</p><p>Instead of being give the path to a component to start at, the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> can take an input <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> containing a pre-generated list of paths to nodes to start from, and merge the results of each input line together in the output. To use this, the input <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> should contain the node “id” as the first column, which can be generated with another OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> with the Column called “ID” turned on.			
+</p><p>For example, say you first list all components that are panels, then you separate into groups based on type or <span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> parameter. The first OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> pre-filters a huge hierarchy to a small fraction of the nodes, the subsequent OP Find DATs are operating on simpler sets to eliminate a lot of checking and cooking.			
+</p><p>Refer to Help -&gt; <a href="OP_Snippets.html" title="OP Snippets">Operator Snippets</a>.			
+</p><p>See also: <a href="Script_DAT.html" title="Script DAT">Script DAT</a>
+</p><p><a class="image" href="File_PythonIcon.html"><img alt="PythonIcon.png" decoding="async" height="20" src="images/c/c2/PythonIcon.png" width="20"/></a><a href="https://docs.derivative.ca/OpfindDAT_Class" title="OpfindDAT Class">opfindDAT_Class</a>
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en-CA"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a>
+<ul><li class="toclevel-2"><a href="#Output_Columns"><span class="tocnumber">1.1</span> <span class="toctext">Output Columns</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_Component_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Component Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Families_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Families Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Filters_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Filters Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Columns_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Columns Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Callbacks_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Callbacks Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">8</span> <span class="toctext">Operator Inputs</span></a></li>
+</ul></div>
+
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Component_Page"><div class="sectionBarDAT">Parameters - <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Page</div></span></h2>
+<div id="activecook" style=""><span class="parNameDAT">Active <span class="mw-lingo-term" data-lingo-term-id="1bf70a91b0b28b92dc52e03d45abf61a">Cook</span></span>  <code>activecook</code> - <span class="mw-customtoggle-activecook">⊞</span> - Determines when to cook the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-activecook">
+<ul><li><span class="parNameDAT">Off</span> <code>off</code> - This stops the operator from cooking altogether.</li></ul><ul><li><span class="parNameDAT">Automatic</span> <code>auto</code> - Only cook / update the contents when the results would change.</li></ul><ul><li><span class="parNameDAT">Always</span> <code>always</code> - Continually cook this operator repeatedly for update cases that might be missed.</li></ul><ul><li><span class="parNameDAT">Incremental</span> <code>incremental</code> - This will cook each frame, but only add one result per cook, until all results are added. At that point cooking stops.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="cookpulse" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="1bf70a91b0b28b92dc52e03d45abf61a">Cook</span> <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>cookpulse</code> - Manually force the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> to update.
+<p><i></i>
+</p>
+</div>
+<div id="component" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span></span>  <code>component</code> - The path to the component where the search starts from.
+<p><i></i>
+</p>
+</div>
+<div id="includecomponent" style=""><span class="parNameDAT">Include <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span></span>  <code>includecomponent</code> - Include the component the search starts from in the search itself.
+<p><i></i>
+</p>
+</div>
+<div id="includewired" style=""><span class="parNameDAT">Include <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="0748856bca50f42e2abd5b36ca083bae">Hierarchy</span></span>  <code>includewired</code> - Any components wired to the starting component are included in the search.
+<p><i></i>
+</p>
+</div>
+<div id="mindepth" style=""><span class="parNameDAT">Minimum Depth</span>  <code>mindepth</code> - Set a minmum depth for the sub-components the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> should recursively search through.
+<p><i></i>
+</p>
+</div>
+<div id="limitmaxdepth" style=""><span class="parNameDAT">Limit Max Depth</span>  <code>limitmaxdepth</code> - Turns on the Maximum Depth parameter to limit searching through sub-components. Turning this toggle off will search through all sub-networks.
+<p><i></i>
+</p>
+</div>
+<div id="maxdepth" style=""><span class="parNameDAT">Maximum Depth</span>  <code>maxdepth</code> - Set the maximum depth for the sub-components the OP Find <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> should recursively search through.
+<p><i></i>
+</p>
+</div>
+<div id="limitmaxops" style=""><span class="parNameDAT">Limit Max Operators</span>  <code>limitmaxops</code> - Limit the total number of operators iterated in the search.
+<p><i></i>
+</p>
+</div>
+<div id="maxops" style=""><span class="parNameDAT">Maximum Operators</span>  <code>maxops</code> - Number of operators the search is limited to.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Families_Page"><div class="sectionBarDAT">Parameters - Families Page</div></span></h2>
+<p>The page of parameters determines which operator families are included in the search.
+</p>
+<div id="objects" style=""><span class="parNameDAT">Object COMPs</span>  <code>objects</code> - Include Object COMPs, like Geo <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, in the search.
+<p><i></i>
+</p>
+</div>
+<div id="panels" style=""><span class="parNameDAT">Panel COMPs</span>  <code>panels</code> - Include Panel COMPs, like <span class="mw-lingo-term" data-lingo-term-id="0e7278cda02a9c0446dcc75a4df34eb2">Container</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, in the search.
+<p><i></i>
+</p>
+</div>
+<div id="other" style=""><span class="parNameDAT">Other COMPs</span>  <code>other</code> - Include other type COMPs, like Base <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, in the search.
+<p><i></i>
+</p>
+</div>
+<div id="tops" style=""><span class="parNameDAT">TOPs</span>  <code>tops</code> - Include <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> family operators in the search.
+<p><i></i>
+</p>
+</div>
+<div id="chops" style=""><span class="parNameDAT">CHOPs</span>  <code>chops</code> - Include <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> family operators in the search.
+<p><i></i>
+</p>
+</div>
+<div id="sops" style=""><span class="parNameDAT">SOPs</span>  <code>sops</code> - Include <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> family operators in the search.
+<p><i></i>
+</p>
+</div>
+<div id="mats" style=""><span class="parNameDAT">MATs</span>  <code>mats</code> - Include <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> family operators in the search.
+<p><i></i>
+</p>
+</div>
+<div id="dats" style=""><span class="parNameDAT">DATs</span>  <code>dats</code> - Include <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> family operators in the search.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Filters_Page"><div class="sectionBarDAT">Parameters - Filters Page</div></span></h2>
+<div id="casesensitive" style=""><span class="parNameDAT">Case Sensitive</span>  <code>casesensitive</code> - Use case sensitivity in all pattern matching below.
+<p><i></i>
+</p>
+</div>
+<div id="combinefilters" style=""><span class="parNameDAT">Combine Filters</span>  <code>combinefilters</code> - <span class="mw-customtoggle-combinefilters">⊞</span> - Combine 'All', 'Any' or 'Custom' of the filters below to get a match. 'Custom' allows for specifying a subselection of filters with 'or' and 'and' keywords.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-combinefilters">
+<ul><li><span class="parNameDAT">All</span> <code>all</code> - All filters must match for an operator to be included in the search result. (AND)</li></ul><ul><li><span class="parNameDAT">Any</span> <code>any</code> - Any of the filter conditions must be met for an operator to be included in the search result. (OR)</li></ul><ul><li><span class="parNameDAT">Custom</span> <code>custom</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="customcombine" style=""><span class="parNameDAT">Custom Combine</span>  <code>customcombine</code> - Specify which filters to combine in the search.
+<p><i></i>
+</p>
+</div>
+<div id="namefilter" style=""><span class="parNameDAT">Name</span>  <code>namefilter</code> - Use the operator's names like 'wave1', 'wave2', etc.
+<p><i></i>
+</p>
+</div>
+<div id="typefilter" style=""><span class="parNameDAT">Type</span>  <code>typefilter</code> - Use names like <code>waveCHOP</code> and <code>panelexecuteDAT</code>. Look at the column Type to see the syntax.
+<p><i></i>
+</p>
+</div>
+<div id="parentshortcutfilter" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span></span>  <code>parentshortcutfilter</code> - Only match operators that include the here specified <span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span>.
+<p><i></i>
+</p>
+</div>
+<div id="opshortcutfilter" style=""><span class="parNameDAT">OP <span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span></span>  <code>opshortcutfilter</code> - Only match operators that include the here specified OP <span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span>.
+<p><i></i>
+</p>
+</div>
+<div id="pathfilter" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>pathfilter</code> - Specify a path that the operator should be located in.
+<p><i></i>
+</p>
+</div>
+<div id="parentfilter" style=""><span class="parNameDAT">Parent <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> (relative)</span>  <code>parentfilter</code> - Specify a relative parent path that operators should be located in. This is a filter option on the <code>parentPath</code> column of this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> that can be enabled by toggling the <code>Parent <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></code> parameter on this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>'s <code>Columns</code> page.
+<p><i></i>
+</p>
+</div>
+<div id="excludefilter" style=""><span class="parNameDAT">Exclude <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> (relative)</span>  <code>excludefilter</code> - Specify a relative path that should be excluded from the search.
+<p><i></i>
+</p>
+</div>
+<div id="wirepathfilter" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>wirepathfilter</code> -
+<p><i></i>
+</p>
+</div>
+<div id="commentfilter" style=""><span class="parNameDAT">Comment</span>  <code>commentfilter</code> - Only match operators that include the here specified comment string.
+<p><i></i>
+</p>
+</div>
+<div id="tagsfilter" style=""><span class="parNameDAT">Tags</span>  <code>tagsfilter</code> - Only match operators that match the here specified tags. Multiple tags can be searched for as a space seperated list.
+<p><i></i>
+</p>
+</div>
+<div id="textfilter" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Text</span>  <code>textfilter</code> - Only include operators that - in the case of being from the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> family - match specified string in their content.
+<p><i></i>
+</p>
+</div>
+<div id="parnamefilter" style=""><span class="parNameDAT">Par Name</span>  <code>parnamefilter</code> - Only match operators with specified parameter name.  Parameters must match ALL of name, value and expression to be included.
+<p><i></i>
+</p>
+</div>
+<div id="parvaluefilter" style=""><span class="parNameDAT">Par Value</span>  <code>parvaluefilter</code> - Only include operators that match specified parameter value. Parameters must match ALL of name, value and expression to be included.
+<p><i></i>
+</p>
+</div>
+<div id="parexpressionfilter" style=""><span class="parNameDAT">Par <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span></span>  <code>parexpressionfilter</code> - Only include operators that match specified parameter expression string. Parameters must match ALL of name, value and expression to be included.
+<p><i></i>
+</p>
+</div>
+<div id="parnondefaultonly" style=""><span class="parNameDAT">Par Non-Default Only</span>  <code>parnondefaultonly</code> - Only match with parameters that are non-default values.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Columns_Page"><div class="sectionBarDAT">Parameters - Columns Page</div></span></h2>
+<div id="legacycols" style=""><span class="parNameDAT">Use Legacy Columns</span>  <code>legacycols</code> - Use only when expecting column headers to be named with legacy titles.
+<p><i></i>
+</p>
+</div>
+<div id="idcol" style=""><span class="parNameDAT">ID</span>  <code>idcol</code> - An integer that uniquely defines the node in this process. It's the same number for the duration of the process, but may be different when you run the process again.
+<p><i></i>
+</p>
+</div>
+<div id="namecol" style=""><span class="parNameDAT">Name</span>  <code>namecol</code> - Inlcude the name of the operator in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="typecol" style=""><span class="parNameDAT">Type</span>  <code>typecol</code> - Include the operator type in the result table. For example <code>rampTOP</code>.
+<p><i></i>
+</p>
+</div>
+<div id="parentshortcutcol" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span></span>  <code>parentshortcutcol</code> - Include the operator's <span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span> in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="opshortcutcol" style=""><span class="parNameDAT">OP <span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span></span>  <code>opshortcutcol</code> - Include the operator's OP <span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span> in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="pathcol" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>pathcol</code> - Include the operator's path in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="relpathcol" style=""><span class="parNameDAT">Relative <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>relpathcol</code> - Include the operator's, relative to the search root, path in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="parentpath" style=""><span class="parNameDAT">Parent <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>parentpath</code> - Include the parent path.
+<p><i></i>
+</p>
+</div>
+<div id="wirepathcol" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>wirepathcol</code> - Include the operator's wire path in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="depthcol" style=""><span class="parNameDAT">Depth</span>  <code>depthcol</code> - Include a column showing the relative depth to the root path of the found operator.
+<p><i></i>
+</p>
+</div>
+<div id="cooktimescol" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="1bf70a91b0b28b92dc52e03d45abf61a">Cook</span> Times</span>  <code>cooktimescol</code> - Include cook-time of found operators.
+<p><i></i>
+</p>
+</div>
+<div id="tagscol" style=""><span class="parNameDAT">Tags</span>  <code>tagscol</code> - Include the operator's tags.
+<p><i></i>
+</p>
+</div>
+<div id="genprop" style=""><span class="parNameDAT">General Properties</span>  <code>genprop</code> - Include the operator's name, id, isCOMP, node position, node size and dock id in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="cputime" style=""><span class="parNameDAT">CPU Time</span>  <code>cputime</code> - Include the operator's CPU cooktime in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="gputime" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> Time</span>  <code>gputime</code> - Include the operator's <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> cooktime in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="cpumem" style=""><span class="parNameDAT">CPU Memory</span>  <code>cpumem</code> - Include the operator's CPU memory in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="gpumem" style=""><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> Memory</span>  <code>gpumem</code> - Include the operator's <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> memory in the result table.
+<p><i></i>
+</p>
+</div>
+<div id="children" style=""><span class="parNameDAT">Children</span>  <code>children</code> - Include the children of the operator in the result table.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Callbacks_Page"><div class="sectionBarDAT">Parameters - Callbacks Page</div></span></h2>
+<div id="callbacks" style=""><span class="parNameDAT">Callbacks <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span></span>  <code>callbacks</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> containing callbacks for each event received. See <a href="https://docs.derivative.ca/OpfindDAT_Class" title="OpfindDAT Class">opfindDAT_Class</a> for usage.
+<p><i></i>
+</p>
+</div>
+<div id="convertbool" style=""><span class="parNameDAT">Convert Bool to Int</span>  <code>convertbool</code> - For boolean logic values, the value will be '1' or '0'. When this parameter is Off, they will be 'True" or 'False'.
+<p><i></i>
+</p>
+</div>
+<div id="convertnone" style=""><span class="parNameDAT">Convert None to Empty</span>  <code>convertnone</code> - For 'None' values, the value will be converted to Empty.
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarDAT">Parameters - Common Page</div></span></h2>
+<div id="language" style=""><span class="parNameDAT">Language</span>  <code>language</code> - <span class="mw-customtoggle-language">⊞</span> - Select how the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> decides which script language to operate on.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-language">
+<ul><li><span class="parNameDAT">Input</span> <code>input</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses the inputs script language.</li></ul><ul><li><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="6c3a6944a808a7c0bbb6788dbec54a9f">Node</span></span> <code>node</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses it's own script language.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="extension" style=""><span class="parNameDAT">Edit/View Extension</span>  <code>extension</code> - <span class="mw-customtoggle-extension">⊞</span> - Select the file extension this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> should expose to external editors.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-extension">
+<ul><li><span class="parNameDAT">dat</span> <code>dat</code> - various common file extensions.</li></ul><ul><li><span class="parNameDAT">From Language</span> <code>language</code> - pick extension from DATs script language.</li></ul><ul><li><span class="parNameDAT">Custom Extension</span> <code>custom</code> - Specify a custom extension.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="customext" style=""><span class="parNameDAT">Custom Extension</span>  <code>customext</code> - Specifiy the custom extension.
+<p><i></i>
+</p>
+</div>
+<div id="wordwrap" style=""><span class="parNameDAT">Word Wrap</span>  <code>wordwrap</code> - <span class="mw-customtoggle-wordwrap">⊞</span> - Enable Word Wrap for Node Display.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wordwrap">
+<ul><li><span class="parNameDAT">Input</span> <code>input</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses the inputs setting.</li></ul><ul><li><span class="parNameDAT">On</span> <code>on</code> - Turn on Word Wrap.</li></ul><ul><li><span class="parNameDAT">Off</span> <code>off</code> - Turn off Word Wrap.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br/></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarDAT">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameDAT">Input 0: </span> -</li></ul><p>TouchDesigner Build: <select onchange="location=this.value;"><option value="OP_Find_DAT.html">Latest</option>\n<option value="https://docs.derivative.ca/OP_Find_DAT?oldid=27897">2021.10000</option><option value="https://docs.derivative.ca/OP_Find_DAT?oldid=18506">2018.28070</option><option value="https://docs.derivative.ca/OP_Find_DAT?oldid=14115">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">DATs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Art-Net_DAT.html" title="Art-Net DAT">Art-Net  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Devices_DAT.html" title="Audio Devices DAT">Audio Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_Execute_DAT.html" title="CHOP Execute DAT">CHOP Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_DAT.html" title="CHOP to DAT">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_DAT.html" title="Clip DAT">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_DAT.html" title="Convert DAT">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_DAT.html" title="CPlusPlus DAT">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT.html" title="DAT">DAT </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_DAT.html" title="Experimental:DAT">Experimental:DAT </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_Execute_DAT.html" title="DAT Execute DAT"> Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_Export.html" title="DAT Export">DAT Export </a></span>• <span class="catList navigation-not-searchable"><a href="Error_DAT.html" title="Error DAT">Error  </a></span>• <span class="catList navigation-not-searchable"><a href="EtherDream_DAT.html" title="EtherDream DAT">EtherDream  </a></span>• <span class="catList navigation-not-searchable"><a href="Evaluate_DAT.html" title="Evaluate DAT">Evaluate  </a></span>• <span class="catList navigation-not-searchable"><a href="Examine_DAT.html" title="Examine DAT">Examine  </a></span>• <span class="catList navigation-not-searchable"><a href="Execute_DAT.html" title="Execute DAT">Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="FIFO_DAT.html" title="FIFO DAT">FIFO  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_DAT.html" title="File In DAT">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="File_Out_DAT.html" title="File Out DAT">File Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Folder_DAT.html" title="Folder DAT">Folder  </a></span>• <span class="catList navigation-not-searchable"><a href="In_DAT.html" title="In DAT">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Indices_DAT.html" title="Indices DAT">Indices  </a></span>• <span class="catList navigation-not-searchable"><a href="Info_DAT.html" title="Info DAT">Info  </a></span>• <span class="catList navigation-not-searchable"><a href="Insert_DAT.html" title="Insert DAT">Insert  </a></span>• <span class="catList navigation-not-searchable"><a href="JSON_DAT.html" title="JSON DAT">JSON  </a></span>• <span class="catList navigation-not-searchable"><a href="Keyboard_In_DAT.html" title="Keyboard In DAT">Keyboard In  </a></span>• <span class="catList navigation-not-searchable"><a href="Lookup_DAT.html" title="Lookup DAT">Lookup  </a></span>• <span class="catList navigation-not-searchable"><a href="Media_File_Info_DAT.html" title="Media File Info DAT">Media File Info  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_DAT.html" title="Merge DAT">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_Event_DAT.html" title="MIDI Event DAT">MIDI Event  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_In_DAT.html" title="MIDI In DAT">MIDI In  </a></span>• <span class="catList navigation-not-searchable"><a href="Monitors_DAT.html" title="Monitors DAT">Monitors  </a></span>• <span class="catList navigation-not-searchable"><a href="MPCDI_DAT.html" title="MPCDI DAT">MPCDI  </a></span>• <span class="catList navigation-not-searchable"><a href="MQTT_Client_DAT.html" title="MQTT Client DAT">MQTT Client  </a></span>• <span class="catList navigation-not-searchable"><a href="Multi_Touch_In_DAT.html" title="Multi Touch In DAT">Multi Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="NDI_DAT.html" title="NDI DAT">NDI  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_DAT.html" title="Null DAT">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="OP_Execute_DAT.html" title="OP Execute DAT">OP Execute  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">OP Find  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_In_DAT.html" title="OSC In DAT">OSC In  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_Out_DAT.html" title="OSC Out DAT">OSC Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_DAT.html" title="Out DAT">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Panel_Execute_DAT.html" title="Panel Execute DAT">Panel Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_DAT.html" title="Parameter DAT">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_Execute_DAT.html" title="Parameter Execute DAT">Parameter Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="ParGroup_Execute_DAT.html" title="ParGroup Execute DAT">ParGroup Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="Perform_DAT.html" title="Perform DAT">Perform  </a></span>• <span class="catList navigation-not-searchable"><a href="Render_Pick_DAT.html" title="Render Pick DAT">Render Pick  </a></span>• <span class="catList navigation-not-searchable"><a href="Reorder_DAT.html" title="Reorder DAT">Reorder  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_DAT.html" title="Script DAT">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_DAT.html" title="Select DAT">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Serial_DAT.html" title="Serial DAT">Serial  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Serial_Devices_DAT.html" title="Experimental:Serial Devices DAT">Experimental:Serial Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="SocketIO_DAT.html" title="SocketIO DAT">SocketIO  </a></span>• <span class="catList navigation-not-searchable"><a href="SOP_to_DAT.html" title="SOP to DAT">SOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_DAT.html" title="Sort DAT">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Substitute_DAT.html" title="Substitute DAT">Substitute  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_DAT.html" title="Switch DAT">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Table_DAT.html" title="Table DAT">Table  </a></span>• <span class="catList navigation-not-searchable"><a href="TCP/IP_DAT.html" title="TCP/IP DAT">TCP/IP  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_DAT.html" title="Text DAT">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_In_DAT.html" title="Touch In DAT">Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_Out_DAT.html" title="Touch Out DAT">Touch Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Transpose_DAT.html" title="Transpose DAT">Transpose  </a></span>• <span class="catList navigation-not-searchable"><a href="TUIO_In_DAT.html" title="TUIO In DAT">TUIO In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDP_In_DAT.html" title="UDP In DAT">UDP In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDP_Out_DAT.html" title="UDP Out DAT">UDP Out  </a></span>• <span class="catList navigation-not-searchable"><a href="UDT_In_DAT.html" title="UDT In DAT">UDT In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDT_Out_DAT.html" title="UDT Out DAT">UDT Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Video_Devices_DAT.html" title="Video Devices DAT">Video Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_Client_DAT.html" title="Web Client DAT">Web Client  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_DAT.html" title="Web DAT">Web  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_Server_DAT.html" title="Web Server DAT">Web Server  </a></span>• <span class="catList navigation-not-searchable"><a href="WebRTC_DAT.html" title="WebRTC DAT">WebRTC  </a></span>• <span class="catList navigation-not-searchable"><a href="WebSocket_DAT.html" title="WebSocket DAT">WebSocket  </a></span>• <span class="catList navigation-not-searchable"><a href="XML_DAT.html" title="XML DAT">XML  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ff24590464659ee8cdec688128c35f89"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Cloning makes multiple components match the contents of a master component. A <a href="Component.html" title="Component">Component</a> whose Clone parameter is set will be forced to contain the same nodes, wiring and parameters as its master component. Cloning does not create new components as does the <a href="Replicator_COMP.html" title="Replicator COMP">Replicator COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="1bf70a91b0b28b92dc52e03d45abf61a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To re-compute the output data of the <a href="Operator.html" title="Operator">Operators</a>. An operator cooks when (1) its inputs change, (2) its <a href="Parameter.html" title="Parameter">Parameters</a> change, (3) when the timeline moves forward in some cases, or (4) <a href="Script.html" title="Script">Scripting</a> commands are run on the node. When the operator is a <a href="Panel_Component.html" title="Panel Component">Panel Component</a>, it also cooks when a user interacts with it. When an operator cooks, it usually causes operators connected to its output to re-cook. When TouchDesigner draws the screen, it re-cooks all the <a href="Dependency.html" title="Dependency">Dependencies</a> - the necessary operators in all <a href="Network.html" title="Network">Networks</a>, contributing to a frame's total "cook time".
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8d0be41ab58751f3fe6fb5aa87b0e794"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The connection of an output of one node to the input of another node in a network. In contrast, see <a href="Link.html" title="Link">Link</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0748856bca50f42e2abd5b36ca083bae"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Hierarchy relates components with other components. There are two groups of Hierarchy in TouchDesigner.  3D Object Components, and 2D Panel Components. Hierarchies let one component to be positioned relative to another. Each group can be connected via lines between the bottoms/tops of nodes in a network, or by placing one component inside the other.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0e7278cda02a9c0446dcc75a4df34eb2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Container component type is a <a href="Panel_Component.html" title="Panel Component">Panel Component</a> that holds, lays out and displays any number of other Panel Components.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="98b55baa723b7158c2ad741a9f2339b8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Parent Shortcut is a parameter on a component that contains a name that you can use anywhere inside the component to refer to that component using the syntax <code>parent.Name</code>, for example <code>parent.Effect.width</code> to obtain panel width.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="756210d98ce28018652ca05e1dcaaf3e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operator shortcuts are Python objects that return operators (or sometimes parameters). These include <a href="Parent_Shortcut.html" title="Parent Shortcut">Parent Shortcuts</a> for accessing a component from within that component, and <a href="Global_OP_Shortcut.html" title="Global OP Shortcut">Global OP Shortcuts</a> that access a unique component from anywhere in TouchDesigner.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a1a6657be79cc0fc1e9b23b9e108f043"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A text string that contains data (string, float, list, boolean, etc.) and operators (+ * &lt; etc) that are evaluated by the node's language (python or Tscript) and returns a string, float list or boolean, etc. Expressions are used in parameters, <a href="DAT.html" title="DAT">DATs</a> and in scripts.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6c3a6944a808a7c0bbb6788dbec54a9f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The generic thing that holds an <a href="Operator.html" title="Operator">Operator</a>, and includes <a href="Flag.html" title="Flag">Flags</a> (display, bypass, lock, render, immune) and its position/size in the network. Whether you "lay down an Operator" or "lay down an Node", you're doing the same thing.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304232344
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.380 seconds
+Real time usage: 1.179 seconds
+Preprocessor visited node count: 4849/1000000
+Post‐expand include size: 73402/2097152 bytes
+Template argument size: 33645/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 411/5000000 bytes
+Lua time usage: 0.770/10 seconds
+Lua virtual size: 9265152/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1095.137      1 -total
+ 92.58% 1013.885      1 Template:DATNavBox
+ 90.99%  996.419     76 Template:CatList
+  5.96%   65.245      6 Template:ParameterPage
+  4.49%   49.133     62 Template:Parameter
+  0.72%    7.872      1 DAT_Generator_Common_Page
+  0.67%    7.379      1 Template:Summary
+  0.41%    4.540     15 Template:ParameterItem
+  0.26%    2.871      1 Template:InputsPage
+  0.21%    2.287      1 Template:History
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:247-0!canonical and timestamp 20250304232343 and revision id 27897.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=OP_Find_DAT&amp;oldid=27897">https://docs.derivative.ca/index.php?title=OP_Find_DAT&amp;oldid=27897</a>"</div></div>
+		<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a class="new" href="https://docs.derivative.ca/index.php?title=Category:DATs&amp;action=edit&amp;redlink=1" title="Category:DATs (page does not exist)">DATs</a></li></ul></div></div>
+	</div>
+</div>
+
+
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.380","walltime":"1.179","ppvisitednodes":{"value":4849,"limit":1000000},"postexpandincludesize":{"value":73402,"limit":2097152},"templateargumentsize":{"value":33645,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":411,"limit":5000000},"timingprofile":["100.00% 1095.137      1 -total"," 92.58% 1013.885      1 Template:DATNavBox"," 90.99%  996.419     76 Template:CatList","  5.96%   65.245      6 Template:ParameterPage","  4.49%   49.133     62 Template:Parameter","  0.72%    7.872      1 DAT_Generator_Common_Page","  0.67%    7.379      1 Template:Summary","  0.41%    4.540     15 Template:ParameterItem","  0.26%    2.871      1 Template:InputsPage","  0.21%    2.287      1 Template:History"]},"scribunto":{"limitreport-timeusage":{"value":"0.770","limit":"10"},"limitreport-virtmemusage":{"value":9265152,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304232344","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1412});});</script>
+
+
+
+
+</body><!-- Cached 20250304232344 --><!-- Mirrored from docs.derivative.ca/OP_Find_DAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:30 GMT --></html>
