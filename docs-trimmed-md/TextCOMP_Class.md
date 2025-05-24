@@ -1,7 +1,5 @@
 
 
-# TextCOMP_Class
-
 textCOMP Class - Derivative
 
 

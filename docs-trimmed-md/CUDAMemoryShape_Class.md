@@ -1,7 +1,5 @@
 
 
-# CUDAMemoryShape_Class
-
 CUDAMemoryShape Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# AttributeData_Class
-
 AttributeData Class - Derivative
 
 

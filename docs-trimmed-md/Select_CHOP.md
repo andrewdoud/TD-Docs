@@ -1,7 +1,5 @@
 
 
-# Select_CHOP
-
 Select CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Curvesect_SOP
-
 Curvesect SOP - TouchDesigner Documentation
 
 

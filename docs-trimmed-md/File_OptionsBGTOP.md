@@ -1,7 +1,5 @@
 
 
-# File_OptionsBGTOP
-
 File:OptionsBGTOP.png - Derivative
 
 

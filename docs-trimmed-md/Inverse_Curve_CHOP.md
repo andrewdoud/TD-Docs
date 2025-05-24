@@ -1,7 +1,5 @@
 
 
-# Inverse_Curve_CHOP
-
 Inverse Curve CHOP - TouchDesigner Documentation
 
 

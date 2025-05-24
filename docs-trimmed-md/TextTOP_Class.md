@@ -1,7 +1,5 @@
 
 
-# TextTOP_Class
-
 textTOP Class - Derivative
 
 

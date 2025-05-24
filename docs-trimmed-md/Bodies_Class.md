@@ -1,7 +1,5 @@
 
 
-# Bodies_Class
-
 Bodies Class - Derivative
 
 

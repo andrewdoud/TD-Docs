@@ -1,7 +1,5 @@
 
 
-# Luma_Blur_TOP
-
 Luma Blur TOP - TouchDesigner Documentation
 
 

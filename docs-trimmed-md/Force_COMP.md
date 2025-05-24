@@ -1,7 +1,5 @@
 
 
-# Force_COMP
-
 Force COMP - TouchDesigner Documentation
 
 

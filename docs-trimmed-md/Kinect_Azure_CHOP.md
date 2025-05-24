@@ -1,7 +1,5 @@
 
 
-# Kinect_Azure_CHOP
-
 Kinect Azure CHOP - TouchDesigner Documentation
 
 

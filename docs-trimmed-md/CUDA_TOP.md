@@ -1,7 +1,5 @@
 
 
-# CUDA_TOP
-
 CUDA TOP - Derivative
 
 

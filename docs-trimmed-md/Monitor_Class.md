@@ -1,7 +1,5 @@
 
 
-# Monitor_Class
-
 Monitor Class - Derivative
 
 

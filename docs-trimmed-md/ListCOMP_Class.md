@@ -1,7 +1,5 @@
 
 
-# ListCOMP_Class
-
 listCOMP Class - Derivative
 
 

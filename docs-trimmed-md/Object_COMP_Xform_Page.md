@@ -1,7 +1,5 @@
 
 
-# Object_COMP_Xform_Page
-
 Object COMP Xform Page - Derivative
 
 

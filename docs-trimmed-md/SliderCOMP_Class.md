@@ -1,7 +1,5 @@
 
 
-# SliderCOMP_Class
-
 sliderCOMP Class - Derivative
 
 

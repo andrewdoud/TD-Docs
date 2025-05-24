@@ -1,7 +1,5 @@
 
 
-# Transform_CHOP
-
 Transform CHOP - TouchDesigner Documentation
 
 

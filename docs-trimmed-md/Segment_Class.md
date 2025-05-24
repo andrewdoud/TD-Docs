@@ -1,7 +1,5 @@
 
 
-# Segment_Class
-
 Segment Class - Derivative
 
 

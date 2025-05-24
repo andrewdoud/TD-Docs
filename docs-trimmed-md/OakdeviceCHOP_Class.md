@@ -1,7 +1,5 @@
 
 
-# OakdeviceCHOP_Class
-
 oakdeviceCHOP Class - Derivative
 
 

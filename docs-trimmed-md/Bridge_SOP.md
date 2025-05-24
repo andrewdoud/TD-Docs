@@ -1,7 +1,5 @@
 
 
-# Bridge_SOP
-
 Bridge SOP - TouchDesigner Documentation
 
 

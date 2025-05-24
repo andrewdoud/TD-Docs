@@ -1,7 +1,5 @@
 
 
-# Texture_SOP
-
 Texture SOP - TouchDesigner Documentation
 
 

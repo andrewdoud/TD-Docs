@@ -1,7 +1,5 @@
 
 
-# Sort_SOP
-
 Sort SOP - TouchDesigner Documentation
 
 

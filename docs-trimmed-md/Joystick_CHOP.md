@@ -1,7 +1,5 @@
 
 
-# Joystick_CHOP
-
 Joystick CHOP - TouchDesigner Documentation
 
 

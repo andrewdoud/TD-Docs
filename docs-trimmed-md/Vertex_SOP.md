@@ -1,7 +1,5 @@
 
 
-# Vertex_SOP
-
 Vertex SOP - TouchDesigner Documentation
 
 

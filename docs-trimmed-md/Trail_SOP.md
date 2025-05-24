@@ -1,7 +1,5 @@
 
 
-# Trail_SOP
-
 Trail SOP - TouchDesigner Documentation
 
 

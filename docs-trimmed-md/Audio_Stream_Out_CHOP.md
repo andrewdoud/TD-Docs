@@ -1,7 +1,5 @@
 
 
-# Audio_Stream_Out_CHOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Time_Slice_CHOP
-
 Time Slice CHOP - TouchDesigner Documentation
 
 

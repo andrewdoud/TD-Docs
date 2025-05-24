@@ -1,7 +1,5 @@
 
 
-# Render_Select_TOP
-
 Render Select TOP - TouchDesigner Documentation
 
 

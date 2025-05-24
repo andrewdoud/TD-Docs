@@ -1,7 +1,5 @@
 
 
-# Import_Select_SOP
-
 Import Select SOP - TouchDesigner Documentation
 
 

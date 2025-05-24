@@ -1,7 +1,5 @@
 
 
-# Script_CHOP
-
 Script CHOP - TouchDesigner Documentation
 
 

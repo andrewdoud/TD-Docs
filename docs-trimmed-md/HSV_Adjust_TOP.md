@@ -1,7 +1,5 @@
 
 
-# HSV_Adjust_TOP
-
 HSV Adjust TOP - TouchDesigner Documentation
 
 

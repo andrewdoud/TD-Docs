@@ -1,7 +1,5 @@
 
 
-# Pattern_CHOP
-
 Pattern CHOP - TouchDesigner Documentation
 
 

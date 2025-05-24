@@ -1,7 +1,5 @@
 
 
-# Trigger_CHOP
-
 Trigger CHOP - TouchDesigner Documentation
 
 

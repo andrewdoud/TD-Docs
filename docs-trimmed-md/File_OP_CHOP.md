@@ -1,7 +1,5 @@
 
 
-# File_OP_CHOP
-
 File:OP CHOP.png - Derivative
 
 

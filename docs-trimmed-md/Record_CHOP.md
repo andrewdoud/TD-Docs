@@ -1,7 +1,5 @@
 
 
-# Record_CHOP
-
 Record CHOP - TouchDesigner Documentation
 
 

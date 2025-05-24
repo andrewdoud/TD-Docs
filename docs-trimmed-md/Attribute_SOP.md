@@ -1,7 +1,5 @@
 
 
-# Attribute_SOP
-
 Attribute SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# FreeD_Out_CHOP
-
 FreeD Out CHOP - TouchDesigner Documentation
 
 

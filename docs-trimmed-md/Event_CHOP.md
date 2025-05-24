@@ -1,7 +1,5 @@
 
 
-# Event_CHOP
-
 TouchDesigner Documentation
 
 

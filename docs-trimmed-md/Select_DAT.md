@@ -1,7 +1,5 @@
 
 
-# Select_DAT
-
 Select DAT - TouchDesigner Documentation
 
 

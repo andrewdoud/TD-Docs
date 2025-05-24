@@ -1,7 +1,5 @@
 
 
-# MIDI_Event_DAT
-
 MIDI Event DAT - TouchDesigner Documentation
 
 

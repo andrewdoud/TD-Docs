@@ -1,7 +1,5 @@
 
 
-# Vertex_Class
-
 Vertex Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Copy_CHOP
-
 Copy CHOP - TouchDesigner Documentation
 
 

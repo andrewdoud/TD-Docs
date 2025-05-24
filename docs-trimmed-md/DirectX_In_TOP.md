@@ -1,7 +1,5 @@
 
 
-# DirectX_In_TOP
-
 DirectX In TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# CPlusPlus_DAT
-
 CPlusPlus DAT - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Insert_DAT
-
 Insert DAT - TouchDesigner Documentation
 
 

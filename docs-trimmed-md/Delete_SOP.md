@@ -1,7 +1,5 @@
 
 
-# Delete_SOP
-
 Delete SOP - TouchDesigner Documentation
 
 

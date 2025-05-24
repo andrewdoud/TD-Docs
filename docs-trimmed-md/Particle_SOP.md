@@ -1,7 +1,5 @@
 
 
-# Particle_SOP
-
 Particle SOP - TouchDesigner Documentation
 
 

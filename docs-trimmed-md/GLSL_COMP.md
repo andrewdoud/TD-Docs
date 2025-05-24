@@ -1,7 +1,5 @@
 
 
-# GLSL_COMP
-
 GLSL COMP - TouchDesigner Documentation
 
 

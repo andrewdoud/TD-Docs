@@ -1,7 +1,5 @@
 
 
-# Audio_Stream_In_CHOP
-
 Audio Stream In CHOP - TouchDesigner Documentation
 
 

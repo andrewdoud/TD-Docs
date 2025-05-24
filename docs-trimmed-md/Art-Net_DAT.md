@@ -1,7 +1,5 @@
 
 
-# Art-Net_DAT
-
 Art-Net DAT - TouchDesigner Documentation
 
 

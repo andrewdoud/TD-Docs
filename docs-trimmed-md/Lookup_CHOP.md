@@ -1,7 +1,5 @@
 
 
-# Lookup_CHOP
-
 Lookup CHOP - TouchDesigner Documentation
 
 

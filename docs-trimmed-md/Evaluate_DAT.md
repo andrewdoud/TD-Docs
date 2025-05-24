@@ -1,7 +1,5 @@
 
 
-# Evaluate_DAT
-
 Evaluate DAT - TouchDesigner Documentation
 
 

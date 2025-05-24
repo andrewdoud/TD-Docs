@@ -1,7 +1,5 @@
 
 
-# ZED_CHOP
-
 ZED CHOP - TouchDesigner Documentation
 
 

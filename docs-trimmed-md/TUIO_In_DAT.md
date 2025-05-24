@@ -1,7 +1,5 @@
 
 
-# TUIO_In_DAT
-
 TUIO In DAT - TouchDesigner Documentation
 
 

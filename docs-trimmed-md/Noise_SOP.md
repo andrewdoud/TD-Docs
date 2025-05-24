@@ -1,7 +1,5 @@
 
 
-# Noise_SOP
-
 Noise SOP - TouchDesigner Documentation
 
 

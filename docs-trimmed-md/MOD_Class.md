@@ -1,7 +1,5 @@
 
 
-# MOD_Class
-
 MOD Class - Derivative
 
 

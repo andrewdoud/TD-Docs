@@ -1,7 +1,5 @@
 
 
-# S_Curve_CHOP
-
 S Curve CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Audio_Web_Render_CHOP
-
 Audio Web Render CHOP - TouchDesigner Documentation
 
 

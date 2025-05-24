@@ -1,7 +1,5 @@
 
 
-# Page_Class
-
 Page Class - Derivative
 
 

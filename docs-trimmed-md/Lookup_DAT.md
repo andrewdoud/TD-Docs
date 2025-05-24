@@ -1,7 +1,5 @@
 
 
-# Lookup_DAT
-
 TouchDesigner Documentation
 
 

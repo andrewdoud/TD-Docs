@@ -1,7 +1,5 @@
 
 
-# VideodeviceinTOP_Class
-
 videodeviceinTOP Class - Derivative
 
 

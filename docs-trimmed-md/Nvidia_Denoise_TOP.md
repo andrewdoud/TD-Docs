@@ -1,7 +1,5 @@
 
 
-# Nvidia_Denoise_TOP
-
 Nvidia Denoise TOP - TouchDesigner Documentation
 
 

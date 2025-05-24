@@ -1,7 +1,5 @@
 
 
-# RenderStream_In_CHOP
-
 RenderStream In CHOP - TouchDesigner Documentation
 
 

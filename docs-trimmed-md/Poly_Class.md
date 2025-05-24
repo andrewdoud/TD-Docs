@@ -1,7 +1,5 @@
 
 
-# Poly_Class
-
 Poly Class - Derivative
 
 

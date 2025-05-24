@@ -1,7 +1,5 @@
 
 
-# Boolean_SOP
-
 Boolean SOP - TouchDesigner Documentation
 
 

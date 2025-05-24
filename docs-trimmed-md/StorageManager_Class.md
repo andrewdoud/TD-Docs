@@ -1,7 +1,5 @@
 
 
-# StorageManager_Class
-
 StorageManager Class - Derivative
 
 

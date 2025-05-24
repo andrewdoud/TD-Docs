@@ -1,7 +1,5 @@
 
 
-# Pipe_Out_CHOP
-
 Pipe Out CHOP - TouchDesigner Documentation
 
 

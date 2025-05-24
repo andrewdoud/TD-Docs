@@ -1,7 +1,5 @@
 
 
-# Shared_Mem_Out_COMP
-
 Shared Mem Out COMP - TouchDesigner Documentation
 
 

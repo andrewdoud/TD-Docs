@@ -1,7 +1,5 @@
 
 
-# Nvidia_Flex_Solver_COMP
-
 Nvidia Flex Solver COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# File_CHOPUnits
-
 File:CHOPUnits.jpg - Derivative
 
 

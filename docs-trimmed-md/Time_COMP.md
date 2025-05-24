@@ -1,7 +1,5 @@
 
 
-# Time_COMP
-
 Time COMP - TouchDesigner Documentation
 
 

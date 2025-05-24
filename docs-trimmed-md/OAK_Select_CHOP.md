@@ -1,7 +1,5 @@
 
 
-# OAK_Select_CHOP
-
 OAK Select CHOP - TouchDesigner Documentation
 
 

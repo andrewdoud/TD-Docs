@@ -1,7 +1,5 @@
 
 
-# Cross_CHOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Mesh_Class
-
 Mesh Class - Derivative
 
 

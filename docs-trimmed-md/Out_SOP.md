@@ -1,7 +1,5 @@
 
 
-# Out_SOP
-
 Out SOP - Derivative
 
 

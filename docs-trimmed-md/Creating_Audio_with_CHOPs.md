@@ -1,7 +1,5 @@
 
 
-# Creating_Audio_with_CHOPs
-
 Creating Audio with CHOPs - Derivative
 
 

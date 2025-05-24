@@ -1,7 +1,5 @@
 
 
-# Constraint_COMP
-
 Constraint COMP - TouchDesigner Documentation
 
 

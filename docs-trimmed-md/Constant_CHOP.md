@@ -1,7 +1,5 @@
 
 
-# Constant_CHOP
-
 Constant CHOP - TouchDesigner Documentation
 
 

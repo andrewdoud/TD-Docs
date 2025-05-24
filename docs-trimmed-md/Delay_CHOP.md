@@ -1,7 +1,5 @@
 
 
-# Delay_CHOP
-
 TouchDesigner Documentation
 
 

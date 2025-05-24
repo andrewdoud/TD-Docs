@@ -1,7 +1,5 @@
 
 
-# MAT_Class
-
 MAT Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Switch_DAT
-
 Switch DAT - TouchDesigner Documentation
 
 

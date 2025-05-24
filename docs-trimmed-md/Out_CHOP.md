@@ -1,7 +1,5 @@
 
 
-# Out_CHOP
-
 Out CHOP - TouchDesigner Documentation
 
 

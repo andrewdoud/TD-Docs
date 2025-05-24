@@ -1,7 +1,5 @@
 
 
-# OpenVR_CHOP
-
 TouchDesigner Documentation
 
 

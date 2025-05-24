@@ -1,7 +1,5 @@
 
 
-# Attribute_CHOP
-
 Attribute CHOP - TouchDesigner Documentation
 
 

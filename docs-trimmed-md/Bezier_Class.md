@@ -1,7 +1,5 @@
 
 
-# Bezier_Class
-
 Bezier Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Blend_SOP
-
 TouchDesigner Documentation
 
 

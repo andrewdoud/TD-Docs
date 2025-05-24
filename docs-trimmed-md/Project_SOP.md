@@ -1,7 +1,5 @@
 
 
-# Project_SOP
-
 Project SOP - TouchDesigner Documentation
 
 

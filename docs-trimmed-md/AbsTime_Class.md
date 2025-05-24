@@ -1,7 +1,5 @@
 
 
-# AbsTime_Class
-
 absTime Class - Derivative
 
 

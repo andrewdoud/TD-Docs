@@ -1,7 +1,5 @@
 
 
-# Sequence_Class
-
 Sequence Class - Derivative
 
 

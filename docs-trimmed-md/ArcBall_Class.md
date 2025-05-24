@@ -1,7 +1,5 @@
 
 
-# ArcBall_Class
-
 ArcBall Class - Derivative
 
 

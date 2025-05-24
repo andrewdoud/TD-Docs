@@ -1,7 +1,5 @@
 
 
-# Direct_Display_Out_TOP
-
 Direct Display Out TOP - TouchDesigner Documentation
 
 

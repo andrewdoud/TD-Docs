@@ -1,7 +1,5 @@
 
 
-# Rectangle_TOP
-
 TouchDesigner Documentation
 
 

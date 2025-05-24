@@ -1,7 +1,5 @@
 
 
-# Script_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# ProductEntry_Class
-
 ProductEntry Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# PBR_MAT
-
 PBR MAT - TouchDesigner Documentation
 
 

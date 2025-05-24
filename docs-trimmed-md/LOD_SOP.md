@@ -1,7 +1,5 @@
 
 
-# LOD_SOP
-
 TouchDesigner Documentation
 
 

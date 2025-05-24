@@ -1,7 +1,5 @@
 
 
-# Count_CHOP
-
 Count CHOP - TouchDesigner Documentation
 
 

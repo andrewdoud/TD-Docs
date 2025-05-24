@@ -1,7 +1,5 @@
 
 
-# Project_Class
-
 Project Class - Derivative
 
 

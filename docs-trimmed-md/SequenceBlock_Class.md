@@ -1,7 +1,5 @@
 
 
-# SequenceBlock_Class
-
 SequenceBlock Class - Derivative
 
 

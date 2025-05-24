@@ -1,7 +1,5 @@
 
 
-# Cross_TOP
-
 Cross TOP - TouchDesigner Documentation
 
 

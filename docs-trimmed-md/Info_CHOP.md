@@ -1,7 +1,5 @@
 
 
-# Info_CHOP
-
 Info CHOP - TouchDesigner Documentation
 
 

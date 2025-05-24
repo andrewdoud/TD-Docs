@@ -1,7 +1,5 @@
 
 
-# Scalable_Display_TOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Clip_SOP
-
 TouchDesigner Documentation
 
 

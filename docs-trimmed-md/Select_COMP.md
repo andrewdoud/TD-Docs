@@ -1,7 +1,5 @@
 
 
-# Select_COMP
-
 TouchDesigner Documentation
 
 

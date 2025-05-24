@@ -1,7 +1,5 @@
 
 
-# FlexsolverCOMP_Class
-
 flexsolverCOMP Class - Derivative
 
 

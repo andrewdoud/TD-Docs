@@ -1,7 +1,5 @@
 
 
-# Category_CHOPs
-
 Category:CHOPs - Derivative
 
 

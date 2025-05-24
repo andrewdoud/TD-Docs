@@ -1,7 +1,5 @@
 
 
-# Subtract_TOP
-
 Subtract TOP - TouchDesigner Documentation
 
 

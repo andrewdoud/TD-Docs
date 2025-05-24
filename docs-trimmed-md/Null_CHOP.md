@@ -1,7 +1,5 @@
 
 
-# Null_CHOP
-
 TouchDesigner Documentation
 
 

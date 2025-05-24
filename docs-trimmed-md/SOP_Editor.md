@@ -1,7 +1,5 @@
 
 
-# SOP_Editor
-
 SOP Editor - Derivative
 
 

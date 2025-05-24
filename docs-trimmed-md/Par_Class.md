@@ -1,7 +1,5 @@
 
 
-# Par_Class
-
 Par Class - Derivative
 
 

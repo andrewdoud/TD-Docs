@@ -1,7 +1,5 @@
 
 
-# Dongle_Class
-
 Dongle Class - Derivative
 
 

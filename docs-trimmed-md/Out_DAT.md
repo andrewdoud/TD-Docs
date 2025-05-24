@@ -1,7 +1,5 @@
 
 
-# Out_DAT
-
 Out DAT - TouchDesigner Documentation
 
 

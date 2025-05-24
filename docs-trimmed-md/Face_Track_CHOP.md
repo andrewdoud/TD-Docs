@@ -1,7 +1,5 @@
 
 
-# Face_Track_CHOP
-
 Face Track CHOP - TouchDesigner Documentation
 
 

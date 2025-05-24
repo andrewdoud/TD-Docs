@@ -1,7 +1,5 @@
 
 
-# File_Opcreate_COMP
-
 File:Opcreate COMP.jpg - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# CHOP_to_TOP
-
 TouchDesigner Documentation
 
 

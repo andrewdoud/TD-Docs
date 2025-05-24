@@ -1,7 +1,5 @@
 
 
-# Leap_Motion_CHOP
-
 Leap Motion CHOP - TouchDesigner Documentation
 
 

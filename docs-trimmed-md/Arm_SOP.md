@@ -1,7 +1,5 @@
 
 
-# Arm_SOP
-
 Arm SOP - TouchDesigner Documentation
 
 

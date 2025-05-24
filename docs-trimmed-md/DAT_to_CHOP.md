@@ -1,7 +1,5 @@
 
 
-# DAT_to_CHOP
-
 TouchDesigner Documentation
 
 

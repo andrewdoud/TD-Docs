@@ -1,7 +1,5 @@
 
 
-# MIDI_In_DAT
-
 MIDI In DAT - TouchDesigner Documentation
 
 

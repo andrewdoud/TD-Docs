@@ -1,7 +1,5 @@
 
 
-# Inverse_Curve_SOP
-
 TouchDesigner Documentation
 
 

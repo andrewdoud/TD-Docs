@@ -1,7 +1,5 @@
 
 
-# OpenColorIO_TOP
-
 OpenColorIO TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Shared_Mem_Out_TOP
-
 Shared Mem Out TOP - TouchDesigner Documentation
 
 

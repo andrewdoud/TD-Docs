@@ -1,7 +1,5 @@
 
 
-# ContainerCOMP_Class
-
 containerCOMP Class - Derivative
 
 

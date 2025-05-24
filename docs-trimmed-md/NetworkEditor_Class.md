@@ -1,7 +1,5 @@
 
 
-# NetworkEditor_Class
-
 NetworkEditor Class - Derivative
 
 

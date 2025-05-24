@@ -1,7 +1,5 @@
 
 
-# Phaser_CHOP
-
 Phaser CHOP - TouchDesigner Documentation
 
 

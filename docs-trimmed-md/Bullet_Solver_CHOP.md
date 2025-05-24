@@ -1,7 +1,5 @@
 
 
-# Bullet_Solver_CHOP
-
 Bullet Solver CHOP - TouchDesigner Documentation
 
 

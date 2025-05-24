@@ -1,7 +1,5 @@
 
 
-# ParGroup_Execute_DAT
-
 ParGroup Execute DAT - TouchDesigner Documentation
 
 

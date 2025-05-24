@@ -1,7 +1,5 @@
 
 
-# Syphon_Spout_In_TOP
-
 Syphon Spout In TOP - TouchDesigner Documentation
 
 

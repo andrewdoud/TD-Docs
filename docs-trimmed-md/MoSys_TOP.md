@@ -1,7 +1,5 @@
 
 
-# MoSys_TOP
-
 MoSys TOP - TouchDesigner Documentation
 
 

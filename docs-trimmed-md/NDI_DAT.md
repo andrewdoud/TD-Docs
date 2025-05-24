@@ -1,7 +1,5 @@
 
 
-# NDI_DAT
-
 NDI DAT - TouchDesigner Documentation
 
 

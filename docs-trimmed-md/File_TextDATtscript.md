@@ -1,7 +1,5 @@
 
 
-# File_TextDATtscript
-
 File:TextDATtscript.png - Derivative
 
 

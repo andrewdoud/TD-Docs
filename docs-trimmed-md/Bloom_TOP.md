@@ -1,7 +1,5 @@
 
 
-# Bloom_TOP
-
 Bloom TOP - TouchDesigner Documentation
 
 

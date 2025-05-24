@@ -1,7 +1,5 @@
 
 
-# Reorder_CHOP
-
 Reorder CHOP - TouchDesigner Documentation
 
 

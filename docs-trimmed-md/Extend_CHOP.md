@@ -1,7 +1,5 @@
 
 
-# Extend_CHOP
-
 Extend CHOP - TouchDesigner Documentation
 
 

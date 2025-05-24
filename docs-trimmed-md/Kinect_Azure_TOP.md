@@ -1,7 +1,5 @@
 
 
-# Kinect_Azure_TOP
-
 Kinect Azure TOP - TouchDesigner Documentation
 
 

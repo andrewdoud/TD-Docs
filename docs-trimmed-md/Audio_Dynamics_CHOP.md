@@ -1,7 +1,5 @@
 
 
-# Audio_Dynamics_CHOP
-
 TouchDesigner Documentation
 
 

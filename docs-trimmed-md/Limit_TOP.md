@@ -1,7 +1,5 @@
 
 
-# Limit_TOP
-
 Limit TOP - TouchDesigner Documentation
 
 

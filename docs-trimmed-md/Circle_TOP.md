@@ -1,7 +1,5 @@
 
 
-# Circle_TOP
-
 Circle TOP - TouchDesigner Documentation
 
 

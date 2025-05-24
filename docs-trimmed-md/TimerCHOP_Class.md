@@ -1,7 +1,5 @@
 
 
-# TimerCHOP_Class
-
 timerCHOP Class - Derivative
 
 

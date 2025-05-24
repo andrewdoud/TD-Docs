@@ -1,7 +1,5 @@
 
 
-# Cube_Map_TOP
-
 TouchDesigner Documentation
 
 

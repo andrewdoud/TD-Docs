@@ -1,7 +1,5 @@
 
 
-# Spring_CHOP
-
 Spring CHOP - TouchDesigner Documentation
 
 

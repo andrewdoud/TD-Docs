@@ -1,7 +1,5 @@
 
 
-# GLSL_MAT
-
 GLSL MAT - TouchDesigner Documentation
 
 

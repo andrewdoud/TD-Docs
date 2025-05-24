@@ -1,7 +1,5 @@
 
 
-# Material_SOP
-
 Material SOP - TouchDesigner Documentation
 
 

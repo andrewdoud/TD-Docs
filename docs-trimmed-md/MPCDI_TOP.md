@@ -1,7 +1,5 @@
 
 
-# MPCDI_TOP
-
 MPCDI TOP - TouchDesigner Documentation
 
 

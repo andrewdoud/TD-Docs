@@ -1,7 +1,5 @@
 
 
-# Touch_Out_DAT
-
 Touch Out DAT - TouchDesigner Documentation
 
 

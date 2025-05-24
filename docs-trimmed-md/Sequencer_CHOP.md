@@ -1,7 +1,5 @@
 
 
-# Sequencer_CHOP
-
 Sequencer CHOP - TouchDesigner Documentation
 
 

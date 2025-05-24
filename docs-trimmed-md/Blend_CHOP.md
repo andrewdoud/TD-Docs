@@ -1,7 +1,5 @@
 
 
-# Blend_CHOP
-
 TouchDesigner Documentation
 
 

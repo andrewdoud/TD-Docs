@@ -1,7 +1,5 @@
 
 
-# BulletsolverCOMP_Class
-
 bulletsolverCOMP Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Trim_SOP
-
 Trim SOP - TouchDesigner Documentation
 
 

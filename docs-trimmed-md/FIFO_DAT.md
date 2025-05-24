@@ -1,7 +1,5 @@
 
 
-# FIFO_DAT
-
 FIFO DAT - TouchDesigner Documentation
 
 

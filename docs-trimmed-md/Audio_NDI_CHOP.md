@@ -1,7 +1,5 @@
 
 
-# Audio_NDI_CHOP
-
 Audio NDI CHOP - TouchDesigner Documentation
 
 

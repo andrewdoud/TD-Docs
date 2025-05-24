@@ -1,7 +1,5 @@
 
 
-# UDP_Out_DAT
-
 UDP Out DAT - TouchDesigner Documentation
 
 

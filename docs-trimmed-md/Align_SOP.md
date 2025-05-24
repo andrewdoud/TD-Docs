@@ -1,7 +1,5 @@
 
 
-# Align_SOP
-
 Align SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Geo_Text_COMP
-
 Geo Text COMP - TouchDesigner Documentation
 
 

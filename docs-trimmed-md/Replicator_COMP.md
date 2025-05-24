@@ -1,7 +1,5 @@
 
 
-# Replicator_COMP
-
 Replicator COMP - TouchDesigner Documentation
 
 

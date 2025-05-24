@@ -1,7 +1,5 @@
 
 
-# Audio_Binaural_CHOP
-
 Audio Binaural CHOP - TouchDesigner Documentation
 
 

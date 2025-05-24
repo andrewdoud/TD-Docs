@@ -1,7 +1,5 @@
 
 
-# Copy_SOP
-
 TouchDesigner Documentation
 
 

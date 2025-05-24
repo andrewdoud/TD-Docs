@@ -1,7 +1,5 @@
 
 
-# Pangolin_CHOP
-
 Pangolin CHOP - TouchDesigner Documentation
 
 

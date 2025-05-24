@@ -1,7 +1,5 @@
 
 
-# TimeCOMP_Class
-
 timeCOMP Class - Derivative
 
 

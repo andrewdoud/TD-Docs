@@ -1,7 +1,5 @@
 
 
-# OSC_In_CHOP
-
 OSC In CHOP - TouchDesigner Documentation
 
 

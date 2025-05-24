@@ -1,7 +1,5 @@
 
 
-# Polyspline_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Camera_COMP
-
 Camera COMP - TouchDesigner Documentation
 
 

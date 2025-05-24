@@ -1,7 +1,5 @@
 
 
-# Camera_Blend_COMP
-
 Camera Blend COMP - TouchDesigner Documentation
 
 

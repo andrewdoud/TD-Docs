@@ -1,7 +1,5 @@
 
 
-# Basis_SOP
-
 Basis SOP - TouchDesigner Documentation
 
 

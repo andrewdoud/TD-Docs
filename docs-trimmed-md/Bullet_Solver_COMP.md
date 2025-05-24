@@ -1,7 +1,5 @@
 
 
-# Bullet_Solver_COMP
-
 Bullet Solver COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# UDT_Out_DAT
-
 UDT Out DAT - TouchDesigner Documentation
 
 

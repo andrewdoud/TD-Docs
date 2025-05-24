@@ -1,7 +1,5 @@
 
 
-# SVG_TOP
-
 SVG TOP - TouchDesigner Documentation
 
 

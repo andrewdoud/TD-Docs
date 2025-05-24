@@ -1,7 +1,5 @@
 
 
-# Scan_CHOP
-
 Scan CHOP - TouchDesigner Documentation
 
 

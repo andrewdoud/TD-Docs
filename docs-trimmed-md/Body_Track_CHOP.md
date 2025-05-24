@@ -1,7 +1,5 @@
 
 
-# Body_Track_CHOP
-
 Body Track CHOP - TouchDesigner Documentation
 
 

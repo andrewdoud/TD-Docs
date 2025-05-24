@@ -1,7 +1,5 @@
 
 
-# Audio_VST_CHOP
-
 Audio VST CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Shift_CHOP
-
 TouchDesigner Documentation
 
 

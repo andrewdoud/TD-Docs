@@ -1,7 +1,5 @@
 
 
-# Superquad_SOP
-
 Superquad SOP - TouchDesigner Documentation
 
 

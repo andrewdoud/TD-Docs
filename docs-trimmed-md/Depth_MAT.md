@@ -1,7 +1,5 @@
 
 
-# Depth_MAT
-
 Depth MAT - TouchDesigner Documentation
 
 

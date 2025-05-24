@@ -1,7 +1,5 @@
 
 
-# Grid_SOP
-
 TouchDesigner Documentation
 
 

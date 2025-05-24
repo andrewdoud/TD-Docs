@@ -1,7 +1,5 @@
 
 
-# Oculus_Rift_CHOP
-
 Oculus Rift CHOP - TouchDesigner Documentation
 
 

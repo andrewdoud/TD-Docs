@@ -1,7 +1,5 @@
 
 
-# Clip_DAT
-
 TouchDesigner Documentation
 
 

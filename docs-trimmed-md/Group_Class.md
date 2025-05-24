@@ -1,7 +1,5 @@
 
 
-# Group_Class
-
 Group Class - Derivative
 
 

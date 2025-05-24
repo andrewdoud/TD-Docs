@@ -1,7 +1,5 @@
 
 
-# File_Opcreate_CHOP
-
 File:Opcreate CHOP.jpg - Derivative
 
 

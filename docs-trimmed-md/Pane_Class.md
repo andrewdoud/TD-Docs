@@ -1,7 +1,5 @@
 
 
-# Pane_Class
-
 Pane Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Lag_CHOP
-
 TouchDesigner Documentation
 
 

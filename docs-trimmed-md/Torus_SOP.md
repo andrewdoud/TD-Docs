@@ -1,7 +1,5 @@
 
 
-# Torus_SOP
-
 Torus SOP - TouchDesigner Documentation
 
 

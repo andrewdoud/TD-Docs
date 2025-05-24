@@ -1,7 +1,5 @@
 
 
-# LSystem_SOP
-
 TouchDesigner Documentation
 
 

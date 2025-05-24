@@ -1,7 +1,5 @@
 
 
-# Null_COMP
-
 Null COMP - TouchDesigner Documentation
 
 

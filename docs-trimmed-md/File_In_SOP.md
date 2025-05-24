@@ -1,7 +1,5 @@
 
 
-# File_In_SOP
-
 File In SOP - TouchDesigner Documentation
 
 

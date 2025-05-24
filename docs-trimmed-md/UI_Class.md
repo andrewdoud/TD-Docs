@@ -1,7 +1,5 @@
 
 
-# UI_Class
-
 UI Class - Derivative
 
 

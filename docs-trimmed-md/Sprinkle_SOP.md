@@ -1,7 +1,5 @@
 
 
-# Sprinkle_SOP
-
 Sprinkle SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Null_DAT
-
 Null DAT - TouchDesigner Documentation
 
 

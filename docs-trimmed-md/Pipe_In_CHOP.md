@@ -1,7 +1,5 @@
 
 
-# Pipe_In_CHOP
-
 Pipe In CHOP - TouchDesigner Documentation
 
 

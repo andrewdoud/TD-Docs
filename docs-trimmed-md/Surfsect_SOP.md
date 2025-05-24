@@ -1,7 +1,5 @@
 
 
-# Surfsect_SOP
-
 Surfsect SOP - TouchDesigner Documentation
 
 

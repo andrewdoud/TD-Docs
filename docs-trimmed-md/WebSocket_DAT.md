@@ -1,7 +1,5 @@
 
 
-# WebSocket_DAT
-
 WebSocket DAT - TouchDesigner Documentation
 
 

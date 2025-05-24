@@ -1,7 +1,5 @@
 
 
-# Vioso_TOP
-
 Vioso TOP - TouchDesigner Documentation
 
 

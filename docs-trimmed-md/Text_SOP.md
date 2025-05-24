@@ -1,7 +1,5 @@
 
 
-# Text_SOP
-
 TouchDesigner Documentation
 
 

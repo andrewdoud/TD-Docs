@@ -1,7 +1,5 @@
 
 
-# Bone_COMP
-
 Bone COMP - TouchDesigner Documentation
 
 

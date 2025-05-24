@@ -1,7 +1,5 @@
 
 
-# Uses_of_CHOPs
-
 Uses of CHOPs - Derivative
 
 

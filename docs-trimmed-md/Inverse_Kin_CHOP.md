@@ -1,7 +1,5 @@
 
 
-# Inverse_Kin_CHOP
-
 Inverse Kin CHOP - TouchDesigner Documentation
 
 

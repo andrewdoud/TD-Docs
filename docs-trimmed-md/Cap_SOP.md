@@ -1,7 +1,5 @@
 
 
-# Cap_SOP
-
 Cap SOP - TouchDesigner Documentation
 
 

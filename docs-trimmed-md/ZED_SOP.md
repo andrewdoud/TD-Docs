@@ -1,7 +1,5 @@
 
 
-# ZED_SOP
-
 ZED SOP - TouchDesigner Documentation
 
 

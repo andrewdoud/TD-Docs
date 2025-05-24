@@ -1,7 +1,5 @@
 
 
-# Magnet_SOP
-
 Magnet SOP - TouchDesigner Documentation
 
 

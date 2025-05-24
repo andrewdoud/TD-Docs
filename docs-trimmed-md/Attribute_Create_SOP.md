@@ -1,7 +1,5 @@
 
 
-# Attribute_Create_SOP
-
 Attribute Create SOP - TouchDesigner Documentation
 
 

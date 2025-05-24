@@ -1,7 +1,5 @@
 
 
-# Slope_CHOP
-
 Slope CHOP - TouchDesigner Documentation
 
 

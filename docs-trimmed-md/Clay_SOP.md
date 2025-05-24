@@ -1,7 +1,5 @@
 
 
-# Clay_SOP
-
 Clay SOP - TouchDesigner Documentation
 
 

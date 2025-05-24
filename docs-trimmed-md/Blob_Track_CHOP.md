@@ -1,7 +1,5 @@
 
 
-# Blob_Track_CHOP
-
 Blob Track CHOP - TouchDesigner Documentation
 
 

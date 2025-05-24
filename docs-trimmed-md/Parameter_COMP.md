@@ -1,7 +1,5 @@
 
 
-# Parameter_COMP
-
 Parameter COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# WebrenderTOP_Class
-
 webrenderTOP Class - Derivative
 
 

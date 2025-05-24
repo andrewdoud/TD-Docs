@@ -1,7 +1,5 @@
 
 
-# Trail_CHOP
-
 TouchDesigner Documentation
 
 

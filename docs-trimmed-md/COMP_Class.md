@@ -1,7 +1,5 @@
 
 
-# COMP_Class
-
 COMP Class - Derivative
 
 

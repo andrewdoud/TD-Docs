@@ -1,7 +1,5 @@
 
 
-# File_TOPDisplaySingle
-
 File:TOPDisplaySingle.jpg - Derivative
 
 

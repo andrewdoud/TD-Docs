@@ -1,7 +1,5 @@
 
 
-# Composite_TOP
-
 Composite TOP - TouchDesigner Documentation
 
 

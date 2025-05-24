@@ -1,7 +1,5 @@
 
 
-# Point_Sprite_MAT
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Hold_CHOP
-
 Hold CHOP - TouchDesigner Documentation
 
 

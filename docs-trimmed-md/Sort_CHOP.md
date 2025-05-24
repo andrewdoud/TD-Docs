@@ -1,7 +1,5 @@
 
 
-# Sort_CHOP
-
 Sort CHOP - TouchDesigner Documentation
 
 

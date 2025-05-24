@@ -1,7 +1,5 @@
 
 
-# Animation_COMP
-
 Animation COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# SysInfo_Class
-
 SysInfo Class - Derivative
 
 

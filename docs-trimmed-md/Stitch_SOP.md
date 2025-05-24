@@ -1,7 +1,5 @@
 
 
-# Stitch_SOP
-
 TouchDesigner Documentation
 
 

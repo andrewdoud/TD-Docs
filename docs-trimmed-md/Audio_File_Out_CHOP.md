@@ -1,7 +1,5 @@
 
 
-# Audio_File_Out_CHOP
-
 Audio File Out CHOP - TouchDesigner Documentation
 
 

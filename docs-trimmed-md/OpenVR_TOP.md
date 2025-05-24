@@ -1,7 +1,5 @@
 
 
-# OpenVR_TOP
-
 OpenVR TOP - TouchDesigner Documentation
 
 

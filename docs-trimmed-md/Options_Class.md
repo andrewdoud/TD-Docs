@@ -1,7 +1,5 @@
 
 
-# Options_Class
-
 Options Class - Derivative
 
 

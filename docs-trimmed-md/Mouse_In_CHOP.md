@@ -1,7 +1,5 @@
 
 
-# Mouse_In_CHOP
-
 Mouse In CHOP - TouchDesigner Documentation
 
 

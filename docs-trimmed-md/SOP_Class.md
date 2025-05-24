@@ -1,7 +1,5 @@
 
 
-# SOP_Class
-
 SOP Class - Derivative
 
 

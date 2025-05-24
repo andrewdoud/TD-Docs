@@ -1,7 +1,5 @@
 
 
-# Audio_Device_Out_CHOP
-
 Audio Device Out CHOP - TouchDesigner Documentation
 
 

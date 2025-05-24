@@ -1,7 +1,5 @@
 
 
-# VFSFile_Class
-
 VFSFile Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# NDI_Out_TOP
-
 NDI Out TOP - TouchDesigner Documentation
 
 

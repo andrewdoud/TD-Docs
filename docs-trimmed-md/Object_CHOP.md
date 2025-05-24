@@ -1,7 +1,5 @@
 
 
-# Object_CHOP
-
 Object CHOP - TouchDesigner Documentation
 
 

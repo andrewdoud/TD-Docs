@@ -1,7 +1,5 @@
 
 
-# WrnchAI_CHOP
-
 TouchDesigner Documentation
 
 

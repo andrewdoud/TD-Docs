@@ -1,7 +1,5 @@
 
 
-# Helios_DAC_CHOP
-
 Helios DAC CHOP - TouchDesigner Documentation
 
 

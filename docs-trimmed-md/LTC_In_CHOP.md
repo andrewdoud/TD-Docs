@@ -1,7 +1,5 @@
 
 
-# LTC_In_CHOP
-
 LTC In CHOP - TouchDesigner Documentation
 
 

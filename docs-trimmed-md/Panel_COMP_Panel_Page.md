@@ -1,7 +1,5 @@
 
 
-# Panel_COMP_Panel_Page
-
 Panel COMP Panel Page - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Bone_Group_SOP
-
 Bone Group SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Slider_COMP
-
 TouchDesigner Documentation
 
 

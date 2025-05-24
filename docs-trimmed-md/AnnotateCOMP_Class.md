@@ -1,7 +1,5 @@
 
 
-# AnnotateCOMP_Class
-
 annotateCOMP Class - Derivative
 
 

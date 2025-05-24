@@ -1,7 +1,5 @@
 
 
-# Blend_COMP
-
 Blend COMP - TouchDesigner Documentation
 
 

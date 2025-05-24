@@ -1,7 +1,5 @@
 
 
-# Analyze_CHOP
-
 Analyze CHOP - TouchDesigner Documentation
 
 

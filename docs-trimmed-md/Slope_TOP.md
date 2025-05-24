@@ -1,7 +1,5 @@
 
 
-# Slope_TOP
-
 Slope TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Timer_CHOP
-
 Timer CHOP - TouchDesigner Documentation
 
 

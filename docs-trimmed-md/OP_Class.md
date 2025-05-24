@@ -1,7 +1,5 @@
 
 
-# OP_Class
-
 OP Class - Derivative
 
 

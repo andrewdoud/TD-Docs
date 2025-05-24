@@ -1,7 +1,5 @@
 
 
-# MidioutCHOP_Class
-
 midioutCHOP Class - Derivative
 
 

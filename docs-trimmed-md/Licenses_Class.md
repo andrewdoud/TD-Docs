@@ -1,7 +1,5 @@
 
 
-# Licenses_Class
-
 Licenses Class - Derivative
 
 

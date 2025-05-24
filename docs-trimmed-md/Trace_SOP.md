@@ -1,7 +1,5 @@
 
 
-# Trace_SOP
-
 TouchDesigner Documentation
 
 

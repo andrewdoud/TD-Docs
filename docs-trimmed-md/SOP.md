@@ -1,7 +1,5 @@
 
 
-# SOP
-
 SOP - Derivative
 
 

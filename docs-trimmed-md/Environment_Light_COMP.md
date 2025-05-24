@@ -1,7 +1,5 @@
 
 
-# Environment_Light_COMP
-
 Environment Light COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Keyboard_In_CHOP
-
 Keyboard In CHOP - TouchDesigner Documentation
 
 

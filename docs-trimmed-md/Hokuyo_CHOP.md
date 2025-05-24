@@ -1,7 +1,5 @@
 
 
-# Hokuyo_CHOP
-
 TouchDesigner Documentation
 
 

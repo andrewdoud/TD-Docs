@@ -1,7 +1,5 @@
 
 
-# Render_Pick_DAT
-
 Render Pick DAT - TouchDesigner Documentation
 
 

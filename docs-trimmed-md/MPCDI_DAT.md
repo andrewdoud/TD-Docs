@@ -1,7 +1,5 @@
 
 
-# MPCDI_DAT
-
 MPCDI DAT - TouchDesigner Documentation
 
 

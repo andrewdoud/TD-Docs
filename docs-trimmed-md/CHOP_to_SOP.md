@@ -1,7 +1,5 @@
 
 
-# CHOP_to_SOP
-
 CHOP to SOP - TouchDesigner Documentation
 
 

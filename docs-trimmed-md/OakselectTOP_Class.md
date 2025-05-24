@@ -1,7 +1,5 @@
 
 
-# OakselectTOP_Class
-
 oakselectTOP Class - Derivative
 
 

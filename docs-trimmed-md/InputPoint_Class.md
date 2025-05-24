@@ -1,7 +1,5 @@
 
 
-# InputPoint_Class
-
 InputPoint Class - Derivative
 
 

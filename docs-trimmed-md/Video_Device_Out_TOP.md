@@ -1,7 +1,5 @@
 
 
-# Video_Device_Out_TOP
-
 Video Device Out TOP - TouchDesigner Documentation
 
 

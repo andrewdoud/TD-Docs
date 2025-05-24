@@ -1,7 +1,5 @@
 
 
-# Script_DAT
-
 Script DAT - TouchDesigner Documentation
 
 

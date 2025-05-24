@@ -1,7 +1,5 @@
 
 
-# Splice_CHOP
-
 TouchDesigner Documentation
 
 

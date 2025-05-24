@@ -1,7 +1,5 @@
 
 
-# Substance_TOP
-
 TouchDesigner Documentation
 
 

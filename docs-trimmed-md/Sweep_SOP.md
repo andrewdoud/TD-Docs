@@ -1,7 +1,5 @@
 
 
-# Sweep_SOP
-
 TouchDesigner Documentation
 
 

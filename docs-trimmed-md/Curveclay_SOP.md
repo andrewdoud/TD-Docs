@@ -1,7 +1,5 @@
 
 
-# Curveclay_SOP
-
 Curveclay SOP - TouchDesigner Documentation
 
 

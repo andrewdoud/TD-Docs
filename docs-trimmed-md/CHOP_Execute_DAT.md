@@ -1,7 +1,5 @@
 
 
-# CHOP_Execute_DAT
-
 TouchDesigner Documentation
 
 

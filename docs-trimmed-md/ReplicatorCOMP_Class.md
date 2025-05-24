@@ -1,7 +1,5 @@
 
 
-# ReplicatorCOMP_Class
-
 replicatorCOMP Class - Derivative
 
 

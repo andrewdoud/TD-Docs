@@ -1,7 +1,5 @@
 
 
-# CPlusPlus_TOP
-
 CPlusPlus TOP - TouchDesigner Documentation
 
 

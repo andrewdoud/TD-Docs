@@ -1,7 +1,5 @@
 
 
-# Preferences_Class
-
 Preferences Class - Derivative
 
 

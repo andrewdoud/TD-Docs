@@ -1,7 +1,5 @@
 
 
-# Capture_Region_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Substitute_DAT
-
 Substitute DAT - TouchDesigner Documentation
 
 

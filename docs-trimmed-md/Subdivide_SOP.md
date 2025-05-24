@@ -1,7 +1,5 @@
 
 
-# Subdivide_SOP
-
 Subdivide SOP - TouchDesigner Documentation
 
 

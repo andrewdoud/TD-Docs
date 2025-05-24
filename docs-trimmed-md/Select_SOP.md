@@ -1,7 +1,5 @@
 
 
-# Select_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Interpolate_CHOP
-
 TouchDesigner Documentation
 
 

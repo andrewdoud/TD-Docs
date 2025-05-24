@@ -1,7 +1,5 @@
 
 
-# SSAO_TOP
-
 TouchDesigner Documentation
 
 

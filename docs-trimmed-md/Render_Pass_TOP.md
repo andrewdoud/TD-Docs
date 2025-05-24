@@ -1,7 +1,5 @@
 
 
-# Render_Pass_TOP
-
 Render Pass TOP - TouchDesigner Documentation
 
 

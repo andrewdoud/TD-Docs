@@ -1,7 +1,5 @@
 
 
-# Nvidia_Background_TOP
-
 Nvidia Background TOP - TouchDesigner Documentation
 
 

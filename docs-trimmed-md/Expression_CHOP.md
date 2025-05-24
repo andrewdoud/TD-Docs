@@ -1,7 +1,5 @@
 
 
-# Expression_CHOP
-
 Expression CHOP - TouchDesigner Documentation
 
 

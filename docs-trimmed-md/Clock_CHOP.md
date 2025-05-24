@@ -1,7 +1,5 @@
 
 
-# Clock_CHOP
-
 Clock CHOP - TouchDesigner Documentation
 
 

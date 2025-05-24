@@ -1,7 +1,5 @@
 
 
-# ClockCHOP_Class
-
 clockCHOP Class - Derivative
 
 

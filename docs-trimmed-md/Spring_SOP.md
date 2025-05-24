@@ -1,7 +1,5 @@
 
 
-# Spring_SOP
-
 Spring SOP - TouchDesigner Documentation
 
 

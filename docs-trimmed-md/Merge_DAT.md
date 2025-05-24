@@ -1,7 +1,5 @@
 
 
-# Merge_DAT
-
 Merge DAT - TouchDesigner Documentation
 
 

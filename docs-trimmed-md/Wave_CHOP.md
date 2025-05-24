@@ -1,7 +1,5 @@
 
 
-# Wave_CHOP
-
 Wave CHOP - TouchDesigner Documentation
 
 

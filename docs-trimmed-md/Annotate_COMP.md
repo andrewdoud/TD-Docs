@@ -1,7 +1,5 @@
 
 
-# Annotate_COMP
-
 Annotate COMP - TouchDesigner Documentation
 
 

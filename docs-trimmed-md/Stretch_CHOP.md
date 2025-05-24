@@ -1,7 +1,5 @@
 
 
-# Stretch_CHOP
-
 TouchDesigner Documentation
 
 

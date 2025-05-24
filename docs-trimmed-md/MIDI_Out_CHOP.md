@@ -1,7 +1,5 @@
 
 
-# MIDI_Out_CHOP
-
 TouchDesigner Documentation
 
 

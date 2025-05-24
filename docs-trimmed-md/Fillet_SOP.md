@@ -1,7 +1,5 @@
 
 
-# Fillet_SOP
-
 Fillet SOP - TouchDesigner Documentation
 
 

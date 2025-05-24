@@ -1,7 +1,5 @@
 
 
-# UDP_In_DAT
-
 UDP In DAT - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Clip_Blender_CHOP
-
 Clip Blender CHOP - TouchDesigner Documentation
 
 

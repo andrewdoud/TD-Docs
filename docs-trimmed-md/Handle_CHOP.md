@@ -1,7 +1,5 @@
 
 
-# Handle_CHOP
-
 TouchDesigner Documentation
 
 

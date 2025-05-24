@@ -1,7 +1,5 @@
 
 
-# Null_SOP
-
 TouchDesigner Documentation
 
 

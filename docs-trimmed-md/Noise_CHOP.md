@@ -1,7 +1,5 @@
 
 
-# Noise_CHOP
-
 Noise CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# CHOP_Export
-
 CHOP Export - Derivative
 
 

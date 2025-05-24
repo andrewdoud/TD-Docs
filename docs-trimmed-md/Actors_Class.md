@@ -1,7 +1,5 @@
 
 
-# Actors_Class
-
 Actors Class - Derivative
 
 

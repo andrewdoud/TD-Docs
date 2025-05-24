@@ -1,7 +1,5 @@
 
 
-# Box_SOP
-
 Box SOP - TouchDesigner Documentation
 
 

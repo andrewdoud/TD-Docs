@@ -1,7 +1,5 @@
 
 
-# Switch_SOP
-
 TouchDesigner Documentation
 
 

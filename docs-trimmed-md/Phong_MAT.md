@@ -1,7 +1,5 @@
 
 
-# Phong_MAT
-
 Phong MAT - TouchDesigner Documentation
 
 

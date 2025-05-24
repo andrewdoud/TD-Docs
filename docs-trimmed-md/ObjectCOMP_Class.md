@@ -1,7 +1,5 @@
 
 
-# ObjectCOMP_Class
-
 ObjectCOMP Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# Laser_Device_CHOP
-
 Laser Device CHOP - TouchDesigner Documentation
 
 

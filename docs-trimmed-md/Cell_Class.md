@@ -1,7 +1,5 @@
 
 
-# Cell_Class
-
 Cell Class - Derivative
 
 

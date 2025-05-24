@@ -1,7 +1,5 @@
 
 
-# Lattice_SOP
-
 Lattice SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Polyreduce_SOP
-
 TouchDesigner Documentation
 
 

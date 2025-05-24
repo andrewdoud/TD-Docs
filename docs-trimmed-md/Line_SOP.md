@@ -1,7 +1,5 @@
 
 
-# Line_SOP
-
 Line SOP - TouchDesigner Documentation
 
 

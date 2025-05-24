@@ -1,7 +1,5 @@
 
 
-# Polystitch_SOP
-
 Polystitch SOP - TouchDesigner Documentation
 
 

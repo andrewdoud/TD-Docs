@@ -1,7 +1,5 @@
 
 
-# Audio_Para_EQ_CHOP
-
 Audio Para EQ CHOP - TouchDesigner Documentation
 
 

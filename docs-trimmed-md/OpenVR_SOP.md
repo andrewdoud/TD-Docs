@@ -1,7 +1,5 @@
 
 
-# OpenVR_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Audio_Oscillator_CHOP
-
 Audio Oscillator CHOP - TouchDesigner Documentation
 
 

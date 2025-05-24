@@ -1,7 +1,5 @@
 
 
-# Metaball_SOP
-
 Metaball SOP - TouchDesigner Documentation
 
 

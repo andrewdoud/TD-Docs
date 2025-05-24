@@ -1,7 +1,5 @@
 
 
-# Impulse_Force_COMP
-
 Impulse Force COMP - TouchDesigner Documentation
 
 

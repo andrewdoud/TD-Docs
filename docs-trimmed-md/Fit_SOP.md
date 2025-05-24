@@ -1,7 +1,5 @@
 
 
-# Fit_SOP
-
 Fit SOP - TouchDesigner Documentation
 
 

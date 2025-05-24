@@ -1,7 +1,5 @@
 
 
-# Rename_CHOP
-
 TouchDesigner Documentation
 
 

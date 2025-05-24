@@ -1,7 +1,5 @@
 
 
-# Channel_Class
-
 Channel Class - Derivative
 
 

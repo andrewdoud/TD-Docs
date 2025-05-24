@@ -1,7 +1,5 @@
 
 
-# DAT_to_SOP
-
 DAT to SOP - TouchDesigner Documentation
 
 

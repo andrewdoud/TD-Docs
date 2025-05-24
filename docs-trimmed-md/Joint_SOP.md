@@ -1,7 +1,5 @@
 
 
-# Joint_SOP
-
 Joint SOP - TouchDesigner Documentation
 
 

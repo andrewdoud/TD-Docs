@@ -1,7 +1,5 @@
 
 
-# Rectangle_SOP
-
 TouchDesigner Documentation
 
 

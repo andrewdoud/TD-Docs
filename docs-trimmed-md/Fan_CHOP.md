@@ -1,7 +1,5 @@
 
 
-# Fan_CHOP
-
 Fan CHOP - TouchDesigner Documentation
 
 

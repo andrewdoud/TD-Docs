@@ -1,7 +1,5 @@
 
 
-# Audio_Filter_CHOP
-
 Audio Filter CHOP - TouchDesigner Documentation
 
 

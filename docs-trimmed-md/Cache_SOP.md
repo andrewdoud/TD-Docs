@@ -1,7 +1,5 @@
 
 
-# Cache_SOP
-
 Cache SOP - TouchDesigner Documentation
 
 

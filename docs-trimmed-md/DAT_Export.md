@@ -1,7 +1,5 @@
 
 
-# DAT_Export
-
 DAT Export - Derivative
 
 

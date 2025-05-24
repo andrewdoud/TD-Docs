@@ -1,7 +1,5 @@
 
 
-# Nvidia_Upscaler_TOP
-
 Nvidia Upscaler TOP - TouchDesigner Documentation
 
 

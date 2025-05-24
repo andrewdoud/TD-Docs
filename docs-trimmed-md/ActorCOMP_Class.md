@@ -1,7 +1,5 @@
 
 
-# ActorCOMP_Class
-
 actorCOMP Class - Derivative
 
 

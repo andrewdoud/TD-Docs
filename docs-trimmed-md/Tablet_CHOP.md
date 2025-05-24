@@ -1,7 +1,5 @@
 
 
-# Tablet_CHOP
-
 Tablet CHOP - TouchDesigner Documentation
 
 

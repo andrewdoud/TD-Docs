@@ -1,7 +1,5 @@
 
 
-# Geometry_COMP
-
 Geometry COMP - TouchDesigner Documentation
 
 

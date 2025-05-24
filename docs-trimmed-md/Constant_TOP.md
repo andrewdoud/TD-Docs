@@ -1,7 +1,5 @@
 
 
-# Constant_TOP
-
 Constant TOP - TouchDesigner Documentation
 
 

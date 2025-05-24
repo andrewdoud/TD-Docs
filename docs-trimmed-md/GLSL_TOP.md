@@ -1,7 +1,5 @@
 
 
-# GLSL_TOP
-
 TouchDesigner Documentation
 
 

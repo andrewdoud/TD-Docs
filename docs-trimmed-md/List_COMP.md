@@ -1,7 +1,5 @@
 
 
-# List_COMP
-
 List COMP - TouchDesigner Documentation
 
 

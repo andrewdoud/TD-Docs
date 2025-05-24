@@ -1,7 +1,5 @@
 
 
-# HSV_to_RGB_TOP
-
 HSV to RGB TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Sequence_Blend_SOP
-
 Sequence Blend SOP - TouchDesigner Documentation
 
 

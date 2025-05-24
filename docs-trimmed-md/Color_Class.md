@@ -1,7 +1,5 @@
 
 
-# Color_Class
-
 Color Class - Derivative
 
 

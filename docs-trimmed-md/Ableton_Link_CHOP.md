@@ -1,7 +1,5 @@
 
 
-# Ableton_Link_CHOP
-
 Ableton Link CHOP - TouchDesigner Documentation
 
 

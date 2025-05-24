@@ -1,7 +1,5 @@
 
 
-# Constant_MAT
-
 Constant MAT - TouchDesigner Documentation
 
 

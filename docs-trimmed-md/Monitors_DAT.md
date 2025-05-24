@@ -1,7 +1,5 @@
 
 
-# Monitors_DAT
-
 Monitors DAT - TouchDesigner Documentation
 
 

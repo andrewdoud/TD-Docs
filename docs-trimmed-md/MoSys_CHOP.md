@@ -1,7 +1,5 @@
 
 
-# MoSys_CHOP
-
 MoSys CHOP - TouchDesigner Documentation
 
 

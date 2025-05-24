@@ -1,7 +1,5 @@
 
 
-# Anatomy_of_a_CHOP
-
 Anatomy of a CHOP - Derivative
 
 

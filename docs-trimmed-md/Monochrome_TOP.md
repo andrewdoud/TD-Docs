@@ -1,7 +1,5 @@
 
 
-# Monochrome_TOP
-
 Monochrome TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Override_CHOP
-
 Override CHOP - TouchDesigner Documentation
 
 

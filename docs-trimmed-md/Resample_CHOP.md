@@ -1,7 +1,5 @@
 
 
-# Resample_CHOP
-
 TouchDesigner Documentation
 
 

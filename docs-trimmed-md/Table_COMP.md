@@ -1,7 +1,5 @@
 
 
-# Table_COMP
-
 Table COMP - TouchDesigner Documentation
 
 

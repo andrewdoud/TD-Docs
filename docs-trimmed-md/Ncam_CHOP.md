@@ -1,7 +1,5 @@
 
 
-# Ncam_CHOP
-
 Ncam CHOP - TouchDesigner Documentation
 
 

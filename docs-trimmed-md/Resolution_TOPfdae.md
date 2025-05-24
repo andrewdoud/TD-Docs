@@ -1,7 +1,5 @@
 
 
-# Resolution_TOPfdae
-
 Resolution TOP - TouchDesigner Documentation
 
 

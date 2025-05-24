@@ -1,7 +1,5 @@
 
 
-# USD_COMP
-
 USD COMP - TouchDesigner Documentation
 
 

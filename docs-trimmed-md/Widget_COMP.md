@@ -1,7 +1,5 @@
 
 
-# Widget_COMP
-
 TouchDesigner Documentation
 
 

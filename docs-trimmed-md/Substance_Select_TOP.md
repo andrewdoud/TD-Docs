@@ -1,7 +1,5 @@
 
 
-# Substance_Select_TOP
-
 Substance Select TOP - TouchDesigner Documentation
 
 

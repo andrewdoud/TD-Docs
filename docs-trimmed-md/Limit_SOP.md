@@ -1,7 +1,5 @@
 
 
-# Limit_SOP
-
 Limit SOP - TouchDesigner Documentation
 
 

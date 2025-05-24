@@ -1,7 +1,5 @@
 
 
-# Prim_Class
-
 Prim Class - Derivative
 
 

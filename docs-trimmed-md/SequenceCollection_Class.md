@@ -1,7 +1,5 @@
 
 
-# SequenceCollection_Class
-
 SequenceCollection Class - Derivative
 
 

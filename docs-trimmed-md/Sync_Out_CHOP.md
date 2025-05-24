@@ -1,7 +1,5 @@
 
 
-# Sync_Out_CHOP
-
 Sync Out CHOP - TouchDesigner Documentation
 
 

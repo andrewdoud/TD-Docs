@@ -1,7 +1,5 @@
 
 
-# Logic_CHOP
-
 Logic CHOP - TouchDesigner Documentation
 
 

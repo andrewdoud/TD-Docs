@@ -1,7 +1,5 @@
 
 
-# Timecode_CHOP
-
 Timecode CHOP - TouchDesigner Documentation
 
 

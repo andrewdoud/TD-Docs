@@ -1,7 +1,5 @@
 
 
-# Warp_CHOP
-
 Warp CHOP - TouchDesigner Documentation
 
 

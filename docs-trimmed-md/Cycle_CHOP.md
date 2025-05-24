@@ -1,7 +1,5 @@
 
 
-# Cycle_CHOP
-
 Cycle CHOP - TouchDesigner Documentation
 
 

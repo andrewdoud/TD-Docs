@@ -1,7 +1,5 @@
 
 
-# Pulse_CHOP
-
 TouchDesigner Documentation
 
 

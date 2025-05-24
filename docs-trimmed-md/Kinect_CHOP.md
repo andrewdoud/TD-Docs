@@ -1,7 +1,5 @@
 
 
-# Kinect_CHOP
-
 Kinect CHOP - TouchDesigner Documentation
 
 

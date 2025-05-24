@@ -1,7 +1,5 @@
 
 
-# Camera_Class
-
 Camera Class - Derivative
 
 

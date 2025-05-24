@@ -1,7 +1,5 @@
 
 
-# Blur_TOP
-
 Blur TOP - TouchDesigner Documentation
 
 

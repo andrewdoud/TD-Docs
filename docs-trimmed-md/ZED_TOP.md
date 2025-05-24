@@ -1,7 +1,5 @@
 
 
-# ZED_TOP
-
 ZED TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Python_Classes_and_Modules
-
 Python Classes and Modules - Derivative
 
 

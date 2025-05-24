@@ -1,7 +1,5 @@
 
 
-# Connector_Class
-
 Connector Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# AudiovstCHOP_Class
-
 audiovstCHOP Class - Derivative
 
 

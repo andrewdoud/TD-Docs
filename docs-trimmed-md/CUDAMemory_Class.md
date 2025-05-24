@@ -1,7 +1,5 @@
 
 
-# CUDAMemory_Class
-
 CUDAMemory Class - Derivative
 
 

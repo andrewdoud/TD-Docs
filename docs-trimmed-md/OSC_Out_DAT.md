@@ -1,7 +1,5 @@
 
 
-# OSC_Out_DAT
-
 OSC Out DAT - TouchDesigner Documentation
 
 

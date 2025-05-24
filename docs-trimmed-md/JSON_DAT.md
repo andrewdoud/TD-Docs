@@ -1,7 +1,5 @@
 
 
-# JSON_DAT
-
 JSON DAT - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# FBX_COMP
-
 FBX COMP - TouchDesigner Documentation
 
 

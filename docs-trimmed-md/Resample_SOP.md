@@ -1,7 +1,5 @@
 
 
-# Resample_SOP
-
 Resample SOP - TouchDesigner Documentation
 
 

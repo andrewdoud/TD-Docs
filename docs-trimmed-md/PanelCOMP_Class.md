@@ -1,7 +1,5 @@
 
 
-# PanelCOMP_Class
-
 PanelCOMP Class - Derivative
 
 

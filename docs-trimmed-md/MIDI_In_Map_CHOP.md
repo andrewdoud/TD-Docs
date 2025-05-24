@@ -1,7 +1,5 @@
 
 
-# MIDI_In_Map_CHOP
-
 MIDI In Map CHOP - TouchDesigner Documentation
 
 

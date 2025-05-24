@@ -1,7 +1,5 @@
 
 
-# File_In_DAT
-
 File In DAT - TouchDesigner Documentation
 
 

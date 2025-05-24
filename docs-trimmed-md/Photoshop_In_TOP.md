@@ -1,7 +1,5 @@
 
 
-# Photoshop_In_TOP
-
 Photoshop In TOP - TouchDesigner Documentation
 
 

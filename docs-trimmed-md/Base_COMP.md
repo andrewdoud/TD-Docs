@@ -1,7 +1,5 @@
 
 
-# Base_COMP
-
 Base COMP - TouchDesigner Documentation
 
 

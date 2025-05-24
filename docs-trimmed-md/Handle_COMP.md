@@ -1,7 +1,5 @@
 
 
-# Handle_COMP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Polyloft_SOP
-
 Polyloft SOP - TouchDesigner Documentation
 
 

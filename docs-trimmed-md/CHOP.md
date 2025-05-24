@@ -1,7 +1,5 @@
 
 
-# CHOP
-
 CHOP - Derivative
 
 

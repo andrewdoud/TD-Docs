@@ -1,7 +1,5 @@
 
 
-# Stype_TOP
-
 TouchDesigner Documentation
 
 

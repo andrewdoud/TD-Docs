@@ -1,7 +1,5 @@
 
 
-# Composite_CHOP
-
 Composite CHOP - TouchDesigner Documentation
 
 

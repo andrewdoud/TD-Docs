@@ -1,7 +1,5 @@
 
 
-# Primitive_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# VFS_Class
-
 VFS Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# DMX_In_CHOP
-
 TouchDesigner Documentation
 
 

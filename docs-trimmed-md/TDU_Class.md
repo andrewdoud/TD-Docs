@@ -1,7 +1,5 @@
 
 
-# TDU_Class
-
 tdu Module - Derivative
 
 

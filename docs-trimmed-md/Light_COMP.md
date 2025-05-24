@@ -1,7 +1,5 @@
 
 
-# Light_COMP
-
 Light COMP - TouchDesigner Documentation
 
 

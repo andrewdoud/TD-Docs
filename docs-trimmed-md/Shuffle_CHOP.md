@@ -1,7 +1,5 @@
 
 
-# Shuffle_CHOP
-
 Shuffle CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Position_Class
-
 Position Class - Derivative
 
 

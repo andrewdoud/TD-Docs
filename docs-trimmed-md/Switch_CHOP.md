@@ -1,7 +1,5 @@
 
 
-# Switch_CHOP
-
 Switch CHOP - TouchDesigner Documentation
 
 

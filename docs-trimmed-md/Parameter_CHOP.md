@@ -1,7 +1,5 @@
 
 
-# Parameter_CHOP
-
 TouchDesigner Documentation
 
 

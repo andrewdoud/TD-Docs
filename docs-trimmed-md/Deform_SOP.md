@@ -1,7 +1,5 @@
 
 
-# Deform_SOP
-
 Deform SOP - TouchDesigner Documentation
 
 

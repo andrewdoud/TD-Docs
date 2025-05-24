@@ -1,7 +1,5 @@
 
 
-# Point_SOP
-
 Point SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# GLSL_Multi_TOP
-
 GLSL Multi TOP - TouchDesigner Documentation
 
 

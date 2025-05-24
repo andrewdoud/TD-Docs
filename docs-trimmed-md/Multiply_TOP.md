@@ -1,7 +1,5 @@
 
 
-# Multiply_TOP
-
 Multiply TOP - TouchDesigner Documentation
 
 

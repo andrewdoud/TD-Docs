@@ -1,7 +1,5 @@
 
 
-# Laser_CHOP
-
 Laser CHOP - TouchDesigner Documentation
 
 

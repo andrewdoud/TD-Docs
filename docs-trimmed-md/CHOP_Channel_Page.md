@@ -1,7 +1,5 @@
 
 
-# CHOP_Channel_Page
-
 CHOP Channel Page - Derivative
 
 

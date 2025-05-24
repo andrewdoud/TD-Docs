@@ -1,7 +1,5 @@
 
 
-# Touch_Out_TOP
-
 Touch Out TOP - TouchDesigner Documentation
 
 

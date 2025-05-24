@@ -1,7 +1,5 @@
 
 
-# TextLine_Class
-
 TextLine Class - Derivative
 
 

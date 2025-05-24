@@ -1,7 +1,5 @@
 
 
-# ScalabledisplayTOP_Class
-
 scalabledisplayTOP Class - Derivative
 
 

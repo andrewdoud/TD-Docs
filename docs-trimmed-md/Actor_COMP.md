@@ -1,7 +1,5 @@
 
 
-# Actor_COMP
-
 Actor COMP - TouchDesigner Documentation
 
 

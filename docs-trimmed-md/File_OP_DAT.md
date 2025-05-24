@@ -1,7 +1,5 @@
 
 
-# File_OP_DAT
-
 File:OP DAT.png - Derivative
 
 

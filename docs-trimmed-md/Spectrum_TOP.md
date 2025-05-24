@@ -1,7 +1,5 @@
 
 
-# Spectrum_TOP
-
 Spectrum TOP - TouchDesigner Documentation
 
 

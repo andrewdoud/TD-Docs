@@ -1,7 +1,5 @@
 
 
-# Object_Merge_SOP
-
 Object Merge SOP - TouchDesigner Documentation
 
 

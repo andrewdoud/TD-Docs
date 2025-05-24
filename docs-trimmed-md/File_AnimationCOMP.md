@@ -1,7 +1,5 @@
 
 
-# File_AnimationCOMP
-
 File:AnimationCOMP.png - Derivative
 
 

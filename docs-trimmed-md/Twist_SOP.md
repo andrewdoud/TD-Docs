@@ -1,7 +1,5 @@
 
 
-# Twist_SOP
-
 Twist SOP - TouchDesigner Documentation
 
 

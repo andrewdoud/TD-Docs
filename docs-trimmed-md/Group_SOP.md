@@ -1,7 +1,5 @@
 
 
-# Group_SOP
-
 TouchDesigner Documentation
 
 

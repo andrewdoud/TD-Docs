@@ -1,7 +1,5 @@
 
 
-# Mouse_Out_CHOP
-
 Mouse Out CHOP - TouchDesigner Documentation
 
 

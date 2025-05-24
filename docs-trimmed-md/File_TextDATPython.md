@@ -1,7 +1,5 @@
 
 
-# File_TextDATPython
-
 File:TextDATPython.png - Derivative
 
 

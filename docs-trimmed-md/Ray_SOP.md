@@ -1,7 +1,5 @@
 
 
-# Ray_SOP
-
 TouchDesigner Documentation
 
 

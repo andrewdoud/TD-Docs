@@ -1,7 +1,5 @@
 
 
-# Divide_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Facet_SOP
-
 TouchDesigner Documentation
 
 

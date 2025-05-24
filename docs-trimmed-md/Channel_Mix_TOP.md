@@ -1,7 +1,5 @@
 
 
-# Channel_Mix_TOP
-
 TouchDesigner Documentation
 
 

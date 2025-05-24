@@ -1,7 +1,5 @@
 
 
-# BlackTrax_CHOP
-
 BlackTrax CHOP - TouchDesigner Documentation
 
 

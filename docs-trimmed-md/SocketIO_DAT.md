@@ -1,7 +1,5 @@
 
 
-# SocketIO_DAT
-
 SocketIO DAT - TouchDesigner Documentation
 
 

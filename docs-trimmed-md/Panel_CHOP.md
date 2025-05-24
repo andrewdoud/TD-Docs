@@ -1,7 +1,5 @@
 
 
-# Panel_CHOP
-
 Panel CHOP - TouchDesigner Documentation
 
 

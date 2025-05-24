@@ -1,7 +1,5 @@
 
 
-# Raster_SOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# WebRTC_DAT
-
 WebRTC DAT - TouchDesigner Documentation
 
 

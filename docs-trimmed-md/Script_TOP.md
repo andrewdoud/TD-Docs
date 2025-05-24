@@ -1,7 +1,5 @@
 
 
-# Script_TOP
-
 Script TOP - TouchDesigner Documentation
 
 

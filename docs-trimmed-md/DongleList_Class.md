@@ -1,7 +1,5 @@
 
 
-# DongleList_Class
-
 DongleList Class - Derivative
 
 

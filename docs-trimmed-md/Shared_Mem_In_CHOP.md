@@ -1,7 +1,5 @@
 
 
-# Shared_Mem_In_CHOP
-
 Shared Mem In CHOP - TouchDesigner Documentation
 
 

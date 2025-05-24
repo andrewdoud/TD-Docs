@@ -1,7 +1,5 @@
 
 
-# Stype_Out_CHOP
-
 Stype Out CHOP - TouchDesigner Documentation
 
 

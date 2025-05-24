@@ -1,7 +1,5 @@
 
 
-# Text_DAT
-
 Text DAT - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Delete_CHOP
-
 Delete CHOP - TouchDesigner Documentation
 
 

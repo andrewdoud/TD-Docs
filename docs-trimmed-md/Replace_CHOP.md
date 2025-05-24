@@ -1,7 +1,5 @@
 
 
-# Replace_CHOP
-
 Replace CHOP - TouchDesigner Documentation
 
 

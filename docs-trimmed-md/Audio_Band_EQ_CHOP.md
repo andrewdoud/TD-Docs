@@ -1,7 +1,5 @@
 
 
-# Audio_Band_EQ_CHOP
-
 Audio Band EQ CHOP - TouchDesigner Documentation
 
 

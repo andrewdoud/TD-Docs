@@ -1,7 +1,5 @@
 
 
-# Transform_XYZ_CHOP
-
 Transform XYZ CHOP - TouchDesigner Documentation
 
 

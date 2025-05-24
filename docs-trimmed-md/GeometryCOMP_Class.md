@@ -1,7 +1,5 @@
 
 
-# GeometryCOMP_Class
-
 geometryCOMP Class - Derivative
 
 

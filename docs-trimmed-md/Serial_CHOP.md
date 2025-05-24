@@ -1,7 +1,5 @@
 
 
-# Serial_CHOP
-
 Serial CHOP - TouchDesigner Documentation
 
 

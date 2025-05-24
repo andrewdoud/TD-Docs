@@ -1,7 +1,5 @@
 
 
-# Envelope_CHOP
-
 Envelope CHOP - TouchDesigner Documentation
 
 

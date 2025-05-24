@@ -1,7 +1,5 @@
 
 
-# LFO_CHOP
-
 TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Sphere_SOP
-
 Sphere SOP - TouchDesigner Documentation
 
 

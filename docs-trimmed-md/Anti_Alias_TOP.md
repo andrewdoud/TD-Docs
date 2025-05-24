@@ -1,7 +1,5 @@
 
 
-# Anti_Alias_TOP
-
 Anti Alias TOP - TouchDesigner Documentation
 
 

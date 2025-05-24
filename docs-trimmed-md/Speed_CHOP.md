@@ -1,7 +1,5 @@
 
 
-# Speed_CHOP
-
 Speed CHOP - TouchDesigner Documentation
 
 

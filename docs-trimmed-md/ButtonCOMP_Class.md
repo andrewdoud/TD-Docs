@@ -1,7 +1,5 @@
 
 
-# ButtonCOMP_Class
-
 buttonCOMP Class - Derivative
 
 

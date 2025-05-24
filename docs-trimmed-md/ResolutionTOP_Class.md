@@ -1,7 +1,5 @@
 
 
-# ResolutionTOP_Class
-
 resolutionTOP Class - Derivative
 
 

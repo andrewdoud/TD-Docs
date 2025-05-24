@@ -1,7 +1,5 @@
 
 
-# Engine_COMP
-
 Engine COMP - TouchDesigner Documentation
 
 

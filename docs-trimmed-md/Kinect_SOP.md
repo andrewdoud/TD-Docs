@@ -1,7 +1,5 @@
 
 
-# Kinect_SOP
-
 TouchDesigner Documentation
 
 

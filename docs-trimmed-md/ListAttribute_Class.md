@@ -1,7 +1,5 @@
 
 
-# ListAttribute_Class
-
 ListAttribute Class - Derivative
 
 

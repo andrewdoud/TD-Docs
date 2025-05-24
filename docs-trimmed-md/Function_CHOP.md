@@ -1,7 +1,5 @@
 
 
-# Function_CHOP
-
 TouchDesigner Documentation
 
 

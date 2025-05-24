@@ -1,7 +1,5 @@
 
 
-# File_OP_SOP
-
 File:OP SOP.png - Derivative
 
 

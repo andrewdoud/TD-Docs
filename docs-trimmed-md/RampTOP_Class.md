@@ -1,7 +1,5 @@
 
 
-# RampTOP_Class
-
 rampTOP Class - Derivative
 
 

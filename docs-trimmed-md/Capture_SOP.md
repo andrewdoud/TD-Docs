@@ -1,7 +1,5 @@
 
 
-# Capture_SOP
-
 Capture SOP - TouchDesigner Documentation
 
 

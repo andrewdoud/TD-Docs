@@ -1,7 +1,5 @@
 
 
-# ParGroup_Class
-
 ParGroup Class - Derivative
 
 

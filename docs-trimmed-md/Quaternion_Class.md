@@ -1,7 +1,5 @@
 
 
-# Quaternion_Class
-
 Quaternion Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# CHOP_Techniques
-
 CHOP Techniques - Derivative
 
 

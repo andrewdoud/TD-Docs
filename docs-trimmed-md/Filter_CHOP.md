@@ -1,7 +1,5 @@
 
 
-# Filter_CHOP
-
 Filter CHOP - TouchDesigner Documentation
 
 

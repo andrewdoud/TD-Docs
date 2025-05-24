@@ -1,7 +1,5 @@
 
 
-# Limit_CHOP
-
 Limit CHOP - TouchDesigner Documentation
 
 

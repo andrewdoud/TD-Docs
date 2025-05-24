@@ -1,7 +1,5 @@
 
 
-# Run_Class
-
 Run Class - Derivative
 
 

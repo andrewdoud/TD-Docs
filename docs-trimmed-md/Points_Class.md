@@ -1,7 +1,5 @@
 
 
-# Points_Class
-
 Points Class - Derivative
 
 

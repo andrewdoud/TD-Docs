@@ -1,7 +1,5 @@
 
 
-# Angle_CHOP
-
 Angle CHOP - TouchDesigner Documentation
 
 

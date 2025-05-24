@@ -1,7 +1,5 @@
 
 
-# Outside_TOP
-
 Outside TOP - TouchDesigner Documentation
 
 

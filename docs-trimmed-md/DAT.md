@@ -1,7 +1,5 @@
 
 
-# DAT
-
 DAT - Derivative
 
 

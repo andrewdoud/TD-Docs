@@ -1,7 +1,5 @@
 
 
-# Iso_Surface_SOP
-
 Iso Surface SOP - TouchDesigner Documentation
 
 

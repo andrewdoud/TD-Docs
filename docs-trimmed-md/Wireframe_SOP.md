@@ -1,7 +1,5 @@
 
 
-# Wireframe_SOP
-
 TouchDesigner Documentation
 
 

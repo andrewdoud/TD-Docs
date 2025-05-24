@@ -1,7 +1,5 @@
 
 
-# Line_Thick_SOP
-
 Line Thick SOP - TouchDesigner Documentation
 
 

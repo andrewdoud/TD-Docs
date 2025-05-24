@@ -1,7 +1,5 @@
 
 
-# Polypatch_SOP
-
 Polypatch SOP - TouchDesigner Documentation
 
 

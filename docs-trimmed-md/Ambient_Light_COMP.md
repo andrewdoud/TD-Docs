@@ -1,7 +1,5 @@
 
 
-# Ambient_Light_COMP
-
 Ambient Light COMP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Beat_CHOP
-
 Beat CHOP - TouchDesigner Documentation
 
 

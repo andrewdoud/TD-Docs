@@ -1,7 +1,5 @@
 
 
-# CPlusPlus_CHOP
-
 CPlusPlus CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Stype_In_CHOP
-
 Stype CHOP - TouchDesigner Documentation
 
 

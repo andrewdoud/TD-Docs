@@ -1,7 +1,5 @@
 
 
-# PanelValue_Class
-
 PanelValue Class - Derivative
 
 

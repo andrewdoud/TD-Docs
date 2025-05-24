@@ -1,7 +1,5 @@
 
 
-# Media_File_Info_DAT
-
 Media File Info DAT - TouchDesigner Documentation
 
 

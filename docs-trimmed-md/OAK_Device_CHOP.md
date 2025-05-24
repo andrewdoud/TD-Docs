@@ -1,7 +1,5 @@
 
 
-# OAK_Device_CHOP
-
 OAK Device CHOP - TouchDesigner Documentation
 
 

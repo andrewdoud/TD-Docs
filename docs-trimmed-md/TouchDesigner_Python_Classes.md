@@ -1,7 +1,5 @@
 
 
-# TouchDesigner_Python_Classes
-
 Python Classes and Modules - Derivative
 
 

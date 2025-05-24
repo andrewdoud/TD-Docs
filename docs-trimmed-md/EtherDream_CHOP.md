@@ -1,7 +1,5 @@
 
 
-# EtherDream_CHOP
-
 TouchDesigner Documentation
 
 

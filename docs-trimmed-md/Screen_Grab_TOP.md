@@ -1,7 +1,5 @@
 
 
-# Screen_Grab_TOP
-
 Screen Grab TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Oculus_Rift_SOP
-
 Oculus Rift SOP - TouchDesigner Documentation
 
 

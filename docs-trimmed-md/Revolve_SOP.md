@@ -1,7 +1,5 @@
 
 
-# Revolve_SOP
-
 Revolve SOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# ParCollection_Class
-
 ParCollection Class - Derivative
 
 

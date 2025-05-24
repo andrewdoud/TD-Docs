@@ -1,7 +1,5 @@
 
 
-# Vector_Class
-
 Vector Class - Derivative
 
 

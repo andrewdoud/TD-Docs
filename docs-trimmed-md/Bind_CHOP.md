@@ -1,7 +1,5 @@
 
 
-# Bind_CHOP
-
 Bind CHOP - TouchDesigner Documentation
 
 

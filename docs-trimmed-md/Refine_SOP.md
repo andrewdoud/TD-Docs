@@ -1,7 +1,5 @@
 
 
-# Refine_SOP
-
 Refine SOP - TouchDesigner Documentation
 
 

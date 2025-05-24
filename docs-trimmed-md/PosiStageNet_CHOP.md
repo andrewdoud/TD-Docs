@@ -1,7 +1,5 @@
 
 
-# PosiStageNet_CHOP
-
 PosiStageNet CHOP - TouchDesigner Documentation
 
 

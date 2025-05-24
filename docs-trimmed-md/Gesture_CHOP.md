@@ -1,7 +1,5 @@
 
 
-# Gesture_CHOP
-
 Gesture CHOP - TouchDesigner Documentation
 
 

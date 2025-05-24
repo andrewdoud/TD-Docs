@@ -1,7 +1,5 @@
 
 
-# CHOP_Viewer
-
 CHOP Viewer - Derivative
 
 

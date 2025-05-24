@@ -1,7 +1,5 @@
 
 
-# CPlusPlus_SOP
-
 CPlusPlus SOP - TouchDesigner Documentation
 
 

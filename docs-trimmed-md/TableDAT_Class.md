@@ -1,7 +1,5 @@
 
 
-# TableDAT_Class
-
 tableDAT Class - Derivative
 
 

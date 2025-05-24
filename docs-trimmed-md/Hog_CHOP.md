@@ -1,7 +1,5 @@
 
 
-# Hog_CHOP
-
 Hog CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# RealSense_CHOP
-
 RealSense CHOP - TouchDesigner Documentation
 
 

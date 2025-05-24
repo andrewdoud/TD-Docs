@@ -1,7 +1,5 @@
 
 
-# Alembic_SOP
-
 Alembic SOP - TouchDesigner Documentation
 
 

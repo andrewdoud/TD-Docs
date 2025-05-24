@@ -1,7 +1,5 @@
 
 
-# Skin_SOP
-
 TouchDesigner Documentation
 
 

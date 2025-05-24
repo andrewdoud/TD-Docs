@@ -1,7 +1,5 @@
 
 
-# Video_Devices_DAT
-
 Video Devices DAT - TouchDesigner Documentation
 
 

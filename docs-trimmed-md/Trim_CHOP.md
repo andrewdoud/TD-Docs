@@ -1,7 +1,5 @@
 
 
-# Trim_CHOP
-
 Trim CHOP - TouchDesigner Documentation
 
 

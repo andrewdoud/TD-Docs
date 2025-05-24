@@ -1,7 +1,5 @@
 
 
-# Sprite_SOP
-
 TouchDesigner Documentation
 
 

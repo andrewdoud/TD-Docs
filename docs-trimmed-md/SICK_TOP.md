@@ -1,7 +1,5 @@
 
 
-# SICK_TOP
-
 SICK TOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Math_CHOP
-
 Math CHOP - TouchDesigner Documentation
 
 

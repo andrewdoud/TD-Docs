@@ -1,7 +1,5 @@
 
 
-# Line_MAT
-
 Line MAT - TouchDesigner Documentation
 
 

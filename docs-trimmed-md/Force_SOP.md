@@ -1,7 +1,5 @@
 
 
-# Force_SOP
-
 Force SOP - TouchDesigner Documentation
 
 

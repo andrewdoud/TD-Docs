@@ -1,7 +1,5 @@
 
 
-# Join_CHOP
-
 TouchDesigner Documentation
 
 

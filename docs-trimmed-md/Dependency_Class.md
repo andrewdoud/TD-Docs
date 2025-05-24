@@ -1,7 +1,5 @@
 
 
-# Dependency_Class
-
 Dependency Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# CHOP_Class
-
 CHOP Class - Derivative
 
 

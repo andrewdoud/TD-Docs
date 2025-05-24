@@ -1,7 +1,5 @@
 
 
-# SyncoutCHOP_Class
-
 syncoutCHOP Class - Derivative
 
 

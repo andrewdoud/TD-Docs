@@ -1,7 +1,5 @@
 
 
-# Switch_TOP
-
 Switch TOP - TouchDesigner Documentation
 
 

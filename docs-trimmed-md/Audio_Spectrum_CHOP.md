@@ -1,7 +1,5 @@
 
 
-# Audio_Spectrum_CHOP
-
 Audio Spectrum CHOP - TouchDesigner Documentation
 
 

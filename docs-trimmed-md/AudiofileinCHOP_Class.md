@@ -1,7 +1,5 @@
 
 
-# AudiofileinCHOP_Class
-
 audiofileinCHOP Class - Derivative
 
 

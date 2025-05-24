@@ -1,7 +1,5 @@
 
 
-# Tristrip_SOP
-
 TouchDesigner Documentation
 
 

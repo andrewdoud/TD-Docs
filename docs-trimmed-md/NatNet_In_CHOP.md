@@ -1,7 +1,5 @@
 
 
-# NatNet_In_CHOP
-
 OptiTrack In CHOP - TouchDesigner Documentation
 
 

@@ -1,7 +1,5 @@
 
 
-# Text_COMP
-
 Text COMP - TouchDesigner Documentation
 
 

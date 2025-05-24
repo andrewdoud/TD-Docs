@@ -1,7 +1,5 @@
 
 
-# RealSense_TOP
-
 RealSense TOP - TouchDesigner Documentation
 
 

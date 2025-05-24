@@ -1,7 +1,5 @@
 
 
-# MidiinCHOP_Class
-
 midiinCHOP Class - Derivative
 
 

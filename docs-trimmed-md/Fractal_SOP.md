@@ -1,7 +1,5 @@
 
 
-# Fractal_SOP
-
 Fractal SOP - TouchDesigner Documentation
 
 

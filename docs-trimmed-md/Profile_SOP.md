@@ -1,7 +1,5 @@
 
 
-# Profile_SOP
-
 Profile SOP - TouchDesigner Documentation
 
 

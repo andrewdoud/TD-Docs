@@ -1,7 +1,5 @@
 
 
-# Timecode_Class
-
 Timecode Class - Derivative
 
 

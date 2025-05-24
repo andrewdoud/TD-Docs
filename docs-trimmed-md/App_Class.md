@@ -1,7 +1,5 @@
 
 
-# App_Class
-
 App Class - Derivative
 
 

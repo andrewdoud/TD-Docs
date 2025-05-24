@@ -1,7 +1,5 @@
 
 
-# Render_Pick_CHOP
-
 Render Pick CHOP - TouchDesigner Documentation
 
 

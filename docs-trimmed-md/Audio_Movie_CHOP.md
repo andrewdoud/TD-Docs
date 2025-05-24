@@ -1,7 +1,5 @@
 
 
-# Audio_Movie_CHOP
-
 Audio Movie CHOP - TouchDesigner Documentation
 
 

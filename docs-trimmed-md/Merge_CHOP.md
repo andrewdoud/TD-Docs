@@ -1,7 +1,5 @@
 
 
-# Merge_CHOP
-
 TouchDesigner Documentation
 
 

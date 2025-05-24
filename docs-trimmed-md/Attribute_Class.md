@@ -1,7 +1,5 @@
 
 
-# Attribute_Class
-
 Attribute Class - Derivative
 
 

@@ -1,7 +1,5 @@
 
 
-# DirectX_Out_TOP
-
 DirectX Out TOP - TouchDesigner Documentation
 
 

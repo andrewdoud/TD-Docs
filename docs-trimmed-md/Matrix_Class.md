@@ -1,7 +1,5 @@
 
 
-# Matrix_Class
-
 Matrix Class - Derivative
 
 

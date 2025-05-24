@@ -1,7 +1,5 @@
 
 
-# Hole_SOP
-
 Hole SOP - TouchDesigner Documentation
 
 

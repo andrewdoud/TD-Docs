@@ -1,7 +1,5 @@
 
 
-# Convolve_TOP
-
 Convolve TOP - TouchDesigner Documentation
 
 

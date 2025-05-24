@@ -1,7 +1,5 @@
 
 
-# OakselectCHOP_Class
-
 oakselectCHOP Class - Derivative
 
 

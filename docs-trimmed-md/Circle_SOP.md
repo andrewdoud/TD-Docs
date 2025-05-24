@@ -1,7 +1,5 @@
 
 
-# Circle_SOP
-
 Circle SOP - TouchDesigner Documentation
 
 

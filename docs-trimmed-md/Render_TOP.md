@@ -1,7 +1,5 @@
 
 
-# Render_TOP
-
 Render TOP - TouchDesigner Documentation
 
 

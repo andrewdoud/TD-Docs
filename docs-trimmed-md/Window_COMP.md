@@ -1,7 +1,5 @@
 
 
-# Window_COMP
-
 Window COMP - TouchDesigner Documentation
 
 
