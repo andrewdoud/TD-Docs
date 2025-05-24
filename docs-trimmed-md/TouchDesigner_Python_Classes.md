@@ -5,23 +5,52 @@ Python Classes and Modules - Derivative
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Python Classes and Modules
+
 From Derivative
 (Redirected from [TouchDesigner Python Classes](https://docs.derivative.ca/index.php?title=TouchDesigner_Python_Classes&redirect=no "TouchDesigner Python Classes"))
+
 
 [Jump to navigation](#mw-head)
 [Jump to search](#searchInput)
 ## Contents
+
 * [1 Operator Related Classes](#Operator_Related_Classes)
 * [2 Helper Classes](#Helper_Classes)
 * [3 Standard Python Modules](#Standard_Python_Modules)
 * [4 TouchDesigner Utility Modules and Python Utilities](#TouchDesigner_Utility_Modules_and_Python_Utilities)
 * [5 3rd Party Packages](#3rd_Party_Packages)
 * [6 Installing Custom Packages and Modules](#Installing_Custom_Packages_and_Modules)
+
 The following list of important Python classes and modules is roughly grouped together by subject.
+
 [Python Reference](Category_Python_Reference.html "Category:Python Reference") has an alphabetical list of all TouchDesigner Python pages on this wiki.
+
 ### Operator Related Classes[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=1 "Edit section: Operator Related Classes")]
+
 The following classes are Python interfaces for operators and objects that operators use. Individual operator classes (e.g. [TextTOP Class](TextTOP_Class.html "TextTOP Class") and [RampTOP Class](RampTOP_Class.html "RampTOP Class")) are not listed but do exist in the [`td` module](Td_Module.html "Td Module"), and links to each can be found [here](Category_Python_Reference.html "Category:Python Reference") or by clicking on the Python Help button in their [parameter dialog](Parameter_Dialog.html "Parameter Dialog"). These classes are found in the [td module](Td_Module.html "Td Module") so do not need to be imported.
+
 * **[OP Class](OP_Class.html "OP Class")** - a TouchDesigner [operator](Operator.html "Operator").
   + **[Connector Class](Connector_Class.html "Connector Class")** - a wire connector for an OP. Lists of these can be found in `OP.inputConnectors` and `OP.outputConnectors`. Components also have `COMP.inputCOMPConnectors` and `COMP.outputCOMPConnectors`.
   + **[Page Class](Page_Class.html "Page Class")** - a parameter page. Lists of these can be found in `OP.pages` and, on components and script operators, `OP.customPages`.
@@ -69,8 +98,11 @@ The following classes are Python interfaces for operators and objects that opera
     - **[CUDAMemory Class](CUDAMemory_Class.html "CUDAMemory Class")** - holds a reference to CUDA memory.
       * **[CUDAMemoryShape Class](CUDAMemoryShape_Class.html "CUDAMemoryShape Class")** - describes the shape of a CUDA memory segment.
     - **[TextLine Class](TextLine_Class.html "TextLine Class")** - a line of text in the [Text TOP](Text_TOP.html "Text TOP") or [Text SOP](Text_SOP.html "Text SOP"), after it has been formatted. Contains various members about the line such as it's text, position etc.
+
 ### Helper Classes[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=2 "Edit section: Helper Classes")]
+
 The following helper objects are part of the [td module](Td_Module.html "Td Module") and can thus be accessed anywhere, including expressions, without imports (e.g. `absTime.frame`).
+
 * **[AbsTime Class](AbsTime_Class.html "AbsTime Class")** (`absTime`) - information about [absolute time](Absolute_Time.html "Absolute Time")
 * **[App Class](App_Class.html "App Class")** (`app`) - information about the TouchDesigner app, including version, installation folders, etc.
 * **[Project Class](Project_Class.html "Project Class")** (`project`) - information about the current TouchDesigner session
@@ -84,6 +116,7 @@ The following helper objects are part of the [td module](Td_Module.html "Td Modu
   + **[Quaternion Class](Quaternion_Class.html "Quaternion Class")** (`tdu.Quaternion`) - holds a quaternion object for 3D rotations
   + **[Timecode Class](Timecode_Class.html "Timecode Class")** (`tdu.Timecode`) - holds a timecode value
   + **[Vector Class](Vector_Class.html "Vector Class")** (`tdu.Vector`) - holds a 3 component vector
+
 * **[Licenses Class](Licenses_Class.html "Licenses Class")** (`licenses`) - information about installed [license](License_Class.html "License Class") objects
   + **[DongleList Class](DongleList_Class.html "DongleList Class")** (`licenses.dongles`) - list of attached dongles
     - **[Dongle Class](Dongle_Class.html "Dongle Class")** - an individual dongle connected to the system
@@ -103,8 +136,11 @@ The following helper objects are part of the [td module](Td_Module.html "Td Modu
       * **[NetworkEditor Class](NetworkEditor_Class.html "NetworkEditor Class")** - subclass of Pane that displays a network editor
   + **[Preferences Class](Preferences_Class.html "Preferences Class")** (`ui.preferences`) - collection of TouchDesigner preferences
   + **[Undo Class](Undo_Class.html "Undo Class")** (`ui.undo`) - tools for interacting with the undo system, including creating script-based undo steps
+
 ### Standard Python Modules[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=3 "Edit section: Standard Python Modules")]
+
 The [`td` module](Td_Module.html "Td Module") also automatically imports a number of helpful standard modules, allowing them to be accessed in expressions through their namespace (e.g. `math.cos(math.pi)`):
+
 * [`collections`](https://docs.python.org/3.7/library/collections.html) - container datatypes
 * [`enum`](https://docs.python.org/3.7/library/enum.html) - support for enumerations
 * [`inspect`](https://docs.python.org/3.7/library/inspect.html) - inspect live objects
@@ -113,16 +149,23 @@ The [`td` module](Td_Module.html "Td Module") also automatically imports a numbe
 * [`sys`](https://docs.python.org/3.7/library/sys.html) - OS specific data and functions
 * [`traceback`](https://docs.python.org/3.7/library/traceback.html) - stack utilities
 * [`warnings`](https://docs.python.org/3.7/library/warnings.html) - warning control
+
 ### TouchDesigner Utility Modules and Python Utilities[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=4 "Edit section: TouchDesigner Utility Modules and Python Utilities")]
+
 The following contain extended Python utilities for use with TouchDesigner.
+
 * **[TDFunctions](TDFunctions.html "TDFunctions")** - A variety of utilities for advanced Python coding in TouchDesigner.
 * **[TDJSON](TDJSON.html "TDJSON")** - JSON utilities specific to TouchDesigner.
 * **[TDStoreTools](TDStoreTools.html "TDStoreTools")** - utilities for use with TouchDesigner's [Storage](Storage.html "Storage") and [Dependency](Dependency.html "Dependency") system.
 * **[TDResources](TDResources.html "TDResources")** (`op.TDResources...`) - not a module, but does contain system resources that can be accessed via Python. It includes system [pop-up menu](TDResources.html#Pop-Up_Menu "TDResources"), [button pop-up menu](TDResources.html#Button_Pop-Up_Menu "TDResources"), [pop-up dialog](TDResources.html#Pop-Up_Dialog "TDResources"), and [mouse](TDResources.html#Mouse "TDResources") resources.
+
   
 
+
 ### 3rd Party Packages[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=5 "Edit section: 3rd Party Packages")]
+
 **The following 3rd party packages are automatically installed with TouchDesigner.** They are not in the [td module](Td_Module.html "Td Module"), so must be imported explicitly to be used in scripts. The name in parentheses is the actual package name used (e.g. to use OpenCV, write this at top of script: `import cv2`). For information on adding or installing other Python modules, see [Importing Modules](Introduction_to_Python_Tutorial.html#Importing_Modules).
+
 * **[attr](https://www.attrs.orgs/)** 22.2.0 (`attr`) - Classes without boilerplate (legacy).
 * **[attrs](https://www.attrs.orgs/)** 22.2.0 (`attrs`) - Classes without boilerplate.
 * **[Certifi](https://pypi.org/project/certifi/)** 2022.12.07 (`certifi`) - Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
@@ -153,29 +196,48 @@ The following contain extended Python utilities for use with TouchDesigner.
 * **[urllib3](https://urllib3.readthedocs.io/en/latest/)** (`urllib3`) 1.26.14 - HTTP client.
 * **[whats-that-code](https://pypi.org/project/whats-that-code/)** (`whats_that_code`) 0.1.4 - programming language detection library.
 * **[PyYAML](https://pyyaml.org/wiki/PyYAMLDocumentation)** (`yaml`) 6.0 - YAML parser and emitter.
+
 ### Installing Custom Packages and Modules[[edit](https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&action=edit&section=6 "Edit section: Installing Custom Packages and Modules")]
+
 You can also install your own Python packages that are not included with TouchDesigner. For instructions, go [here](Category_Python.html#Installing_Custom_Python_Packages "Category:Python").
+
 Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See [Node](Node.html "Node").
+
 
 An [Operator Family](Operator_Family.html "Operator Family") that contains its own [Network](Network.html "Network"). There are sixteen 3D [Object Component](Object_Component.html "Object Component") and ten 2D [Panel Component](Panel_Component.html "Panel Component") types. See also [Network Path](Network_Path.html "Network Path").
 
+
 An [Operator Family](Operator_Family.html "Operator Family") which operate on [Channels](Channel.html "Channel") (a sequence of numbers ([Samples](Sample.html "Sample"))) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+
 
 Lets you embed files inside a `[.tox](-2.html ".tox")` or `[.toe](.html ".toe")` file. Operators like the Movie File In TOP that read regular files can also read the embedded VFS files using a `vfs:` syntax.
 
+
 A [Operator Family](Operator_Family.html "Operator Family") that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+
 
 Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon [Primitive](Primitive.html "Primitive") is defined by a vertex list, which is list of point numbers.
 
+
 A sequence of vertices form a [Polygon](Polygon.html "Polygon") in a [SOP](SOP.html "SOP"). Each vertex is an integer index into the [Point List](Point_List.html "Point List"), and each [Point](Point.html "Point") holds an XYZ position and attributes like Normals and Texture Coordinates.
+
 
 Absolute Time starts counting from 0 when the TouchDesigner process starts, and is always increasing. It will pause if the Power 0/1 button at the top of the UI is Off.
 
+
 is the [Procedural](Procedural.html "Procedural") mechanism in TouchDesigner, where if one piece of data changes, it automatically causes other operators and expressions to re-[Cook](Cook.html "Cook").
+
 
 TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The [Network Path](Network_Path.html "Network Path") or Path for root is simply `/`. A typical path is `/project1/moviein1`.
 
+
+
+
+
+
+
 Retrieved from "<https://docs.derivative.ca/index.php?title=Python_Classes_and_Modules&oldid=32534>"
 [Categories](Special_Categories.html "Special:Categories"):
+
 * [Python](Category_Python.html "Category:Python")
 * [TDPages](Category_TDPages.html "Category:TDPages")

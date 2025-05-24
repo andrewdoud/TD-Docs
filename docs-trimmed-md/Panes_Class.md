@@ -5,19 +5,51 @@ Panes Class - Derivative
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Panes Class
+
 From Derivative
+
+
 
 [Jump to navigation](#mw-head)
 [Jump to search](#searchInput)
+
 The Panes class describes the list of all [pane objects](Pane_Class.html "Pane Class"). It can be accessed from [ui.panes](UI_Class.html "UI Class").
+
   
 
+
 ## Members
+
 `current` → `td.Pane` **(Read Only)**:
+
 > The currently selected [pane](Pane_Class.html "Pane Class").
+
 ## Methods
+
 `createFloating(type=None, name=None, maxWidth=1920, maxHeight=1080, monitorSpanWidth=0.9, monitorSpanHeight=0.9)`→ `Pane`:
+
 > Return a floating pane.
 > 
 > * type - (Keyword, Optional) Type of pane created. See [Pane](Pane_Class.html "Pane Class") for examples. Defaults to Network Editor.
@@ -34,15 +66,20 @@ The Panes class describes the list of all [pane objects](Pane_Class.html "Pane C
 >     p.owner = op('/project1/base1')
 > 
 > ```
+
 ### Special Functions[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Special Functions")]
+
 `len(Panes)`→ `int`:
+
 > Returns the total number of panes.
 > 
 > ```
 > a = len(ui.panes)
 > 
 > ```
+
 `[index]`→ `td.Pane`:
+
 > Get specific pane, referenced by string or index.
 > 
 > ```
@@ -50,7 +87,9 @@ The Panes class describes the list of all [pane objects](Pane_Class.html "Pane C
 > p = ui.panes['pane1']
 > 
 > ```
+
 `Iterator`→ `td.Pane`:
+
 > Iterate over each pane.
 > 
 > ```
@@ -58,12 +97,23 @@ The Panes class describes the list of all [pane objects](Pane_Class.html "Pane C
 > 	# do something with n
 > 
 > ```
+
   
+
 TouchDesigner Build: Latest\nwikieditorwikieditor2021.100002018.28070before 2018.28070
+
 A work area in TouchDesigner's layout that includes the [Network Editor](Network_Editor.html "Network Editor") and 7 other pane types used for different tasks. The TouchDesigner interface can consist of a single pane, or be split into multiple panes.
+
 
 A pane type where networks of operators can be created and edited.
 
+
+
+
+
+
+
 Retrieved from "<https://docs.derivative.ca/index.php?title=Panes_Class&oldid=31568>"
 [Category](Special_Categories.html "Special:Categories"):
+
 * [Python Reference](Category_Python_Reference.html "Category:Python Reference")

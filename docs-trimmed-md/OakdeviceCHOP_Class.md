@@ -5,17 +5,46 @@ oakdeviceCHOP Class - Derivative
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # oakdeviceCHOP Class
+
 From Derivative
+
+
 
 [Jump to navigation](#mw-head)
 [Jump to search](#searchInput)
-  
-This class inherits from the  [CHOP class](CHOP_Class.html "CHOP Class").
-It references a specific [OAK Device CHOP](OAK_Device_CHOP.html "OAK Device CHOP").
+
   
 
+This class inherits from the  [CHOP class](CHOP_Class.html "CHOP Class").
+It references a specific [OAK Device CHOP](OAK_Device_CHOP.html "OAK Device CHOP").
+
+  
+
+
 ## Contents
+
 * [1 Members](#Members)
 * [2 Methods](#Methods)
 * [3 Callbacks](#Callbacks)
@@ -38,26 +67,47 @@ It references a specific [OAK Device CHOP](OAK_Device_CHOP.html "OAK Device CHOP
     - [5.2.5 Storage](#Storage)
     - [5.2.6 Miscellaneous](#Miscellaneous)
 ## Members
+
 `masterFrame` → `float` **(Read Only)**:
+
 > Get the master time index in frames.
+
 `masterSample` → `float` **(Read Only)**:
+
 > Get the master time index in samples.
+
 `masterSeconds` → `float` **(Read Only)**:
+
 > Get the master time index in seconds.
+
 `masterTimecode` → `str` **(Read Only)**:
+
 > Get the master time index as a timecode in the form 00:00:00.00.
+
 `runningFrame` → `float` **(Read Only)**:
+
 > Get or set the running time index in frames.
+
 `runningSample` → `float` **(Read Only)**:
+
 > Get or set the running time index in samples.
+
 `runningSeconds` → `float` **(Read Only)**:
+
 > Get or set the running time index in seconds.
+
 `runningTimecode` → `str` **(Read Only)**:
+
 > Get or set the running time index as a timecode in the form 00:00:00.00.
+
 `timecode` → `tdu.Timecode` **(Read Only)**:
+
 > Get the master timecode.
+
 ## Methods
+
 `lockDevice()`→ `'depthai.Device'`:
+
 > Get the depthai [Device](https://docs.luxonis.com/projects/api/en/latest/components/device/) of the started OAK Device CHOP.
 > 
 > ```
@@ -70,7 +120,9 @@ It references a specific [OAK Device CHOP](OAK_Device_CHOP.html "OAK Device CHOP
 >     oakDeviceOp.unlockDevice()
 > 
 > ```
+
 `sendMessage(message, streamName: str)`→ `None`:
+
 > Sends a message to a stream owned by the OAK Device CHOP. You should not interact with the message after sending it. For more information on messages, see <https://docs.luxonis.com/projects/api/en/latest/components/messages/>.
 > 
 > * message - The depthai message to send.
@@ -83,12 +135,19 @@ It references a specific [OAK Device CHOP](OAK_Device_CHOP.html "OAK Device CHOP
 > op('oakdevice1').send(ctrl, 'rgbControl')
 > 
 > ```
+
 `unlockDevice()`→ `None`:
+
 > Unlock the depthai device of the OAK Device CHOP.
+
 ## Callbacks[[edit](https://docs.derivative.ca/index.php?title=Template:CallbackSection&action=edit&section=T-1 "Edit section: Callbacks")]
+
 The following python callbacks are associated with this operator.
+
 The OAK Device CHOP has several callback methods copied from the Timer CHOP class. These are `onInitialize`, `onReady`, `onStart`, `whileRunning`, and `onDone`. One new callback is `onInitializeFail` which is called whenever the body of `onInitialize` raises an error. The more important new callback is `createPipeline(oakDeviceOp): -> dai.Pipeline`. This method must return a [depthai.Pipeline](https://docs.luxonis.com/projects/api/en/latest/components/pipeline/). If you browse the examples from the Luxonis documentation, there is often a function called `create_pipeline`, which you can sometimes copy with few modifications.
+
 When starting a camera with the OAK Device CHOP, the order of events is the following:
+
 1. The built-in parameters for "initialize" or "start" are pulsed.
 2. The `onInitialize(oakDeviceOp, callbackCount)` method is called with callbackCount set to 1. The user-defined code should return a non-negative integer. Returning a positive number will result in waiting that many frames until `onInitialize` is called again. Note that `onInitialize` is a good place to download any files that might be necessary for the pipeline. Several of the TouchDesigner OAK examples demonstrate this by downloading neural network files asynchronously with the **blobConverter** and **fileDownloader** components.
 3. Once `onInitialize` returns zero, the `createPipeline` method is called, and the user-defined code must return a pipeline. Note that it's not yet possible to interact with the `depthai.Device` instance in this callback because the Device hasn't been created yet. Such interactions would have to wait until the `onReady` or `whileRunning` callbacks.
@@ -96,16 +155,22 @@ When starting a camera with the OAK Device CHOP, the order of events is the foll
 5. Once the built-in parameter for "start" is pulsed, the `onStart` method will be called, and the timer-related functionality of the OAK Device CHOP will proceed.
 6. While the device is running, for every frame the `whileRunning` method will be called.
 7. If "gotodone" parameter is pulsed while the device is running, the `onDone` callback will be called.
+
 Note that you can restart the timer functionality by pulsing the start parameter of a camera that is already running. The pipeline will not be recreated and loaded on the camera. So if you need to create a new pipeline (possibly with different settings), then you should pulse the initialize parameter one more time.
+
 ```
 # me - this DAT
 # oakDeviceOp - the OP which is cooking
+
 import depthai as dai
+
 def onInitialize(oakDeviceOp, callCount):
 	return 0
+
 def onInitializeFail(oakDeviceOp):
 	parent().addScriptError(oakDeviceOp.scriptErrors())
 	return
+
 def onReady(oakDeviceOp):
 	# We get the depthai.Device object as `device`
 	# https://docs.luxonis.com/projects/api/en/latest/components/device/	
@@ -117,47 +182,80 @@ def onReady(oakDeviceOp):
 	
 def onStart(oakDeviceOp):
 	return
+
 def whileRunning(oakDeviceOp):
 	return
+
 def onDone(oakDeviceOp):
 	return
+
 def createPipeline(oakDeviceOp):
 	# This example creates an RGB camera.
+
 	pipeline = dai.Pipeline()
+
 	# Define nodes
 	camRgb = pipeline.create(dai.node.ColorCamera)
 	xoutRgb = pipeline.create(dai.node.XLinkOut)
+
 	# Stream names
 	xoutRgb.setStreamName('rgb')
+
 	# Properties
 	camRgb.setPreviewSize(300, 300)
+
 	# Linking
 	camRgb.preview.link(xoutRgb.input)
+
 	return pipeline
+
 ```
 # CHOP Class[[edit](https://docs.derivative.ca/index.php?title=Template:ClassInheritance&action=edit&section=T-1 "Edit section: CHOP Class")]
+
 ## Members
+
 As these attributes are dependent on each other, set the `rate` and `start` (or `startTime`) attributes, before the `len`, `end` (or `endTime`) attributes.
+
 `numChans` → `int` **(Read Only)**:
+
 > The number of channels.
+
 `numSamples` → `int` :
+
 > Get or set the number of samples (or indices) per channel. You can change the number of samples by setting this value, only in a [scriptCHOP](https://docs.derivative.ca/ScriptCHOP_Class "ScriptCHOP Class").
+
 `start` → `float` :
+
 > Get or set the start index of the channels. This can be modified only when the CHOP is a [scriptCHOP](https://docs.derivative.ca/ScriptCHOP_Class "ScriptCHOP Class").
+
 `end` → `float` :
+
 > Get or set the end index of the channels. This can be modified only when the CHOP is a [scriptCHOP](https://docs.derivative.ca/ScriptCHOP_Class "ScriptCHOP Class").
+
 `rate` → `float` :
+
 > Get or set the sample rate of the CHOP. This can be modified only when the CHOP is a [scriptCHOP](https://docs.derivative.ca/ScriptCHOP_Class "ScriptCHOP Class").
+
 `isTimeSlice` → `bool` :
+
 > Get or set the last cooked [Time Slice](Time_Slicing.html "Time Slicing") value. True if the CHOP last cooked as a Time Slice. This can be modified only when the CHOP is a [scriptCHOP](https://docs.derivative.ca/ScriptCHOP_Class "ScriptCHOP Class")
+
 `export` → `bool` :
+
 > Get or set [Export Flag](Export_Flag.html "Export Flag").
+
 `exportChanges` → `int` **(Read Only)**:
+
 > Number of times the export mapping information has changed.
+
 `isCHOP` → `bool` **(Read Only)**:
+
 > True if the operator is a CHOP.
+
 ## Methods
+
 `[nameOrIndex]`→ `Channel`:
+
 > [Channels](Channel_Class.html "Channel Class") may be easily accessed from a CHOP using the [] subscript operator.
 > 
 > * nameOrIndex - Must be an exact string name, or it may be a numeric channel index. Wildcards are not supported. Refer to the help on channels to see how to use the returned [Channel](Channel_Class.html "Channel Class") object.
@@ -173,7 +271,9 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 >   c = n['chan2'][2]
 >   
 >   ```
+
 `chan(*nameOrIndex, caseSensitive=True)`→ `Channel | None`:
+
 > Returns the first [Channel](Channel_Class.html "Channel Class") that matches the given name or index or None if none are found.
 > 
 > Multiple patterns may be specified which are all added to the search.
@@ -188,7 +288,9 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > c = n.chan('chan3zall', caseSensitive=False)
 > 
 > ```
+
 `chans(*nameOrIndex, caseSensitive=True)`→ `list`:
+
 > Returns a (possibly empty) list of [Channels](Channel_Class.html "Channel Class") that match that specified names or indices. Multiple names and indices may be provided.
 > 
 > * nameOrIndex - (Optional) One or more string names, possibly using [Pattern Matching](Pattern_Matching.html "Pattern Matching"), or numeric channel index. No arguments are passed, a list of all channels is returned.
@@ -200,15 +302,21 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > newlist = n.chans('a*', 3,4,5, 'd*')
 > 
 > ```
+
 `numpyArray()`→ `numpy.array`:
+
 > Returns all of the channels in this CHOP a 2D NumPy array with a width equal to the channel length (the number of samples) and a height equal to the number of channels. See [numPy](https://docs.derivative.ca/NumPy "NumPy").
+
 `convertToKeyframes(tolerance=0.1)`→ `animationCOMP`:
+
 > Create an [Animation COMP](Animation_COMP.html "Animation COMP") that contains a keyframed approximation of the CHOP's channels.
 > 
 > The resultant [animationCOMP](https://docs.derivative.ca/AnimationCOMP_Class "AnimationCOMP Class") is returned.
 > 
 > * tolerance - (Keyword, Optional) If this is not given, the default value is 0.1. It may be overridden for higher accuracy match between the source channels and the resulting keyframed channels.
+
 `save(filepath, createFolders=False)`→ `str`:
+
 > Saves the channel to the file system. Supported file formats are `.clip, .bclip, .chan, .bchan` and `.aiff`.
 > 
 > Returns the file path used.
@@ -223,47 +331,84 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > n.save('output.aiff')  #supported audio format
 > 
 > ```
+
 # OP Class[[edit](https://docs.derivative.ca/index.php?title=Template:ClassInheritance&action=edit&section=T-1 "Edit section: OP Class")]
+
 ## Members
+
 ### General[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: General")]
+
 `valid` → `bool` **(Read Only)**:
+
 > True if the referenced operator currently exists, False if it has been deleted.
+
 `id` → `int` **(Read Only)**:
+
 > Unique id for the operator. This id can also be passed to the op() and ops() methods. Id's are not consistent when a file is re-opened, and will change if the OP is copied/pasted, changes OP types, deleted/undone. The id will not change if the OP is renamed though. Its data type is integer.
+
 `name` → `str` :
+
 > Get or set the operator name.
+
 `path` → `str` **(Read Only)**:
+
 > Full path to the operator.
+
 `digits` → `int` **(Read Only)**:
+
 > Returns the numeric value of the last consecutive group of digits in the name, or None if not found. The digits can be in the middle of the name if there are none at the end of the name.
+
 `base` → `str` **(Read Only)**:
+
 > Returns the beginning portion of the name occurring before any digits.
+
 `passive` → `bool` **(Read Only)**:
+
 > If true, operator will not cook before its access methods are called. To use a passive version of an operator n, use passive(n).
+
 `curPar` → `td.Par` **(Read Only)**:
+
 > The parameter currently being evaluated. Can be used in a parameter expression to reference itself. An easy way to see this is to put the expression `curPar.name` in any string parameter.
+
 `curBlock` → **(Read Only)**:
+
 > The SequenceBlock of the parameter currently being evaluated. Can be used in a parameter expression to reference itself.
+
 `curSeq` → `Sequence` **(Read Only)**:
+
 > The Sequence of the parameter currently being evaluated. Can be used in a parameter expression to reference itself.
+
 `time` → `OP` **(Read Only)**:
+
 > [Time Component](TimeCOMP_Class.html "TimeCOMP Class") that defines the operator's time reference.
+
 `ext` → `class` **(Read Only)**:
+
 > The object to search for parent [extensions](Extensions.html "Extensions").
 > 
 > ```
 > me.ext.MyClass
 > 
 > ```
+
 `fileFolder` → `str` **(Read Only)**:
+
 > Returns the folder where this node is saved.
+
 `filePath` → `str` **(Read Only)**:
+
 > Returns the file location of this node.
+
 `mod` → `mod` **(Read Only)**:
+
 > Get a [module on demand](MOD_Class.html "MOD Class") object that searches for DAT modules relative to this operator.
+
 `pages` → `list` **(Read Only)**:
+
 > A list of all built-in pages.
+
 `parGroup` → `tuple` **(Read Only)**:
+
 > An intermediate [parameter collection](ParGroupCollection_Class.html "ParGroupCollection Class") object, from which a specific [parameter group](ParGroup_Class.html "ParGroup Class") can be found.
 > 
 > ```
@@ -272,7 +417,9 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > n.parGroup['t']
 > 
 > ```
+
 `par` → `td.Par` **(Read Only)**:
+
 > An intermediate [parameter collection](ParCollection_Class.html "ParCollection Class") object, from which a specific [parameter](Par_Class.html "Par Class") can be found.
 > 
 > ```
@@ -281,19 +428,33 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > n.par['tx']
 > 
 > ```
+
 `builtinPars` → `list or par` **(Read Only)**:
+
 > A list of all [built-in parameters](Par_Class.html "Par Class").
+
 `customParGroups` → `list of parGroups` **(Read Only)**:
+
 > A list of all [ParGroups](ParGroup_Class.html "ParGroup Class"), where a ParGroup is a set of parameters all drawn on the same line of a dialog, sharing the same label.
+
 `customPars` → `list of par` **(Read Only)**:
+
 > A list of all [custom parameters](Par_Class.html "Par Class").
+
 `customPages` → `list` **(Read Only)**:
+
 > A list of all [custom pages](Page_Class.html "Page Class").
+
 `replicator` → `OP or None` **(Read Only)**:
+
 > The [replicatorCOMP](ReplicatorCOMP_Class.html "ReplicatorCOMP Class") that created this operator, if any.
+
 `storage` → `dict` **(Read Only)**:
+
 > [Storage](Storage.html "Storage") is dictionary associated with this operator. Values stored in this dictionary are persistent, and saved with the operator. The dictionary attribute is read only, but not its contents. Its contents may be manipulated directly with methods such as OP.fetch() or OP.store() described below, or examined with an [Examine DAT](Examine_DAT.html "Examine DAT").
+
 `tags` → `list` :
+
 > Get or set a set of user defined strings. [Tags](Tag.html "Tag") can be searched using OP.findChildren() and the [OP Find DAT](OP_Find_DAT.html "OP Find DAT").
 > 
 > The set is a regular python set, and can be accessed accordingly:
@@ -303,13 +464,21 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > n.tags.add('darken')
 > 
 > ```
+
 `children` → `list` **(Read Only)**:
+
 > A list of [operators](OP_Class.html "OP Class") contained within this operator. Only [component](COMP_Class.html "COMP Class") operators have children, otherwise an empty list is returned.
+
 `numChildren` → `int` **(Read Only)**:
+
 > Returns the number of children contained within the operator. Only [component](COMP_Class.html "COMP Class") operators have children.
+
 `numChildrenRecursive` → `int` **(Read Only)**:
+
 > Returns the number of operators contained recursively within this operator. Only [component](COMP_Class.html "COMP Class") operators have children.
+
 `op` → `OP or None` **(Read Only)**:
+
 > The operator finder object, for accessing operators through paths or shortcuts. **Note:** a version of this method that searches relative to '/' is also in the global [td module](Td_Module.html "Td Module").
 > 
 > `op(pattern1, pattern2..., includeUtility=False)` → `[OP](OP_Class.html "OP Class") or None`
@@ -344,7 +513,9 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > > 	print(x)
 > > 
 > > ```
+
 `opex` → `OP` **(Read Only)**:
+
 > An operator finder object, for accessing operators through paths or shortcuts. Works like the op() shortcut method, except it will raise an exception if it fails to find the node instead of returning None as op() does. This is now the recommended way to get nodes in parameter expressions, as the error will be more useful than, for example, `NoneType has no attribute "par"`, that is often seen when using op(). **Note:** a version of this method that searches relative to '/' is also in the global [td module](Td_Module.html "Td Module").
 > 
 > `op(pattern1, pattern2..., includeUtility=False)` → `[OP](OP_Class.html "OP Class")`
@@ -353,7 +524,9 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > > 
 > > * `pattern` - Can be string following the [Pattern Matching](Pattern_Matching.html "Pattern Matching") rules, specifying which OP to return, or an integer, which must be an OP Id. Multiple patterns can be given, the first matching OP will be returned.
 > > * `includeUtility` **(Optional)** - if True, allow [Utility nodes](Network_Utilities__Comments%2c_Network_Boxes%2c_Annotates.html "Network Utilities: Comments, Network Boxes, Annotates") to be returned. If False, Utility operators will be ignored.
+
 `parent` → `Shortcut` **(Read Only)**:
+
 > The [Parent Shortcut](Parent_Shortcut.html "Parent Shortcut") object, for accessing parent components through indices or shortcuts.
 > 
 > **Note:** *a version of this method that searches relative to the current operator is also in the global [td module](Td_Module.html "Td Module").*
@@ -381,42 +554,71 @@ As these attributes are dependent on each other, set the `rate` and `start` (or 
 > > ```
 > > 
 > > See also Parent Shortcut for more examples.
+
 `iop` → `OP` **(Read Only)**:
+
 > The Internal Operator Shortcut object, for accessing internal shortcuts. See also [Internal Operators](Internal_Operators.html "Internal Operators").
 > **Note:** a version of this method that searches relative to the current operator is also in the global [td Module](Td_Module.html "Td Module").
+
 `ipar` → `ParCollection` **(Read Only)**:
+
 > The Internal Operator Parameter Shortcut object, for accessing internal shortcuts. See also [Internal Parameters](Internal_Parameters.html "Internal Parameters").
 > **Note:** a version of this method that searches relative to the current operator is also in the global [td Module](Td_Module.html "Td Module").
+
 `currentPage` → `[Page](Page_Class.html "Page Class")` :
+
 > Get or set the currently displayed parameter page. It can be set by setting it to another page or a string label.
 > 
 > ```
 > n.currentPage = 'Common'
 > 
 > ```
+
 ### Common Flags[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Common Flags")]
+
 The following methods get or set specific operator [Flags](Flag.html "Flag"). Note specific operators may contain other flags not in this section.
+
   
 
+
 `activeViewer` → `bool` :
+
 > Get or set [Viewer Active Flag](Viewer_Active_Flag.html "Viewer Active Flag").
+
 `allowCooking` → `bool` :
+
 > Get or set [Cooking Flag](Cooking_Flag.html "Cooking Flag"). Only COMPs can disable this flag.
+
 `bypass` → `bool` :
+
 > Get or set [Bypass Flag](Bypass_Flag.html "Bypass Flag").
+
 `cloneImmune` → `bool` :
+
 > Get or set [Clone Immune Flag](Immune_Flag.html "Immune Flag").
+
 `current` → `bool` :
+
 > Get or set [Current Flag](Current_Flag.html "Current Flag").
+
 `display` → `bool` :
+
 > Get or set [Display Flag](Display_Flag.html "Display Flag").
+
 `expose` → `bool` :
+
 > Get or set the [Expose Flag](Expose_Flag.html "Expose Flag") which hides a node from view in a network.
+
 `lock` → `bool` :
+
 > Get or set [Lock Flag](Lock_Flag.html "Lock Flag").
+
 `selected` → `bool` :
+
 > Get or set [Selected Flag](Selected_Flag.html "Selected Flag"). This controls if the node is part of the network selection. (yellow box around it).
+
 `seq` → **(Read Only)**:
+
 > An intermediate sequence collection object, from which a specific sequence group can be found.
 > 
 > ```
@@ -425,135 +627,263 @@ The following methods get or set specific operator [Flags](Flag.html "Flag"). No
 > n.seq['Color'] #returns None if not found.
 > 
 > ```
+
 `python` → `bool` :
+
 > Get or set parameter expression language as python.
+
 `render` → `bool` :
+
 > Get or set [Render Flag](Render_Flag.html "Render Flag").
+
 `showCustomOnly` → `bool` :
+
 > Get or set the Show Custom Only Flag which controls whether or not non custom parameters are display in [parameter dialogs](Parameter_Dialog.html "Parameter Dialog").
+
 `showDocked` → `bool` :
+
 > Get or set [Show Docked Flag](Docking.html "Docking"). This controls whether this node is visible or hidden when it is docked to another node.
+
 `viewer` → `bool` :
+
 > Get or set [Viewer Flag](Viewer_Flag.html "Viewer Flag").
+
 ### Appearance[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Appearance")]
+
 `color` → `tuple(r, g, b)` :
+
 > Get or set color value, expressed as a 3-tuple, representing its red, green, blue values. To convert between color spaces, use the built in colorsys module.
+
 `comment` → `str` :
+
 > Get or set comment string.
+
 `nodeHeight` → `int` :
+
 > Get or set node height, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units.
+
 `nodeWidth` → `int` :
+
 > Get or set node width, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units.
+
 `nodeX` → `int` :
+
 > Get or set node X value, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units, measured from its left edge.
+
 `nodeY` → `int` :
+
 > Get or set node Y value, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units, measured from its bottom edge.
+
 `nodeCenterX` → `int` :
+
 > Get or set node X value, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units, measured from its center.
+
 `nodeCenterY` → `int` :
+
 > Get or set node Y value, expressed in [network editor](NetworkEditor_Class.html "NetworkEditor Class") units, measured from its center.
+
 `dock` → `OP` :
+
 > Get or set the [operator](OP_Class.html "OP Class") this operator is docked to. To clear docking, set this member to None.
+
 `docked` → `list` **(Read Only)**:
+
 > The (possibly empty) list of [operators](OP_Class.html "OP Class") docked to this node.
+
 ### Connection[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Connection")]
+
 See also the `OP.parent` methods. To connect components together see [COMP\_Class#Connection](COMP_Class.html#Connection "COMP Class") section.
+
   
+
 
 `inputs` → `list` **(Read Only)**:
+
 > List of input [operators](OP_Class.html "OP Class") (via left side connectors) to this operator. To get the number of inputs, use len(OP.inputs).
+
 `outputs` → `list` **(Read Only)**:
+
 > List of output [operators](OP_Class.html "OP Class") (via right side connectors) from this operator.
+
 `inputConnectors` → `list` **(Read Only)**:
+
 > List of input [connectors](Connector_Class.html "Connector Class") (on the left side) associated with this operator.
+
 `outputConnectors` → `list` **(Read Only)**:
+
 > List of output [connectors](Connector_Class.html "Connector Class") (on the right side) associated with this operator.
+
 ### Cook Information[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Cook Information")]
+
 `cookFrame` → `float` **(Read Only)**:
+
 > Last frame at which this operator cooked.
+
 `cookTime` → `float` **(Read Only)**:
+
 > **Deprecated** Duration of the last measured cook (in milliseconds).
+
 `cpuCookTime` → `float` **(Read Only)**:
+
 > Duration of the last measured cook in CPU time (in milliseconds).
+
 `cookAbsFrame` → `float` **(Read Only)**:
+
 > Last absolute frame at which this operator cooked.
+
 `cookStartTime` → `float` **(Read Only)**:
+
 > Last offset from frame start at which this operator cook began, expressed in milliseconds.
+
 `cookEndTime` → `float` **(Read Only)**:
+
 > Last offset from frame start at which this operator cook ended, expressed in milliseconds. Other operators may have cooked between the start and end time. See the cookTime member for this operator's specific cook duration.
+
 `cookedThisFrame` → `bool` **(Read Only)**:
+
 > True when this operator has cooked this frame.
+
 `cookedPreviousFrame` → `bool` **(Read Only)**:
+
 > True when this operator has cooked the previous frame.
+
 `childrenCookTime` → `float` **(Read Only)**:
+
 > **Deprecated** The total accumulated cook time of all children of this operator during the last frame. Zero if the operator is not a [COMP](COMP_Class.html "COMP Class") and/or has no children.
+
 `childrenCPUCookTime` → `float` **(Read Only)**:
+
 > The total accumulated cook time of all children of this operator during the last frame. Zero if the operator is not a [COMP](COMP_Class.html "COMP Class") and/or has no children.
+
 `childrenCookAbsFrame` → `float` **(Read Only)**:
+
 > **Deprecated** The absolute frame on which childrenCookTime is based.
+
 `childrenCPUCookAbsFrame` → `float` **(Read Only)**:
+
 > The absolute frame on which childrenCPUCookTime is based.
+
 `gpuCookTime` → `float` **(Read Only)**:
+
 > Duration of GPU operations during the last measured cook (in milliseconds).
+
 `childrenGPUCookTime` → `float` **(Read Only)**:
+
 > The total accumulated GPU cook time of all children of this operator during the last frame. Zero if the operator is not a COMP and/or has no children.
+
 `childrenGPUCookAbsFrame` → `float` **(Read Only)**:
+
 > The absolute frame on which childrenGPUCookTime is based.
+
 `totalCooks` → `int` **(Read Only)**:
+
 > Number of times the operator has cooked.
+
 `cpuMemory` → `int` **(Read Only)**:
+
 > The approximate amount of CPU memory this Operator is using, in bytes.
+
 `gpuMemory` → `int` **(Read Only)**:
+
 > The amount of GPU memory this OP is using, in bytes.
+
 ### Type[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Type")]
+
 `type` → `str` **(Read Only)**:
+
 > Operator type as a string. Example: 'oscin'.
+
 `subType` → `str` **(Read Only)**:
+
 > Operator subtype. Currently only implemented for [components](Component.html "Component"). May be one of: 'panel', 'object', or empty string in the case of base components.
+
 `OPType` → `str` **(Read Only)**:
+
 > Python operator class type, as a string. Example: 'oscinCHOP'. Can be used with COMP.create() method.
+
 `label` → `str` **(Read Only)**:
+
 > Operator type label. Example: 'OSC In'.
+
 `icon` → `str` **(Read Only)**:
+
 > Get the letters used to create the operator's icon.
+
 `family` → `str` **(Read Only)**:
+
 > Operator family. Example: CHOP. Use the global dictionary families for a list of each operator type.
+
 `isFilter` → `bool` **(Read Only)**:
+
 > True if operator is a filter, false if it is a generator.
+
 `minInputs` → `int` **(Read Only)**:
+
 > Minimum number of inputs to the operator.
+
 `maxInputs` → `int` **(Read Only)**:
+
 > Maximum number of inputs to the operator.
+
 `isMultiInputs` → `bool` **(Read Only)**:
+
 > True if inputs are ordered, false otherwise. Operators with an arbitrary number of inputs have unordered inputs, example [Merge CHOP](Merge_CHOP.html "Merge CHOP").
+
 `visibleLevel` → `int` **(Read Only)**:
+
 > Visibility level of the operator. For example, expert operators have visibility level 1, regular operators have visibility level 0.
+
 `isBase` → `bool` **(Read Only)**:
+
 > True if the operator is a Base (miscellaneous) [component](Component.html "Component").
+
 `isCHOP` → `bool` **(Read Only)**:
+
 > True if the operator is a [CHOP](CHOP.html "CHOP").
+
 `isCOMP` → `bool` **(Read Only)**:
+
 > True if the operator is a [component](Component.html "Component").
+
 `isDAT` → `bool` **(Read Only)**:
+
 > True if the operator is a [DAT](DAT.html "DAT").
+
 `isMAT` → `bool` **(Read Only)**:
+
 > True if the operator is a [Material](MAT.html "MAT").
+
 `isObject` → `bool` **(Read Only)**:
+
 > True if the operator is an [object](Object.html "Object").
+
 `isPanel` → `bool` **(Read Only)**:
+
 > True if the operator is a [Panel](Panel.html "Panel").
+
 `isSOP` → `bool` **(Read Only)**:
+
 > True if the operator is a [SOP](SOP.html "SOP").
+
 `isTOP` → `bool` **(Read Only)**:
+
 > True if the operators is a [TOP](TOP.html "TOP").
+
 `licenseType` → `str` **(Read Only)**:
+
 > Type of [License](License_Class.html "License Class") required for the operator.
+
 ## Methods
+
 ### General[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: General")]
+
 **NOTE**: `create()`, `copy()` and `copyOPs()` is done by the parent operator (a component). For more information see [COMP.create, COMP.copy and COMP.copyOPs methods](COMP_Class.html#Methods "COMP Class").
+
   
 
+
 `pars(pattern)`→ `list`:
+
 > Returns a (possibly empty) list of [parameter objects](Par_Class.html "Par Class") that match the pattern.
 > 
 > * pattern - Is a string following the [Pattern Matching](Pattern_Matching.html "Pattern Matching") rules, specifying which parameters to return.
@@ -570,13 +900,17 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('geo1').par[name]
 > 
 > ```
+
 `cook(force=False, recurse=False, includeUtility=False)`→ `None`:
+
 > Cook the contents of the operator if required.
 > 
 > * force - (Keyword, Optional) If True, the operator will always cook, even if it wouldn't under normal circumstances.
 > * recurse - (Keyword, Optional) If True, all children and sub-children of the operator will be cooked.
 > * includeUtility - (Keyword, Optional) If specified, controls whether or not utility components (eg Comments) are included in the results.
+
 `copyParameters(OP, custom=True, builtin=True)`→ `None`:
+
 > Copy all of the parameters from the specified [operator](OP_Class.html "OP Class"). Both operators should be the same type.
 > 
 > * OP - The operator to copy.
@@ -587,7 +921,9 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('geo1').copyParameters( op('geo2') )
 > 
 > ```
+
 `changeType(OPtype)`→ `OP`:
+
 > Change referenced operator to a new operator type. After this call, this OP object should no longer be referenced. Instead use the returned OP object.
 > 
 > * OPtype - The python class name of the operator type you want to change this operator to. This is not a string, but instead is a class defined in the global [td module](Td_Module.html "Td Module").
@@ -597,9 +933,13 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > n = op('text1').changeType(tcpipDAT) #changes 'text1' operator into a TCPIP DAT
 > 
 > ```
+
 `dependenciesTo(OP)`→ `list`:
+
 > Returns a (possibly empty) list of operator dependency paths between this operator and the specified operator. Multiple paths may be found.
+
 `evalExpression(str)`→ `value`:
+
 > Evaluate the expression from the context of this OP. Can be used to evaluate arbitrary snippets of code from arbitrary locations.
 > 
 > * str - The expression to evaluate.
@@ -610,29 +950,43 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > ```
 > 
 > If the expression already resides in a parameter, use that parameters [evalExpression()](Par_Class.html "Par Class") method instead.
+
 `destroy()`→ `None`:
+
 > Destroy the operator referenced by this OP. An exception will be raised if the OP's operator has already been destroyed.
+
 `var(name, search=True)`→ `str`:
+
 > Evaluate a [variable](Variables.html "Variables"). This will return the empty string, if not found. Most information obtained from variables (except for Root and Component variables) are accessible through other means in Python, usually in the global [td module](Td_Module.html "Td Module").
 > 
 > * name - The variable name to search for.
 > * search - (Keyword, Optional) If set to True (which is default) the operator hierarchy is searched until a variable matching that name is found. If false, the search is constrained to the operator.
+
 `openMenu(x=None, y=None)`→ `None`:
+
 > Open a node menu for the operator at x, y. Opens at mouse if x & y are not specified.
 > 
 > * x - (Keyword, Optional) The X coordinate of the menu, measured in screen pixels.
 > * y - (Keyword, Optional) The Y coordinate of the menu, measured in screen pixels.
+
 `relativePath(OP)`→ `str`:
+
 > Returns the relative path from this operator to the OP that is passed as the argument. See OP.shortcutPath for a version using expressions.
+
 `setInputs(listOfOPs)`→ `None`:
+
 > Set all the operator inputs to the specified list.
 > 
 > * listOfOPs - A list containing one or more OPs. Entries in the list can be None to disconnect specific inputs. An empty list disconnects all inputs.
+
 `shortcutPath(OP, toParName=None)`→ `str`:
+
 > Returns an expression from this operator to the OP that is passed as the argument. See OP.relativePath for a version using relative path constants.
 > 
 > * toParName - (Keyword, Optional) Return an expression to this parameter instead of its operator.
+
 `ops(pattern1, pattern2.., includeUtility=False)`→ `list of OPs`:
+
 > Returns a (possibly empty) list of OPs that match the patterns, relative to the inside of this OP.
 > 
 > Multiple patterns may be provided. Numeric OP ids may also be used.
@@ -646,7 +1000,9 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > newlist = n.ops('arm*', 'leg*', 'leg5/foot*')
 > 
 > ```
+
 `resetPars(parNames='*', parGroupNames='*', pageNames='*', includeBuiltin=True, includeCustom=True)`→ `bool`:
+
 > Resets the specified parameters in the operator.
 > 
 > Returns true if anything was changed.
@@ -661,32 +1017,47 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('player').resetPars(includeBuiltin=False) # only reset custom
 > 
 > ```
+
 ### Errors[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Errors")]
+
 `addScriptError(msg)`→ `None`:
+
 > Adds a script error to a node.
 > 
 > * msg - The error to add.
+
 `addError(msg)`→ `None`:
+
 > Adds an error to an operator. Only valid if added while the operator is cooking. (Example Script SOP, CHOP, DAT).
 > 
 > * msg - The error to add.
+
 `addWarning(msg)`→ `None`:
+
 > Adds a warning to an operator. Only valid if added while the operator is cooking. (Example Script SOP, CHOP, DAT).
 > 
 > * msg - The error to add.
+
 `errors(recurse=False)`→ `str`:
+
 > Get error messages associated with this OP.
 > 
 > * recurse - Get errors in any children or subchildren as well.
+
 `warnings(recurse=False)`→ `str`:
+
 > Get warning messages associated with this OP.
 > 
 > * recurse - Get warnings in any children or subchildren as well.
+
 `scriptErrors(recurse=False)`→ `str`:
+
 > Get script error messages associated with this OP.
 > 
 > * recurse - Get errors in any children or subchildren as well.
+
 `clearScriptErrors(recurse=False, error='*')`→ `None`:
+
 > Clear any errors generated during script execution. These may be generated during execution of DATs, Script Nodes, Replicator COMP callbacks, etc.
 > 
 > * recurse - Clear script errors in any children or subchildren as well.
@@ -696,15 +1067,25 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('/project1').clearScriptErrors(recurse=True)
 > 
 > ```
+
 `childrenCPUMemory()`→ `int`:
+
 > Returns the total CPU memory usage for all the children from this COMP.
+
 `childrenGPUMemory()`→ `int`:
+
 > Returns the total GPU memory usage for all the children from this COMP.
+
 ### Appearance[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Appearance")]
+
 `resetNodeSize()`→ `None`:
+
 > Reset the node tile size to its default width and height.
+
 ### Viewers[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Viewers")]
+
 `closeViewer(topMost=False)`→ `None`:
+
 > Close the floating content viewers of the OP.
 > 
 > * topMost - (Keyword, Optional) If True, any viewer window containing any parent of this OP is closed instead.
@@ -714,7 +1095,9 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('wave1').closeViewer(topMost=True) # any viewer that contains 'wave1' will be closed.
 > 
 > ```
+
 `openViewer(unique=False, borders=True)`→ `None`:
+
 > Open a floating content viewer for the OP.
 > 
 > * unique - (Keyword, Optional) If False, any existing viewer for this OP will be re-used and popped to the foreground. If unique is True, a new window is created each time instead.
@@ -724,7 +1107,9 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('geo1').openViewer(unique=True, borders=False) # opens a new borderless viewer window for 'geo1'
 > 
 > ```
+
 `resetViewer(recurse=False)`→ `None`:
+
 > Reset the OP content viewer to default view settings.
 > 
 > * recurse - (Keyword, Optional) If True, this is done for all children and sub-children as well.
@@ -733,17 +1118,28 @@ See also the `OP.parent` methods. To connect components together see [COMP\_Clas
 > op('/').resetViewer(recurse=True) # reset the viewer for all operators in the entire file.
 > 
 > ```
+
 `openParameters()`→ `None`:
+
 > Open a floating dialog containing the operator parameters.
+
 ### Storage[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Storage")]
+
 [Storage](Storage.html "Storage") can be used to keep data within components. Storage is implemented as one python dictionary per node.
+
 When an element of storage is changed by using `n.store()` as explained below, expressions and operators that depend on it will automatically re-cook. It is retrieved with the `n.fetch()` function.
+
 Storage is saved in `.toe` and `.tox` files and restored on startup.
+
 Storage can hold any python object type (not just strings as in Tscript variables). Storage elements can also have optional startup values, specified separately. Use these startup values for example, to avoid saving and loading some session specific object, and instead save or load a well defined object like `None`.
+
 See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing the contents of storage.
+
   
 
+
 `fetch(key, default, search=True, storeDefault=False)`→ `value`:
+
 > Return an object from the OP storage dictionary. If the item is not found, and a default it supplied, it will be returned instead.
 > 
 > * key - The name of the entry to retrieve.
@@ -755,7 +1151,9 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > v = n.fetch('sales5', 0.0)
 > 
 > ```
+
 `fetchOwner(key)`→ `OP`:
+
 > Return the operator which contains the stored key, or None if not found.
 > 
 > * key - The key to the stored entry you are looking for.
@@ -764,7 +1162,9 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > who = n.fetchOwner('sales5') #find the OP that has a storage entry called 'sales5'
 > 
 > ```
+
 `store(key, value)`→ `value`:
+
 > Add the key/value pair to the OP's storage dictionary, or replace it if it already exists. If this value is not intended to be saved and loaded in the toe file, it can be be given an alternate value for saving and loading, by using the method storeStartupValue described below.
 > 
 > * key - A string name for the storage entry. Use this name to retrieve the value using fetch().
@@ -775,7 +1175,9 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > n.store('moviebank', op('/project1/movies')) # stores an OP for easy access later on.
 > 
 > ```
+
 `unstore(keys1, keys2..)`→ `None`:
+
 > For key, remove it from the OP's storage dictionary. Pattern Matching is supported as well.
 > 
 > * keys - The name or pattern defining which key/value pairs to remove from the storage dictionary.
@@ -784,7 +1186,9 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > n.unstore('sales*') # removes all entries from this OPs storage that start with 'sales'
 > 
 > ```
+
 `storeStartupValue(key, value)`→ `None`:
+
 > Add the key/value pair to the OP's storage startup dictionary. The storage element will take on this value when the file starts up.
 > 
 > * key - A string name for the storage startup entry.
@@ -794,7 +1198,9 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > n.storeStartupValue('sales5', 1) # 'sales5' will have a value of 1 when the file starts up.
 > 
 > ```
+
 `unstoreStartupValue(keys1, keys2..)`→ `None`:
+
 > For key, remove it from the OP's storage startup dictionary. Pattern Matching is supported as well. This does not affect the stored value, just its startup value.
 > 
 > * keys - The name or pattern defining which key/value pairs to remove from the storage startup dictionary.
@@ -803,58 +1209,94 @@ See the [Examine DAT](Examine_DAT.html "Examine DAT") for procedurally viewing t
 > n.unstoreStartupValue('sales*') # removes all entries from this OPs storage startup that start with 'sales'
 > 
 > ```
+
 ### Miscellaneous[[edit](https://docs.derivative.ca/index.php?title=Template:SubSection&action=edit&section=T-1 "Edit section: Miscellaneous")]
+
 `__getstate__()`→ `dict`:
+
 > Returns a dictionary with persistent data about the object suitable for pickling and deep copies.
+
 `__setstate__()`→ `dict`:
+
 > Reads the dictionary to update persistent details about the object, suitable for unpickling and deep copies.
+
 TouchDesigner Build: Latest\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditormw-revertedmw-replacemw-manual-revert2023.11280
+
 An [Operator Family](Operator_Family.html "Operator Family") which operate on [Channels](Channel.html "Channel") (a sequence of numbers ([Samples](Sample.html "Sample"))) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+
 
 An [Operator Family](Operator_Family.html "Operator Family") that manipulates text strings: multi-line text or tables. Multi-line text is often a python [Script](Script.html "Script") or [GLSL](GLSL.html "GLSL") Shader, but can be any multi-line text. [Tables](Table_DAT.html "Table DAT") are rows and columns of cells, each containing a text string.
 
+
 A Time Slice is the time from the last cook frame to the current cook frame. In CHOPs it is the set of short channels that contain the CHOP channels' samples between the last and the current cook frame.
+
 
 A [CHOP](CHOP.html "CHOP") outputs one or more channels, where a channel is simply a sequence of numbers ([Samples](Sample.html "Sample")), representing motion, audio, etc. Channels are passed between CHOPs in TouchDesigner networks. Channels can be [Exported](Export.html "Export") to [Parameters](Parameter.html "Parameter").
 
+
 Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See [Node](Node.html "Node").
+
 
 A ParGroup is a group of related parameters that you can set and get as a whole instead of its individual parameters.
 
+
 A name for a component that is accessible from any node in a project, which can be declared in a component's Global Operator Shortcut parameter.
+
 
 Operator shortcuts are Python objects that return operators (or sometimes parameters). These include [Parent Shortcuts](Parent_Shortcut.html "Parent Shortcut") for accessing a component from within that component, and [Global OP Shortcuts](Global_OP_Shortcut.html "Global OP Shortcut") that access a unique component from anywhere in TouchDesigner.
 
+
 A Parent Shortcut is a parameter on a component that contains a name that you can use anywhere inside the component to refer to that component using the syntax `parent.Name`, for example `parent.Effect.width` to obtain panel width.
+
 
 Indicator of certain states of an operator (bypass, display, lock, viewer active).
 
+
 To re-compute the output data of the [Operators](Operator.html "Operator"). An operator cooks when (1) its inputs change, (2) its [Parameters](Parameter.html "Parameter") change, (3) when the timeline moves forward in some cases, or (4) [Scripting](Script.html "Script") commands are run on the node. When the operator is a [Panel Component](Panel_Component.html "Panel Component"), it also cooks when a user interacts with it. When an operator cooks, it usually causes operators connected to its output to re-cook. When TouchDesigner draws the screen, it re-cooks all the [Dependencies](Dependency.html "Dependency") - the necessary operators in all [Networks](Network.html "Network"), contributing to a frame's total "cook time".
+
 
 The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
 
+
 An [Operator Family](Operator_Family.html "Operator Family") that contains its own [Network](Network.html "Network"). There are sixteen 3D [Object Component](Object_Component.html "Object Component") and ten 2D [Panel Component](Panel_Component.html "Panel Component") types. See also [Network Path](Network_Path.html "Network Path").
+
 
 TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The [Network Path](Network_Path.html "Network Path") or Path for root is simply `/`. A typical path is `/project1/moviein1`.
 
+
 An [Operator Family](Operator_Family.html "Operator Family") that contains its own [Network](Network.html "Network"). There are sixteen 3D [Object Component](Object_Component.html "Object Component") and ten 2D [Panel Component](Panel_Component.html "Panel Component") types. See also [Network Path](Network_Path.html "Network Path").
+
 
 A set of commands located in a Text DAT that are triggered to run under certain conditions. There are two scripting languages in TouchDesigner: [Python](Python.html "Python") and the original [Tscript](Tscript.html "Tscript"). Scripts and single-line commands can also be run in the [Textport](Textport.html "Textport").
 
+
 A [Operator Family](Operator_Family.html "Operator Family") that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+
 
 Creates copies of a component, one for every row in a table or using a Number of Replicants parameter - it is the "for-loop" of operators. Unlike [Clone](Clone.html "Clone"), it automatically creates copies of a master component.
 
+
 Storage is a python dictionary in each operator, where users can store and fetch extra data.
+
 
 TOuch Environment file, the file type used by TouchDesigner to save your entire project.
 
+
 TouchDesigner Component file, the file type used to save a [Component](Component.html "Component") of your TouchDesigner project.
+
 
 TouchDesigner's original built-in Command scripting language prior to [Python](Python.html "Python").
 
+
 Matching names using wildcard characters and bracketing. Useful in "[Select](Select_CHOP.html "Select CHOP")" type parameters to select multiple operators, paths, channels, etc.
+
+
+
+
+
+
 
 Retrieved from "<https://docs.derivative.ca/index.php?title=OakdeviceCHOP_Class&oldid=31683>"
 [Category](Special_Categories.html "Special:Categories"):
+
 * [CHOP Classes](https://docs.derivative.ca/index.php?title=Category:CHOP_Classes&action=edit&redlink=1 "Category:CHOP Classes (page does not exist)")
