@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Drag-and-Drop by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Drag-and-Drop - Derivative</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2d1d2c54b8acfd91efd8b20d","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Drag-and-Drop","wgTitle":"Drag-and-Drop","wgCurRevisionId":24836,"wgRevisionId":24836,"wgArticleId":1184,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["TouchDesigner Tips","TDPages"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Drag-and-Drop","wgRelevantArticleId":1184,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,
+"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],
+"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load6e85.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cext.pygments%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Drag-and-Drop"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Drag-and-Drop"/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:modified_time" content="2021-12-30T00:06:42Z"/>
+<meta property="article:published_time" content="2021-12-30T00:06:42Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Drag-and-Drop - Derivative","headline":"Drag-and-Drop - Derivative","mainEntityOfPage":"<span class=\"mw-page-title-main\">Drag-and-Drop<\/span>","identifier":"https:\/\/docs.derivative.ca\/Drag-and-Drop","url":"https:\/\/docs.derivative.ca\/Drag-and-Drop","dateModified":"2021-12-30T00:06:42Z","datePublished":"2021-12-30T00:06:42Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Drag-and-Drop rootpage-Drag-and-Drop skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Drag-and-Drop</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><p>TouchDesigner supports Drag-and-Drop functionality as a shortcut to complex import/export and copy/paste functionality. Drag-and-Drop functionality allows you to:
+</p>
+<ul><li>Import <a href="File_Types.html" title="File Types">TouchDesigner-readable files</a>.</li>
+<li><span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> data from TouchDesigner nodes to external applications.</li>
+<li>Copy and/or move nodes from one TouchDesigner network to another.</li>
+<li>Add TouchDesigner-readable file(s), Panel components or TouchDesigner nodes to open control panels.</li></ul><p><a href="Panel_Component.html" title="Panel Component">Panel Components</a> have options for Drag and Drop on their <i>Drag/Drop</i> page of parameters. These parameters can be used to inherit the Drag/Drop settings from the panel's parents, or to force Drag/Drop on or off.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1 tocsection-1"><a href="#Drag/Drop_Callbacks"><span class="tocnumber">1</span> <span class="toctext">Drag/Drop Callbacks</span></a>
+<ul><li class="toclevel-2 tocsection-2"><a href="#Setting_Up_A_Draggable_Panel"><span class="tocnumber">1.1</span> <span class="toctext">Setting Up A Draggable Panel</span></a>
+<ul><li class="toclevel-3 tocsection-3"><a href="#onDragStartGetItems(comp,_info)_%E2%86%92_list_of_items_to_drag"><span class="tocnumber">1.1.1</span> <span class="toctext">onDragStartGetItems(comp, info) → list of items to drag</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#onDragEnd(comp,_info)"><span class="tocnumber">1.1.2</span> <span class="toctext">onDragEnd(comp, info)</span></a></li>
+</ul></li>
+<li class="toclevel-2 tocsection-5"><a href="#Setting_Up_A_Panel_As_A_Drop_Target"><span class="tocnumber">1.2</span> <span class="toctext">Setting Up A Panel As A Drop Target</span></a>
+<ul><li class="toclevel-3 tocsection-6"><a href="#Examples_of_testing_dragItems_in_callbacks"><span class="tocnumber">1.2.1</span> <span class="toctext">Examples of testing dragItems in callbacks</span></a>
+<ul><li class="toclevel-4 tocsection-7"><a href="#onHoverStartGetAccept(comp,_info)_%E2%86%92_True_if_drag_items_are_acceptable"><span class="tocnumber">1.2.1.1</span> <span class="toctext">onHoverStartGetAccept(comp, info) → True if drag items are acceptable</span></a></li>
+<li class="toclevel-4 tocsection-8"><a href="#onHoverEnd(comp,_info)"><span class="tocnumber">1.2.1.2</span> <span class="toctext">onHoverEnd(comp, info)</span></a></li>
+<li class="toclevel-4 tocsection-9"><a href="#onDropGetResults(comp,_info)_%E2%86%92_dict_of_results"><span class="tocnumber">1.2.1.3</span> <span class="toctext">onDropGetResults(comp, info) → dict of results</span></a></li>
+</ul></li>
+</ul></li>
+<li class="toclevel-2 tocsection-10"><a href="#Getting_Panel_Location_(u/v)_of_a_Drop"><span class="tocnumber">1.3</span> <span class="toctext">Getting Panel Location (u/v) of a Drop</span></a></li>
+</ul></li>
+<li class="toclevel-1 tocsection-11"><a href="#Legacy_Drag/Drop_System"><span class="tocnumber">2</span> <span class="toctext">Legacy Drag/Drop System</span></a>
+<ul><li class="toclevel-2 tocsection-12"><a href="#How_Component_Drag-and-Drop_Works"><span class="tocnumber">2.1</span> <span class="toctext">How Component Drag-and-Drop Works</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Drop_Scripts_-_Text"><span class="tocnumber">2.2</span> <span class="toctext">Drop Scripts - Text</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Drop_Script_-_Tables"><span class="tocnumber">2.3</span> <span class="toctext">Drop Script - Tables</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Drag_Scripts"><span class="tocnumber">2.4</span> <span class="toctext">Drag Scripts</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Drop_Destination_Scripts"><span class="tocnumber">2.5</span> <span class="toctext">Drop Destination Scripts</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Drop_Types"><span class="tocnumber">2.6</span> <span class="toctext">Drop Types</span></a></li>
+</ul></li>
+</ul></div>
+
+<h1><span id="Drag.2FDrop_Callbacks"></span><span class="mw-headline" id="Drag/Drop_Callbacks">Drag/Drop Callbacks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=1" title="Edit section: Drag/Drop Callbacks">edit</a><span class="mw-editsection-bracket">]</span></span></h1>
+<p>To create custom drag/drop systems for your UI, you can use Python Drag/Drop callbacks with all <a href="Panel_Component.html" title="Panel Component">Panel Components</a>. All parameters for this are on the <b>Drag/Drop parameter page</b>. Once you set your panel to <code>Use Drag/Drop Callbacks</code> in either the <code><b>When Dragging This</b></code> or the <code><b>On Dropping Into</b></code> parameter, you can press the <b>Add</b> button in the <code>Drag/Drop Callbacks</code> parameter to create a default callbacks <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>. Edit this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> to set up your custom Drag/Drop behavior. These callbacks are called when the user drags or drops on the component's displayed panel, <i>not</i> the component's network node, so to test in a network the node viewer must be active. 
+</p><p>To create a single Drag/Drop callbacks <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> for a network of panels, it is useful to note that the <code>Use <span class="mw-lingo-term" data-lingo-term-id="30269022e9d8f51beaabb52e5d0de2b7">Parent</span>'s Drag/Drop Settings</code> menu choices will cause panels to use the first Drag/Drop callbacks found above them in the hierarchy. Because the originating panel component that received a drag or drop operation is always passed in as an argument, different behaviors can be set up for different panels.
+</p><p><a href="https://docs.derivative.ca/Python_Drag/Drop_Experimental_Migration" title="Python Drag/Drop Experimental Migration">Click here for migration guide from pre-2020.46450 builds</a>
+</p>
+<h2><span class="mw-headline" id="Setting_Up_A_Draggable_Panel">Setting Up A Draggable <span class="mw-lingo-term" data-lingo-term-id="b8da6df14bf06283cbf588df6998722e">Panel</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=2" title="Edit section: Setting Up A Draggable Panel">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To use the callback system to create a draggable panel, first be sure the <code>When Dragging This</code> parameter on your component is set to <code>Use Drag/Drop Callbacks</code>. Next, you will use the <code>onDragStartGetItems</code> callback to tell the system what item or items will be dragged when the user clicks and drags on the panel. After the drag is complete, you will receive an <code>onDragEnd</code> callback in which you can script any further actions to be taken.
+</p>
+<h4><span id="onDragStartGetItems.28comp.2C_info.29_.E2.86.92_list_of_items_to_drag"></span><span class="mw-headline" id="onDragStartGetItems(comp,_info)_→_list_of_items_to_drag"><code>onDragStartGetItems(comp, info)</code> → <code>list of items to drag</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=3" title="Edit section: onDragStartGetItems(comp, info) → list of items to drag">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<dl><dd>Called when information about dragged items is required.
+<ul><li><code>comp</code> - the clicked-on panel</li>
+<li><code>info</code> - A dictionary containing all info about drag</li></ul></dd></dl><dl><dd><b>You must return a list of items from the callback to start a drag operation.</b> An item is whatever you want TouchDesigner to drag. Commonly this is an <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>, a parameter, or a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel, but you can put any Python object you like in the item list.</dd></dl><dl><dd><b>Example <code>onDragStartGetItems</code> callback code</b>
+<dl><dd><code>return [comp]</code> drags the panel operator itself</dd>
+<dd><code>return [comp.parent()]</code> drags the panel's parent</dd>
+<dd><code>return [op('custom1'}, op('custom2')]</code> drags two operators</dd>
+<dd><code>return [comp.par.x]</code> drags the panel's x parameter</dd>
+<dd><code>return [op('myCHOP')['speed']]</code> drags a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s <code>speed</code> channel.</dd></dl></dd></dl><h4><span id="onDragEnd.28comp.2C_info.29"></span><span class="mw-headline" id="onDragEnd(comp,_info)"><code>onDragEnd(comp, info)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=4" title="Edit section: onDragEnd(comp, info)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<dl><dd>Called when a drag action ends.
+<ul><li><code>comp</code> - the clicked-on panel</li>
+<li><code>info</code> - A dictionary containing all info about drag, including:</li></ul><dl><dd>accepted: True if the drag was accepted</dd>
+<dd>dropResults: a dict of drop results. This is the return value of onDropGetResults</dd>
+<dd>dragItems: a list of objects being dragged over comp</dd></dl></dd></dl><dl><dd>This callback can be used if you need to take special actions after a drop has occurred.</dd></dl><h2><span class="mw-headline" id="Setting_Up_A_Panel_As_A_Drop_Target">Setting Up A Panel As A Drop Target</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=5" title="Edit section: Setting Up A Panel As A Drop Target">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To use the callback system to set up dropping onto a panel, start by making sure the <code>On Dropping Into</code> parameter on your component is set to <code>Use Drag/Drop Callbacks</code>. The first step in receiving a drop is determining whether the panel can accept the items being dragged over it (a.k.a. hovering) using the <code>onHoverStartGetAccept</code> callback. If an acceptable item is dropped onto the panel, you can then use the <code>onDropGetResults</code> callback to react to the drop. The <code>onHoverEnd</code> callback can be used to script any actions to be taken when items are dragged into <i>and then back out of</i> the panel's area. This would most often be used to turn off any visual hover indicators.
+</p>
+<h3><span class="mw-headline" id="Examples_of_testing_dragItems_in_callbacks">Examples of testing <code>dragItems</code> in callbacks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=6" title="Edit section: Examples of testing dragItems in callbacks">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span>	<span class="c1"># test the number of drag items by testing the length (len)</span>
+	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="s1">'dragItems'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+		<span class="n">debug</span><span class="p">(</span><span class="s1">'Received one dragged item only'</span><span class="p">)</span>
+
+	<span class="c1"># test if the first drag item is an operator using isinstance</span>
+	<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="s1">'dragItems'</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span><span class="p">):</span>
+		<span class="n">debug</span><span class="p">(</span><span class="s1">'First dragged item is an operator'</span><span class="p">)</span>
+	<span class="c1"># useful classes to test:</span>
+	<span class="c1">#	<span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>: operator</span>
+	<span class="c1">#	<span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>, <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>: operator families</span>
+	<span class="c1">#	panelexecDAT, containerCOMP etc.: specific operator types</span>
+	<span class="c1">#	<span class="mw-lingo-term" data-lingo-term-id="781dc97dc62331eec3ea9ec4373a3ca8">Channel</span>: <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel</span>
+	<span class="c1">#	Par: parameter</span>
+	<span class="c1">#	tdu.FileInfo: file</span>
+
+	<span class="c1"># test if the type of ALL drag items is <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> by using all, list comprehension, and isinstance</span>
+	<span class="k">if</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n"><span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span></span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">info</span><span class="p">[</span><span class="s1">'dragItems'</span><span class="p">]]):</span>
+		<span class="n">debug</span><span class="p">(</span><span class="s1">'All dragged items are DATs'</span><span class="p">)</span>
+</pre></div> 
+<h4><span id="onHoverStartGetAccept.28comp.2C_info.29_.E2.86.92_True_if_drag_items_are_acceptable"></span><span class="mw-headline" id="onHoverStartGetAccept(comp,_info)_→_True_if_drag_items_are_acceptable"><code>onHoverStartGetAccept(comp, info)</code> → <code>True if drag items are acceptable</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=7" title="Edit section: onHoverStartGetAccept(comp, info) → True if drag items are acceptable">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<dl><dd>Called when comp needs to know if dragItems are acceptable as a drop. You must return True if you want to accept <code>dragItems</code> for dropping.
+<ul><li><code>comp</code> - the dropped on panel</li>
+<li><code>info</code> - A dictionary containing all info about hover, including:</li></ul><dl><dd>dragItems: a list of objects being dragged over comp</dd></dl></dd></dl><dl><dd>The easiest way to see this in action is to use the following code in this callback and watch the textport when you drag various items over your panel:
+<dl><dd><code>debug('\nonHoverStartGetAccept', comp.path, '\n\t', info)</code></dd></dl></dd></dl><h4><span id="onHoverEnd.28comp.2C_info.29"></span><span class="mw-headline" id="onHoverEnd(comp,_info)"><code>onHoverEnd(comp, info)</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=8" title="Edit section: onHoverEnd(comp, info)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<dl><dd>Called when dragItems leave comp's hover area.
+<ul><li><code>comp</code> - the dropped on panel</li>
+<li><code>info</code> - A dictionary containing all info about hover, including:</li></ul><dl><dd>dragItems: a list of objects being dragged over comp</dd></dl></dd></dl><h4><span id="onDropGetResults.28comp.2C_info.29_.E2.86.92_dict_of_results"></span><span class="mw-headline" id="onDropGetResults(comp,_info)_→_dict_of_results"><code>onDropGetResults(comp, info)</code> → <code>dict of results</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=9" title="Edit section: onDropGetResults(comp, info) → dict of results">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<dl><dd>Called when comp receives a drop of dragItems. This will only be called if onHoverStartGetAccept has returned True for these dragItems.
+<ul><li><code>comp</code> - the dropped on panel</li>
+<li><code>info</code> - A dictionary containing all info about drop, including:</li></ul><dl><dd>dragItems: the list of objects being dropped on comp</dd></dl></dd></dl><dl><dd>Returning a dictionary of items from this function is optional, but allows you to set up cross-communication between drag sources and drop targets. The dictionary should have results with descriptive keys. The following key/value pairs are standard and should be used when possible:
+<ul><li><code>'createdOPs':[&lt;list of created ops in order of corresponding drag item&gt;]</code></li></ul></dd></dl><h2><span id="Getting_Panel_Location_.28u.2Fv.29_of_a_Drop"></span><span class="mw-headline" id="Getting_Panel_Location_(u/v)_of_a_Drop">Getting Panel Location (u/v) of a Drop</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=10" title="Edit section: Getting Panel Location (u/v) of a Drop">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If you want to know where exactly in a panel something was dropped, you can access <code>comp.panel.dragrollu</code> and <code>comp.panel.dragrollv</code> in the callbacks. You can also use a <a href="Panel_CHOP.html" title="Panel CHOP">Panel CHOP</a> to track these values continually.
+</p>
+<h1><span id="Legacy_Drag.2FDrop_System"></span><span class="mw-headline" id="Legacy_Drag/Drop_System">Legacy Drag/Drop System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=11" title="Edit section: Legacy Drag/Drop System">edit</a><span class="mw-editsection-bracket">]</span></span></h1>
+<h2><span class="mw-headline" id="How_Component_Drag-and-Drop_Works">How <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Drag-and-Drop Works</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=12" title="Edit section: How Component Drag-and-Drop Works">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Anything dropped into a network that Allows Drop will be handled by the <span class="mw-lingo-term" data-lingo-term-id="eec89088ee408b80387155272b113256">Network</span>'s Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span>, regardless of whether you are dropping onto a node viewer, a control panel view, or a network editor in either list view or node view.  No menu will popup.</li>
+<li>By default, Components <b>Do Not Allow Drop</b>.</li>
+<li>If a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> Does Not Allow Drop, you will only be able to drop things into it via the network editor list or node view. A menu may popup to give you a list of options.</li>
+<li>If the node being dropped has a Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> or Drop Destination <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span>, then the Move option will not be available.</li>
+<li>A node that has a Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> or Drop Destination <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> will still drop as itself if you drop it onto parameters or <a href="Text_DAT.html" title="Text DAT">Text DATs</a>. It will also save as a *<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> of itself if you drop it onto a windows desktop or folder.</li></ul><h2><span class="mw-headline" id="Drop_Scripts_-_Text">Drop Scripts - Text</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=13" title="Edit section: Drop Scripts - Text">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A component's Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> would get run when you drop another component or an external file into that component.
+</p><p>Each component network can be set to allow dragging-and-dropping.  In a component's parameter dialog, there is a Drag tab where you can modify the settings.  You can set a components to use its parents settings, or to use custom scripts.  By default, the settings of the root folder for Dragging is <b>Do Not Allow Drag</b> and for Dropping <b>Do Not Allow Drop</b>, with the default Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> specified at <code>/sys/drop</code>.  
+</p><p>To set up your own Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span>, set your component's parameter Drop to Allow Drop, and enter the path for the <a href="DAT.html" title="DAT">DAT</a> specifying your Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> onto the Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> parameter.  This <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> will be executed whenever something is dropped onto this component. The parameters passed to the Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> in Python are:
+</p>
+<ul><li><code>args[0]</code> - dropped node name, <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel or file name, depending on what is dropped</li>
+<li><code>args[1]</code> - x position in network coordinates when the mouse was released</li>
+<li><code>args[2]</code> - y position in network coordinates when the mouse was released</li>
+<li><code>args[3]</code> - the number of the item being dropped</li>
+<li><code>args[4]</code> - the total number of items being dropped</li>
+<li><code>args[5]</code> - the operator type or file extension</li>
+<li><code>args[6]</code> - the fullpath of the network or node the node or channel was dragged from, or the parent directory</li>
+<li><code>args[7]</code> - the network accepting this drop</li></ul><h2><span class="mw-headline" id="Drop_Script_-_Tables">Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> - Tables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=14" title="Edit section: Drop Script - Tables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If you want to process individual node types or file types, you can use a drop table.  Specify a <span class="mw-lingo-term" data-lingo-term-id="15689bbbb7608a8a3d44a96f4cf46e4b">Table DAT</span> in the drop script field.  TouchDesigner will automatically look for 2 columns in the table.  The first column should indicate the data type and the second should indicate the Text <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> that holds the script to process that data type.  TouchDesigner will call the script for each data and with the above parameters.  Here is a sample drop table:
+</p>
+<pre> <code>chop      chop_script        handle <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> nodes
+ sop       sop_script         handle <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> nodes
+ channel   channel_script     handle channel data
+ cmd       cmd_script         runs a .cmd file
+ tox       tox_script         loads a <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file</code>
+</pre>
+<p>Columns are not limited to two, but only the first two columns will be used to process drops.
+</p>
+<h2><span class="mw-headline" id="Drag_Scripts">Drag Scripts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=15" title="Edit section: Drag Scripts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>You can specify whether a component is allowed to be dragged. The default settings for root is Do Not Allow Drag. This means that you cannot click on the control panel view of a component and drag it to a network you can drop in. However, you will still be able to drag the Node View of that component and drop it.
+</p><p>The parameters passed to the Drag <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> in Python are:
+</p>
+<ul><li><code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></code> - dragged operator name</li>
+<li><code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></code> - the index of the operator dragged</li>
+<li><code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span></code> - the total number of operators being dragged</li>
+<li><code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">args</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span></code> - operator type</li>
+<li><code class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><span class="n">args</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span></code> - parent path of dragged operator</li></ul><p>There are a couple of ways to modify what operator will be dropped when you drag a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>. The Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> parameter is the easiest way to specify an alternative operator to drop. Note that this alternative operator must exist, otherwise the component itself will be dropped. The alternative is only used when dropping onto a network or control panel. Text pasted via dragging and dropping, or files saved via dropping onto the desktop, will still use the original.
+</p>
+<h2><span class="mw-headline" id="Drop_Destination_Scripts">Drop Destination Scripts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=16" title="Edit section: Drop Destination Scripts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A more flexible way to specify alternatives to drop, is to use the Drop Destination <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span>.
+If a Drop Destination <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> is specified, a temporary network is created and the component (or the alternative operator specified in Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>) is copied to this network.  You can add or modify operators in this network. 
+</p><p>Then <i><b>echo</b></i> a list of paths.  TouchDesigner will look at the list of paths output by this script, and will copy them to the dropped network.
+A node path is specified relative to the current component when the script exits.  If a node cannot be found for a string, TouchDesigner will assume that it is a file and dropped the string as a file into the drop network.
+</p><p>The arguments for the Destination Drop <span class="mw-lingo-term" data-lingo-term-id="f907e651164789346ae0a1e257c462d8">Script</span> are:
+</p>
+<ul><li><code>arg[0]</code> - full path of script</li>
+<li><code>arg[1]</code> - copy of component (or alternative operator specified in parameter Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>)</li>
+<li><code>arg[2]</code> - full path of temporary network (in /sys)</li>
+<li><code>arg[3]</code> - name of component (or alternative operator specified in parameter Dropped <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>)</li>
+<li><code>arg[4]</code> - full path of component parent (where the drag came from) (or alternative operator parent)</li>
+<li><code>arg[5]</code> - operator type of copy</li></ul><h2><span class="mw-headline" id="Drop_Types">Drop Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit&amp;section=17" title="Edit section: Drop Types">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>By default, dragging a component drops operators or file paths.  If a drop destination script is specified, you can also add a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> table with a list of return types that the drop destination script will provide.  Return types can be one of the op types (<a href="Component.html" title="Component">COMP</a>,<a href="TOP.html" title="TOP">TOP</a>,<a href="CHOP.html" title="CHOP">CHOP</a>,<a href="SOP.html" title="SOP">SOP</a>,<a href="MAT.html" title="MAT">MAT</a>,<a href="DAT.html" title="DAT">DAT</a>), channel, or supported <a href="File_Types.html" title="File Types">filetypes</a>.  For example, a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> table containing just 
+</p>
+<pre> jpg
+ tiff
+ top
+</pre>
+<p>will only let the component being dropped into know that it will only provide those 3 types.  If the component being dropped into has a table of types and corresponding scripts, then you will only be able to drop if there is a matching type.  i.e., if the drop script table looks like this:
+</p>
+<pre> top      top_script
+</pre>
+<p>then only tops supplied by the drop destination script will be accepted by the component.
+</p><p>See also <a href="File_Types.html" title="File Types">File Types</a>
+</p></div><div class="mw-lingo-tooltip" id="0095a9fa74d1713e43e370a7d7846224"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Exporting is the connection of CHOP channels to parameters of operators. The output of each exporting CHOP is one or more channels, active only while the <a href="CHOP_Viewer.html" title="CHOP Viewer">CHOP Viewer</a> is on. The current value of a channel can be exported to a parameter of any operator, overriding that parameter's value. See <a href="Parameter.html" title="Parameter">Parameter</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="30269022e9d8f51beaabb52e5d0de2b7"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>There are 2 kinds of parenting. The "parent component" is the component in which a node resides. The metaphor is extended to include grand parents, grand-grand parents, etc. The root <code>/</code> is the ultimate parent to all nodes. See also <a href="3D_Parenting.html" title="3D Parenting">3D Parenting</a> and panel <a href="Parent.html" title="Parent">Parenting</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b8da6df14bf06283cbf588df6998722e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A custom interactive control panel built within TouchDesigner. Panels are created using <a href="Panel_Component.html" title="Panel Component">Panel Components</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="781dc97dc62331eec3ea9ec4373a3ca8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="CHOP.html" title="CHOP">CHOP</a> outputs one or more channels, where a channel is simply a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>), representing motion, audio, etc. Channels are passed between CHOPs in TouchDesigner networks. Channels can be <a href="Export.html" title="Export">Exported</a> to <a href="Parameter.html" title="Parameter">Parameters</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="eec89088ee408b80387155272b113256"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every component contains a network of operators that create and modify data. The operators are connected by wires that define where data is routed after the operator cooks its inputs and generates an output.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f907e651164789346ae0a1e257c462d8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A set of commands located in a Text DAT that are triggered to run under certain conditions. There are two scripting languages in TouchDesigner: <a href="Python.html" title="Python">Python</a> and the original <a href="Tscript.html" title="Tscript">Tscript</a>. Scripts and single-line commands can also be run in the <a href="Textport.html" title="Textport">Textport</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c93d2a89e225ded900ca3779a6856086"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner Component file, the file type used to save a <a href="Component.html" title="Component">Component</a> of your TouchDesigner project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="15689bbbb7608a8a3d44a96f4cf46e4b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A form of <a href="DAT.html" title="DAT">DATs</a> (Data Operators) that is structured as rows and columns of text strings.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304174151
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.040 seconds
+Real time usage: 2.313 seconds
+Preprocessor visited node count: 88/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3208/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:1184-0!canonical and timestamp 20250304174149 and revision id 24836.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;oldid=24836">https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;oldid=24836</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_TouchDesigner_Tips.html" title="Category:TouchDesigner Tips">TouchDesigner Tips</a></li><li><a href="Category_TDPages.html" title="Category:TDPages">TDPages</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Drag-and-Drop" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="Drag-and-Drop.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Drag-and-Drop&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Drag-and-Drop&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Drag-and-Drop.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Drag-and-Drop" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Drag-and-Drop" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;oldid=24836" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Drag-and-Drop&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 29 December 2021, at 19:06.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"2.313","ppvisitednodes":{"value":88,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":3208,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250304174151","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":253});});</script>
+</body>
+<!-- Cached 20250304180755 -->
+
+<!-- Mirrored from docs.derivative.ca/Drag-and-Drop by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:29 GMT -->
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/GLSL_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>GLSL MAT - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c6f5ce3dce2af9e19e084832","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GLSL_MAT","wgTitle":"GLSL MAT","wgCurRevisionId":32285,"wgRevisionId":32285,"wgArticleId":23,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["MATs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"GLSL_MAT","wgRelevantArticleId":23,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":[
+"January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Constant MAT","Depth MAT","GLSL MAT","In MAT",
+"Line MAT","MAT","Experimental:MAT","MAT Common Page","Null MAT","Out MAT","PBR MAT","Phong MAT","Point Sprite MAT","Experimental:Point Sprite MAT","Select MAT","Switch MAT","Texture Sampling Parameters","Wireframe MAT"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="The GLSL MAT allows you to write or import custom materials into TouchDesigner."/>
+<meta name="keywords" content="TouchDesigner, GLSL, MAT"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=MAT.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="GLSL MAT - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/GLSL_MAT"/>
+<meta property="og:description" content="The GLSL MAT allows you to write or import custom materials into TouchDesigner."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, GLSL, MAT"/>
+<meta property="article:modified_time" content="2024-10-15T11:10:54Z"/>
+<meta property="article:published_time" content="2024-10-15T11:10:54Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"GLSL MAT - TouchDesigner Documentation","headline":"GLSL MAT - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">GLSL MAT<\/span>","identifier":"https:\/\/docs.derivative.ca\/GLSL_MAT","url":"https:\/\/docs.derivative.ca\/GLSL_MAT","description":"The GLSL MAT allows you to write or import custom materials into TouchDesigner.","keywords":"TouchDesigner, GLSL, MAT","dateModified":"2024-10-15T11:10:54Z","datePublished":"2024-10-15T11:10:54Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-GLSL_MAT rootpage-GLSL_MAT skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">GLSL MAT</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarMAT">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The GLSL <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> allows you to write or import custom materials into TouchDesigner. When there are compile errors in a GLSL <a href="Shader.html" title="Shader">shader</a>, a blue/red checkerboard <i>error</i> shader will be displayed.			
+</p><p>For more information on writing a shader, see <a href="Write_a_GLSL_Material.html" title="Write a GLSL Material">Write a GLSL Material</a>, and the <a href="Category_GLSL.html" title="Category:GLSL">GLSL Category</a>.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/GlslMAT_Class" title="GlslMAT Class">glslMAT_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Load_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Load Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Attributes_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Attributes Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Samplers_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Samplers Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Vectors_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Vectors Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Arrays_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Arrays Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Matrices_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Matrices Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Constants_Page"><span class="tocnumber">8</span> <span class="toctext">Parameters - Constants Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Deform_Page"><span class="tocnumber">9</span> <span class="toctext">Parameters - Deform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">10</span> <span class="toctext">Parameters - Common Page</span></a>
+<ul><li class="toclevel-2"><a href="#Blending"><span class="tocnumber">10.1</span> <span class="toctext">Blending</span></a></li>
+<li class="toclevel-2"><a href="#Depth_Test"><span class="tocnumber">10.2</span> <span class="toctext">Depth Test</span></a></li>
+<li class="toclevel-2"><a href="#Alpha_Test"><span class="tocnumber">10.3</span> <span class="toctext">Alpha Test</span></a></li>
+<li class="toclevel-2"><a href="#Wire_Frame"><span class="tocnumber">10.4</span> <span class="toctext">Wire Frame</span></a></li>
+<li class="toclevel-2"><a href="#Cull_Face"><span class="tocnumber">10.5</span> <span class="toctext">Cull Face</span></a></li>
+<li class="toclevel-2"><a href="#Polygon_Depth_Offset"><span class="tocnumber">10.6</span> <span class="toctext">Polygon Depth Offset</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">11</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_MAT_Info_Channels"><span class="tocnumber">11.1</span> <span class="toctext">Common MAT Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">11.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Load_Page"><div class="sectionBarMAT">Parameters - Load Page</div></span></h2>
+<div id="glslversion" style=""><span class="parNameMAT">GLSL Version</span>  <code>glslversion</code> - <span class="mw-customtoggle-glslversion">⊞</span> - Pick what version of GLSL to compile the shader with.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-glslversion">
+<ul><li><span class="parNameMAT">1.20</span> <code>glsl120</code> -</li></ul><ul><li><span class="parNameMAT">3.30</span> <code>glsl330</code> -</li></ul><ul><li><span class="parNameMAT">4.00</span> <code>glsl400</code> -</li></ul><ul><li><span class="parNameMAT">4.10</span> <code>glsl410</code> -</li></ul><ul><li><span class="parNameMAT">4.20</span> <code>glsl420</code> -</li></ul><ul><li><span class="parNameMAT">4.30</span> <code>glsl430</code> -</li></ul><ul><li><span class="parNameMAT">4.40</span> <code>glsl440</code> -</li></ul><ul><li><span class="parNameMAT">4.50</span> <code>glsl450</code> -</li></ul><ul><li><span class="parNameMAT">4.60</span> <code>glsl460</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="predat" style=""><span class="parNameMAT">Preprocess Directives</span>  <code>predat</code> - Use this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> to place preprocessor directives at the start of your shader, such as #extension. This is required since these need to be the first lines in the shader, and TouchDesigner will be adding code to the start of your shader to declare uniforms/functions which would appear before #extension directives located in the main shader.
+<p><i></i>
+</p>
+</div>
+<div id="vdat" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="b22b929ba52471a02d18bb3a4e4472e6">Vertex</span> <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span>  <code>vdat</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> that holds the vertex shader code.
+<p><i></i>
+</p>
+</div>
+<div id="pdat" style=""><span class="parNameMAT">Pixel <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span>  <code>pdat</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> that holds the pixel shader code.
+<p><i></i>
+</p>
+</div>
+<div id="loaduniformnames" style=""><span class="parNameMAT">Load Uniform Names</span>  <code>loaduniformnames</code> - This will read all the declared (and used) uniforms in the compiled GLSL shader, and fill in the various name fields for the uniform parameters.
+<p><i></i>
+</p>
+</div>
+<div id="clearuniformnames" style=""><span class="parNameMAT">Clear Uniform Names</span>  <code>clearuniformnames</code> - This will clear all of the name fields for the uniform parameters.
+<p><i></i>
+</p>
+</div>
+<div id="gdat" style=""><span class="parNameMAT">Geometry <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span>  <code>gdat</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> that holds the geometry shader code.
+<p><i></i>
+</p>
+</div>
+<div id="inherit" style=""><span class="parNameMAT">Inherit Uniforms/Samplers from</span>  <code>inherit</code> - This <span class="mw-lingo-term" data-lingo-term-id="d92a8333dd3ccb895cc65f7455b71206">Material</span> will inherit all of the Textures and Uniforms from the GLSL <span class="mw-lingo-term" data-lingo-term-id="d92a8333dd3ccb895cc65f7455b71206">Material</span> referenced in this parameter.
+<p><i></i>
+</p>
+</div>
+<div id="lightingspace" style=""><span class="parNameMAT">Lighting Space</span>  <code>lightingspace</code> - <span class="mw-customtoggle-lightingspace">⊞</span> - Allows lighting space switch from the current default World Space to legacy Camera Space which was used for TouchDesigner 088.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-lightingspace">
+<ul><li><span class="parNameMAT">World Space</span> <code>worldspace</code> -</li></ul><ul><li><span class="parNameMAT">Camera Space (Legacy 088 shaders)</span> <code>cameraspace</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="inprim" style=""><span class="parNameMAT">Input <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> Type</span>  <code>inprim</code> - <span class="mw-customtoggle-inprim">⊞</span> - The type of geometry that will be inputed into the Geometry <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-inprim">
+<ul><li><span class="parNameMAT">Points</span> <code>points</code> -</li></ul><ul><li><span class="parNameMAT">Lines</span> <code>lines</code> -</li></ul><ul><li><span class="parNameMAT">Triangles</span> <code>triangles</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="outprim" style=""><span class="parNameMAT">Output <span class="mw-lingo-term" data-lingo-term-id="07ee3427562e4f1a5c9f2bfb17fd9eee">Primitive</span> Type</span>  <code>outprim</code> - <span class="mw-customtoggle-outprim">⊞</span> - The type of geometry that the Geometry <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span> will output.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-outprim">
+<ul><li><span class="parNameMAT">Points</span> <code>points</code> -</li></ul><ul><li><span class="parNameMAT">Line Strip</span> <code>linestrip</code> -</li></ul><ul><li><span class="parNameMAT">Triangle Strip</span> <code>tristrip</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="numout" style=""><span class="parNameMAT">Num Output <span class="mw-lingo-term" data-lingo-term-id="e4bb6129669488aedeeb0ae27bb91770">Vertices</span></span>  <code>numout</code> - The maximum number of vertices the Geometry <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span> will output.
+<p><i></i>
+</p>
+</div>
+<div id="twocolor" style=""><span class="parNameMAT">Two Sided Coloring</span>  <code>twocolor</code> - Enables support for two-sided coloring. When this is enabled the <span class="mw-lingo-term" data-lingo-term-id="b22b929ba52471a02d18bb3a4e4472e6">Vertex</span> and/or Geometry shader can write to gl_FrontColor, gl_BackColor, gl_FrontSecondaryColor and gl_BackSecondaryColor and the correct color will be placed into gl_Color and gl_SecondaryColor in the Pixel shader depending on if the primitive's front face or back face is facing the camera. When this is disabled the values placed into gl_FrontColor and gl_FrontSecondaryColor are passed to gl_Color and gl_SecondaryColor regardless of which side of the primitive is facing the camera.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Attributes_Page"><div class="sectionBarMAT">Parameters - <span class="mw-lingo-term" data-lingo-term-id="287234a1ff35a314b5b6bc4e5828e745">Attributes</span> Page</div></span></h2>
+<div id="attr" style="" class="sequenceBlock"><span class="parNameMAT">Attribute</span>  <code>attr</code> - A sequence of attributes that should be made accesible in the shader. In the past these would be manually declared inside the shader, but to add support for POP based workflows, they need to be setup via these parameters instead. You can access the shaders using <code>TDAttrib_&lt;attribName&gt;()</code>.
+<div class="sequenceItem">
+<div id="attr0name" style=""><span class="parNameMAT">Name</span>  <code>attr0name</code> - The name to give the attribute.
+<p><i></i>
+</p>
+</div>
+<div id="attr0type" style=""><span class="parNameMAT">Type</span>  <code>attr0type</code> - <span class="mw-customtoggle-attr0type">⊞</span> - The type, both vector size as well as if it's a float, double (d), integer (i), or unsigned integer (u).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-attr0type">
+<ul><li><span class="parNameMAT">float</span> <code>float</code> -</li></ul><ul><li><span class="parNameMAT">vec2</span> <code>vec2</code> -</li></ul><ul><li><span class="parNameMAT">vec3</span> <code>vec3</code> -</li></ul><ul><li><span class="parNameMAT">vec4</span> <code>vec4</code> -</li></ul><ul><li><span class="parNameMAT">double</span> <code>double</code> -</li></ul><ul><li><span class="parNameMAT">dvec2</span> <code>dvec2</code> -</li></ul><ul><li><span class="parNameMAT">dvec3</span> <code>dvec3</code> -</li></ul><ul><li><span class="parNameMAT">dvec4</span> <code>dvec4</code> -</li></ul><ul><li><span class="parNameMAT">int</span> <code>int</code> -</li></ul><ul><li><span class="parNameMAT">ivec2</span> <code>ivec2</code> -</li></ul><ul><li><span class="parNameMAT">ivec3</span> <code>ivec3</code> -</li></ul><ul><li><span class="parNameMAT">ivec4</span> <code>ivec4</code> -</li></ul><ul><li><span class="parNameMAT">uint</span> <code>uint</code> -</li></ul><ul><li><span class="parNameMAT">uvec2</span> <code>uvec2</code> -</li></ul><ul><li><span class="parNameMAT">uvec3</span> <code>uvec3</code> -</li></ul><ul><li><span class="parNameMAT">uvec4</span> <code>uvec4</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="attr0size" style=""><span class="parNameMAT">Array Size</span>  <code>attr0size</code> - The size of the array. Currently a Size == 1 means it's not an array.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Samplers_Page"><div class="sectionBarMAT">Parameters - Samplers Page</div></span></h2>
+<div id="sampler" style="" class="sequenceBlock"><span class="parNameMAT">Sampler</span>  <code>sampler</code> - Sequence of samplers for use in the shader
+<div class="sequenceItem">
+<div id="sampler0name" style=""><span class="parNameMAT">Name</span>  <code>sampler0name</code> - This is the sampler name that the GLSL program will use to sample from this <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. The samplers need to be declared at the same dimentions as the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> (sampler2D for a 2D <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, sampler3D for 3D <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>).
+<p><i></i>
+</p>
+</div>
+<div id="sampler0top" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span>  <code>sampler0top</code> - <span class="mw-customtoggle-sampler0top">⊞</span> - This is the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> that will be referenced by the above sampler name above it.	
+<p><b>Exposed by the + Button, texture sampling parameters</b>:				
+</p><p>Refer to the <a href="Texture_Sampling_Parameters.html" title="Texture Sampling Parameters">Texture Sampling Parameters</a> article for more information on the parameters exposed by pressing the + button. The <i>parameter</i> prefix for each of the parameters is <i>top[digit]</i>.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0top">
+<div id="sampler0extendu" style=""><span class="parNameMAT">Extend U</span>  <code>sampler0extendu</code> - <span class="mw-customtoggle-sampler0extendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0extendu">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="sampler0extendv" style=""><span class="parNameMAT">Extend V</span>  <code>sampler0extendv</code> - <span class="mw-customtoggle-sampler0extendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0extendv">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="sampler0extendw" style=""><span class="parNameMAT">Extend W</span>  <code>sampler0extendw</code> - <span class="mw-customtoggle-sampler0extendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0extendw">
+<ul><li><span class="parNameMAT">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameMAT">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="sampler0filter" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>sampler0filter</code> - <span class="mw-customtoggle-sampler0filter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0filter">
+<ul><li><span class="parNameMAT">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameMAT">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameMAT">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="sampler0anisotropy" style=""><span class="parNameMAT">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>sampler0anisotropy</code> - <span class="mw-customtoggle-sampler0anisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampler0anisotropy">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameMAT">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameMAT">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameMAT">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Vectors_Page"><div class="sectionBarMAT">Parameters - Vectors Page</div></span></h2>
+<div id="vec" style="" class="sequenceBlock"><span class="parNameMAT">Vector</span>  <code>vec</code> - Sequence of vectors to be used as uniforms
+<div class="sequenceItem">
+<div id="vec0name" style=""><span class="parNameMAT">Name</span>  <code>vec0name</code> - The name of the vector.
+<p><i></i>
+</p>
+</div>
+<div id="vec0value" style=""><span class="parNameMAT">Value</span>  <code>vec0value</code> - <span class="mw-customtoggle-vec0value">⊞</span> - The value to assign to the uniform. If the uniform is a float the first entry of the four is used, if the uniform is a vec2 the first two entries are used, etc.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-vec0value">
+<ul><li><span class="parNameMAT">Value</span> <code>vec0valuex</code> -</li></ul><ul><li><span class="parNameMAT">Value</span> <code>vec0valuey</code> -</li></ul><ul><li><span class="parNameMAT">Value</span> <code>vec0valuez</code> -</li></ul><ul><li><span class="parNameMAT">Value</span> <code>vec0valuew</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Arrays_Page"><div class="sectionBarMAT">Parameters - Arrays Page</div></span></h2>
+<p><span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Uniforms allow you to send <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel data into a GLSL shader as an array. Depending on the array type used, the number of values you can send into the shader may be limited. If you are using Uniform Arrays, you can use the Built-In variable $SYS_GFX_GLSL_MAX_UNIFORMS to get an idea of how many values you can pass to the shader. Current GPUs are vec4 based for uniform arrays, so the maximum array size is $SYS_GFX_GLSL_MAX_UNIFORMS / 4. Other uniforms will take away from this maximum.			
+If you are using Texture Buffers the maximum array size is far bigger, $SYS_GFX_MAX_TEXTURE_BUFFER_SIZE will tell you the max for this. The max for texture buffer is per texture buffer, and having multiple texture buffers does not take away from the max for each array.
+</p>
+<div id="array" style="" class="sequenceBlock"><span class="parNameMAT">Name</span>  <code>array</code> - Sequence of arrays to be used as uniforms
+<p><i></i>
+</p>
+</div>
+<div id="array" style="" class="sequenceBlock"><span class="parNameMAT">Array</span>  <code>array</code> - Sequence of arrays to be used as uniforms
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Matrices_Page"><div class="sectionBarMAT">Parameters - Matrices Page</div></span></h2>
+<p>Relative Xforms are matrices that will transform points and vectors from one space to another space.
+</p>
+<div id="matrix" style="" class="sequenceBlock"><span class="parNameMAT">Matrix</span>  <code>matrix</code> - Sequence of matrices to be used as uniforms
+<div class="sequenceItem">
+<div id="matrix0name" style=""><span class="parNameMAT">Name</span>  <code>matrix0name</code> - The name of the uniform. The uniform should be declared as a mat4.
+<p><i></i>
+</p>
+</div>
+<div id="matrix0value" style=""><span class="parNameMAT">Matrix</span>  <code>matrix0value</code> - The value to assign the matrix. For valid ways to specify this, see the <a href="Matrix_Parameters.html" title="Matrix Parameters">Matrix Parameters</a> article.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="rel" style="" class="sequenceBlock"><span class="parNameMAT">Relative</span>  <code>rel</code> - A sequence of relative transforms. The transform is the relative transform one Object <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> to another.
+<div class="sequenceItem">
+<div id="rel0name" style=""><span class="parNameMAT">Name</span>  <code>rel0name</code> - The name of the uniform. The uniform should be declared as a mat4.
+<p><i></i>
+</p>
+</div>
+<div id="rel0from" style=""><span class="parNameMAT">Xform from</span>  <code>rel0from</code> - Transform from this COMPs world transform.
+<p><i></i>
+</p>
+</div>
+<div id="rel0to" style=""><span class="parNameMAT">To</span>  <code>rel0to</code> - Transform to this COMPs world transform.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Constants_Page"><div class="sectionBarMAT">Parameters - Constants Page</div></span></h2>
+<p><a href="Write_a_GLSL_Material.html#Specialization_Constants" title="Write a GLSL Material">Specialization Constants</a> can optionally have their values assigned here.
+</p>
+<div id="const" style="" class="sequenceBlock"><span class="parNameMAT">Constant</span>  <code>const</code> - Sequence of constant uniforms.
+<div class="sequenceItem">
+<div id="const0name" style=""><span class="parNameMAT">Name</span>  <code>const0name</code> - The constant name, as declared in the shader.
+<p><i></i>
+</p>
+</div>
+<div id="const0value" style=""><span class="parNameMAT">Value</span>  <code>const0value</code> - The value to give the constant.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Deform_Page"><div class="sectionBarMAT">Parameters - Deform Page</div></span></h2>
+<p>Refer to the <a href="Deforming_Geometry_(Skinning).html" title="Deforming Geometry (Skinning)"> Deform Article</a> for more information on doing deforms in TouchDesigner.
+</p>
+<div id="dodeform" style=""><span class="parNameMAT">Deform</span>  <code>dodeform</code> - Enables deforms on this material.
+<p><i></i>
+</p>
+</div>
+<div id="deformdata" style=""><span class="parNameMAT">Get Bone Data:</span>  <code>deformdata</code> - <span class="mw-customtoggle-deformdata">⊞</span> - Specifies where the deform bone data will be obtained.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-deformdata">
+<ul><li><span class="parNameMAT">From a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span></span> <code>sop</code> -</li></ul><ul><li><span class="parNameMAT">From another <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>mat</code> -</li></ul><ul><li><span class="parNameMAT">From a DeformIn <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span> <code>deformin</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="targetsop" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> with Capture Data</span>  <code>targetsop</code> - Specifies the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> that contains the deform capture attributes.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptpath" style=""><span class="parNameMAT">pCaptPath Attrib</span>  <code>pcaptpath</code> - Specifies the name of the pCaptPath attribute to use. When your geometry has been put through a <a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group SOP</a>, the attributes will be split into names like pCaptPath0, pCaptPath1. You can only render 1 bone group at a time, so this should match the group you are rendering with this material.
+<p><i></i>
+</p>
+</div>
+<div id="pcaptdata" style=""><span class="parNameMAT">pCaptData Attrib</span>  <code>pcaptdata</code> - Much like pCaptPath Attrib.
+<p><i></i>
+</p>
+</div>
+<div id="skelrootpath" style=""><span class="parNameMAT">Skeleton <span class="mw-lingo-term" data-lingo-term-id="fa03eb688ad8aa1db593d33dabd89bad">Root</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>skelrootpath</code> - Specifies the path to the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> where the root of the skeleton is located.
+<p><i></i>
+</p>
+</div>
+<div id="mat" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span></span>  <code>mat</code> - When obtaining deform data from a <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> or a Deform In <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>, this is where that <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> is specified.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarMAT">Parameters - Common Page</div></span></h2>
+<h3><span class="mw-headline" id="Blending"><div class="customBar">Blending</div></span></h3>
+<p><a href="Blending.html" title="Blending">Blending</a> is summing the color value of the pixel being drawn and the pixel currently present in the Color-Buffer. Blending is typically used to simulate <a href="Transparency.html" title="Transparency">Transparency</a>.
+		The blending equation is:
+		<code>Final Pixel Value = (Source Blend * Source Color) + (Dest Blend * Destination Color)</code>
+</p><p><br></p>
+<div id="blending" style=""><span class="parNameMAT">Blending (Transparency)</span>  <code>blending</code> - This toggle enables and disables blending. However see the wiki article <a href="Transparency.html" title="Transparency">Transparency</a>.
+<p><i></i>
+</p>
+</div>
+<div id="blendop" style=""><span class="parNameMAT">Blend Operation</span>  <code>blendop</code> - <span class="mw-customtoggle-blendop">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendop">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblend" style=""><span class="parNameMAT">Source Color *</span>  <code>srcblend</code> - <span class="mw-customtoggle-srcblend">⊞</span> - This value is multiplied by the color value of the pixel that is being written to the Color-Buffer (also know as the Source Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblend">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblend" style=""><span class="parNameMAT">Destination Color *</span>  <code>destblend</code> - <span class="mw-customtoggle-destblend">⊞</span> - This value is multiplied by the color value of the pixel currently in the Color-Buffer (also known as the Destination Color).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblend">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="separatealphafunc" style=""><span class="parNameMAT">Separate Alpha Function</span>  <code>separatealphafunc</code> - This toggle enables and disables separate blending options for the alpha values.
+<p><i></i>
+</p>
+</div>
+<div id="blendopa" style=""><span class="parNameMAT">Alpha Blend Operation</span>  <code>blendopa</code> - <span class="mw-customtoggle-blendopa">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendopa">
+<ul><li><span class="parNameMAT">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameMAT">Subtract</span> <code>subtract</code> -</li></ul><ul><li><span class="parNameMAT">Reverse Subtract</span> <code>revsubtract</code> -</li></ul><ul><li><span class="parNameMAT">Minimum</span> <code>minimum</code> -</li></ul><ul><li><span class="parNameMAT">Maximum</span> <code>maximum</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="srcblenda" style=""><span class="parNameMAT">Source Alpha *</span>  <code>srcblenda</code> - <span class="mw-customtoggle-srcblenda">⊞</span> - This value is multiplied by the alpha value of the pixel that is being written to the Color-Buffer (also know as the Source Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srcblenda">
+<ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="destblenda" style=""><span class="parNameMAT">Destination Alpha *</span>  <code>destblenda</code> - <span class="mw-customtoggle-destblenda">⊞</span> - This value is multiplied by the alpha value of the pixel currently in the Color-Buffer (also known as the Destination Alpha).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-destblenda">
+<ul><li><span class="parNameMAT">One</span> <code>one</code> -</li></ul><ul><li><span class="parNameMAT">Src Color</span> <code>scol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Src Color</span> <code>omscol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha</span> <code>sa</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Source Alpha</span> <code>omsa</code> -</li></ul><ul><li><span class="parNameMAT">Dest Alpha</span> <code>da</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Alpha</span> <code>omda</code> -</li></ul><ul><li><span class="parNameMAT">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameMAT">Dest Color</span> <code>dcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Dest Color</span> <code>omdcol</code> -</li></ul><ul><li><span class="parNameMAT">Source Alpha Saturate</span> <code>sas</code> -</li></ul><ul><li><span class="parNameMAT">Constant Color</span> <code>constantcol</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Color</span> <code>omconstantcol</code> -</li></ul><ul><li><span class="parNameMAT">Constant Alpha</span> <code>constanta</code> -</li></ul><ul><li><span class="parNameMAT">One Minus Constant Alpha</span> <code>omconstanta</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstant" style=""><span class="parNameMAT">Blend Constant Color</span>  <code>blendconstant</code> - <span class="mw-customtoggle-blendconstant">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-blendconstant">
+<ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantr</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantg</code> -</li></ul><ul><li><span class="parNameMAT">Blend Constant Color</span> <code>blendconstantb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="blendconstanta" style=""><span class="parNameMAT">Blend Constant Alpha</span>  <code>blendconstanta</code> -
+<p><i></i>
+</p>
+</div>
+<div id="legacyalphabehavior" style=""><span class="parNameMAT">Legacy Alpha Behavior</span>  <code>legacyalphabehavior</code> -
+<p><i></i>
+</p>
+</div>
+<div id="postmultalpha" style=""><span class="parNameMAT">Post-Mult Color by Alpha</span>  <code>postmultalpha</code> - Multiplies the color by alpha after all other operations have taken place.
+<p><i></i>
+</p>
+</div>
+<div id="pointcolorpremult" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Color Pre-Multiply</span>  <code>pointcolorpremult</code> - <span class="mw-customtoggle-pointcolorpremult">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pointcolorpremult">
+<ul><li><span class="parNameMAT">Already Pre-Multiplied By Alpha</span> <code>alreadypremult</code> -</li></ul><ul><li><span class="parNameMAT">Pre-Multiply By Alpha in <span class="mw-lingo-term" data-lingo-term-id="a88a92f4a0e793589f2341851a15c660">Shader</span></span> <code>premultinshader</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="depthtest" style=""><span class="parNameMAT">Depth Test</span>  <code>depthtest</code> - Enables and disables the Depth-Test. If the depth-test is disabled, depths values aren't written to the Depth-Buffer.
+<p><i></i>
+</p>
+</div>
+<div id="depthfunc" style=""><span class="parNameMAT">Depth Test Function</span>  <code>depthfunc</code> - <span class="mw-customtoggle-depthfunc">⊞</span> - The depth value of the pixel being drawn is compared to the depth value currently in the depth-buffer using this function. If the test passes then the pixel is drawn to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer. If the test fails the pixel is discarded and no changes are made to the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-depthfunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Equal</span> <code>equal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul><ul><li><span class="parNameMAT">Not Equal</span> <code>notequal</code> -</li></ul><ul><li><span class="parNameMAT">Always</span> <code>always</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Depth_Test"><div class="customBar">Depth Test</div></span></h3>
+<p>Depth-Testing is comparing the depth value of the pixel being drawn with the pixel currently in the <a href="https://docs.derivative.ca/index.php?title=Frame-Buffer&amp;action=edit&amp;redlink=1" class="new" title="Frame-Buffer (page does not exist)">Frame-Buffer</a>. A pixel that is determined to be in-front of the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will be drawn over it. Pixels that are determined to be behind the pixel currently in the <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span>-Buffer will not be drawn. Depth-Testing allows geometry in a 3D scene to occlude geometry behind it, and be occluded by geometry in-front of it regardless of the order the geometry was drawn.
+</p><p>For a more detailed description of Depth-Testing, refer to the <a href="https://docs.derivative.ca/Depth-Test" title="Depth-Test">Depth-Test</a> article.
+</p><p><br></p>
+<div id="depthwriting" style=""><span class="parNameMAT">Write Depth Values</span>  <code>depthwriting</code> - If Write Depth Values is on, pixels that pass the depth-test will write their depth value to the Depth-Buffer. If this isn't on then no changes will be made to the Depth-Buffer, regardless of if the pixels drawn pass or fail the depth-test.
+<p><i></i>
+</p>
+</div>
+<div id="alphatest" style=""><span class="parNameMAT">Discard Pixels Based on Alpha</span>  <code>alphatest</code> - This enables or disables the pixel alpha test.
+<p><i></i>
+</p>
+</div>
+<div id="alphafunc" style=""><span class="parNameMAT">Keep Pixels with Alpha</span>  <code>alphafunc</code> - <span class="mw-customtoggle-alphafunc">⊞</span> - This menu works in conjunction with the Alpha Threshold parameter below in determining which pixels to keep based on their alpha value.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-alphafunc">
+<ul><li><span class="parNameMAT">Less Than</span> <code>less</code> -</li></ul><ul><li><span class="parNameMAT">Less Than or Equal</span> <code>lessorequal</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than</span> <code>greater</code> -</li></ul><ul><li><span class="parNameMAT">Greater Than or Equal</span> <code>greaterorequal</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="alphathreshold" style=""><span class="parNameMAT">Alpha Threshold</span>  <code>alphathreshold</code> - This value is what the pixel's alpha is compared to to determine if the pixel should be drawn. Pixels with alpha greater than the Alpha Threshold will be drawn. Pixels with alpha less than or equal to the Alpha Threshold will not be drawn.
+<p><i></i>
+</p>
+</div>
+<div id="wireframe" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span>  <code>wireframe</code> - <span class="mw-customtoggle-wireframe">⊞</span> - Enables and disables wire-frame rendering with the option of OpenGL Tesselated or Topology based wireframes.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wireframe">
+<ul><li><span class="parNameMAT">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameMAT">OpenGL Tesselated <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>tesselated</code> -</li></ul><ul><li><span class="parNameMAT">Topology <span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></span> <code>topology</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Alpha_Test"><div class="customBar">Alpha Test</div></span></h3>
+<p>Alpha-testing allows you to choose to draw or not draw a pixel based on its alpha value.
+</p><p><br></p>
+<div id="wirewidth" style=""><span class="parNameMAT">Line Width</span>  <code>wirewidth</code> - This value is the width that the wires will be. This value is in pixels.
+<p><i></i>
+</p>
+</div>
+<div id="cullface" style=""><span class="parNameMAT">Cull Face</span>  <code>cullface</code> - <span class="mw-customtoggle-cullface">⊞</span> - Selects which faces to render.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-cullface">
+<ul><li><span class="parNameMAT">Use Render Setting</span> <code>userender</code> - Use the render settings found in the Render or Render Pass <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>.</li></ul><ul><li><span class="parNameMAT">Neither</span> <code>neither</code> - Do not cull any faces, render everything.</li></ul><ul><li><span class="parNameMAT">Back Faces</span> <code>backfaces</code> - Cull back faces, render front faces.</li></ul><ul><li><span class="parNameMAT">Front Faces</span> <code>frontfaces</code> - Cull front faces, render back faces.</li></ul><ul><li><span class="parNameMAT">Both Faces</span> <code>bothfaces</code> - Cull both faces, render nothing.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffset" style=""><span class="parNameMAT"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</span>  <code>polygonoffset</code> - Turns on the polygon offset feature.
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetfactor" style=""><span class="parNameMAT">Offset Factor</span>  <code>polygonoffsetfactor</code> -
+<p><i></i>
+</p>
+</div>
+<div id="polygonoffsetunits" style=""><span class="parNameMAT">Offset Units</span>  <code>polygonoffsetunits</code> -
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Wire_Frame"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="8d0be41ab58751f3fe6fb5aa87b0e794">Wire</span> <span class="mw-lingo-term" data-lingo-term-id="3bb3e8c8a24891ba0f7608bcc96f8b0a">Frame</span></div></span></h3>
+<p>The wire-frame feature will render the geometry as wire-frame, using the actual primitive type used in the render. What this means is surfaces like Metaballs, NURBs and Beziers will become a wire-frame of the triangles/triangle-strips used to render them (since these types of primitives can't be natively rendered in OpenGL).
+</p><p><br></p>
+<h3><span class="mw-headline" id="Cull_Face"><div class="customBar">Cull Face</div></span></h3>
+<p>The cull face parameter will cull faces from the render output. This can be used as an optimization or sometimes to remove artifacts. See <a href="https://docs.derivative.ca/Back-Face_Culling" title="Back-Face Culling">Back-Face Culling</a> for more infomation.
+</p><p><br></p>
+<h3><span class="mw-headline" id="Polygon_Depth_Offset"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> Depth Offset</div></span></h3>
+<p>This feature pushes the polygons back into space a tiny fraction. This is useful when you are rendering two polygons directly on-top of each other and are experiencing <a href="Z-Fighting.html" title="Z-Fighting">Z-Fighting</a>. Refer to <a href="Polygon_Depth_Offset.html" title="Polygon Depth Offset">Polygon Depth Offset</a> for more information. This is also an important feature when doing <a href="Shadows.html" title="Shadows">shadows</a>.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarMAT">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the GLSL <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_MAT_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span> Info Channels</div></span></h3>
+<h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="GLSL_MAT.html">Latest</option>\n<option value="https://docs.derivative.ca/GLSL_MAT?oldid=30658">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=30659">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=31709">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=31721">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=31722">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=31725">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=31726">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32247">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32249">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32255">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32256">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32257">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32258">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32284">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=32285">wikieditor</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=18177">2021.10000</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=24278">2020.20000</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=17841">2018.28070</option><option value="https://docs.derivative.ca/GLSL_MAT?oldid=14739">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">MATs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Constant_MAT.html" title="Constant MAT">Constant  </a></span>• <span class="catList navigation-not-searchable"><a href="Depth_MAT.html" title="Depth MAT">Depth  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/In_MAT" title="In MAT">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_MAT.html" title="Line MAT">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="MAT.html" title="MAT">MAT </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_MAT.html" title="Experimental:MAT">Experimental:MAT </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/MAT_Common_Page" title="MAT Common Page">MAT Common Page </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Null_MAT" title="Null MAT">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Out_MAT" title="Out MAT">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="PBR_MAT.html" title="PBR MAT">PBR  </a></span>• <span class="catList navigation-not-searchable"><a href="Phong_MAT.html" title="Phong MAT">Phong  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_Sprite_MAT.html" title="Point Sprite MAT">Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Point_Sprite_MAT" title="Experimental:Point Sprite MAT">Experimental:Point Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Select_MAT" title="Select MAT">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Switch_MAT" title="Switch MAT">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_Sampling_Parameters.html" title="Texture Sampling Parameters">Texture Sampling Parameters </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Wireframe_MAT" title="Wireframe MAT">Wireframe  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b22b929ba52471a02d18bb3a4e4472e6"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A sequence of vertices form a <a href="Polygon.html" title="Polygon">Polygon</a> in a <a href="SOP.html" title="SOP">SOP</a>. Each vertex is an integer index into the <a href="Point_List.html" title="Point List">Point List</a>, and each <a href="Point.html" title="Point">Point</a> holds an XYZ position and attributes like Normals and Texture Coordinates.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a88a92f4a0e793589f2341851a15c660"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The OpenGL (pre-2022) or Vulkan (2022-) code that runs on the GPU and creates rendered images from polygons and textures. A shader is programmed in <a href="Text_DAT.html" title="Text DAT">Text DATs</a> and referenced by a <a class="mw-selflink selflink">GLSL Material</a> or a <a href="GLSL_TOP.html" title="GLSL TOP">GLSL TOP</a>. Shaders are composed of up to three parts: Vertex Shader, Pixel Shader and Compute Shader.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d92a8333dd3ccb895cc65f7455b71206"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="07ee3427562e4f1a5c9f2bfb17fd9eee"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A surface type in <a href="SOP.html" title="SOP">SOPs</a> that includes polygon, curve (NURBS and Bezier), patch (NURBS and Bezier) and other basic shapes like sphere, tube and metaball. <a href="Point.html" title="Point">Points</a> and Primitives are part of the <a href="Geometry_Detail.html" title="Geometry Detail">Geometry Detail</a>, which is a part of a <a href="SOP.html" title="SOP">SOP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="e4bb6129669488aedeeb0ae27bb91770"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A sequence of vertices form a <a href="Polygon.html" title="Polygon">Polygon</a> in a <a href="SOP.html" title="SOP">SOP</a>. Each vertex is an integer index into the <a href="Point_List.html" title="Point List">Point List</a>, and each <a href="Point.html" title="Point">Point</a> holds an XYZ position and attributes like Normals and Texture Coordinates.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="287234a1ff35a314b5b6bc4e5828e745"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Information associated with <a href="SOP.html" title="SOP">SOP</a> geometry. <a href="Point.html" title="Point">Points</a> and <a href="Primitive.html" title="Primitive">primitives</a> (polygons, NURBS, etc.) can have any number of attributes - position (P) is standard, and built-in optional attributes are <a href="Normals.html" title="Normals">normals</a> (N), texture coordinates (uv), color (Cd), etc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d7778d0c64b6ba21494c97f77a66885a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operators that need 1 or more inputs are called Filters in TouchDesigner, like a Math CHOP. See <a href="Generator.html" title="Generator">Generator</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fa03eb688ad8aa1db593d33dabd89bad"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The <a href="Network_Path.html" title="Network Path">Network Path</a> or Path for root is simply <code>/</code>. A typical path is <code>/project1/moviein1</code>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3bb3e8c8a24891ba0f7608bcc96f8b0a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The term "Frame" is a measurement of time used (1) in the <a href="Timeline.html" title="Timeline">Timeline</a>, (2) as a time-unit in CHOPs, and (3) as a time unit in movie files that are read into <a href="TOP.html" title="TOP">TOPs</a> and written out from TOPs. The frame rate is the frames per second (<a href="https://docs.derivative.ca/index.php?title=FPS&amp;action=edit&amp;redlink=1" class="new" title="FPS (page does not exist)">FPS</a>).
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8d0be41ab58751f3fe6fb5aa87b0e794"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The connection of an output of one node to the input of another node in a network. In contrast, see <a href="Link.html" title="Link">Link</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="4c0a11247d92f73fb84baa51e37a3263"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A polygon is a type of <a href="Primitive.html" title="Primitive">Primitive</a> that is formed from a set of <a href="Vertex.html" title="Vertex">Vertices</a> in 3D that are implicitly connected together to form a multi-edge shape.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304170041
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.328 seconds
+Real time usage: 0.541 seconds
+Preprocessor visited node count: 7013/1000000
+Post‐expand include size: 188280/2097152 bytes
+Template argument size: 116747/2097152 bytes
+Highest expansion depth: 17/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1743/5000000 bytes
+Lua time usage: 0.250/10 seconds
+Lua virtual size: 9297920/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  435.286      1 -total
+ 75.02%  326.533      1 Template:MATNavBox
+ 73.46%  319.760     18 Template:CatList
+ 22.03%   95.889     72 Template:Parameter
+ 18.47%   80.404      9 Template:ParameterPage
+  9.18%   39.947      1 MAT_Generator_Common_Page
+  6.18%   26.906    150 Template:ParameterItem
+  2.18%    9.507      1 Template:InfoCHOPChannels
+  1.79%    7.798      1 MAT_Deform_Page
+  1.44%    6.266      1 Template:Summary
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:23-0!canonical and timestamp 20250304170040 and revision id 32285.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;oldid=32285">https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;oldid=32285</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_MATs.html" title="Category:MATs">MATs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=GLSL+MAT" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="GLSL_MAT.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:GLSL_MAT&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:GLSL_MAT&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="GLSL_MAT.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/GLSL_MAT" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/GLSL_MAT" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;oldid=32285" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=GLSL_MAT&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 October 2024, at 06:10.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.328","walltime":"0.541","ppvisitednodes":{"value":7013,"limit":1000000},"postexpandincludesize":{"value":188280,"limit":2097152},"templateargumentsize":{"value":116747,"limit":2097152},"expansiondepth":{"value":17,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1743,"limit":5000000},"timingprofile":["100.00%  435.286      1 -total"," 75.02%  326.533      1 Template:MATNavBox"," 73.46%  319.760     18 Template:CatList"," 22.03%   95.889     72 Template:Parameter"," 18.47%   80.404      9 Template:ParameterPage","  9.18%   39.947      1 MAT_Generator_Common_Page","  6.18%   26.906    150 Template:ParameterItem","  2.18%    9.507      1 Template:InfoCHOPChannels","  1.79%    7.798      1 MAT_Deform_Page","  1.44%    6.266      1 Template:Summary"]},"scribunto":{"limitreport-timeusage":{"value":"0.250","limit":"10"},"limitreport-virtmemusage":{"value":9297920,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304170041","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":764});});</script>
+</body>
+<!-- Cached 20250304170041 -->
+
+<!-- Mirrored from docs.derivative.ca/GLSL_MAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:39 GMT -->
+</html>

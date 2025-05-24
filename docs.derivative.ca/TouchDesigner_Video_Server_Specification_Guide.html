@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/TouchDesigner_Video_Server_Specification_Guide by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>TouchDesigner Video Server Specification Guide - Derivative</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"140f526ba5579ef1e4e1bb68","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"TouchDesigner_Video_Server_Specification_Guide","wgTitle":"TouchDesigner Video Server Specification Guide","wgCurRevisionId":19483,"wgRevisionId":19483,"wgArticleId":2390,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"TouchDesigner_Video_Server_Specification_Guide","wgRelevantArticleId":2390,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],
+"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load1652.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="TouchDesigner Video Server Specification Guide"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/TouchDesigner_Video_Server_Specification_Guide"/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:modified_time" content="2020-06-06T01:21:46Z"/>
+<meta property="article:published_time" content="2020-06-06T01:21:46Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"TouchDesigner Video Server Specification Guide - Derivative","headline":"TouchDesigner Video Server Specification Guide - Derivative","mainEntityOfPage":"<span class=\"mw-page-title-main\">TouchDesigner Video Server Specification Guide<\/span>","identifier":"https:\/\/docs.derivative.ca\/TouchDesigner_Video_Server_Specification_Guide","url":"https:\/\/docs.derivative.ca\/TouchDesigner_Video_Server_Specification_Guide","dateModified":"2020-06-06T01:21:46Z","datePublished":"2020-06-06T01:21:46Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-TouchDesigner_Video_Server_Specification_Guide rootpage-TouchDesigner_Video_Server_Specification_Guide skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">TouchDesigner Video Server Specification Guide</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1 tocsection-1"><a href="#Suggested_Operating_System"><span class="tocnumber">1</span> <span class="toctext">Suggested Operating System</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Processor"><span class="tocnumber">2</span> <span class="toctext">Processor</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Memory"><span class="tocnumber">3</span> <span class="toctext">Memory</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Graphics_Card"><span class="tocnumber">4</span> <span class="toctext">Graphics Card</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Motherboard"><span class="tocnumber">5</span> <span class="toctext">Motherboard</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Hard_Drive"><span class="tocnumber">6</span> <span class="toctext">Hard Drive</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Codec_Stats"><span class="tocnumber">7</span> <span class="toctext">Codec Stats</span></a>
+<ul><li class="toclevel-2 tocsection-8"><a href="#Testing_Platform"><span class="tocnumber">7.1</span> <span class="toctext">Testing Platform</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#HAPQ_Codec_Performance_Stats"><span class="tocnumber">7.2</span> <span class="toctext">HAPQ Codec Performance Stats</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#NotchLC_Comparison_Codec_Performance_Stats_for_60FPS"><span class="tocnumber">7.3</span> <span class="toctext">NotchLC Comparison Codec Performance Stats for 60FPS</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#What's_better?_HAPQ_or_HotchLC"><span class="tocnumber">7.4</span> <span class="toctext">What's better? HAPQ or HotchLC</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#4K_Comparison_Codec_Performance_Stats_for_60FPS"><span class="tocnumber">7.5</span> <span class="toctext">4K Comparison Codec Performance Stats for 60FPS</span></a></li>
+</ul></li>
+<li class="toclevel-1 tocsection-13"><a href="#Supported_Video_Data_Input_/_Output_Technology_(SDI_etc)"><span class="tocnumber">8</span> <span class="toctext">Supported Video Data Input / Output Technology (SDI etc)</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Supported_IP_Audio_and_Video_Technology"><span class="tocnumber">9</span> <span class="toctext">Supported IP Audio and Video Technology</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Recommended_Product_Links"><span class="tocnumber">10</span> <span class="toctext">Recommended Product Links</span></a></li>
+</ul></div>
+
+<h2><span class="mw-headline" id="Suggested_Operating_System">Suggested Operating System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=1" title="Edit section: Suggested Operating System">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Windows 10 is the suggested windows operating system.
+</p>
+<h2><span class="mw-headline" id="Processor">Processor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=2" title="Edit section: Processor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>For more detail go here: <a href="https://docs.derivative.ca/Intel_Processors_and_TouchDesigner" title="Intel Processors and TouchDesigner">Intel Processors and TouchDesigner</a></li>
+<li>Derivative recommends Intel processors.</li>
+<li>We have successfully built desktop general use TouchDesigner systems (non pro video servers) using AMD Ryzen 7. These are great processors for TD with tremendous value - <a rel="nofollow" class="external free" href="https://www.amd.com/en/products/cpu/amd-ryzen-7-2700x">https://www.amd.com/en/products/cpu/amd-ryzen-7-2700x</a></li>
+<li>We don't have experience with AMD Threadripper CPUs but we expect they work well. <a rel="nofollow" class="external free" href="https://www.amd.com/en/products/ryzen-threadripper">https://www.amd.com/en/products/ryzen-threadripper</a></li>
+<li>The main TouchDesigner thread runs on a single core. Pick the highest clock speed available for your CPU class and price range.</li>
+<li>Pick a CPU with enough lanes to support the specified PCIe expansion boards.</li>
+<li>If you are getting a single CPU get a CORE CPU.</li>
+<li>If you are getting more than one CPU you must go with XEON.</li></ul><h2><span class="mw-headline" id="Memory">Memory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=3" title="Edit section: Memory">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Consult your CPU and motherboard specs to choose the fastest memory available.</li></ul><h2><span class="mw-headline" id="Graphics_Card">Graphics Card</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=4" title="Edit section: Graphics Card">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>For more detail go here: <a href="https://docs.derivative.ca/Nvidia_Geforce_vs_Quadro" title="Nvidia Geforce vs Quadro">Nvidia Geforce vs Quadro</a></li>
+<li>Derivative recommends Nvidia Graphics cards.</li>
+<li>If you are playing back large format video directly from the graphics card use Quadro.</li>
+<li>If you are playing video using SDI Expansion boards use Quadro.</li>
+<li>If you are looking for good value on a personal workstation for TouchDesigner development use Geforce cards.</li></ul><h2><span class="mw-headline" id="Motherboard">Motherboard</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=5" title="Edit section: Motherboard">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Ensure the motherboard supports the correct slot type for the chosen CPU(s).</li>
+<li>Ensure there are enough PCIe slots of the correct bandwidth to support your video card(s).</li>
+<li>Ensure the graphics cards are installed in the correct slots according to the motherboard manual.</li>
+<li>Be aware of how many PCI Lanes are supported by the CPU and Motherboard.</li>
+<li>NVMe drives often eat PCI Lanes and may effect motherboard lane availability when installed.</li></ul><h2><span class="mw-headline" id="Hard_Drive">Hard Drive</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=6" title="Edit section: Hard Drive">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>For more detail go here: <a href="https://docs.derivative.ca/Storage_Technology_and_TouchDesigner" title="Storage Technology and TouchDesigner">Storage Technology and TouchDesigner</a></li>
+<li>This article by Thinkmate is a must read. <a rel="nofollow" class="external free" href="https://www.thinkmate.com/inside/articles/nvme">https://www.thinkmate.com/inside/articles/nvme</a></li>
+<li>Tom's Hardware has good coverage of NVMe technology. <a rel="nofollow" class="external free" href="https://www.tomshardware.com/reviews/intel-750-series-ssd,4096-2.html">https://www.tomshardware.com/reviews/intel-750-series-ssd,4096-2.html</a></li>
+<li>Use motherboard embedded M.2 slots with NVMe Drive for OS when possible.</li>
+<li>Use NVMe technology over SATA or SAS where-ever possible.</li>
+<li>Use NVMe RAID Controller Cards for larger drives at higher speeds.</li></ul><h2><span class="mw-headline" id="Codec_Stats">Codec Stats</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=7" title="Edit section: Codec Stats">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following section covers testing stats for video codecs. These tables will aid in calculating the speed and size of hard drives required to playback video in TouchDesigner.
+</p>
+<h3><span class="mw-headline" id="Testing_Platform">Testing Platform</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=8" title="Edit section: Testing Platform">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following computer specification is the Derivative video server testing platform.  Most of the codec and SDI playback research and analysis was performed using this system. 
+</p><p><a rel="nofollow" class="external free" href="https://www.supermicro.com/products/system/1U/1028/SYS-1028U-TRT_.cfm">https://www.supermicro.com/products/system/1U/1028/SYS-1028U-TRT_.cfm</a>
+</p>
+<ul><li>Supermicro Ultra SuperServer 1028U-TRT+  - 1U</li>
+<li>Supermicro X10DRU-i+ motherboard</li>
+<li>2 x Six-Core Intel Xeon Processor E5-2643 v4 3.40GHz 20MB Cache (135W).</li>
+<li>8 x 4GB PC4-17000 2133 MHz DDR4 ECC Registered DIMM.</li>
+<li>128GB SATA 6.0Gb/s Disk on Module (MLC) (Vertical).  (DOM)</li>
+<li>7 x 480GB Samsung PM863 Series 2.5 SATA 6.0Gb/s Solid State Drive.</li>
+<li>Supermicro AOC-S3008L-L8i SAS 3.0 12Gb/s 8-Port Host Bus Adapter</li>
+<li>SDI In/Out - AJA Corvid 88</li>
+<li>10x SATA - Dual 10-Gigabit Ethernet (RJ45)</li>
+<li>750W  Redundant.</li></ul><h3><span class="mw-headline" id="HAPQ_Codec_Performance_Stats">HAPQ Codec Performance Stats</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=9" title="Edit section: HAPQ Codec Performance Stats">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The HAPQ Codec is a codec that balances quality with performance. Instead of using the CPU to decode the image data, the HAPQ format is readily consumed and decompressed directly by the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>. HAPQ supports both RGB and RGBA image formats. The testing platform has a drive array that supports a data read rate of 3,300 MB/s.
+</p>
+<table class="wikitable"><tbody><tr><th><span class="mw-lingo-term" data-lingo-term-id="b5a4b64b2aa505bd7c11f79b8a9f458d">Resolution</span></th>
+<th>Format</th>
+<th><span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span></th>
+<th>MB/s</th>
+<th>Max Streams</th>
+<th>CPU% @ Max</th>
+<th><span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>% @ Max</th>
+<th>MB/s @ Max</th>
+<th>Terabyte Per Hour
+</th></tr><tr><td>1920x1080</td>
+<td>RGB</td>
+<td>30</td>
+<td>59</td>
+<td>56</td>
+<td>20%</td>
+<td>52%</td>
+<td>3,300</td>
+<td>0.2124
+</td></tr><tr><td>1920x1080</td>
+<td>RGBA</td>
+<td>30</td>
+<td>87</td>
+<td>40</td>
+<td>20%</td>
+<td>50%</td>
+<td>3,300</td>
+<td>0.3132
+</td></tr><tr><td>1920x1080</td>
+<td>RGB</td>
+<td>60</td>
+<td>118</td>
+<td>28</td>
+<td>20%</td>
+<td>53%</td>
+<td>3,300</td>
+<td>0.4248
+</td></tr><tr><td>1920x1080</td>
+<td>RGBA</td>
+<td>60</td>
+<td>174</td>
+<td>19</td>
+<td>20%</td>
+<td>54%</td>
+<td>3,300</td>
+<td>0.6264
+</td></tr><tr><td>3840x2160</td>
+<td>RGB</td>
+<td>30</td>
+<td>236</td>
+<td>13</td>
+<td>20%</td>
+<td>54%</td>
+<td>3,300</td>
+<td>0.8496
+</td></tr><tr><td>3840x2160</td>
+<td>RGBA</td>
+<td>30</td>
+<td>384</td>
+<td>8</td>
+<td>20%</td>
+<td>54%</td>
+<td>3,300</td>
+<td>1.3824
+</td></tr><tr><td>3840x2160</td>
+<td>RGB</td>
+<td>60</td>
+<td>500</td>
+<td>7</td>
+<td>26%</td>
+<td>54%</td>
+<td>3,500</td>
+<td>1.8
+</td></tr><tr><td>3840x2160</td>
+<td>RGBA</td>
+<td>60</td>
+<td>696</td>
+<td>4</td>
+<td>20%</td>
+<td>54%</td>
+<td>3,300</td>
+<td>2.5056
+</td></tr></tbody></table><h3><span class="mw-headline" id="NotchLC_Comparison_Codec_Performance_Stats_for_60FPS">NotchLC Comparison Codec Performance Stats for 60FPS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=10" title="Edit section: NotchLC Comparison Codec Performance Stats for 60FPS">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>NotchLC is a high quality codec that utilizes the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>. While it requires more CPU and <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> resources than HAPQ, it's optimal compression setting is higher quality to HAPQ and argueably as good or better than Apple ProRes.
+</p><p>The most clear conclusion we can draw from the NotchLC testing is that you will most likely not be able to saturate a high speed drive configuration as well as HAPQ can.  Our HAPQ testing yeilds a playback breaking point that is very close to our testing platform's 3500 MB/s limit.  NotchLC tends to start dropping frames well before the harddrive bandwidth capacity is reached suggesting the limiting factor is more CPU limitations.  
+</p><p><a rel="nofollow" class="external free" href="https://notchlc.notch.one/">https://notchlc.notch.one/</a>
+</p>
+<table class="wikitable"><tbody><tr><th><span class="mw-lingo-term" data-lingo-term-id="b5a4b64b2aa505bd7c11f79b8a9f458d">Resolution</span></th>
+<th>Format</th>
+<th><span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span></th>
+<th>MB/s</th>
+<th>Max Streams</th>
+<th>CPU% @ Max</th>
+<th><span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>% @ Max</th>
+<th>MB/s @ Max</th>
+<th>Terabyte Per Hour
+</th></tr><tr><td>3840x2160</td>
+<td>RGB</td>
+<td>60</td>
+<td>340</td>
+<td>5</td>
+<td>45%</td>
+<td>42%</td>
+<td>1,700</td>
+<td>1.2124
+</td></tr><tr><td>3840x2160</td>
+<td>RGBA</td>
+<td>60</td>
+<td>395</td>
+<td>5</td>
+<td>45%</td>
+<td>45%</td>
+<td>1,700</td>
+<td>1.2124
+</td></tr></tbody></table><h3><span id="What.27s_better.3F_HAPQ_or_HotchLC"></span><span class="mw-headline" id="What's_better?_HAPQ_or_HotchLC">What's better? HAPQ or HotchLC</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=11" title="Edit section: What's better? HAPQ or HotchLC">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Both HAPQ and NotchLC are powerful codecs for playback and recoding high resolution real-time content. HAPQ is a constant bitrate codec that will generate the same file size independent of pixel content. The data is stored in a format that is immediately readable by the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> so it uses very little CPU or <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> resource to decode.  HAPQ is an 8bit codec and compression quality is good but depending on the content, you will see artifacts like banding in soft gradients. NotchLC is a pseudo 10bit Codec so it holds more color information. The NotchLC optimal setting yeilds very high quality file that can be used as an intermediate format for further processing and editing in a traditional visual effects or video production pipeline. NotchLC compression is variable based on the pixel content. The more noisey the content the less it will compress and therefore will yield larger file sizes. A standard live action video file in HAPQ with no secondary compression is approximately 5% smaller than NotchLC. The same file in HAQ with secondary compression is approximately 15% smaller.
+</p><p>The main conclusion to draw from this comparison is that both codecs will require a similar harddrive configuration. Therefore design the harddrive configuration based on HAPQ requirements and the NotchLC playback and recording will be very happy on the same system.
+</p><p>As mentioned earlier, NotchLC is more demanding on CPU and <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>, therefore higher clock speeds and more cores for the processors will increase bandwidth assuming the harddrive configuration has more headroom. A faster <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> is also a positive factor when considering NotchLC and HAPQ.
+</p>
+<h3><span class="mw-headline" id="4K_Comparison_Codec_Performance_Stats_for_60FPS">4K Comparison Codec Performance Stats for 60FPS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=12" title="Edit section: 4K Comparison Codec Performance Stats for 60FPS">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The “CPU%” and “MB/s” columns represent the CPU utilization and storage read bandwidth required for a single stream of video. The “CPU% @ Max” and “MB/s @ Max” represent the utilization of the same resources when running the maximum number of streams without dropping from the required frame rate of 60FPS. This table gives an impression of the difference between supported codecs.
+</p>
+<table class="wikitable"><tbody><tr><th><span class="mw-lingo-term" data-lingo-term-id="b5a4b64b2aa505bd7c11f79b8a9f458d">Resolution</span></th>
+<th>Codec</th>
+<th>Bit Rate</th>
+<th>Format</th>
+<th>File Size Bytes</th>
+<th>CPU%</th>
+<th>MB/s</th>
+<th>Max Streams</th>
+<th>CPU% @ Max</th>
+<th>MB/s @ Max</th>
+<th>Terabyte Per Hour
+</th></tr><tr><td>4096x2160</td>
+<td>H264</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>211,787</td>
+<td>11.00%</td>
+<td>6</td>
+<td>4</td>
+<td>56.00%</td>
+<td>23</td>
+<td>0.04
+</td></tr><tr><td>4096x2160</td>
+<td>H265</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>87,573</td>
+<td>13.00%</td>
+<td>5</td>
+<td>1</td>
+<td>12%</td>
+<td>5</td>
+<td>0.02
+</td></tr><tr><td>4096x2160</td>
+<td>Cineform</td>
+<td>10bit</td>
+<td>YUV</td>
+<td>881,805</td>
+<td>9.00%</td>
+<td>48</td>
+<td>3</td>
+<td>50.00%</td>
+<td>150</td>
+<td>0.18
+</td></tr><tr><td>4096x2160</td>
+<td>Cineform</td>
+<td>12bit</td>
+<td>RGBA</td>
+<td>2,008,283</td>
+<td>18.00%</td>
+<td>70</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>0.4
+</td></tr><tr><td>4096x2160</td>
+<td>Animation</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>624,611</td>
+<td>5.00%</td>
+<td>140</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>0.12
+</td></tr><tr><td>4096x2160</td>
+<td>HAPQ</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>9,331,214</td>
+<td>2.00%</td>
+<td>515</td>
+<td>6</td>
+<td>14.00%</td>
+<td>3,000</td>
+<td>1.87
+</td></tr><tr><td>4096x2160</td>
+<td>HAPQ</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>3,889,233</td>
+<td>5.00%</td>
+<td>215</td>
+<td>6</td>
+<td>42.00%</td>
+<td>1,300</td>
+<td>0.78
+</td></tr><tr><td>4096x2160</td>
+<td>HAPQA</td>
+<td>8bit</td>
+<td>RGBA</td>
+<td>13,996,827</td>
+<td>2.00%</td>
+<td>770</td>
+<td>4</td>
+<td>8.00%</td>
+<td>3,000</td>
+<td>2.8
+</td></tr><tr><td>4096x2160</td>
+<td>HAPQA</td>
+<td>8bit</td>
+<td>RGBA</td>
+<td>4,118,246</td>
+<td>5.00%</td>
+<td>230</td>
+<td>5</td>
+<td>37.00%</td>
+<td>1,100</td>
+<td>0.82
+</td></tr><tr><td>3840x2160</td>
+<td>HAPQ</td>
+<td>8bit</td>
+<td>RGB</td>
+<td>34,992,052</td>
+<td>2.00%</td>
+<td>475</td>
+<td>7</td>
+<td>17.00%</td>
+<td>3,300</td>
+<td>1.75
+</td></tr></tbody></table><h2><span id="Supported_Video_Data_Input_.2F_Output_Technology_.28SDI_etc.29"></span><span class="mw-headline" id="Supported_Video_Data_Input_/_Output_Technology_(SDI_etc)">Supported Video Data Input / Output Technology (SDI etc)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=13" title="Edit section: Supported Video Data Input / Output Technology (SDI etc)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>TouchDesigner supports the latest cards from the following manufacturers.
+</p>
+<ul><li><a href="AJA.html" title="AJA">AJA</a> - <a rel="nofollow" class="external free" href="https://www.aja.com/">https://www.aja.com/</a></li>
+<li>AJA Kona line is well tested - <a rel="nofollow" class="external free" href="https://www.aja.com/family/desktop-io">https://www.aja.com/family/desktop-io</a></li>
+<li>AJA Corvid 88 is part of our video server testing platform - <a rel="nofollow" class="external free" href="https://www.aja.com/family/developer">https://www.aja.com/family/developer</a></li>
+<li><a href="Blackmagic_Design.html" title="Blackmagic Design">Blackmagic Design</a> - <a rel="nofollow" class="external free" href="https://www.blackmagicdesign.com/">https://www.blackmagicdesign.com/</a></li>
+<li>Blackmagic Decklink 8K Pro is well tested - <a rel="nofollow" class="external free" href="https://www.blackmagicdesign.com/products/decklink">https://www.blackmagicdesign.com/products/decklink</a></li>
+<li><a href="Bluefish444.html" title="Bluefish444">Bluefish444</a> - <a rel="nofollow" class="external free" href="https://bluefish444.com/">https://bluefish444.com/</a></li>
+<li>Datapath - <a rel="nofollow" class="external free" href="https://www.datapath.co.uk/">https://www.datapath.co.uk/</a></li></ul><h2><span class="mw-headline" id="Supported_IP_Audio_and_Video_Technology">Supported IP Audio and Video Technology</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=14" title="Edit section: Supported IP Audio and Video Technology">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>TouchDesigner supports the follow IP based technologies for sending audio and video over networks.
+</p>
+<ul><li><a href="Dante.html" title="Dante">Dante</a> - <a rel="nofollow" class="external free" href="https://www.audinate.com/">https://www.audinate.com/</a></li>
+<li><a href="NDI.html" title="NDI">NDI</a> - <a rel="nofollow" class="external free" href="https://www.newtek.com/ndi/">https://www.newtek.com/ndi/</a></li></ul><h2><span class="mw-headline" id="Recommended_Product_Links">Recommended Product Links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;section=15" title="Edit section: Recommended Product Links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>The Intel Ark website is a one stop shop for specifications covering the entire line of prodcuts made by Intel. <a rel="nofollow" class="external free" href="https://ark.intel.com/content/www/us/en/ark.html">https://ark.intel.com/content/www/us/en/ark.html</a></li>
+<li>Nvidia Geforce for non professional / desktop / laptop GPUs. <a rel="nofollow" class="external free" href="https://www.nvidia.com/en-us/geforce/">https://www.nvidia.com/en-us/geforce/</a></li>
+<li>For professional video playback and SDI solutions we recommend Quadro. <a rel="nofollow" class="external free" href="https://www.nvidia.com/en-us/design-visualization/quadro/">https://www.nvidia.com/en-us/design-visualization/quadro/</a></li>
+<li>Supermicro Servers and Workstation Motherboards and Cases. <a rel="nofollow" class="external free" href="https://www.supermicro.com/index_home.cfm">https://www.supermicro.com/index_home.cfm</a></li>
+<li>Thinkmate complete <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> based / NVMe server architectures. They built our testing platform and offer professional system design guidance. <a rel="nofollow" class="external free" href="https://www.thinkmate.com/">https://www.thinkmate.com/</a></li>
+<li>For enterprise solutions / permanent installations we recommend HP. <a rel="nofollow" class="external free" href="https://www8.hp.com/us/en/workstations/overview.html">https://www8.hp.com/us/en/workstations/overview.html</a></li></ul></div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b5a4b64b2aa505bd7c11f79b8a9f458d"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The width and height of an image in pixels. Most TOPs, like the <a href="Movie_File_In_TOP.html" title="Movie File In TOP">Movie File In TOP</a> can set the image resolution. See <a href="TOP_Generator_Common_Page.html" title="TOP Generator Common Page">Aspect Ratio</a> for the width/height ratio of an image, taking into account non-square pixels.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c123b11aa670647408778a3b81a21d70"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The <a href="Frame.html" title="Frame">Frames</a>-per-Second that TouchDesigner's <a href="Timeline.html" title="Timeline">Timeline</a> runs at. Set with <code>project.cookRate</code>.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250305012608
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.028 seconds
+Real time usage: 0.028 seconds
+Preprocessor visited node count: 52/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:2390-0!canonical and timestamp 20250305012608 and revision id 19483.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;oldid=19483">https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;oldid=19483</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=TouchDesigner+Video+Server+Specification+Guide" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="TouchDesigner_Video_Server_Specification_Guide.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:TouchDesigner_Video_Server_Specification_Guide&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="TouchDesigner_Video_Server_Specification_Guide.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/TouchDesigner_Video_Server_Specification_Guide" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/TouchDesigner_Video_Server_Specification_Guide" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;oldid=19483" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=TouchDesigner_Video_Server_Specification_Guide&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 June 2020, at 20:21.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.028","walltime":"0.028","ppvisitednodes":{"value":52,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250305012608","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":100});});</script>
+</body>
+<!-- Cached 20250305035052 -->
+
+<!-- Mirrored from docs.derivative.ca/TouchDesigner_Video_Server_Specification_Guide by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:22 GMT -->
+</html>

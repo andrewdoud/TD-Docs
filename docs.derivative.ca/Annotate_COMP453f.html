@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Annotate_COMP?oldid=31109 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Annotate COMP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"de11d97e87de549439829a67","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Annotate_COMP","wgTitle":"Annotate COMP","wgCurRevisionId":31109,"wgRevisionId":31109,"wgArticleId":3122,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using duplicate arguments in template calls","Touch Glossary","COMPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Annotate_COMP","wgRelevantArticleId":3122,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":
+"/extensions/PageForms","edgValues":{"title":["Actor COMP","Ambient Light COMP","Animation COMP","Annotate COMP","Base COMP","Blend COMP","Bone COMP","Bullet Solver COMP","Button COMP","Camera Blend COMP","Camera COMP","MediaWiki:Common.js","Component","Experimental:Component","Constraint COMP","Container COMP","Engine COMP","Environment Light COMP","FBX COMP","Field COMP","Force COMP","Geo Text COMP","Geometry COMP","GLSL COMP","Handle COMP","Impulse Force COMP","Light COMP","List COMP","Null COMP","Nvidia Flex Solver COMP","Nvidia Flow Emitter COMP","OP Viewer COMP","Parameter COMP","Replicator COMP","Select COMP","Shared Mem In COMP","Shared Mem Out COMP","Slider COMP","Table COMP","Text COMP","Experimental:Text COMP","Time COMP","USD COMP","Widget COMP","Window COMP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","mediawiki.action.styles":"ready",
+"mediawiki.interface.helpers.styles":"ready","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="https://docs.derivative.ca/load.php?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cmediawiki.action.styles%7Cmediawiki.interface.helpers.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="keywords" content="TouchDesigner, Annotate, COMP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="https://docs.derivative.ca/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://docs.derivative.ca/opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://docs.derivative.ca/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=COMP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Annotate COMP - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Annotate_COMP"/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, Annotate, COMP"/>
+<meta property="article:modified_time" content="2024-03-26T16:55:56Z"/>
+<meta property="article:published_time" content="2024-03-26T16:55:56Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Annotate COMP - TouchDesigner Documentation","headline":"Annotate COMP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Annotate COMP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Annotate_COMP","url":"https:\/\/docs.derivative.ca\/Annotate_COMP","keywords":"TouchDesigner, Annotate, COMP","dateModified":"2024-03-26T16:55:56Z","datePublished":"2024-03-26T16:55:56Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Annotate_COMP rootpage-Annotate_COMP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Annotate COMP</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"><div class="mw-message-box-warning mw-revision mw-message-box"><div id="mw-revision-info">Revision as of 11:55, 26 March 2024 by <a href="https://docs.derivative.ca/index.php?title=User:Ivan&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:Ivan (page does not exist)"><bdi>Ivan</bdi></a> <span class="mw-usertoollinks">(<a href="https://docs.derivative.ca/index.php?title=User_talk:Ivan&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="User talk:Ivan (page does not exist)">talk</a> | <a href="https://docs.derivative.ca/Special:Contributions/Ivan" class="mw-usertoollinks-contribs" title="Special:Contributions/Ivan">contribs</a>)</span></div><div id="mw-revision-nav">(<a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;diff=prev&amp;oldid=31109" title="Annotate COMP">diff</a>) <a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;direction=prev&amp;oldid=31109" title="Annotate COMP">← Older revision</a> | Latest revision (diff) | Newer revision → (diff)</div></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><p><br></p>
+<h2><span class="mw-headline" id="Summary"><div class="sectionBarCOMP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Annotates are displayed in the <span class="mw-lingo-term" data-lingo-term-id="b47b79e551ab83200b1bf44ef30ccfb8">Network Editor</span> as colored rectangles containing user-authored text and graphics. It is based on the <a class="mw-selflink selflink">Annotate COMP</a> and allows you to document your networks with useful information like comments and node grouping.
+</p><p>There are three built-in forms of the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>:  <a href="https://docs.derivative.ca/Network_Utilities:_Comments,_Network_Boxes,_Annotates" title="Network Utilities: Comments, Network Boxes, Annotates">Comments, Network Boxes, and Annotates</a> that can be easily created:
+</p>
+<ul><li><b><a href="https://docs.derivative.ca/Network_Utilities:_Comments,_Network_Boxes,_Annotates" title="Network Utilities: Comments, Network Boxes, Annotates">Comments</a></b> are simple, text-only post-it notes. They can be created via the network RMB menu or with the shortcut Shift-C</li>
+<li><b><a href="https://docs.derivative.ca/Network_Utilities:_Comments,_Network_Boxes,_Annotates" title="Network Utilities: Comments, Network Boxes, Annotates">Network Boxes</a></b> group nodes together for labeling/dragging. They can be created via the network RMB menu or with the shortcut Shift-B</li>
+<li><b><a href="#Default_Setup">Annotates</a></b> (Default Setup) do all of the above and incorporate a powerful node-viewing feature. They can be created via the network RMB menu, with the shortcut Shift-A, by holding Alt and left-dragging in the network, or by selecting <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> from the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> family in the <a href="https://docs.derivative.ca/OP_Create_Dialog" title="OP Create Dialog">OP Create Dialog</a>.</li></ul><p><a href="https://docs.derivative.ca/File:PythonIcon.png" class="image"><img alt="PythonIcon.png" src="https://docs.derivative.ca/images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/AnnotateCOMP_Class" title="AnnotateCOMP Class">annotateCOMP_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Default_Setup"><span class="tocnumber">2</span> <span class="toctext">Default Setup</span></a>
+<ul><li class="toclevel-2"><a href="#Parameters_-_Text_Page"><span class="tocnumber">2.1</span> <span class="toctext">Parameters - Text Page</span></a></li>
+<li class="toclevel-2"><a href="#Parameters_-_Settings_Page"><span class="tocnumber">2.2</span> <span class="toctext">Parameters - Settings Page</span></a></li>
+<li class="toclevel-2"><a href="#Parameters_-_OP_Viewer_Page"><span class="tocnumber">2.3</span> <span class="toctext">Parameters - OP Viewer Page</span></a></li>
+<li class="toclevel-2"><a href="#Parameters_-_About_Page"><span class="tocnumber">2.4</span> <span class="toctext">Parameters - About Page</span></a></li>
+<li class="toclevel-2"><a href="#Annotate_Extension"><span class="tocnumber">2.5</span> <span class="toctext">Annotate Extension</span></a>
+<ul><li class="toclevel-3"><a href="#Members"><span class="tocnumber">2.5.1</span> <span class="toctext">Members</span></a></li>
+<li class="toclevel-3"><a href="#Methods"><span class="tocnumber">2.5.2</span> <span class="toctext">Methods</span></a></li>
+</ul></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_Annotate_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Annotate Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Extensions_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Extensions Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">6</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_COMP_Info_Channels"><span class="tocnumber">6.1</span> <span class="toctext">Common COMP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">6.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Default_Setup"><div class="sectionBarCOMP">Default Setup</div></span></h2>
+<p>The default setup of <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> COMPs is a full-featured comment, network box, and node viewer, designed to be a flexible network organization and documentation tool. The following features are built using internal nodes and an extension and are not inherent parts of the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> itself.
+</p><p>The <b>lock icon</b> in the top-right of the box locks and unlocks text editing in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>. In a locked <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>, you cannot edit text and clicking on the body area clicks through to the network below. Annotates also have a <b>RMB menu</b> for quick access to many features. It is always accessible through the title bar, and accessible through the body when the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> is unlocked.
+</p><p>You can <b>size</b> Annotates by dragging the edges and <b>move</b> them by dragging the title bar. In Comment mode, which has no title bar, you can drag the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> by the text body. When the <b>Enclose OPs</b> feature is on, dragging an <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> will <b>drag all enclosed nodes</b> (including other Annotates) with it. To drag an annotate without dragging its contents, you can hold down Alt while dragging.
+</p><p>Annotates have powerful built-in <b>Operator Viewer features</b>, including positioning and interaction, which can be controlled using <a href="#Parameters_-_OP_Viewer_Page">Parameters - OP Viewer Page</a>. For basic <b>text features</b> see <a href="#Parameters_-_Text_Page">Parameters - Text Page</a>. For deeper <b>text editing and color features</b> including limiting text width, wrapping, and more, see <a href="#Parameters_-_Settings_Page">Parameters - Settings Page</a>. 
+</p><p>Annotates are <b>layered in the network</b> so that smaller boxes are in front of larger boxes, but you have more control with the Depth Layer parameter. Annotates are positioned behind the grid by default, but you can put them in front of the grid, or even on top of the nodes tiles. For example, put an image with transparency in the Viewer OP and turn Back Color Alpha to 0, then set Layer Zone to be Above Nodes.
+</p><p>Because the Enter shortcut and zoom-to-enter are disabled in Annotates, to <b>get inside an <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span></b>, use one of the following methods: 
+</p>
+<ol><li>Box-pick an <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>, then right-click on the network and select "Jump Down".</li>
+<li>Find the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> via the path bar at the top of the network pane.</li>
+<li>Box-pick an <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>, right-click on the "i" icon on the <span class="mw-lingo-term" data-lingo-term-id="ada8247bf54d9f0708c46bf41b4d3322">Parameter Dialog</span> and select Enter <span class="mw-lingo-term" data-lingo-term-id="55f6611cb342565cf0f5002400f53a95">Annotation</span> from the node menu.</li></ol><p>You can switch between the three built-in <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> modes by using the Mode parameter of the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> or the <b>Mode</b> menu in the right-click menu.
+</p>
+<h3><span class="mw-headline" id="Parameters_-_Text_Page"><div class="sectionBarCOMP">Parameters - Text Page</div></span></h3>
+<p>Basic text features including editable/searchable parameters holding the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>'s text.
+</p>
+<div id="Titletext" style=""><span class="parNameCOMP">Title Text</span>  <code>Titletext</code> - Text in the title bar.
+<p><i></i>
+</p>
+</div>
+<div id="Titleheight" style=""><span class="parNameCOMP">Title Height</span>  <code>Titleheight</code> - Height of the title bar. Title font height adjusts automatically to fill.
+<p><i></i>
+</p>
+</div>
+<div id="Titlealign" style=""><span class="parNameCOMP">Title Align</span>  <code>Titlealign</code> - <span class="mw-customtoggle-Titlealign">⊞</span> - Alignment of title text.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Titlealign">
+<ul><li><span class="parNameCOMP">Left</span> <code>left</code> -</li></ul><ul><li><span class="parNameCOMP">Center</span> <code>center</code> -</li></ul><ul><li><span class="parNameCOMP">Right</span> <code>right</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="Bodytext" style=""><span class="parNameCOMP">Body Text</span>  <code>Bodytext</code> - Text in the body area. Use an expression for newlines etc.
+<p><i></i>
+</p>
+</div>
+<div id="Bodyfontsize" style=""><span class="parNameCOMP">Body Font Size</span>  <code>Bodyfontsize</code> - Size of text in the body area.
+<p><i></i>
+</p>
+</div>
+<div id="Bodylimitwidth" style=""><span class="parNameCOMP">Limit Body Text Width</span>  <code>Bodylimitwidth</code> - Limit the width of the text area.
+<p><i></i>
+</p>
+</div>
+<div id="Bodymaxwidth" style=""><span class="parNameCOMP">Max Body Text Width</span>  <code>Bodymaxwidth</code> - Width limit that will cause wraparound or cut-off. Measured in Panel units.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h3><span class="mw-headline" id="Parameters_-_Settings_Page"><div class="sectionBarCOMP">Parameters - Settings Page</div></span></h3>
+<p>More advanced text control and color parameters.
+</p>
+<div id="Mode" style=""><span class="parNameCOMP">Mode</span>  <code>Mode</code> - <span class="mw-customtoggle-Mode">⊞</span> - Switch between Comment, Network Box, and <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> Modes. For more, see <a href="https://docs.derivative.ca/Network_Utilities:_Comments,_Network_Boxes,_Annotates" title="Network Utilities: Comments, Network Boxes, Annotates">Network Utilities: Comments, Network Boxes, Annotates</a>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Mode">
+<ul><li><span class="parNameCOMP">Comment</span> <code>comment</code> - Simple text only, no title or OP <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span>.</li></ul><ul><li><span class="parNameCOMP">Network Box</span> <code>networkbox</code> - Use this to group/move/label a set of nodes only.</li>
+<li><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span></span> <code>annotate</code> - All features available.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="Smartquote" style=""><span class="parNameCOMP">Smart Quote</span>  <code>Smartquote</code> - Converts quotes, ellipsis, and dashes to more typographically nice unicode versions.
+<p><i></i>
+</p>
+</div>
+<div id="Bodywordwrap" style=""><span class="parNameCOMP">Body Word Wrap</span>  <code>Bodywordwrap</code> - Wrap body text when it extends past right bound.
+<p><i></i>
+</p>
+</div>
+<div id="Backcolor" style=""><span class="parNameCOMP">Back Color</span>  <code>Backcolor</code> - <span class="mw-customtoggle-Backcolor">⊞</span> - Background color base.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Backcolor">
+<ul><li><span class="parNameCOMP">Back Color</span> <code>Backcolorr</code> -</li></ul><ul><li><span class="parNameCOMP">Back Color</span> <code>Backcolorg</code> -</li></ul><ul><li><span class="parNameCOMP">Back Color</span> <code>Backcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="Backcoloralpha" style=""><span class="parNameCOMP">Back Color Alpha</span>  <code>Backcoloralpha</code> - Back color alpha.
+<p><i></i>
+</p>
+</div>
+<div id="Opacity" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> Opacity</span>  <code>Opacity</code> - Opacity of the entire <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h3><span class="mw-headline" id="Parameters_-_OP_Viewer_Page"><div class="sectionBarCOMP">Parameters - OP Viewer Page</div></span></h3>
+<p>Controls for the embedded Operator viewer.
+</p>
+<div id="Opviewerdisplay" style=""><span class="parNameCOMP">Viewer Display</span>  <code>Opviewerdisplay</code> - Turn the visibility of the viewer specified in the OP parameter below on or off.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewer" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>Opviewer</code> - The operator whose viewer is displayed in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerinteractive" style=""><span class="parNameCOMP">OP Viewer Interactive</span>  <code>Opviewerinteractive</code> - Allow interaction with the OP viewer.
+<p><i></i>
+</p>
+</div>
+<div id="Opvieweroversize" style=""><span class="parNameCOMP">Size/Aspect Override</span>  <code>Opvieweroversize</code> - <span class="mw-customtoggle-Opvieweroversize">⊞</span> - Use the Size/Aspect Override to control viewer's size in the background.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Opvieweroversize">
+<ul><li><span class="parNameCOMP">Natural</span> <code>natural</code> -</li></ul><ul><li><span class="parNameCOMP">Specify</span> <code>specify</code> -</li></ul><ul><li><span class="parNameCOMP">Auto-fit</span> <code>autofit</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		    
+<div id="Opviewersize" style=""><span class="parNameCOMP">Size/Aspect</span>  <code>Opviewersize</code> - <span class="mw-customtoggle-Opviewersize">⊞</span> - Diplay viewer as-if it were being displayed at this resolution. This is particularly useful for zooming into operators that don't have a built-in resolution, like CHOPs, SOPs, and DATs.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Opviewersize">
+<ul><li><span class="parNameCOMP">Size/Aspect</span> <code>Opviewersizew</code> -</li></ul><ul><li><span class="parNameCOMP">Size/Aspect</span> <code>Opviewersizeh</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerscale" style=""><span class="parNameCOMP">Scale</span>  <code>Opviewerscale</code> - Scale the viewer by this factor.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerjustifyx" style=""><span class="parNameCOMP">Justify X</span>  <code>Opviewerjustifyx</code> - Move the border of the viewer towards left edge of <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> when negative or towards right edge when positive.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerjustifyy" style=""><span class="parNameCOMP">Justify Y</span>  <code>Opviewerjustifyy</code> - Move the border of the viewer towards bottom edge of <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> when negative or towards top edge when positive.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerfillbodytitle" style=""><span class="parNameCOMP">Cover Body and Title</span>  <code>Opviewerfillbodytitle</code> - When True, allow viewer to display in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> title area as well as body.
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerzoom" style=""><span class="parNameCOMP">OP Viewer Zoom</span>  <code>Opviewerzoom</code> - Zoom the viewer by this scale factor without increasing the size of its display area in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>.
+<p><i></i>
+</p>
+</div>
+<div id="Opvieweroffset" style=""><span class="parNameCOMP">OP Viewer Offset</span>  <code>Opvieweroffset</code> - <span class="mw-customtoggle-Opvieweroffset">⊞</span> - Offsets the displayed area within the viewer. Combined with OP Viewer Zoom, this lets you display a specific area of a viewer, such as a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel or table cell.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-Opvieweroffset">
+<ul><li><span class="parNameCOMP">OP Viewer Offset</span> <code>Opvieweroffsetx</code> -</li></ul><ul><li><span class="parNameCOMP">OP Viewer Offset</span> <code>Opvieweroffsety</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="Opviewerfillalpha" style=""><span class="parNameCOMP">Fill Alpha</span>  <code>Opviewerfillalpha</code> - Alpha value of the background area in the OP <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span>.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h3><span class="mw-headline" id="Parameters_-_About_Page"><div class="sectionBarCOMP">Parameters - About Page</div></span></h3>
+<div id="Version" style=""><span class="parNameCOMP">Version</span>  <code>Version</code> - <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> default setup version.
+<p><i></i>
+</p>
+</div>
+<div id="Help" style=""><span class="parNameCOMP">Help</span>  <code>Help</code> - Click to open this page.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h3><span class="mw-headline" id="Annotate_Extension"><div class="sectionBarCOMP"><span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> Extension</div></span></h3>
+<h4><span class="mw-headline" id="Members">Members</span></h4>
+<div id="BodyColor" style="display:inline;"></div><p><code class="python">BodyColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA of color used for body.</p></blockquote>
+<div id="BodyFontColor" style="display:inline;"></div><p><code class="python">BodyFontColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA of font color used in body.</p></blockquote>
+<div id="BodySelectColor" style="display:inline;"></div><p><code class="python">BodySelectColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA of selection color for body text.</p></blockquote>
+<div id="BodyText" style="display:inline;"></div><p><code class="python">BodyText</code> →  : 
+</p><blockquote><p>Text of body.</p></blockquote>
+<div id="Color" style="display:inline;"></div><p><code class="python">Color</code> → <code class="return">[R, G, B]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGB of base color set in Back Color parameter</p></blockquote>
+<div id="EncloseOPs" style="display:inline;"></div><p><code class="python">EncloseOPs</code> → <code class="return">bool</code> : 
+</p><blockquote><p>If True, <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> encloses operators in its network area for movement and other features</p></blockquote>
+<div id="TitleColor" style="display:inline;"></div><p><code class="python">TitleColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA background color of title area</p></blockquote>
+<div id="TitleFontColor" style="display:inline;"></div><p><code class="python">TitleFontColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA font color of title area</p></blockquote>
+<div id="TitleSelectColor" style="display:inline;"></div><p><code class="python">TitleSelectColor</code> → <code class="return">[R, G, B, A]</code> <b>(Read Only)</b>: 
+</p><blockquote><p>RGBA of selection color for title text</p></blockquote>
+<div id="TitleText" style="display:inline;"></div><p><code class="python">TitleText</code> →  : 
+</p><blockquote><p>Text in title area</p></blockquote>
+<h4><span class="mw-headline" id="Methods">Methods</span></h4>
+<div id="OnCreate" style="display:inline;"></div><p><code class="python">OnCreate(Mode)</code>:
+</p><blockquote><p>Called on initial creation of <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>. Mode can be "annotate", "comment", or "networkbox"</p></blockquote>
+<h2><span class="mw-headline" id="Parameters_-_Annotate_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> Page</div></span></h2>
+<div id="opviewer" style=""><span class="parNameCOMP">Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span>  <code>opviewer</code> - The operator whose view is displayed in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> area. This defines what the entire <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> looks like and is not to be confused with the OP parameter in the OP Viewer page, which is an integrated viewer _within_ the annotate.
+<p><i></i>
+</p>
+</div>
+<div id="enable" style=""><span class="parNameCOMP">Enable Interaction</span>  <code>enable</code> - When False, disables <i>all</i> interaction with the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> and passes any clicks through to the network below.
+<p><i></i>
+</p>
+</div>
+<div id="encloseops" style=""><span class="parNameCOMP">Enclose Operators</span>  <code>encloseops</code> - When True, other operators in the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span>'s area will move with it when it is moved.
+<p><i></i>
+</p>
+</div>
+<div id="utility" style=""><span class="parNameCOMP">Utility</span>  <code>utility</code> - Sets whether or not this is a <a href="https://docs.derivative.ca/Network_Utilities:_Comments,_Network_Boxes,_Annotates#Network_Utility_Node_Details" title="Network Utilities: Comments, Network Boxes, Annotates">Utility node</a>.
+<p><i></i>
+</p>
+</div>
+<div id="includeinorder" style=""><span class="parNameCOMP">Include in Order</span>  <code>includeinorder</code> - Include this <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> in the Order of annotateCOMPs in this network.
+<p><i></i>
+</p>
+</div>
+<div id="order" style=""><span class="parNameCOMP">Order</span>  <code>order</code> - Order number of this annotateCOMP
+<p><i></i>
+</p>
+</div>
+<div id="layerzone" style=""><span class="parNameCOMP">Layer Zone</span>  <code>layerzone</code> - <span class="mw-customtoggle-layerzone">⊞</span> - Where this annotateCOMP is layered with regards to other items in the network.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-layerzone">
+<ul><li><span class="parNameCOMP">Below Grid</span> <code>belowgrid</code> - Behind everything, including the grid.</li></ul><ul><li><span class="parNameCOMP">Between Grid and Nodes</span> <code>betweengridnodes</code> - Behind nodes but in front of grid</li></ul><ul><li><span class="parNameCOMP">Above Nodes</span> <code>abovenodes</code> - Above everything, including grid and nodes.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="layer" style=""><span class="parNameCOMP">Depth Layer</span>  <code>layer</code> - Last ditch layering index. AnnotateCOMPs in the same zone will always attempt to display smaller annotateCOMPs they enclose on top.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Extensions_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> Page</div></span></h2>
+<p>The <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> parameter page sets the component's python extensions.  Please see <a href="https://docs.derivative.ca/Extensions" title="Extensions">extensions</a> for more information.
+</p>
+<div id="ext" style="" class="sequenceBlock"><span class="parNameCOMP">Extension</span>  <code>ext</code> - Sequence of info for creating extensions on this component
+<div class="sequenceItem">
+<div id="ext0object" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span>  <code>ext0object</code> - A number of class instances that can be attached to the component.
+<p><i></i>
+</p>
+</div>    
+<div id="ext0name" style=""><span class="parNameCOMP">Name</span>  <code>ext0name</code> - Optional name to search by, instead of the instance class name.
+<p><i></i>
+</p>
+</div>
+<div id="ext0promote" style=""><span class="parNameCOMP">Promote</span>  <code>ext0promote</code> - Controls whether or not the extensions are visible directly at the component level, or must be accessed through the <code>.ext</code> member.  Example:  <code>n.Somefunction</code> vs <code>n.ext.Somefunction</code>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="reinitextensions" style=""><span class="parNameCOMP">Re-Init <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span></span>  <code>reinitextensions</code> - Recompile all extension objects. Normally extension objects are compiled only when they are referenced and their definitions have changed.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarCOMP">Parameters - Common Page</div></span></h2>
+<p>The Common parameter page sets the component's <a href="https://docs.derivative.ca/Node_Viewer" title="Node Viewer">node viewer</a> and <a href="https://docs.derivative.ca/Clone" title="Clone">clone</a> relationships.
+</p>
+<div id="parentshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span></span>  <code>parentshortcut</code> - Specifies a name you can use anywhere inside the component as the path to that component. See <a href="https://docs.derivative.ca/Parent_Shortcut" title="Parent Shortcut">Parent Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div id="opshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="127c8e2bf0b36c9d6a86d99b969d563a">Global OP Shortcut</span></span>  <code>opshortcut</code> - Specifies a name you can use anywhere at all as the path to that component. See <a href="https://docs.derivative.ca/Global_OP_Shortcut" title="Global OP Shortcut">Global OP Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div id="iop" style="" class="sequenceBlock"><span class="parNameCOMP">Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop</code> - Sequence header for internal operators.
+<div class="sequenceItem">
+<div id="iop0shortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span></span>  <code>iop0shortcut</code> - Specifies a name you can use anywhere inside the component as a path to "Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>" below. See <a href="https://docs.derivative.ca/Internal_Operators" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+<div id="iop0op" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop0op</code> - The path to the Internal OP inside this component. See <a href="https://docs.derivative.ca/Internal_Operators" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="opviewer" style=""><span class="parNameCOMP">Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span>  <code>opviewer</code> - Select which operator's node viewer to use when the Node View parameter above is set to Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span>.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloning" style=""><span class="parNameCOMP">Enable Cloning</span>  <code>enablecloning</code> - Control if the OP should be actively cloneing. Turning this off causes this node to stop cloning it's '<span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master'.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloningpulse" style=""><span class="parNameCOMP">Enable Cloning <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enablecloningpulse</code> - Instantaneously clone the contents.
+<p><i></i>
+</p>
+</div>
+<div id="clone" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master</span>  <code>clone</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a component used as the Master <a href="https://docs.derivative.ca/Clone" title="Clone">Clone</a>.
+<p><i></i>
+</p>
+</div>
+<div id="loadondemand" style=""><span class="parNameCOMP">Load on Demand</span>  <code>loadondemand</code> - Loads the component into memory only when required. Good to use for components that are not always used in the project.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltox" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></span>  <code>enableexternaltox</code> - When on (default), the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file will be loaded when the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> starts and the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will match that of the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>. This can be turned off to avoid loading from the referenced external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> on startup if desired (the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are instead loaded from the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file). Useful if you wish to have a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> reference an external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> but not always load from it unless you specifically push the Re-Init Network parameter button.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltoxpulse" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enableexternaltoxpulse</code> - This button will re-load from the external <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file (if present).
+<p><i></i>
+</p>
+</div>
+<div id="externaltox" style=""><span class="parNameCOMP">External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>externaltox</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file on disk which will source the component's contents upon start of a <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>. This allows for components to contain networks that can be updated independently. If the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file can not be found, whatever the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file was saved with will be loaded.
+<p><i></i>
+</p>
+</div>
+<div id="reloadcustom" style=""><span class="parNameCOMP">Reload Custom Parameters</span>  <code>reloadcustom</code> - When this checkbox is enabled, the values of the component's <a href="https://docs.derivative.ca/Custom_Parameters" title="Custom Parameters">Custom Parameters</a> are reloaded when the <a href="https://docs.derivative.ca/.tox" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="https://docs.derivative.ca/.tox" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="reloadbuiltin" style=""><span class="parNameCOMP">Reload Built-In Parameters</span>  <code>reloadbuiltin</code> - When this checkbox is enabled, the values of the component's built-in parameters are reloaded when the <a href="https://docs.derivative.ca/.tox" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="https://docs.derivative.ca/.tox" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="savebackup" style=""><span class="parNameCOMP">Save Backup of External</span>  <code>savebackup</code> - When this checkbox is enabled, a backup copy of the component specified by the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> parameter is saved in the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file.  This backup copy will be used if the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> can not be found. This may happen if the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> was renamed, deleted, or the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file is running on another computer that is missing component media.
+<p><i></i>
+</p>
+</div>
+<div id="subcompname" style=""><span class="parNameCOMP">Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load</span>  <code>subcompname</code> - When loading from an External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file, this option allows you to reach into the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> and pull out a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and make that the top-level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, ignoring everything else in the file (except for the contents of that <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>). For example if a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file named <code>project1<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> contains <code>project1/geo1</code>, putting <code>geo1</code> as the Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load, will result in <code>geo1</code> being loaded in place of the current <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. If this parameter is blank, it just loads the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file normally using the top level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> in the file.
+<p><i></i>
+</p>
+</div>
+<div id="relpath" style=""><span class="parNameCOMP">Relative File <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> Behavior</span>  <code>relpath</code> - <span class="mw-customtoggle-relpath">⊞</span> - Set whether the child file paths within this <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> itself or the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>, or inherit from parent.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-relpath">
+<ul><li><span class="parNameCOMP">Use <span class="mw-lingo-term" data-lingo-term-id="30269022e9d8f51beaabb52e5d0de2b7">Parent</span>'s Behavior</span> <code>inherit</code> - Inherit setting from parent.</li></ul><ul><li><span class="parNameCOMP">Relative to Project File (<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span>)</span> <code>project</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file.</li></ul><ul><li><span class="parNameCOMP">Relative to External <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> File (<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>)</span> <code>externaltox</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file. When no external <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> file is specified, or when Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> is not toggled on, this doesn't have any impact.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarCOMP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the <span class="mw-lingo-term" data-lingo-term-id="5493350be66a200980ee57ddd9debc1b">Annotate</span> <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can be accessed via an <a href="https://docs.derivative.ca/Info_CHOP" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_COMP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_children</span> - Number of children in this component.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+
+TouchDesigner Build: <select onchange="location=this.value;"><option value="https://docs.derivative.ca/Annotate_COMP">Latest</option>\n<option value="https://docs.derivative.ca/Annotate_COMP?oldid=30722">wikieditor</option><option value="https://docs.derivative.ca/Annotate_COMP?oldid=31109" selected>wikieditor</option><option value="https://docs.derivative.ca/Annotate_COMP?oldid=30273">2023.11280</option><option value="https://docs.derivative.ca/Annotate_COMP?oldid=26669">2022.24140</option><option value="https://docs.derivative.ca/Annotate_COMP?oldid=24665">before 2022.24140</option></select></p>
+<table><tbody><tr><th class="navBox">COMPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Actor_COMP" title="Actor COMP">Actor  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Ambient_Light_COMP" title="Ambient Light COMP">Ambient Light  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Animation_COMP" title="Animation COMP">Animation  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Annotate  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Base_COMP" title="Base COMP">Base  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Blend_COMP" title="Blend COMP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Bone_COMP" title="Bone COMP">Bone  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Bullet_Solver_COMP" title="Bullet Solver COMP">Bullet Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Button_COMP" title="Button COMP">Button  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Camera_Blend_COMP" title="Camera Blend COMP">Camera Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Camera_COMP" title="Camera COMP">Camera  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/MediaWiki:Common.js" title="MediaWiki:Common.js">MediaWiki:Common.js </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Component" title="Component">Component </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Component" title="Experimental:Component">Experimental:Component </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Constraint_COMP" title="Constraint COMP">Constraint  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Container_COMP" title="Container COMP">Container  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Engine_COMP" title="Engine COMP">Engine  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Environment_Light_COMP" title="Environment Light COMP">Environment Light  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/FBX_COMP" title="FBX COMP">FBX  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Field_COMP" title="Field COMP">Field  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Force_COMP" title="Force COMP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Geo_Text_COMP" title="Geo Text COMP">Geo Text  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Geometry_COMP" title="Geometry COMP">Geometry  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/GLSL_COMP" title="GLSL COMP">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Handle_COMP" title="Handle COMP">Handle  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Impulse_Force_COMP" title="Impulse Force COMP">Impulse Force  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Light_COMP" title="Light COMP">Light  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/List_COMP" title="List COMP">List  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Null_COMP" title="Null COMP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Nvidia_Flex_Solver_COMP" title="Nvidia Flex Solver COMP">Nvidia Flex Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Nvidia_Flow_Emitter_COMP" title="Nvidia Flow Emitter COMP">Nvidia Flow Emitter  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/OP_Viewer_COMP" title="OP Viewer COMP">OP Viewer  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Parameter_COMP" title="Parameter COMP">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Replicator_COMP" title="Replicator COMP">Replicator  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Select_COMP" title="Select COMP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Shared_Mem_In_COMP" title="Shared Mem In COMP">Shared Mem In  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Shared_Mem_Out_COMP" title="Shared Mem Out COMP">Shared Mem Out  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Slider_COMP" title="Slider COMP">Slider  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Table_COMP" title="Table COMP">Table  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Text_COMP" title="Text COMP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Text_COMP" title="Experimental:Text COMP">Experimental:Text  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Time_COMP" title="Time COMP">Time  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/USD_COMP" title="USD COMP">USD  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Widget_COMP" title="Widget COMP">Widget  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Window_COMP" title="Window COMP">Window  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="b47b79e551ab83200b1bf44ef30ccfb8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A pane type where networks of operators can be created and edited.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5493350be66a200980ee57ddd9debc1b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Annotates are displayed in the Network Editor as colored rectangles containing user-authored text and graphics. It is based on the <a class="mw-selflink selflink">Annotate COMP</a> and allows you to document your networks with useful information like comments and node grouping.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="https://docs.derivative.ca/Operator_Family" title="Operator Family">Operator Family</a> that contains its own <a href="https://docs.derivative.ca/Network" title="Network">Network</a>. There are sixteen 3D <a href="https://docs.derivative.ca/Object_Component" title="Object Component">Object Component</a> and ten 2D <a href="https://docs.derivative.ca/Panel_Component" title="Panel Component">Panel Component</a> types. See also <a href="https://docs.derivative.ca/Network_Path" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ada8247bf54d9f0708c46bf41b4d3322"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A floating dialog, pane type, or dialog in a Network Editor that displays one operator's parameters.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="55f6611cb342565cf0f5002400f53a95"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Annotates are displayed in the Network Editor as colored rectangles containing user-authored text and graphics. It is based on the <a class="mw-selflink selflink">Annotate COMP</a> and allows you to document your networks with useful information like comments and node grouping.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fb15c53f22336982a182b84aeb2f42eb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The viewer of a node can be (1) the interior of a node (the <a href="https://docs.derivative.ca/Node_Viewer" title="Node Viewer">Node Viewer</a>), (2) a floating window (RMB-&gt;View... on node), or (3) a <a href="https://docs.derivative.ca/Pane" title="Pane">Pane</a> that graphically shows the results of an operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="https://docs.derivative.ca/Node" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="https://docs.derivative.ca/Operator_Family" title="Operator Family">Operator Family</a> which operate on <a href="https://docs.derivative.ca/Channel" title="Channel">Channels</a> (a sequence of numbers (<a href="https://docs.derivative.ca/Sample" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5e2f5f3c24ae8c6ab3eca618826b0e23"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any component can be extended with its own Python classes which contain python functions and data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="497031794414a552435f90151ac3b54b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The sub-<a href="https://docs.derivative.ca/Operator_Family" title="Operator Family">Family</a> of <a href="https://docs.derivative.ca/Component" title="Component">Component</a> types that are used to define and render 3D scenes. A <a href="https://docs.derivative.ca/Geometry_COMP" title="Geometry COMP">Geometry Component</a> is an Object that contains the 3D shapes to render. A <a href="https://docs.derivative.ca/Camera_COMP" title="Camera COMP">Camera COMP</a> and <a href="https://docs.derivative.ca/Light_COMP" title="Light COMP">Light COMP</a> are other Object types. Separately, "Objects" also refers to Python objects.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="98b55baa723b7158c2ad741a9f2339b8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Parent Shortcut is a parameter on a component that contains a name that you can use anywhere inside the component to refer to that component using the syntax <code>parent.Name</code>, for example <code>parent.Effect.width</code> to obtain panel width.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="127c8e2bf0b36c9d6a86d99b969d563a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A name for a component that is accessible from any node in a project, which can be declared in a component's Global Operator Shortcut parameter.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="756210d98ce28018652ca05e1dcaaf3e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operator shortcuts are Python objects that return operators (or sometimes parameters). These include <a href="https://docs.derivative.ca/Parent_Shortcut" title="Parent Shortcut">Parent Shortcuts</a> for accessing a component from within that component, and <a href="https://docs.derivative.ca/Global_OP_Shortcut" title="Global OP Shortcut">Global OP Shortcuts</a> that access a unique component from anywhere in TouchDesigner.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ff24590464659ee8cdec688128c35f89"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Cloning makes multiple components match the contents of a master component. A <a href="https://docs.derivative.ca/Component" title="Component">Component</a> whose Clone parameter is set will be forced to contain the same nodes, wiring and parameters as its master component. Cloning does not create new components as does the <a href="https://docs.derivative.ca/Replicator_COMP" title="Replicator COMP">Replicator COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="https://docs.derivative.ca/Export" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="https://docs.derivative.ca/Speed_CHOP" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="https://docs.derivative.ca/Root" title="Root">Root</a>. This path is displayed at the top of every <a href="https://docs.derivative.ca/Pane" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="https://docs.derivative.ca/Folder" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c93d2a89e225ded900ca3779a6856086"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner Component file, the file type used to save a <a href="https://docs.derivative.ca/Component" title="Component">Component</a> of your TouchDesigner project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="76746356f2d9fd021f01bc051bb2114f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TOuch Environment file, the file type used by TouchDesigner to save your entire project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="https://docs.derivative.ca/Operator_Family" title="Operator Family">Operator Family</a> that contains its own <a href="https://docs.derivative.ca/Network" title="Network">Network</a>. There are sixteen 3D <a href="https://docs.derivative.ca/Object_Component" title="Object Component">Object Component</a> and ten 2D <a href="https://docs.derivative.ca/Panel_Component" title="Panel Component">Panel Component</a> types. See also <a href="https://docs.derivative.ca/Network_Path" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="30269022e9d8f51beaabb52e5d0de2b7"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>There are 2 kinds of parenting. The "parent component" is the component in which a node resides. The metaphor is extended to include grand parents, grand-grand parents, etc. The root <code>/</code> is the ultimate parent to all nodes. See also <a href="https://docs.derivative.ca/3D_Parenting" title="3D Parenting">3D Parenting</a> and panel <a href="https://docs.derivative.ca/Parent" title="Parent">Parenting</a>.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250524004726
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.460 seconds
+Real time usage: 0.906 seconds
+Preprocessor visited node count: 4772/1000000
+Post‐expand include size: 113558/2097152 bytes
+Template argument size: 63817/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 606/5000000 bytes
+Lua time usage: 0.520/10 seconds
+Lua virtual size: 9273344/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  812.045      1 -total
+ 84.87%  689.203      1 Template:NavBox
+ 83.38%  677.104     45 Template:CatList
+  8.60%   69.849      7 Template:ParameterPage
+  7.31%   59.382     58 Template:Parameter
+  5.72%   46.441      2 Template:OPSection
+  2.35%   19.064      1 COMP_Other_Common_Page
+  1.36%   11.064      1 Template:InfoCHOPChannels
+  1.26%   10.233     22 Template:ParameterItem
+  1.18%    9.557      1 Template:ClassMemberSection
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:3122-0!canonical and timestamp 20250524004725 and revision id 31109.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;oldid=31109">https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;oldid=31109</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://docs.derivative.ca/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://docs.derivative.ca/index.php?title=Category:Pages_using_duplicate_arguments_in_template_calls&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages using duplicate arguments in template calls (page does not exist)">Pages using duplicate arguments in template calls</a></li><li><a href="https://docs.derivative.ca/Category:Touch_Glossary" title="Category:Touch Glossary">Touch Glossary</a></li><li><a href="https://docs.derivative.ca/index.php?title=Category:COMPs&amp;action=edit&amp;redlink=1" class="new" title="Category:COMPs (page does not exist)">COMPs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Annotate+COMP&amp;returntoquery=oldid%3D31109" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="https://docs.derivative.ca/Annotate_COMP" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Annotate_COMP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Annotate_COMP&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="https://docs.derivative.ca/Annotate_COMP"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="https://docs.derivative.ca/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="https://docs.derivative.ca/Main_Page"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="https://docs.derivative.ca/Special:Categories"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="https://docs.derivative.ca/Learn_TouchDesigner"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="https://docs.derivative.ca/Tutorials"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="https://docs.derivative.ca/Interoperability"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="https://docs.derivative.ca/TouchDesigner_Glossary"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="https://docs.derivative.ca/Operator"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="https://docs.derivative.ca/Python"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="https://docs.derivative.ca/TouchDesigner_Python_Classes"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="https://docs.derivative.ca/Category:Palette"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="https://docs.derivative.ca/Frequently_Asked_Questions"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChanges"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="https://docs.derivative.ca/Release_Notes"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Annotate_COMP" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Annotate_COMP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="https://docs.derivative.ca/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;oldid=31109" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Annotate_COMP&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 26 March 2024, at 11:55.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://docs.derivative.ca/Derivative:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="https://docs.derivative.ca/Derivative:About">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="https://docs.derivative.ca/Derivative:General_disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://docs.derivative.ca/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.460","walltime":"0.906","ppvisitednodes":{"value":4772,"limit":1000000},"postexpandincludesize":{"value":113558,"limit":2097152},"templateargumentsize":{"value":63817,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":606,"limit":5000000},"timingprofile":["100.00%  812.045      1 -total"," 84.87%  689.203      1 Template:NavBox"," 83.38%  677.104     45 Template:CatList","  8.60%   69.849      7 Template:ParameterPage","  7.31%   59.382     58 Template:Parameter","  5.72%   46.441      2 Template:OPSection","  2.35%   19.064      1 COMP_Other_Common_Page","  1.36%   11.064      1 Template:InfoCHOPChannels","  1.26%   10.233     22 Template:ParameterItem","  1.18%    9.557      1 Template:ClassMemberSection"]},"scribunto":{"limitreport-timeusage":{"value":"0.520","limit":"10"},"limitreport-virtmemusage":{"value":9273344,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250524004726","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1165});});</script>
+</body>
+
+<!-- Mirrored from docs.derivative.ca/Annotate_COMP?oldid=31109 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:08 GMT -->
+</html>

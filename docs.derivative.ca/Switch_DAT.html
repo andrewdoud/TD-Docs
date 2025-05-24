@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Switch_DAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Switch DAT - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"64baf45f5e5dd6f54247beb6","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Switch_DAT","wgTitle":"Switch DAT","wgCurRevisionId":24311,"wgRevisionId":24311,"wgArticleId":255,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["DATs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Switch_DAT","wgRelevantArticleId":255,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Art-Net DAT",
+"Audio Devices DAT","CHOP Execute DAT","CHOP to DAT","Clip DAT","Convert DAT","CPlusPlus DAT","DAT","Experimental:DAT","DAT Execute DAT","DAT Export","Error DAT","EtherDream DAT","Evaluate DAT","Examine DAT","Execute DAT","FIFO DAT","File In DAT","File Out DAT","Folder DAT","In DAT","Indices DAT","Info DAT","Insert DAT","JSON DAT","Keyboard In DAT","Lookup DAT","Media File Info DAT","Merge DAT","MIDI Event DAT","MIDI In DAT","Monitors DAT","MPCDI DAT","MQTT Client DAT","Multi Touch In DAT","NDI DAT","Null DAT","OP Execute DAT","OP Find DAT","OSC In DAT","OSC Out DAT","Out DAT","Panel Execute DAT","Parameter DAT","Parameter Execute DAT","ParGroup Execute DAT","Perform DAT","Render Pick DAT","Reorder DAT","Script DAT","Select DAT","Serial DAT","Experimental:Serial Devices DAT","SocketIO DAT","SOP to DAT","Sort DAT","Substitute DAT","Switch DAT","Table DAT","TCP/IP DAT","Text DAT","Touch In DAT","Touch Out DAT","Transpose DAT","TUIO In DAT","UDP In DAT","UDP Out DAT","UDT In DAT",
+"UDT Out DAT","Video Devices DAT","Web Client DAT","Web DAT","Web Server DAT","WebRTC DAT","WebSocket DAT","XML DAT"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="The Switch DAT is a multi-input operator which lets you choose which input is output by using the &lt;span class=&quot;tipTextDAT&quot;&gt;Input&lt;/span&gt; parameter."/>
+<meta name="keywords" content="TouchDesigner, Switch, DAT"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=DAT.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Switch DAT - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Switch_DAT"/>
+<meta property="og:description" content="The Switch DAT is a multi-input operator which lets you choose which input is output by using the &lt;span class=&quot;tipTextDAT&quot;&gt;Input&lt;/span&gt; parameter."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, Switch, DAT"/>
+<meta property="article:modified_time" content="2021-11-16T21:26:20Z"/>
+<meta property="article:published_time" content="2021-11-16T21:26:20Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Switch DAT - TouchDesigner Documentation","headline":"Switch DAT - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Switch DAT<\/span>","identifier":"https:\/\/docs.derivative.ca\/Switch_DAT","url":"https:\/\/docs.derivative.ca\/Switch_DAT","description":"The Switch DAT is a multi-input operator which lets you choose which input is output by using the <span class=\"tipTextDAT\">Input<\/span> parameter.","keywords":"TouchDesigner, Switch, DAT","dateModified":"2021-11-16T21:26:20Z","datePublished":"2021-11-16T21:26:20Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Switch_DAT rootpage-Switch_DAT skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Switch DAT</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarDAT">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Switch <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> is a multi-input operator which lets you choose which input is output by using the <span class="tipTextDAT">Input</span> parameter.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/SwitchDAT_Class" title="SwitchDAT Class">switchDAT_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Switch_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Switch Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">4</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">5</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_DAT_Info_Channels"><span class="tocnumber">5.1</span> <span class="toctext">Common DAT Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">5.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Switch_Page"><div class="sectionBarDAT">Parameters - Switch Page</div></span></h2>
+<div id="index" style=""><span class="parNameDAT">Index</span>  <code>index</code> - Selects which input to pass though to the output. The first input is 0.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarDAT">Parameters - Common Page</div></span></h2>
+<div id="language" style=""><span class="parNameDAT">Language</span>  <code>language</code> - <span class="mw-customtoggle-language">⊞</span> - Select how the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> decides which script language to operate on.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-language">
+<ul><li><span class="parNameDAT">Input</span> <code>input</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses the inputs script language.</li></ul><ul><li><span class="parNameDAT"><span class="mw-lingo-term" data-lingo-term-id="6c3a6944a808a7c0bbb6788dbec54a9f">Node</span></span> <code>node</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses it's own script language.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="extension" style=""><span class="parNameDAT">Edit/View Extension</span>  <code>extension</code> - <span class="mw-customtoggle-extension">⊞</span> - Select the file extension this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> should expose to external editors.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-extension">
+<ul><li><span class="parNameDAT">dat</span> <code>dat</code> - various common file extensions.</li></ul><ul><li><span class="parNameDAT">frag</span> <code>frag</code> -</li></ul><ul><li><span class="parNameDAT">glsl</span> <code>glsl</code> -</li></ul><ul><li><span class="parNameDAT">html</span> <code>html</code> -</li></ul><ul><li><span class="parNameDAT">md</span> <code>md</code> -</li></ul><ul><li><span class="parNameDAT">py</span> <code>py</code> -</li></ul><ul><li><span class="parNameDAT">rtf</span> <code>rtf</code> -</li></ul><ul><li><span class="parNameDAT">tsv</span> <code>tsv</code> -</li></ul><ul><li><span class="parNameDAT">txt</span> <code>txt</code> -</li></ul><ul><li><span class="parNameDAT">vert</span> <code>vert</code> -</li></ul><ul><li><span class="parNameDAT">xml</span> <code>xml</code> -</li></ul><ul><li><span class="parNameDAT">From Language</span> <code>languageext</code> - pick extension from DATs script language.</li></ul><ul><li><span class="parNameDAT">Custom Extension</span> <code>customext</code> - Specify a custom extension.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="customext" style=""><span class="parNameDAT">Custom Extension</span>  <code>customext</code> - Specifiy the custom extension.
+<p><i></i>
+</p>
+</div>
+<div id="wordwrap" style=""><span class="parNameDAT">Word Wrap</span>  <code>wordwrap</code> - <span class="mw-customtoggle-wordwrap">⊞</span> - Enable Word Wrap for Node Display.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wordwrap">
+<ul><li><span class="parNameDAT">Input</span> <code>input</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> uses the inputs setting.</li></ul><ul><li><span class="parNameDAT">On</span> <code>on</code> - Turn on Word Wrap.</li></ul><ul><li><span class="parNameDAT">Off</span> <code>off</code> - Turn off Word Wrap.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarDAT">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameDAT">Input 0: </span> -</li></ul><p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarDAT">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Switch <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_DAT_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_rows</span> - Number of rows in this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.</li></ul><ul><li><span class="parName">num_cols</span> - Number of columns in this <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Switch_DAT.html">Latest</option>\n<option value="https://docs.derivative.ca/Switch_DAT?oldid=14124">2021.10000</option><option value="https://docs.derivative.ca/Switch_DAT?oldid=24311">2018.28070</option><option value="https://docs.derivative.ca/Switch_DAT?oldid=4298">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">DATs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Art-Net_DAT.html" title="Art-Net DAT">Art-Net  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Devices_DAT.html" title="Audio Devices DAT">Audio Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_Execute_DAT.html" title="CHOP Execute DAT">CHOP Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_DAT.html" title="CHOP to DAT">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_DAT.html" title="Clip DAT">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_DAT.html" title="Convert DAT">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_DAT.html" title="CPlusPlus DAT">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT.html" title="DAT">DAT </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_DAT.html" title="Experimental:DAT">Experimental:DAT </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_Execute_DAT.html" title="DAT Execute DAT"> Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_Export.html" title="DAT Export">DAT Export </a></span>• <span class="catList navigation-not-searchable"><a href="Error_DAT.html" title="Error DAT">Error  </a></span>• <span class="catList navigation-not-searchable"><a href="EtherDream_DAT.html" title="EtherDream DAT">EtherDream  </a></span>• <span class="catList navigation-not-searchable"><a href="Evaluate_DAT.html" title="Evaluate DAT">Evaluate  </a></span>• <span class="catList navigation-not-searchable"><a href="Examine_DAT.html" title="Examine DAT">Examine  </a></span>• <span class="catList navigation-not-searchable"><a href="Execute_DAT.html" title="Execute DAT">Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="FIFO_DAT.html" title="FIFO DAT">FIFO  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_DAT.html" title="File In DAT">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="File_Out_DAT.html" title="File Out DAT">File Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Folder_DAT.html" title="Folder DAT">Folder  </a></span>• <span class="catList navigation-not-searchable"><a href="In_DAT.html" title="In DAT">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Indices_DAT.html" title="Indices DAT">Indices  </a></span>• <span class="catList navigation-not-searchable"><a href="Info_DAT.html" title="Info DAT">Info  </a></span>• <span class="catList navigation-not-searchable"><a href="Insert_DAT.html" title="Insert DAT">Insert  </a></span>• <span class="catList navigation-not-searchable"><a href="JSON_DAT.html" title="JSON DAT">JSON  </a></span>• <span class="catList navigation-not-searchable"><a href="Keyboard_In_DAT.html" title="Keyboard In DAT">Keyboard In  </a></span>• <span class="catList navigation-not-searchable"><a href="Lookup_DAT.html" title="Lookup DAT">Lookup  </a></span>• <span class="catList navigation-not-searchable"><a href="Media_File_Info_DAT.html" title="Media File Info DAT">Media File Info  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_DAT.html" title="Merge DAT">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_Event_DAT.html" title="MIDI Event DAT">MIDI Event  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_In_DAT.html" title="MIDI In DAT">MIDI In  </a></span>• <span class="catList navigation-not-searchable"><a href="Monitors_DAT.html" title="Monitors DAT">Monitors  </a></span>• <span class="catList navigation-not-searchable"><a href="MPCDI_DAT.html" title="MPCDI DAT">MPCDI  </a></span>• <span class="catList navigation-not-searchable"><a href="MQTT_Client_DAT.html" title="MQTT Client DAT">MQTT Client  </a></span>• <span class="catList navigation-not-searchable"><a href="Multi_Touch_In_DAT.html" title="Multi Touch In DAT">Multi Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="NDI_DAT.html" title="NDI DAT">NDI  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_DAT.html" title="Null DAT">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="OP_Execute_DAT.html" title="OP Execute DAT">OP Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="OP_Find_DAT.html" title="OP Find DAT">OP Find  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_In_DAT.html" title="OSC In DAT">OSC In  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_Out_DAT.html" title="OSC Out DAT">OSC Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_DAT.html" title="Out DAT">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Panel_Execute_DAT.html" title="Panel Execute DAT">Panel Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_DAT.html" title="Parameter DAT">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_Execute_DAT.html" title="Parameter Execute DAT">Parameter Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="ParGroup_Execute_DAT.html" title="ParGroup Execute DAT">ParGroup Execute  </a></span>• <span class="catList navigation-not-searchable"><a href="Perform_DAT.html" title="Perform DAT">Perform  </a></span>• <span class="catList navigation-not-searchable"><a href="Render_Pick_DAT.html" title="Render Pick DAT">Render Pick  </a></span>• <span class="catList navigation-not-searchable"><a href="Reorder_DAT.html" title="Reorder DAT">Reorder  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_DAT.html" title="Script DAT">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_DAT.html" title="Select DAT">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Serial_DAT.html" title="Serial DAT">Serial  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Serial_Devices_DAT.html" title="Experimental:Serial Devices DAT">Experimental:Serial Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="SocketIO_DAT.html" title="SocketIO DAT">SocketIO  </a></span>• <span class="catList navigation-not-searchable"><a href="SOP_to_DAT.html" title="SOP to DAT">SOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_DAT.html" title="Sort DAT">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Substitute_DAT.html" title="Substitute DAT">Substitute  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Table_DAT.html" title="Table DAT">Table  </a></span>• <span class="catList navigation-not-searchable"><a href="TCP/IP_DAT.html" title="TCP/IP DAT">TCP/IP  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_DAT.html" title="Text DAT">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_In_DAT.html" title="Touch In DAT">Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_Out_DAT.html" title="Touch Out DAT">Touch Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Transpose_DAT.html" title="Transpose DAT">Transpose  </a></span>• <span class="catList navigation-not-searchable"><a href="TUIO_In_DAT.html" title="TUIO In DAT">TUIO In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDP_In_DAT.html" title="UDP In DAT">UDP In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDP_Out_DAT.html" title="UDP Out DAT">UDP Out  </a></span>• <span class="catList navigation-not-searchable"><a href="UDT_In_DAT.html" title="UDT In DAT">UDT In  </a></span>• <span class="catList navigation-not-searchable"><a href="UDT_Out_DAT.html" title="UDT Out DAT">UDT Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Video_Devices_DAT.html" title="Video Devices DAT">Video Devices  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_Client_DAT.html" title="Web Client DAT">Web Client  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_DAT.html" title="Web DAT">Web  </a></span>• <span class="catList navigation-not-searchable"><a href="Web_Server_DAT.html" title="Web Server DAT">Web Server  </a></span>• <span class="catList navigation-not-searchable"><a href="WebRTC_DAT.html" title="WebRTC DAT">WebRTC  </a></span>• <span class="catList navigation-not-searchable"><a href="WebSocket_DAT.html" title="WebSocket DAT">WebSocket  </a></span>• <span class="catList navigation-not-searchable"><a href="XML_DAT.html" title="XML DAT">XML  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6c3a6944a808a7c0bbb6788dbec54a9f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The generic thing that holds an <a href="Operator.html" title="Operator">Operator</a>, and includes <a href="Flag.html" title="Flag">Flags</a> (display, bypass, lock, render, immune) and its position/size in the network. Whether you "lay down an Operator" or "lay down an Node", you're doing the same thing.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304164000
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.328 seconds
+Real time usage: 2.337 seconds
+Preprocessor visited node count: 2678/1000000
+Post‐expand include size: 40206/2097152 bytes
+Template argument size: 11953/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 406/5000000 bytes
+Lua time usage: 0.790/10 seconds
+Lua virtual size: 9314304/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2281.300      1 -total
+ 96.50% 2201.473      1 Template:DATNavBox
+ 95.50% 2178.623     76 Template:CatList
+  1.22%   27.859      2 Template:ParameterPage
+  1.13%   25.720      1 DAT_Filter_Common_Page
+  1.01%   22.942      5 Template:Parameter
+  0.94%   21.492      1 Template:InfoCHOPChannels
+  0.52%   11.788      1 DAT_Info_Channels_Common_Page
+  0.47%   10.785      1 Template:Summary
+  0.32%    7.354     18 Template:ParameterItem
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:255-0!canonical and timestamp 20250304163958 and revision id 24311.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Switch_DAT&amp;oldid=24311">https://docs.derivative.ca/index.php?title=Switch_DAT&amp;oldid=24311</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="https://docs.derivative.ca/index.php?title=Category:DATs&amp;action=edit&amp;redlink=1" class="new" title="Category:DATs (page does not exist)">DATs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Switch+DAT" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="Switch_DAT.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Switch_DAT&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Switch_DAT&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Switch_DAT.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Switch_DAT&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Switch_DAT" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Switch_DAT" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Switch_DAT&amp;oldid=24311" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Switch_DAT&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Switch_DAT&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 16 November 2021, at 16:26.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.328","walltime":"2.337","ppvisitednodes":{"value":2678,"limit":1000000},"postexpandincludesize":{"value":40206,"limit":2097152},"templateargumentsize":{"value":11953,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":406,"limit":5000000},"timingprofile":["100.00% 2281.300      1 -total"," 96.50% 2201.473      1 Template:DATNavBox"," 95.50% 2178.623     76 Template:CatList","  1.22%   27.859      2 Template:ParameterPage","  1.13%   25.720      1 DAT_Filter_Common_Page","  1.01%   22.942      5 Template:Parameter","  0.94%   21.492      1 Template:InfoCHOPChannels","  0.52%   11.788      1 DAT_Info_Channels_Common_Page","  0.47%   10.785      1 Template:Summary","  0.32%    7.354     18 Template:ParameterItem"]},"scribunto":{"limitreport-timeusage":{"value":"0.790","limit":"10"},"limitreport-virtmemusage":{"value":9314304,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304164000","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":2673});});</script>
+</body>
+<!-- Cached 20250304164001 -->
+
+<!-- Mirrored from docs.derivative.ca/Switch_DAT by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:32 GMT -->
+</html>

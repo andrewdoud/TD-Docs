@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Actor_COMP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Actor COMP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1f60bc8ad3bdc89c8da52371","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Actor_COMP","wgTitle":"Actor COMP","wgCurRevisionId":31083,"wgRevisionId":31083,"wgArticleId":2266,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["COMPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Actor_COMP","wgRelevantArticleId":2266,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Actor COMP",
+"Ambient Light COMP","Animation COMP","Annotate COMP","Base COMP","Blend COMP","Bone COMP","Bullet Solver COMP","Button COMP","Camera Blend COMP","Camera COMP","MediaWiki:Common.js","Component","Experimental:Component","Constraint COMP","Container COMP","Engine COMP","Environment Light COMP","FBX COMP","Field COMP","Force COMP","Geo Text COMP","Geometry COMP","GLSL COMP","Handle COMP","Impulse Force COMP","Light COMP","List COMP","Null COMP","Nvidia Flex Solver COMP","Nvidia Flow Emitter COMP","OP Viewer COMP","Palette:depthProjection","Parameter COMP","Replicator COMP","Select COMP","Shared Mem In COMP","Shared Mem Out COMP","Slider COMP","Table COMP","Text COMP","Time COMP","USD COMP","Widget COMP","Window COMP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":
+"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="An Actor COMP is analogous to a body (or bodies) in a physics system."/>
+<meta name="keywords" content="TouchDesigner, Actor, COMP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=COMP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Actor COMP - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Actor_COMP"/>
+<meta property="og:description" content="An Actor COMP is analogous to a body (or bodies) in a physics system."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, Actor, COMP"/>
+<meta property="article:modified_time" content="2024-03-15T12:08:47Z"/>
+<meta property="article:published_time" content="2024-03-15T12:08:47Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Actor COMP - TouchDesigner Documentation","headline":"Actor COMP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Actor COMP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Actor_COMP","url":"https:\/\/docs.derivative.ca\/Actor_COMP","description":"An Actor COMP is analogous to a body (or bodies) in a physics system.","keywords":"TouchDesigner, Actor, COMP","dateModified":"2024-03-15T12:08:47Z","datePublished":"2024-03-15T12:08:47Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Actor_COMP rootpage-Actor_COMP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Actor COMP</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarCOMP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is analogous to a body (or bodies) in a physics system. An Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> must be used in conjunction with a physics solver: either a <a href="Bullet_Solver_COMP.html" title="Bullet Solver COMP">Bullet Solver COMP</a> or <a href="Nvidia_Flex_Solver_COMP.html" title="Nvidia Flex Solver COMP">Nvidia Flex Solver COMP</a>, which in turn is analogous to the world/simulation that the actors/bodies operate in. An Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can either be static, meaning it is not affected by any forces in the simulation and cannot move (ie. has infinite mass), or it can be dynamic, meaning it is moved by forces and collides with other bodies (either static or dynamic) in the world.
+</p><p>See also: <a href="https://docs.derivative.ca/Flex" title="Flex">Flex</a>, <a href="Bullet_Dynamics.html" title="Bullet Dynamics">Bullet Dynamics</a>, <a href="Bullet_Solver_COMP.html" title="Bullet Solver COMP">Bullet Solver COMP</a>, <a href="Force_COMP.html" title="Force COMP">Force COMP</a>, <a href="Constraint_COMP.html" title="Constraint COMP">Constraint COMP</a>, <a href="Bullet_Solver_CHOP.html" title="Bullet Solver CHOP">Bullet Solver CHOP</a>, <a href="Nvidia_Flex_Solver_COMP.html" title="Nvidia Flex Solver COMP">Nvidia Flex Solver COMP</a>, <a href="Nvidia_Flex_TOP.html" title="Nvidia Flex TOP">Nvidia Flex TOP</a>.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="ActorCOMP_Class.html" title="ActorCOMP Class">actorCOMP_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a>
+<ul><li class="toclevel-2"><a href="#Actors_in_Bullet"><span class="tocnumber">2.1</span> <span class="toctext">Actors in Bullet</span></a></li>
+<li class="toclevel-2"><a href="#Actors_in_Flex"><span class="tocnumber">2.2</span> <span class="toctext">Actors in Flex</span></a></li>
+<li class="toclevel-2"><a href="#Using_an_Actor_COMP"><span class="tocnumber">2.3</span> <span class="toctext">Using an Actor COMP</span></a></li>
+<li class="toclevel-2"><a href="#Why_are_my_bodies_not_colliding?"><span class="tocnumber">2.4</span> <span class="toctext">Why are my bodies not colliding?</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_General_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - General Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Bullet_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Bullet Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Flex_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Flex Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Xform_Page"><span class="tocnumber">6</span> <span class="toctext">Parameters - Xform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Pre-Xform_Page"><span class="tocnumber">7</span> <span class="toctext">Parameters - Pre-Xform Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Instance_Page"><span class="tocnumber">8</span> <span class="toctext">Parameters - Instance Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Instance_2_Page"><span class="tocnumber">9</span> <span class="toctext">Parameters - Instance 2 Page</span></a>
+<ul><li class="toclevel-2"><a href="#Instance_Texturing"><span class="tocnumber">9.1</span> <span class="toctext">Instance Texturing</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_Instance_3_Page"><span class="tocnumber">10</span> <span class="toctext">Parameters - Instance 3 Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Render_Page"><span class="tocnumber">11</span> <span class="toctext">Parameters - Render Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Extensions_Page"><span class="tocnumber">12</span> <span class="toctext">Parameters - Extensions Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">13</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">14</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Specific_Actor_COMP_Info_Channels"><span class="tocnumber">14.1</span> <span class="toctext">Specific Actor COMP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_COMP_Info_Channels"><span class="tocnumber">14.2</span> <span class="toctext">Common COMP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">14.3</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Usage"><div class="sectionBarCOMP">Usage</div></span></h2>
+<h3><span class="mw-headline" id="Actors_in_Bullet"><div class="customBar">Actors in Bullet</div></span></h3>
+<p>Static bodies can be concave or convex, but dynamic bodies must be convex. However, dynamic collision shapes can be compound, meaning it is a collision shape made of other collision shapes. So, a concave collision shape can be created in the dynamic case by building it out of a group of convex shapes. This can be done using multiple SOPs. Each <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> must be convex, but combination of the SOPs does not need to be. If Automatic mode is selected, then a compound collision shape will be created from these SOPs.
+</p><p>All bodies in an Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> have a corresponding collision shape. The collision shape is what determines how objects will collide with one another, and it is important to note that what is seen in the viewer/render will not necessarily directly match the collision shape.
+</p><p>Collision shapes are created using SOPs, either through the "Collision SOPs" parameter or by putting them inside the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> itself. If the "Collision SOPs" parameter is filled in, then the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will create a single body from all the SOPs at that given paths (if the path is a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> then it will recursively grab all the SOPs in the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>). If there is nothing filled in for the "Collision SOPs" parameter, then the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will instead recursively search inside itself for any SOPs that have both their display and render flags on. The Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will create a single body and corresponding collision shape from these SOPs.
+</p><p>There are several options when it comes to creating a collision shape out of the SOPs. These options can be chosen from the "Collision Shape" parameter. For instance, the option "Oriented Bounding Box" will create a minimum volume bounding box around the selected SOPs.
+</p><p>To create multiple bodies, use the instancing on the "<span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span>" page of the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. This will create any number of identical bodies, each with their own identical collision shape. Currently there is no way to create multiple non-identical bodies in a single Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. 
+</p><p>Bodies are initialized using the "Initialize Actor" parameter, so if any changes are made to the SOPs that create the bodies, then the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> must be reinitialized. Bodies will automatically be re-initialized if the Kinematic State, Shape, or Center of Mass is changed. 
+</p><p>Transforms can be applied to an Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> using the Xform and Pre-Xform pages, much like on a Geometry <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> or Camera <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. The transforms on the Xform and Pre-Xform pages create the initial transform of the actor in the simulation, but they can also be used to modify the transform of an actor during a simulation. Changing scale on either page will require a reinitialization of the actor since it changes the collision shape itself. Modifying any of the transforms while instancing will automatically reinitialize the actor. 
+</p><p>Actor COMPs cannot be nested; however, Actor COMPs can be nested inside Geometry COMPs and vice versa. Geometry COMPs with a nested Actor COMPs cannot have any scale transform; however, Geometry COMPs nested inside an Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can have scale. An Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> nested inside Geometry COMPs will use their transform only when it is initialized. Therefore, any changes to the transform of these Geometry COMPs will require a reinitialization of the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+</p>
+<h3><span class="mw-headline" id="Actors_in_Flex"><div class="customBar">Actors in Flex</div></span></h3>
+<p><a href="https://docs.derivative.ca/Flex" title="Flex">Flex</a> actors can either be fluid particles, a fluid particle emitter, or a static shape. 
+</p><p>Static shapes in Flex are built in the same way that concave (ie. static) shapes are built in Bullet. Static shapes require a triangle mesh <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> to build up their collision shape. However, box/sphere collision shape options can also be used to create a bounding box/sphere of the collision shape <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+</p><p>Fluid particles behave much the same way as instancing on a Bullet actor. The number of fluid particles is equal to the number of instances created from an instance <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>. The instance parameters are used to give the particle an initial transform, but once the simulation is running the transform is updated from the simulation results. 
+</p><p>One key difference of a fluid particle Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is that no <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is needed to create a fluid particle since their size/behaviour is defined through the simulation parameters on the <a href="Nvidia_Flex_Solver_COMP.html" title="Nvidia Flex Solver COMP">Nvidia Flex Solver COMP</a>. A <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can be used to the render/display the positions of the particles. Alternatively, the particle positions can be fetched using the <a href="Nvidia_Flex_TOP.html" title="Nvidia Flex TOP">Nvidia Flex TOP</a>.
+</p><p>Fluid emitters add particles to the scene at the emission point (ie. the transform of the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>). Particles are added up until the emission maximum is reached, at which point emission particles will be recycled from already existing particles.
+</p>
+<h3><span class="mw-headline" id="Using_an_Actor_COMP"><div class="customBar">Using an Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span></div></span></h3>
+<p>When creating an Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> there are some important questions to consider:
+</p>
+<ul><li><b>Will this Actor be in a Bullet or Flex simulation?</b> There are many commonalities between Bullet actors and Flex actors, however they do differ in their functionality, meaning that not all parameters overlap. For Bullet specific parameters see the Bullet page of the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and for Flex specific parameters see the Flex page of the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.</li>
+<li><b>Will the bodies move?</b> A moving body's Kinematic State must be dynamic. A static body can "move" by overriding its position, but this is not recommended since clipping can easily occur and and collisions will be incorrect (because the bodies won't have momentum).</li>
+<li><b>What SOPs will be used to create the collision shape?</b> Every Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> has a corresponding collision shape that is created from SOPs. The SOPs can be set through the Collision SOPs parameter, or if that parameter is not set, through the display/render flags of SOPs inside the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.</li>
+<li><b>What collision shape will be used?</b> The SOPs gathered in the previous stage are used to create the collision shape. Each collision shape has their own pros and cons, which are outlined on the <a href="Bullet_Dynamics.html" title="Bullet Dynamics">Bullet Dynamics</a> page. The collision shape is what determines how the body will interact with other bodies (ie. collide). The collision shape does not necessarily correspond with what is displayed/rendered. The collision shape can be shown using the Display Collision Shape toggle.</li>
+<li><b>Will the collision shape be concave?</b> If the collision shape is concave and static, simply select Concave from the drop-down menu. If the collision shape is to be concave and dynamic then there is an extra step: convex decomposition. The collision shape must be a Compound collision shape (ie. a group of convex collision shapes) where each part of the compound shape is convex, but combined together create a concave shape. Each part of the compound shape is represented using a single <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. Consider the letter "T" as an example. "T" is concave so it will need to be split into two separate convex parts: the top line and the bottom line. 2 SOPs would be created (one for each line) for the collision shape that when combined together form the full concave "T". If the "T" were static however, it could remain as 1 <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><h3><span id="Why_are_my_bodies_not_colliding.3F"></span><span class="mw-headline" id="Why_are_my_bodies_not_colliding?"><div class="customBar">Why are my bodies not colliding?</div></span></h3>
+<p>To understand why two bodies might not collide it is important to understand that Bullet simulates discretely. Speed, position, constraints, collisions are all calculated on a frame by frame basis, as opposed to continuously. In the case of Bullet, collisions are calculated at the beginning and the end of a frame. What this means is that if a body is moving a large distance every frame it can clip through other bodies, because it's not colliding with it at the beginning or the end of the frame when collision is calculated. In the same vein, if an object is very thin then other bodies will be able to clip through it easier than something with more depth because bodies won't have to move as far in a frame to completely jump over it.
+</p><p>Continuous collision detection (see parameter) helps to fix this by performing collision detection along the movement vector (between start/end of frame) so that collisions happening between the start/end of frame will be caught. This helps significantly with high linear velocity bodies, but not so much high angular velocity bodies.
+</p><p>A couple other things to consider changing to fix body "leaking":
+</p>
+<ol><li>Manually limit the velocity of bodies, or lower the strength of the forces being applied.</li>
+<li>Add depth to very thin collision surfaces. If you're using a Grid <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> as a collision surface, consider using a Box <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> instead. Or, if you're using a Box <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> as the collision shape to contain other bodies inside, consider making the collision shape out of 6 individual Box SOPs (one for each side of the box) combined together.</li></ol><p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_General_Page"><div class="sectionBarCOMP">Parameters - General Page</div></span></h2>
+<div id="initialize" style=""><span class="parNameCOMP">Initialize Actor</span>  <code>initialize</code> - Recreates the collision shapes for all the bodies in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. Also resets all velocities and position to their default state. Initialize Actor should be pulsed when any changes are made to the SOPs used for creating the collision shape, or for any changes to the instancing <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="updatecs" style=""><span class="parNameCOMP">Update Collision Shape</span>  <code>updatecs</code> - If enabled the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will automatically update collision shapes. This will occur when the "Collision SOPs" or "Collision Shape" parameters are changes or the underlying SOPs used to create the collision shape are changed (ie. when their cook count increases).
+<p><i></i>
+</p>
+</div>
+<div id="updatecspulse" style=""><span class="parNameCOMP">Update Collision Shape</span>  <code>updatecspulse</code> - When clicked this will instantly update the collosion shape.
+<p><i></i>
+</p>
+</div>
+<div id="active" style=""><span class="parNameCOMP">Active</span>  <code>active</code> - Toggle the actor on/off. If the actor is active, then it will be updated as the simulation progress. However, if it is inactive, then it will be removed from the simulation and no longer collide with any of the other actors/bodies. As a result, it's transform will also no longer be updated.
+<p><i></i>
+</p>
+</div>
+<div id="kinstate" style=""><span class="parNameCOMP">Kinematic State</span>  <code>kinstate</code> - <span class="mw-customtoggle-kinstate">⊞</span> - The kinematic state defines the Actor COMPs ability to move from external forces. If an object is dynamic, then it is moveable in the simulation, but if it static then it is not.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-kinstate">
+<ul><li><span class="parNameCOMP">Static (Infinite Mass)</span> <code>static</code> - The bodies in this <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> cannot be moved in the simulation.</li></ul><ul><li><span class="parNameCOMP">Dynamic (Finite Mass)</span> <code>dynamic</code> - The bodies in this <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can move.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="sops" style=""><span class="parNameCOMP">Collision SOPs</span>  <code>sops</code> - Specifies SOPs or COMPs to use for the collision shape. If a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is referenced, then just that <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> will be used for the collision shape. But if a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is selected then all SOPs inside of that (recursive) will be used for the collision shape. If this parameter is left blank, then the SOPs selected will be all SOPs inside the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> with display and render flags on.
+<p><i></i>
+</p>
+</div>
+<div id="shape" style=""><span class="parNameCOMP">Collision Shape</span>  <code>shape</code> - <span class="mw-customtoggle-shape">⊞</span> - The type of collision shape to make from the selected SOPs. Collision shapes can be viewed using a guide in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s viewer
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-shape">
+<ul><li><span class="parNameCOMP">Concave (Static only)</span> <code>concave</code> - Creates a concave collision shape out of all the SOPs. Should only be used for static Actor COMPs. The SOPs used for creating the concave collisions shape should only have polygons with either 3 or 4 vertices. If this mode is selected for a dynamic Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> then a compound shape will be created instead.</li></ul><ul><li><span class="parNameCOMP">Convex Hull</span> <code>convex</code> - Creates a convex hull out of all the SOPs. A convex hull is a set of points that encloses all other points (in this case, the points from the SOPs), and the shape created from these points is convex. The points of the convex hull will be points from the original set of points (ie. the ones from the SOPs)</li></ul><ul><li><span class="parNameCOMP">Oriented Bounding Box</span> <code>obb</code> - Creates a bounding box around the SOPs that is oriented to minimize volume.</li></ul><ul><li><span class="parNameCOMP">Axis-Aligned Bounding Box</span> <code>aabb</code> - Creates a bounding box around the SOPs that has its axis aligned with XYZ (so it's not rotated).</li></ul><ul><li><span class="parNameCOMP">Bounding Ellipsoid</span> <code>bellipsoid</code> - Creates a minimum volume bounding ellipsoid around the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parNameCOMP">Bounding Sphere</span> <code>bsphere</code> - creates a minimum volume bounding sphere around the SOPs. The difference between this and bounding ellipsoid is that all radii are the same (XYZ).</li></ul><ul><li><span class="parNameCOMP">Compound</span> <code>compound</code> - A compound collision shape is a collision shape composed of other collision shapes. If the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is static then this has the same result as a concave shape. If the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is dynamic then each <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> will be created into its own convex hull, then these will all be subsequently merged together into a single compound collision shape. This mode allows you to create concave collision shapes for dynamic bodies using multiple convex SOPs.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="elltol" style=""><span class="parNameCOMP">Ellipsoid Tolerance</span>  <code>elltol</code> - The tolerance of the minimum volume bounding ellipsoid. In other words, how close to the optimal solution it is.
+<p><i></i>
+</p>
+</div>
+<div id="infinitemass" style=""><span class="parNameCOMP">Infinite Mass</span>  <code>infinitemass</code> - Give the actor infinite mass. If the object is dynamic this will make it unmovable and static. Toggling infinite mass on or off will not require recreation of the collision shape, unlike changing the Kinematic State parameter.
+<p><i></i>
+</p>
+</div>
+<div id="mass" style=""><span class="parNameCOMP">Mass</span>  <code>mass</code> - The mass in kilograms of the actor.
+<p><i></i>
+</p>
+</div>
+<div id="cuevel" style=""><span class="parNameCOMP">Cue Velocity</span>  <code>cuevel</code> - Holds the linear and angular velocity and values given by linvel and angvel. The object will still collide with any other bodies in the simulation.
+<p><i></i>
+</p>
+</div>
+<div id="cuevelpulse" style=""><span class="parNameCOMP">Cue <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>cuevelpulse</code> - <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span> the linear and angular velocity to values given by linvel and angvel. This will set the velocity to the given value at the beginning of the next frame.
+<p><i></i>
+</p>
+</div>
+<div id="linvel" style=""><span class="parNameCOMP">Linear Velocity</span>  <code>linvel</code> - <span class="mw-customtoggle-linvel">⊞</span> - The initial linear velocity of the actor in m/s. This parameter can also be used to modify an actor's linear velocity during a simulation. Additionally, it is used in conjunction with the "Cue Velocity" and "Cue Velocity <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span>" parameters.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-linvel">
+<ul><li><span class="parNameCOMP">Linear Velocity</span> <code>linvelx</code> -</li></ul><ul><li><span class="parNameCOMP">Linear Velocity</span> <code>linvely</code> -</li></ul><ul><li><span class="parNameCOMP">Linear Velocity</span> <code>linvelz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="angvel" style=""><span class="parNameCOMP">Angular Velocity</span>  <code>angvel</code> - <span class="mw-customtoggle-angvel">⊞</span> - The initial angular velocity of the actor in degrees per second in m/s. This parameter can also be used to modify the actor's angular velocity during a simulation. Additionally, it is used in conjunction with the "Cue Velocity" and "Cue Velocity <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span>" parameters.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-angvel">
+<ul><li><span class="parNameCOMP">Angular Velocity</span> <code>angvelx</code> -</li></ul><ul><li><span class="parNameCOMP">Angular Velocity</span> <code>angvely</code> -</li></ul><ul><li><span class="parNameCOMP">Angular Velocity</span> <code>angvelz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Bullet_Page"><div class="sectionBarCOMP">Parameters - Bullet Page</div></span></h2>
+<div id="forces" style=""><span class="parNameCOMP">Forces</span>  <code>forces</code> - A list of local forces, meaning forces (ie. Force COMPs) that will only be applied to this actor.
+<p><i></i>
+</p>
+</div>
+<div id="globalgrav" style=""><span class="parNameCOMP">Use Global Gravity</span>  <code>globalgrav</code> - Toggle for whether to use the Bullet Solver <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s gravity (global), or its own local gravity.
+<p><i></i>
+</p>
+</div>
+<div id="gravity" style=""><span class="parNameCOMP">Gravitational Acceleration</span>  <code>gravity</code> - <span class="mw-customtoggle-gravity">⊞</span> - Actor's local gravity in m/s^2. Will only be applied if the actor is not using the Bullet Solver <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s global gravity ie. the "Use Global Gravity" parameter above is turned off.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-gravity">
+<ul><li><span class="parNameCOMP">Gravitational Acceleration</span> <code>gravityx</code> -</li></ul><ul><li><span class="parNameCOMP">Gravitational Acceleration</span> <code>gravityy</code> -</li></ul><ul><li><span class="parNameCOMP">Gravitational Acceleration</span> <code>gravityz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="friction" style=""><span class="parNameCOMP">Friction</span>  <code>friction</code> - The kinetic friction of the actor. It is the resistance between two bodies rubbing/sliding. The overall friction is the product of the two bodies touching. For example, if one body has 0 friction and the other has 1, then the overall friction between the two bodies is 0.
+<p><i></i>
+</p>
+</div>
+<div id="rollfric" style=""><span class="parNameCOMP">Rolling Friction</span>  <code>rollfric</code> - The rolling friction of the actor. It is the resistance/drag of one body (such as a sphere or cone) rolling on another.
+<p><i></i>
+</p>
+</div>
+<div id="rest" style=""><span class="parNameCOMP">Restitution</span>  <code>rest</code> - The coefficient of restitution of the actor. The coefficient of restitution is the ratio of the final to initial relative between two bodies/actors when they collide. In other words, restitution is the fraction of kinetic energy preserved after a collision. If two objects collide with 100% (ie. 1) restitution, then, both bodies will bounce off each other at the same speed at which they collided.
+<p><i></i>
+</p>
+</div>
+<div id="ccd" style=""><span class="parNameCOMP">Continuous Collision Detection</span>  <code>ccd</code> - Toggles continuous collision detection on/off for this actor. Typically, collision detection is done discretely, meaning that collision is verified at the beginning/end of a frame. However, if a body is going too fast it will move too far in a single frame and therefore clip through any surfaces (ie. No collision detected). Continuous collision detection improves upon this by performing collision detection at intervals between the body's initial and final positions within a frame. Continuous collision detection can affect performance, so even if the parameter is toggled on it will not be used all the time. It will only be used for bodies moving above a velocity threshold.
+<p><i></i>
+</p>
+</div>
+<div id="dispguide" style=""><span class="parNameCOMP">Display Guide</span>  <code>dispguide</code> - Toggles on the display for the collision shape in the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> viewer.
+<p><i></i>
+</p>
+</div>
+<div id="com" style=""><span class="parNameCOMP">Center of Mass</span>  <code>com</code> - <span class="mw-customtoggle-com">⊞</span> - Specifies the center of mass of the collision shape. The center of mass is the point around which the body will rotate. Center of mass can be viewed using a guide in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s viewer. It is shown as a red axis.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-com">
+<ul><li><span class="parNameCOMP">Center of Mass</span> <code>comx</code> -</li></ul><ul><li><span class="parNameCOMP">Center of Mass</span> <code>comy</code> -</li></ul><ul><li><span class="parNameCOMP">Center of Mass</span> <code>comz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="bulletfb" style=""><span class="parNameCOMP">Bullet Feedback <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span></span>  <code>bulletfb</code> - A reference to a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> from which to feedback. The Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will read transformation and velocity data (in the correct format, see Bullet Solver <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> for more information) from the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, and overwrite the current values at the beginning of the next frame. A feedback loop can be created with this parameter and the Bullet Solver <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. See Bullet Solver <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. NOTE: scale cannot be feedbacked. force[xyz] and torque[xyz] can be used to apply forces to specific bodies.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Flex_Page"><div class="sectionBarCOMP">Parameters - Flex Page</div></span></h2>
+<div id="tricolldir" style=""><span class="parNameCOMP">Triangle Collision Direction</span>  <code>tricolldir</code> - <span class="mw-customtoggle-tricolldir">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-tricolldir">
+<ul><li><span class="parNameCOMP">Outward</span> <code>outward</code> -</li></ul><ul><li><span class="parNameCOMP">Inward</span> <code>inward</code> -</li></ul><ul><li><span class="parNameCOMP">Both</span> <code>both</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="flextype" style=""><span class="parNameCOMP">Flex Type</span>  <code>flextype</code> - <span class="mw-customtoggle-flextype">⊞</span> - The type of dynamic Flex actor.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-flextype">
+<ul><li><span class="parNameCOMP">Fluid</span> <code>fluid</code> - A fluid actor. The number of particles will be determined by the instance input count.</li></ul><ul><li><span class="parNameCOMP">Fluid Emitter</span> <code>fluidemit</code> - A fluid emitter actor. The number of particles will increase at a rate proportional to emission size and speed. Once the maximum is reached particles will be recycled from existing particles.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emit" style=""><span class="parNameCOMP">Enable Emission</span>  <code>emit</code> - When enabled, the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will actively emit particles.
+<p><i></i>
+</p>
+</div>
+<div id="emitsize" style=""><span class="parNameCOMP">Emission Size</span>  <code>emitsize</code> - <span class="mw-customtoggle-emitsize">⊞</span> - The size of the 2D emission grid. The size represents the number of particles on each side of the emission grid. For example, a 2x5 emission size will emit a grid 2 particles wide and 5 particles high.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-emitsize">
+<ul><li><span class="parNameCOMP">Emission Size</span> <code>emitsizex</code> -</li></ul><ul><li><span class="parNameCOMP">Emission Size</span> <code>emitsizey</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="emitspeed" style=""><span class="parNameCOMP">Emission Speed</span>  <code>emitspeed</code> - The speed the particles come out of the emitter.
+<p><i></i>
+</p>
+</div>
+<div id="emitmax" style=""><span class="parNameCOMP">Max Emission Particles</span>  <code>emitmax</code> - Sets the maximum number of particles in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. Once this number is reached, emission will be done by recycling existing particles in the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="flexposfb" style=""><span class="parNameCOMP">Position Feedback <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span>  <code>flexposfb</code> - A reference to a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to feedback position. The <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> should be encoded with the position data that will be used to override position in the simulation. The texture data will be read to correspond with the Flex <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s position texture.
+<p><i></i>
+</p>
+</div>
+<div id="flexvelfb" style=""><span class="parNameCOMP">Velocity Feedback <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span>  <code>flexvelfb</code> - A reference to a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to feedback velocity. The <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> should be encoded with the velocity data that will be used to override velocity in the simulation. The texture data will be read to correspond with the Flex <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s velocity texture.
+<p><i></i>
+</p>
+</div>
+<h2><span class="mw-headline" id="Parameters_-_Xform_Page"><div class="sectionBarCOMP">Parameters - Xform Page</div></span></h2>
+<p>The Xform parameter page controls the object component's transform in world space.
+</p>
+<div id="xord" style=""><span class="parNameCOMP">Transform Order</span>  <code>xord</code> - <span class="mw-customtoggle-xord">⊞</span> - This allows you to specify the order in which the changes to your <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> will take place. Changing the Transform Order will change where things go much the same way as going a block and turning east gets you to a different place than turning east and then going a block. In matrix math terms, if we use the 'multiply vector on the right' (column vector) convention, a transform order of Scale, Rotate, Translate would be written as <code>T * R * S * Position</code>.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-xord">
+<ul><li><span class="parNameCOMP">Scale Rotate Translate</span> <code>srt</code> -</li></ul><ul><li><span class="parNameCOMP">Scale Translate Rotate</span> <code>str</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Scale Translate</span> <code>rst</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Translate Scale</span> <code>rts</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Scale Rotate</span> <code>tsr</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Rotate Scale</span> <code>trs</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="rord" style=""><span class="parNameCOMP">Rotate Order</span>  <code>rord</code> - <span class="mw-customtoggle-rord">⊞</span> - This allows you to set the transform order for the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s rotations. As with transform order (above), changing the order in which the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s rotations take place will alter the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s final position.	A Rotation order of Rx Ry Rz would create the final rotation matrix as follows <code>R = Rz * Ry * Rx</code>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-rord">
+<ul><li><span class="parNameCOMP">Rx Ry Rz</span> <code>xyz</code> - <code>R = Rz * Ry * Rx</code></li></ul><ul><li><span class="parNameCOMP">Rx Rz Ry</span> <code>xzy</code> - <code>R = Ry * Rz * Rx</code></li></ul><ul><li><span class="parNameCOMP">Ry Rx Rz</span> <code>yxz</code> - <code>R = Rz * Rx * Ry</code></li></ul><ul><li><span class="parNameCOMP">Ry Rz Rx</span> <code>yzx</code> - <code>R = Rx * Rz * Ry</code></li></ul><ul><li><span class="parNameCOMP">Rz Rx Ry</span> <code>zxy</code> - <code>R = Ry * Rx * Rz</code></li></ul><ul><li><span class="parNameCOMP">Rz Ry Rx</span> <code>zyx</code> - <code>R = Rx * Ry * Rz</code></li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="t" style=""><span class="parNameCOMP">Translate</span>  <code>t</code> - <span class="mw-customtoggle-t">⊞</span> - This allows you to specify the amount of movement along any of the three axes; the amount, in degrees, of rotation around any of the three axes; and a non-uniform scaling along the three axes. As an alternative to entering the values directly into these fields, you can modify the values by manipulating the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> in the Viewport with the Select &amp; Transform state.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-t">
+<ul><li><span class="parNameCOMP">X</span> <code>tx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>ty</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>tz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="r" style=""><span class="parNameCOMP">Rotate</span>  <code>r</code> - <span class="mw-customtoggle-r">⊞</span> - Theis specifies the amount of movement along any of the three axes; the amount, in degrees, of rotation around any of the three axes; and a non-uniform scaling along the three axes. As an alternative to entering the values directly into these fields, you can modify the values by manipulating the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> in the Viewport with the Select &amp; Transform state.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-r">
+<ul><li><span class="parNameCOMP">X</span> <code>rx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>ry</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>rz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="s" style=""><span class="parNameCOMP">Scale</span>  <code>s</code> - <span class="mw-customtoggle-s">⊞</span> - This specifies the amount of movement along any of the three axes; the amount, in degrees, of rotation around any of the three axes; and a non-uniform scaling along the three axes. As an alternative to entering the values directly into these fields, you can modify the values by manipulating the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> in the Viewport with the Select &amp; Transform state.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-s">
+<ul><li><span class="parNameCOMP">X</span> <code>sx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>sy</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>sz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="p" style=""><span class="parNameCOMP">Pivot</span>  <code>p</code> - <span class="mw-customtoggle-p">⊞</span> - The Pivot point edit fields allow you to define the point about which a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> scales and rotates. Altering the pivot point of a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> produces different results depending on the transformation performed on the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>.	
+<p>For example, during a scaling operation, if the pivot point of an <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> is located at <code>-1, -1, 0</code> and you wanted to scale the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> by <code>0.5</code> (reduce its size by 50%), the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> would scale toward the pivot point and appear to slide down and to the left.			
+</p><p><a href="File_Objects17.html" class="image"><img alt="Objects17.gif" src="images/6/60/Objects17.gif" decoding="async" width="600" height="174"></a>			
+</p><p>In the example above, rotations performed on an <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> with different pivot points produce very different results.
+</p>
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-p">
+<ul><li><span class="parNameCOMP">X</span> <code>px</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>py</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>pz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="scale" style=""><span class="parNameCOMP">Uniform Scale</span>  <code>scale</code> - This field allows you to change the size of an <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> uniformly along the three axes.	
+<blockquote><p><span class="tipTextCOMP"><b>Note:</b></span> Scaling a camera's channels is not generally recommended. However, should you decide to do so, the rendered output will match the Viewport as closely as possible when scales are involved.</p></blockquote>
+<p><i></i>
+</p>
+</div>
+<div id="parentxformsrc" style=""><span class="parNameCOMP">Parent Transform Source</span>  <code>parentxformsrc</code> - <span class="mw-customtoggle-parentxformsrc">⊞</span> - <i><b>NOTE:</b> This parameter replaces the previous '<b>Constrain To'</b> parameter.</i> Use 'Parent Transform Source' and to specify what initial position is used for this object. Can be one of "Parent (<span class="mw-lingo-term" data-lingo-term-id="0748856bca50f42e2abd5b36ca083bae">Hierarchy</span>)", "Specify Parent <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span>", or "World Origin".
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-parentxformsrc">
+<ul><li><span class="parNameCOMP">From Parent Object (<span class="mw-lingo-term" data-lingo-term-id="0748856bca50f42e2abd5b36ca083bae">Hierarchy</span>)</span> <code>hierarchy</code> -</li></ul><ul><li><span class="parNameCOMP">Specify Parent <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span> <code>specify</code> -</li></ul><ul><li><span class="parNameCOMP">World Origin</span> <code>worldorigin</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="parentobject" style=""><span class="parNameCOMP">Parent <span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span>  <code>parentobject</code> - Allows the location of the object to be constrained to any other object whose path is specified in this parameter.
+<p><i></i>
+</p>
+</div>
+<div id="lookat" style=""><span class="parNameCOMP">Look At</span>  <code>lookat</code> - Allows you to orient this <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> by naming another 3D <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> you would like it to <span class="tipTextCOMP">Look At</span>, or point to. Once you have designated this <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to look at, it will continue to face that <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, even if you move it. This is useful if, for instance, you want a camera to follow another <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s movements. The <span class="tipTextCOMP">Look At</span> parameter points the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> in question at the other <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s origin.	
+<blockquote><p><span class="tipTextCOMP"><b>Tip:</b></span> To designate a center of interest for the camera that doesn't appear in your scene, create a Null <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> and disable its display flag. Then Parent the Camera to the newly created Null <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, and tell the camera to look at this <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> using the <span class="Heading4">Look At</span> parameter. You can direct the attention of the camera by moving the Null <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> with the Select state. If you want to see both the camera and the Null <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, enable the Null <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s display flag, and use the Select state in an additional Viewport by clicking one of the icons in the top-right corner of the TouchDesigner window.</p></blockquote>
+<p><i></i>
+</p>
+</div>
+<div id="forwarddir" style=""><span class="parNameCOMP">Forward Direction</span>  <code>forwarddir</code> - <span class="mw-customtoggle-forwarddir">⊞</span> - Sets which axis and direction is considered the forward direction.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-forwarddir">
+<ul><li><span class="parNameCOMP">+X</span> <code>posx</code> -</li></ul><ul><li><span class="parNameCOMP">-X</span> <code>negx</code> -</li></ul><ul><li><span class="parNameCOMP">+Y</span> <code>posy</code> -</li></ul><ul><li><span class="parNameCOMP">-Y</span> <code>negy</code> -</li></ul><ul><li><span class="parNameCOMP">+Z</span> <code>posz</code> -</li></ul><ul><li><span class="parNameCOMP">-Z</span> <code>negz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lookup" style=""><span class="parNameCOMP">Look At Up Vector</span>  <code>lookup</code> - <span class="mw-customtoggle-lookup">⊞</span> - When specifying a <span class="tipTextCOMP">Look At</span>, it is possible to specify an up vector for the lookat. Without using an up vector, it is possible to get poor animation when the lookat <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, for example, passes through the Y axis of the target <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>.	
+<ul><li><span class="tipTextCOMP">Don't Use Up Vector</span> - Use this option if the look at <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> does not pass through the Y axis of the target <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>.</li>
+<li><span class="tipTextCOMP">Use Up Vector</span> - This precisely defines the rotates on the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> doing the looking. The <span class="tipTextCOMP">Up Vector</span> specified should not be parallel to the look at direction. See <span class="tipTextCOMP">Up Vector</span> below.</li>
+<li><span class="tipTextCOMP">Use Quaternions</span> - Quaternions are a mathematical representation of a 3D rotation. This method finds the most efficient means of moving from one point to another on a sphere.</li></ul><div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-lookup">
+<ul><li><span class="parNameCOMP">Don't use up vector</span> <code>off</code> -</li></ul><ul><li><span class="parNameCOMP">Use up vector</span> <code>on</code> -</li></ul><ul><li><span class="parNameCOMP">Use quaternions</span> <code>quat</code> -</li></ul><ul><li><span class="parNameCOMP">Use Roll</span> <code>roll</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pathsop" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span></span>  <code>pathsop</code> - Names the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> that functions as the path you want this <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to move along. For instance, you can name a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> that provides a path for the camera to follow.
+<p><i></i>
+</p>
+</div>
+<div id="roll" style=""><span class="parNameCOMP">Roll</span>  <code>roll</code> - Using the angle control you can specify a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s rotation as it animates along the path.
+<p><i></i>
+</p>
+</div>
+<div id="pos" style=""><span class="parNameCOMP">Position</span>  <code>pos</code> - This parameter lets you specify the <span class="tipTextCOMP">Position</span> of the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> along the path. The values you can enter for this parameter range from <code>0</code> to <code>1</code>, where <code>0</code> equals the starting point and <code>1</code> equals the end point of the path. The value slider allows for values as high as <code>10</code> for multiple "passes" along the path.
+<p><i></i>
+</p>
+</div>
+<div id="pathorient" style=""><span class="parNameCOMP">Orient along <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>pathorient</code> - If this option is selected, the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> will be oriented along the path. The positive Z axis of the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> will be pointing down the path.
+<p><i></i>
+</p>
+</div>
+<div id="up" style=""><span class="parNameCOMP">Orient Up Vector</span>  <code>up</code> - <span class="mw-customtoggle-up">⊞</span> - When orienting a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, the <span class="tipTextCOMP">Up Vector</span> is used to determine where the positive Y axis points.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-up">
+<ul><li><span class="parNameCOMP">X</span> <code>upx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>upy</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>upz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="bank" style=""><span class="parNameCOMP">Auto-Bank Factor</span>  <code>bank</code> - The <span class="tipTextCOMP">Auto-Bank Factor</span> rolls the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> based on the curvature of the path at its current position. To turn off auto-banking, set the bank scale to <code>0</code>.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Pre-Xform_Page"><div class="sectionBarCOMP">Parameters - Pre-Xform Page</div></span></h2>
+<p>The Pre-Xform parameter page applies a transform to the object component the same way connecting another <a href="Object.html" title="Object">Object</a> as a parent of this node does. The transform is applied to the left of the <a href="Object_COMP_Xform_Page.html" title="Object COMP Xform Page">Xform</a> page's parameters. In terms of matrix math, if we use the 'multiply on the right' (column vector) convention, the equation would be <code>preXForm * xform * Position</code>.
+</p>
+<div id="pxform" style=""><span class="parNameCOMP">Apply Pre-Transform</span>  <code>pxform</code> - Enables the transformation on this page.
+<p><i></i>
+</p>
+</div>
+<div id="pxord" style=""><span class="parNameCOMP">Transform Order</span>  <code>pxord</code> - <span class="mw-customtoggle-pxord">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pxord">
+<ul><li><span class="parNameCOMP">Scale Rotate Translate</span> <code>srt</code> -</li></ul><ul><li><span class="parNameCOMP">Scale Translate Rotate</span> <code>str</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Scale Translate</span> <code>rst</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Translate Scale</span> <code>rts</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Scale Rotate</span> <code>tsr</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Rotate Scale</span> <code>trs</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="prord" style=""><span class="parNameCOMP">Rotate Order</span>  <code>prord</code> - <span class="mw-customtoggle-prord">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-prord">
+<ul><li><span class="parNameCOMP">Rx Ry Rz</span> <code>xyz</code> -</li></ul><ul><li><span class="parNameCOMP">Rx Rz Ry</span> <code>xzy</code> -</li></ul><ul><li><span class="parNameCOMP">Ry Rx Rz</span> <code>yxz</code> -</li></ul><ul><li><span class="parNameCOMP">Ry Rz Rx</span> <code>yzx</code> -</li></ul><ul><li><span class="parNameCOMP">Rz Rx Ry</span> <code>zxy</code> -</li></ul><ul><li><span class="parNameCOMP">Rz Ry Rx</span> <code>zyx</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pt" style=""><span class="parNameCOMP">Translate</span>  <code>pt</code> - <span class="mw-customtoggle-pt">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pt">
+<ul><li><span class="parNameCOMP">X</span> <code>ptx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>pty</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>ptz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pr" style=""><span class="parNameCOMP">Rotate</span>  <code>pr</code> - <span class="mw-customtoggle-pr">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pr">
+<ul><li><span class="parNameCOMP">X</span> <code>prx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>pry</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>prz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="ps" style=""><span class="parNameCOMP">Scale</span>  <code>ps</code> - <span class="mw-customtoggle-ps">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-ps">
+<ul><li><span class="parNameCOMP">X</span> <code>psx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>psy</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>psz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pp" style=""><span class="parNameCOMP">Pivot</span>  <code>pp</code> - <span class="mw-customtoggle-pp">⊞</span> - Refer to the documentation on Xform page for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-pp">
+<ul><li><span class="parNameCOMP">X</span> <code>ppx</code> -</li></ul><ul><li><span class="parNameCOMP">Y</span> <code>ppy</code> -</li></ul><ul><li><span class="parNameCOMP">Z</span> <code>ppz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="pscale" style=""><span class="parNameCOMP">Uniform Scale</span>  <code>pscale</code> - Refer to the documentation on Xform page for more information.
+<p><i></i>
+</p>
+</div>
+<div id="preset" style=""><span class="parNameCOMP">Reset Transform</span>  <code>preset</code> - This button will reset this page's transform so it has no translate/rotate/scale.
+<p><i></i>
+</p>
+</div>
+<div id="pcommit" style=""><span class="parNameCOMP">Commit to Main Transform</span>  <code>pcommit</code> - This button will copy the transform from this page to the main Xform page, and reset this page's transform.
+<p><i></i>
+</p>
+</div>
+<div id="xformmatrixop" style=""><span class="parNameCOMP">Xform Matrix/<span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>/<span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span></span>  <code>xformmatrixop</code> - This parameter can be used to transform using a 4x4 matrix directly. For information on ways to specify a matrix directly, refer to the <a href="Matrix_Parameters.html" title="Matrix Parameters">Matrix Parameters</a> page. This transform will be applied after the regular Pre-Transform transformation. That is, it'll be applied in the oder XformMatrix * PreXForm * Position.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Instance_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Page</div></span></h2>
+<p>The <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page provides the ability to create hardware instances of geometry. Each instance has an instance ID which can be passed into a <a href="MAT.html" title="MAT">MAT</a> shader via a uniform value. The instance ID can be retrieved by the <a href="Render_Pick_CHOP.html" title="Render Pick CHOP">Render Pick CHOP</a>. Any code in a vertex shader can customize the instance based on the instance ID. 
+</p><p><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span>'s attributes can be individually driven by the data from any type of <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>. When the instance data is supplied by a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s RGBA channels are assigned to instance attributes, when data is supplied by a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s channels are assigned to instance attributes, when from a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> then the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s attributes are assigned to instance attributes, and when a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> is used then a column is assigned to the instances attributes. The mapping of operator data to instance attributes is setup on the parameters below and on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> 2 and <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> 3 parameter pages.
+</p>
+<div id="instancing" style=""><span class="parNameCOMP">Instancing</span>  <code>instancing</code> - Turns on instancing for the Geometry <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>.
+<p><i></i>
+</p>
+</div>
+<div id="instancecountmode" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Count Mode</span>  <code>instancecountmode</code> - <span class="mw-customtoggle-instancecountmode">⊞</span> - Two modes to determine how many instances will be created.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancecountmode">
+<ul><li><span class="parNameCOMP">Manual</span> <code>manual</code> - Use the Num Instances parameter below to set the number of instances.</li></ul><ul><li><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>(s) Length</span> <code>oplength</code> - The number of <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> samples/<span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> rows in the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>/<span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> determines the number of instances.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="numinstances" style=""><span class="parNameCOMP">Num Instances</span>  <code>numinstances</code> - When using the Manual mode for <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Count, this parameter set the number of instances.
+<p><i></i>
+</p>
+</div>
+<div id="instanceop" style=""><span class="parNameCOMP">Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instanceop</code> - Specify a path to a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> or <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> used to transform the instances. Number of samples/rows in this <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> or <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> determines the number of instances when using the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Length/<span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Num Rows mode for <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Count.
+<p><i></i>
+</p>
+</div>
+<div id="instancefirstrow" style=""><span class="parNameCOMP">First Row is</span>  <code>instancefirstrow</code> - <span class="mw-customtoggle-instancefirstrow">⊞</span> - What to do with the first row of a table <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> when using <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> rows for <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Count.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancefirstrow">
+<ul><li><span class="parNameCOMP">Ignored</span> <code>ignored</code> - The first row is ignored and it's values won't be used as part of an instance. Indices must be used to select the columns to use for instance attributes.</li></ul><ul><li><span class="parNameCOMP">Names</span> <code>names</code> - The first row contains column names which can be used to select which columns to use from the table.</li></ul><ul><li><span class="parNameCOMP">Values</span> <code>values</code> - The first row is considered to contain values for the first instance. Indices must be used to select the columns to use for instance attributes.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instxord" style=""><span class="parNameCOMP">Transform Order</span>  <code>instxord</code> - <span class="mw-customtoggle-instxord">⊞</span> - Controls the order the transform operations will be applied to each instance. Refer to the documentation for the Xform page for more details.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instxord">
+<ul><li><span class="parNameCOMP">Scale Rotate Translate</span> <code>srt</code> -</li></ul><ul><li><span class="parNameCOMP">Scale Translate Rotate</span> <code>str</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Scale Translate</span> <code>rst</code> -</li></ul><ul><li><span class="parNameCOMP">Rotate Translate Scale</span> <code>rts</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Scale Rotate</span> <code>tsr</code> -</li></ul><ul><li><span class="parNameCOMP">Translate Rotate Scale</span> <code>trs</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instrord" style=""><span class="parNameCOMP">Rotate Order</span>  <code>instrord</code> - <span class="mw-customtoggle-instrord">⊞</span> - The rotational matrix presented when you click on this option allows you to set the transform order for the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s rotations. As with transform order (above), changing the order in which the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s rotations take place will alter the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s final position.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instrord">
+<ul><li><span class="parNameCOMP">Rx Ry Rz</span> <code>xyz</code> -</li></ul><ul><li><span class="parNameCOMP">Rx Rz Ry</span> <code>xzy</code> -</li></ul><ul><li><span class="parNameCOMP">Ry Rx Rz</span> <code>yxz</code> -</li></ul><ul><li><span class="parNameCOMP">Ry Rz Rx</span> <code>yzx</code> -</li></ul><ul><li><span class="parNameCOMP">Rz Rx Ry</span> <code>zxy</code> -</li></ul><ul><li><span class="parNameCOMP">Rz Ry Rx</span> <code>zyx</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetop" style=""><span class="parNameCOMP">Translate <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancetop</code> - Select a specific operator to get data from for the Translate instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instanceactive" style=""><span class="parNameCOMP">Active</span>  <code>instanceactive</code> - Select the data channel that will be used to control which instances are rendered. Only instances with a non-zero value in this channel will be rendered; instances with a zero active channel value will be skipped. If no data is assigned to this channel then all instances are rendered. Use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancetx" style=""><span class="parNameCOMP">Translate X</span>  <code>instancetx</code> - Select what data to use to translate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancety" style=""><span class="parNameCOMP">Translate Y</span>  <code>instancety</code> - Select what data to use to translate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancetz" style=""><span class="parNameCOMP">Translate Z</span>  <code>instancetz</code> - Select what data to use to translate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerop" style=""><span class="parNameCOMP">Rotate <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancerop</code> - Select a specific operator to get data from for the Rotate instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancerx" style=""><span class="parNameCOMP">Rotate X</span>  <code>instancerx</code> - Select what data to use to rotate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancery" style=""><span class="parNameCOMP">Rotate Y</span>  <code>instancery</code> - Select what data to use to rotate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerz" style=""><span class="parNameCOMP">Rotate Z</span>  <code>instancerz</code> - Select what data to use to rotate instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancesop" style=""><span class="parNameCOMP">Scale <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancesop</code> - Select a specific operator to get data from for the Scale instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancesx" style=""><span class="parNameCOMP">Scale X</span>  <code>instancesx</code> - Select what data to use to scale instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancesy" style=""><span class="parNameCOMP">Scale Y</span>  <code>instancesy</code> - Select what data to use to scale instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancesz" style=""><span class="parNameCOMP">Scale Z</span>  <code>instancesz</code> - Select what data to use to scale instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancepop" style=""><span class="parNameCOMP">Pivot <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancepop</code> - Select a specific operator to get data from for the Pivot instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancepx" style=""><span class="parNameCOMP">Pivot X</span>  <code>instancepx</code> - Select what data to use for the pivot of the instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancepy" style=""><span class="parNameCOMP">Pivot Y</span>  <code>instancepy</code> - Select what data to use for the pivot of the instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancepz" style=""><span class="parNameCOMP">Pivot Z</span>  <code>instancepz</code> - Select what data to use for the pivot of the instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Instance_2_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> 2 Page</div></span></h2>
+<p>When the instance data is supplied by a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s RGBA channels are assigned to instance attributes; when data is supplied by a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s channels are assigned to instance attributes; when from a <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> then the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s attributes are assigned to instance attributes; and when a <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> is used then a column is assigned to the instances attributes.
+</p>
+<div id="instancerottoorder" style=""><span class="parNameCOMP">Rotate to Vector: Order</span>  <code>instancerottoorder</code> - <span class="mw-customtoggle-instancerottoorder">⊞</span> - Controls where in the transform equation the Rotate To Vector operation is applied.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancerottoorder">
+<ul><li><span class="parNameCOMP">Default</span> <code>default</code> - The Rotate to Vector operation will be applied before all other transform operations (except the pivot offset), regardless of their order of operation. E.g <code> T * R * S * (RotToVector) * Position </code>, <code> R * S * T * (RotToVector) * Position </code>.</li></ul><ul><li><span class="parNameCOMP">Pre-Rot</span> <code>prerot</code> - The Rotate To Vector operation will be applied after the main rotation as part of the TRS order. I.e <code> T * (RotToVector * R) * S * Position</code>, <code> (RotToVector * R) * S * T * Position</code>.</li></ul><ul><li><span class="parNameCOMP">Post-Rot</span> <code>postrot</code> - The Rotate To Vector operation will be applied before the main rotation as part of the TRS order. I.e <code> T * (R * RotToVector) * S * Position</code>, <code> (R * RotToVector) * S * T * Position</code>.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancerottoforward" style=""><span class="parNameCOMP">Rotate to Vector: Forward Direction</span>  <code>instancerottoforward</code> - <span class="mw-customtoggle-instancerottoforward">⊞</span> - Determine which axis for the geometry original orientation is considered 'forward'. That is, it'll treat the part of the geometry that is looking down that axis as the front and rotate it so it's aligned with the rotate to vector direction.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancerottoforward">
+<ul><li><span class="parNameCOMP">+X</span> <code>posx</code> -</li></ul><ul><li><span class="parNameCOMP">-X</span> <code>negx</code> -</li></ul><ul><li><span class="parNameCOMP">+Y</span> <code>posy</code> -</li></ul><ul><li><span class="parNameCOMP">-Y</span> <code>negy</code> -</li></ul><ul><li><span class="parNameCOMP">+Z</span> <code>posz</code> -</li></ul><ul><li><span class="parNameCOMP">-Z</span> <code>negz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancerottoop" style=""><span class="parNameCOMP">Rotate to <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancerottoop</code> - Select a specific operator to get data from for the Rotate to Vector instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancerottox" style=""><span class="parNameCOMP">Rotate to Vector X</span>  <code>instancerottox</code> - Select what data to use to rotate to vector instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerottoy" style=""><span class="parNameCOMP">Rotate to Vector Y</span>  <code>instancerottoy</code> - Select what data to use to rotate to vector instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerottoz" style=""><span class="parNameCOMP">Rotate to Vector Z</span>  <code>instancerottoz</code> - Select what data to use to rotate to vector instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerotupop" style=""><span class="parNameCOMP">Rotate Up <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancerotupop</code> - Select a specific operator to get data from for the Rotate Up instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancerotupx" style=""><span class="parNameCOMP">Rotate Up X</span>  <code>instancerotupx</code> - Select what data to use to rotate up instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instancerotupy" style=""><span class="parNameCOMP">Rotate Up Y</span>  <code>instancerotupy</code> - Select what data to use to rotate up instances, use the drop-down menu on the right to easily select from the available options
+<p><i></i>
+</p>
+</div>
+<div id="instancerotupz" style=""><span class="parNameCOMP">Rotate Up Z</span>  <code>instancerotupz</code> - Select what data to use to rotate up instances, use the drop-down menu on the right to easily select from the available options
+<p><i></i>
+</p>
+</div>
+<div id="instanceorder" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Order</span>  <code>instanceorder</code> - <span class="mw-customtoggle-instanceorder">⊞</span> - Sets how transforms are applied to the instances.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instanceorder">
+<ul><li><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span>, then World Transform</span> <code>instanceworld</code> - Use the individual instance transforms first, then apply the world transform (i.e. Xform and Pre-Xform parameter pages). <code>worldXform * instanceXForm * Position</code></li></ul><ul><li><span class="parNameCOMP">World Transform, then <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span></span> <code>worldinstance</code> - Use the world transform first, then apply the individual instance transforms. <code>instanceXForm * worldXForm * Position</code></li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexmode" style=""><span class="parNameCOMP">Texture Mode</span>  <code>instancetexmode</code> - <span class="mw-customtoggle-instancetexmode">⊞</span> - Set how the texture coordinates are applied to the instances.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexmode">
+<ul><li><span class="parNameCOMP">Replace</span> <code>replace</code> - Replaces texture coordinates.</li></ul><ul><li><span class="parNameCOMP">Transform</span> <code>transform</code> - Offsets texture coordinates.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexcoordop" style=""><span class="parNameCOMP">Tex Coord <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancetexcoordop</code> - Select a specific operator to get data from for the Texture Coord instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instanceu" style=""><span class="parNameCOMP">U</span>  <code>instanceu</code> - Select what data to apply to texture coordinates of the instances, use the drop-down menu on the right to easily select from the available options. This interacts with the first texture layer <a href="Attribute.html" title="Attribute">uv[0] attributes</a> coming from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="instancev" style=""><span class="parNameCOMP">V</span>  <code>instancev</code> - Select what data to apply to texture coordinates of the instances, use the drop-down menu on the right to easily select from the available options. This interacts with the first texture layer <a href="Attribute.html" title="Attribute">uv[0] attributes</a> coming from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="instancew" style=""><span class="parNameCOMP">W</span>  <code>instancew</code> - Select what data to apply to texture coordinates of the instances, use the drop-down menu on the right to easily select from the available options. This interacts with the first texture layer <a href="Attribute.html" title="Attribute">uv[0] attributes</a> coming from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="instancecolormode" style=""><span class="parNameCOMP">Color Mode</span>  <code>instancecolormode</code> - <span class="mw-customtoggle-instancecolormode">⊞</span> - Controls how the instance color values interact with the SOPs <a href="Attribute.html" title="Attribute">'Cd' (diffuse color)</a> attribute. If the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> doesn't have a 'Cd' attribute, then it will behave as if its 'Cd' is (1, 1, 1, 1).
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancecolormode">
+<ul><li><span class="parNameCOMP">Replace</span> <code>replace</code> -</li></ul><ul><li><span class="parNameCOMP">Multiply</span> <code>multiply</code> -</li></ul><ul><li><span class="parNameCOMP">Add</span> <code>add</code> -</li></ul><ul><li><span class="parNameCOMP">Subtract</span> <code>subtract</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancecolorop" style=""><span class="parNameCOMP">Color <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancecolorop</code> - Select a specific operator to get data from for the Color instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancer" style=""><span class="parNameCOMP">R</span>  <code>instancer</code> - Select what data to apply to the diffuse color of the instances, use the drop-down menu on the right to easily select from the available options. These parameters will be combined/replaced with the SOPs 'Cd' attribute, as chosen by the Color Mode parameter.
+<p><i></i>
+</p>
+</div>
+<div id="instanceg" style=""><span class="parNameCOMP">G</span>  <code>instanceg</code> - Select what data to apply to the diffuse color of the instances, use the drop-down menu on the right to easily select from the available options. These parameters will be combined/replaced with the SOPs 'Cd' attribute, as chosen by the Color Mode parameter.
+<p><i></i>
+</p>
+</div>
+<div id="instanceb" style=""><span class="parNameCOMP">B</span>  <code>instanceb</code> - Select what data to apply to the diffuse color of the instances, use the drop-down menu on the right to easily select from the available options. These parameters will be combined/replaced with the SOPs 'Cd' attribute, as chosen by the Color Mode parameter.
+<p><i></i>
+</p>
+</div>
+<div id="instancea" style=""><span class="parNameCOMP">A</span>  <code>instancea</code> - Select what data to apply to the diffuse color of the instances, use the drop-down menu on the right to easily select from the available options. These parameters will be combined/replaced with the SOPs 'Cd' attribute, as chosen by the Color Mode parameter.
+<p><i></i>
+</p>
+</div>
+<div id="instancetexs" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Textures</span>  <code>instancetexs</code> - <span class="mw-customtoggle-instancetexs">⊞</span> - Specify the paths one or more <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> containing the textures to use with the instances. Wildcards and pattern matching is supported.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexs">
+<div id="instancetexextendu" style=""><span class="parNameCOMP">Extend U</span>  <code>instancetexextendu</code> - <span class="mw-customtoggle-instancetexextendu">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexextendu">
+<ul><li><span class="parNameCOMP">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameCOMP">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameCOMP">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameCOMP">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexextendv" style=""><span class="parNameCOMP">Extend V</span>  <code>instancetexextendv</code> - <span class="mw-customtoggle-instancetexextendv">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexextendv">
+<ul><li><span class="parNameCOMP">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameCOMP">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameCOMP">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameCOMP">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexextendw" style=""><span class="parNameCOMP">Extend W</span>  <code>instancetexextendw</code> - <span class="mw-customtoggle-instancetexextendw">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexextendw">
+<ul><li><span class="parNameCOMP">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameCOMP">Zero</span> <code>zero</code> -</li></ul><ul><li><span class="parNameCOMP">Repeat</span> <code>repeat</code> -</li></ul><ul><li><span class="parNameCOMP">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexfilter" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>instancetexfilter</code> - <span class="mw-customtoggle-instancetexfilter">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexfilter">
+<ul><li><span class="parNameCOMP">Nearest</span> <code>nearest</code> -</li></ul><ul><li><span class="parNameCOMP">Linear</span> <code>linear</code> -</li></ul><ul><li><span class="parNameCOMP">Mipmap Linear</span> <code>mipmaplinear</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="instancetexanisotropy" style=""><span class="parNameCOMP">Anisotropic <span class="mw-lingo-term" data-lingo-term-id="d7778d0c64b6ba21494c97f77a66885a">Filter</span></span>  <code>instancetexanisotropy</code> - <span class="mw-customtoggle-instancetexanisotropy">⊞</span> - 
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-instancetexanisotropy">
+<ul><li><span class="parNameCOMP">Off</span> <code>off</code> -</li></ul><ul><li><span class="parNameCOMP">2x</span> <code>2x</code> -</li></ul><ul><li><span class="parNameCOMP">4x</span> <code>4x</code> -</li></ul><ul><li><span class="parNameCOMP">8x</span> <code>8x</code> -</li></ul><ul><li><span class="parNameCOMP">16x</span> <code>16x</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+</div>
+<p><i></i>
+</p>
+</div>
+<h3><span class="mw-headline" id="Instance_Texturing"><div class="customBar"><span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Texturing</div></span></h3>
+<p>This feature allows for arbitrary textures to be applied to instances. The textures do not need to be the same resolution, and they don't need to be combined into an grouped format such as a 3D Texture or a 2D Texture array. Multiple TOPs can be specified using the "<span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> Textures" parameter, and the texture that is applied per-instance is specified using the channel chosen in the "Texture Index" parameter. This is different from a 3D Texture or 2D Texture Array, which would use the W texture coordinate to select a texture from within a single texture. By default this texture will be used as the "Base Color Map" texture for a <a href="PBR_MAT.html" title="PBR MAT">PBR MAT</a>, and the Color Map for all other materials such as the <a href="Phong_MAT.html" title="Phong MAT">Phong MAT</a>. For materials that support more than one map, the map that this this feature replaces can be chosen in the material's parameters. Currently on Windows at most 16384 textures can be used at once, and on macOS at most 128 textures can be used at once. These numbers are reduced by other textures that are used by the render such as other maps, cone light lookup map etc.
+</p><p><br></p>
+<div id="instancetexindexop" style=""><span class="parNameCOMP">Tex Index <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instancetexindexop</code> - Select a specific operator to get data from for the Texture Index instance attribute below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instancetexindex" style=""><span class="parNameCOMP">Texture Index</span>  <code>instancetexindex</code> - Select what data to select which texture to use for the instances, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Instance_3_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> 3 Page</div></span></h2>
+<p>Custom attributes allow arbitrary attributes to be assigned to instances, usable in a <a href="GLSL_MAT.html" title="GLSL MAT">GLSL MAT</a>. They can be accessed using <code>TDInstanceCustomAttrib0()</code>, <code>TDInstanceCustomAttrib1()</code> etc. For more information refer to <a href="Write_a_GLSL_Material.html" title="Write a GLSL Material">Write a GLSL Material</a>. These attributes will be ignored in other materials such as the <a href="PBR_MAT.html" title="PBR MAT">PBR MAT</a>.
+</p><p>Below you can add more parameters as you require more custom attributes. Different GPUs will have a different number of maximum custom attributes supported.
+</p>
+<div id="instance" style="" class="sequenceBlock"><span class="parNameCOMP">Custom <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span></span>  <code>instance</code> - Sequence of arbitrary attributes to be assigned to instances
+<p><i></i>
+</p>
+</div>
+<div id="instance0customop" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>instance0customop</code> - Select a specific operator to get data from for the instance attributes below. If not specified, the the operator specified in the 'Default <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>' on the <span class="mw-lingo-term" data-lingo-term-id="d9a17c1c9e8ef6866e4dbeef41c741b2">Instance</span> parameter page can be used.
+<p><i></i>
+</p>
+</div>
+<div id="instance0customx" style=""><span class="parNameCOMP">X</span>  <code>instance0customx</code> - Select what data to use for this instance attribute, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instance0customy" style=""><span class="parNameCOMP">Y</span>  <code>instance0customy</code> - Select what data to use for this instance attribute, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instance0customz" style=""><span class="parNameCOMP">Z</span>  <code>instance0customz</code> - Select what data to use for this instance attribute, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<div id="instance0customw" style=""><span class="parNameCOMP">W</span>  <code>instance0customw</code> - Select what data to use for this instance attribute, use the drop-down menu on the right to easily select from the available options.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Render_Page"><div class="sectionBarCOMP">Parameters - Render Page</div></span></h2>
+<p>The Display parameter page controls the component's <a href="https://docs.derivative.ca/index.php?title=Material&amp;action=edit&amp;redlink=1" class="new" title="Material (page does not exist)">material</a> and <a href="Rendering.html" title="Rendering">rendering</a> settings.
+</p>
+<div id="material" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="d92a8333dd3ccb895cc65f7455b71206">Material</span></span>  <code>material</code> - Selects a <a href="MAT.html" title="MAT">MAT</a> to apply to the geometry inside.
+<p><i></i>
+</p>
+</div>
+<div id="render" style=""><span class="parNameCOMP">Render</span>  <code>render</code> - Whether the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s geometry is visible in the <a href="Render_TOP.html" title="Render TOP">Render TOP</a>. This parameter works in conjunction (logical AND) with the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s <a href="Render_Flag.html" title="Render Flag">Render Flag</a>.
+<p><i></i>
+</p>
+</div>
+<div id="drawpriority" style=""><span class="parNameCOMP">Draw Priority</span>  <code>drawpriority</code> - Determines the order in which the Components are drawn. Smaller values get drawn after larger values. The value is compared with other Components in the same parent <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, or if the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> is the top level one listed in the Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s '<span class="mw-lingo-term" data-lingo-term-id="d9c6333623e6357515fcbf17be806273">Geometry</span>' parameter, then against other top-level Components listed there. This value is most often used to help with <a href="Transparency.html" title="Transparency">Transparency</a>.
+<p><i></i>
+</p>
+</div>
+<div id="pickpriority" style=""><span class="parNameCOMP">Pick Priority</span>  <code>pickpriority</code> - When using a <a href="Render_Pick_CHOP.html" title="Render Pick CHOP">Render Pick CHOP</a> or a <a href="Render_Pick_DAT.html" title="Render Pick DAT">Render Pick DAT</a>, there is an option to have a 'Search Area'. If multiple objects are found within the search area, the pick priority can be used to select one object over another. A higher value will get picked over a lower value. This does not affect draw order, or objects that are drawn over each other on the same pixel. Only one will be visible for a pick per pixel.
+<p><i></i>
+</p>
+</div>
+<div id="wcolor" style=""><span class="parNameCOMP">Wireframe Color</span>  <code>wcolor</code> - <span class="mw-customtoggle-wcolor">⊞</span> - Use the R, G, and B fields to set the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>'s color when displayed in wireframe shading mode.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-wcolor">
+<ul><li><span class="parNameCOMP">Red</span> <code>wcolorr</code> -</li></ul><ul><li><span class="parNameCOMP">Green</span> <code>wcolorg</code> -</li></ul><ul><li><span class="parNameCOMP">Blue</span> <code>wcolorb</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lightmask" style=""><span class="parNameCOMP">Light Mask</span>  <code>lightmask</code> - By default all lights used in the <a href="Render_TOP.html" title="Render TOP">Render TOP</a> will affect geometry renderer. This parameter can be used to specify a sub-set of lights to be used for this particular geometry. The lights must be listed in the <a href="Render_TOP.html" title="Render TOP">Render TOP</a> as well as this parameter to be used.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Extensions_Page"><div class="sectionBarCOMP">Parameters - <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> Page</div></span></h2>
+<p>The <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span> parameter page sets the component's python extensions.  Please see <a href="Extensions.html" title="Extensions">extensions</a> for more information.
+</p>
+<div id="ext" style="" class="sequenceBlock"><span class="parNameCOMP">Extension</span>  <code>ext</code> - Sequence of info for creating extensions on this component
+<div class="sequenceItem">
+<div id="ext0object" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="497031794414a552435f90151ac3b54b">Object</span></span>  <code>ext0object</code> - A number of class instances that can be attached to the component.
+<p><i></i>
+</p>
+</div>    
+<div id="ext0name" style=""><span class="parNameCOMP">Name</span>  <code>ext0name</code> - Optional name to search by, instead of the instance class name.
+<p><i></i>
+</p>
+</div>
+<div id="ext0promote" style=""><span class="parNameCOMP">Promote</span>  <code>ext0promote</code> - Controls whether or not the extensions are visible directly at the component level, or must be accessed through the <code>.ext</code> member.  Example:  <code>n.Somefunction</code> vs <code>n.ext.Somefunction</code>
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="reinitextensions" style=""><span class="parNameCOMP">Re-Init <span class="mw-lingo-term" data-lingo-term-id="5e2f5f3c24ae8c6ab3eca618826b0e23">Extensions</span></span>  <code>reinitextensions</code> - Recompile all extension objects. Normally extension objects are compiled only when they are referenced and their definitions have changed.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarCOMP">Parameters - Common Page</div></span></h2>
+<p>The Common parameter page sets the component's <a href="Node_Viewer.html" title="Node Viewer">node viewer</a> and <a href="Clone.html" title="Clone">clone</a> relationships.
+</p>
+<div id="parentshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="98b55baa723b7158c2ad741a9f2339b8">Parent Shortcut</span></span>  <code>parentshortcut</code> - Specifies a name you can use anywhere inside the component as the path to that component. See <a href="Parent_Shortcut.html" title="Parent Shortcut">Parent Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div id="opshortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="127c8e2bf0b36c9d6a86d99b969d563a">Global OP Shortcut</span></span>  <code>opshortcut</code> - Specifies a name you can use anywhere at all as the path to that component. See <a href="Global_OP_Shortcut.html" title="Global OP Shortcut">Global OP Shortcut</a>.
+<p><i></i>
+</p>
+</div>
+<div id="iop" style="" class="sequenceBlock"><span class="parNameCOMP">Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop</code> - Sequence header for internal operators.
+<div class="sequenceItem">
+<div id="iop0shortcut" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="756210d98ce28018652ca05e1dcaaf3e">Shortcut</span></span>  <code>iop0shortcut</code> - Specifies a name you can use anywhere inside the component as a path to "Internal <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>" below. See <a href="Internal_Operators.html" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+<div id="iop0op" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></span>  <code>iop0op</code> - The path to the Internal OP inside this component. See <a href="Internal_Operators.html" title="Internal Operators">Internal Operators</a>.
+<p><i></i>
+</p>
+</div>
+</div>
+</div>
+<div id="nodeview" style=""><span class="parNameCOMP">Node View</span>  <code>nodeview</code> - <span class="mw-customtoggle-nodeview">⊞</span> - Determines what is displayed in the node viewer, also known as the <a href="Node_Viewer.html" title="Node Viewer">Node Viewer</a>. Some options will not be available depending on the <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> type (<a href="Object_Component.html" title="Object Component">Object Component</a>, <a href="Panel_Component.html" title="Panel Component">Panel Component</a>, Misc.)
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-nodeview">
+<ul><li><span class="parNameCOMP">Default <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span> <code>default</code> - Displays the default viewer for the component type, a 3D Viewer for Object COMPS and a <span class="mw-lingo-term" data-lingo-term-id="39f6796e665f9c1cace476535ba6e5bb">Control Panel</span> Viewer for Panel COMPs.</li></ul><ul><li><span class="parNameCOMP">Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span> <code>opviewer</code> - Displays the node viewer from any operator specified in the Operator Viewer parameter below.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="opviewer" style=""><span class="parNameCOMP">Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span></span>  <code>opviewer</code> - Select which operator's node viewer to use when the Node View parameter above is set to Operator <span class="mw-lingo-term" data-lingo-term-id="fb15c53f22336982a182b84aeb2f42eb">Viewer</span>.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloning" style=""><span class="parNameCOMP">Enable Cloning</span>  <code>enablecloning</code> - Control if the OP should be actively cloneing. Turning this off causes this node to stop cloning it's '<span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master'.
+<p><i></i>
+</p>
+</div>
+<div id="enablecloningpulse" style=""><span class="parNameCOMP">Enable Cloning <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enablecloningpulse</code> - Instantaneously clone the contents.
+<p><i></i>
+</p>
+</div>
+<div id="clone" style=""><span class="parNameCOMP"><span class="mw-lingo-term" data-lingo-term-id="ff24590464659ee8cdec688128c35f89">Clone</span> Master</span>  <code>clone</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a component used as the Master <a href="Clone.html" title="Clone">Clone</a>.
+<p><i></i>
+</p>
+</div>
+<div id="loadondemand" style=""><span class="parNameCOMP">Load on Demand</span>  <code>loadondemand</code> - Loads the component into memory only when required. Good to use for components that are not always used in the project.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltox" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></span>  <code>enableexternaltox</code> - When on (default), the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file will be loaded when the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> starts and the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> will match that of the external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>. This can be turned off to avoid loading from the referenced external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> on startup if desired (the contents of the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are instead loaded from the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file). Useful if you wish to have a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> reference an external <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> but not always load from it unless you specifically push the Re-Init Network parameter button.
+<p><i></i>
+</p>
+</div>
+<div id="enableexternaltoxpulse" style=""><span class="parNameCOMP">Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>enableexternaltoxpulse</code> - This button will re-load from the external <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file (if present).
+<p><i></i>
+</p>
+</div>
+<div id="externaltox" style=""><span class="parNameCOMP">External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>externaltox</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file on disk which will source the component's contents upon start of a <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>. This allows for components to contain networks that can be updated independently. If the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file can not be found, whatever the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file was saved with will be loaded.
+<p><i></i>
+</p>
+</div>
+<div id="reloadcustom" style=""><span class="parNameCOMP">Reload Custom Parameters</span>  <code>reloadcustom</code> - When this checkbox is enabled, the values of the component's <a href="Custom_Parameters.html" title="Custom Parameters">Custom Parameters</a> are reloaded when the <a href="-2.html" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="-2.html" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="reloadbuiltin" style=""><span class="parNameCOMP">Reload Built-In Parameters</span>  <code>reloadbuiltin</code> - When this checkbox is enabled, the values of the component's built-in parameters are reloaded when the <a href="-2.html" title=".tox">.tox</a> is reloaded. This only affects top-level parameters on the component, all parameters on nodes inside the component are always reloaded with the <a href="-2.html" title=".tox">.tox</a>.
+<p><i></i>
+</p>
+</div>
+<div id="savebackup" style=""><span class="parNameCOMP">Save Backup of External</span>  <code>savebackup</code> - When this checkbox is enabled, a backup copy of the component specified by the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> parameter is saved in the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file.  This backup copy will be used if the External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> can not be found. This may happen if the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> was renamed, deleted, or the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> file is running on another computer that is missing component media.
+<p><i></i>
+</p>
+</div>
+<div id="subcompname" style=""><span class="parNameCOMP">Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load</span>  <code>subcompname</code> - When loading from an External <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file, this option allows you to reach into the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> and pull out a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> and make that the top-level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, ignoring everything else in the file (except for the contents of that <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>). For example if a <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file named <code>project1<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> contains <code>project1/geo1</code>, putting <code>geo1</code> as the Sub-<span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> to Load, will result in <code>geo1</code> being loaded in place of the current <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. If this parameter is blank, it just loads the <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file normally using the top level <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> in the file.
+<p><i></i>
+</p>
+</div>
+<div id="relpath" style=""><span class="parNameCOMP">Relative File <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> Behavior</span>  <code>relpath</code> - <span class="mw-customtoggle-relpath">⊞</span> - Set whether the child file paths within this <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> are relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> itself or the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>, or inherit from parent.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-relpath">
+<ul><li><span class="parNameCOMP">Use <span class="mw-lingo-term" data-lingo-term-id="30269022e9d8f51beaabb52e5d0de2b7">Parent</span>'s Behavior</span> <code>inherit</code> - Inherit setting from parent.</li></ul><ul><li><span class="parNameCOMP">Relative to Project File (<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span>)</span> <code>project</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span> file.</li></ul><ul><li><span class="parNameCOMP">Relative to External <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> File (<span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span>)</span> <code>externaltox</code> - The path, when specified as a relative path, will be relative to the <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> file. When no external <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> file is specified, or when Enable External <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> is not toggled on, this doesn't have any impact.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p><p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarCOMP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+</p>
+<h3><span class="mw-headline" id="Specific_Actor_COMP_Info_Channels"><div class="customBar">Specific Actor <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_bodies</span> -</li></ul><ul><li><span class="parName">num_active_bodies</span> -</li></ul><h3><span class="mw-headline" id="Common_COMP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_children</span> - Number of children in this component.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Actor_COMP.html">Latest</option>\n<option value="https://docs.derivative.ca/Actor_COMP?oldid=30726">wikieditor</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=31081">wikieditor</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=31082">wikieditor</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=31083">wikieditor</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=23845">mw-undo</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=24365">2022.24140</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=20616">2021.10000</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=20615">2020.23680</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=18390">2020.20000</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=17350">2019.14650</option><option value="https://docs.derivative.ca/Actor_COMP?oldid=12916">2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">COMPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Actor  </a></span>• <span class="catList navigation-not-searchable"><a href="Ambient_Light_COMP.html" title="Ambient Light COMP">Ambient Light  </a></span>• <span class="catList navigation-not-searchable"><a href="Animation_COMP.html" title="Animation COMP">Animation  </a></span>• <span class="catList navigation-not-searchable"><a href="Annotate_COMP.html" title="Annotate COMP">Annotate  </a></span>• <span class="catList navigation-not-searchable"><a href="Base_COMP.html" title="Base COMP">Base  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_COMP.html" title="Blend COMP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_COMP.html" title="Bone COMP">Bone  </a></span>• <span class="catList navigation-not-searchable"><a href="Bullet_Solver_COMP.html" title="Bullet Solver COMP">Bullet Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="Button_COMP.html" title="Button COMP">Button  </a></span>• <span class="catList navigation-not-searchable"><a href="Camera_Blend_COMP.html" title="Camera Blend COMP">Camera Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Camera_COMP.html" title="Camera COMP">Camera  </a></span>• <span class="catList navigation-not-searchable"><a href="MediaWiki_Common.html" title="MediaWiki:Common.js">MediaWiki:Common.js </a></span>• <span class="catList navigation-not-searchable"><a href="Component.html" title="Component">Component </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Component.html" title="Experimental:Component">Experimental:Component </a></span>• <span class="catList navigation-not-searchable"><a href="Constraint_COMP.html" title="Constraint COMP">Constraint  </a></span>• <span class="catList navigation-not-searchable"><a href="Container_COMP.html" title="Container COMP">Container  </a></span>• <span class="catList navigation-not-searchable"><a href="Engine_COMP.html" title="Engine COMP">Engine  </a></span>• <span class="catList navigation-not-searchable"><a href="Environment_Light_COMP.html" title="Environment Light COMP">Environment Light  </a></span>• <span class="catList navigation-not-searchable"><a href="FBX_COMP.html" title="FBX COMP">FBX  </a></span>• <span class="catList navigation-not-searchable"><a href="Field_COMP.html" title="Field COMP">Field  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_COMP.html" title="Force COMP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Geo_Text_COMP.html" title="Geo Text COMP">Geo Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Geometry_COMP.html" title="Geometry COMP">Geometry  </a></span>• <span class="catList navigation-not-searchable"><a href="GLSL_COMP.html" title="GLSL COMP">GLSL  </a></span>• <span class="catList navigation-not-searchable"><a href="Handle_COMP.html" title="Handle COMP">Handle  </a></span>• <span class="catList navigation-not-searchable"><a href="Impulse_Force_COMP.html" title="Impulse Force COMP">Impulse Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Light_COMP.html" title="Light COMP">Light  </a></span>• <span class="catList navigation-not-searchable"><a href="List_COMP.html" title="List COMP">List  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_COMP.html" title="Null COMP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Nvidia_Flex_Solver_COMP.html" title="Nvidia Flex Solver COMP">Nvidia Flex Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="Nvidia_Flow_Emitter_COMP.html" title="Nvidia Flow Emitter COMP">Nvidia Flow Emitter  </a></span>• <span class="catList navigation-not-searchable"><a href="OP_Viewer_COMP.html" title="OP Viewer COMP">OP Viewer  </a></span>• <span class="catList navigation-not-searchable"><a href="Palette_depthProjection.html" title="Palette:depthProjection">Palette:depthProjection </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_COMP.html" title="Parameter COMP">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Replicator_COMP.html" title="Replicator COMP">Replicator  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_COMP.html" title="Select COMP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_In_COMP.html" title="Shared Mem In COMP">Shared Mem In  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_Out_COMP.html" title="Shared Mem Out COMP">Shared Mem Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Slider_COMP.html" title="Slider COMP">Slider  </a></span>• <span class="catList navigation-not-searchable"><a href="Table_COMP.html" title="Table COMP">Table  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_COMP.html" title="Text COMP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Time_COMP.html" title="Time COMP">Time  </a></span>• <span class="catList navigation-not-searchable"><a href="USD_COMP.html" title="USD COMP">USD  </a></span>• <span class="catList navigation-not-searchable"><a href="Widget_COMP.html" title="Widget COMP">Widget  </a></span>• <span class="catList navigation-not-searchable"><a href="Window_COMP.html" title="Window COMP">Window  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d9a17c1c9e8ef6866e4dbeef41c741b2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>(1) A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> can instance and render its SOP geometry many times: once for each sample in a CHOP, row of a DAT table, pixel in a TOP, or point of a SOP, (2) An instance is an OP that doesn't actually have its own data, but rather just refers to an OP (or has an input) whose data it uses. This includes Null OPs, Switch OPs and in some cases Select OPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0748856bca50f42e2abd5b36ca083bae"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Hierarchy relates components with other components. There are two groups of Hierarchy in TouchDesigner.  3D Object Components, and 2D Panel Components. Hierarchies let one component to be positioned relative to another. Each group can be connected via lines between the bottoms/tops of nodes in a network, or by placing one component inside the other.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="497031794414a552435f90151ac3b54b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The sub-<a href="Operator_Family.html" title="Operator Family">Family</a> of <a href="Component.html" title="Component">Component</a> types that are used to define and render 3D scenes. A <a href="Geometry_COMP.html" title="Geometry COMP">Geometry Component</a> is an Object that contains the 3D shapes to render. A <a href="Camera_COMP.html" title="Camera COMP">Camera COMP</a> and <a href="Light_COMP.html" title="Light COMP">Light COMP</a> are other Object types. Separately, "Objects" also refers to Python objects.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d7778d0c64b6ba21494c97f77a66885a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operators that need 1 or more inputs are called Filters in TouchDesigner, like a Math CHOP. See <a href="Generator.html" title="Generator">Generator</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d92a8333dd3ccb895cc65f7455b71206"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d9c6333623e6357515fcbf17be806273"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The 3D data held in SOPs and passed for rendering by the <a href="Geometry_COMP.html" title="Geometry COMP">Geometry COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5e2f5f3c24ae8c6ab3eca618826b0e23"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any component can be extended with its own Python classes which contain python functions and data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="98b55baa723b7158c2ad741a9f2339b8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Parent Shortcut is a parameter on a component that contains a name that you can use anywhere inside the component to refer to that component using the syntax <code>parent.Name</code>, for example <code>parent.Effect.width</code> to obtain panel width.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="127c8e2bf0b36c9d6a86d99b969d563a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A name for a component that is accessible from any node in a project, which can be declared in a component's Global Operator Shortcut parameter.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="756210d98ce28018652ca05e1dcaaf3e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Operator shortcuts are Python objects that return operators (or sometimes parameters). These include <a href="Parent_Shortcut.html" title="Parent Shortcut">Parent Shortcuts</a> for accessing a component from within that component, and <a href="Global_OP_Shortcut.html" title="Global OP Shortcut">Global OP Shortcuts</a> that access a unique component from anywhere in TouchDesigner.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fb15c53f22336982a182b84aeb2f42eb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The viewer of a node can be (1) the interior of a node (the <a href="Node_Viewer.html" title="Node Viewer">Node Viewer</a>), (2) a floating window (RMB-&gt;View... on node), or (3) a <a href="Pane.html" title="Pane">Pane</a> that graphically shows the results of an operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="39f6796e665f9c1cace476535ba6e5bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A custom interactive control panel built within TouchDesigner. Panels are created using <a href="Panel_Component.html" title="Panel Component">Panel Components</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ff24590464659ee8cdec688128c35f89"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Cloning makes multiple components match the contents of a master component. A <a href="Component.html" title="Component">Component</a> whose Clone parameter is set will be forced to contain the same nodes, wiring and parameters as its master component. Cloning does not create new components as does the <a href="Replicator_COMP.html" title="Replicator COMP">Replicator COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c93d2a89e225ded900ca3779a6856086"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner Component file, the file type used to save a <a href="Component.html" title="Component">Component</a> of your TouchDesigner project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="76746356f2d9fd021f01bc051bb2114f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TOuch Environment file, the file type used by TouchDesigner to save your entire project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="30269022e9d8f51beaabb52e5d0de2b7"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>There are 2 kinds of parenting. The "parent component" is the component in which a node resides. The metaphor is extended to include grand parents, grand-grand parents, etc. The root <code>/</code> is the ultimate parent to all nodes. See also <a href="3D_Parenting.html" title="3D Parenting">3D Parenting</a> and panel <a href="Parent.html" title="Parent">Parenting</a>.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250312232533
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.504 seconds
+Real time usage: 0.879 seconds
+Preprocessor visited node count: 11245/1000000
+Post‐expand include size: 363835/2097152 bytes
+Template argument size: 203493/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1085/5000000 bytes
+Lua time usage: 0.450/10 seconds
+Lua virtual size: 9277440/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  743.981      1 -total
+ 77.53%  576.788      1 Template:NavBox
+ 76.17%  566.695     45 Template:CatList
+ 14.87%  110.627     11 Template:ParameterPage
+ 14.01%  104.267    151 Template:Parameter
+  3.42%   25.479      1 COMP_Instance_2_Page
+  3.20%   23.832    154 Template:ParameterItem
+  2.70%   20.123      1 COMP_Xform_Page
+  2.36%   17.594      1 COMP_Instance_Page
+  2.34%   17.412      1 COMP_Geometry_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:2266-0!canonical and timestamp 20250312232532 and revision id 31083.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Actor_COMP&amp;oldid=31083">https://docs.derivative.ca/index.php?title=Actor_COMP&amp;oldid=31083</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="https://docs.derivative.ca/index.php?title=Category:COMPs&amp;action=edit&amp;redlink=1" class="new" title="Category:COMPs (page does not exist)">COMPs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Actor+COMP" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="Actor_COMP.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Actor_COMP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Actor_COMP&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Actor_COMP.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Actor_COMP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Actor_COMP" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Actor_COMP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Actor_COMP&amp;oldid=31083" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Actor_COMP&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Actor_COMP&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 March 2024, at 07:08.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.504","walltime":"0.879","ppvisitednodes":{"value":11245,"limit":1000000},"postexpandincludesize":{"value":363835,"limit":2097152},"templateargumentsize":{"value":203493,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1085,"limit":5000000},"timingprofile":["100.00%  743.981      1 -total"," 77.53%  576.788      1 Template:NavBox"," 76.17%  566.695     45 Template:CatList"," 14.87%  110.627     11 Template:ParameterPage"," 14.01%  104.267    151 Template:Parameter","  3.42%   25.479      1 COMP_Instance_2_Page","  3.20%   23.832    154 Template:ParameterItem","  2.70%   20.123      1 COMP_Xform_Page","  2.36%   17.594      1 COMP_Instance_Page","  2.34%   17.412      1 COMP_Geometry_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"0.450","limit":"10"},"limitreport-virtmemusage":{"value":9277440,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250312232533","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1110});});</script>
+</body>
+<!-- Cached 20250312232533 -->
+
+<!-- Mirrored from docs.derivative.ca/Actor_COMP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:09 GMT -->
+</html>

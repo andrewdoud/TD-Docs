@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Dependency_Class by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Dependency Class - Derivative</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"44594d65dbde9c25b797326d","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dependency_Class","wgTitle":"Dependency Class","wgCurRevisionId":31516,"wgRevisionId":31516,"wgArticleId":1006,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Python Reference","Python"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Dependency_Class","wgRelevantArticleId":1006,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,
+"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],
+"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load6e85.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cext.pygments%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=Python.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Dependency Class"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Dependency_Class"/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:modified_time" content="2024-08-08T13:58:14Z"/>
+<meta property="article:published_time" content="2024-08-08T13:58:14Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Dependency Class - Derivative","headline":"Dependency Class - Derivative","mainEntityOfPage":"<span class=\"mw-page-title-main\">Dependency Class<\/span>","identifier":"https:\/\/docs.derivative.ca\/Dependency_Class","url":"https:\/\/docs.derivative.ca\/Dependency_Class","dateModified":"2024-08-08T13:58:14Z","datePublished":"2024-08-08T13:58:14Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Dependency_Class rootpage-Dependency_Class skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Dependency Class</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><p>A <b><a href="Dependency.html" title="Dependency">Dependency</a></b> object is a value that automatically causes any expression referencing it to update when the dependency value has changed.  These objects eliminate the need to manually force cook operators referencing values in <a href="Extensions.html" title="Extensions">Extensions</a> or <a href="OP_Class.html#Storage" title="OP Class">Storage</a> for example.
+For information about dependencies in mutable objects (lists, dicts, sets), see <b><a href="TDStoreTools.html#Deeply_Dependable_Collections" title="TDStoreTools">Deeply Dependable Collections</a></b>
+</p><p><br></p>
+<h2><span class="mw-headline" id="Members">Members</span></h2>
+<div id="val" style="display:inline;"></div><p><code class="python">val</code> → <code class="return">Any</code> : 
+</p><blockquote><p>The value associated with this object. Referencing this value in an expression will cause the operator to become dependent on its value. Setting this value will cause those operators to be recooked as necessary.</p></blockquote>
+<div id="peekVal" style="display:inline;"></div><p><code class="python">peekVal</code> → <code class="return">Any</code> <b>(Read Only)</b>: 
+</p><blockquote><p>This returns the same value as .val but does not create a dependency on the value.</p></blockquote>
+<div id="callbacks" style="display:inline;"></div><p><code class="python">callbacks</code> → <code class="return">list</code> : 
+</p><blockquote><p>A modifiable list of functions. When the <span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span> object is modified, it calls each function on the list. Each function is called with a single argument which is a dictionary containing the following:
+</p><ul><li>'dependency'- The <span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span> that was modified.</li>
+<li>'prevVal' - The previous value if available.</li>
+<li>'callback' - This callback function.</li></ul></blockquote>
+<div id="ops" style="display:inline;"></div><p><code class="python">ops</code> → <code class="return">list</code> <b>(Read Only)</b>: 
+</p><blockquote><p>A list of <a href="OP_Class.html" title="OP Class">operators</a> currently dependent on the object.</p></blockquote>
+<div id="listAttributes" style="display:inline;"></div><p><code class="python">listAttributes</code> → <code class="return">list</code> <b>(Read Only)</b>: 
+</p><blockquote><p>A list of <a href="ListAttribute_Class.html" title="ListAttribute Class">list attributes</a> currently dependent on the object.</p></blockquote>
+<h2><span class="mw-headline" id="Methods">Methods</span></h2>
+<div id="modified" style="display:inline;"></div><p><code class="python">modified()</code>→ <code class="return">None</code>:
+</p><blockquote><p>This call is needed when changing not the value itself, but a subcomponent. For example, if <span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span>.val is a dictionary, setting any of the members will not notify the dependent operators. A call to modified is necessary.</p></blockquote>
+<div id="setVal" style="display:inline;"></div><p><code class="python">setVal(val, setInfo=None)</code>→ <code class="return">None</code>:
+</p><blockquote><p>Sets the value with optional information.
+</p><ul><li>val - The new value to be set.</li>
+<li>setInfo (Keyword, Optional) - Optional information passed to the modified callback.</li></ul></blockquote>
+<div id="[]" style="display:inline;"></div><p><code class="python">[&lt;index or key&gt;]</code>→ <code class="return">collection value</code>:
+</p><blockquote><p><b>Only when the dependency wraps iterable or mapped data such as a list or dictionary</b>, you can use [] to access the items in the wrapped data.
+</p><div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">dep</span> <span class="o">=</span> <span class="n">tdu</span><span class="o">.</span><span class="n"><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></span><span class="p">({</span><span class="s1">'fred'</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span> <span class="s1">'wilma'</span><span class="p">:</span><span class="mi">39</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dep</span><span class="p">[</span><span class="s1">'fred'</span><span class="p">])</span> <span class="c1"># prints "33". The key to the dictionary works directly on the dependency object.</span>
+<span class="n">dep2</span> <span class="o">=</span> <span class="n">tdu</span><span class="o">.</span><span class="n"><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></span><span class="p">([</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"g"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dep</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># prints "g". The index to the list works directly on the dependency object.</span>
+</pre></div></blockquote>
+<h3><span class="mw-headline" id="Usage">Usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:SubSection&amp;action=edit&amp;section=T-1" title="Edit section: Usage">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Consider the following module, used as an <a href="Extensions.html" title="Extensions">extension</a> in a component called <code>comp1</code> for example
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">Scale</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+<p>Any expressions that reference <code>Scale</code> will not update when <code>Scale</code> is manually changed. For example, if either of these expressions was in the value field of a Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, it would not be updated if the <code>Scale</code> value was updated. 
+</p><p>Example:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># using a non-promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">ext</span><span class="o">.</span><span class="n">MyClass</span><span class="o">.</span><span class="n">Scale</span>
+
+<span class="c1"># using a promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span>
+</pre></div>
+<p>If you need your references to dynamically update, you can create a <code><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code>. Start by defining a <code>tdu.<span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code> as below:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">Scale</span> <span class="o">=</span> <span class="n">tdu</span><span class="o">.</span><span class="n"><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+<p>Now there is a cook dependency created between the <code>Scale</code> value, and the Operator referencing it. There are two ways to reference the value. The first is similar to how we were referencing the value previous:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># using a non-promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">ext</span><span class="o">.</span><span class="n">MyClass</span><span class="o">.</span><span class="n">Scale</span>
+
+<span class="c1"># using a promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span>
+</pre></div>
+<p>and the other method is to explicitly call the <code>Scale</code>'s <code>val</code>:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># use for non-promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">ext</span><span class="o">.</span><span class="n">MyClass</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">val</span>
+
+<span class="c1"># use for a promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">val</span>
+</pre></div>
+<p>Note the <code>.val</code> is often not required, as the <span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span> object will cast itself to its underlying value in most cases.
+</p><p>To update this value, you must reference the member's <code>val</code>. A <code><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code> value is a type in and of itself and writing the expression below would actually overwrite the <code><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code> value with a regular interger and remove the cook dependency from the references:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># wrong way to update dependency of a promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+<p>What you should do instead is assign the value to the <code>val</code> of the <code><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code> as below:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># correct way to update dependency of a promoted extension</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+<p>Using this method will update the value of <code>Scale</code> while keeping the <code><span class="mw-lingo-term" data-lingo-term-id="90a95d6639a7bbbeff7f36a7ec8f3b10">Dependency</span></code> intact.
+</p><p>Dictionaries, lists, sets, and other objects with changing contents are called "mutable" objects. <b>If the contents of a mutable object changes, a dependency wrapping it does not automatically register as being modified!</b> You must either use a <b><a href="TDStoreTools.html#Deeply_Dependable_Collections" title="TDStoreTools">deeply dependable collection</a></b> or call the <code>.modified()</code> function manually as in the example below:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># changing the contents doesn't update dependency!</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">modified</span><span class="p">()</span> <span class="c1"># this call notifies TouchDesigner that the value has changed</span>
+</pre></div>
+<p>You can create Python callbacks that are called when the dependency object changes:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">callbacks</span> <span class="o">=</span> <span class="p">[</span><span class="nb">print</span><span class="p">]</span>
+
+<span class="c1"># adding a function requires getting the list, changing it, then re-setting it</span>
+<span class="k">def</span> <span class="nf">prevPrint</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
+	<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Previous value: </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">'prevVal'</span><span class="p">]</span><span class="si">}</span><span class="s1">)</span>
+    
+<span class="n">callbacks</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">callbacks</span>
+<span class="n">callbacks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prevPrint</span><span class="p">)</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">callbacks</span> <span class="o">=</span> <span class="n">callbacks</span>
+
+<span class="c1"># removing a callback works similarly</span>
+<span class="n">callbacks</span> <span class="o">=</span> <span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">callbacks</span>
+<span class="n">callbacks</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+<span class="n">op</span><span class="p">(</span><span class="s1">'comp1'</span><span class="p">)</span><span class="o">.</span><span class="n">Scale</span><span class="o">.</span><span class="n">callbacks</span> <span class="o">=</span> <span class="n">callbacks</span>
+</pre></div>
+<p>TouchDesigner Build: <select onchange="location=this.value;"><option value="Dependency_Class.html">Latest</option>\n<option value="https://docs.derivative.ca/Dependency_Class?oldid=30595">wikieditor</option><option value="https://docs.derivative.ca/Dependency_Class?oldid=31516">wikieditor</option><option value="https://docs.derivative.ca/Dependency_Class?oldid=26985">2022.24140</option><option value="https://docs.derivative.ca/Dependency_Class?oldid=21772">2021.10000</option><option value="https://docs.derivative.ca/Dependency_Class?oldid=20918">2018.28070</option><option value="https://docs.derivative.ca/Dependency_Class?oldid=12132">before 2018.28070</option></select></p></div><div class="mw-lingo-tooltip" id="90a95d6639a7bbbeff7f36a7ec8f3b10"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>is the <a href="Procedural.html" title="Procedural">Procedural</a> mechanism in TouchDesigner, where if one piece of data changes, it automatically causes other operators and expressions to re-<a href="Cook.html" title="Cook">Cook</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304170904
+Cache expiry: 60
+Reduced expiry: true
+Complications: []
+CPU time usage: 0.072 seconds
+Real time usage: 2.597 seconds
+Preprocessor visited node count: 327/1000000
+Post‐expand include size: 8919/2097152 bytes
+Template argument size: 4709/2097152 bytes
+Highest expansion depth: 7/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 10316/5000000 bytes
+Lua time usage: 0.030/10 seconds
+Lua virtual size: 8749056/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2571.124      1 -total
+  2.14%   54.913      1 Template:SubSection
+  0.19%    4.975      1 Template:ClassMemberSection
+  0.17%    4.303      1 Template:ClassMethodSection
+  0.11%    2.815      1 Template:History
+  0.11%    2.718      5 Template:ClassMember
+  0.10%    2.626      1 Template:TDClassSummary
+  0.10%    2.503      3 Template:ClassMethod
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:1006-0!canonical and timestamp 20250304170901 and revision id 31516.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Dependency_Class&amp;oldid=31516">https://docs.derivative.ca/index.php?title=Dependency_Class&amp;oldid=31516</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Python_Reference.html" title="Category:Python Reference">Python Reference</a></li><li><a href="Category_Python.html" title="Category:Python">Python</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Dependency+Class" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="Dependency_Class.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Dependency_Class&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="mw-list-item"><a href="https://docs.derivative.ca/Experimental:Dependency_Class"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Dependency_Class.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Dependency_Class&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Dependency_Class" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Dependency_Class" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Dependency_Class&amp;oldid=31516" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Dependency_Class&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Dependency_Class&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 8 August 2024, at 08:58.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.072","walltime":"2.597","ppvisitednodes":{"value":327,"limit":1000000},"postexpandincludesize":{"value":8919,"limit":2097152},"templateargumentsize":{"value":4709,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":10316,"limit":5000000},"timingprofile":["100.00% 2571.124      1 -total","  2.14%   54.913      1 Template:SubSection","  0.19%    4.975      1 Template:ClassMemberSection","  0.17%    4.303      1 Template:ClassMethodSection","  0.11%    2.815      1 Template:History","  0.11%    2.718      5 Template:ClassMember","  0.10%    2.626      1 Template:TDClassSummary","  0.10%    2.503      3 Template:ClassMethod"]},"scribunto":{"limitreport-timeusage":{"value":"0.030","limit":"10"},"limitreport-virtmemusage":{"value":8749056,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304170904","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":103});});</script>
+</body>
+<!-- Cached 20250304170911 -->
+
+<!-- Mirrored from docs.derivative.ca/Dependency_Class by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:14 GMT -->
+</html>

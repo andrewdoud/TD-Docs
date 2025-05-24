@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/LSystem_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d8d4865a4880207791fb9fb0","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"LSystem_SOP","wgTitle":"LSystem SOP","wgCurRevisionId":24204,"wgRevisionId":24204,"wgArticleId":334,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"LSystem_SOP","wgRelevantArticleId":334,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title":["Add SOP","Alembic SOP",
+"Align SOP","Arm SOP","Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP","Polyreduce SOP","Polyspline SOP",
+"Polystitch SOP","Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="The Lsystem SOP implements L-systems (Lindenmayer-systems, named after Aristid Lindenmayer (1925-1989)), allow definition of complex shapes through the use of iteration."/>
+<meta name="keywords" content="TouchDesigner, LSystem, SOP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/LSystem_SOP"/>
+<meta property="og:description" content="The Lsystem SOP implements L-systems (Lindenmayer-systems, named after Aristid Lindenmayer (1925-1989)), allow definition of complex shapes through the use of iteration."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, LSystem, SOP"/>
+<meta property="article:modified_time" content="2021-11-16T21:16:21Z"/>
+<meta property="article:published_time" content="2021-11-16T21:16:21Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"TouchDesigner Documentation","headline":"TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">LSystem SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/LSystem_SOP","url":"https:\/\/docs.derivative.ca\/LSystem_SOP","description":"The Lsystem SOP implements L-systems (Lindenmayer-systems, named after Aristid Lindenmayer (1925-1989)), allow definition of complex shapes through the use of iteration.","keywords":"TouchDesigner, LSystem, SOP","dateModified":"2021-11-16T21:16:21Z","datePublished":"2021-11-16T21:16:21Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-LSystem_SOP rootpage-LSystem_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">LSystem SOP</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Lsystem <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> implements L-systems (Lindenmayer-systems, named after Aristid Lindenmayer (1925-1989)), allow definition of complex shapes through the use of iteration. They use a mathematical language in which an initial string of characters is evaluated repeatedly, and the results are used to generate geometry. The result of each evaluation becomes the basis for the next iteration of geometry, giving the illusion of growth.		
+</p><p>You begin building an L-system by defining a sequence of rules which are evaluated to produce a new string of characters. Each character of the new string represents one command which affects an imaginary stylus, or "turtle". Repeating this process will grow your geometry.			
+</p><p>You can use L-systems to create things such as:			
+</p>
+<ul><li>Create organic objects such as trees, plants, flowers over time.</li>
+<li>Create animated branching objects such as lightning and snowflakes.</li></ul><p>The file can be read in from disk or from the web. Use http:// when specifying a URL.			
+</p>
+<h3><span class="mw-headline" id="The_Algorithmic_Beauty_of_Plants"><div class="subSectionLineSOP">The Algorithmic Beauty of Plants</div></span></h3>
+<p>The descriptions located here should be enough to get you started in writing your own L-system rules, however, if you have any serious interests in creating L-systems, you should obtain the book:			
+</p>
+<pre>The Algorithmic Beauty of Plants			
+Przemyslaw Prusinkiewicz &amp; Aristid Lindenmayer			
+Springer-Verlag, New York, Phone: 212.460.1500			
+ISBN: 0-387-94676-4, 1996.			
+</pre>
+<p>which is the definitive reference on the subject. It contains a multitude of L-systems examples complete with descriptions of the ideas and theories behind modelling realistic plant growth.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/LsystemSOP_Class" title="LsystemSOP Class">lsystemSOP_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a>
+<ul><li class="toclevel-2"><a href="#The_Algorithmic_Beauty_of_Plants"><span class="tocnumber">1.1</span> <span class="toctext">The Algorithmic Beauty of Plants</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameters_-_Geometry_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Geometry Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Tube_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Tube Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Values_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Values Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Funcs_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Funcs Page</span></a></li>
+<li class="toclevel-1"><a href="#Rule_Substitution"><span class="tocnumber">6</span> <span class="toctext">Rule Substitution</span></a>
+<ul><li class="toclevel-2"><a href="#Limitations_to_Rules"><span class="tocnumber">6.1</span> <span class="toctext">Limitations to Rules</span></a></li>
+<li class="toclevel-2"><a href="#Turtle_Operators"><span class="tocnumber">6.2</span> <span class="toctext">Turtle Operators</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Production_Rule_Syntax"><span class="tocnumber">7</span> <span class="toctext">Production Rule Syntax</span></a>
+<ul><li class="toclevel-2"><a href="#Context_Sensitivity"><span class="tocnumber">7.1</span> <span class="toctext">Context Sensitivity</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Parameter_Symbols"><span class="tocnumber">8</span> <span class="toctext">Parameter Symbols</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Override"><span class="tocnumber">9</span> <span class="toctext">Operator Override</span></a>
+<ul><li class="toclevel-2"><a href="#Examples"><span class="tocnumber">9.1</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-2"><a href="#List_of_Operator_Overrides"><span class="tocnumber">9.2</span> <span class="toctext">List of Operator Overrides</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Edge_Rewriting"><span class="tocnumber">10</span> <span class="toctext">Edge Rewriting</span></a></li>
+<li class="toclevel-1"><a href="#Expressions"><span class="tocnumber">11</span> <span class="toctext">Expressions</span></a>
+<ul><li class="toclevel-2"><a href="#L-System_Specific_Expression_Functions"><span class="tocnumber">11.1</span> <span class="toctext">L-System Specific Expression Functions</span></a></li>
+<li class="toclevel-2"><a href="#Conditions"><span class="tocnumber">11.2</span> <span class="toctext">Conditions</span></a></li>
+<li class="toclevel-2"><a href="#Probability"><span class="tocnumber">11.3</span> <span class="toctext">Probability</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Creating_Groups_with_L-Systems"><span class="tocnumber">12</span> <span class="toctext">Creating Groups with L-Systems</span></a>
+<ul><li class="toclevel-2"><a href="#Optional_Group_Parameters"><span class="tocnumber">12.1</span> <span class="toctext">Optional Group Parameters</span></a></li>
+</ul></li>
+<li class="toclevel-1"><a href="#Controlling_the_Length_over_Time"><span class="tocnumber">13</span> <span class="toctext">Controlling the Length over Time</span></a></li>
+<li class="toclevel-1"><a href="#Example"><span class="tocnumber">14</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">15</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">16</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">16.1</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">16.2</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Geometry_Page"><div class="sectionBarSOP">Parameters - Geometry Page</div></span></h2>
+<div id="type" style=""><span class="parNameSOP">Type</span>  <code>type</code> - <span class="mw-customtoggle-type">⊞</span> - Provides two options for output geometry:
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-type">
+<ul><li><span class="parNameSOP">Skeleton</span> <code>skel</code> - Creates wire frame geometry. This option is ideal for geometry that is stiff and jagged like lightning or snowflakes. It is also useful to reduce <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> cooking time.</li></ul><ul><li><span class="parNameSOP">Tube</span> <code>tube</code> - Creates tube geometry. This option can be used with solid geometry that would need smooth curves, like trees or shrubs. Parameters on the <a href="#Parameters_-_Tube_Page">Tube Page</a> are only enabled when this Type is selected.</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="generations" style=""><span class="parNameSOP">Generations</span>  <code>generations</code> - Determines the number of times to apply the rules to the initial string. This value controls the growth of the L-system. Place a time-based function here to animate the L-system growth.
+<p><i></i>
+</p>
+</div>		
+<div id="randscale" style=""><span class="parNameSOP">Random Scale</span>  <code>randscale</code> - Random Scale as a percentage. This will apply a random scale to the changing geometry's lengths, angles and thickness.
+<p><i></i>
+</p>
+</div>		
+<div id="randseed" style=""><span class="parNameSOP">Random Seed</span>  <code>randseed</code> - Random Seed for the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. This value can be used to select different sequences of random values.
+<p><i></i>
+</p>
+</div>		
+<div id="contangl" style=""><span class="parNameSOP">Continuous Angles</span>  <code>contangl</code> - Calculates the incremental angles of branches, if a non-integer generational value is used. If the Generations field is animating, this should be set to ensure smooth growth.
+<p><i></i>
+</p>
+</div>		
+<div id="contlength" style=""><span class="parNameSOP">Continuous Length</span>  <code>contlength</code> - Calculates the incremental lengths of the geometry points if a non-integer generational value is used. As with Continuous Angles, if the Generations field is animating, this should be set to ensure smooth, continuous growth. The Continuous Width field applies to tube thickness.
+<p><i></i>
+</p>
+</div>		
+<div id="contwidth" style=""><span class="parNameSOP">Continuous Width</span>  <code>contwidth</code> - Calculates the incremental lengths of the geometry points if a non-integer generational value is used. As with Continuous Angles, if the Generations field is animating, this should be set to ensure smooth, continuous growth. The Continuous Width field applies to tube thickness.
+<p><i></i>
+</p>
+</div>		
+<div id="docolor" style=""><span class="parNameSOP">Apply Color</span>  <code>docolor</code> - Use a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to apply color to the L-system as it grows.
+<p><i></i>
+</p>
+</div>		
+<div id="colormap" style=""><span class="parNameSOP">Image File</span>  <code>colormap</code> - Defines a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to use when the Apply Color button is selected. Also see the ` and # turtle operators.
+<p><i></i>
+</p>
+</div>		
+<div id="inc" style=""><span class="parNameSOP">UV Increment</span>  <code>inc</code> - <span class="mw-customtoggle-inc">⊞</span> - Defines the default color U, V index increments when the turtle symbols ` or # are used.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-inc">
+<ul><li><code>incu</code> -</li></ul><ul><li><code>incv</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>		
+<div id="pointwidth" style=""><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Width Attribute</span>  <code>pointwidth</code> - Adds a point <code>width</code> attribute to each point in the geometry. This width is effected by the Thickness and Thickness Scale parameters on the Tube Page.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Tube_Page"><div class="sectionBarSOP">Parameters - Tube Page</div></span></h2>
+<p>The parameters on this page are active only if <a href="#Parameters_-_Geometry_Page">Geometry Page</a> &gt; Type has been set to the Tube type.
+</p>
+<div id="rows" style=""><span class="parNameSOP">Rows</span>  <code>rows</code> - The first option sets the number of tube sides and the second sets the number of divisions per step length if tube geometry is selected.
+<p><i></i>
+</p>
+</div>		
+<div id="cols" style=""><span class="parNameSOP">Columns</span>  <code>cols</code> - The first option sets the number of tube sides and the second sets the number of divisions per step length if tube geometry is selected.
+<p><i></i>
+</p>
+</div>		
+<div id="tension" style=""><span class="parNameSOP">Tension</span>  <code>tension</code> - Tension defines the smoothness of branching corners.
+<p><i></i>
+</p>
+</div>		
+<div id="smooth" style=""><span class="parNameSOP">Branch Blend</span>  <code>smooth</code> - Enabling this option allows a child branch to be continuously joined to its parent branch.
+<p><i></i>
+</p>
+</div>		
+<div id="thickinit" style=""><span class="parNameSOP">Thickness</span>  <code>thickinit</code> - This number defines the default tube thickness.
+<p><i></i>
+</p>
+</div>		
+<div id="thickscale" style=""><span class="parNameSOP">Thickness Scale</span>  <code>thickscale</code> - This number is the scale factor used with the ! or ? operator.
+<p><i></i>
+</p>
+</div>		
+<div id="dotexture" style=""><span class="parNameSOP">Apply Tube Texture Coordinates</span>  <code>dotexture</code> - When enabled, UV texture coordinates are applied to the tube segments, such that the texture wraps smoothly and continuously over branches.
+<p><i></i>
+</p>
+</div>		
+<div id="vertinc" style=""><span class="parNameSOP">Vertical Increment</span>  <code>vertinc</code> - Defines the vertical spacing of texture coordinates over tube geometry when tube texture is applied.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Values_Page"><div class="sectionBarSOP">Parameters - Values Page</div></span></h2>
+<div id="stepinit" style=""><span class="parNameSOP">Step Size</span>  <code>stepinit</code> - Step Size allows you to define the default length of the edges when new geometry is generated.
+<p><i></i>
+</p>
+</div>		
+<div id="stepscale" style=""><span class="parNameSOP">Step Size Scale</span>  <code>stepscale</code> - Step Size Scale defines the scale by which the geometry will be modified by the " or _ (double quote, or underscore) turtle operators.
+<p><i></i>
+</p>
+</div>		
+<div id="angleinit" style=""><span class="parNameSOP">Angle</span>  <code>angleinit</code> - Angle defines the default turning angle for turns, rolls and pitches.
+<p><i></i>
+</p>
+</div>		
+<div id="anglescale" style=""><span class="parNameSOP">Angle Scale</span>  <code>anglescale</code> - Angle Scale allows you to enter the scaling factor to be employed when the ; or @ operators are used.
+<p><i></i>
+</p>
+</div>		
+<div id="varb" style=""><span class="parNameSOP">Variable b</span>  <code>varb</code> - Substitutes user-defined b, c and d variables in rules or premise. These variables are expanded and so may include system variables such as <code>$F</code> and <code>$T</code>.
+<p><i></i>
+</p>
+</div>		
+<div id="varc" style=""><span class="parNameSOP">Variable c</span>  <code>varc</code> - Substitutes user-defined b, c and d variables in rules or premise. These variables are expanded and so may include system variables such as <code>$F</code> and <code>$T</code>.
+<p><i></i>
+</p>
+</div>		
+<div id="vard" style=""><span class="parNameSOP">Variable d</span>  <code>vard</code> - Substitutes user-defined b, c and d variables in rules or premise. These variables are expanded and so may include system variables such as <code>$F</code> and <code>$T</code>.
+<p><i></i>
+</p>
+</div>		
+<div id="gravity" style=""><span class="parNameSOP">Gravity</span>  <code>gravity</code> - This parameter determines the amount of gravity applied to the geometry via the T (tropism vector) turtle operator. <b>Tropism</b> is when a plant bends or curves in response to an external stimulus. L-systems employ a tropism vector to simulate this behaviour. The bending is characterised by the fact that the thicker or shorter parts bend less than the longer or thinner parts.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Funcs_Page"><div class="sectionBarSOP">Parameters - Funcs Page</div></span></h2>
+<p>The parameters on this page allow you to stamp your leaf geometry (each copy can be different) as opposed to simply copying them. See the example in <a href="#Example_-_Stamping_L-system_Leaves">Example - Stamping L-system Leaves</a>.
+</p>
+<div id="pictop" style=""><span class="parNameSOP">Pic Image <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span>  <code>pictop</code> - This is the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> which the pic() function uses. See <a href="#Expressions_L-system_Specific_Expression_Functions">#Expressions L-system Specific Expression Functions</a> below.
+<p><i></i>
+</p>
+</div>		
+<div id="grpprefix" style=""><span class="parNameSOP">Group Prefix</span>  <code>grpprefix</code> - If the production g(n) is encountered, all subsequent geometry is included in a primitive group prefixed with this label and ending with the ascii value of n. See <a href="#CreateGroup_Creating_Groups_within_L-systems">#CreateGroup Creating Groups within L-systems</a> below for an example.
+<p><i></i>
+</p>
+</div>		
+<div id="chanprefix" style=""><span class="parNameSOP">Channel Prefix</span>  <code>chanprefix</code> - If the expression chan(n) is encountered, it is replaced with the local channel prefixed with this label and ending with the ascii value of n.
+<p><i></i>
+</p>
+</div>		
+<div id="stampa" style=""><span class="parNameSOP">Leaf Param A</span>  <code>stampa</code> - You can determine which parameters are used by leaves.<br> See <a href="#CreateGroup_Creating_Groups_within_L-systems">#CreateGroup Creating Groups within L-systems</a> below for an example.
+<p><i></i>
+</p>
+</div>		
+<div id="stampb" style=""><span class="parNameSOP">Leaf Param B</span>  <code>stampb</code> - You can determine which parameters are used by leaves.<br> See <a href="#CreateGroup_Creating_Groups_within_L-systems">#CreateGroup Creating Groups within L-systems</a> below for an example.
+<p><i></i>
+</p>
+</div>		
+<div id="stampc" style=""><span class="parNameSOP">Leaf Param C</span>  <code>stampc</code> - You can determine which parameters are used by leaves.<br> See <a href="#CreateGroup_Creating_Groups_within_L-systems">#CreateGroup Creating Groups within L-systems</a> below for an example.
+<p><i></i>
+</p>
+</div>		
+<div id="rules" style=""><span class="parNameSOP">Rules <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span></span>  <code>rules</code> - <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> to the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> defining the rules for the LSystem. 	
+<ul><li>Context Ignore <code>context_ignore:</code> - Defining this in the Rules <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> specifies all characters which are to be skipped when testing context sensitivity in the rules below.</li>
+<li>Premise <code>premise:</code> - Define an initial string of characters to which the substitution rules are applied.</li>
+<li>Rules - This is where the turtle substitution rules are defined.</li></ul><p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Rule_Substitution"><div class="sectionBarSOP">Rule Substitution</div></span></h2>
+<p>You create the highly structured organic and branching objects using L-systems grammar. An L-system is a process in which a sequence of rules are applied to an initial string of characters to create a new string. To build the geometry, each character of the final string represents one command which affects an imaginary stylus, or "turtle".
+</p><p>The process begins by examining the first character of the premise string. All sixteen rules are searched sequentially until an applicable rule is found. The current character is then replaced with one or more characters as defined by the rule. The remaining characters in the premise string are replaced in a similar fashion. The entire process is repeated once for each generation.
+</p>
+<h3><span class="mw-headline" id="Limitations_to_Rules"><div class="customBar">Limitations to Rules</div></span></h3>
+<ul><li><span class="mw-lingo-term" data-lingo-term-id="4c0a11247d92f73fb84baa51e37a3263">Polygon</span> {} and branch [] operators can be nested 30 levels deep</li>
+<li>Rules can be 256 characters in length</li>
+<li>Variables can have up to 5 parameters</li>
+<li>Up to 25 rules can be defined</li></ul><p><br></p>
+<h3><span class="mw-headline" id="Turtle_Operators"><div class="customBar">Turtle Operators</div></span></h3>
+<p><code>F</code> Move forward (creating geometry)
+</p><p><code>H</code> Move forward half the length (creating geometry)
+</p><p><code>G</code> Move forward but don't record a vertex
+</p><p><code>f</code> Move forward (no geometry created)
+</p><p><code>h</code> Move forward a half length (no geometry created)
+</p><p><code>J K M</code> Copy geometry source J, K or M at the turtle's position <br> after rescaling and reorienting the geometry.
+</p><p><code>T</code> Apply tropism vector
+</p><p><code>+</code> Turn right
+</p><p><code>-</code> Turn left (minus sign)
+</p><p><code>&amp;</code> Pitch up
+</p><p><code>^</code> Pitch down
+</p><p><code>\</code> Roll clockwise
+</p><p><code>/</code> Roll counter-clockwise
+</p><p><code>|</code> Turn 180 degrees
+</p><p><code>*</code> Roll 180 degrees
+</p><p><code>~</code> Pitch / Roll / Turn random amount
+</p><p><code>"</code> Multiply current length
+</p><p><code>!</code> Multiply current thickness
+</p><p><code>;</code> Multiply current angle
+</p><p><code>_</code> Divide current length (underscore)
+</p><p><code>?</code> Divides current width
+</p><p><code>@</code> Divide current angle
+</p><p><code>'</code> Increment color index U (single quote)
+</p><p><code>#</code> Increment color index V
+</p><p><code>%</code> Cut off remainder of branch
+</p><p><code>$</code> Rotate `up' towards the sun about heading
+</p><p><code>[</code> Push turtle state (start a branch)
+</p><p><code>]</code> Pop turtle state (end a branch)
+</p><p><code>{</code> Start a polygon
+</p><p><code>.</code> Make a polygon vertex
+</p><p><code>}</code> End a polygon
+</p><p><code>g</code> Create a new primitive group to which subsequent geometry is added
+</p><p><br></p>
+<h2><span class="mw-headline" id="Production_Rule_Syntax"><div class="sectionBarSOP">Production Rule Syntax</div></span></h2>
+<p>A Touch L-system rule is specified as:
+</p><p>[<b>lc</b>&lt;] <b>pred</b> [&gt;<b>rc</b>] [:<b>cond</b>]=<b>succ</b> [:<b>prob</b>]
+</p><p>where:
+</p>
+<ul><li><b>lc</b> - Optional left context</li>
+<li><b>pred</b> - predecessor symbol to be replaced</li>
+<li><b>rc</b> - Optional right context</li>
+<li><b>cond</b> - Condition expression (optional)</li>
+<li><b>succ</b> - Replacement string</li>
+<li><b>prob</b> - Probability of rule execution (optional)</li></ul><h3><span class="mw-headline" id="Context_Sensitivity"><div class="customBar">Context Sensitivity</div></span></h3>
+<p>The most basic type of rule is:
+</p><p><b>pred</b> = <b>succ</b> 
+</p><p>In this case, a character is replaced with the characters of <b>succ</b> if, and only if, it matches <b>pred</b>.
+</p><p>For example:
+</p><p>Premise: <code>ABC</code><br>Rule 1: <code>B=DOG</code>
+</p><p>will result in <code>ADOGC</code>
+</p><p><b>pred</b> can only specify one letter, but left and right context symbols can be specified. The general syntax is [<b>lc</b>&lt;] <b>pred</b> [&gt;<b>rc</b>] = <b>succ</b>.
+</p><p><b>For example:</b>
+</p><p>Premise: <code>ABC</code><br> Rule 1: <code>A&lt;B=DOG</code>
+</p><p>again results in <code>ADOGC</code> because <code>B</code> is preceded by <code>A</code>. If the rule were: <code>Z&lt;B=DOG</code> or <code>B&gt;A=DOG</code> the rule would not be applied.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Parameter_Symbols"><div class="sectionBarSOP">Parameter Symbols</div></span></h2>
+<p>Each symbol can have up to five user-defined variables associated with it which can be referenced or assigned in expressions. Variables in the predecessor are instanced while variables in the successor are assigned.
+</p><p>For example:
+</p><p>The rule <code>A(i, j) = A(i+1, j-1)</code>, will replace each <code>A</code> with a new <code>A</code> in which the first parameter has been incremented and the second parameter decremented.
+</p><p>Note that the variables in the predecessor can also be referenced by the condition or probability portions of the rule.
+</p><p>For example:
+</p><p>The rule <code>A(i):i&lt;5 = A(i+1) A(i+1)</code>, will double each <code>A</code> a maximum of five times (assuming a <span class="tipTextSOP">Premise</span> of <code>A(0)</code>).<br></p><p>Parameters assigned to geometric symbols (e.g. <code>F</code>, <code>+</code>, or <code>!</code>) are interpreted geometrically.
+</p><p>For example:
+</p><p>The rule <code>F(i, j) = F(0.5*i, 2*j)</code>, will again replace each <code>F</code> with a new <code>F</code> containing modified parameters. In addition to this, the new <code>F</code> will now be drawn at half the length and twice the width.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Operator_Override"><div class="sectionBarSOP">Operator Override</div></span></h2>
+<p>Normally turtle symbols use the current length/angle/thickness etc. to determine their effect. By providing a turtle operator with an explicit parameter, it will override the value normally used by the turtle operator.
+</p><p>Override parameters for <code>F</code>, <code>f</code>, <code>G</code>, <code>h</code>, <code>H</code> take the form of:
+</p>
+<blockquote>
+<p><code>F(<b>i</b>,<b>j</b>,<b>k</b>,<b>l</b>,<b>m</b>)</code>
+</p>
+</blockquote>
+<ul><li><b><code>i</code></b> - Override Length.</li>
+<li><b><code>j</code></b> - Override Thickness.</li>
+<li><code><b>k</b></code> - Override # Tube Segments.</li>
+<li><code><b>l</b></code> - Override # Tube Rows.</li>
+<li><code><b>m</b></code> - User parameter.</li></ul><p>The <b>k</b> and <b>l</b> override parameters allow dynamic resolution of tube segments.
+</p>
+<h3><span class="mw-headline" id="Examples"><div class="customBar">Examples</div></span></h3>
+<p><b><code>F</code></b> - Moves forward current length creating geometry.
+</p><p><b> <code>H</code></b> - Moves forward half current length creating geometry.
+</p><p><code><b>F(i, j)</b></code> - Moves forward a distance of <code>i,</code> creating geometry of thickness <code>j</code>.
+</p><p><b> <code>H(i, j)</code></b> - Move forward half the distance of <code>i</code>, creating geometry of thickness half of <code>j</code>.
+</p><p><b><code>+</code></b> - Turn by current angle amount. <br><b> <code>~</code></b> - Rotate by random angle.
+</p><p><b><code>+(i)</code></b> - Turn by i degrees.<br><b> <code>~(i)</code></b> - Override random angle with value of <code>i</code>.
+</p><p><code><b>$(x0,y0,z0)</b></code> - Points the turtle to location <code>(x0,y0,z0)</code>.
+</p><p>Given the above, the <span class="tipTextSOP">Premise</span>: 
+</p>
+<div class="Indented1"><code>F(1) +(90) F(1) +(90) F(1) +(90) F(1)</code></div>
+<p>generates a unit box regardless of the default <span class="tipTextSOP">Step Size</span> or <span class="tipTextSOP">Angle</span> settings.
+</p><p><br></p>
+<h3><span class="mw-headline" id="List_of_Operator_Overrides"><div class="customBar">List of Operator Overrides</div></span></h3>
+<p>The following list describes the geometric interpretation of parameters assigned to certain turtle symbols:
+</p><p><a href="https://docs.derivative.ca/File:TouchGeometry84.gif" class="image"><img alt="TouchGeometry84.gif" src="https://docs.derivative.ca/images/3/3a/TouchGeometry84.gif" decoding="async" width="600" height="120"></a>
+</p><p><br><a href="https://docs.derivative.ca/File:TouchGeometry93.gif" class="image"><img alt="TouchGeometry93.gif" src="https://docs.derivative.ca/images/0/0f/TouchGeometry93.gif" decoding="async" width="600" height="119"></a>
+</p><p><br><a href="https://docs.derivative.ca/File:TouchGeometry98.gif" class="image"><img alt="TouchGeometry98.gif" src="https://docs.derivative.ca/images/9/91/TouchGeometry98.gif" decoding="async" width="600" height="114"></a>
+</p><p><br></p>
+<h2><span class="mw-headline" id="Edge_Rewriting"><div class="sectionBarSOP">Edge Rewriting</div></span></h2>
+<p>In The Algorithmic Beauty of Plants, many examples use a technique called Edge Rewriting which involve left and right subscripts. A typical example might look like:
+</p><p><span class="tipTextSOP">Generations </span><code>10</code><br><span class="tipTextSOP">Angle </span><code>90</code><br><span class="tipTextSOP">Premise </span><code>F(l)</code><br><span class="tipTextSOP">Rules</span><br><code>F(l) = F(l)+F(r)+<br> F(r) = -F(l)-F(r)</code>
+</p><p>However, Touch doesn't know what <code>F(l)</code> and <code>F(r)</code> are. In this case, we can modify the rules to use parameter passing. For the <code>F</code> turtle symbol, the first four parameters are length, width, tubesides, and tubesegs, leaving the last parameter user-definable. We can define this last parameter such that <code>0</code> is left, and <code>1</code> is right:
+</p><p><span class="tipTextSOP">Generations </span><code>10</code><br><span class="tipTextSOP">Angle </span><code>90</code><br><span class="tipTextSOP">Premise </span><code>F(1,1,3,3,0)</code><br><span class="tipTextSOP">Rules</span>
+</p><p>After two generations this produces: <code>Fl+Fr+-Fl-Fr</code>. There should not be any difference between this final string and <code>F+F+-F-F.</code>
+</p><p>Another approach is to use two new variables, and use a conditional statement on the final step to convert them to <code>F</code>: 
+</p><p><span class="tipTextSOP">Variable b </span><code>ch("generations")</code><br><span class="tipTextSOP">Premise </span><code>l</code><br><span class="tipTextSOP">Rules </span><br><code>l:t&lt;b=l+r+<br> r:t&lt;b=-l-r<br> l=F<br> r=F</code><br><b>Output</b> <code>l</code><br><code>F</code><br><code>F+F+</code><br><code>F+F++-F-F+</code>
+</p><p><br></p>
+<h2><span class="mw-headline" id="Expressions"><div class="sectionBarSOP">Expressions</div></span></h2>
+<p>In the earlier example, the expressions <code>0.5*i</code> and <code>2*j</code> are used. In fact, expressions can be used anywhere a numeric field is expected. Currently the following symbols can be used in expressions:
+</p><p><code>( )</code> - brackets for nesting priority
+</p><p><code>^ + - * / %</code> - arithmetic operators
+</p><p><code>min() max() sin() cos() asin() acos() pic() in()</code> - supported functions
+</p><p><code>== != = &lt; &lt;= &gt; &gt;=</code> - logical operators
+</p><p><code>&amp; | !</code> - logical operators: and, or, not
+</p><p><code>b c d</code> - <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> b, c, d parameters after expansion
+</p><p><code>x y z</code> - current turtle position
+</p><p><code>g</code> - age of symbol
+</p><p><code>t</code> - time (generations) of L-system
+</p><p><code>a</code> - <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> angle parameter
+</p><p><code>T</code> - <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> tropism (gravity) parameter
+</p><p>The pre-defined variables above should not be used in the arguments of the predecessor.
+</p><p><b>For example:</b> <code>A(a,b) = B(a*2,b*2)</code> is wrong (a is the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Angle parameter). <code>a&lt;b (A,B) = b(A+1,B)</code> is right.
+</p><p>The last statement is correct because <code>a</code> and <code>b</code> are used as symbols and not variable names. <code>A</code> and <code>B</code> are correct because variable names are case sensitive.
+</p>
+<h3><span class="mw-headline" id="L-System_Specific_Expression_Functions"><div class="customBar">L-System Specific <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span> Functions</div></span></h3>
+<ul><li><b><code>pic(u, v, c)</code></b> - Using the image specified with <span class="tipTextSOP">Pic Image File</span>, this function returns a normalized value (between <code>0</code> and <code>1</code>) of the pixel at the normalized coordinates <code>(u,v)</code>; <code>c</code> selects one of four channels to examine:<br><code>0</code><br><code>1</code><br><code>2</code><br><code>3</code></li>
+<li><b><code>in(q, r, s)</code></b> - Given a MetaTest input source containing a metaball geometry, this function returns a <code>1</code> if the point <code>(q, r, s)</code> is contained within the metaball, and <code>0</code> if not. Use <code>in(x, y, z)</code> (the letters <code>x</code>, <code>y</code>, and <code>z</code> are special and contain the X, Y, and Z location of the turtle) to test whether or not the turtle is currently inside the metaball to create pruned outputs.</li></ul><p><br></p>
+<h3><span class="mw-headline" id="Conditions"><div class="customBar">Conditions</div></span></h3>
+<p>Each rule may have an optional condition specified. The syntax is:
+</p><p>[lc&lt;] pred [&gt;rc]:cond = succ
+</p><p><b>For example:</b>
+</p><p>The <span class="tipTextSOP">Rule1</span> <code>A:y&gt;2=J</code> includes source <code>J</code> at all <code>A</code>'s above the height of <code>2</code>.
+</p><p><br></p>
+<h3><span class="mw-headline" id="Probability"><div class="customBar">Probability</div></span></h3>
+<p>Each rule can specify the probability that it is used (provided it is otherwise applicable). The syntax is:
+</p><p>[lc&lt;] pred [&gt;rc]:cond=succ=prob
+</p><p><b>For example:</b>
+</p><p><span class="tipTextSOP">Rule1 </span><code>A=B:0.5</code><br><span class="tipTextSOP">Rule2 </span><code>A=C:0.5 </code>
+</p><p>will replace <code>A</code> with either <code>B</code> or <code> C</code> with equal probability.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Creating_Groups_with_L-Systems"><div class="sectionBarSOP">Creating Groups with L-Systems</div></span></h2>
+<p>There is a group operator '<b><code>g</code>'</b> which lumps all geometry currently being built into group g.
+</p><p><b>For example:</b> <code>g[F]</code> lumps geometry from F into a group called <code>lsys0</code>. You can set the lsys prefix from the <a href="#Parameters_-_Funcs_Page">Funcs page</a>.
+</p>
+<h3><span class="mw-headline" id="Optional_Group_Parameters"><div class="customBar">Optional Group Parameters</div></span></h3>
+<p><code>g</code> takes an optional parameter as well.
+</p><p><b>For example:</b> <code>g(1)[F]</code> lumps geometry from <code>f</code> into a group called <code>lsys1</code>. If no parameter is given, the default index is bumped up appropriately.
+</p><p>The current group container is pushed/popped with the turtle state so you can do things like:
+</p>
+<div class="Indented1"><code>gF [ gFF] F </code>- The first and last <code>F</code>'s are put into group <code>0</code>, and the middle <code>FF</code>'s are put into group <code>1</code>. </div>
+<p><code>gF [ FF] F</code> - The geometry from all four <code>F</code>'s are put into group <code>0</code>, (pushing the turtle adopts the parent's group).
+</p><p>To exclude the middle <code>FF</code> from the parent's group type: <code>gF [ g(-1)FF ] F</code>
+</p><p><br></p>
+<h2><span class="mw-headline" id="Controlling_the_Length_over_Time"><div class="sectionBarSOP">Controlling the Length over Time</div></span></h2>
+<p>To create an L-system which goes forward X percent less for each iteration, you need to start your <span class="tipTextSOP">Premise</span> with a value, and then within a rule, multiply that value by the percentage you want to remain:
+</p><p><span class="tipTextSOP">Premise </span><code>A(1)</code><br><span class="tipTextSOP">Rule </span><code>A(i) = F(i)A(i*0.5)</code>
+</p><p>This way "<code>i</code>" is scaled before <code>A</code> is again evaluated. The important part is the <span class="tipTextSOP">Premise</span>. You need to start with a value to be able to scale that value.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Example"><div class="sectionBarSOP">Example</div></span></h2>
+<p><b>Step 1)</b> Place a <a href="Circle_SOP.html" title="Circle SOP">Circle SOP</a>, and set the Number of Divisions to<code>: param("lsys", 3</code>)
+</p><p>It then displays a triangle (3 is default value).
+</p><p><b>Step 2)</b> <span class="mw-lingo-term" data-lingo-term-id="2ab1f3f893823298751fdf60b4e0365a">Pipe</span> this into the J input of a L-System <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>. If the L-system <span class="tipTextSOP">Premise</span> is:
+</p><p><code>J A</code><br><code>J(,,4) A</code><br><code>J(,,5) A</code>
+</p><p>This way, you can customize each leaf before it gets copied.
+</p><p><b>Step 3)</b> Change the Premise and Rule to:
+</p><p><span class="tipTextSOP">Premise</span><code>A(0)</code><br><span class="tipTextSOP">Rule1</span><code>A(i)=FJ(,,i+3)A(i+1)</code>
+</p><p>This creates a line of increasing-order polygons.
+</p><p><b>Step 4)</b> Finally, we will want to create 20 leaves, and put them all into a <a href="Switch_SOP.html" title="Switch SOP">Switch SOP</a>. Do this by entering the following expression into the Switch <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s Select Input: <code>param("lsys",0)</code><br><b>Step 5)</b> Then in your L-system, J(,,0) gives you the first <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>, J(,,1) gives you the second, and so on. This solves the problem of a limited number of leaves using only JKM.
+</p><p>Also note that these examples use only the first stamp parameter, you can use up to three parameters: e.g. J(,,1,2,3)
+</p><p>The first two parameters of J, K, M are used to override length and width, like symbol F.
+</p><p><br></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarSOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameSOP">Input 0: </span> -</li>
+<li><span class="parNameSOP">Input 1: </span> -</li>
+<li><span class="parNameSOP">Input 2: </span> -</li>
+<li><span class="parNameSOP">Input 3: </span> -</li></ul><p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the LSystem <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+<i></i>
+</p>
+<h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="LSystem_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/LSystem_SOP?oldid=14701">2021.10000</option><option value="https://docs.derivative.ca/LSystem_SOP?oldid=24204">2018.28070</option><option value="https://docs.derivative.ca/LSystem_SOP?oldid=14480">before 2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a href="Carve_SOP.html" title="Carve SOP">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Circle_SOP.html" title="Circle SOP">Circle  </a></span>• <span class="catList navigation-not-searchable"><a href="Clay_SOP.html" title="Clay SOP">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_SOP.html" title="Import Select SOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Primitive_SOP.html" title="Primitive SOP">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="4c0a11247d92f73fb84baa51e37a3263"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A polygon is a type of <a href="Primitive.html" title="Primitive">Primitive</a> that is formed from a set of <a href="Vertex.html" title="Vertex">Vertices</a> in 3D that are implicitly connected together to form a multi-edge shape.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a1a6657be79cc0fc1e9b23b9e108f043"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A text string that contains data (string, float, list, boolean, etc.) and operators (+ * &lt; etc) that are evaluated by the node's language (python or Tscript) and returns a string, float list or boolean, etc. Expressions are used in parameters, <a href="DAT.html" title="DAT">DATs</a> and in scripts.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2ab1f3f893823298751fdf60b4e0365a"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A way of moving data from one TouchDesigner process to another. Images are moved via Touch Out / In TOPs, channels are moved via Touch Out / In CHOPs and Pipe Out / In CHOPs. Data moves via TCP/IP or UDP.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304201333
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.684 seconds
+Real time usage: 1.584 seconds
+Preprocessor visited node count: 5004/1000000
+Post‐expand include size: 97067/2097152 bytes
+Template argument size: 52577/2097152 bytes
+Highest expansion depth: 10/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 440/5000000 bytes
+Lua time usage: 1.120/10 seconds
+Lua virtual size: 9289728/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1487.800      1 -total
+ 96.78% 1439.938      1 Template:SOPNavBox
+ 95.44% 1419.923    114 Template:CatList
+  1.27%   18.954      4 Template:ParameterPage
+  0.97%   14.363     34 Template:Parameter
+  0.64%    9.506      1 Template:InfoCHOPChannels
+  0.47%    7.014      9 Template:OPSection
+  0.38%    5.709      1 Template:Summary
+  0.29%    4.253      1 SOP_Info_Channels_Common_Page
+  0.24%    3.547      1 OP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:334-0!canonical and timestamp 20250304201332 and revision id 24204.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;oldid=24204">https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;oldid=24204</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" class="new" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=LSystem+SOP" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="LSystem_SOP.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:LSystem_SOP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:LSystem_SOP&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="LSystem_SOP.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/LSystem_SOP" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/LSystem_SOP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;oldid=24204" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=LSystem_SOP&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 16 November 2021, at 16:16.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.684","walltime":"1.584","ppvisitednodes":{"value":5004,"limit":1000000},"postexpandincludesize":{"value":97067,"limit":2097152},"templateargumentsize":{"value":52577,"limit":2097152},"expansiondepth":{"value":10,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":440,"limit":5000000},"timingprofile":["100.00% 1487.800      1 -total"," 96.78% 1439.938      1 Template:SOPNavBox"," 95.44% 1419.923    114 Template:CatList","  1.27%   18.954      4 Template:ParameterPage","  0.97%   14.363     34 Template:Parameter","  0.64%    9.506      1 Template:InfoCHOPChannels","  0.47%    7.014      9 Template:OPSection","  0.38%    5.709      1 Template:Summary","  0.29%    4.253      1 SOP_Info_Channels_Common_Page","  0.24%    3.547      1 OP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"1.120","limit":"10"},"limitreport-virtmemusage":{"value":9289728,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304201333","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1789});});</script>
+</body>
+<!-- Cached 20250304201333 -->
+
+<!-- Mirrored from docs.derivative.ca/LSystem_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:15 GMT -->
+</html>

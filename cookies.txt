@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+docs.derivative.ca	TRUE	/	FALSE	1999999999	cpPosIndex	4%401748048076%2363b27de26c9fc6a38dd10cbf0bad8327
+

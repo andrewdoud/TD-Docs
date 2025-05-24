@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/First_Things_to_Know_about_TouchDesigner by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>First Things to Know about TouchDesigner - Derivative</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"92e6fbd3d41b8ca1f182f677","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"First_Things_to_Know_about_TouchDesigner","wgTitle":"First Things to Know about TouchDesigner","wgCurRevisionId":28837,"wgRevisionId":28837,"wgArticleId":1198,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["TouchDesigner Tips","TDPages"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"First_Things_to_Know_about_TouchDesigner","wgRelevantArticleId":1198,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,
+"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,
+"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load1652.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="First Things to Know about TouchDesigner"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/First_Things_to_Know_about_TouchDesigner"/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:modified_time" content="2023-05-22T21:41:10Z"/>
+<meta property="article:published_time" content="2023-05-22T21:41:10Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"First Things to Know about TouchDesigner - Derivative","headline":"First Things to Know about TouchDesigner - Derivative","mainEntityOfPage":"<span class=\"mw-page-title-main\">First Things to Know about TouchDesigner<\/span>","identifier":"https:\/\/docs.derivative.ca\/First_Things_to_Know_about_TouchDesigner","url":"https:\/\/docs.derivative.ca\/First_Things_to_Know_about_TouchDesigner","dateModified":"2023-05-22T21:41:10Z","datePublished":"2023-05-22T21:41:10Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-First_Things_to_Know_about_TouchDesigner rootpage-First_Things_to_Know_about_TouchDesigner skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">First Things to Know about TouchDesigner</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><p>These are the basics to help you become skilled in working with the TouchDesigner interface. This will take you about 2-3 hours if you pause and work through it sequentially. We will touch on all the main parts and concepts of TouchDesigner, as well as all the basics of operating the UI. Afterwards you will hopefully be more proficient and comfortable with exploring TouchDesigner on your own. 
+</p><p><b>TIP</b>: If the meaning of a term in TouchDesigner is unclear, you can look it up in the <b><a href="TouchDesigner_Glossary.html" title="TouchDesigner Glossary">TouchDesigner Glossary</a></b> or <b>Search</b> for it, both found in the menus to the left.
+<br></p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1 tocsection-1"><a href="#1._Starting_TouchDesigner"><span class="tocnumber">1</span> <span class="toctext">1.  Starting TouchDesigner</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#2._Pan,_zoom_and_center_the_Network"><span class="tocnumber">2</span> <span class="toctext">2.  Pan, zoom and center the Network</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#3._Current_Nodes_and_Selected_Nodes"><span class="tocnumber">3</span> <span class="toctext">3. Current Nodes and Selected Nodes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#4._TouchDesigner_Operators_Generate_and_Filter_Data"><span class="tocnumber">4</span> <span class="toctext">4.  TouchDesigner Operators Generate and Filter Data</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#5._In_the_Network_Editor,_add_an_Operator_from_each_Family"><span class="tocnumber">5</span> <span class="toctext">5.  In the Network Editor, add an Operator from each Family</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#6._Connect_Nodes_together_with_Wires"><span class="tocnumber">6</span> <span class="toctext">6.  Connect Nodes together with Wires</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#7._Wires,_Data_Flow_and_Cooking"><span class="tocnumber">7</span> <span class="toctext">7.  Wires, Data Flow and Cooking</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#8._Make_a_Viewer_Active_to_inspect_Operator_data"><span class="tocnumber">8</span> <span class="toctext">8.  Make a Viewer Active to inspect Operator data</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#9._Adjust_Parameters_of_Operators"><span class="tocnumber">9</span> <span class="toctext">9.  Adjust Parameters of Operators</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#10._Value_Ladders_help_you_change_Parameter_values"><span class="tocnumber">10</span> <span class="toctext">10.  Value Ladders help you change Parameter values</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#11._Operator_Flags_and_Table_Mode"><span class="tocnumber">11</span> <span class="toctext">11.  Operator Flags and Table Mode</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#12._Save_your_work"><span class="tocnumber">12</span> <span class="toctext">12.  Save your work</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#13._Get_Media_into_TouchDesigner"><span class="tocnumber">13</span> <span class="toctext">13.  Get Media into TouchDesigner</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#14._Navigate_into_Components_that_contain_Networks"><span class="tocnumber">14</span> <span class="toctext">14.  Navigate into Components that contain Networks</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#15._Parameters_Types"><span class="tocnumber">15</span> <span class="toctext">15. Parameters Types</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#16._The_Four_%22Parameter_Modes%22"><span class="tocnumber">16</span> <span class="toctext">16.  The Four "Parameter Modes"</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#17._CHOPs_output_Channels_of_Samples"><span class="tocnumber">17</span> <span class="toctext">17.  CHOPs output Channels of Samples</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#18._Export_CHOP_Channels_to_Parameters"><span class="tocnumber">18</span> <span class="toctext">18.  Export CHOP Channels to Parameters</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#19._Put_a_Python_Expression_in_a_Parameter"><span class="tocnumber">19</span> <span class="toctext">19. Put a Python Expression in a Parameter</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#20._Parameter_Mode:_Binding"><span class="tocnumber">20</span> <span class="toctext">20. Parameter Mode: Binding</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#21._Components_Contain_Networks_of_Operators_with_Inputs_and_Outputs"><span class="tocnumber">21</span> <span class="toctext">21. Components Contain Networks of Operators with Inputs and Outputs</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#22._Containers_Hold_User_Interfaces"><span class="tocnumber">22</span> <span class="toctext">22. Containers Hold User Interfaces</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#23._Components_can_have_Custom_Parameters"><span class="tocnumber">23</span> <span class="toctext">23. Components can have Custom Parameters</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#24._A_Path_is_an_address_of_a_Node"><span class="tocnumber">24</span> <span class="toctext">24. A Path is an address of a Node</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#25._Split_Panes_and_fill_with_other_Pane_Types"><span class="tocnumber">25</span> <span class="toctext">25.  Split Panes and fill with other Pane Types</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#26._Render_a_3D_Scene_with_a_Render_TOP"><span class="tocnumber">26</span> <span class="toctext">26.  Render a 3D Scene with a Render TOP</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#27._Timeline_lets_you_Play,_Pause_and_Examine"><span class="tocnumber">27</span> <span class="toctext">27. Timeline lets you Play, Pause and Examine</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#28._Create_Animation_Curves_with_the_Animation_Editor"><span class="tocnumber">28</span> <span class="toctext">28. Create Animation Curves with the Animation Editor</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#29._DAT_Operators_manipulate_Text"><span class="tocnumber">29</span> <span class="toctext">29. DAT Operators manipulate Text</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#30._Sweet_Sixteen_Operators"><span class="tocnumber">30</span> <span class="toctext">30. Sweet Sixteen Operators</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#31._Explore_the_Operator_Snippets"><span class="tocnumber">31</span> <span class="toctext">31. Explore the Operator Snippets</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#32._Get_Components_from_the_Palette"><span class="tocnumber">32</span> <span class="toctext">32. Get Components from the Palette</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#33._Get_Components_from_the_Community_Posts"><span class="tocnumber">33</span> <span class="toctext">33. Get Components from the Community Posts</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#34._Perform_Mode_runs_your_Application_Solo_and_Optimized"><span class="tocnumber">34</span> <span class="toctext">34. Perform Mode runs your Application Solo and Optimized</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#35._Speeding_it_up_with_the_Performance_Monitor"><span class="tocnumber">35</span> <span class="toctext">35. Speeding it up with the Performance Monitor</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#36._Quick_Tips_and_Good_Habits"><span class="tocnumber">36</span> <span class="toctext">36. Quick Tips and Good Habits</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#More..."><span class="tocnumber">37</span> <span class="toctext">More...</span></a></li>
+</ul></div>
+
+<h4><span class="mw-headline" id="1._Starting_TouchDesigner">1.  Starting TouchDesigner</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=1" title="Edit section: 1. Starting TouchDesigner">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To use TouchDesigner, you will need a 3-button mouse with a roller wheel. (If you have no mouse or middle mouse button, you can use alt+rightclick to substitute for middleclick.)
+</p><p>Start by double-clicking the TouchDesigner icon on the desktop.
+</p><p>When you start TouchDesigner, you see the <a href="Network.html" title="Network">network</a> editor on the right, and the <a href="Palette.html" title="Palette">Palette</a> browser on the left. Close the palette by clicking the x at its upper right corner to get more space until you need it. 
+</p>
+<h4><span id="2._Pan.2C_zoom_and_center_the_Network"></span><span class="mw-headline" id="2._Pan,_zoom_and_center_the_Network">2.  Pan, zoom and center the <span class="mw-lingo-term" data-lingo-term-id="eec89088ee408b80387155272b113256">Network</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=2" title="Edit section: 2. Pan, zoom and center the Network">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To pan the network, click and drag the left mouse button (<a href="Mouse_Click.html" title="Mouse Click">LMB</a>) on an empty area of the network. 
+</p><p>To zoom the network, click and hold down the middle mouse button (<a href="Mouse_Click.html" title="Mouse Click">MMB</a>) and drag it left-and-right. (Reminder: If you don't have a middle mouse button, press alt+rightclick.) 
+</p><p>Alternately, to zoom you can move the rollerwheel forward and backward.
+</p><p>Press the "h" key to center it (this is also called <b>h</b>oming). To home just the highlighted node, press Shift-h.
+</p><p>In an empty area of the network right-click (<a href="Mouse_Click.html" title="Mouse Click">RMB</a>) and release the mouse - you will see the network menu. Choose 'Home All'.
+</p>
+<h4><span class="mw-headline" id="3._Current_Nodes_and_Selected_Nodes">3. Current Nodes and Selected Nodes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=3" title="Edit section: 3. Current Nodes and Selected Nodes">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Click on one of the nodes. This gives it a green border and makes it the "current" node. Only one node in a network is current.
+</p><p>Left-click on another node and drag it to a new location. Notice the current node does not change.
+</p><p>To box-select several nodes, click and hold down the right mouse button in an empty area, drag the mouse over the nodes, and release.  
+</p><p>Yellow borders around nodes mean they are "selected". The green node is selected too.
+</p><p>Left-click on any selected node and drag it - all the selected nodes move together.
+</p><p>To add more to the set of selected nodes, Shift-lclick, or Shift-box-pick other nodes.  To un-select a selected node, Shift-lclick on it.
+</p><p>You can act on selected nodes together. Right-click on the network background and select Delete to remove the nodes, then press Ctrl+z to undo (Command+z on macOS). You can also undo via the Edit menu.
+</p><p>Now click the top-left corner (<a href="Flag.html" title="Flag">Flag</a>) on any of the selected nodes. This toggles between all their <a href="Node_Viewer.html" title="Node Viewer">Node Viewers</a> and their 3-letter icons.  Turn back on the node viewers.
+</p><p>To un-select everything, left-click on the background of the network, which un-selects all the nodes except for the green "current" node.
+</p><p>Right-click on one of the nodes - you will see the node menu. Choose 'View' to bring up a floating window. Resize it by clicking-and-dragging the edges. Now you can close the viewer window by clicking it in the corner.
+</p>
+<h4><span class="mw-headline" id="4._TouchDesigner_Operators_Generate_and_Filter_Data">4.  TouchDesigner Operators Generate and Filter Data</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=4" title="Edit section: 4. TouchDesigner Operators Generate and Filter Data">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>To delete all the nodes, press Control-a to select all, then press Delete.
+</p><p>Now double-click on the empty network. The <a href="OP_Create_Dialog.html" title="OP Create Dialog">OP Create Dialog</a> appears, where OP means "<a href="Operator.html" title="Operator">operator</a>", or "node". The purple "<span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>" tab should be selected. <a href="TOP.html" title="TOP">TOPs</a> are Texture Operators and work with images. Click on Movie File In, then click anywhere on the network to place it.
+</p><p>You can also press Tab to bring up OP Create. To cancel, click the background.
+</p><p>On the right side of <code>moviefilein1</code>, right-click on its purple output connector. On the OP Create click 'Level' and then click to the right of <code>moviefilein1</code> to create <code>level1</code>, which will be connected to <code>moviefilein1</code>. You have just added an image "<a href="Filter.html" title="Filter">filter</a>" (<code>level1</code>) that modifies the levels of an image "<a href="Generator.html" title="Generator">generator</a>" (<code>moviefilein1</code>).
+</p><p>TouchDesigner Operators are Generators or Filters. "Filters" require at least one input, and modify the data of an incoming operator.  
+</p><p>"Generators" do not require an input - they create new data or read data from external devices and programs. Darker-colored OPs are the generators. Lighter colored OPs are filters. 
+</p><p>Click on <code>level1</code>. On the top-right dialog, move the sliders labelled Black Level and Brightness. These are typical "<a href="Parameter.html" title="Parameter">parameters</a>" in TouchDesigner, which we will cover soon.
+</p>
+<h4><span id="5._In_the_Network_Editor.2C_add_an_Operator_from_each_Family"></span><span class="mw-headline" id="5._In_the_Network_Editor,_add_an_Operator_from_each_Family">5.  In the <span class="mw-lingo-term" data-lingo-term-id="b47b79e551ab83200b1bf44ef30ccfb8">Network Editor</span>, add an Operator from each <span class="mw-lingo-term" data-lingo-term-id="cefc4f7cbc8c34762e0f76703e7e174e">Family</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=5" title="Edit section: 5. In the Network Editor, add an Operator from each Family">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Let's look at rest of the six families of operators. Once again, double-click on the background. 
+</p><p>The <a href="OP_Create_Dialog.html" title="OP Create Dialog">OP Create Dialog</a> has six headings of what we call <a href="Operator.html" title="Operator">Operator Families</a>. Click on '<a href="CHOP.html" title="CHOP">CHOP</a>' for 'Channel Operators'.  Press Tab several times to cycle back to CHOPs.
+</p><p>Click on the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> type "Pattern" and place the Pattern <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> in the network in a row above the TOPs. Channel Operators are used for motion, control signals, audio and more.
+</p><p>Bring up OP Create again. You can find a specific operator by typing its name. Type "noi", click on Noise, and before clicking again, you can use the roller wheel to zoom the network and find a space, and click to create a <a href="Noise_CHOP.html" title="Noise CHOP">Noise CHOP</a>.
+</p><p>Bring up OP Create and Click "<span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>". Surface Operators (<a href="SOP.html" title="SOP">SOPs</a>) work with polygons, 3D lines and other surfaces. Choose a <a href="Sphere_SOP.html" title="Sphere SOP">Sphere SOP</a> and place the node in the network.
+</p><p>Press the Tab key and select "<span class="mw-lingo-term" data-lingo-term-id="f0c2c0ca864067cc6e21a7ea2c1b1fdd">MAT</span>". <span class="mw-lingo-term" data-lingo-term-id="d92a8333dd3ccb895cc65f7455b71206">Material</span> Operators (<a href="MAT.html" title="MAT">MATs</a>) add textures and shading to 3D objects. Choose a <a href="Phong_MAT.html" title="Phong MAT">Phong MAT</a> and place the node.
+</p><p>Press the Tab key and select "<span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>". Data Operators (<a href="DAT.html" title="DAT">DATs</a>) manipulate text strings, both free-form text and in tables. Choose a <a href="Monitors_DAT.html" title="Monitors DAT">Monitors DAT</a>, which is a table containing one row for every monitor attached to your computer.
+</p><p>Press the Tab key and select "<span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>" for Components. There are four categories of components. From the 3D Objects column on the left, choose a <a href="Geometry_COMP.html" title="Geometry COMP">Geometry COMP</a>, which unites SOPs and a <span class="mw-lingo-term" data-lingo-term-id="d92a8333dd3ccb895cc65f7455b71206">Material</span> for 3D rendering. 
+</p><p>Press the Tab key again. From the Panels column, choose a <a href="Slider_COMP.html" title="Slider COMP">Slider COMP</a>, which is one of the 2D gadgets for building control panels.
+</p><p>You now have examples of all Operator Families in your network.
+</p>
+<h4><span class="mw-headline" id="6._Connect_Nodes_together_with_Wires">6.  Connect Nodes together with Wires</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=6" title="Edit section: 6. Connect Nodes together with Wires">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>(Box-pick everything except the two TOPs and move them up out of the way.)
+</p><p>Node inputs are found on their left side, and node outputs are on their right side. Think of the data generally flowing left-to-right.
+</p><p>Now press Tab and create a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> called Monochrome, by typing 'mon', and place it to the right of <code>level1</code>.
+</p><p>Connect the output of <code>level1</code> to the input of <code>mono1</code> in one of four ways: First, click <code>level1</code>'s output and without releasing, drag to <code>mono1</code>'s input and release.
+</p><p>The connecting lines between nodes in the same family are called <a href="Wire.html" title="Wire">Wires</a>. 
+</p><p>Press Ctrl-z to undo the wiring. Now click-release on <code>level1</code>'s output, then click-release on <code>mono1</code>'s input.  Or you can connect in reverse order from the <code>mono1</code>'s input to <code>level1</code>'s output.
+</p><p>Click and drag the Monochrome <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to the right to create some space between.
+</p><p>To insert a new node between the two already-connected nodes, right-click the output of the <code>level1</code> node and select a Tile <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> and place it in the network. 
+</p><p>Undo with Ctrl-z. Now right-click on the wire, and select Insert Operator from the menu. Choose and place a Tile <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. 
+</p><p>To create a new branch from a node, middle-click on the output of <code>tile1</code> and select Edge from the Operator menu and place it in the network above <code>mono1</code>. 
+</p><p>Remove a wire by clicking on the input of <code>edge1</code>, and then clicking on empty space in the network. 
+</p><p>Now reconnect <code>edge1</code> to <code>tile1</code>. 
+</p><p>Another way to disconnect is to right-click on the wire and select Disconnect from the menu. Reconnect <code>edge1</code> again.
+</p>
+<h4><span id="7._Wires.2C_Data_Flow_and_Cooking"></span><span class="mw-headline" id="7._Wires,_Data_Flow_and_Cooking">7.  Wires, Data Flow and Cooking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=7" title="Edit section: 7. Wires, Data Flow and Cooking">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>You can think of data flowing along these wires, in this case, images. Now watch the wires animate. Click on <code>level1</code>, go to its <a href="Parameter_Dialog.html" title="Parameter Dialog">Parameter Dialog</a> on the right, and operate the Brightness slider.  When a wire is animating it means that data is flowing: the node upstream is <a href="Cook.html" title="Cook">cooking</a> and giving its output to the next node to cook, and so on downstream.
+</p><p>Middle-click on <code>tile1</code>. This shows information about the <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. Look at Total Cooks to see how many times it has cooked, and then middle-click on <code>moviefilein1</code> and see it has only had to cook once, because it's not changing.
+</p><p>Let's look at top-bottom connectors. Let go back to the <code>geo1</code> Geometry component.
+</p><p>Put a Null component above the geo1 component. The 3D components like Geometrys, Cameras and Lights have connectors on their bottoms and tops (connect them) which connects them as parent-child in a <a href="https://docs.derivative.ca/3D" title="3D">3D</a> hierarchy, but no data flows along them.
+</p><p>Put a <span class="mw-lingo-term" data-lingo-term-id="0e7278cda02a9c0446dcc75a4df34eb2">Container</span> component above the geo1 component. In the same way, the 2D components like Sliders, Buttons and Containers also have connectors on their bottoms and tops (connect them), which is one way to group them in a panel. Again, no data flows along them, data only flows through the wires on the sides.
+</p>
+<h4><span class="mw-headline" id="8._Make_a_Viewer_Active_to_inspect_Operator_data">8.  Make a <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> to inspect Operator data</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=8" title="Edit section: 8. Make a Viewer Active to inspect Operator data">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>(Let's look at at the <code>geo1</code> component more closely) Up to now, when you left-click on a node, you move it or make it current. You can't change the viewer. Middle-click shows the common info box, and right-click shows the common node menu that all nodes share.
+</p><p>(Reminder: If you don't have a middle mouse button, press Alt+Right-click.)
+</p><p>Clicking the "<a href="Viewer_Active.html" title="Viewer Active">Viewer Active</a>" flag at the bottom right of <code>geo1</code> removes its border and allows you inspect more closely the contents of the operator's data. Click-and-drag any of the mouse buttons to move around the geometry, and a quick right-click gives you an operator-specific menu of viewing options, which is where you find the wireframe toggle.
+</p><p>In the case of panels, if you click <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span>, it lets you operate the panel. 
+</p><p>There are two more ways to make the viewer active:
+</p>
+<ul><li>First, Alt+a puts all nodes into the <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> state until you let go.</li></ul><ul><li>Second, with the cursor over the background, the <a href="Shortcut.html" class="mw-redirect" title="Shortcut">shortcut</a> key "<code>a</code>" will toggle the <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> flag of all selected nodes.</li></ul><p>Even when a node has its <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> flag on, you can still access the common popups. On the name bar at the bottom, middle click to get the node info, and right click to get the nodes' common menu. 
+</p><p>You can click-drag the operator from the bottom name bar any time. If you just click the name bar, it will make it current, but also puts you in a mode to edit the name until you click away, so you may prefer to just box pick it.
+</p><p>( Let's tidy up before we go on: Home the network select the nodes whose Viewer Actives are on and turn them off. )
+</p>
+<h4><span class="mw-headline" id="9._Adjust_Parameters_of_Operators">9.  Adjust Parameters of Operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=9" title="Edit section: 9. Adjust Parameters of Operators">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Every Operator in TouchDesigner has a set of <a href="Parameter.html" title="Parameter">Parameters</a> that affects its output. Select and look at <code>pattern1</code>. The <a href="Parameter_Dialog.html" title="Parameter Dialog">Parameter Dialog</a> is normally docked in the upper right corner of a <span class="mw-lingo-term" data-lingo-term-id="eec89088ee408b80387155272b113256">Network</span>. Press the lower-case <code>p</code> key to hide it and gain more space, and <code>p</code> again to bring it back. 
+</p><p>To see <code>pattern1</code>'s parameters in a floating window, right-click on <code>pattern1</code> and select Parameters....
+</p><p>You can change the parameter of several OPs at once. Click <code>pattern1</code>, and press Ctrl+c and Ctrl+v twice to create <code>pattern2</code> and <code>pattern3</code> (Command+c and Command+v on macOS). Click <code>pattern2</code> and change its Type menu to Ramp. Now box-select <code>pattern1</code> to <code>pattern3</code>. Increase the parameter Number of Cycles. When you release you see that all three OPs' Cycles parameter are set to the same value.
+</p><p>To reset just one parameter, right-click on the label of the Type parameter of <code>pattern2</code>, which brings up the parameter menu, and select Reset <span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span>.
+</p><p>To reset all parameters of operators back to their default values, right-click on a node and choose Reset all Parameters. Alternately, on the parameter dialog's "i" icon, you can right-click to bring up the same node menu. 
+</p><p><br></p>
+<h4><span class="mw-headline" id="10._Value_Ladders_help_you_change_Parameter_values">10.  Value Ladders help you change Parameter values</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=10" title="Edit section: 10. Value Ladders help you change Parameter values">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Now let's adjust parameters with a value ladder. Pick the <code>noise1</code> <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. 
+</p><p>On the <span class="mw-lingo-term" data-lingo-term-id="ada8247bf54d9f0708c46bf41b4d3322">Parameter Dialog</span>, on the Period parameter's name or value, middle-click and hold down the button. The <a href="Value_Ladder.html" title="Value Ladder">Value Ladder</a> will pop up with a number of increments labelled .001 .01 .1 1 10. With the middle-mouse still down, move vertically to one of the increments, say .01, then move off to the right/left to increase/decrease the parameter value. Try the same thing with another increment.
+</p><p>Click on the parameter dialog's Transform page. If the parameter has two or more values like the Translate parameter, when you middle-click on the number (click the second value) and bring up the ladder, it will change only that single value. However if you click on the parameter name and operate the ladder, you modify all values of the parameter.
+</p><p>Tip: You can use the left-mouse button to operate the value ladder, but you must wait a moment before it comes up, so it's faster if you middle-click on the parameter name or value.
+</p>
+<h4><span class="mw-headline" id="11._Operator_Flags_and_Table_Mode">11.  Operator Flags and Table Mode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=11" title="Edit section: 11. Operator Flags and Table Mode">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="Flag.html" title="Flag">Operator Flags</a> surround each node. The flags on the left are common to most operator families, and the ones at the bottom are more specific to a family.  
+</p><p>Let's look at <code>tile1</code>. We have seen the <span class="mw-lingo-term" data-lingo-term-id="8fc515f393be6e64653993a0cd71e9bc">Viewer flag</span> at the top left, and <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> at the bottom right.
+</p><p>The third flag on the left is <span class="mw-lingo-term" data-lingo-term-id="5ce88c4d66118388a69c6fd4262ca3a1">Bypass</span>, which shuts the operator down, and if there is any input connected, it will pass-through the first input directly to the output. 
+</p><p>The fourth flag is the Lock flag, which freezes the data in memory, and prevents new data from flowing through. Modify <code>level1</code>'s parameters and see that it doesn't affect <code>tile1</code> or beyond. The Lock flag is good for testing, but use it sparingly as it makes your project files larger. Middle-click on the Tile <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> see the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> memory it consumes.
+</p><p>Let's switch to "Table Mode". Press Shift-T. It displays one node per row. This is useful to find nodes alphabetically in large networks, and to look over the flags settings.  
+</p><p>Right-click on the second column to bring up parameters. Click or Ctrl-click or Shift-click in the first column to change the current and selected nodes.  For now, click <code>moviefilein1</code>.
+</p><p>Now press Shift-T again to get back to the network view and see <code>moviefilein1</code> is the current node.  Now unlock <code>tile1</code>.
+</p>
+<h4><span class="mw-headline" id="12._Save_your_work">12.  Save your work</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=12" title="Edit section: 12. Save your work">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Frequently save the state of your work. Under the File menu, choose <a href="https://docs.derivative.ca/New_Project_Dialog" title="New Project Dialog">Create Project Folder</a>. Make sure your <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> is your Desktop. Change the Project <span class="mw-lingo-term" data-lingo-term-id="b0f2b97dc5d2b76b26e040408bb1d8af">Folder</span> to <code>Learning</code>, then press Create. 
+</p><p>Explorer or Finder will show you it created a folder on your desktop called <code>Learning</code> containing a bunch of folders for your media, plus two identical TouchDesigner Environment files called <code>Learning.1<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> and <code>Learning<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>.
+</p><p>The next time you want to save, just choose File -&gt; 'Save' which increments the file name. Bringing Explorer or Finder back shows that it created a <code>Backup</code> folder in your project, with <code>Learning.1<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> moved into it, and it created a new <code>Learning<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> which is now a copy of <code>Learning.2<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>.
+</p><p>To save again, you can also use Ctrl+s (Command+s on macOS), which you can confirm at the top of the window.
+</p><p>After you quit TouchDesigner, the next time you re-start, you can go to the Learning folder and double-click <code>Learning<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code>, which is always the latest file.
+</p><p>Or you can right-click and drag <code>Learning<span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> to the desktop and create a shortcut that you can always start from.
+</p><p>Let's delete everything in our project. Type Ctrl-a to select all, and press your Delete key. 
+</p><p><br></p>
+<h4><span class="mw-headline" id="13._Get_Media_into_TouchDesigner">13.  Get Media into TouchDesigner</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=13" title="Edit section: 13. Get Media into TouchDesigner">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>You can bring in common file types into TouchDesigner including movie, image, audio, FBX, point cloud, JSON files and more. It also imports TouchDesigner <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> component files. See the wiki page <a href="File_Types.html" title="File Types">File Types</a>.
+</p><p>On the top menu bar under Dialogs, select Explorer on Windows, or Finder on macOS.
+</p><p>Go to any media folder you have and Drag-drop some of your media files from the file browser into the <span class="mw-lingo-term" data-lingo-term-id="b47b79e551ab83200b1bf44ef30ccfb8">Network Editor</span>. (If you don't have anything on your computer, navigate to somewhere like <code>C:\Program Files\Derivative\TouchDesigner.2022.29040\Samples\Map</code>.)
+</p><p>You can also get files from the desktop and drag-drop them in.
+</p><p>Another way to get files in is to create appropriate operators with the OP Create menu, like the Movie File In <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, the Audio File In <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, the <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> File In <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, or the FBX <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>. Then set their File parameter to your desired media file.   
+</p><p>Alternately, on the desktop or in a folder in Windows/macOS, right-click any of these file, and select Open with..., and choose TouchDesigner. This will start a new TouchDesigner session (a new process) with that file as a node.
+</p><p>Finally, within TouchDesigner, start a project (1) via the File -&gt; Open menu or (2) the Open Recent menu. This will first terminate the process you are in and then start a new process.
+</p><p>Note that the <code><span class="mw-lingo-term" data-lingo-term-id="76746356f2d9fd021f01bc051bb2114f">.toe</span></code> "TouchDesigner Environment" files that contain your entire projects are not imported, they simply are started afresh by (1) double-clicking the file, or (2) doing a right-click -&gt; Open With.... 
+</p>
+<h4><span class="mw-headline" id="14._Navigate_into_Components_that_contain_Networks">14.  Navigate into Components that contain Networks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=14" title="Edit section: 14. Navigate into Components that contain Networks">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Components are unique in that every component contains a <a href="Network.html" title="Network">Network</a>, and every network lives in a component.
+</p><p>Bring up OP Create (Tab) and create a Button component, <code>button1</code>. Note that all <a href="Component.html" title="Component">Components</a> have a grey border.
+</p><p>To go into <code>button1</code>, select it and press Enter or the key "i". The path at the top of the pane <code>/project1/button1</code> tells you where you are.
+</p><p>To get out of a component, press "u" for up. 
+</p><p>You can also double-click a component to get in, as long as its <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> is off (and it's not private).
+</p><p>A slicker way is to use the mouse's roller wheel to zoom close to a component, so when you mouse-wheel very close to <code>button1</code>, you will go inside it. Roll the opposite way to get out.
+</p>
+<h4><span class="mw-headline" id="15._Parameters_Types">15. Parameters Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=15" title="Edit section: 15. Parameters Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>An Operator computes and generates its outputs based on its inputs and its parameters (and often the current time). So let's look at the characteristics of parameters. 
+</p><p>Create a Circle <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> and switch it to another color, then a Trigger <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, and below them a Text <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>.
+</p><p>Here are the 7 most common parameter types: 
+</p>
+<ol><li>integers (<code>text1</code> - <span class="mw-lingo-term" data-lingo-term-id="ebd9bec4d70abc789d439c1f136b0538">Layout</span> page - Width parameter)</li>
+<li>floating point numbers (numbers with decimal places) (Font page - Font Size parameter)</li>
+<li>on-off "toggles" (Italic parameter)</li>
+<li>menus (Font menu)</li>
+<li>text strings (Text page - Text parameter)</li>
+<li>a parameter is the path to another node (Look page on text1 - drag the <code>circle1</code> <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to the Background <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> parameter)</li>
+<li>pulses that tell the operator to do something just once (the Trigger <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> - click the Trigger <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> pulse parameter)</li></ol><p>Each parameter set can have one, two, three or four values. For example, when a parameter is a color, it has 3 or 4 values: red, green, blue and sometimes alpha.  (<code>text1</code> Look page - Background Color)
+</p>
+<h4><span id="16._The_Four_.22Parameter_Modes.22"></span><span class="mw-headline" id='16._The_Four_"Parameter_Modes"'>16.  The Four "Parameter Modes"</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=16" title='Edit section: 16. The Four "Parameter Modes"'>edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Each parameter can be in one of four "Parameter Modes", which determines how it gets its value.  Click on any parameter like Horiz Stretch to open it up to see what mode it's in. The four boxes represent the four parameter modes.
+</p>
+<ul><li>This is in the first <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span>, "Constant" which is the simplest - On the parameter dialog you just click on a slider, type in a number, pick something by hand from a menu - it sets its "constant" value. (where the  values are in in white)</li>
+<li>The second <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span> is "<span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> Mode", where the parameter is driven by numbers coming from CHOPs. (indicated in green)</li>
+<li>The third <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span> is "<span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span> Mode" where you can put python expressions (indicated in cyan).</li>
+<li>The fourth <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span> is "<span class="mw-lingo-term" data-lingo-term-id="a2ebfe0e8e16f2c81865ce3da74bc605">Binding</span> Mode" (in purple) where two or more parameters are tied together. (right-click on circle1 and select Parameters) The Text <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s Tracking parameter is in purple, indicating it is bound to another parameter, which you can see is <code>circle1</code>'s Border Width, which changes Text <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s Tracking parameter, and it's bi-directional.</li></ul><p>Let's look closer at exporting. For that we need to know more about CHOPs, channels and samples.
+</p>
+<h4><span class="mw-headline" id="17._CHOPs_output_Channels_of_Samples">17.  CHOPs output Channels of Samples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=17" title="Edit section: 17. CHOPs output Channels of Samples">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>CHOPs output numbers. A <span class="mw-lingo-term" data-lingo-term-id="61244cb3488e879164e8d9409dd83b14">Channel Operator</span> creates a set of 1 or more channels, and each Channel is a set of numbers (<a href="Sample.html" title="Sample">Sample</a>). Let's create a <a href="Constant_CHOP.html" title="Constant CHOP">Constant CHOP</a> and move its slider. It has 1 channel and 1 sample, as you can see if you middle-click (or click "i" at the top of the parameter dialog) on the node and see <code>1i</code>, where <code>i</code> means sample or index.  
+</p><p>Click the + under <code>chan1</code> to create new parameters which generates a second channel. Vertify that in the "info popup".
+</p><p>Now create a <a href="Noise_CHOP.html" title="Noise CHOP">Noise CHOP</a>. This is one <a href="Channel.html" title="Channel">Channel</a> with multiple samples. To prove this, zoom in to the node a bit, turn on <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span>, right-click on the graph and select Dot per <span class="mw-lingo-term" data-lingo-term-id="c5dd1b2697720fe692c529688d3f4f8d">Sample</span>. Now middle-click and drag the mouse right to reveal a dot for every sample.  (Be aware that mouse clicks on the node do different things depending on whether the viewer is active or not.)
+</p><p>Press 'h' over the Noise <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s graph to home the channel. On the parameter dialog, click the Channel page and change the Channel Names parameter to <code>chan[1-3]</code>. There are now 3 channels, each with 600 samples. To verify this, middle-click on the bottom strip of the node where then name <code>noise1</code> is located, look at the pop-up info and see 600i meaning 600 samples or indexes.
+</p><p>To see CHOPs as numbers, bring up OP Create, click on <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>, and create a "<span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to" <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>. Then turn on the parameter called "Include Names". Now connect the Noise <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> by dragging a node to the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> and to the parameter called "<span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>". Look at the table in the viewer, where each cell is a sample. Now try the Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> You can drag Constant onto <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to.
+</p><p>Overall, a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> is used to represent a curve, a motion, an audio signal or a control signal in TouchDesigner.  (See: <a href="Channel.html" title="Channel">Channel</a>, <a href="CHOP.html" title="CHOP">CHOP</a>).
+</p>
+<h4><span class="mw-headline" id="18._Export_CHOP_Channels_to_Parameters">18.  <span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels to Parameters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=18" title="Edit section: 18. Export CHOP Channels to Parameters">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="Export.html" title="Export">Export</a> sends a value from a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel to an operator's parameter.
+</p><p>Create an <a href="LFO_CHOP.html" title="LFO CHOP">LFO CHOP</a>, slow it down, and connect it to a new Math <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. Turn on the Math <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s <a href="Viewer_Active.html" title="Viewer Active">Viewer Active</a> flag on the bottom right. Create a <a href="Movie_File_In_TOP.html" title="Movie File In TOP">Movie File In TOP</a>, then and add a new <a href="Transform_TOP.html" title="Transform TOP">Transform TOP</a>. 
+</p><p>Click the Transform <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> so you can export to its parameters. Left-click and hold down the channel in the Math <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s viewer and drag it to a parameter in the <a href="Parameter_Dialog.html" title="Parameter Dialog">Parameter Dialog</a>: the Transform <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s Translate parameter over the first number, the X value, and release the mouse button. Select '<span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>' from the menu that appears to complete the export. Note the parameter goes green, indicating the parameter is in <span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> mode.
+</p><p>Select the Math <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> again (box-pick it or click the name-bar at bottom), and then adjust the motion range by selecting the Mult-Add page and adjusting the Multiply parameter. 
+</p><p>You can turn off the export: On the Math <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, turn off <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> and  click the green dot at the bottom of the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>: the Transform <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s Translate goes back to its constant mode. Now turn on the export again.  (See <a href="Export.html" title="Export">Export</a> for more techniques).
+</p>
+<h4><span class="mw-headline" id="19._Put_a_Python_Expression_in_a_Parameter">19. Put a Python <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span> in a <span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=19" title="Edit section: 19. Put a Python Expression in a Parameter">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Let's look at python expressions in parameters. Expressions are used in parameters and scripts.
+</p><p>Create a new Pattern <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> and call it <code>sine1</code>. In the Length parameter, type the expression <code>200*3</code>. The value now shows as <code>600</code> = the expression has been evaluated to <code>600</code>, and it is now blue to indicate that it is currently in <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span> Mode. To reveal more, put your cursor over the parameter name "Length", a + appears, and click anywhere in that area. A new row appears showing the python name of the parameter ('<code>length</code>'),  boxes for the four parameter modes, and the optional python expression.
+</p><p>Click the grey box to the left of the blue box. This puts it back into Constant Mode, where the value is at its default value of 1000. This is useful for trying out different values before committing to it. Click the <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span> Mode box again.
+</p><p>On <code>sine1</code>, in the parameter called Number of Cycles type the expression <code>me.digits+2</code>. It evaluates to <code>3</code> which is the digits in the operator's name plus 2. Select just the text <code>me.digits</code> and put your cursor over the expression. It will pop up with <code>1</code>, the value of that part of the expression that you have selected. 
+</p><p>To enlarge the Parameter dialog to get more space: Put your cursor over the left edge of the parameter dialog and get the left-right arrow cursor, click and drag it to the left.
+</p><p>If you press Ctrl-e with the cursor in a parameter it brings up the current parameter’s expression in your text editor, making it easier to see and edit long expressions. Alternately, right-click on the parameter and select Edit <span class="mw-lingo-term" data-lingo-term-id="a1a6657be79cc0fc1e9b23b9e108f043">Expression</span>.
+</p><p>Look at this table for the most common Python expressions in TouchDesigner: <a href="Python_Tips.html" title="Python Tips">Python Tips</a>. Many examples are in Help -&gt; Python Examples.  See also <a href="Parameter.html" title="Parameter">Parameter</a>.
+</p>
+<h4><span class="mw-headline" id="20._Parameter_Mode:_Binding">20. <span class="mw-lingo-term" data-lingo-term-id="64ef1cb3966ecc5ce25ad319301a4703">Parameter Mode</span>: <span class="mw-lingo-term" data-lingo-term-id="a2ebfe0e8e16f2c81865ce3da74bc605">Binding</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=20" title="Edit section: 20. Parameter Mode: Binding">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Parameter "<span class="mw-lingo-term" data-lingo-term-id="a2ebfe0e8e16f2c81865ce3da74bc605">Binding</span>" means making 2 or more parameters take on the same value. To set this up, create two Pattern CHOPs, then right-click on <code>pattern1</code> and select Parameters... to bring up its Parameters in a floating window, Then select <code>pattern2</code> to see its parameters. Then click-drag the Number of Cycles parameter on <code>pattern1</code> to the same on <code>pattern2</code> and select Bind. Change the value on either parameter and you will see it change in the other.
+</p><p>Note that the actual value being shared is on <code>pattern1</code> - Expand the parameter on both OPs (press the + on the parameter of both OPs) and see that <code>pattern2</code>'s Bind expression in purple is <code>op('pattern1').par.numcycles</code>, so it is inheriting the value on <code>pattern1</code>. Thus <code>pattern1</code>'s parameter is called the "master", and <code>pattern2</code>'s parameter is called the "reference". You can have several parameters bind to the master.
+</p>
+<h4><span class="mw-headline" id="21._Components_Contain_Networks_of_Operators_with_Inputs_and_Outputs">21. Components Contain Networks of Operators with Inputs and Outputs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=21" title="Edit section: 21. Components Contain Networks of Operators with Inputs and Outputs">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>"Components" is the operator family that holds networks of operators inside them. Let's create a <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span> with a wired input and output. Press Tab, select <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>, select <span class="mw-lingo-term" data-lingo-term-id="0e7278cda02a9c0446dcc75a4df34eb2">Container</span> and place it in your network. Go into the <span class="mw-lingo-term" data-lingo-term-id="0e7278cda02a9c0446dcc75a4df34eb2">Container</span> (roller-wheel forward, or press Enter). Verify your path location in the top of the pane - it should say something like <code>/project1/container1</code>. 
+</p><p>Press Tab, select <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, select Ramp and place it. Right-click on the ramp node's output and select an Out <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. Press Tab, select <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, select the In <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. Go back outside the component (press <code>u</code> or roller-wheel backward) and create an LFO <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> by right-clicking on the component's input. This connects the new LFO <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to the input of the component. Set its Type parameter to Ramp. 
+</p><p>Go back into the component and <a href="Export.html" title="Export">Export</a> the In <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel to the Phase parameter of the Ramp <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. You should see the ramp shifting. Go back outside the component. On the container's Panel page, in the Background <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> parameter, put <code>./out1</code>. You should see the rising ramp in the viewer. Right-click on the output of the container and add a Null <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. You have now created a custom component with a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> input and a <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> output.
+</p>
+<h4><span class="mw-headline" id="22._Containers_Hold_User_Interfaces">22. Containers Hold User Interfaces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=22" title="Edit section: 22. Containers Hold User Interfaces">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Go back into <code>container1</code>. Change the Type of the Ramp <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> to Circular. Next create a Slider <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>. Add a Null <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> to the output of the slider, and export its channel to the Period parameter of the Ramp <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. Go back up a level, turn on the <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> flag of <code>container1</code> and operate the slider to vary the width of the rings.  This is the basis of creating user interfaces in TouchDesigner.
+</p>
+<h4><span class="mw-headline" id="23._Components_can_have_Custom_Parameters">23. Components can have Custom Parameters</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=23" title="Edit section: 23. Components can have Custom Parameters">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>On <code>container1</code>, turn <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> off. Right-click on <code>container1</code> and select Customize <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>... from the node menu. In the Par Name field, type Position. Click Add Par. You should see a new tab called Custom on the parameter dialog, and a new parameter there called Position. Now on Customize <span class="mw-lingo-term" data-lingo-term-id="2cb05e4bb7830be982f0922fed86b4cd">Component</span>, change the Range Min setting to -1 and leave Range Max at 1.  
+</p><p>Go inside <code>container1</code> and on the Ramp <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>, click on the Position parameter name to bring up the extra rows of settings for the parameter, and on the <code>position1</code> row, type <code>parent().par.Position</code>. This should now be fetching the custom parameter we just created. Go back up one level, and operate the Position custom parameter. You should see the circular ramp shift left-right.  This is the basis of creating custom parameters in TouchDesigner.
+</p>
+<h4><span class="mw-headline" id="24._A_Path_is_an_address_of_a_Node">24. A <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> is an address of a <span class="mw-lingo-term" data-lingo-term-id="6c3a6944a808a7c0bbb6788dbec54a9f">Node</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=24" title="Edit section: 24. A Path is an address of a Node">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>A <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span> is like an address of a node or operator - it describes where a node is located in your TouchDesigner project. The path of network that you are currently in is shown on the path navigator at the top-left of a pane. You have been working in <code>/project1</code> mostly.
+</p><p>Many operators have a path parameter that refers to another operator. Create a Select <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> and type in the Operator parameter <code>/project1/pattern1</code>. You should see <code>pattern1</code>'s channels.
+</p><p>Nodes are all in a tree-like hierarchy of components inside components, starting at root, which is named <code>/</code>. Click the "home" icon to go to root. Click the '<code>/</code>' and select <code>project1</code> to go back to your working network. 
+</p><p>Look at the Select <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>: <code>/</code> at the start of a path means it's an "absolute path". <code>/project1/pattern1</code> is an absolute path, where in root (<code>/</code>) there is a component <code>project1</code>, and in <code>/project1</code> is a node <code>pattern1</code>.
+</p><p>Here are other forms of a path: 
+</p><p>Create a Select <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> and put in its <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> parameter <code>transform1</code>. <code>transform1</code> is a relative path: when you see an operator name without a prefix, this will be in the current network.
+</p><p>Create an Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> and put in its Operator parameter <code>container1/out1</code>. This is also a relative path - <code>container1</code> is a component in the current network, and <code>out1</code> is a node in <code>container1</code>.
+</p><p>Your <code>container1</code> component has <code>./out1</code> for the background image. <code>./</code> means "inside this component", so the path means "inside this component is a node called <code>out1</code>".
+</p><p>Go into <code>container1</code> and create a Select <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> and put in its first parameter <code>../pattern1</code>. <code>../</code> means the parent network, so the path means, in the parent of the current component there is a node called <code>pattern1</code>. 
+</p><p>In python expressions you will often see <code>parent()</code>, which also refers to the parent node. To locate further up the hierarchy, <code>../../</code> is the parent's parent. You will see other ways to locate operators in parent nodes using python function <code>parent()</code>.
+</p>
+<h4><span class="mw-headline" id="25._Split_Panes_and_fill_with_other_Pane_Types">25.  Split Panes and fill with other Pane Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=25" title="Edit section: 25. Split Panes and fill with other Pane Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Sometimes you want to be in two places at once. The TouchDesigner window can be split into 2 or more <a href="Pane.html" title="Pane">Panes</a>. Split a pane via the pull-down menu at the top-right corner of a pane, selecting Split Left-Right. 
+</p><p>Panes get filled with a choice of pane types via a pane's top-left corner menu. The <span class="mw-lingo-term" data-lingo-term-id="b47b79e551ab83200b1bf44ef30ccfb8">Network Editor</span> pane type is what you have been working in so far. The pane type "<span class="mw-lingo-term" data-lingo-term-id="b8da6df14bf06283cbf588df6998722e">Panel</span>" lets you interact with panel components. Pane type <a href="Geometry_Viewer.html" title="Geometry Viewer">Geometry Viewer</a> lets you interact with 3D scenes and objects. right-click -&gt; Viewer on nodes give similar views in floating windows.
+</p><p>Adjust the panes' sizes with the dividing bar between the panes, then close the pane via the pull-down menu at the top-right corner of a pane. You can also click the <span class="mw-lingo-term" data-lingo-term-id="ebd9bec4d70abc789d439c1f136b0538">Layout</span> or Bookmark icons at the top of a pane to select a multi-pane layout. See <a href="Pane.html" title="Pane">Pane</a> for more.
+</p>
+<h4><span class="mw-headline" id="26._Render_a_3D_Scene_with_a_Render_TOP">26.  Render a 3D Scene with a Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=26" title="Edit section: 26. Render a 3D Scene with a Render TOP">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Now let's render something in 3D with the Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. Create a <span class="mw-lingo-term" data-lingo-term-id="0e7278cda02a9c0446dcc75a4df34eb2">Container</span> component in <code>/project1</code>, rename it to <code>scene</code> and go into it. Create a Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>. Next create three components: a <span class="mw-lingo-term" data-lingo-term-id="d9c6333623e6357515fcbf17be806273">Geometry</span>, a Light and a Camera. The dashed lines mean that parameters of the Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> already refer to these components. In the Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span>'s Camera parameter, you see <code>cam1</code>, which means "get your camera from the node <code>cam1</code>". In the Geometry parameter, the <code>*</code> in <code>geo*</code> means "get all Geometry components in this network whose name starts with <code>geo</code>". 
+</p><p>Go to the parameters of the <code>geo1</code> Geometry node and Rotate the torus in Z (the third field of Rotate) to 30 degrees. The Render <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> changes. Now click the <a href="Viewer_Active.html" title="Viewer Active">Viewer Active</a> flag of <code>geo1</code> and click/move the torus to tumble it. Note the render stays the same. The tumbling in the Geometry component viewer is for inspection only. Press <code>h</code> in the <code>geo1</code> viewer to home (reset the tumble).  
+</p><p>Now go back up to <code>/project1</code>. Put <code><span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame</code> in the first field of the Rotate parameter (X). <code><span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame</code> is python for the "absolute frame number", which is a number that continues to rise by 60 (or whatever the frame rate is) until you quit TouchDesigner. Affecting parameters affects the render. This is your basic render setup. 
+</p>
+<h4><span id="27._Timeline_lets_you_Play.2C_Pause_and_Examine"></span><span class="mw-headline" id="27._Timeline_lets_you_Play,_Pause_and_Examine">27. <span class="mw-lingo-term" data-lingo-term-id="3d1f92a565d3b1a61880236e33c49bf3">Timeline</span> lets you Play, Pause and Examine</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=27" title="Edit section: 27. Timeline lets you Play, Pause and Examine">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <a href="Timeline.html" title="Timeline">Timeline</a> is located along the bottom of the main TouchDesigner window. The <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span> at the bottom left is the number of frames TouchDesigner will step forward every second. Note that the <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span> at the top of the UI is the actual number of frames TouchDesigner drew in the last second, which will be the <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span> or less.
+</p><p>The timeline lets you pause (||), play (&gt;) and single-step (+) the timeline in TouchDesigner. 
+</p><p>Spacebar will always stop and start the timeline. Every time it steps to another frame, it redraws the screen.
+</p><p>The power button at the top (0|1) shuts off all computing, clocks and communication in the TouchDesigner process, and is useful for inspecting things in a frozen state.
+</p><p>You will see when the timeline reaches the far right, it loops to the beginning of the timeline. But TouchDesigner is mostly event-driven with a free-running clock, so most things you build don't follow the looping timeline and its frame number: For example, create a Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, set it to 1 and connect it to a Speed <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>. It increases its count continuously and does not relate to the timeline. The <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a> restarts when you press its Reset parameter.  
+</p><p>Create a Movie File In <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> and on the File parameter select + and select <code>Count.mov</code>. Movie File In <span class="mw-lingo-term" data-lingo-term-id="6705777b712ee811e76fb07162081d63">TOP</span> plays in its default Sequential Play Mode continuously regardless of the timeline position, which you can see if you reduce the Speed parameter. 
+</p><p>However if you set its Play Mode menu parameter to "Locked to <span class="mw-lingo-term" data-lingo-term-id="3d1f92a565d3b1a61880236e33c49bf3">Timeline</span>", the frame number of the movie and <span class="mw-lingo-term" data-lingo-term-id="3d1f92a565d3b1a61880236e33c49bf3">Timeline</span> will stay in sync where the first frame of the movie will be seen at frame 1 always, and you can scrub the timeline.
+</p><p>But most often, the movie is played using a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel. Create a Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, change the Movie File In's Play Mode menu to Specify Index, and export the Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel to the Index parameter. Now use the value ladder on the Constant <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>'s value parameter to raise and lower the movie's frame number.
+</p>
+<h4><span class="mw-headline" id="28._Create_Animation_Curves_with_the_Animation_Editor">28. Create Animation Curves with the Animation Editor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=28" title="Edit section: 28. Create Animation Curves with the Animation Editor">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Create an <a href="Animation_COMP.html" title="Animation COMP">Animation Component</a>. By default it outputs a <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> with no channels. Now right-click on the node and select Edit Animation... (or press Edit Animation... in its parameter dialog).
+</p><p>Click Add Channels button and 3 channels will be created, <code>tx</code>, <code>ty</code>, and <code>tz</code>.  Keyframes are the dots on the channels. Click on any keyframe and move it anywhere.  To add additional keyframes to any channel, use alt+LMB and click on the location you want the keyframe. Use the right-mouse-button to box-select. Box-select the curve (not the keyframe dot), and change the Function menu from <code>cubic()</code> to <code>linear()</code> to change interpolation type.
+</p><p>Then watch the <a href="Timeline.html" title="Timeline">Timeline</a> at the bottom and the values of the channel in the Animation component viewer.  Note the channel values follow the timeline. 
+</p><p>If you want more control of the timing, connect an animated channel to the Animation component's input: Create a <a href="Beat_CHOP.html" title="Beat CHOP">Beat CHOP</a> and wire it to Animation <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s input. Set the Animation <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s <b>Play Mode</b> to "Use Input Index" and the <b>Input Index Unit</b> parameter menu to "Fraction".  
+</p><p>Then create a <a href="Constant_CHOP.html" title="Constant CHOP">Constant CHOP</a>, wire it to the Animation <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> first input and move the Constant's <code>chan1</code> slider. In both cases, the 0-1 value will control which part of the animation curve is output, de-coupling the Animation <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> from the timeline. You can always change Play Mode to Output Full Range to output the full-length channels.
+</p><p>Another way to create an animation component pre-wired is to right-click on a parameter and select <span class="mw-lingo-term" data-lingo-term-id="3cb4b2cd2cdc2d1d0a811c0cbcce29b1">Keyframe</span> Parameter in...
+</p>
+<h4><span class="mw-headline" id="29._DAT_Operators_manipulate_Text">29. <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Operators manipulate Text</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=29" title="Edit section: 29. DAT Operators manipulate Text">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="DAT.html" title="DAT">DATs</a> are "Data Operators" that allow you to store and manipulate text in your TouchDesigner networks. Text DATs are used to write scripts, shaders and any free-form text.
+</p><p>Create a Web <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> and assuming you are on the Internet, press the Fetch parameter. This retrieves HTML from a website.
+</p><p>Now create a Monitors <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> which a table of rows and columns of cells, each containing text. Attached to the Monitors <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> is another <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> containing some Python code that runs when you monitor configuration changes. You can see a dashed line between the two, which indicates it is "docked" to the Monitors <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span>.
+</p><p>This is a bit of a taste of DATs.
+</p>
+<h4><span class="mw-headline" id="30._Sweet_Sixteen_Operators">30. Sweet Sixteen Operators</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=30" title="Edit section: 30. Sweet Sixteen Operators">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>There are a lot of OP types in TouchDesigner, but the most common and useful operators in each family are the Sweet Sixteens. You may want to try some of them out. This includes:
+</p>
+<ul><li><a href="CHOP.html#Sweet_16_CHOPs" title="CHOP">Sweet Sixteen CHOPs</a></li>
+<li><a href="TOP.html#Sweet_16_TOPs" title="TOP">Sweet Sixteen TOPs</a></li>
+<li><a href="SOP.html#Sweet_16_SOPs" title="SOP">Sweet Sixteen SOPs</a></li>
+<li><a href="DAT.html#Sweet_16_DATs" title="DAT">Sweet Sixteen DATs</a></li></ul><p>These are in the wiki, which you can get to from the WIKI button in the UI.
+</p>
+<h4><span class="mw-headline" id="31._Explore_the_Operator_Snippets">31. Explore the Operator <span class="mw-lingo-term" data-lingo-term-id="b2accffe28bb4f4b596c9be64a28d281">Snippets</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=31" title="Edit section: 31. Explore the Operator Snippets">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>One way to learn more about operators is to see them in small examples. Select the menu Help -&gt; <a href="OP_Snippets.html" title="OP Snippets">Operator Snippets</a>. This will start another TouchDesigner window that contains hundreds of examples using operators from each family. This is a rich resource of tips.
+</p>
+<h4><span class="mw-headline" id="32._Get_Components_from_the_Palette">32. Get Components from the <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=32" title="Edit section: 32. Get Components from the Palette">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Components from the <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span> Browser contain pre-made networks, and some have a custom control panel. You can also store Components you create in the <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span> for easy access and reuse them elsewhere your projects.
+</p><p>To display a browser of pre-made <a href="Component.html" title="Component">Components</a>, toggle off/on the <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span> icon. Alternately, click Dialogs -&gt; <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span> Browser. Click on a component and drag it to the network.  Components on disk are <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> files.
+</p><p>Watch the video <a rel="nofollow" class="external text" href="http://www.derivative.ca/Events/2016/NorwayWorkshop/">A Movie Player Panel and Building UIs</a>, a tutorial on the basics of panel building.
+</p>
+<h4><span class="mw-headline" id="33._Get_Components_from_the_Community_Posts">33. Get Components from the Community Posts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=33" title="Edit section: 33. Get Components from the Community Posts">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Go to <a rel="nofollow" class="external text" href="http://www.derivative.ca/">www.derivative.ca</a>, the TOUCHDESIGNER tab, the COMMUNITY POSTS tab, and filter by Assets:  <a rel="nofollow" class="external text" href="https://derivative.ca/community?sort_by=created&amp;type">[</a>=24 Community Assets].
+</p><p>You can download any <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> file to your computer and then drag-drop it into TouchDesigner. Double-clicking any <code><span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span></code> starts it in a new TouchDesigner process as well.
+</p><p>Alternately Press [ <a rel="nofollow" class="external text" href="http://www.derivative.ca/Forum/viewforum.php?f=22">FORUM</a> ] on the TouchDesigner menu bar to go to Shared <span class="mw-lingo-term" data-lingo-term-id="c93d2a89e225ded900ca3779a6856086">.tox</span> Components.
+</p>
+<h4><span class="mw-headline" id="34._Perform_Mode_runs_your_Application_Solo_and_Optimized">34. <span class="mw-lingo-term" data-lingo-term-id="70ced126459ae1c67d2a0e0458ec5c6c">Perform Mode</span> runs your Application Solo and Optimized</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=34" title="Edit section: 34. Perform Mode runs your Application Solo and Optimized">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Press the F1 function key. See the container panel of <code>/project1</code> in a floating window. TouchDesigner is in <a href="Perform_Mode.html" title="Perform Mode">Perform Mode</a> which runs it without the network editor. Then press Esc to go back to <a href="Designer_Mode.html" title="Designer Mode">Designer Mode</a>.  
+</p><p>TouchPlayer runs your application in <span class="mw-lingo-term" data-lingo-term-id="70ced126459ae1c67d2a0e0458ec5c6c">Perform Mode</span> only.
+</p><p><br></p>
+<h4><span class="mw-headline" id="35._Speeding_it_up_with_the_Performance_Monitor">35. Speeding it up with the <span class="mw-lingo-term" data-lingo-term-id="bc4c4d73cb3abb490724a35f8fd846b4">Performance Monitor</span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=35" title="Edit section: 35. Speeding it up with the Performance Monitor">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Dialogs -&gt; <a href="Performance_Monitor.html" title="Performance Monitor">Performance Monitor</a> will let you see, in one frame, what nodes cook, in what order, and how long they took. Now be aware, <span class="mw-lingo-term" data-lingo-term-id="bc4c4d73cb3abb490724a35f8fd846b4">Performance Monitor</span> only shows what cooks on the CPU, not the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span>. But a long bar at the bottom usually means the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> is still busy finishing rendering a frame and displaying the UI. 
+</p><p>middle-click on any node to see if the node is cooking every frame or not, and how long it took the most recent time it cooked.
+</p><p>There is also the Perform <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>, and you can create Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> and drag any node onto it  to see more detail on what happened.
+</p><p>Another tool called "probe" lets you see <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> and CPU cooking and memory usage. Get <code>probe</code> from the <span class="mw-lingo-term" data-lingo-term-id="278f9a3d3077c522e71022e302b9e0e4">Palette</span> -&gt; Tools -&gt; probe, and see its wiki page: <a href="Palette_probe.html" title="Palette:probe">Palette:probe</a>.
+</p>
+<h4><span class="mw-headline" id="36._Quick_Tips_and_Good_Habits">36. Quick Tips and Good Habits</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=36" title="Edit section: 36. Quick Tips and Good Habits">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>Click on the <b>bulls-eye</b> circles in a parameter dialog to see which parameters are non-default. This is very useful for understanding other people's networks.</li>
+<li>To get quick help for a parameter, hold down Alt and move your cursor over a parameter. You will get the parameter's help info that is in the wiki.</li>
+<li><b>Color Code Nodes</b> - With your cursor over the network, press "c" to bring up the color swatch. Select some nodes. Click any color in the color swatch. This only affects the node's appearance in the network.</li>
+<li><b>Network Overview</b> - With your cursor over the network, press "o" to bring up the a miniature node map at the bottom left of the network. You can click on it to pan the network.</li>
+<li>To look at nodes another way, with your cursor over the network, press "Shift-T" in the network and it will switch to <b>"table" mode</b> where you see all the nodes in a list. You can pick one via the left column, and then press "Shift-T" again to go back to the network and see that node highlighted in the network.</li>
+<li>Ctrl+f (Command+f on macOS) will bring up a <b>Find bar</b> that will let you type node names that you may be looking for. Names that match what you type are highlighted and centered.  Use <b>Edit -&gt; Search/Replace</b> to generate a list of operators in your whole project that match search criteria and optionally modify them.</li>
+<li>When you <b>don't have a mouse</b>, zoom and scroll the network editor by pressing the keyboard shortcuts Ctrl+=, Ctrl+-, Ctrl+up, Ctrl+down, Ctrl+left, Ctrl+right (all with Command+ on macOS).</li>
+<li>In OP Create, you can <b> create nodes-in-a-row</b> faster by using Shift-click to select a sequence of nodes. Use Ctrl-click on the OP Create menu to create a node in a new independent row.</li>
+<li>To connect multiple operators at once to a <b>multi-input <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span></b> like a <a href="Composite_TOP.html" title="Composite TOP">Composite TOP</a> or <a href="Switch_CHOP.html" title="Switch CHOP">Switch CHOP</a>, box-pick the inputs, and connect one of their outputs to the multi-input <span class="mw-lingo-term" data-lingo-term-id="7457cdd15d09bfc6c4dbb5d2b6f87390">OP</span>'s input connector. They all get wired in.</li>
+<li>Node names are <b>case-sensitive</b>, so <code>level2</code> is different from <code>Level2</code>.</li>
+<li>The idea of "<b><span class="mw-lingo-term" data-lingo-term-id="b33b96ce745c6ce9d66ec0927a458323">Absolute Time</span></b>" is a clock that counts up forever and doesn't loop to 0 like the timeline. This gives smooth always-changing values when using python: <code><span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.frame</code>, <code><span class="mw-lingo-term" data-lingo-term-id="75014a31ff201f57ad440d617b059d87">absTime</span>.seconds</code>. Try these expressions in a <a href="Transform_TOP.html" title="Transform TOP">Transform TOP</a> Rotate parameter.</li>
+<li>Use <b>Null operators</b> when referencing or exporting - you can then insert additional operators before the Null to modify your network without having to change your reference or export location</li>
+<li>use the <b>Info <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> or Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span></b> on a node to see some of its internal states and possibly help troubleshooting.</li>
+<li>You can turn on/off <b><span class="mw-lingo-term" data-lingo-term-id="b7410166bd255d7accf3e46e4b893947">Adaptive Homing</span> in <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> viewers</b> and Geometry viewers - in the right-click menu on <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Or Geometry viewers in <span class="mw-lingo-term" data-lingo-term-id="a29d8c2774ab4b235ab1e13a011a99c3">Viewer Active</span> mode. In Preferences -&gt; Geometry turn the options on and then Accept, which makes sure you always see your 3D geometry in-view.</li>
+<li><b>replace an existing wire</b> by clicking on the output of the new source and clicking on the wire you want to replace.</li>
+<li>Add <b><a href="Network_Utilities__Comments%2c_Network_Boxes%2c_Annotates.html" title="Network Utilities: Comments, Network Boxes, Annotates">comments and annotations</a></b> in networks using Alt-right-click and drag to set an annotate box, or use the "a", "b" or "c" shortcuts. Comments are more concise annotates.</li>
+<li>The preferred scripting language is Python, though you may see <span class="mw-lingo-term" data-lingo-term-id="39f1d43462c7c9a61b7a177dc9b82666">Tscript</span> in older work, and a T in the parameter dialog where you would normally see the python icon.</li>
+<li>The <b><span class="mw-lingo-term" data-lingo-term-id="778c6a49e2943ae184d21e7f860c2026">Status Bar</span></b> is located at the top right of TouchDesigner's main window and provides information about recent operations. It may display a message to indicate success/failure of events, or display a hint to tell you how to use a tool.  Keep an eye on it. (The <a href="UI_Class.html" title="UI Class">python code</a> <code>ui.status = 'My message'</code> can be used to place a line in the status bar.)</li></ul><h4><span class="mw-headline" id="More...">More...</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;section=37" title="Edit section: More...">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Now you know the basics. Take a break. Later you can go to <b><a href="https://docs.derivative.ca/More_Things_to_Know_about_TouchDesigner" title="More Things to Know about TouchDesigner">More Things to Know about TouchDesigner</a></b>
+</p></div><div class="mw-lingo-tooltip" id="eec89088ee408b80387155272b113256"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every component contains a network of operators that create and modify data. The operators are connected by wires that define where data is routed after the operator cooks its inputs and generates an output.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6705777b712ee811e76fb07162081d63"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that creates, composites and modifies images, and reads/writes images and movies to/from files and the network. TOPs run on the graphics card's GPU.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b47b79e551ab83200b1bf44ef30ccfb8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A pane type where networks of operators can be created and edited.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cefc4f7cbc8c34762e0f76703e7e174e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Operator Families are <a href="TOP.html" title="TOP">TOPs</a>, <a href="CHOP.html" title="CHOP">CHOPs</a>, <a href="SOP.html" title="SOP">SOPs</a>, <a href="MAT.html" title="MAT">MATs</a> (Materials), <a href="DAT.html" title="DAT">DATs</a> (data operators) and <a href="Component.html" title="Component">Components</a> (Panel Gadgets and Objects).
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f0c2c0ca864067cc6e21a7ea2c1b1fdd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d92a8333dd3ccb895cc65f7455b71206"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>MATs or Materials are an <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that applies a <a href="Shader.html" title="Shader">Shader</a> to a SOP or 3D Geometry Object for rendering textured surfaces with lighting.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0e7278cda02a9c0446dcc75a4df34eb2"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Container component type is a <a href="Panel_Component.html" title="Panel Component">Panel Component</a> that holds, lays out and displays any number of other Panel Components.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a29d8c2774ab4b235ab1e13a011a99c3"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A state of a node where you can operate the contents of its viewer (the + at botton-right of any node), like operating the gadgets of a panel in a node viewer, or the 3D data in the viewer of a Geometry component. With Viewer Active off you can select, move and delete nodes by clicking/dragging on them, even if the viewer is visible.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="83f499a540b1323009c200d6f8cc9396"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every operator in TouchDesigner has a set of control Parameters that can be integer or floating point numbers, menus, binary toggles, text strings or operator <a href="Network_Path.html" title="Network Path">paths</a>, which determine the output of the operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ada8247bf54d9f0708c46bf41b4d3322"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A floating dialog, pane type, or dialog in a Network Editor that displays one operator's parameters.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8fc515f393be6e64653993a0cd71e9bc"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each node has a viewer flag that turns on/off the node's viewer in the <a href="Node_Viewer.html" title="Node Viewer">Node Viewer</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5ce88c4d66118388a69c6fd4262ca3a1"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An operator whose Bypass flag is set does nothing: All data going into its first input appears at its output unaffected.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b0f2b97dc5d2b76b26e040408bb1d8af"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Folder in TouchDesigner always refers to a Windows or macOS operating system directory/folder system that contain files and other folders. It does not refer to operators within TouchDesigner. See <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="76746356f2d9fd021f01bc051bb2114f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TOuch Environment file, the file type used by TouchDesigner to save your entire project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c93d2a89e225ded900ca3779a6856086"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner Component file, the file type used to save a <a href="Component.html" title="Component">Component</a> of your TouchDesigner project.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2cb05e4bb7830be982f0922fed86b4cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ebd9bec4d70abc789d439c1f136b0538"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>(1) The TouchDesigner window is made of a menu bar at the top, a <a href="Timeline.html" title="Timeline">Timeline</a> at the bottom, plus one of a choice of Layouts in the middle. A Layout is made on one or more Panes, each Pane can contain a Network Editor, Viewer, Panel, etc. See <a href="Pane.html" title="Pane">Pane</a> and <a href="Bookmark.html" title="Bookmark">Bookmark</a>. (2) Nodes in a network are arranged using Layout commands in the RMB menu.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="64ef1cb3966ecc5ce25ad319301a4703"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every Parameter can be in one of four modes: Constant Mode, <a href="Expression.html" title="Expression">Expression</a> Mode, <a href="Export.html" title="Export">Export</a> Mode or Bind (<a href="Binding.html" title="Binding">Binding</a>) Mode.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0095a9fa74d1713e43e370a7d7846224"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Exporting is the connection of CHOP channels to parameters of operators. The output of each exporting CHOP is one or more channels, active only while the <a href="CHOP_Viewer.html" title="CHOP Viewer">CHOP Viewer</a> is on. The current value of a channel can be exported to a parameter of any operator, overriding that parameter's value. See <a href="Parameter.html" title="Parameter">Parameter</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a1a6657be79cc0fc1e9b23b9e108f043"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A text string that contains data (string, float, list, boolean, etc.) and operators (+ * &lt; etc) that are evaluated by the node's language (python or Tscript) and returns a string, float list or boolean, etc. Expressions are used in parameters, <a href="DAT.html" title="DAT">DATs</a> and in scripts.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="a2ebfe0e8e16f2c81865ce3da74bc605"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Binding is a <a href="Parameter_Mode.html" title="Parameter Mode">Parameter Mode</a> that ties two or more parameters' values together, where changing the value of any one of the bound parameters changes all of them. The actual value is stored in one place.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="61244cb3488e879164e8d9409dd83b14"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c5dd1b2697720fe692c529688d3f4f8d"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>samples-per-second of a <a href="CHOP.html" title="CHOP">CHOP</a>. Each CHOP in your network has a sample rate. In contrast, the overall timeline has a <a href="Frame_Rate.html" title="Frame Rate">Frame Rate</a>, which is the number of frames to <a href="Cook.html" title="Cook">cook</a> and display per second, generally your monitor display frequency, default 60.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="6c3a6944a808a7c0bbb6788dbec54a9f"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The generic thing that holds an <a href="Operator.html" title="Operator">Operator</a>, and includes <a href="Flag.html" title="Flag">Flags</a> (display, bypass, lock, render, immune) and its position/size in the network. Whether you "lay down an Operator" or "lay down an Node", you're doing the same thing.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b8da6df14bf06283cbf588df6998722e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A custom interactive control panel built within TouchDesigner. Panels are created using <a href="Panel_Component.html" title="Panel Component">Panel Components</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d9c6333623e6357515fcbf17be806273"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The 3D data held in SOPs and passed for rendering by the <a href="Geometry_COMP.html" title="Geometry COMP">Geometry COMP</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="75014a31ff201f57ad440d617b059d87"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Absolute Time starts counting from 0 when the TouchDesigner process starts, and is always increasing. It will pause if the Power 0/1 button at the top of the UI is Off.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3d1f92a565d3b1a61880236e33c49bf3"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The panel at the bottom of TouchDesigner, it controls the current global looping <a href="Time_COMP.html" title="Time COMP">Time</a> your TouchDesigner project, or of just one component.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c123b11aa670647408778a3b81a21d70"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The <a href="Frame.html" title="Frame">Frames</a>-per-Second that TouchDesigner's <a href="Timeline.html" title="Timeline">Timeline</a> runs at. Set with <code>project.cookRate</code>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3cb4b2cd2cdc2d1d0a811c0cbcce29b1"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>In the <a href="Animation_COMP.html" title="Animation COMP">Animation component</a> each keyframe specifies a channel's value at a specific time (or frame). A keyframe holds a value, slopes and accelerations, and an interpolation type. A channel's keyframes are used to interpolate and determine the values of all the samples of the channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b2accffe28bb4f4b596c9be64a28d281"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p><a href="OP_Snippets.html" title="OP Snippets">OP Snippets</a>  is a set of 700+ live examples of TouchDesigner operators. You can access snippets via the Help menu, or by right-clicking on network operators, or r-clicking on OP Create dialog items.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="278f9a3d3077c522e71022e302b9e0e4"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A built-in panel in TouchDesigner that contains a library of components and media that can be dragged-dropped into a TouchDesigner network.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="70ced126459ae1c67d2a0e0458ec5c6c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Perform Mode is an optimized mode for live performance that only renders one specified <a href="Window_COMP.html" title="Window COMP">Window COMP</a> which is one window that contains your video outputs and your (optional) control interface. In Perform Mode the network editing window is not open - you edit your networks in <a href="Designer_Mode.html" title="Designer Mode">Designer Mode</a>.  Alternate with F1 and Esc.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="bc4c4d73cb3abb490724a35f8fd846b4"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The tool built-in to TouchDesigner that analyzes and displays what TouchDesigner is doing as it generates the output images, audio and data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="7457cdd15d09bfc6c4dbb5d2b6f87390"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Any of the procedural data operators. OPs do all the work in TouchDesigner. They "cook" and output data to other OPs, which ultimately result in new images, data and audio being generated. See <a href="Node.html" title="Node">Node</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b33b96ce745c6ce9d66ec0927a458323"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Absolute Time starts counting from 0 when the TouchDesigner process starts, and is always increasing. It will pause if the Power 0/1 button at the top of the UI is Off.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b7410166bd255d7accf3e46e4b893947"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>In the <a href="Node_Viewer.html" title="Node Viewer">Node Viewer</a> of a Geometry COMP or any SOP, the Adaptive Homing option will continually keep in-view the 3D geometry being displayed, even when the geometry changes shape, size and animated position.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="39f1d43462c7c9a61b7a177dc9b82666"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner's original built-in Command scripting language prior to <a href="Python.html" title="Python">Python</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="778c6a49e2943ae184d21e7f860c2026"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The line of text at the top of the TouchDesigner window which displays messages from TouchDesigner when certain events succeed or fail.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304144847
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.268 seconds
+Real time usage: 5.270 seconds
+Preprocessor visited node count: 193/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:1198-0!canonical and timestamp 20250304144842 and revision id 28837.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;oldid=28837">https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;oldid=28837</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_TouchDesigner_Tips.html" title="Category:TouchDesigner Tips">TouchDesigner Tips</a></li><li><a href="Category_TDPages.html" title="Category:TDPages">TDPages</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=First+Things+to+Know+about+TouchDesigner" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="First_Things_to_Know_about_TouchDesigner.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:First_Things_to_Know_about_TouchDesigner&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="First_Things_to_Know_about_TouchDesigner.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/First_Things_to_Know_about_TouchDesigner" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/First_Things_to_Know_about_TouchDesigner" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;oldid=28837" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=First_Things_to_Know_about_TouchDesigner&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 22 May 2023, at 16:41.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.268","walltime":"5.270","ppvisitednodes":{"value":193,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250304144847","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":138});});</script>
+</body>
+<!-- Cached 20250304163724 -->
+
+<!-- Mirrored from docs.derivative.ca/First_Things_to_Know_about_TouchDesigner by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:22 GMT -->
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Import_Select_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Import Select SOP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4fbfc46dad5acbf0f80b2f91","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Import_Select_SOP","wgTitle":"Import Select SOP","wgCurRevisionId":24472,"wgRevisionId":24472,"wgArticleId":2337,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Import_Select_SOP","wgRelevantArticleId":2337,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,
+"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":{"title"
+:["Add SOP","Alembic SOP","Align SOP","Arm SOP","Attribute Create SOP","Attribute SOP","Basis SOP","Blend SOP","Bone Group SOP","Boolean SOP","Box SOP","Bridge SOP","Cache SOP","Cap SOP","Capture Region SOP","Capture SOP","Carve SOP","CHOP to SOP","Circle SOP","Clay SOP","Clip SOP","Convert SOP","Copy SOP","CPlusPlus SOP","Creep SOP","Curveclay SOP","Curvesect SOP","DAT to SOP","Deform SOP","Delete SOP","Divide SOP","Extrude SOP","Face Track SOP","Facet SOP","File In SOP","Fillet SOP","Fit SOP","Font SOP","Force SOP","Fractal SOP","Grid SOP","Group SOP","Hole SOP","Import Select SOP","In SOP","Introduction To SOPs Vid","Inverse Curve SOP","Iso Surface SOP","Join SOP","Joint SOP","Kinect SOP","Lattice SOP","Limit SOP","Line SOP","Line Thick SOP","LOD SOP","LSystem SOP","Magnet SOP","Material SOP","Merge SOP","Metaball SOP","Model SOP","Noise SOP","Null SOP","Object Merge SOP","Oculus Rift SOP","OpenVR SOP","Out SOP","Particle SOP","Point SOP","Polyloft SOP","Polypatch SOP",
+"Polyreduce SOP","Polyspline SOP","Polystitch SOP","Primitive SOP","Profile SOP","Project SOP","Rails SOP","Raster SOP","Ray SOP","Rectangle SOP","Refine SOP","Resample SOP","Revolve SOP","Script SOP","Select SOP","Sequence Blend SOP","Skin SOP","Sort SOP","Sphere SOP","Spring SOP","Sprinkle SOP","Sprite SOP","Stitch SOP","Subdivide SOP","Superquad SOP","Surfsect SOP","Sweep SOP","Switch SOP","Text SOP","Texture SOP","Torus SOP","Trace SOP","Trail SOP","Transform SOP","Trim SOP","Tristrip SOP","Tube SOP","Twist SOP","Vertex SOP","Wireframe SOP","ZED SOP","Experimental:ZED SOP"]},"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc",
+"skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="The Import Select SOP is used to import and load the geometry types primitives defined in [[USD COMP]] and [[FBX COMP]]."/>
+<meta name="keywords" content="TouchDesigner, Import Select, SOP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=SOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Import Select SOP - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Import_Select_SOP"/>
+<meta property="og:description" content="The Import Select SOP is used to import and load the geometry types primitives defined in [[USD COMP]] and [[FBX COMP]]."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, Import Select, SOP"/>
+<meta property="article:modified_time" content="2021-11-17T19:33:01Z"/>
+<meta property="article:published_time" content="2021-11-17T19:33:01Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Import Select SOP - TouchDesigner Documentation","headline":"Import Select SOP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-main\">Import Select SOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Import_Select_SOP","url":"https:\/\/docs.derivative.ca\/Import_Select_SOP","description":"The Import Select SOP is used to import and load the geometry types primitives defined in [[USD COMP]] and [[FBX COMP]].","keywords":"TouchDesigner, Import Select, SOP","dateModified":"2021-11-17T19:33:01Z","datePublished":"2021-11-17T19:33:01Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Import_Select_SOP rootpage-Import_Select_SOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Import Select SOP</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarSOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Import Select <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is used to import and load the geometry types primitives defined in <a href="USD_COMP.html" title="USD COMP">USD COMP</a> and <a href="FBX_COMP.html" title="FBX COMP">FBX COMP</a>. It essentially loads any geometry type that <a href="USD_COMP.html" title="USD COMP">USD COMP</a> or <a href="FBX_COMP.html" title="FBX COMP">FBX COMP</a> can support such as a Mesh, Points, NURBS Curves or Patches, Basis Curves. Each geometry represents one primitive from the loading file or it can be a set of primitives merged together for better performance. 
+</p><p>In <a href="USD_COMP.html" title="USD COMP">USD COMP</a> and <a href="FBX_COMP.html" title="FBX COMP">FBX COMP</a> if the Import Select <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> renders merged geometries, an <a href="Info_DAT.html" title="Info DAT">Info DAT</a> operator is created next to this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> which represents the original paths of primitives within/from importing file, which can be useful for user to checkout what geometry the current <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> is made of.
+Import Select <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can have its own animation controls within the Playback page or use the settings from its parent <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+</p><p>The imported geometry can be loaded directly from <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> or CPU, depending on whether the Straight To <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> toggle is set to ON or not at the parent <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> node.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/ImportselectSOP_Class" title="ImportselectSOP Class">importselectSOP_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_General_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - General Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Playback_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Playback Page</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">4</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Specific_Import_Select_SOP_Info_Channels"><span class="tocnumber">4.1</span> <span class="toctext">Specific Import Select SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_SOP_Info_Channels"><span class="tocnumber">4.2</span> <span class="toctext">Common SOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">4.3</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_General_Page"><div class="sectionBarSOP">Parameters - General Page</div></span></h2>
+<div id="parent" style=""><span class="parNameSOP">Import <span class="mw-lingo-term" data-lingo-term-id="30269022e9d8f51beaabb52e5d0de2b7">Parent</span></span>  <code>parent</code> - Specify the import parent (eg. USD/FBX <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>) to search for the asset. When no <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> is specified it will by default search in the first import parent in its path.
+<p><i></i>
+</p>
+</div>
+<div id="geometry" style=""><span class="parNameSOP">Geo <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span></span>  <code>geometry</code> - The geometry path from the imported file.
+<p><i></i>
+</p>
+</div>
+<div id="reload" style=""><span class="parNameSOP">Reload</span>  <code>reload</code> - Reloads the asset from the import parent.
+<p><i></i>
+</p>
+</div>
+<div id="comptang" style=""><span class="parNameSOP">Compute Tangents</span>  <code>comptang</code> - A toggle to compute the tangents for this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+<p><i></i>
+</p>
+</div>
+<h2><span class="mw-headline" id="Parameters_-_Playback_Page"><div class="sectionBarSOP">Parameters - Playback Page</div></span></h2>
+<div id="useparentanim" style=""><span class="parNameSOP">Use Parent Animation</span>  <code>useparentanim</code> - A toggle to specify whether to use the parent <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> animation controls or have a custom setting for this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="shiftanimationstart" style=""><span class="parNameSOP">Shift Animation Start</span>  <code>shiftanimationstart</code> - A toggle to specify whether to shift the animation to the start of animation indicated in the importing file.
+<p><i></i>
+</p>
+</div>
+<div id="sampleratemode" style=""><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="f579f693ac9ecb3fb9e822bf32028e13">Sample Rate</span> Mode</span>  <code>sampleratemode</code> - <span class="mw-customtoggle-sampleratemode">⊞</span> - A menu to choose between the <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span> or use a custom sample rate.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-sampleratemode">
+<ul><li><span class="parNameSOP">File <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span></span> <code>filefps</code> - uses the <span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span> from what is defined in the importing file.</li></ul><ul><li><span class="parNameSOP">Custom</span> <code>custom</code> - a desired value specified by <span class="mw-lingo-term" data-lingo-term-id="f579f693ac9ecb3fb9e822bf32028e13">Sample Rate</span> parameter.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="samplerate" style=""><span class="parNameSOP"><span class="mw-lingo-term" data-lingo-term-id="f579f693ac9ecb3fb9e822bf32028e13">Sample Rate</span></span>  <code>samplerate</code> - It is used to specify the sample rate (<span class="mw-lingo-term" data-lingo-term-id="c123b11aa670647408778a3b81a21d70">FPS</span>) for the animation. This parameter is disabled by default and can be enabled once the Custom option is selected from the <span class="mw-lingo-term" data-lingo-term-id="f579f693ac9ecb3fb9e822bf32028e13">Sample Rate</span> Menu.
+<p><i></i>
+</p>
+</div>
+<div id="playmode" style=""><span class="parNameSOP">Play Mode</span>  <code>playmode</code> - <span class="mw-customtoggle-playmode">⊞</span> - A menu to specify the method used to play the animation.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-playmode">
+<ul><li><span class="parNameSOP">Locked to <span class="mw-lingo-term" data-lingo-term-id="3d1f92a565d3b1a61880236e33c49bf3">Timeline</span></span> <code>lockedtotimeline</code> - This mode locks the animation position to the timeline. The parameters Play, Speed, Index, Cue and Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span>, are disabled in this mode since the timeline is directly tied to animation position.</li></ul><ul><li><span class="parNameSOP">Specify Index</span> <code>specifyindex</code> - This mode allows the user to specify a particular index (position) in the animation using the Index parameter below. Use this mode for random access to any location in the animation.</li></ul><ul><li><span class="parNameSOP">Sequential</span> <code>sequential</code> - This mode continually plays regardless of the timeline position (the Index parameter is disabled). Play, Speed, Cue, and Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> parameters below are enabled to allow some control. The default is set to this value.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="initialize" style=""><span class="parNameSOP">Initialize</span>  <code>initialize</code> - Resets the animation to its initial state.
+<p><i></i>
+</p>
+</div>
+<div id="start" style=""><span class="parNameSOP">Start</span>  <code>start</code> - Resets the animation to its initial state and starts playback.
+<p><i></i>
+</p>
+</div>
+<div id="cue" style=""><span class="parNameSOP">Cue</span>  <code>cue</code> - A toggle to jump to Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> when it is set to ON and it stays at that position. Only available when Play Mode is Sequential.
+<p><i></i>
+</p>
+</div>
+<div id="cuepulse" style=""><span class="parNameSOP">Cue <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>cuepulse</code> - When pressed the animation jumps to the Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> and continues from that point.
+<p><i></i>
+</p>
+</div>
+<div id="cuepoint" style=""><span class="parNameSOP">Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span></span>  <code>cuepoint</code> - Set any index in the animation as a point to jump to.
+<p><i></i>
+</p>
+</div>
+<div id="cuepointunit" style=""><span class="parNameSOP">Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span> Unit</span>  <code>cuepointunit</code> - <span class="mw-customtoggle-cuepointunit">⊞</span> - Specifies a unit type for Cue <span class="mw-lingo-term" data-lingo-term-id="2a3cd5946cfd317eb99c3d32e35e2d4c">Point</span>. Changing this will convert the previous unit to the selected unit.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-cuepointunit">
+<ul><li><span class="parNameSOP">Frames</span> <code>frames</code> -</li></ul><ul><li><span class="parNameSOP">Seconds</span> <code>seconds</code> -</li></ul><ul><li><span class="parNameSOP">Fraction</span> <code>fraction</code> -</li></ul><ul><li><span class="parNameSOP">Index</span> <code>indices</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="play" style=""><span class="parNameSOP">Play</span>  <code>play</code> - A toggle that makes the animation to play when it sets to ON. This Parameter is only available/enabled if the Sequential mode is selected from the Play Mode.
+<p><i></i>
+</p>
+</div>
+<div id="index" style=""><span class="parNameSOP">Index</span>  <code>index</code> - This parameter explicitly sets the animation position when Play Mode is set to Specify Index. The units’ menu on the right lets you specify the index in the following units: Index, Frames, Seconds, and Fraction (percentage).
+<p><i></i>
+</p>
+</div>
+<div id="indexunit" style=""><span class="parNameSOP">Index Unit</span>  <code>indexunit</code> - <span class="mw-customtoggle-indexunit">⊞</span> - Specifies a unit type for Index. Changing this will convert the previous unit to the selected unit.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-indexunit">
+<ul><li><span class="parNameSOP">Frames</span> <code>frames</code> -</li></ul><ul><li><span class="parNameSOP">Seconds</span> <code>seconds</code> -</li></ul><ul><li><span class="parNameSOP">Fraction</span> <code>fraction</code> -</li></ul><ul><li><span class="parNameSOP">Index</span> <code>indices</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="speed" style=""><span class="parNameSOP">Speed</span>  <code>speed</code> - This is a speed multiplier which only works when Play Mode is Sequential. A value of 1 is the default playback speed. A value of 2 is double speed, 0.5 is half speed and so on.
+<p><i></i>
+</p>
+</div>
+<div id="trim" style=""><span class="parNameSOP">Trim</span>  <code>trim</code> - A toggle to enable the Trim Start and Trim End parameters.
+<p><i></i>
+</p>
+</div>
+<div id="tstart" style=""><span class="parNameSOP">Trim Start</span>  <code>tstart</code> - Sets an in point from the beginning of the animation, allowing you to trim the starting index of the animation. The units’ menu on the right let you specify this position by index, frames, seconds, or fraction (percentage).
+<p><i></i>
+</p>
+</div>
+<div id="tstartunit" style=""><span class="parNameSOP">Trim Start Unit</span>  <code>tstartunit</code> - <span class="mw-customtoggle-tstartunit">⊞</span> - Specifies a unit type for Trim Start. Changing this will convert the previous unit to the selected unit.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-tstartunit">
+<ul><li><span class="parNameSOP">Frames</span> <code>frames</code> -</li></ul><ul><li><span class="parNameSOP">Seconds</span> <code>seconds</code> -</li></ul><ul><li><span class="parNameSOP">Fraction</span> <code>fraction</code> -</li></ul><ul><li><span class="parNameSOP">Index</span> <code>indices</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="tend" style=""><span class="parNameSOP">Trim End</span>  <code>tend</code> - Sets an end point from the end of the movie, allowing you to trim the ending index of the animation. The units’ menu on the right let you specify this position by index, frames, seconds, or fraction (percentage).
+<p><i></i>
+</p>
+</div>
+<div id="tendunit" style=""><span class="parNameSOP">Trim End Unit</span>  <code>tendunit</code> - <span class="mw-customtoggle-tendunit">⊞</span> - Specifies a unit type for Trim End. Changing this will convert the previous unit to the selected unit.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-tendunit">
+<ul><li><span class="parNameSOP">Frames</span> <code>frames</code> -</li></ul><ul><li><span class="parNameSOP">Seconds</span> <code>seconds</code> -</li></ul><ul><li><span class="parNameSOP">Fraction</span> <code>fraction</code> -</li></ul><ul><li><span class="parNameSOP">Index</span> <code>indices</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="textendleft" style=""><span class="parNameSOP">Extend Left</span>  <code>textendleft</code> - <span class="mw-customtoggle-textendleft">⊞</span> - Determines how the parent <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> handles animation positions that lie before the Trim Start position. For example, if Trim Start is set to 1, and the animation current index is -10, the Extend Left menu determines how the animation position is calculated.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-textendleft">
+<ul><li><span class="parNameSOP">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameSOP">Cycle</span> <code>cycle</code> -</li></ul><ul><li><span class="parNameSOP">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="textendright" style=""><span class="parNameSOP">Extend Right</span>  <code>textendright</code> - <span class="mw-customtoggle-textendright">⊞</span> - Determines how the parent <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> handles animation positions that lie after the Trim End position. For example, if Trim End is set to 20, and the animation current index is 25, the Extend Right menu determines how the animation position is calculated.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-textendright">
+<ul><li><span class="parNameSOP">Hold</span> <code>hold</code> -</li></ul><ul><li><span class="parNameSOP">Cycle</span> <code>cycle</code> -</li></ul><ul><li><span class="parNameSOP">Mirror</span> <code>mirror</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarSOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Import Select <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+</p>
+<h3><span class="mw-headline" id="Specific_Import_Select_SOP_Info_Channels"><div class="customBar">Specific Import Select <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">true_start_time</span> -</li></ul><ul><li><span class="parName">true_end_time</span> -</li></ul><h3><span class="mw-headline" id="Common_SOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">num_points</span> - Number of points in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_prims</span> - Number of primitives in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">num_particles</span> - Number of particles in this <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>.</li></ul><ul><li><span class="parName">last_vbo_update_time</span> - Time spent in another thread updating geometry data on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><ul><li><span class="parName">last_meta_vbo_update_time</span> - Time spent in another thread updating meta surface geometry data (such as metaballs or nurbs) on the <span class="mw-lingo-term" data-lingo-term-id="52f9ec21735243ad9917cda3ca077d32">GPU</span> from the <span class="mw-lingo-term" data-lingo-term-id="28a7e2d07553a70b039bb585895e0bf0">SOP</span>'s CPU data. As it is part of another thread, this time is not part of the usual frame time.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Import_Select_SOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Import_Select_SOP?oldid=24472">2021.10000</option><option value="https://docs.derivative.ca/Import_Select_SOP?oldid=15978">2019.14650</option><option value="https://docs.derivative.ca/Import_Select_SOP?oldid=13090">2018.28070</option></select></p>
+<table><tbody><tr><th class="navBox">SOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Add_SOP.html" title="Add SOP">Add  </a></span>• <span class="catList navigation-not-searchable"><a href="Alembic_SOP.html" title="Alembic SOP">Alembic  </a></span>• <span class="catList navigation-not-searchable"><a href="Align_SOP.html" title="Align SOP">Align  </a></span>• <span class="catList navigation-not-searchable"><a href="Arm_SOP.html" title="Arm SOP">Arm  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_Create_SOP.html" title="Attribute Create SOP">Attribute Create  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_SOP.html" title="Attribute SOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Basis_SOP.html" title="Basis SOP">Basis  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_SOP.html" title="Blend SOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Bone_Group_SOP.html" title="Bone Group SOP">Bone Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Boolean_SOP.html" title="Boolean SOP">Boolean  </a></span>• <span class="catList navigation-not-searchable"><a href="Box_SOP.html" title="Box SOP">Box  </a></span>• <span class="catList navigation-not-searchable"><a href="Bridge_SOP.html" title="Bridge SOP">Bridge  </a></span>• <span class="catList navigation-not-searchable"><a href="Cache_SOP.html" title="Cache SOP">Cache  </a></span>• <span class="catList navigation-not-searchable"><a href="Cap_SOP.html" title="Cap SOP">Cap  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_Region_SOP.html" title="Capture Region SOP">Capture Region  </a></span>• <span class="catList navigation-not-searchable"><a href="Capture_SOP.html" title="Capture SOP">Capture  </a></span>• <span class="catList navigation-not-searchable"><a href="Carve_SOP.html" title="Carve SOP">Carve  </a></span>• <span class="catList navigation-not-searchable"><a href="CHOP_to_SOP.html" title="CHOP to SOP">CHOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Circle_SOP.html" title="Circle SOP">Circle  </a></span>• <span class="catList navigation-not-searchable"><a href="Clay_SOP.html" title="Clay SOP">Clay  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_SOP.html" title="Clip SOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Convert_SOP.html" title="Convert SOP">Convert  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_SOP.html" title="Copy SOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_SOP.html" title="CPlusPlus SOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Creep_SOP.html" title="Creep SOP">Creep  </a></span>• <span class="catList navigation-not-searchable"><a href="Curveclay_SOP.html" title="Curveclay SOP">Curveclay  </a></span>• <span class="catList navigation-not-searchable"><a href="Curvesect_SOP.html" title="Curvesect SOP">Curvesect  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_SOP.html" title="DAT to SOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Deform_SOP.html" title="Deform SOP">Deform  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_SOP.html" title="Delete SOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="Divide_SOP.html" title="Divide SOP">Divide  </a></span>• <span class="catList navigation-not-searchable"><a href="Extrude_SOP.html" title="Extrude SOP">Extrude  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_SOP.html" title="Face Track SOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Facet_SOP.html" title="Facet SOP">Facet  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_SOP.html" title="File In SOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Fillet_SOP.html" title="Fillet SOP">Fillet  </a></span>• <span class="catList navigation-not-searchable"><a href="Fit_SOP.html" title="Fit SOP">Fit  </a></span>• <span class="catList navigation-not-searchable"><a href="Font_SOP.html" title="Font SOP">Font  </a></span>• <span class="catList navigation-not-searchable"><a href="Force_SOP.html" title="Force SOP">Force  </a></span>• <span class="catList navigation-not-searchable"><a href="Fractal_SOP.html" title="Fractal SOP">Fractal  </a></span>• <span class="catList navigation-not-searchable"><a href="Grid_SOP.html" title="Grid SOP">Grid  </a></span>• <span class="catList navigation-not-searchable"><a href="Group_SOP.html" title="Group SOP">Group  </a></span>• <span class="catList navigation-not-searchable"><a href="Hole_SOP.html" title="Hole SOP">Hole  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_SOP.html" title="In SOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_SOPs_Vid.html" title="Introduction To SOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_SOP.html" title="Inverse Curve SOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Iso_Surface_SOP.html" title="Iso Surface SOP">Iso Surface  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_SOP.html" title="Join SOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joint_SOP.html" title="Joint SOP">Joint  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_SOP.html" title="Kinect SOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lattice_SOP.html" title="Lattice SOP">Lattice  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_SOP.html" title="Limit SOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_SOP.html" title="Line SOP">Line  </a></span>• <span class="catList navigation-not-searchable"><a href="Line_Thick_SOP.html" title="Line Thick SOP">Line Thick  </a></span>• <span class="catList navigation-not-searchable"><a href="LOD_SOP.html" title="LOD SOP">LOD  </a></span>• <span class="catList navigation-not-searchable"><a href="LSystem_SOP.html" title="LSystem SOP">LSystem  </a></span>• <span class="catList navigation-not-searchable"><a href="Magnet_SOP.html" title="Magnet SOP">Magnet  </a></span>• <span class="catList navigation-not-searchable"><a href="Material_SOP.html" title="Material SOP">Material  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_SOP.html" title="Merge SOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Metaball_SOP.html" title="Metaball SOP">Metaball  </a></span>• <span class="catList navigation-not-searchable"><a href="Model_SOP.html" title="Model SOP">Model  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_SOP.html" title="Noise SOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_SOP.html" title="Null SOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_Merge_SOP.html" title="Object Merge SOP">Object Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_SOP.html" title="Oculus Rift SOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_SOP.html" title="OpenVR SOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_SOP.html" title="Out SOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Particle_SOP.html" title="Particle SOP">Particle  </a></span>• <span class="catList navigation-not-searchable"><a href="Point_SOP.html" title="Point SOP">Point  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyloft_SOP.html" title="Polyloft SOP">Polyloft  </a></span>• <span class="catList navigation-not-searchable"><a href="Polypatch_SOP.html" title="Polypatch SOP">Polypatch  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyreduce_SOP.html" title="Polyreduce SOP">Polyreduce  </a></span>• <span class="catList navigation-not-searchable"><a href="Polyspline_SOP.html" title="Polyspline SOP">Polyspline  </a></span>• <span class="catList navigation-not-searchable"><a href="Polystitch_SOP.html" title="Polystitch SOP">Polystitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Primitive_SOP.html" title="Primitive SOP">Primitive  </a></span>• <span class="catList navigation-not-searchable"><a href="Profile_SOP.html" title="Profile SOP">Profile  </a></span>• <span class="catList navigation-not-searchable"><a href="Project_SOP.html" title="Project SOP">Project  </a></span>• <span class="catList navigation-not-searchable"><a href="Rails_SOP.html" title="Rails SOP">Rails  </a></span>• <span class="catList navigation-not-searchable"><a href="Raster_SOP.html" title="Raster SOP">Raster  </a></span>• <span class="catList navigation-not-searchable"><a href="Ray_SOP.html" title="Ray SOP">Ray  </a></span>• <span class="catList navigation-not-searchable"><a href="Rectangle_SOP.html" title="Rectangle SOP">Rectangle  </a></span>• <span class="catList navigation-not-searchable"><a href="Refine_SOP.html" title="Refine SOP">Refine  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_SOP.html" title="Resample SOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Revolve_SOP.html" title="Revolve SOP">Revolve  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_SOP.html" title="Script SOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_SOP.html" title="Select SOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequence_Blend_SOP.html" title="Sequence Blend SOP">Sequence Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Skin_SOP.html" title="Skin SOP">Skin  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_SOP.html" title="Sort SOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Sphere_SOP.html" title="Sphere SOP">Sphere  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_SOP.html" title="Spring SOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprinkle_SOP.html" title="Sprinkle SOP">Sprinkle  </a></span>• <span class="catList navigation-not-searchable"><a href="Sprite_SOP.html" title="Sprite SOP">Sprite  </a></span>• <span class="catList navigation-not-searchable"><a href="Stitch_SOP.html" title="Stitch SOP">Stitch  </a></span>• <span class="catList navigation-not-searchable"><a href="Subdivide_SOP.html" title="Subdivide SOP">Subdivide  </a></span>• <span class="catList navigation-not-searchable"><a href="Superquad_SOP.html" title="Superquad SOP">Superquad  </a></span>• <span class="catList navigation-not-searchable"><a href="Surfsect_SOP.html" title="Surfsect SOP">Surfsect  </a></span>• <span class="catList navigation-not-searchable"><a href="Sweep_SOP.html" title="Sweep SOP">Sweep  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_SOP.html" title="Switch SOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Text_SOP.html" title="Text SOP">Text  </a></span>• <span class="catList navigation-not-searchable"><a href="Texture_SOP.html" title="Texture SOP">Texture  </a></span>• <span class="catList navigation-not-searchable"><a href="Torus_SOP.html" title="Torus SOP">Torus  </a></span>• <span class="catList navigation-not-searchable"><a href="Trace_SOP.html" title="Trace SOP">Trace  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_SOP.html" title="Trail SOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_SOP.html" title="Transform SOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_SOP.html" title="Trim SOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Tristrip_SOP.html" title="Tristrip SOP">Tristrip  </a></span>• <span class="catList navigation-not-searchable"><a href="Tube_SOP.html" title="Tube SOP">Tube  </a></span>• <span class="catList navigation-not-searchable"><a href="Twist_SOP.html" title="Twist SOP">Twist  </a></span>• <span class="catList navigation-not-searchable"><a href="Vertex_SOP.html" title="Vertex SOP">Vertex  </a></span>• <span class="catList navigation-not-searchable"><a href="Wireframe_SOP.html" title="Wireframe SOP">Wireframe  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_SOP.html" title="ZED SOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_SOP.html" title="Experimental:ZED SOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="28a7e2d07553a70b039bb585895e0bf0"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that reads, creates and modifies 3D points, polygons, lines, particles, surfaces, spheres and meatballs. Particles and point clouds are now done primarily on the GPU using TOPs.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="52f9ec21735243ad9917cda3ca077d32"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The Graphics Processing Unit. This is the high-speed, many-core processor of the graphics card/chip that takes geometry, images and data from the CPU and creates images and processed data.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="30269022e9d8f51beaabb52e5d0de2b7"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>There are 2 kinds of parenting. The "parent component" is the component in which a node resides. The metaphor is extended to include grand parents, grand-grand parents, etc. The root <code>/</code> is the ultimate parent to all nodes. See also <a href="3D_Parenting.html" title="3D Parenting">3D Parenting</a> and panel <a href="Parent.html" title="Parent">Parenting</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f579f693ac9ecb3fb9e822bf32028e13"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>samples-per-second of a <a href="CHOP.html" title="CHOP">CHOP</a>. Each CHOP in your network has a sample rate. In contrast, the overall timeline has a <a href="Frame_Rate.html" title="Frame Rate">Frame Rate</a>, which is the number of frames to <a href="Cook.html" title="Cook">cook</a> and display per second, generally your monitor display frequency, default 60.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="c123b11aa670647408778a3b81a21d70"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The <a href="Frame.html" title="Frame">Frames</a>-per-Second that TouchDesigner's <a href="Timeline.html" title="Timeline">Timeline</a> runs at. Set with <code>project.cookRate</code>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="3d1f92a565d3b1a61880236e33c49bf3"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The panel at the bottom of TouchDesigner, it controls the current global looping <a href="Time_COMP.html" title="Time COMP">Time</a> your TouchDesigner project, or of just one component.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Each SOP has a list of Points. Each point has an XYZ 3D position value plus other optional attributes. Each polygon <a href="Primitive.html" title="Primitive">Primitive</a> is defined by a vertex list, which is list of point numbers.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250304171512
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 0.696 seconds
+Real time usage: 1.675 seconds
+Preprocessor visited node count: 4698/1000000
+Post‐expand include size: 74965/2097152 bytes
+Template argument size: 29897/2097152 bytes
+Highest expansion depth: 10/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 428/5000000 bytes
+Lua time usage: 1.190/10 seconds
+Lua virtual size: 9293824/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1610.160      1 -total
+ 96.02% 1546.024      1 Template:NavBox
+ 94.64% 1523.782    114 Template:CatList
+  2.30%   37.108      2 Template:ParameterPage
+  1.95%   31.344     26 Template:Parameter
+  0.94%   15.189      1 Template:InfoCHOPChannels
+  0.53%    8.591      1 Template:Summary
+  0.52%    8.452     27 Template:ParameterItem
+  0.36%    5.725      1 OP_Info_Channels_Common_Page
+  0.25%    4.011      1 SOP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:2337-0!canonical and timestamp 20250304171510 and revision id 24472.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;oldid=24472">https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;oldid=24472</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="https://docs.derivative.ca/index.php?title=Category:SOPs&amp;action=edit&amp;redlink=1" class="new" title="Category:SOPs (page does not exist)">SOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Import+Select+SOP" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="Import_Select_SOP.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Import_Select_SOP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Import_Select_SOP&amp;action=edit&amp;redlink=1" title=" (page does not exist)"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Import_Select_SOP.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Import_Select_SOP" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Import_Select_SOP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;oldid=24472" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Import_Select_SOP&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 17 November 2021, at 14:33.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.696","walltime":"1.675","ppvisitednodes":{"value":4698,"limit":1000000},"postexpandincludesize":{"value":74965,"limit":2097152},"templateargumentsize":{"value":29897,"limit":2097152},"expansiondepth":{"value":10,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":428,"limit":5000000},"timingprofile":["100.00% 1610.160      1 -total"," 96.02% 1546.024      1 Template:NavBox"," 94.64% 1523.782    114 Template:CatList","  2.30%   37.108      2 Template:ParameterPage","  1.95%   31.344     26 Template:Parameter","  0.94%   15.189      1 Template:InfoCHOPChannels","  0.53%    8.591      1 Template:Summary","  0.52%    8.452     27 Template:ParameterItem","  0.36%    5.725      1 OP_Info_Channels_Common_Page","  0.25%    4.011      1 SOP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"1.190","limit":"10"},"limitreport-virtmemusage":{"value":9293824,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250304171512","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":1903});});</script>
+</body>
+<!-- Cached 20250304171512 -->
+
+<!-- Mirrored from docs.derivative.ca/Import_Select_SOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:57:14 GMT -->
+</html>

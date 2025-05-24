@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en-CA" dir="ltr">
+
+<!-- Mirrored from docs.derivative.ca/Experimental:Audio_Render_CHOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Audio Render CHOP - TouchDesigner Documentation</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"40bc765b608cab186715f764","wgCSPNonce":false,"wgCanonicalNamespace":"Experimental","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":20,"wgPageName":"Experimental:Audio_Render_CHOP","wgTitle":"Audio Render CHOP","wgCurRevisionId":33726,"wgRevisionId":33726,"wgArticleId":4181,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CHOPs"],"wgPageContentLanguage":"en-ca","wgPageContentModel":"wikitext","wgRelevantPageName":"Experimental:Audio_Render_CHOP","wgRelevantArticleId":4181,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":
+"/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVector2022PreviewPages":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.Lingo.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready"};RLPAGEMODULES=["ext.UiTag","ext.Lingo","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load8e52.css?lang=en-ca&amp;modules=ext.Lingo.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load4355.php?lang=en-ca&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="load7c2b.css?lang=en-ca&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="The Audio Render CHOP uses the Steam Audio SDK to spatially render audio based on the full transforms of a listener and an audio source."/>
+<meta name="keywords" content="TouchDesigner, Audio Render, CHOP"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=1000"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Derivative (en-ca)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Derivative Atom feed" href="https://docs.derivative.ca/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="https://docs.derivative.ca/index.php?title=CHOP.css&amp;action=raw&amp;ctype=text/css&amp;css-extension=1"/><!-- End Extension:CSS -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3123499-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3123499-6');
+</script>
+<meta property="og:title" content="Audio Render CHOP - TouchDesigner Documentation"/>
+<meta property="og:site_name" content="Derivative"/>
+<meta property="og:url" content="https://docs.derivative.ca/Experimental:Audio_Render_CHOP"/>
+<meta property="og:description" content="The Audio Render CHOP uses the Steam Audio SDK to spatially render audio based on the full transforms of a listener and an audio source."/>
+<meta property="og:image" content="https://docs.derivative.ca/resources/assets/logo.png"/>
+<meta property="article:tag" content="TouchDesigner, Audio Render, CHOP"/>
+<meta property="article:modified_time" content="2025-05-20T06:35:07Z"/>
+<meta property="article:published_time" content="2025-05-20T06:35:07Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Audio Render CHOP - TouchDesigner Documentation","headline":"Audio Render CHOP - TouchDesigner Documentation","mainEntityOfPage":"<span class=\"mw-page-title-namespace\">Experimental<\/span><span class=\"mw-page-title-separator\">:<\/span><span class=\"mw-page-title-main\">Audio Render CHOP<\/span>","identifier":"https:\/\/docs.derivative.ca\/Experimental:Audio_Render_CHOP","url":"https:\/\/docs.derivative.ca\/Experimental:Audio_Render_CHOP","description":"The Audio Render CHOP uses the Steam Audio SDK to spatially render audio based on the full transforms of a listener and an audio source.","keywords":"TouchDesigner, Audio Render, CHOP","dateModified":"2025-05-20T06:35:07Z","datePublished":"2025-05-20T06:35:07Z","image":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png"},"author":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"publisher":{"@type":"Organization","name":"Derivative","url":"https:\/\/docs.derivative.ca","logo":{"@type":"ImageObject","url":"https:\/\/docs.derivative.ca\/resources\/assets\/logo.png","caption":"Derivative"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/docs.derivative.ca\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-20 ns-subject page-Experimental_Audio_Render_CHOP rootpage-Experimental_Audio_Render_CHOP skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-namespace">Experimental</span><span class="mw-page-title-separator">:</span><span class="mw-page-title-main">Audio Render CHOP</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Derivative</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en-CA" dir="ltr"><div class="mw-parser-output"><div class="mw-parser-output"><h2><span class="mw-headline" id="Summary"><div class="sectionBarCHOP">Summary</div></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://docs.derivative.ca/index.php?title=Template:Summary&amp;action=edit&amp;section=T-1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Note:</b> For Apple Silicon Macs, this operator only works starting with build 2022.33910.
+</p><p>The Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> uses the Steam Audio SDK to spatially render audio based on the full transforms (translation, rotation, scale) of a listener and an audio source. The Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> takes sound audio sources as input, and spatially outputs the sound in the format specified from the Output Format parameter. The number of channels outputted by the Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> depends on the Output Format. 
+</p><p>You specify a 3D component for the transform of the listener, plus a 3D component for the transform of a source.
+</p><p>The sample rate of the output is determined by the audio source, which must be either 44100 or 48000.
+</p><p>Look at the Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> example in Help -&gt; Operator <span class="mw-lingo-term" data-lingo-term-id="b2accffe28bb4f4b596c9be64a28d281">Snippets</span>.
+</p><p>See also <a href="Oculus_Audio_CHOP.html" title="Oculus Audio CHOP">Oculus Audio CHOP</a>.
+</p><p><a href="File_PythonIcon.html" class="image"><img alt="PythonIcon.png" src="images/c/c2/PythonIcon.png" decoding="async" width="20" height="20"></a><a href="https://docs.derivative.ca/AudiorenderCHOP_Class" title="AudiorenderCHOP Class">audiorenderCHOP_Class</a>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en-CA" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Audio_Render_Page"><span class="tocnumber">2</span> <span class="toctext">Parameters - Audio Render Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Meshes_Page"><span class="tocnumber">3</span> <span class="toctext">Parameters - Meshes Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Simulation_Page"><span class="tocnumber">4</span> <span class="toctext">Parameters - Simulation Page</span></a></li>
+<li class="toclevel-1"><a href="#Parameters_-_Common_Page"><span class="tocnumber">5</span> <span class="toctext">Parameters - Common Page</span></a></li>
+<li class="toclevel-1"><a href="#Operator_Inputs"><span class="tocnumber">6</span> <span class="toctext">Operator Inputs</span></a></li>
+<li class="toclevel-1"><a href="#Info_CHOP_Channels"><span class="tocnumber">7</span> <span class="toctext">Info CHOP Channels</span></a>
+<ul><li class="toclevel-2"><a href="#Specific_Audio_Render_CHOP_Info_Channels"><span class="tocnumber">7.1</span> <span class="toctext">Specific Audio Render CHOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_CHOP_Info_Channels"><span class="tocnumber">7.2</span> <span class="toctext">Common CHOP Info Channels</span></a></li>
+<li class="toclevel-2"><a href="#Common_Operator_Info_Channels"><span class="tocnumber">7.3</span> <span class="toctext">Common Operator Info Channels</span></a></li>
+</ul></li>
+</ul></div>
+
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Audio_Render_Page"><div class="sectionBarCHOP">Parameters - Audio Render Page</div></span></h2>
+<div id="active" style=""><span class="parNameCHOP">Active</span>  <code>active</code> - Turns the Audio Render on or off.
+<p><i></i>
+</p>
+</div>
+<div id="mode" style=""><span class="parNameCHOP">Mode</span>  <code>mode</code> - <span class="mw-customtoggle-mode">⊞</span> - This menu determines which Steam Audio mode to use.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-mode">
+<ul><li><span class="parNameCHOP">Simple Positional</span> <code>simple</code> - Sound simulation for only a mono source.</li></ul><ul><li><span class="parNameCHOP">Simulation</span> <code>simulation</code> - Sound simulation for multiple sources.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="outputformat" style=""><span class="parNameCHOP">Output Format</span>  <code>outputformat</code> - <span class="mw-customtoggle-outputformat">⊞</span> - The output format of the audio.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-outputformat">
+<ul><li><span class="parNameCHOP">Binaural</span> <code>Binaural</code> - Spatialize sound based on 3D position of source relative to listener.</li></ul><ul><li><span class="parNameCHOP">Stereo</span> <code>stereo</code> - Spatialize sound based on left and right channels.</li></ul><ul><li><span class="parNameCHOP">Quadraphonic Surround</span> <code>quadraphonic</code> - Spatialize sound based on front left, front right, rear left, and rear right channels.</li></ul><ul><li><span class="parNameCHOP">5.1 Surround</span> <code>fiveone</code> - Spatialize sound based on front left, front right, front center, LFE, rear left, and rear right channels.</li></ul><ul><li><span class="parNameCHOP">7.1 Surround</span> <code>sevenone</code> - Spatialize sound based on Ffont left, front right, front center, LFE, rear left, rear right, side left, and side right channels.</li></ul><ul><li><span class="parNameCHOP">Custom Setup</span> <code>custom</code> - Custom Setup requires use of the Mapping Table.</li></ul><ul><li><span class="parNameCHOP">Ambisonics</span> <code>ambisonics</code> - Ambisonics is a format for encoding three-dimensional 360 degree audio. The Ambisonics format used in the Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> is the 3rd order SN3D format consisting of 16 encoded channels (WXYZ, RSTUV, KLMNOPQ) that define the sphere of sound. Ambisonics is disabled in Simulation mode when reflections are enabled.</li></ul><ul><li><span class="parNameCHOP">Direct Effect</span> <code>direct</code> - Used in Simulation mode only to simulate sound based on the direct path between a point source and listener. Direct Effect is disabled when reflections are enabled.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="attenuation" style=""><span class="parNameCHOP">Enable Attenuation</span>  <code>attenuation</code> - Attenuate the sound based on relative distance.
+<p><i></i>
+</p>
+</div>
+<div id="ambisonicsorder" style=""><span class="parNameCHOP">Ambisonics Order</span>  <code>ambisonicsorder</code> - Ambisonics order of the output buffer.
+<p><i></i>
+</p>
+</div>
+<div id="mappingtable" style=""><span class="parNameCHOP">Mapping Table</span>  <code>mappingtable</code> - A <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Table that specifies the various speakers in the setup and their position. The Table must have 3 columns named x, y, z. Each row specifies an individual speaker, and the 3 columns specify its position. Used with the Custom Setup Output Format. The mapping table will create one channel per row.
+<p><i></i>
+</p>
+</div>
+<div id="listenerobject" style=""><span class="parNameCHOP">Listener Object <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span></span>  <code>listenerobject</code> - A <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> that represents the listening head. Must be a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> that contains transform data, such as a Geometry or Camera <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="source" style="" class="sequenceBlock"><span class="parNameCHOP">Source</span>  <code>source</code> - Sequence of the audio sources.
+<p><i></i>
+</p>
+</div>
+<div id="source0object" style=""><span class="parNameCHOP">Object <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span></span>  <code>source0object</code> - A <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> that represents the source of the sound. Must be a <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> that contains transform data, such as a Geometry or Camera <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>.
+<p><i></i>
+</p>
+</div>
+<div id="source0directivity" style=""><span class="parNameCHOP">Enable Directivity</span>  <code>source0directivity</code> - Turns directivity on or off. When disabled, sound will emit from the source from all directions (ie. omnidirectional)
+<p><i></i>
+</p>
+</div>
+<div id="source0dipoleweight" style=""><span class="parNameCHOP">Dipole Weight</span>  <code>source0dipoleweight</code> - The weight of the dipole to blend in the directivity pattern. 0 = pure omnidirectional, 1 = pure dipole, 0.5 = cardioid directivity pattern.
+<p><i></i>
+</p>
+</div>
+<div id="source0dipolepower" style=""><span class="parNameCHOP">Dipole Power</span>  <code>source0dipolepower</code> - The sharpness of the dipole. Higher values make the sound direction narrower.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Meshes_Page"><div class="sectionBarCHOP">Parameters - Meshes Page</div></span></h2>
+<div id="update" style=""><span class="parNameCHOP">Update Meshes</span>  <code>update</code> - When enabled, any static mesh changes will automatically be updated in the simulation
+<p><i></i>
+</p>
+</div>
+<div id="updatepulse" style=""><span class="parNameCHOP">Update Meshes <span class="mw-lingo-term" data-lingo-term-id="ec8374db32bacb4cd9760199ec42819e">Pulse</span></span>  <code>updatepulse</code> - When pulsed, will update the static meshes in the simulation if they changed.
+<p><i></i>
+</p>
+</div>
+<div id="mesh" style="" class="sequenceBlock"><span class="parNameCHOP">Mesh</span>  <code>mesh</code> - Sequence of static meshes.
+<p><i></i>
+</p>
+</div>
+<div id="mesh0object" style=""><span class="parNameCHOP">Mesh <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span></span>  <code>mesh0object</code> - The <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span> for the mesh. COMPs must contain geometries in triangle polygon form. Meshes will only be added to the scene if the <span class="mw-lingo-term" data-lingo-term-id="85a1cdddc59cb89e6297acc2f2fc1755">COMP</span>'s display flag is on.
+<p><i></i>
+</p>
+</div>
+<div id="mesh0absorb" style=""><span class="parNameCHOP">Absorption</span>  <code>mesh0absorb</code> - <span class="mw-customtoggle-mesh0absorb">⊞</span> - Frequency dependent absorption: 3-band air absorption coefficients. Essentially, how much sound the static mesh absorbs.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-mesh0absorb">
+<ul><li><span class="parNameCHOP">Absorption</span> <code>mesh0absorb1</code> - Absorption at low frequencies (0 - 800 Hz).</li></ul><ul><li><span class="parNameCHOP">Absorption</span> <code>mesh0absorb2</code> - Absorption at medium frequencies (800 Hz - 8 kHz).</li></ul><ul><li><span class="parNameCHOP">Absorption</span> <code>mesh0absorb3</code> - Absorption at high frequencies (8 kHz and above).</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="mesh0scatter" style=""><span class="parNameCHOP">Scattering</span>  <code>mesh0scatter</code> - Scatters sound in random directions for reflections. 0 = pure specular, 1 = pure diffuse.
+<p><i></i>
+</p>
+</div>
+<div id="mesh0trans" style=""><span class="parNameCHOP">Transmission</span>  <code>mesh0trans</code> - <span class="mw-customtoggle-mesh0trans">⊞</span> - Frequency dependent transmission: 3-band EQ coefficients for transmission. Essentially, how much sound can pass through the static mesh.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-mesh0trans">
+<ul><li><span class="parNameCHOP">Transmission</span> <code>mesh0trans1</code> - Transmission at low frequencies (0 - 800 Hz).</li></ul><ul><li><span class="parNameCHOP">Transmission</span> <code>mesh0trans2</code> - Transmission at medium frequencies (800 Hz - 8 kHz).</li></ul><ul><li><span class="parNameCHOP">Transmission</span> <code>mesh0trans3</code> - Transmission at high frequencies (8 kHz and above).</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Simulation_Page"><div class="sectionBarCHOP">Parameters - Simulation Page</div></span></h2>
+<div id="airabsorb" style=""><span class="parNameCHOP">Enable Air Absorption</span>  <code>airabsorb</code> - Turns air absorption on or off for all sources. Air absorption is how much sound is lost over the distance travelling from source to listener.
+<p><i></i>
+</p>
+</div>
+<div id="occlusion" style=""><span class="parNameCHOP">Enable Occlusion</span>  <code>occlusion</code> - Turns raycast occlusion on or off for all meshes. If a single ray from listener to source is occluded, then the source is considered occluded.
+<p><i></i>
+</p>
+</div>
+<div id="numsurfaces" style=""><span class="parNameCHOP">Number of Surfaces</span>  <code>numsurfaces</code> - Maximum number of surfaces, starting from closest surface to the listener, whose transmission coefficients will be considered when calculating the total sound transmission.
+<p><i></i>
+</p>
+</div>
+<div id="reflection" style=""><span class="parNameCHOP">Enable Reflection</span>  <code>reflection</code> - Turns reflection on or off for all meshes.
+<p><i></i>
+</p>
+</div>
+<div id="diffsamp" style=""><span class="parNameCHOP">Diffuse Samples</span>  <code>diffsamp</code> - Number of directions to generate for reflecting rays.
+<p><i></i>
+</p>
+</div>
+<div id="duration" style=""><span class="parNameCHOP">Duration</span>  <code>duration</code> - Duration in seconds of the impulse responses generated.
+<p><i></i>
+</p>
+</div>
+<div id="refambixord" style=""><span class="parNameCHOP">Ambisonics Order</span>  <code>refambixord</code> - Ambisonics order of the impulse responses generated.
+<p><i></i>
+</p>
+</div>
+<div id="numrays" style=""><span class="parNameCHOP">Number of Rays</span>  <code>numrays</code> - Number of rays to trace from the listener.
+<p><i></i>
+</p>
+</div>
+<div id="numthreads" style=""><span class="parNameCHOP">Number of Threads</span>  <code>numthreads</code> - Number of threads used for real-time reflection simulations.
+<p><i></i>
+</p>
+</div>
+<div id="numbounces" style=""><span class="parNameCHOP">Number of Bounces</span>  <code>numbounces</code> - Number of times each ray is reflected off a surface.
+<p><i></i>
+</p>
+</div>
+<div id="irmindist" style=""><span class="parNameCHOP">Irradiance Min Distance</span>  <code>irmindist</code> - The minimum distance used to calculate how much sound energy reaches a surface from a source.
+<p><i></i>
+</p>
+</div>
+<div id="enablebake" style=""><span class="parNameCHOP">Enable Bake</span>  <code>enablebake</code> - Turns baking on or off. Baking is useful as an optimization tool when calculating reflections. Bake pulse must be pressed to start baking. Turning baking off will disable any bakes that are currently active. All parameters used for reflections will also be used for baking. Baking assumes that the listener stays static. Baking will not generate probes for any of the following reasons: Scene has no geometry, spawn box that does not contain any of the geometries in the scene, all probes generated lie outside of the spawn box, or all geometries are X-Y or Y-Z planar.
+<p><i></i>
+</p>
+</div>
+<div id="bake" style=""><span class="parNameCHOP">Bake</span>  <code>bake</code> - Immediately start baking. Once complete, reflections will automatically used the baked data.
+<p><i></i>
+</p>
+</div>
+<div id="probedist" style=""><span class="parNameCHOP">Probes Distance</span>  <code>probedist</code> - The spacing between two neighboring probes.
+<p><i></i>
+</p>
+</div>
+<div id="yoffset" style=""><span class="parNameCHOP">Y-Offset from Surface</span>  <code>yoffset</code> - The height above the surface of a geometry all probes will be generated at.
+<p><i></i>
+</p>
+</div>
+<div id="size" style=""><span class="parNameCHOP">Size of Spawn Box</span>  <code>size</code> - <span class="mw-customtoggle-size">⊞</span> - Size of the spawn box along the X, Y, and Z axes where probes will be generated.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-size">
+<ul><li><span class="parNameCHOP">Size of Spawn Box</span> <code>sizex</code> -</li></ul><ul><li><span class="parNameCHOP">Size of Spawn Box</span> <code>sizey</code> -</li></ul><ul><li><span class="parNameCHOP">Size of Spawn Box</span> <code>sizez</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="origin" style=""><span class="parNameCHOP">Origin of Spawn Box</span>  <code>origin</code> - <span class="mw-customtoggle-origin">⊞</span> - These X,Y, and Z Values determine where the center of the spawn box is located.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-origin">
+<ul><li><span class="parNameCHOP">Origin of Spawn Box</span> <code>originx</code> -</li></ul><ul><li><span class="parNameCHOP">Origin of Spawn Box</span> <code>originy</code> -</li></ul><ul><li><span class="parNameCHOP">Origin of Spawn Box</span> <code>originz</code> -</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="lstnrdist" style=""><span class="parNameCHOP">Distance from Listener</span>  <code>lstnrdist</code> - The maximum distance from the listener where baked data will be stored for probes.
+<p><i></i>
+</p>
+</div>
+<div id="savedur" style=""><span class="parNameCHOP">Save Duration</span>  <code>savedur</code> - Duration in seconds of the impulse responses saved at each probe.
+<p><i></i>
+</p>
+</div>
+<div id="batchsize" style=""><span class="parNameCHOP">Batch Size</span>  <code>batchsize</code> - Number of probes to bake simultaneously.
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Parameters_-_Common_Page"><div class="sectionBarCHOP">Parameters - Common Page</div></span></h2>
+<div id="timeslice" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="d209223c55b32b6dd2954cdd78d908cd">Time Slice</span></span>  <code>timeslice</code> - Turning this on forces the channels to be "<a href="Time_Slicing.html" title="Time Slicing">Time Sliced</a>".  A <span class="mw-lingo-term" data-lingo-term-id="d209223c55b32b6dd2954cdd78d908cd">Time Slice</span> is the time between the last cook frame and the current cook frame.
+<p><i></i>
+</p>
+</div>
+<div id="scope" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="5d113f2038d289f391614c39043629e8">Scope</span></span>  <code>scope</code> - To determine which channels get affected, some CHOPs use a <span class="mw-lingo-term" data-lingo-term-id="5d113f2038d289f391614c39043629e8">Scope</span> string on the Common page. See <a href="Pattern_Matching.html" title="Pattern Matching">Pattern Matching</a>.
+<p><i></i>
+</p>
+</div>
+<div id="srselect" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="f579f693ac9ecb3fb9e822bf32028e13">Sample Rate</span> Match</span>  <code>srselect</code> - <span class="mw-customtoggle-srselect">⊞</span> - Handle cases where multiple input CHOPs' sample rates are different. When Resampling occurs, the curves are interpolated according to the Interpolation Method Option, or "Linear" if the Interpolate Options are not available.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-srselect">
+<ul><li><span class="parNameCHOP">Resample At First Input's Rate</span> <code>first</code> - Use rate of first input to resample others.</li></ul><ul><li><span class="parNameCHOP">Resample At Maximum Rate</span> <code>max</code> - Resample to the highest sample rate.</li></ul><ul><li><span class="parNameCHOP">Resample At Minimum Rate</span> <code>min</code> - Resample to the lowest sample rate.</li></ul><ul><li><span class="parNameCHOP">Error If Rates Differ</span> <code>err</code> - Doesn't accept conflicting sample rates.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="exportmethod" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> Method</span>  <code>exportmethod</code> - <span class="mw-customtoggle-exportmethod">⊞</span> - This will determine how to connect the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> channel to the parameter. Refer to the <a href="Export.html" title="Export">Export</a> article for more information.
+<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-exportmethod">
+<ul><li><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Table by Index</span> <code>datindex</code> - Uses the docked <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> table and references the channel via the index of the channel in the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>.</li></ul><ul><li><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Table by Name</span> <code>datname</code> - Uses the docked <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> table and references the channel via the name of the channel in the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>.</li></ul><ul><li><span class="parNameCHOP">Channel Name is <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span>:<span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span></span> <code>autoname</code> - The channel is the full destination of where to export to, such has <code>geo1/transform1:tx</code>.</li></ul></div>
+<p><i></i>
+</p>
+</div>
+<div id="autoexportroot" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> <span class="mw-lingo-term" data-lingo-term-id="fa03eb688ad8aa1db593d33dabd89bad">Root</span></span>  <code>autoexportroot</code> - This path points to the root node where all of the paths that exporting by <b>Channel Name is <span class="mw-lingo-term" data-lingo-term-id="ac70412e939d72a9234cdebb1af5867b">Path</span>:<span class="mw-lingo-term" data-lingo-term-id="83f499a540b1323009c200d6f8cc9396">Parameter</span></b> are relative to.
+<p><i></i>
+</p>
+</div>
+<div id="exporttable" style=""><span class="parNameCHOP"><span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> Table</span>  <code>exporttable</code> - The <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> used to hold the export information when using the <span class="mw-lingo-term" data-lingo-term-id="cc2bcf28d9ffc17fcbf169f3325607bb">DAT</span> Table <span class="mw-lingo-term" data-lingo-term-id="0095a9fa74d1713e43e370a7d7846224">Export</span> Methods (See above).
+<p><i></i>
+</p>
+</div>
+<p><br></p>
+<h2><span class="mw-headline" id="Operator_Inputs"><div class="sectionBarCHOP">Operator Inputs</div></span></h2>
+<ul><li><span class="parNameCHOP">Input 0: </span> -</li></ul><p><br></p>
+<h2><span class="mw-headline" id="Info_CHOP_Channels"><div class="sectionBarCHOP">Info <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Channels</div></span></h2>
+<p>Extra Information for the Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> can be accessed via an <a href="Info_CHOP.html" title="Info CHOP">Info CHOP</a>.
+</p>
+<h3><span class="mw-headline" id="Specific_Audio_Render_CHOP_Info_Channels"><div class="customBar">Specific Audio Render <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">audioposition_full_time</span> -</li></ul><ul><li><span class="parName">audioposition_panbin_time</span> -</li></ul><ul><li><span class="parName">distance_attenuation</span> -</li></ul><h3><span class="mw-headline" id="Common_CHOP_Info_Channels"><div class="customBar">Common <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> Info Channels</div></span></h3>
+<ul><li><span class="parName">start</span> - Start of the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> interval in samples.</li></ul><ul><li><span class="parName">length</span> - Number of samples in the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>.</li></ul><ul><li><span class="parName">sample_rate</span> - The samplerate of the channels in frames per second.</li></ul><ul><li><span class="parName">num_channels</span> - Number of channels in the <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span>.</li></ul><ul><li><span class="parName">time_slice</span> - 1 if <span class="mw-lingo-term" data-lingo-term-id="8b9d2cce2836537aabe6f2e0dd5da293">CHOP</span> is <span class="mw-lingo-term" data-lingo-term-id="d209223c55b32b6dd2954cdd78d908cd">Time Slice</span> enabled, 0 otherwise.</li></ul><ul><li><span class="parName">export_sernum</span> - A count of how often the export connections have been updated.</li></ul><h3><span class="mw-headline" id="Common_Operator_Info_Channels"><div class="customBar">Common Operator Info Channels</div></span></h3>
+<ul><li><span class="parName">total_cooks</span> - Number of times the operator has cooked since the process started.</li></ul><ul><li><span class="parName">cook_time</span> - Duration of the last cook in milliseconds.</li></ul><ul><li><span class="parName">cook_frame</span> - Frame number when this operator was last cooked relative to the component timeline.</li></ul><ul><li><span class="parName">cook_abs_frame</span> - Frame number when this operator was last cooked relative to the absolute time.</li></ul><ul><li><span class="parName">cook_start_time</span> - Time in milliseconds at which the operator started cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cook_end_time</span> - Time in milliseconds at which the operator finished cooking in the frame it was cooked.</li></ul><ul><li><span class="parName">cooked_this_frame</span> - 1 if operator was cooked this frame.</li></ul><ul><li><span class="parName">warnings</span> - Number of warnings in this operator if any.</li></ul><ul><li><span class="parName">errors</span> - Number of errors in this operator if any.</li></ul><p><br>
+TouchDesigner Build: <select onchange="location=this.value;"><option value="Experimental_Audio_Render_CHOP.html">Latest</option>\n<option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32435">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32436">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32437">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32439">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32440">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32441">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32442">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=32443">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=33026">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=33030">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=33031">wikieditor</option><option value="https://docs.derivative.ca/Experimental:Audio_Render_CHOP?oldid=33634">wikieditor</option></select></p>
+<table><tbody><tr><th class="navBox">CHOPs
+</th></tr><tr><td><span class="catList navigation-not-searchable"><a href="Ableton_Link_CHOP.html" title="Ableton Link CHOP">Ableton Link  </a></span>• <span class="catList navigation-not-searchable"><a href="Analyze_CHOP.html" title="Analyze CHOP">Analyze  </a></span>• <span class="catList navigation-not-searchable"><a href="Angle_CHOP.html" title="Angle CHOP">Angle  </a></span>• <span class="catList navigation-not-searchable"><a href="Attribute_CHOP.html" title="Attribute CHOP">Attribute  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Band_EQ_CHOP.html" title="Audio Band EQ CHOP">Audio Band EQ  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Binaural_CHOP.html" title="Audio Binaural CHOP">Audio Binaural  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Device_In_CHOP.html" title="Audio Device In CHOP">Audio Device In  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Device_Out_CHOP.html" title="Audio Device Out CHOP">Audio Device Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Dynamics_CHOP.html" title="Audio Dynamics CHOP">Audio Dynamics  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_File_In_CHOP.html" title="Audio File In CHOP">Audio File In  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_File_Out_CHOP.html" title="Audio File Out CHOP">Audio File Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Filter_CHOP.html" title="Audio Filter CHOP">Audio Filter  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Movie_CHOP.html" title="Audio Movie CHOP">Audio Movie  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_NDI_CHOP.html" title="Audio NDI CHOP">Audio NDI  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Oscillator_CHOP.html" title="Audio Oscillator CHOP">Audio Oscillator  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Para_EQ_CHOP.html" title="Audio Para EQ CHOP">Audio Para EQ  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Play_CHOP.html" title="Audio Play CHOP">Audio Play  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Render_CHOP.html" title="Audio Render CHOP">Audio Render  </a></span>• <span class="catList navigation-not-searchable"><a class="mw-selflink selflink">Experimental:Audio Render  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Spectrum_CHOP.html" title="Audio Spectrum CHOP">Audio Spectrum  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Stream_In_CHOP.html" title="Audio Stream In CHOP">Audio Stream In  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Stream_Out_CHOP.html" title="Audio Stream Out CHOP">Audio Stream Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_VST_CHOP.html" title="Audio VST CHOP">Audio VST  </a></span>• <span class="catList navigation-not-searchable"><a href="Audio_Web_Render_CHOP.html" title="Audio Web Render CHOP">Audio Web Render  </a></span>• <span class="catList navigation-not-searchable"><a href="Beat_CHOP.html" title="Beat CHOP">Beat  </a></span>• <span class="catList navigation-not-searchable"><a href="Bind_CHOP.html" title="Bind CHOP">Bind  </a></span>• <span class="catList navigation-not-searchable"><a href="BlackTrax_CHOP.html" title="BlackTrax CHOP">BlackTrax  </a></span>• <span class="catList navigation-not-searchable"><a href="Blend_CHOP.html" title="Blend CHOP">Blend  </a></span>• <span class="catList navigation-not-searchable"><a href="Blob_Track_CHOP.html" title="Blob Track CHOP">Blob Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Body_Track_CHOP.html" title="Body Track CHOP">Body Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Bullet_Solver_CHOP.html" title="Bullet Solver CHOP">Bullet Solver  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_Blender_CHOP.html" title="Clip Blender CHOP">Clip Blender  </a></span>• <span class="catList navigation-not-searchable"><a href="Clip_CHOP.html" title="Clip CHOP">Clip  </a></span>• <span class="catList navigation-not-searchable"><a href="Clock_CHOP.html" title="Clock CHOP">Clock  </a></span>• <span class="catList navigation-not-searchable"><a href="Composite_CHOP.html" title="Composite CHOP">Composite  </a></span>• <span class="catList navigation-not-searchable"><a href="Constant_CHOP.html" title="Constant CHOP">Constant  </a></span>• <span class="catList navigation-not-searchable"><a href="Copy_CHOP.html" title="Copy CHOP">Copy  </a></span>• <span class="catList navigation-not-searchable"><a href="Count_CHOP.html" title="Count CHOP">Count  </a></span>• <span class="catList navigation-not-searchable"><a href="CPlusPlus_CHOP.html" title="CPlusPlus CHOP">CPlusPlus  </a></span>• <span class="catList navigation-not-searchable"><a href="Cross_CHOP.html" title="Cross CHOP">Cross  </a></span>• <span class="catList navigation-not-searchable"><a href="Cycle_CHOP.html" title="Cycle CHOP">Cycle  </a></span>• <span class="catList navigation-not-searchable"><a href="DAT_to_CHOP.html" title="DAT to CHOP">DAT to  </a></span>• <span class="catList navigation-not-searchable"><a href="Delay_CHOP.html" title="Delay CHOP">Delay  </a></span>• <span class="catList navigation-not-searchable"><a href="Delete_CHOP.html" title="Delete CHOP">Delete  </a></span>• <span class="catList navigation-not-searchable"><a href="DMX_In_CHOP.html" title="DMX In CHOP">DMX In  </a></span>• <span class="catList navigation-not-searchable"><a href="DMX_Out_CHOP.html" title="DMX Out CHOP">DMX Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Envelope_CHOP.html" title="Envelope CHOP">Envelope  </a></span>• <span class="catList navigation-not-searchable"><a href="EtherDream_CHOP.html" title="EtherDream CHOP">EtherDream  </a></span>• <span class="catList navigation-not-searchable"><a href="Event_CHOP.html" title="Event CHOP">Event  </a></span>• <span class="catList navigation-not-searchable"><a href="Expression_CHOP.html" title="Expression CHOP">Expression  </a></span>• <span class="catList navigation-not-searchable"><a href="Extend_CHOP.html" title="Extend CHOP">Extend  </a></span>• <span class="catList navigation-not-searchable"><a href="Face_Track_CHOP.html" title="Face Track CHOP">Face Track  </a></span>• <span class="catList navigation-not-searchable"><a href="Fan_CHOP.html" title="Fan CHOP">Fan  </a></span>• <span class="catList navigation-not-searchable"><a href="Feedback_CHOP.html" title="Feedback CHOP">Feedback  </a></span>• <span class="catList navigation-not-searchable"><a href="File_In_CHOP.html" title="File In CHOP">File In  </a></span>• <span class="catList navigation-not-searchable"><a href="File_Out_CHOP.html" title="File Out CHOP">File Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Filter_CHOP.html" title="Filter CHOP">Filter  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Filter_CHOP.html" title="Experimental:Filter CHOP">Experimental:Filter  </a></span>• <span class="catList navigation-not-searchable"><a href="FreeD_In_CHOP.html" title="FreeD In CHOP">FreeD In  </a></span>• <span class="catList navigation-not-searchable"><a href="FreeD_Out_CHOP.html" title="FreeD Out CHOP">FreeD Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Function_CHOP.html" title="Function CHOP">Function  </a></span>• <span class="catList navigation-not-searchable"><a href="Gesture_CHOP.html" title="Gesture CHOP">Gesture  </a></span>• <span class="catList navigation-not-searchable"><a href="Handle_CHOP.html" title="Handle CHOP">Handle  </a></span>• <span class="catList navigation-not-searchable"><a href="Helios_DAC_CHOP.html" title="Helios DAC CHOP">Helios DAC  </a></span>• <span class="catList navigation-not-searchable"><a href="Hog_CHOP.html" title="Hog CHOP">Hog  </a></span>• <span class="catList navigation-not-searchable"><a href="Hokuyo_CHOP.html" title="Hokuyo CHOP">Hokuyo  </a></span>• <span class="catList navigation-not-searchable"><a href="Hold_CHOP.html" title="Hold CHOP">Hold  </a></span>• <span class="catList navigation-not-searchable"><a href="Import_Select_CHOP.html" title="Import Select CHOP">Import Select  </a></span>• <span class="catList navigation-not-searchable"><a href="In_CHOP.html" title="In CHOP">In  </a></span>• <span class="catList navigation-not-searchable"><a href="Info_CHOP.html" title="Info CHOP">Info  </a></span>• <span class="catList navigation-not-searchable"><a href="Interpolate_CHOP.html" title="Interpolate CHOP">Interpolate  </a></span>• <span class="catList navigation-not-searchable"><a href="Introduction_To_CHOPs_Vid.html" title="Introduction To CHOPs Vid">Introduction To s Vid </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Curve_CHOP.html" title="Inverse Curve CHOP">Inverse Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Inverse_Kin_CHOP.html" title="Inverse Kin CHOP">Inverse Kin  </a></span>• <span class="catList navigation-not-searchable"><a href="Join_CHOP.html" title="Join CHOP">Join  </a></span>• <span class="catList navigation-not-searchable"><a href="Joystick_CHOP.html" title="Joystick CHOP">Joystick  </a></span>• <span class="catList navigation-not-searchable"><a href="Keyboard_In_CHOP.html" title="Keyboard In CHOP">Keyboard In  </a></span>• <span class="catList navigation-not-searchable"><a href="Keyframe_CHOP.html" title="Keyframe CHOP">Keyframe  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_Azure_CHOP.html" title="Kinect Azure CHOP">Kinect Azure  </a></span>• <span class="catList navigation-not-searchable"><a href="Kinect_CHOP.html" title="Kinect CHOP">Kinect  </a></span>• <span class="catList navigation-not-searchable"><a href="Lag_CHOP.html" title="Lag CHOP">Lag  </a></span>• <span class="catList navigation-not-searchable"><a href="Laser_CHOP.html" title="Laser CHOP">Laser  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Laser_CHOP.html" title="Experimental:Laser CHOP">Experimental:Laser  </a></span>• <span class="catList navigation-not-searchable"><a href="Laser_Device_CHOP.html" title="Laser Device CHOP">Laser Device  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Laser_Device_CHOP.html" title="Experimental:Laser Device CHOP">Experimental:Laser Device  </a></span>• <span class="catList navigation-not-searchable"><a href="Leap_Motion_CHOP.html" title="Leap Motion CHOP">Leap Motion  </a></span>• <span class="catList navigation-not-searchable"><a href="Leuze_ROD4_CHOP.html" title="Leuze ROD4 CHOP">Leuze ROD4  </a></span>• <span class="catList navigation-not-searchable"><a href="LFO_CHOP.html" title="LFO CHOP">LFO  </a></span>• <span class="catList navigation-not-searchable"><a href="Limit_CHOP.html" title="Limit CHOP">Limit  </a></span>• <span class="catList navigation-not-searchable"><a href="Logic_CHOP.html" title="Logic CHOP">Logic  </a></span>• <span class="catList navigation-not-searchable"><a href="Lookup_CHOP.html" title="Lookup CHOP">Lookup  </a></span>• <span class="catList navigation-not-searchable"><a href="LTC_In_CHOP.html" title="LTC In CHOP">LTC In  </a></span>• <span class="catList navigation-not-searchable"><a href="LTC_Out_CHOP.html" title="LTC Out CHOP">LTC Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Math_CHOP.html" title="Math CHOP">Math  </a></span>• <span class="catList navigation-not-searchable"><a href="Merge_CHOP.html" title="Merge CHOP">Merge  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_In_CHOP.html" title="MIDI In CHOP">MIDI In  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_In_Map_CHOP.html" title="MIDI In Map CHOP">MIDI In Map  </a></span>• <span class="catList navigation-not-searchable"><a href="MIDI_Out_CHOP.html" title="MIDI Out CHOP">MIDI Out  </a></span>• <span class="catList navigation-not-searchable"><a href="MoSys_CHOP.html" title="MoSys CHOP">MoSys  </a></span>• <span class="catList navigation-not-searchable"><a href="Mouse_In_CHOP.html" title="Mouse In CHOP">Mouse In  </a></span>• <span class="catList navigation-not-searchable"><a href="Mouse_Out_CHOP.html" title="Mouse Out CHOP">Mouse Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Ncam_CHOP.html" title="Ncam CHOP">Ncam  </a></span>• <span class="catList navigation-not-searchable"><a href="Noise_CHOP.html" title="Noise CHOP">Noise  </a></span>• <span class="catList navigation-not-searchable"><a href="Null_CHOP.html" title="Null CHOP">Null  </a></span>• <span class="catList navigation-not-searchable"><a href="OAK_Device_CHOP.html" title="OAK Device CHOP">OAK Device  </a></span>• <span class="catList navigation-not-searchable"><a href="OAK_Select_CHOP.html" title="OAK Select CHOP">OAK Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Object_CHOP.html" title="Object CHOP">Object  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Audio_CHOP.html" title="Oculus Audio CHOP">Oculus Audio  </a></span>• <span class="catList navigation-not-searchable"><a href="Oculus_Rift_CHOP.html" title="Oculus Rift CHOP">Oculus Rift  </a></span>• <span class="catList navigation-not-searchable"><a href="OpenVR_CHOP.html" title="OpenVR CHOP">OpenVR  </a></span>• <span class="catList navigation-not-searchable"><a href="OptiTrack_In_CHOP.html" title="OptiTrack In CHOP">OptiTrack In  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_In_CHOP.html" title="OSC In CHOP">OSC In  </a></span>• <span class="catList navigation-not-searchable"><a href="OSC_Out_CHOP.html" title="OSC Out CHOP">OSC Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Out_CHOP.html" title="Out CHOP">Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Override_CHOP.html" title="Override CHOP">Override  </a></span>• <span class="catList navigation-not-searchable"><a href="https://docs.derivative.ca/Experimental:Pan_Tilt_CHOP" title="Experimental:Pan Tilt CHOP">Experimental:Pan Tilt  </a></span>• <span class="catList navigation-not-searchable"><a href="Panel_CHOP.html" title="Panel CHOP">Panel  </a></span>• <span class="catList navigation-not-searchable"><a href="Pangolin_CHOP.html" title="Pangolin CHOP">Pangolin  </a></span>• <span class="catList navigation-not-searchable"><a href="Parameter_CHOP.html" title="Parameter CHOP">Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Parameter_CHOP.html" title="Experimental:Parameter CHOP">Experimental:Parameter  </a></span>• <span class="catList navigation-not-searchable"><a href="Pattern_CHOP.html" title="Pattern CHOP">Pattern  </a></span>• <span class="catList navigation-not-searchable"><a href="Perform_CHOP.html" title="Perform CHOP">Perform  </a></span>• <span class="catList navigation-not-searchable"><a href="Phaser_CHOP.html" title="Phaser CHOP">Phaser  </a></span>• <span class="catList navigation-not-searchable"><a href="Pipe_In_CHOP.html" title="Pipe In CHOP">Pipe In  </a></span>• <span class="catList navigation-not-searchable"><a href="Pipe_Out_CHOP.html" title="Pipe Out CHOP">Pipe Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_POP_to_CHOP.html" title="Experimental:POP to CHOP">Experimental:POP to  </a></span>• <span class="catList navigation-not-searchable"><a href="PosiStageNet_CHOP.html" title="PosiStageNet CHOP">PosiStageNet  </a></span>• <span class="catList navigation-not-searchable"><a href="Pulse_CHOP.html" title="Pulse CHOP">Pulse  </a></span>• <span class="catList navigation-not-searchable"><a href="RealSense_CHOP.html" title="RealSense CHOP">RealSense  </a></span>• <span class="catList navigation-not-searchable"><a href="Record_CHOP.html" title="Record CHOP">Record  </a></span>• <span class="catList navigation-not-searchable"><a href="Rename_CHOP.html" title="Rename CHOP">Rename  </a></span>• <span class="catList navigation-not-searchable"><a href="Render_Pick_CHOP.html" title="Render Pick CHOP">Render Pick  </a></span>• <span class="catList navigation-not-searchable"><a href="RenderStream_In_CHOP.html" title="RenderStream In CHOP">RenderStream In  </a></span>• <span class="catList navigation-not-searchable"><a href="Reorder_CHOP.html" title="Reorder CHOP">Reorder  </a></span>• <span class="catList navigation-not-searchable"><a href="Replace_CHOP.html" title="Replace CHOP">Replace  </a></span>• <span class="catList navigation-not-searchable"><a href="Resample_CHOP.html" title="Resample CHOP">Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Resample_CHOP.html" title="Experimental:Resample CHOP">Experimental:Resample  </a></span>• <span class="catList navigation-not-searchable"><a href="S_Curve_CHOP.html" title="S Curve CHOP">S Curve  </a></span>• <span class="catList navigation-not-searchable"><a href="Scan_CHOP.html" title="Scan CHOP">Scan  </a></span>• <span class="catList navigation-not-searchable"><a href="Script_CHOP.html" title="Script CHOP">Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Script_CHOP.html" title="Experimental:Script CHOP">Experimental:Script  </a></span>• <span class="catList navigation-not-searchable"><a href="Select_CHOP.html" title="Select CHOP">Select  </a></span>• <span class="catList navigation-not-searchable"><a href="Sequencer_CHOP.html" title="Sequencer CHOP">Sequencer  </a></span>• <span class="catList navigation-not-searchable"><a href="Serial_CHOP.html" title="Serial CHOP">Serial  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_In_CHOP.html" title="Shared Mem In CHOP">Shared Mem In  </a></span>• <span class="catList navigation-not-searchable"><a href="Shared_Mem_Out_CHOP.html" title="Shared Mem Out CHOP">Shared Mem Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Shift_CHOP.html" title="Shift CHOP">Shift  </a></span>• <span class="catList navigation-not-searchable"><a href="Shuffle_CHOP.html" title="Shuffle CHOP">Shuffle  </a></span>• <span class="catList navigation-not-searchable"><a href="Slope_CHOP.html" title="Slope CHOP">Slope  </a></span>• <span class="catList navigation-not-searchable"><a href="SOP_to_CHOP.html" title="SOP to CHOP">SOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Sort_CHOP.html" title="Sort CHOP">Sort  </a></span>• <span class="catList navigation-not-searchable"><a href="Speed_CHOP.html" title="Speed CHOP">Speed  </a></span>• <span class="catList navigation-not-searchable"><a href="Splice_CHOP.html" title="Splice CHOP">Splice  </a></span>• <span class="catList navigation-not-searchable"><a href="Spring_CHOP.html" title="Spring CHOP">Spring  </a></span>• <span class="catList navigation-not-searchable"><a href="Stretch_CHOP.html" title="Stretch CHOP">Stretch  </a></span>• <span class="catList navigation-not-searchable"><a href="Stype_In_CHOP.html" title="Stype In CHOP">Stype In  </a></span>• <span class="catList navigation-not-searchable"><a href="Stype_Out_CHOP.html" title="Stype Out CHOP">Stype Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Switch_CHOP.html" title="Switch CHOP">Switch  </a></span>• <span class="catList navigation-not-searchable"><a href="Sync_In_CHOP.html" title="Sync In CHOP">Sync In  </a></span>• <span class="catList navigation-not-searchable"><a href="Sync_Out_CHOP.html" title="Sync Out CHOP">Sync Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Tablet_CHOP.html" title="Tablet CHOP">Tablet  </a></span>• <span class="catList navigation-not-searchable"><a href="Time_Slice_CHOP.html" title="Time Slice CHOP">Time Slice  </a></span>• <span class="catList navigation-not-searchable"><a href="Timecode_CHOP.html" title="Timecode CHOP">Timecode  </a></span>• <span class="catList navigation-not-searchable"><a href="Timeline_CHOP.html" title="Timeline CHOP">Timeline  </a></span>• <span class="catList navigation-not-searchable"><a href="Timer_CHOP.html" title="Timer CHOP">Timer  </a></span>• <span class="catList navigation-not-searchable"><a href="TOP_to_CHOP.html" title="TOP to CHOP">TOP to  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_In_CHOP.html" title="Touch In CHOP">Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Touch_In_CHOP.html" title="Experimental:Touch In CHOP">Experimental:Touch In  </a></span>• <span class="catList navigation-not-searchable"><a href="Touch_Out_CHOP.html" title="Touch Out CHOP">Touch Out  </a></span>• <span class="catList navigation-not-searchable"><a href="Trail_CHOP.html" title="Trail CHOP">Trail  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_CHOP.html" title="Transform CHOP">Transform  </a></span>• <span class="catList navigation-not-searchable"><a href="Transform_XYZ_CHOP.html" title="Transform XYZ CHOP">Transform XYZ  </a></span>• <span class="catList navigation-not-searchable"><a href="Trigger_CHOP.html" title="Trigger CHOP">Trigger  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_Trigger_CHOP.html" title="Experimental:Trigger CHOP">Experimental:Trigger  </a></span>• <span class="catList navigation-not-searchable"><a href="Trim_CHOP.html" title="Trim CHOP">Trim  </a></span>• <span class="catList navigation-not-searchable"><a href="Warp_CHOP.html" title="Warp CHOP">Warp  </a></span>• <span class="catList navigation-not-searchable"><a href="Wave_CHOP.html" title="Wave CHOP">Wave  </a></span>• <span class="catList navigation-not-searchable"><a href="WrnchAI_CHOP.html" title="WrnchAI CHOP">WrnchAI  </a></span>• <span class="catList navigation-not-searchable"><a href="ZED_CHOP.html" title="ZED CHOP">ZED  </a></span>• <span class="catList navigation-not-searchable"><a href="Experimental_ZED_CHOP.html" title="Experimental:ZED CHOP">Experimental:ZED  </a></span>
+</td></tr></tbody></table></div><div class="mw-lingo-tooltip" id="8b9d2cce2836537aabe6f2e0dd5da293"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> which operate on <a href="Channel.html" title="Channel">Channels</a> (a sequence of numbers (<a href="Sample.html" title="Sample">Samples</a>)) which are used for animation, audio, mathematics, simulation, logic, UI construction, and data streamed from/to devices and protocols.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="b2accffe28bb4f4b596c9be64a28d281"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p><a href="OP_Snippets.html" title="OP Snippets">OP Snippets</a>  is a set of 700+ live examples of TouchDesigner operators. You can access snippets via the Help menu, or by right-clicking on network operators, or r-clicking on OP Create dialog items.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="cc2bcf28d9ffc17fcbf169f3325607bb"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that manipulates text strings: multi-line text or tables. Multi-line text is often a python <a href="Script.html" title="Script">Script</a> or <a href="GLSL.html" title="GLSL">GLSL</a> Shader, but can be any multi-line text. <a href="Table_DAT.html" title="Table DAT">Tables</a> are rows and columns of cells, each containing a text string.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="85a1cdddc59cb89e6297acc2f2fc1755"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>An <a href="Operator_Family.html" title="Operator Family">Operator Family</a> that contains its own <a href="Network.html" title="Network">Network</a>. There are sixteen 3D <a href="Object_Component.html" title="Object Component">Object Component</a> and ten 2D <a href="Panel_Component.html" title="Panel Component">Panel Component</a> types. See also <a href="Network_Path.html" title="Network Path">Network Path</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ec8374db32bacb4cd9760199ec42819e"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>To "pulse" a parameter is to send it a signal from (1) an <a href="Export.html" title="Export">exported</a> CHOP channel or (2) a python command or (3) a mouse click that causes a new action to occur immediately. A pulse via python is via the <code>.pulse()</code> function on a pulse-type parameter, such as Reset parameter in a <a href="Speed_CHOP.html" title="Speed CHOP">Speed CHOP</a>. A pulse from a CHOP is typically a 0 to 1 to 0 signal in an exported channel.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="d209223c55b32b6dd2954cdd78d908cd"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A Time Slice is the time from the last cook frame to the current cook frame. In CHOPs it is the set of short channels that contain the CHOP channels' samples between the last and the current cook frame.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="5d113f2038d289f391614c39043629e8"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>A parameter in most CHOPs that restricts which channels of that CHOP will be affected. Normally all channels of a CHOP are affected by the operator. TOPs have Channel Mask, a similar feature.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="f579f693ac9ecb3fb9e822bf32028e13"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>samples-per-second of a <a href="CHOP.html" title="CHOP">CHOP</a>. Each CHOP in your network has a sample rate. In contrast, the overall timeline has a <a href="Frame_Rate.html" title="Frame Rate">Frame Rate</a>, which is the number of frames to <a href="Cook.html" title="Cook">cook</a> and display per second, generally your monitor display frequency, default 60.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="0095a9fa74d1713e43e370a7d7846224"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Exporting is the connection of CHOP channels to parameters of operators. The output of each exporting CHOP is one or more channels, active only while the <a href="CHOP_Viewer.html" title="CHOP Viewer">CHOP Viewer</a> is on. The current value of a channel can be exported to a parameter of any operator, overriding that parameter's value. See <a href="Parameter.html" title="Parameter">Parameter</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="ac70412e939d72a9234cdebb1af5867b"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>The location of an operator within the TouchDesigner environment, for example, <code>/geo1/circle1</code>, a node called <code>circle1</code> in a component called <code>geo1</code>. The path <code>/</code> is called <a href="Root.html" title="Root">Root</a>. This path is displayed at the top of every <a href="Pane.html" title="Pane">Pane</a>, showing which Component's network you are currently in. To refer instead to a filesystem folder, directory, disk file or <code>http:</code> address, see <a href="Folder.html" title="Folder">Folder</a>.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="83f499a540b1323009c200d6f8cc9396"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>Every operator in TouchDesigner has a set of control Parameters that can be integer or floating point numbers, menus, binary toggles, text strings or operator <a href="Network_Path.html" title="Network Path">paths</a>, which determine the output of the operator.
+</p>
+</div></div>
+</div><div class="mw-lingo-tooltip" id="fa03eb688ad8aa1db593d33dabd89bad"><div class="mw-lingo-definition navigation-not-searchable"><div class="mw-lingo-definition-text">
+<p>TouchDesigner is a hierarchy of components. "root" is the top-most network in the hierarchy. The <a href="Network_Path.html" title="Network Path">Network Path</a> or Path for root is simply <code>/</code>. A typical path is <code>/project1/moviein1</code>.
+</p>
+</div></div>
+</div>
+<!-- 
+NewPP limit report
+Cached time: 20250520063509
+Cache expiry: 60
+Reduced expiry: true
+Complications: [show‐toc]
+CPU time usage: 1.004 seconds
+Real time usage: 2.520 seconds
+Preprocessor visited node count: 7158/1000000
+Post‐expand include size: 118418/2097152 bytes
+Template argument size: 47625/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1434/5000000 bytes
+Lua time usage: 1.820/10 seconds
+Lua virtual size: 9134080/209715200 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2421.991      1 -total
+ 97.33% 2357.277      1 Template:CHOPNavBox
+ 95.96% 2324.137    180 Template:CatList
+  1.49%   36.183      4 Template:ParameterPage
+  1.23%   29.677     45 Template:Parameter
+  0.47%   11.331      1 Template:InfoCHOPChannels
+  0.33%    7.905      1 CHOP_Filter_Common_Page
+  0.31%    7.529      1 Template:Summary
+  0.24%    5.897     29 Template:ParameterItem
+  0.15%    3.738      1 OP_Info_Channels_Common_Page
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:4181-0!canonical and timestamp 20250520063507 and revision id 33726.
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;oldid=33726">https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;oldid=33726</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_CHOPs.html" title="Category:CHOPs">CHOPs</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Special:UserLogin&amp;returnto=Experimental%3AAudio+Render+CHOP" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="mw-list-item"><a href="Audio_Render_CHOP.html" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Talk:Audio_Render_CHOP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li><li id="ca-Experimental" class="selected mw-list-item"><a href="Experimental_Audio_Render_CHOP.html"><span>Experimental</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		 aria-label="Change language variant"
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Canadian English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="Experimental_Audio_Render_CHOP.html"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="https://docs.derivative.ca/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Derivative" aria-label="Search Derivative" autocapitalize="sentences" title="Search Derivative [f]" accesskey="f" id="searchInput"
+				>
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="Main_Page.html"
+			title="Visit the main page"></a>
+	</div>
+	
+
+<nav id="p-TouchDesigner" class="vector-menu mw-portlet mw-portlet-TouchDesigner vector-menu-portal portal" aria-labelledby="p-TouchDesigner-label" role="navigation"  >
+	<h3
+		id="p-TouchDesigner-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">TouchDesigner</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-Main-Page" class="mw-list-item"><a href="Main_Page.html"><span>Main Page</span></a></li><li id="n-Categories" class="mw-list-item"><a href="Special_Categories.html"><span>Categories</span></a></li><li id="n-Learn-TouchDesigner" class="mw-list-item"><a href="Learn_TouchDesigner.html"><span>Learn TouchDesigner</span></a></li><li id="n-Tutorials" class="mw-list-item"><a href="Tutorials.html"><span>Tutorials</span></a></li><li id="n-Interoperability" class="mw-list-item"><a href="Interoperability.html"><span>Interoperability</span></a></li><li id="n-Glossary" class="mw-list-item"><a href="TouchDesigner_Glossary.html"><span>Glossary</span></a></li><li id="n-Operators" class="mw-list-item"><a href="Operator.html"><span>Operators</span></a></li><li id="n-Python" class="mw-list-item"><a href="Python.html"><span>Python</span></a></li><li id="n-Python-Class-Reference" class="mw-list-item"><a href="TouchDesigner_Python_Classes.html"><span>Python Class Reference</span></a></li><li id="n-Palette" class="mw-list-item"><a href="Category_Palette.html"><span>Palette</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="Frequently_Asked_Questions.html"><span>FAQ</span></a></li><li id="n-Recent-Doc-Edits" class="mw-list-item"><a href="Special_RecentChanges.html"><span>Recent Doc Edits</span></a></li><li id="n-Release-Notes" class="mw-list-item"><a href="Release_Notes.html"><span>Release Notes</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+
+<nav id="p-Downloads" class="vector-menu mw-portlet mw-portlet-Downloads vector-menu-portal portal" aria-labelledby="p-Downloads-label" role="navigation"  >
+	<h3
+		id="p-Downloads-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Downloads</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-TouchDesigner" class="mw-list-item"><a href="https://www.derivative.ca/download" rel="nofollow"><span>TouchDesigner</span></a></li><li id="n-Shared-Examples" class="mw-list-item"><a href="http://www.derivative.ca/Forum/viewforum.php?f=22" rel="nofollow"><span>Shared Examples</span></a></li></ul>
+		
+	</div>
+</nav>
+
+
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="https://docs.derivative.ca/Special:WhatLinksHere/Experimental:Audio_Render_CHOP" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://docs.derivative.ca/Special:RecentChangesLinked/Experimental:Audio_Render_CHOP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;oldid=33726" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://docs.derivative.ca/index.php?title=Experimental:Audio_Render_CHOP&amp;action=pagevalues" rel="cargo-pagevalues"><span>Page values</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 20 May 2025, at 01:35.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="Derivative_Privacy_policy.html">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="Derivative_About.html">About Derivative</a></li>
+	<li id="footer-places-disclaimer"><a href="Derivative_General_disclaimer.html">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"1.004","walltime":"2.520","ppvisitednodes":{"value":7158,"limit":1000000},"postexpandincludesize":{"value":118418,"limit":2097152},"templateargumentsize":{"value":47625,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1434,"limit":5000000},"timingprofile":["100.00% 2421.991      1 -total"," 97.33% 2357.277      1 Template:CHOPNavBox"," 95.96% 2324.137    180 Template:CatList","  1.49%   36.183      4 Template:ParameterPage","  1.23%   29.677     45 Template:Parameter","  0.47%   11.331      1 Template:InfoCHOPChannels","  0.33%    7.905      1 CHOP_Filter_Common_Page","  0.31%    7.529      1 Template:Summary","  0.24%    5.897     29 Template:ParameterItem","  0.15%    3.738      1 OP_Info_Channels_Common_Page"]},"scribunto":{"limitreport-timeusage":{"value":"1.820","limit":"10"},"limitreport-virtmemusage":{"value":9134080,"limit":209715200},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20250520063509","ttl":60,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":122});});</script>
+</body>
+<!-- Cached 20250520063551 -->
+
+<!-- Mirrored from docs.derivative.ca/Experimental:Audio_Render_CHOP by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 May 2025 00:56:19 GMT -->
+</html>
